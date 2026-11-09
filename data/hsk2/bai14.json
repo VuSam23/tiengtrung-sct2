@@ -1,0 +1,868 @@
+{
+  "lessonId": "b29",
+  "lessonTitle": "第二十九课: 我都做对了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "补语 (Bổ ngữ kết quả)",
+        "py": "jiéguǒ bǔyǔ",
+        "note": "Động từ hoặc tính từ đứng ngay sau động từ chính để biểu thị kết quả của hành động: 完 (xong: 做完, 读完), 对 (đúng: 做对, 翻译对), 错 (sai: 看错, 写错, 说错), 懂 (hiểu: 听懂, 看懂), 好 (xong/tốt: 考好, 准备好), 清楚 (rõ: 听清楚, 看清楚), 干净 (sạch: 洗干净), 到 (đến: 睡到九点, 回到家), 开 (mở: 打开), 成 (thành: 改成, 翻译成)."
+      },
+      {
+        "word": "没 vs 不",
+        "py": "méi vs bù",
+        "note": "Phủ định của bổ ngữ kết quả bắt buộc phải dùng 没 / 没有 (chưa đạt kết quả: 没做完, 没考好, 没听懂). Tuyệt đối KHÔNG dùng 不 (trừ trường hợp giả thiết tương lai: 要是不做完就不准走)."
+      },
+      {
+        "word": "道 vs 句 vs 本",
+        "py": "dào / jù / běn",
+        "note": "Lượng từ: 道 dùng cho câu hỏi bài tập, đề thi (两道题); 句 dùng cho câu văn, câu nói (一句话, 一句); 本 dùng cho sách, tiểu thuyết (那本小说)."
+      },
+      {
+        "word": "半天",
+        "py": "bàntiān",
+        "note": "Nửa ngày, nhưng trong khẩu ngữ thường mang nghĩa cường điệu 'rất lâu, mãi một hồi': 我等了半天 (tớ đợi mãi/đợi cả buổi)."
+      }
+    ],
+    "grammarTips": [
+      "Khẳng định bổ ngữ kết quả: Chủ ngữ + Động từ + Bổ ngữ kết quả + (Tân ngữ) + (了). Ví dụ: 我做完作业了 / 我看懂了这本书.",
+      "Phủ định bổ ngữ kết quả: Chủ ngữ + 没(有) + Động từ + Bổ ngữ kết quả + Tân ngữ (BỎ trợ từ 了). Ví dụ: 我没看完, 我没做对.",
+      "Nghi vấn bổ ngữ kết quả: S + ĐT + Bổ ngữ kết quả + Tân ngữ + 了没有 / 了吗? Hoặc hình thức chính phản: S + ĐT + BNKQ + 没 + ĐT + BNKQ? (你做对没做对?).",
+      "Chuỗi hành động kết quả: ĐT1 + 完 + Tân ngữ + 再 + ĐT2 (Làm xong việc 1 rồi mới làm tiếp việc 2: 洗干净再看电视)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b29-01",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 完 và chính phản 做对没做对",
+      "vi": "Mấy câu này khá khó, mặc dù tớ làm xong rồi, nhưng mà không biết làm có đúng không?",
+      "zh": "这几道题比较难我虽然做完了但是不知道做对没做对",
+      "standardTrans": "这几道题比较难我虽然做完了但是不知道做对没做对",
+      "pinyin": "Zhè jǐ dào tí bǐjiào nán, wǒ suīrán zuò wán le, dànshì bù zhīdào zuò duì méi zuò duì?",
+      "grammarPoint": "Bổ ngữ kết quả: 做完; Nhượng bộ: 虽然... 但是...; Hình thức hỏi chính phản của bổ ngữ: 做对没做对",
+      "tokens": [
+        {
+          "text": "Mấy câu hỏi này",
+          "hz": "这几道题",
+          "py": "zhè jǐ dào tí",
+          "hv": "Giá kỷ đạo đề",
+          "role": "Chủ đề câu",
+          "vn": "Mấy câu hỏi/bài tập này",
+          "radicals": "这 = Sước; 几 = Kỷ; 道 = Bộ sước 辶; 题 = Bộ hiệt 页"
+        },
+        {
+          "text": "Làm xong rồi",
+          "hz": "做完了",
+          "py": "zuò wán le",
+          "hv": "Tác hoàn liễu",
+          "role": "Động từ + Bổ ngữ kết quả",
+          "vn": "Đã làm xong",
+          "radicals": "做 = Bộ nhân đứng 亻; 完 = Bộ miên 宀 + chữ nguyên 元; 了 = Trợ từ"
+        },
+        {
+          "text": "Làm đúng hay không đúng",
+          "hz": "做对没做对",
+          "py": "zuò duì méi zuò duì",
+          "hv": "Tác đối một tác đối",
+          "role": "Cụm chính phản bổ ngữ kết quả",
+          "vn": "Làm đúng hay làm chưa đúng",
+          "radicals": "做 = Làm; 对 = Bộ thốn 寸; 没 = Bộ thủy 氵"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我虽然做完了", "tag": "Vế nhượng bộ hoàn thành" },
+        { "id": "t1", "text": "这几道题比较难", "tag": "Chủ đề độ khó" },
+        { "id": "t3", "text": "但是不知道做对没做对", "tag": "Vế chuyển ngoặt phân vân" },
+        { "id": "t4", "text": "做对不做对", "tag": "Bẫy chính phản với 不" },
+        { "id": "t5", "text": "做完好", "tag": "Bẫy lặp bổ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这几道题比较难", "虽然做完了", "不知道做对没做对"],
+      "wordBankPool": ["这几道题比较难", "我虽然做完了", "但是不知道做对没做对", "做对不做对", "做完好", "这几个题"],
+      "traps": [
+        {
+          "pattern": "做对不做对",
+          "msg": "Lỗi dạng hỏi chính phản của bổ ngữ kết quả: Kết quả của hành động đã làm phải hỏi bằng 'V + Bổ ngữ + 没 + V + Bổ ngữ' ('做对没做对'), không dùng '不' ('做对不做对')."
+        },
+        {
+          "pattern": "这几个题",
+          "msg": "Lỗi lượng từ: Đề thi, bài tập, câu đố dùng lượng từ chuyên dụng là '道' ('这几道题'), không dùng lượng từ chung '个'."
+        }
+      ],
+      "explanation": "Câu ghép gồm 3 vế: nêu tiền đề độ khó -> vế nhượng bộ với bổ ngữ kết quả '做完' -> vế nghi vấn chính phản bổ ngữ '做对没做对'[cite: 654, 655]."
+    },
+    {
+      "id": "b29-02",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ kết quả 到 chỉ mốc thời gian và phó từ 才",
+      "vi": "Sáng thứ 7 tôi không phải đi học, tôi ngủ đến 9 giờ mới thức dậy.",
+      "zh": "星期六早上我不要上课我睡到九点才起床",
+      "standardTrans": "星期六早上我不要上课我睡到九点才起床",
+      "pinyin": "Xīngqīliù zǎoshang wǒ bú yào shàngkè, wǒ shuì dào jiǔ diǎn cái qǐchuáng.",
+      "grammarPoint": "Bổ ngữ kết quả chỉ thời điểm kéo dài: 睡到 + Thời gian; Biểu thị muộn màng: 才 + 起床",
+      "tokens": [
+        {
+          "text": "Không phải đi học",
+          "hz": "不要上课",
+          "py": "bú yào shàngkè",
+          "hv": "Bất yếu thượng khóa",
+          "role": "Vị ngữ phủ định yêu cầu",
+          "vn": "Không cần/không phải lên lớp",
+          "radicals": "不 = Bất; 要 = Yếu; 上 = Thượng; 课 = Ngôn"
+        },
+        {
+          "text": "Ngủ đến chín giờ",
+          "hz": "睡到九点",
+          "py": "shuì dào jiǔ diǎn",
+          "hv": "Thụy đáo cửu điểm",
+          "role": "Động từ + Bổ ngữ kết quả thời gian",
+          "vn": "Ngủ tới tận 9 giờ",
+          "radicals": "睡 = Bộ mục 目 + chữ thùy 垂; 到 = Bộ chí 至 + bộ đao 刂; 九 = Cửu; 点 = Điểm"
+        },
+        {
+          "text": "Mới thức dậy",
+          "hz": "才起床",
+          "py": "cái qǐchuáng",
+          "hv": "Tài khởi sàng",
+          "role": "Phó từ muộn + Động từ ly hợp",
+          "vn": "Mới ngủ dậy",
+          "radicals": "才 = Tài; 起 = Bộ tẩu 走; 床 = Bộ quảng 广 + bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我睡到九点才起床", "tag": "Hành động ngủ muộn" },
+        { "id": "t1", "text": "星期六早上我不要上课", "tag": "Thời gian & bối cảnh" },
+        { "id": "t3", "text": "九点就起床", "tag": "Bẫy nhầm lẫn 就/才" },
+        { "id": "t4", "text": "睡在九点", "tag": "Bẫy giới từ 在" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["星期六早上", "不要上课", "睡到九点", "才起床"],
+      "wordBankPool": ["星期六早上我不要上课", "我睡到九点才起床", "九点就起床", "睡在九点", "起床才到九点"],
+      "traps": [
+        {
+          "pattern": "睡在九点",
+          "msg": "Lỗi bổ ngữ kết quả: Diễn tả hành động diễn ra liên tục đạt đến mốc thời gian nào đó dùng bổ ngữ kết quả '到' ('睡到九点'), không dùng giới từ '在'."
+        },
+        {
+          "pattern": "就起床",
+          "msg": "Lỗi phó từ: Ngủ đến tận 9 giờ mới dậy là muộn, phải dùng phó từ '才', không dùng '就' (chỉ sớm)."
+        }
+      ],
+      "explanation": "Động từ '睡' kết hợp bổ ngữ kết quả '到' chỉ giới hạn thời gian (睡到九点). Hành động thức dậy diễn ra muộn nên dùng phó từ '才' đứng trước động từ '起床'[cite: 654, 655]."
+    },
+    {
+      "id": "b29-03",
+      "type": "anti_word_by_word",
+      "title": "Nghi vấn bổ ngữ kết quả 了没有 và phạm vi 只... 对了一句",
+      "vi": "A: Mấy câu này cậu dịch đúng không? B: Tớ chỉ dịch đúng một câu.",
+      "zh": "这些句子你翻译对了没有我只翻译对了一句",
+      "standardTrans": "这些句子你翻译对了没有我只翻译对了一句",
+      "pinyin": "A: Zhèxiē jùzi nǐ fānyì duì le méiyǒu? B: Wǒ zhǐ fānyì duì le yí jù.",
+      "grammarPoint": "Nghi vấn bổ ngữ kết quả: 翻译对了没有; Bổ ngữ kết quả 對; Giới hạn: 只 + V + 对了 + Số lượng danh từ",
+      "tokens": [
+        {
+          "text": "Dịch đúng chưa",
+          "hz": "翻译对了没有",
+          "py": "fānyì duì le méiyǒu",
+          "hv": "Phiên dịch đối liễu một hữu",
+          "role": "Cụm câu hỏi hoàn thành",
+          "vn": "Đã dịch đúng chưa",
+          "radicals": "翻 = Bộ vũ 羽; 译 = Bộ ngôn 讠; 对 = Đúng; 了 = Trợ từ; 没 = Chưa"
+        },
+        {
+          "text": "Chỉ dịch đúng một câu",
+          "hz": "只翻译对了一句",
+          "py": "zhǐ fānyì duì le yí jù",
+          "hv": "Chỉ phiên dịch đối liễu nhất cú",
+          "role": "Phó từ + Động từ + Bổ ngữ kết quả + Số lượng",
+          "vn": "Chỉ dịch chuẩn xác được một câu",
+          "radicals": "只 = Bộ khẩu 口 + bộ bát 八; 句 = Bộ bao 勹 + bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我只翻译对了一句", "tag": "Câu trả lời của B" },
+        { "id": "t1", "text": "这些句子你翻译对了没有", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "翻译对了吗没有", "tag": "Bẫy thừa trợ từ 吗" },
+        { "id": "t4", "text": "只翻译了一句对", "tag": "Bẫy trật tự bổ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["这些句子", "翻译对了没有", "只翻译对了", "一句"],
+      "wordBankPool": ["这些句子你翻译对了没有", "我只翻译对了一句", "翻译对了吗没有", "只翻译了一句对", "翻译一句对了"],
+      "traps": [
+        {
+          "pattern": "只翻译了一句对",
+          "msg": "Lỗi vị trí bổ ngữ kết quả: Bổ ngữ kết quả '对' phải đứng NGAY SAU động từ '翻译' ('翻译对了...'), không đặt sau tân ngữ."
+        },
+        {
+          "pattern": "对了没有吗",
+          "msg": "Lỗi thừa trợ từ: Dạng câu hỏi '...了没有' đã mang tính nghi vấn hoàn chỉnh, không thêm '吗' ở cuối."
+        }
+      ],
+      "explanation": "Câu hỏi dùng thể nghi vấn chính phản của bổ ngữ kết quả: 'Động từ + Bổ ngữ + 了没有?'. Câu trả lời có lượng từ '句' đi với số từ '一' làm tân ngữ định lượng[cite: 654, 655]."
+    },
+    {
+      "id": "b29-04",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ kết quả 看错 và phó từ trách cứ 现在才来",
+      "vi": "A: Tớ đợi rất lâu rồi, sao bây giờ cậu mới đến? B: Xin lỗi, tớ nhìn nhầm giờ nên đến muộn.",
+      "zh": "我等了半天了你怎么现在才来对不起我看错时间了所以来晚了",
+      "standardTrans": "我等了半天了你怎么现在才来对不起我看错时间了所以来晚了",
+      "pinyin": "A: Wǒ děng le bàntiān le, nǐ zěnme xiànzài cái lái? B: Duìbuqǐ, wǒ kàn cuò shíjiān le, suǒyǐ lái wǎn le.",
+      "grammarPoint": "Bổ ngữ thời lượng cường điệu: 等了半天了; Sao bây giờ mới đến: 怎么现在才来; Bổ ngữ kết quả sai lầm: 看错; Đến muộn: 来晚了",
+      "tokens": [
+        {
+          "text": "Đợi cả buổi / rất lâu",
+          "hz": "等了半天了",
+          "py": "děng le bàntiān le",
+          "hv": "Đẳng liễu bán thiên liễu",
+          "role": "Động từ + Thời lượng + Trợ từ",
+          "vn": "Đã chờ đợi rất lâu rồi",
+          "radicals": "等 = Bộ trúc; 半 = Bộ thập; 天 = Thiên; 了 = Trợ từ"
+        },
+        {
+          "text": "Nhìn nhầm giờ",
+          "hz": "看错时间了",
+          "py": "kàn cuò shíjiān le",
+          "hv": "Khán thác thời gian liễu",
+          "role": "Động từ + Bổ ngữ kết quả + Tân ngữ",
+          "vn": "Xem nhầm/nhìn sai giờ giấc",
+          "radicals": "看 = Thủ + Mục; 错 = Bộ kim 钅 + chữ tích 昔; 时 = Nhật; 间 = Môn"
+        },
+        {
+          "text": "Đến muộn rồi",
+          "hz": "来晚了",
+          "py": "lái wǎn le",
+          "hv": "Lai vãn liễu",
+          "role": "Động từ + Bổ ngữ trạng thái/kết quả",
+          "vn": "Tới trễ, đến muộn",
+          "radicals": "来 = Lai; 晚 = Bộ nhật 日 + chữ miễn 免"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "对不起我看错时间了所以来晚了", "tag": "Lời xin lỗi & lý do của B" },
+        { "id": "t1", "text": "我等了半天了你怎么现在才来", "tag": "Trách cứ của A" },
+        { "id": "t3", "text": "看时间错了", "tag": "Bẫy kẹp tân ngữ" },
+        { "id": "t4", "text": "现在就来", "tag": "Bẫy nhầm 就" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["等了半天了", "怎么现在才来", "看错时间了", "所以来晚了"],
+      "wordBankPool": ["我等了半天了你怎么现在才来", "对不起我看错时间了所以来晚了", "看时间错了", "现在就来", "错看了时间"],
+      "traps": [
+        {
+          "pattern": "看时间错",
+          "msg": "Lỗi bổ ngữ kết quả: Bổ ngữ '错' (sai/nhầm) phải dính liền ngay sau động từ '看' ('看错时间'), không chèn tân ngữ vào giữa."
+        },
+        {
+          "pattern": "错看",
+          "msg": "Lỗi dịch bồi: Tiếng Việt nói 'nhìn nhầm', nhưng tiếng Trung bắt buộc Động từ đi trước, kết quả đi sau: '看错', không nói '错看'."
+        }
+      ],
+      "explanation": "Cấu trúc bổ ngữ kết quả chỉ sai lầm: Động từ + 错 + Tân ngữ (看错时间, 走错路, 说错话). '半天' trong khẩu ngữ mang nghĩa chờ đợi mòn mỏi[cite: 654, 655]."
+    },
+    {
+      "id": "b29-05",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc chuỗi hành động V1 + 完... 再 + V2",
+      "vi": "Tối nào tôi cũng ôn tập bài cũ xong thì chuẩn bị bài mới tiếp.",
+      "zh": "每天晚上我都复习完旧课再预习新课",
+      "standardTrans": "每天晚上我都复习完旧课再预习新课",
+      "pinyin": "Měitiān wǎnshang wǒ dōu fùxí wán jiù kè zài yùxí xīn kè.",
+      "grammarPoint": "Thời gian lặp lại: 每天晚上都; Bổ ngữ kết quả: 复习完; Thứ tự hành động: Làm xong rồi mới làm tiếp (V1 + 完... 再 + V2)",
+      "tokens": [
+        {
+          "text": "Ôn tập xong bài cũ",
+          "hz": "复习完旧课",
+          "py": "fùxí wán jiù kè",
+          "hv": "Phục tập hoàn cựu khóa",
+          "role": "Hành động 1 + Bổ ngữ kết quả",
+          "vn": "Ôn bài cũ xong",
+          "radicals": "复 = Bộ phộc 攵; 习 = Chữ tập 习; 完 = Bộ miên 宀; 旧 = Bộ cựu 旧; 课 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Chuẩn bị bài mới tiếp",
+          "hz": "再预习新课",
+          "py": "zài yùxí xīn kè",
+          "hv": "Tái dự tập tân khóa",
+          "role": "Phó từ thứ tự + Hành động 2",
+          "vn": "Mới soạn bài mới tiếp",
+          "radicals": "再 = Lại, rồi mới; 预 = Bộ hiệt 页; 新 = Bộ cân 斤"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "都复习完旧课", "tag": "Hành động 1 xong" },
+        { "id": "t1", "text": "每天晚上我", "tag": "Thời gian & chủ ngữ" },
+        { "id": "t3", "text": "再预习新课", "tag": "Hành động 2 tiếp nối" },
+        { "id": "t4", "text": "又预习新课", "tag": "Bẫy nhầm lẫn 又/再" },
+        { "id": "t5", "text": "复习旧课完", "tag": "Bẫy vị trí 完" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["每天晚上我都", "复习完旧课", "再预习新课"],
+      "wordBankPool": ["每天晚上我", "都复习完旧课", "再预习新课", "又预习新课", "复习旧课完", "完复习旧课"],
+      "traps": [
+        {
+          "pattern": "复习旧课完",
+          "msg": "Lỗi bổ ngữ kết quả: Từ chỉ kết quả '完' phải đứng ngay sau động từ '复习' ('复习完旧课'), không đặt sau tân ngữ '旧课'."
+        },
+        {
+          "pattern": "又预习",
+          "msg": "Lỗi liên từ thứ tự: Hành động tiếp diễn theo chuỗi quy trình học tập dùng phó từ '再' ('再预习新课'), không dùng '又'."
+        }
+      ],
+      "explanation": "Cấu trúc chuẩn biểu đạt quy trình học tập: 'Động từ 1 + 完 + Tân ngữ 1 + 再 + Động từ 2 + Tân ngữ 2'[cite: 654, 655]."
+    },
+    {
+      "id": "b29-06",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 改成 biểu thị sự biến đổi bản chất",
+      "vi": "Nghe nói cuốn tiểu thuyết mà cậu thích đã chuyển thể thành phim rồi.",
+      "zh": "听说你喜欢的那本小说已经改成电影了",
+      "standardTrans": "听说你喜欢的那本小说已经改成电影了",
+      "pinyin": "Tīngshuō nǐ xǐhuan de nà běn xiǎoshuō yǐjīng gǎi chéng diànyǐng le.",
+      "grammarPoint": "Khởi đầu nghe ngóng: 听说; Định ngữ mệnh đề: 你喜欢的那本小说; Bổ ngữ kết quả biến đổi: 改成 + Tân ngữ mới + 了",
+      "tokens": [
+        {
+          "text": "Cuốn tiểu thuyết cậu thích",
+          "hz": "你喜欢的那本小说",
+          "py": "nǐ xǐhuan de nà běn xiǎoshuō",
+          "hv": "Nhĩ hỉ hoan đích na bản tiểu thuyết",
+          "role": "Cụm danh từ chủ đề",
+          "vn": "Quyển tiểu thuyết mà bạn yêu thích",
+          "radicals": "喜 = Hỷ; 欢 = Khiếm; 本 = Lượng từ sách; 小 = Tiểu; 说 = Ngôn"
+        },
+        {
+          "text": "Đã chuyển thể thành phim rồi",
+          "hz": "已经改成电影了",
+          "py": "yǐjīng gǎi chéng diànyǐng le",
+          "hv": "Dĩ kinh cải thành điện ảnh liễu",
+          "role": "Vị ngữ bổ ngữ kết quả chuyển biến",
+          "vn": "Đã được cải biên thành phim điện ảnh rồi",
+          "radicals": "已 = Dĩ; 改 = Bộ phộc 攵; 成 = Chữ thành 成; 电 = Điện; 影 = Sam; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你喜欢的那本小说", "tag": "Định ngữ + Danh từ chủ đề" },
+        { "id": "t1", "text": "听说", "tag": "Nghe nói mở đầu" },
+        { "id": "t3", "text": "已经改成电影了", "tag": "Bổ ngữ kết quả 改成" },
+        { "id": "t4", "text": "小说你喜欢的那本", "tag": "Bẫy định ngữ đảo" },
+        { "id": "t5", "text": "改电影成了", "tag": "Bẫy kẹp tân ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["听说", "你喜欢的那本小说", "已经改成电影了"],
+      "wordBankPool": ["听说", "你喜欢的那本小说", "已经改成电影了", "小说你喜欢的那本", "改电影成了", "变成电影已经"],
+      "traps": [
+        {
+          "pattern": "改电影成",
+          "msg": "Lỗi bổ ngữ kết quả: Bổ ngữ '成' (thành) phải gắn liền ngay sau động từ '改' ('改成电影'), không tách rời."
+        },
+        {
+          "pattern": "小说你喜欢的",
+          "msg": "Lỗi mệnh đề định ngữ: Mệnh đề bổ nghĩa 'bạn thích' (你喜欢的) bắt buộc phải đứng trước danh từ trung tâm '那本小说'."
+        }
+      ],
+      "explanation": "Động từ kết hợp với bổ ngữ kết quả '成' mang ý nghĩa sự vật qua tác động đã biến đổi thành một sự vật khác: 改成电影 (chuyển thể thành phim), 翻译成英文 (dịch thành tiếng Anh)[cite: 654, 655]."
+    },
+    {
+      "id": "b29-07",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái hỏi thi cử và bổ ngữ kết quả 做对了",
+      "vi": "A: Bài thi lần này cậu làm bài thế nào? B: Bài thi lần này khó quá, tớ chỉ làm đúng hai câu.",
+      "zh": "这次考试你考得怎么样这次考试太难了我只做对了两道题",
+      "standardTrans": "这次考试你考得怎么样这次考试太难了我只做对了两道题",
+      "pinyin": "A: Zhè cì kǎoshì nǐ kǎo de zěnmeyàng? B: Zhè cì kǎoshì tài nán le, wǒ zhǐ zuò duì le liǎng dào tí.",
+      "grammarPoint": "Bổ ngữ trạng thái đánh giá: 考得怎么样; Cảm thán: 太难了; Bổ ngữ kết quả: 做对了; Lượng từ cho câu hỏi: 道",
+      "tokens": [
+        {
+          "text": "Kỳ thi lần này cậu thi thế nào",
+          "hz": "这次考试你考得怎么样",
+          "py": "zhè cì kǎoshì nǐ kǎo de zěnmeyàng",
+          "hv": "Giá thứ khảo thí nhĩ khảo đắc chẩm ma dạng",
+          "role": "Câu hỏi bổ ngữ trạng thái",
+          "vn": "Lần thi này cậu làm bài ra sao",
+          "radicals": "次 = Bộ khiếm 欠; 考 = Bộ lão 耂; 试 = Bộ ngôn 讠; 得 = Trợ từ"
+        },
+        {
+          "text": "Khó quá",
+          "hz": "太难了",
+          "py": "tài nán le",
+          "hv": "Thái nan liễu",
+          "role": "Vị ngữ cảm thán",
+          "vn": "Quá khó",
+          "radicals": "太 = Đại; 难 = Bộ hựu 又 + bộ truy 隹; 了 = Trợ từ"
+        },
+        {
+          "text": "Chỉ làm đúng hai câu",
+          "hz": "我只做对了两道题",
+          "py": "wǒ zhǐ zuò duì le liǎng dào tí",
+          "hv": "Ngã chỉ tác đối liễu lưỡng đạo đề",
+          "role": "Phó từ + Động từ + Bổ ngữ kết quả + Tân ngữ",
+          "vn": "Tôi chỉ làm đúng được hai câu",
+          "radicals": "只 = Chỉ; 做 = Làm; 对 = Đúng; 两 = Số 2; 道 = Lượng từ; 题 = Đề bài"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这次考试太难了", "tag": "Nhận xét đề thi của B" },
+        { "id": "t1", "text": "这次考试你考得怎么样", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "我只做对了两道题", "tag": "Kết quả làm bài của B" },
+        { "id": "t4", "text": "考怎么样得", "tag": "Bẫy bổ ngữ trạng thái" },
+        { "id": "t5", "text": "两个题", "tag": "Bẫy lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这次考试", "考得怎么样", "太难了", "做对了两道题"],
+      "wordBankPool": ["这次考试你考得怎么样", "这次考试太难了", "我只做对了两道题", "考怎么样得", "两个题", "做对了两个题"],
+      "traps": [
+        {
+          "pattern": "两个题",
+          "msg": "Lỗi lượng từ: Câu hỏi, bài toán trong bài thi phải dùng lượng từ '道' ('两道题'), không dùng lượng từ chung '个'."
+        },
+        {
+          "pattern": "做两道题对了",
+          "msg": "Lỗi vị trí bổ ngữ kết quả: Bổ ngữ '对' phải đi liền sau động từ '做' ('做对了两道题'), không tách rời sau tân ngữ."
+        }
+      ],
+      "explanation": "A dùng bổ ngữ trạng thái để hỏi về quá trình và mức độ thi (考得怎么样). B dùng bổ ngữ kết quả '做对了' kết hợp số lượng từ giới hạn (两道题) để thông báo kết quả cụ thể[cite: 654, 655]."
+    },
+    {
+      "id": "b29-08",
+      "type": "anti_word_by_word",
+      "title": "Nghi vấn 看完了没有 và phủ định 还没看完",
+      "vi": "A: Cuốn sách mà tớ cho cậu mượn đó, cậu đã đọc xong chưa? B: Gần đây bận quá nên tớ vẫn chưa đọc xong.",
+      "zh": "我借给你的那本书你看完了没有最近太忙了所以我还没看完",
+      "standardTrans": "我借给你的那本书你看完了没有最近太忙了所以我还没看完",
+      "pinyin": "A: Wǒ jiè gěi nǐ de nà běn shū nǐ kàn wán le méiyǒu? B: Zuìjìn tài máng le, suǒyǐ wǒ hái méi kàn wán.",
+      "grammarPoint": "Định ngữ mệnh đề: 我借给你的那本书; Hỏi hoàn thành: 看完了没有; Phủ định bổ ngữ kết quả: 还没看完 (tuyệt đối không dùng 不看完)",
+      "tokens": [
+        {
+          "text": "Cuốn sách tôi cho bạn mượn",
+          "hz": "我借给你的那本书",
+          "py": "wǒ jiè gěi nǐ de nà běn shū",
+          "hv": "Ngã tá cấp nhĩ đích na bản thư",
+          "role": "Chủ đề câu / Định ngữ + Danh từ",
+          "vn": "Quyển sách tôi cho cậu mượn",
+          "radicals": "借 = Bộ nhân đứng 亻; 给 = Bộ mịch 纟; 本 = Lượng từ; 书 = Thư"
+        },
+        {
+          "text": "Bạn đã đọc xong chưa",
+          "hz": "你看完了没有",
+          "py": "nǐ kàn wán le méiyǒu",
+          "hv": "Nhĩ khán hoàn liễu một hữu",
+          "role": "Vị ngữ nghi vấn hoàn thành",
+          "vn": "Cậu đọc xong chưa",
+          "radicals": "看 = Xem; 完 = Xong; 了 = Trợ từ; 没 = Chưa; 有 = Có"
+        },
+        {
+          "text": "Tôi vẫn chưa đọc xong",
+          "hz": "所以我还没看完",
+          "py": "suǒyǐ wǒ hái méi kàn wán",
+          "hv": "Sở dĩ ngã hoàn một khán hoàn",
+          "role": "Vế kết quả phủ định",
+          "vn": "Cho nên tớ vẫn chưa đọc xong",
+          "radicals": "所 = Sở; 以 = Dĩ; 还 = Bộ sước 辶; 没 = Chưa; 完 = Xong"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你看完了没有", "tag": "Câu hỏi hoàn thành của A" },
+        { "id": "t1", "text": "我借给你的那本书", "tag": "Chủ đề cuốn sách" },
+        { "id": "t3", "text": "最近太忙了所以我还没看完", "tag": "Lời đáp của B" },
+        { "id": "t4", "text": "我不看完", "tag": "Bẫy phủ định với 不" },
+        { "id": "t5", "text": "看完了吗没有", "tag": "Bẫy thừa trợ từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我借给你的那本书", "看完了没有", "最近太忙了", "还没看完"],
+      "wordBankPool": ["我借给你的那本书", "你看完了没有", "最近太忙了所以我还没看完", "我不看完", "看完了吗没有", "那本书我借给你的"],
+      "traps": [
+        {
+          "pattern": "我不看完",
+          "msg": "Lỗi phủ định bổ ngữ kết quả: Để biểu thị hành động chưa hoàn thành mục đích ('chưa đọc xong'), bắt buộc dùng '没 / 还没 + Động từ + 完' ('还没看完'), không được dùng '不看完'."
+        }
+      ],
+      "explanation": "Câu hỏi đưa tân ngữ cụ thể lên làm chủ đề đầu câu. Quy tắc bất di bất dịch của bổ ngữ kết quả là thể phủ định dùng '没/没有', cấm dùng '不'[cite: 654, 655]."
+    },
+    {
+      "id": "b29-09",
+      "type": "anti_word_by_word",
+      "title": "Khuyên nhủ 应该, công cụ 用汉语 và bổ ngữ 说错",
+      "vi": "Mọi người nên luyện dùng tiếng Trung nói chuyện, đừng sợ nói sai.",
+      "zh": "你们应该练习用汉语谈话不要怕说错",
+      "standardTrans": "你们应该练习用汉语谈话不要怕说错",
+      "pinyin": "Nǐmen yīnggāi liànxí yòng hànyǔ tánhuà, bú yào pà shuō cuò.",
+      "grammarPoint": "Động từ năng nguyện: 应该; Giới từ công cụ: 用 + Ngôn ngữ; Lời khuyên răn: 不要怕; Bổ ngữ kết quả: 说错",
+      "tokens": [
+        {
+          "text": "Các bạn nên luyện tập",
+          "hz": "你们应该练习",
+          "py": "nǐmen yīnggāi liànxí",
+          "hv": "Nhĩ môn ưng cai luyện tập",
+          "role": "Chủ ngữ + Năng nguyện + Động từ",
+          "vn": "Các bạn nên rèn luyện",
+          "radicals": "应 = Quảng; 该 = Ngôn; 练 = Mịch; 习 = Tập"
+        },
+        {
+          "text": "Dùng tiếng Trung nói chuyện",
+          "hz": "用汉语谈话",
+          "py": "yòng hànyǔ tánhuà",
+          "hv": "Dụng Hán ngữ đàm thoại",
+          "role": "Trạng ngữ công cụ + Động từ",
+          "vn": "Sử dụng tiếng Hán để trò chuyện",
+          "radicals": "用 = Bộ dụng 用; 汉 = Thủy; 谈 = Ngôn; 话 = Ngôn"
+        },
+        {
+          "text": "Đừng sợ nói sai",
+          "hz": "不要怕说错",
+          "py": "bú yào pà shuō cuò",
+          "hv": "Bất yếu phạ thuyết thác",
+          "role": "Vế khuyên nhủ",
+          "vn": "Đừng có sợ nói sai",
+          "radicals": "不 = Bất; 要 = Yếu; 怕 = Bộ tâm đứng 忄 + chữ bạch 白; 说 = Ngôn; 错 = Kim"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "用汉语谈话", "tag": "Phương thức ngôn ngữ" },
+        { "id": "t1", "text": "你们应该练习", "tag": "Lời khuyên răn" },
+        { "id": "t3", "text": "不要怕说错", "tag": "Khuyên đừng sợ nói sai" },
+        { "id": "t4", "text": "谈话用汉语", "tag": "Bẫy công cụ sau động từ" },
+        { "id": "t5", "text": "错说", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你们应该练习", "用汉语谈话", "不要怕说错"],
+      "wordBankPool": ["你们应该练习", "用汉语谈话", "不要怕说错", "谈话用汉语", "错说", "不要怕错说"],
+      "traps": [
+        {
+          "pattern": "谈话用汉语",
+          "msg": "Lỗi cấu trúc công cụ: Phương tiện/công cụ ngôn ngữ (用汉语) bắt buộc phải đứng TRƯỚC động từ giao tiếp ('用汉语谈话'), không đặt ở cuối câu."
+        },
+        {
+          "pattern": "错说",
+          "msg": "Lỗi trật tự bổ ngữ kết quả: Hành vi nói ra rồi mới dẫn đến sai sót, phải nói là '说错', không nói ngược '错说'."
+        }
+      ],
+      "explanation": "Cấu trúc '用 + Ngôn ngữ + Động từ' chỉ công cụ biểu đạt. Cụm '说错' là bổ ngữ kết quả chỉ hành vi phát ngôn bị sai[cite: 654, 655]."
+    },
+    {
+      "id": "b29-10",
+      "type": "sentence_parsing",
+      "title": "Sự việc sắp xảy ra 就...了 và nghi vấn hoàn thành bài cũ",
+      "vi": "Ngày mai thi rồi, cậu đã ôn tập xong bài cũ chưa?",
+      "zh": "明天就考试了你复习完旧课了没有",
+      "standardTrans": "明天就考试了你复习完旧课了没有",
+      "pinyin": "Míngtiān jiù kǎoshì le, nǐ fùxí wán jiù kè le méiyǒu?",
+      "grammarPoint": "Thời gian gấp gáp sắp xảy ra: 就...了; Bổ ngữ kết quả: 复习完; Nghi vấn hoàn thành: 了没有",
+      "tokens": [
+        {
+          "text": "Ngày mai đã thi rồi",
+          "hz": "明天就考试了",
+          "py": "míngtiān jiù kǎoshì le",
+          "hv": "Minh thiên tựu khảo thí liễu",
+          "role": "Thời điểm cận kề",
+          "vn": "Ngày mai đã tới kỳ thi rồi",
+          "radicals": "明 = Minh; 就 = Liền/đã; 考 = Lão 耂; 试 = Ngôn; 了 = Trợ từ"
+        },
+        {
+          "text": "Ôn tập xong bài cũ chưa",
+          "hz": "你复习完旧课了没有",
+          "py": "nǐ fùxí wán jiù kè le méiyǒu",
+          "hv": "Nhĩ phục tập hoàn cựu khóa liễu một hữu",
+          "role": "Câu hỏi bổ ngữ kết quả",
+          "vn": "Cậu đã ôn bài cũ xong chưa",
+          "radicals": "复 = Phộc; 习 = Tập; 完 = Hoàn; 旧 = Cựu; 课 = Khóa; 没 = Một"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你复习完旧课了没有", "tag": "Câu hỏi hoàn thành bài cũ" },
+        { "id": "t1", "text": "明天就考试了", "tag": "Sự việc sắp đến" },
+        { "id": "t3", "text": "明天才考试了", "tag": "Bẫy nhầm 才" },
+        { "id": "t4", "text": "复习旧课完了没有", "tag": "Bẫy vị trí bổ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["明天就考试了", "复习完旧课", "了没有"],
+      "wordBankPool": ["明天就考试了", "你复习完旧课了没有", "明天才考试了", "复习旧课完了没有", "考试就明天了"],
+      "traps": [
+        {
+          "pattern": "复习旧课完",
+          "msg": "Lỗi vị trí bổ ngữ: '完' phải đứng ngay sau động từ '复习' ('复习完旧课'), không để tân ngữ chen vào giữa."
+        },
+        {
+          "pattern": "明天才考试",
+          "msg": "Lỗi phó từ: 'Ngày mai đã thi rồi' nhấn mạnh sự việc đến nhanh, sắp diễn ra gấp rút, bắt buộc dùng '就' ('明天就考试了')."
+        }
+      ],
+      "explanation": "Phó từ '就' đi kèm '了' ở vế 1 nhấn mạnh sự việc thi cử đến rất nhanh. Vế 2 dùng thể nghi vấn 'V + 完 + Tân ngữ + 了没有' để kiểm tra kết quả ôn tập[cite: 654, 655]."
+    },
+    {
+      "id": "b29-11",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 回到家 và phó từ chỉ sự muộn màng 才",
+      "vi": "Gần đây công việc rất bận rộn, tôi thường xuyên phải tăng ca. Tối qua rất muộn tôi mới về đến nhà.",
+      "zh": "最近工作很忙我常要加班我昨天晚上很晚才回到家",
+      "standardTrans": "最近工作很忙我常要加班我昨天晚上很晚才回到家",
+      "pinyin": "Zuìjìn gōngzuò hěn máng, wǒ cháng yào jiābān. Wǒ zuótiān wǎnshang hěn wǎn cái huí dào jiā.",
+      "grammarPoint": "Bận rộn: 工作很忙; Phải tăng ca: 常要加班; Hành động muộn: 很晚才; Bổ ngữ kết quả nơi chốn: 回到家",
+      "tokens": [
+        {
+          "text": "Dạo này công việc rất bận",
+          "hz": "最近工作很忙",
+          "py": "zuìjìn gōngzuò hěn máng",
+          "hv": "Tối cận công tác hẩn mang",
+          "role": "Hiện trạng công việc",
+          "vn": "Gần đây công việc rất bận rộn",
+          "radicals": "最 = Viết; 近 = Sước; 工 = Công; 作 = Nhân; 忙 = Tâm"
+        },
+        {
+          "text": "Tôi thường phải tăng ca",
+          "hz": "我常要加班",
+          "py": "wǒ cháng yào jiābān",
+          "hv": "Ngã thường yếu gia ban",
+          "role": "Tần suất bắt buộc",
+          "vn": "Tớ thường xuyên phải làm thêm giờ",
+          "radicals": "常 = Cân; 要 = Yếu; 加 = Lực; 班 = Đao"
+        },
+        {
+          "text": "Tối qua rất muộn mới về đến nhà",
+          "hz": "我昨天晚上很晚才回到家",
+          "py": "wǒ zuótiān wǎnshang hěn wǎn cái huí dào jiā",
+          "hv": "Ngã tác thiên vãn thượng hẩn vãn tài hồi đáo gia",
+          "role": "Thời gian muộn + 才 + Bổ ngữ kết quả",
+          "vn": "Tối hôm qua rất khuya tớ mới về tới nhà",
+          "radicals": "昨 = Nhật; 晚 = Muộn; 才 = Mới; 回 = Về; 到 = Đáo; 家 = Nhà"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我常要加班", "tag": "Thường phải tăng ca" },
+        { "id": "t1", "text": "最近工作很忙", "tag": "Hiện trạng bận rộn" },
+        { "id": "t3", "text": "我昨天晚上很晚才回到家", "tag": "Tối qua về muộn với 才" },
+        { "id": "t4", "text": "很晚就回到家", "tag": "Bẫy nhầm 就" },
+        { "id": "t5", "text": "回在家", "tag": "Bẫy bổ ngữ 到" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["最近工作很忙", "常要加班", "昨天晚上很晚", "才回到家"],
+      "wordBankPool": ["最近工作很忙", "我常要加班", "我昨天晚上很晚才回到家", "很晚就回到家", "回在家", "加班常要"],
+      "traps": [
+        {
+          "pattern": "很晚就回到家",
+          "msg": "Lỗi phân biệt 就 / 才: Về nhà muộn màng ('很晚') phải dùng '才' ('很晚才回到家'), không dùng '就'."
+        },
+        {
+          "pattern": "回在家",
+          "msg": "Lỗi bổ ngữ kết quả: Động từ chuyển dời đạt tới đích đến là nhà dùng bổ ngữ kết quả '到' ('回到家'), không nói '回在家'."
+        }
+      ],
+      "explanation": "Động từ '回' kết hợp bổ ngữ kết quả '到' dẫn ra địa điểm đạt tới (回到家). Đi kèm '很晚才' nhấn mạnh sự vất vả, muộn màng[cite: 654, 655]."
+    },
+    {
+      "id": "b29-12",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ tính từ 洗干净, phủ định 还没 và trình tự 先... 再...",
+      "vi": "A: Bây giờ con có thể xem ti vi không? B: Bộ quần áo này con giặt vẫn chưa sạch. Con giặt sạch trước rồi hãy xem tivi.",
+      "zh": "现在我可以看电视吗这件衣服你还没洗干净呢你先洗干净再看电视",
+      "standardTrans": "现在我可以看电视吗这件衣服你还没洗干净呢你先洗干净再看电视",
+      "pinyin": "A: Xiànzài wǒ kěyǐ kàn diànshì ma? B: Zhè jiàn yīfu nǐ hái méi xǐ gānjìng ne. Nǐ xiān xǐ gānjìng zài kàn diànshì.",
+      "grammarPoint": "Xin phép: 可以...吗; Bổ ngữ kết quả tính từ: 洗干净; Phủ định: 还没...; Trình tự trước sau: 先 + V1 + 再 + V2",
+      "tokens": [
+        {
+          "text": "Con có thể xem tivi không",
+          "hz": "现在我可以看电视吗",
+          "py": "xiànzài wǒ kěyǐ kàn diànshì ma",
+          "hv": "Hiện tại ngã khả dĩ khán điện thị ma",
+          "role": "Câu hỏi xin phép của con",
+          "vn": "Bây giờ con được xem tivi chưa",
+          "radicals": "可 = Khả; 以 = Dĩ; 电 = Điện; 视 = Kiến; 吗 = Khẩu"
+        },
+        {
+          "text": "Vẫn chưa giặt sạch",
+          "hz": "这件衣服你还没洗干净呢",
+          "py": "zhè jiàn yīfu nǐ hái méi xǐ gānjìng ne",
+          "hv": "Giá kiện y phục nhĩ hoàn một tẩy can tịnh ni",
+          "role": "Hiện trạng phủ định bổ ngữ kết quả",
+          "vn": "Chiếc áo này con còn chưa giặt sạch đâu",
+          "radicals": "件 = Nhân; 衣 = Y; 服 = Nguyệt; 洗 = Thủy; 干 = Can; 净 = Băng"
+        },
+        {
+          "text": "Giặt sạch trước rồi hãy xem tivi",
+          "hz": "你先洗干净再看电视",
+          "py": "nǐ xiān xǐ gānjìng zài kàn diànshì",
+          "hv": "Nhĩ tiên tẩy can tịnh tái khán điện thị",
+          "role": "Yêu cầu theo trình tự 先...再...",
+          "vn": "Con hãy giặt cho sạch rồi hẵng xem tivi",
+          "radicals": "先 = Tiên; 洗 = Tẩy; 再 = Tái; 看 = Khán"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这件衣服你还没洗干净呢", "tag": "Nhận xét chưa sạch của mẹ" },
+        { "id": "t1", "text": "现在我可以看电视吗", "tag": "Câu hỏi xin phép của A" },
+        { "id": "t3", "text": "你先洗干净再看电视", "tag": "Yêu cầu thứ tự của mẹ" },
+        { "id": "t4", "text": "不洗干净", "tag": "Bẫy phủ định với 不" },
+        { "id": "t5", "text": "洗干净先", "tag": "Bẫy vị trí phó từ 先" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["现在我可以看电视吗", "还没洗干净呢", "先洗干净再看电视"],
+      "wordBankPool": ["现在我可以看电视吗", "这件衣服你还没洗干净呢", "你先洗干净再看电视", "不洗干净", "洗干净先", "洗干净又看电视"],
+      "traps": [
+        {
+          "pattern": "不洗干净",
+          "msg": "Lỗi phủ định bổ ngữ kết quả: Phủ định trạng thái chưa sạch của quần áo bắt buộc dùng '没 / 还没 + 洗干净', tuyệt đối không dùng '不洗干净'."
+        },
+        {
+          "pattern": "洗干净先",
+          "msg": "Lỗi vị trí phó từ: '先' (trước) phải đứng TRƯỚC cụm động từ ('先洗干净'), không đặt cuối câu."
+        }
+      ],
+      "explanation": "Tính từ '干净' làm bổ ngữ kết quả cho động từ '洗' tạo thành '洗干净' (giặt sạch). Mẹ dùng kết cấu '先... 再...' để đặt điều kiện trước khi cho phép xem tivi[cite: 654, 655]."
+    },
+    {
+      "id": "b29-13",
+      "type": "anti_word_by_word",
+      "title": "Phủ định bổ ngữ kết quả 没考好 và nguyên nhân 考试前",
+      "vi": "Lần này tôi làm bài không tốt, bởi vì trước khi thi tôi bị bệnh.",
+      "zh": "这次我没考好因为考试前我生病了",
+      "standardTrans": "这次我没考好因为考试前我生病了",
+      "pinyin": "Zhè cì wǒ méi kǎo hǎo, yīnwèi kǎoshì qián wǒ shēngbìng le.",
+      "grammarPoint": "Phủ định bổ ngữ kết quả: 没考好; Mệnh đề thời gian: [Sự việc] + 前; Nguyên nhân: 因为; Mắc bệnh: 生病了",
+      "tokens": [
+        {
+          "text": "Lần này tôi thi không tốt",
+          "hz": "这次我没考好",
+          "py": "zhè cì wǒ méi kǎo hǎo",
+          "hv": "Giá thứ ngã một khảo hảo",
+          "role": "Chủ vị + Phủ định bổ ngữ kết quả",
+          "vn": "Lần này tớ không làm bài tốt",
+          "radicals": "次 = Khiếm; 没 = Thủy; 考 = Lão 耂; 好 = Nữ + Tử"
+        },
+        {
+          "text": "Trước khi thi tôi bị ốm rồi",
+          "hz": "因为考试前我生病了",
+          "py": "yīnwèi kǎoshì qián wǒ shēngbìng le",
+          "hv": "Nhân vi khảo thí tiền ngã sinh bệnh liễu",
+          "role": "Vế nguyên nhân thời gian",
+          "vn": "Bởi vì trước lúc thi tôi bị ốm",
+          "radicals": "因 = Vi; 为 = Vi; 前 = Đao 刂; 生 = Sinh; 病 = Nạch 疒; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "这次我没考好", "tag": "Kết quả thi không tốt" },
+        { "id": "t2", "text": "因为考试前我生病了", "tag": "Nguyên nhân bị ốm" },
+        { "id": "t3", "text": "我不考好", "tag": "Bẫy phủ định với 不" },
+        { "id": "t4", "text": "前考试", "tag": "Bẫy trật tự từ 前" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["这次我没考好", "因为考试前", "我生病了"],
+      "wordBankPool": ["这次我没考好", "因为考试前我生病了", "我不考好", "前考试", "考试前因为生病了"],
+      "traps": [
+        {
+          "pattern": "我不考好",
+          "msg": "Lỗi phủ định bổ ngữ kết quả: Kết quả bài thi không như ý trong quá khứ bắt buộc dùng '没' ('没考好'), tuyệt đối không dùng '不考好'."
+        },
+        {
+          "pattern": "前考试",
+          "msg": "Lỗi cấu trúc thời gian: 'Trước khi thi' tiếng Trung bắt buộc phải đưa sự việc lên trước từ '前' ('考试前')."
+        }
+      ],
+      "explanation": "Tính từ '好' làm bổ ngữ kết quả biểu thị hành động đạt tới trạng thái hoàn thiện, tốt đẹp. Phủ định bổ ngữ kết quả này dùng '没考好'[cite: 654, 655]."
+    },
+    {
+      "id": "b29-14",
+      "type": "sentence_parsing",
+      "title": "Mệnh đề thời gian, công cụ 用中文 và bổ ngữ 听懂",
+      "vi": "Bây giờ khi lên lớp, thầy giáo giảng bài bằng tiếng Trung, chúng tôi đều có thể nghe hiểu.",
+      "zh": "现在上课的时候老师用中文讲课我们都能听懂",
+      "standardTrans": "现在上课的时候老师用中文讲课我们都能听懂",
+      "pinyin": "Xiànzài shàngkè de shíhou, lǎoshī yòng zhōngwén jiǎngkè, wǒmen dōu néng tīng dǒng.",
+      "grammarPoint": "Mệnh đề thời gian: 上课的时候; Công cụ ngôn ngữ: 用中文讲课; Khả năng hiểu: 都能听懂",
+      "tokens": [
+        {
+          "text": "Lúc lên lớp bây giờ",
+          "hz": "现在上课的时候",
+          "py": "xiànzài shàngkè de shíhou",
+          "hv": "Hiện tại thượng khóa đích thời hậu",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Bây giờ trong giờ học",
+          "radicals": "现 = Vương; 上 = Thượng; 课 = Ngôn; 时 = Nhật; 候 = Khí hậu"
+        },
+        {
+          "text": "Thầy giáo giảng bài bằng tiếng Trung",
+          "hz": "老师用中文讲课",
+          "py": "lǎoshī yòng zhōngwén jiǎngkè",
+          "hv": "Lão sư dụng Trung văn giảng khóa",
+          "role": "Chủ ngữ + Cụm giới từ công cụ + Động từ",
+          "vn": "Giáo viên dùng tiếng Trung giảng bài",
+          "radicals": "老 = Lão; 师 = Cân; 用 = Dụng; 中 = Trung; 文 = Văn; 讲 = Ngôn; 课 = Ngôn"
+        },
+        {
+          "text": "Chúng tôi đều có thể nghe hiểu",
+          "hz": "我们都能听懂",
+          "py": "wǒmen dōu néng tīng dǒng",
+          "hv": "Ngã môn đô năng thính hiểu",
+          "role": "Chủ ngữ + Năng lực + Bổ ngữ kết quả",
+          "vn": "Chúng tôi đều có khả năng nghe hiểu được",
+          "radicals": "都 = Ấp; 能 = Năng lực; 听 = Khẩu; 懂 = Bộ tâm đứng 忄 + chữ đổng 董"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "老师用中文讲课", "tag": "Thầy giảng bằng tiếng Trung" },
+        { "id": "t1", "text": "现在上课的时候", "tag": "Trạng ngữ thời gian lên lớp" },
+        { "id": "t3", "text": "我们都能听懂", "tag": "Khả năng nghe hiểu" },
+        { "id": "t4", "text": "讲课用中文", "tag": "Bẫy trật tự công cụ" },
+        { "id": "t5", "text": "听懂都能我们", "tag": "Bẫy trật tự chủ vị" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["现在上课的时候", "用中文讲课", "我们都能听懂"],
+      "wordBankPool": ["现在上课的时候", "老师用中文讲课", "我们都能听懂", "讲课用中文", "听懂都能我们", "懂听都能"],
+      "traps": [
+        {
+          "pattern": "讲课用中文",
+          "msg": "Lỗi giới từ công cụ: Giới từ công cụ '用中文' phải đứng TRƯỚC động từ '讲课', không đặt ở cuối câu."
+        }
+      ],
+      "explanation": "Động từ '懂' làm bổ ngữ kết quả cho '听' tạo thành '听懂' (nghe hiểu). Cụm '能听懂' biểu thị năng lực tiếp thu ngoại ngữ đã đạt đến trình độ nghe hiểu trực tiếp[cite: 654, 655]."
+    },
+    {
+      "id": "b29-15",
+      "type": "anti_word_by_word",
+      "title": "Cảm thán 太热了, nhờ vả 帮 và bổ ngữ kết quả 打开",
+      "vi": "Trong phòng nóng quá, cậu mở cửa sổ giúp tớ được không?",
+      "zh": "屋子里太热了你帮我打开窗户好吗",
+      "standardTrans": "屋子里太热了你帮我打开窗户好吗",
+      "pinyin": "Wūzi lǐ tài rè le, nǐ bāng wǒ dǎkāi chuānghu, hǎo ma?",
+      "grammarPoint": "Phương vị nơi chốn: 屋子里; Cảm thán: 太热了; Nhờ vả: 帮我; Bổ ngữ kết quả: 打开; Hỏi ý: 好吗",
+      "tokens": [
+        {
+          "text": "Trong phòng nóng quá",
+          "hz": "屋子里太热了",
+          "py": "wūzi lǐ tài rè le",
+          "hv": "Ốc tử lý thái nhiệt liễu",
+          "role": "Bối cảnh cảm thán",
+          "vn": "Ở trong phòng nóng bức quá",
+          "radicals": "屋 = Bộ thi 尸 + chữ chí 至; 子 = Tử; 里 = Lý; 太 = Đại; 热 = Bộ hỏa 灬; 了 = Trợ từ"
+        },
+        {
+          "text": "Cậu giúp tớ mở cửa sổ được không",
+          "hz": "你帮我打开窗户好吗",
+          "py": "nǐ bāng wǒ dǎkāi chuānghu, hǎo ma",
+          "hv": "Nhĩ bang ngã đả khai song hộ hảo ma",
+          "role": "Lời nhờ vả thương lượng",
+          "vn": "Bạn mở giúp tôi cánh cửa sổ nhé",
+          "radicals": "帮 = Bộ cân 巾; 打 = Bộ thủ 扌; 开 = Mở; 窗 = Bộ huyệt 穴; 户 = Bộ hộ 户; 好 = Nữ; 吗 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "屋子里太热了", "tag": "Hiện trạng trong phòng nóng" },
+        { "id": "t2", "text": "你帮我打开窗户好吗", "tag": "Lời nhờ mở cửa sổ" },
+        { "id": "t3", "text": "开打窗户", "tag": "Bẫy trật tự bổ ngữ" },
+        { "id": "t4", "text": "打开窗户帮你我", "tag": "Bẫy cấu trúc 帮" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["屋子里太热了", "帮我打开窗户", "好吗"],
+      "wordBankPool": ["屋子里太热了", "你帮我打开窗户好吗", "开打窗户", "打开窗户帮你我", "打开门窗好吗"],
+      "traps": [
+        {
+          "pattern": "开打窗户",
+          "msg": "Lỗi bổ ngữ kết quả: Động từ '打' kết hợp bổ ngữ '开' tạo thành cụm cố định '打开' (mở ra), không đảo ngược thành '开打'."
+        },
+        {
+          "pattern": "打开窗户帮我",
+          "msg": "Lỗi giới từ 帮: Cụm '帮 + Người' (帮我) bắt buộc phải đứng trước hành động ('帮我打开...'), không dịch xuôi sau tân ngữ."
+        }
+      ],
+      "explanation": "Động từ '开' làm bổ ngữ kết quả cho động từ '打' tạo thành '打开' biểu thị trạng thái đóng kín được mở bung ra. Cấu trúc nhờ vả thông dụng: '你帮我 + Động từ + 好吗?'[cite: 654, 655]."
+    }
+  ]
+}

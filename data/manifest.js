@@ -146,6 +146,11 @@ const HSK_MANIFESTS = {
             id: "bai13",
             title: "Bài 28: 第二十八课: 我吃了早饭就来了 - Hành động liên tiếp 了...就... & Sớm muộn",
             file: "data/hsk2/bai13.json"
+        },
+        {
+            id: "bai14",
+            title: "Bài 29: 第二十九课: 我都做对了 - Bổ ngữ kết quả (完, 对, 错, 懂...)",
+            file: "data/hsk2/bai14.json"
         }
     ],
     hsk3: [
