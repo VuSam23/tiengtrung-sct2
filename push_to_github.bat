@@ -58,6 +58,11 @@ if %errorlevel% equ 0 (
 
 echo.
 echo [BUOC 3]: Dang day code len GitHub (git push origin main)...
+echo Repo: https://github.com/VuSam23/tiengtrung-sct2.git
+echo.
+echo *Luu y: Neu he thong mo cua so GitHub dang nhap, ban chi can bam
+echo  "Sign in with your browser" (hoac dan Personal Access Token) la duoc!
+echo.
 git push -u origin main
 
 if %errorlevel% equ 0 (
