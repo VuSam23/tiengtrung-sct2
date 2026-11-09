@@ -12,8 +12,8 @@
 
 ## 🌐 Trải Nghiệm Trực Tiếp (Live Demo)
 
-👉 **Link chạy thử trên GitHub Pages**: `https://<ten-tai-khoan-github>.github.io/<ten-repo>/`  
-*(Chỉ cần bật GitHub Pages từ nhánh `main` là web tự động hoạt động sau 30 giây).*
+👉 **Link chạy thử trên GitHub Pages**: **[https://vusam23.github.io/tiengtrung-sct2/](https://vusam23.github.io/tiengtrung-sct2/)**  
+*(Sau khi bật GitHub Pages từ nhánh `main` trong Settings > Pages, web tự động hoạt động sau 30 giây).*
 
 ---
 
@@ -113,3 +113,4 @@ powershell -ExecutionPolicy Bypass -File .\test-data.ps1
 
 ## 📄 Bản Quyền & Tác Quyền
 Được thiết kế và phát triển tối ưu cho cộng đồng người tự học tiếng Trung và nghiên cứu phương pháp giảng dạy ngôn ngữ thực chiến SCT2. Giấy phép mã nguồn mở MIT.
+
