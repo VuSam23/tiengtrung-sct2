@@ -160,7 +160,15 @@ const HSK_MANIFESTS = {
 window.HSK_MANIFESTS = HSK_MANIFESTS;
 
 // Xác định cấp độ hiện tại từ localStorage hoặc mặc định hsk1
-const savedLevel = (typeof localStorage !== 'undefined') ? (localStorage.getItem('sct2_selected_level') || 'hsk1') : 'hsk1';
+let savedLevel = 'hsk1';
+try {
+    if (typeof localStorage !== 'undefined') {
+        savedLevel = localStorage.getItem('sct2_selected_level') || 'hsk1';
+    }
+} catch (e) {
+    // localStorage bị chặn (private browsing / quota) → dùng mặc định hsk1
+    savedLevel = 'hsk1';
+}
 window.LESSON_MANIFEST = HSK_MANIFESTS[savedLevel] || HSK_MANIFESTS.hsk1;
 
 

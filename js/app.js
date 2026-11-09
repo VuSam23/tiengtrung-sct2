@@ -54,13 +54,17 @@ const App = {
     },
 
     loadHearts() {
-        const savedHearts = localStorage.getItem('sct2_user_hearts');
-        this.hearts = savedHearts !== null ? Math.max(0, parseInt(savedHearts, 10)) : 5;
+        try {
+            const savedHearts = localStorage.getItem('sct2_user_hearts');
+            this.hearts = savedHearts !== null ? Math.max(0, parseInt(savedHearts, 10)) : 5;
+        } catch (e) {
+            this.hearts = 5; // fallback khi localStorage bị chặn
+        }
         this.updateHeartsUI();
     },
 
     saveHearts() {
-        localStorage.setItem('sct2_user_hearts', this.hearts);
+        try { localStorage.setItem('sct2_user_hearts', this.hearts); } catch (e) {}
         this.updateHeartsUI();
     },
 
@@ -96,8 +100,12 @@ const App = {
     },
 
     loadMode() {
-        const savedMode = localStorage.getItem('sct2_preferred_mode');
-        this.mode = savedMode || 'parsing';
+        try {
+            const savedMode = localStorage.getItem('sct2_preferred_mode');
+            this.mode = savedMode || 'parsing';
+        } catch (e) {
+            this.mode = 'parsing';
+        }
         this.updateModeUI();
     },
 
@@ -142,23 +150,28 @@ const App = {
     },
 
     loadSettings() {
-        const speed = localStorage.getItem('sct2_setting_voice_speed');
-        if (speed) this.settings.voiceSpeed = parseFloat(speed) || 0.98;
+        try {
+            const speed = localStorage.getItem('sct2_setting_voice_speed');
+            if (speed) this.settings.voiceSpeed = parseFloat(speed) || 0.98;
 
-        const autoAudio = localStorage.getItem('sct2_setting_auto_audio');
-        this.settings.autoAudio = autoAudio !== null ? autoAudio === 'true' : true;
+            const autoAudio = localStorage.getItem('sct2_setting_auto_audio');
+            this.settings.autoAudio = autoAudio !== null ? autoAudio === 'true' : true;
 
-        const showPinyin = localStorage.getItem('sct2_setting_show_pinyin');
-        this.settings.showPinyin = showPinyin !== null ? showPinyin === 'true' : true;
-
+            const showPinyin = localStorage.getItem('sct2_setting_show_pinyin');
+            this.settings.showPinyin = showPinyin !== null ? showPinyin === 'true' : true;
+        } catch (e) {
+            // localStorage bị chặn → dùng giá trị mặc định
+        }
         this.syncSettingsUI();
         this.applyPinyinVisibility();
     },
 
     saveSettings() {
-        localStorage.setItem('sct2_setting_voice_speed', this.settings.voiceSpeed);
-        localStorage.setItem('sct2_setting_auto_audio', this.settings.autoAudio);
-        localStorage.setItem('sct2_setting_show_pinyin', this.settings.showPinyin);
+        try {
+            localStorage.setItem('sct2_setting_voice_speed', this.settings.voiceSpeed);
+            localStorage.setItem('sct2_setting_auto_audio', this.settings.autoAudio);
+            localStorage.setItem('sct2_setting_show_pinyin', this.settings.showPinyin);
+        } catch (e) {}
     },
 
     syncSettingsUI() {
@@ -266,10 +279,28 @@ const App = {
             this.saveData();
         } else {
             this.data = {};
+            // Hiện thông báo lỗi nếu không nạp được bài nào
+            this._showLoadError();
         }
 
         this.buildPicker();
         return discovered;
+    },
+
+    _showLoadError() {
+        const overlay = document.getElementById('lesson-loading-overlay');
+        if (overlay) {
+            overlay.innerHTML = `
+                <div class="flex flex-col items-center gap-4 p-8 text-center">
+                    <div class="text-5xl">⚠️</div>
+                    <div class="text-lg font-black text-slate-100">Không thể tải dữ liệu bài học</div>
+                    <div class="text-sm text-slate-300">Kiểm tra kết nối mạng và thử lại.<br>Nếu vẫn lỗi, hãy tải lại trang (F5).</div>
+                    <button onclick="location.reload()" class="mt-2 px-6 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-black text-sm transition active:scale-95">
+                        🔄 Thử lại
+                    </button>
+                </div>`;
+            overlay.classList.remove('hidden');
+        }
     },
 
     async autoDiscoverLessons() {

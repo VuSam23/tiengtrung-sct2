@@ -2,10 +2,14 @@
  * NAVIGATION & DASHBOARD HUB
  * Quản lý Dashboard lộ trình 2 tầng và điều hướng bài học HSK
  */
+
+// Chế độ Debug: chỉ bật khi URL có ?debug=1 (ẩn với người dùng thường)
+const _isDebugMode = new URLSearchParams(location.search).has('debug');
+
 const NavigationHub = {
     unlockedLessons: ['bai1'], // Mặc định mở bài 1
     completedLessons: {},      // Lưu kết quả: { 'bai1': { stars: 3, done: 8, total: 8 } }
-    testerMode: true,          // Tạm mở khóa toàn bộ bài cho tester
+    testerMode: _isDebugMode,  // Mặc định OFF; bật bằng ?debug=1 hoặc 7-tap logo
 
     isLessonUnlocked(key) {
         return this.testerMode || this.unlockedLessons.includes(key);
@@ -14,6 +18,34 @@ const NavigationHub = {
     init() {
         this.loadProgress();
         this.bindEvents();
+        this._bindDebugTap(); // 7-tap logo để bật debug
+    },
+
+    // 7-tap vào logo để bật testerMode (easter egg cho admin)
+    _bindDebugTap() {
+        const badge = document.getElementById('brand-badge');
+        if (!badge) return;
+        let tapCount = 0, tapTimer;
+        badge.addEventListener('click', () => {
+            tapCount++;
+            clearTimeout(tapTimer);
+            tapTimer = setTimeout(() => { tapCount = 0; }, 1500);
+            if (tapCount >= 7) {
+                tapCount = 0;
+                this.testerMode = !this.testerMode;
+                const msg = this.testerMode
+                    ? '🔓 Debug mode ON – Đã mở khóa toàn bộ bài'
+                    : '🔒 Debug mode OFF – Chế độ bình thường';
+                // Cập nhật UI nếu nút tester đang hiển thị
+                const label = document.getElementById('tester-unlock-label');
+                if (label) label.textContent = this.testerMode ? 'Tester: Đã Mở Khóa Tất Cả' : 'Tester: Chế Độ Thường';
+                const settingTester = document.getElementById('setting-tester-mode');
+                if (settingTester) settingTester.checked = this.testerMode;
+                this.renderDashboardCards();
+                if (window.App && App.showToast) App.showToast(msg, this.testerMode ? 'success' : 'info');
+                else alert(msg);
+            }
+        });
     },
 
     getLevelKey(prefix) {
@@ -49,11 +81,19 @@ const NavigationHub = {
     saveProgress() {
         const unlockKey = this.getLevelKey('sct2_unlocked');
         const doneKey = this.getLevelKey('sct2_completed');
-        localStorage.setItem(unlockKey, JSON.stringify(this.unlockedLessons));
-        localStorage.setItem(doneKey, JSON.stringify(this.completedLessons));
+        try {
+            localStorage.setItem(unlockKey, JSON.stringify(this.unlockedLessons));
+            localStorage.setItem(doneKey, JSON.stringify(this.completedLessons));
+        } catch (e) {}
     },
 
     bindEvents() {
+        // Hiện UI debug nếu đang ở debug mode
+        if (this.testerMode) {
+            document.getElementById('btn-toggle-tester-unlock')?.classList.remove('hidden');
+            document.getElementById('tester-mode-row')?.classList.remove('hidden');
+        }
+
         // Nút quay về Dashboard từ phòng tập
         const backBtn = document.getElementById('btn-back-dashboard');
         if (backBtn) {

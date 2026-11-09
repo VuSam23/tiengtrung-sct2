@@ -4,9 +4,17 @@
  */
 
 const EvalSys = {
+    /**
+     * Chuẩn hóa chuỗi đầu vào/đáp án:
+     * - Loại dấu câu ASCII + tiếng Trung đầy đủ
+     * - Loại ký tự zero-width (ZWSP, BOM, NBSP)
+     * - Loại dấu ngoặc tiếng Trung 「」『』【】〔〕
+     * - Chuẩn hoá chữ thường và loại bỏ khoảng trắng
+     */
     clean: (s) => (s || '')
+        .replace(/[\u200B\uFEFF\u00A0\u3000]/g, '')   // zero-width & full-width space
         .toLowerCase()
-        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'，。？！、：；]/g, '')
+        .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?"'，。？！、：；「」『』【】〔〕《》〈〉""'']/g, '')
         .replace(/\s+/g, '')
         .trim(),
 

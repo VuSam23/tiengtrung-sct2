@@ -2,7 +2,11 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="SCT2 – Hệ thống luyện dịch Hán ngữ chuẩn sư phạm, từ HSK 1 đến HSK 6. Luyện tập theo bài, theo cấp độ, có phát âm và theo dõi tiến độ.">
+    <meta property="og:title" content="SCT2 – Luyện Dịch Tiếng Trung HSK">
+    <meta property="og:description" content="Luyện dịch Hán ngữ theo chuẩn HSK 1–6, có phát âm và theo dõi tiến độ.">
+    <meta property="og:type" content="website">
     <title>Luyện Dịch Tiếng Trung HSK 1 - Chuẩn Sư Phạm SCT2</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,6 +44,8 @@
         .modal-card-active { transform: translateY(0) !important; }
         @keyframes heartBeat { 0% { transform: scale(1); } 25% { transform: scale(1.3); } 50% { transform: scale(0.95); } 100% { transform: scale(1); } }
         .heart-beat { animation: heartBeat 0.4s ease-in-out; }
+        /* Prevent iOS auto-zoom on input focus (font-size >= 16px) */
+        input[type="text"], input[type="search"], textarea, select { font-size: 16px !important; }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
@@ -116,8 +122,8 @@
                             <span id="dash-progress-summary" class="text-xs font-extrabold bg-black/30 px-3 py-1.5 rounded-xl border border-white/20">0/15 bài hoàn thành</span>
                             <span id="current-level-badge" class="text-xs font-bold bg-white/15 px-2.5 py-1 rounded-xl backdrop-blur-xs">Đang học HSK 1</span>
                         </div>
-                        <!-- Nút Chế Độ Tester Tạm Mở Toàn Bộ Bài -->
-                        <button id="btn-toggle-tester-unlock" class="text-[11px] font-black bg-white/20 hover:bg-white/30 text-white px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border border-white/25 cursor-pointer backdrop-blur-xs" title="Chế độ Tester: Tạm mở khóa toàn bộ bài học để kiểm thử nội dung">
+                        <!-- Nút Chế Độ Tester (Ẩn với người dùng thường; bật bằng ?debug=1 hoặc 7-tap logo) -->
+                        <button id="btn-toggle-tester-unlock" class="hidden text-[11px] font-black bg-white/20 hover:bg-white/30 text-white px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border border-white/25 cursor-pointer backdrop-blur-xs" title="Chế độ Tester: Tạm mở khóa toàn bộ bài học để kiểm thử nội dung">
                             <span>🔓</span> <span id="tester-unlock-label">Tester: Đã Mở Khóa Tất Cả</span>
                         </button>
                     </div>
@@ -385,13 +391,14 @@
                     <div class="text-xs font-black text-slate-700 dark:text-slate-300 flex items-center gap-2">
                         <span>📊</span> TIẾN TRÌNH & HỌC TẬP
                     </div>
-                    <div class="flex items-center justify-between text-xs">
+                    <!-- Tester Mode row: ẩn với người dùng thường, bật bằng ?debug=1 hoặc 7-tap logo -->
+                    <div id="tester-mode-row" class="hidden flex items-center justify-between text-xs">
                         <div>
                             <div class="font-bold">Mở khóa toàn bộ bài học (Tester Mode)</div>
                             <div class="text-[11px] text-slate-400">Bỏ qua điều kiện tuần tự để thử nghiệm mọi bài học</div>
                         </div>
                         <label class="relative inline-flex items-center cursor-pointer">
-                            <input type="checkbox" id="setting-tester-mode" class="sr-only peer" checked>
+                            <input type="checkbox" id="setting-tester-mode" class="sr-only peer">
                             <div class="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500"></div>
                         </label>
                     </div>
@@ -603,6 +610,14 @@
             <span class="text-xs font-black text-slate-800 dark:text-slate-100 tracking-wide">Đang nạp bài học...</span>
         </div>
     </div>
+
+    <!-- Noscript fallback -->
+    <noscript>
+        <div style="font-family:sans-serif;text-align:center;padding:3rem;background:#1e293b;color:#f1f5f9;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+            <h1 style="font-size:2rem;margin-bottom:1rem;">⚠️ Cần bật JavaScript</h1>
+            <p>Ứng dụng SCT2 cần JavaScript để hoạt động.<br>Hãy bật JavaScript trong trình duyệt rồi tải lại trang.</p>
+        </div>
+    </noscript>
 
     <!-- Data & Application Logic Modules -->
     <script src="data/manifest.js"></script>
