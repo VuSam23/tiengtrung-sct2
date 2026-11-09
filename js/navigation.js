@@ -278,9 +278,9 @@ const NavigationHub = {
             // Stagger animation delay theo thứ tự card (tối đa 400ms)
             card.style.animationDelay = `${Math.min(idx * 40, 400)}ms`;
 
-            // Nội dung bài học
+            // Nội dung bài học (Mobile-first min-w-0 chống tràn hàng)
             const infoDiv = document.createElement('div');
-            infoDiv.className = "flex-grow";
+            infoDiv.className = "flex-grow min-w-0";
             infoDiv.innerHTML = `
                 <div class="flex items-center gap-2 mb-1.5 flex-wrap">
                     <span class="text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full ${
@@ -292,20 +292,20 @@ const NavigationHub = {
                 </div>
                 <h4 class="font-black text-sm sm:text-base text-slate-900 dark:text-white leading-snug flex items-center gap-2">
                     <span class="w-2 h-2 rounded-full shrink-0 ${theme ? theme.dotClass : 'bg-emerald-500'}" title="${theme ? theme.name : 'HSK'}"></span>
-                    <span>${title}</span>
+                    <span class="break-words">${title}</span>
                 </h4>
                 <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-1 font-medium pl-4">
                     ${grammarSummary}
                 </p>
             `;
 
-            // Nút bấm hành động
+            // Nút bấm hành động (Touch target >= 44px)
             const actionDiv = document.createElement('div');
-            actionDiv.className = "shrink-0 flex items-center justify-end";
+            actionDiv.className = "shrink-0 flex items-center justify-end w-full sm:w-auto";
 
             if (isUnlocked) {
                 const btn = document.createElement('button');
-                btn.className = `w-full sm:w-auto px-5 py-2.5 rounded-xl text-xs font-black shadow-xs transition active:scale-95 btn-press ${
+                btn.className = `w-full sm:w-auto min-h-[44px] px-5 py-2.5 rounded-xl text-xs font-black shadow-xs transition active:scale-95 btn-press flex items-center justify-center ${
                     isCompleted 
                         ? 'bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200' 
                         : (theme ? theme.cardActiveBtn : 'bg-emerald-600 hover:bg-emerald-700 text-white')
@@ -315,7 +315,7 @@ const NavigationHub = {
                 actionDiv.appendChild(btn);
             } else {
                 actionDiv.innerHTML = `
-                    <span class="px-3.5 py-2 rounded-xl bg-slate-200/60 dark:bg-slate-800 text-slate-400 dark:text-slate-500 text-xs font-bold flex items-center gap-1.5 cursor-not-allowed">
+                    <span class="w-full sm:w-auto min-h-[44px] px-3.5 py-2 rounded-xl bg-slate-200/60 dark:bg-slate-800 text-slate-400 dark:text-slate-500 text-xs font-bold flex items-center justify-center gap-1.5 cursor-not-allowed">
                         <span>🔒</span> Đang khóa
                     </span>
                 `;

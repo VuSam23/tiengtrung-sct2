@@ -33,21 +33,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet">
 
     <style>
-        html { scrollbar-gutter: stable; overflow-y: scroll; }
+        /* ===== VIEWPORT & SAFE AREA CHO MOBILE-FIRST ===== */
+        html {
+            scrollbar-gutter: stable;
+            overflow-y: scroll;
+            min-height: 100vh;
+            min-height: 100dvh;
+        }
+        body {
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            padding-left: env(safe-area-inset-left, 0px);
+            padding-right: env(safe-area-inset-right, 0px);
+            min-height: 100vh;
+            min-height: 100dvh;
+            min-height: -webkit-fill-available;
+        }
+
+        /* ===== FLUID TYPOGRAPHY CHO CHỮ HÁN (CLAMP SCALING) ===== */
+        :root {
+            /* Chữ Hán câu bài tập: Tối thiểu 22px, lý tưởng 5vw, tối đa 32px */
+            --font-hanzi-question: clamp(1.375rem, 5vw, 2rem);
+            /* Chữ Hán trong thẻ từ ghép/lựa chọn: Tối thiểu 18px, tối đa 24px */
+            --font-hanzi-tile: clamp(1.125rem, 4vw, 1.5rem);
+            /* Pinyin phụ trợ: Tối thiểu 12px, tối đa 14px */
+            --font-pinyin: clamp(0.75rem, 2.5vw, 0.875rem);
+        }
+
         .chinese-text { font-family: "Noto Serif SC", "Kaiti SC", "STKaiti", "PingFang SC", "Microsoft YaHei", serif; }
-        button, .clickable-chip { touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+        #source-vi-text { font-size: var(--font-hanzi-question); line-height: 1.4; }
+        #source-pinyin-display { font-size: var(--font-pinyin); }
+        .hanzi-fluid { font-size: var(--font-hanzi-tile); }
+
+        /* ===== TOUCH TARGET & TƯƠNG TÁC (TỐI THIỂU 44x44PX) ===== */
+        button, .clickable-chip, [role="button"] {
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+            min-height: 44px;
+        }
         .btn-press { transition: transform 0.08s ease, box-shadow 0.08s ease; }
         .btn-press:active:not(:disabled) { transform: translateY(1px); }
+
+        /* Ngăn iOS Safari tự zoom khi chạm vào input */
+        input[type="text"], input[type="search"], textarea, select { font-size: 16px !important; }
+
+        /* ===== CUỘN NGANG MƯỢT MÀ KHÔNG HIỆN THANH CUỘN (SCROLLBAR-HIDE) ===== */
+        .utility-scroll-row, #level-selector-tabs {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            flex-wrap: nowrap !important;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .utility-scroll-row::-webkit-scrollbar, #level-selector-tabs::-webkit-scrollbar {
+            display: none;
+        }
+        .utility-scroll-row > *, #level-selector-tabs > * {
+            flex-shrink: 0;
+        }
+
+        /* ===== HERO BANNER COMPACT TRÊN MÀN HÌNH NHỎ ===== */
+        @media (max-width: 639px) {
+            #dash-banner-card {
+                padding: 1rem 1.15rem;
+            }
+            #dash-banner-title {
+                font-size: 1.15rem;
+                line-height: 1.3;
+            }
+            #dash-banner-desc {
+                display: none; /* Ẩn mô tả dài trên mobile để đẩy danh sách bài học lên */
+            }
+        }
+
+        /* ===== MÀN HÌNH CỰC HẸP (< 375PX) ===== */
+        @media (max-width: 374px) {
+            #brand-subtitle { display: none; }
+            #btn-open-lesson-modal { max-width: 130px; font-size: 11px; }
+            #stat-streak { display: none; }
+        }
+
+        /* ===== ANIMATIONS & SKELETON ===== */
         @keyframes slideUpFade { 0% { transform: translateY(6px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
         .animate-pop { animation: slideUpFade 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
         .modal-active { opacity: 1 !important; pointer-events: auto !important; }
         .modal-card-active { transform: translateY(0) !important; }
         @keyframes heartBeat { 0% { transform: scale(1); } 25% { transform: scale(1.3); } 50% { transform: scale(0.95); } 100% { transform: scale(1); } }
         .heart-beat { animation: heartBeat 0.4s ease-in-out; }
-        /* Prevent iOS auto-zoom on input focus (font-size >= 16px) */
-        input[type="text"], input[type="search"], textarea, select { font-size: 16px !important; }
 
-        /* ===== SKELETON LOADING ===== */
         @keyframes shimmer {
             0%   { background-position: -600px 0; }
             100% { background-position: 600px 0; }
@@ -62,7 +138,6 @@
             animation: shimmer 1.4s ease-in-out infinite;
             border-radius: 0.5rem;
         }
-        /* Dark mode shimmer */
         .dark .skeleton {
             background: linear-gradient(90deg,
                 rgba(51,65,85,0.5) 25%,
@@ -72,7 +147,6 @@
             background-size: 600px 100%;
             animation: shimmer 1.4s ease-in-out infinite;
         }
-        /* Fade-in khi content thật xuất hiện */
         @keyframes fadeInCard {
             from { opacity: 0; transform: translateY(8px); }
             to   { opacity: 1; transform: translateY(0); }
@@ -82,28 +156,28 @@
         }
     </style>
 </head>
-<body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+<body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200" style="min-height: 100dvh; min-height: -webkit-fill-available;">
 
-    <header class="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-40 px-3 py-2.5 sm:px-6 shadow-sm">
-        <div class="max-w-4xl mx-auto flex items-center justify-between gap-2">
-            <div class="flex items-center gap-2">
+    <header class="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-40 px-2.5 sm:px-6 py-2 sm:py-2.5 shadow-sm" style="padding-top: max(0.5rem, env(safe-area-inset-top, 0px));">
+        <div class="max-w-4xl mx-auto flex items-center justify-between gap-1.5 sm:gap-2">
+            <div class="flex items-center gap-1.5 sm:gap-2 min-w-0">
                 <!-- NÚT QUAY LẠI LỘ TRÌNH (Chỉ hiện khi ở phòng luyện tập) -->
-                <button id="btn-back-dashboard" class="hidden px-2.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs flex items-center gap-1 transition active:scale-95 shadow-xs" title="Quay lại Lộ trình">
+                <button id="btn-back-dashboard" class="hidden px-2.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs flex items-center gap-1 transition active:scale-95 shadow-xs shrink-0" title="Quay lại Lộ trình">
                     <span>⟵</span> <span class="hidden sm:inline">Lộ trình</span>
                 </button>
 
-                <div id="brand-badge" class="flex items-center gap-2 cursor-pointer select-none" title="Trang chủ Lộ trình">
-                    <span id="brand-badge-icon" class="w-9 h-9 rounded-xl bg-emerald-600 text-white font-black flex items-center justify-center text-lg shadow-sm transition-colors duration-300">汉</span>
-                    <div>
-                        <h1 id="brand-header-title" class="text-xs sm:text-sm font-black tracking-tight text-slate-900 dark:text-white leading-tight">Luyện Dịch HSK 1 · SCT2</h1>
-                        <span id="brand-subtitle" class="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold block transition-colors duration-300">Phương pháp bóc tách ngữ pháp</span>
+                <div id="brand-badge" class="flex items-center gap-1.5 sm:gap-2 cursor-pointer select-none shrink-0" title="Trang chủ Lộ trình">
+                    <span id="brand-badge-icon" class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-emerald-600 text-white font-black flex items-center justify-center text-base sm:text-lg shadow-sm transition-colors duration-300">汉</span>
+                    <div class="min-w-0">
+                        <h1 id="brand-header-title" class="text-xs sm:text-sm font-black tracking-tight text-slate-900 dark:text-white leading-tight truncate">SCT2 · Luyện Dịch</h1>
+                        <span id="brand-subtitle" class="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold block transition-colors duration-300 truncate">Bóc tách ngữ pháp</span>
                     </div>
                 </div>
             </div>
 
             <!-- CHỌN BÀI HỌC NHANH (Modal Trigger) -->
-            <div class="flex items-center gap-1.5">
-                <button id="btn-open-lesson-modal" onclick="if(window.NavigationHub)NavigationHub.openModal()" class="max-w-[160px] sm:max-w-[240px] px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 text-xs font-black truncate flex items-center gap-1.5 shadow-xs transition active:scale-95 cursor-pointer" title="Bấm để chọn bài học nhanh">
+            <div class="flex items-center gap-1 min-w-0 shrink">
+                <button id="btn-open-lesson-modal" onclick="if(window.NavigationHub)NavigationHub.openModal()" class="max-w-[130px] xs:max-w-[160px] sm:max-w-[240px] px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 text-xs font-black truncate flex items-center gap-1.5 shadow-xs transition active:scale-95 cursor-pointer" title="Bấm để chọn bài học nhanh">
                     <span id="header-lesson-dot" class="w-2 h-2 rounded-full shrink-0 bg-[#10B981]"></span>
                     <span id="header-lesson-title" class="truncate">Bài 1: Chào hỏi</span>
                     <span class="text-[10px] text-slate-400 shrink-0">▾</span>
@@ -112,49 +186,49 @@
                 <select id="lesson-picker" class="hidden"></select>
             </div>
 
-            <div class="flex items-center gap-2">
-                <div id="heart-container" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-rose-50 dark:bg-rose-950/50 border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-400 font-black text-xs cursor-pointer select-none transition-transform active:scale-95" title="Số lượt tim còn lại (Bấm để nạp đầy)">
+            <div class="flex items-center gap-1 sm:gap-2 shrink-0">
+                <div id="heart-container" class="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-full bg-rose-50 dark:bg-rose-950/50 border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-400 font-black text-xs cursor-pointer select-none transition-transform active:scale-95" title="Số lượt tim còn lại (Bấm để nạp đầy)">
                     <span id="heart-icon">❤️</span>
                     <span id="stat-hearts">5</span>
                 </div>
-                <div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/50 border border-amber-300 dark:border-amber-800 text-amber-700 dark:text-amber-400 font-black text-xs" title="Chuỗi ngày luyện dịch">
+                <div class="flex items-center gap-1 px-2 sm:px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/50 border border-amber-300 dark:border-amber-800 text-amber-700 dark:text-amber-400 font-black text-xs" title="Chuỗi ngày luyện dịch">
                     <span>🔥</span>
                     <span id="stat-streak">7</span>
                 </div>
                 <!-- NÚT CÀI ĐẶT HỆ THỐNG -->
-                <button id="btn-admin" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition active:scale-95 shadow-xs border border-slate-200 dark:border-slate-700" title="Cài đặt hệ thống & luyện tập">
+                <button id="btn-admin" class="flex items-center justify-center gap-1 px-2.5 sm:px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition active:scale-95 shadow-xs border border-slate-200 dark:border-slate-700" title="Cài đặt hệ thống & luyện tập">
                     <span>⚙️</span>
-                    <span class="hidden sm:inline">Cài đặt</span>
+                    <span class="hidden md:inline">Cài đặt</span>
                 </button>
-                <button id="btn-theme-toggle" class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm" title="Chế độ Sáng / Tối">
+                <button id="btn-theme-toggle" class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm flex items-center justify-center" title="Chế độ Sáng / Tối">
                     <span id="theme-icon">🌙</span>
                 </button>
             </div>
         </div>
         <div id="session-progress-header" class="hidden max-w-4xl mx-auto mt-2 flex items-center gap-3">
-            <div class="flex-grow bg-[#E5E7EB] dark:bg-slate-800 h-2.5 rounded-full overflow-hidden shadow-inner">
+            <div class="flex-grow bg-[#E5E7EB] dark:bg-slate-800 h-2 sm:h-2.5 rounded-full overflow-hidden shadow-inner">
                 <div id="session-progress-bar" class="bg-[#10B981] h-full rounded-full transition-all duration-300 ease-out" style="width: 0%;"></div>
             </div>
             <span id="session-progress-text" class="text-[11px] font-bold text-slate-400 min-w-[36px] text-right">0/0</span>
         </div>
     </header>
 
-    <main class="flex-grow w-full max-w-3xl mx-auto px-4 py-4 sm:py-5 flex flex-col justify-start pb-28 sm:pb-32">
+    <main class="flex-grow w-full max-w-3xl mx-auto px-3 sm:px-4 py-3 sm:py-5 flex flex-col justify-start" style="padding-bottom: calc(6.5rem + env(safe-area-inset-bottom, 0px));">
         <!-- TẦNG 1: DASHBOARD LỘ TRÌNH (Trang chủ) -->
-        <div id="dashboard-view" class="w-full flex flex-col gap-4 animate-pop">
-            <!-- Banner Tổng Quan Tiến Trình -->
-            <div id="dash-banner-card" class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-3xl p-5 sm:p-6 shadow-md relative overflow-hidden transition-all duration-300">
+        <div id="dashboard-view" class="w-full flex flex-col gap-3 sm:gap-4 animate-pop">
+            <!-- Banner Tổng Quan Tiến Trình (Compact Mobile-First) -->
+            <div id="dash-banner-card" class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-3xl p-4 sm:p-6 shadow-md relative overflow-hidden transition-all duration-300">
                 <div class="relative z-10">
-                    <div class="flex items-center justify-between mb-2">
-                        <span id="dash-level-pill" class="text-[11px] font-black uppercase tracking-wider bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-xs">HSK 1 · NỀN TẢNG</span>
-                        <span id="dash-total-stars" class="font-black text-sm bg-black/20 px-3 py-1 rounded-full backdrop-blur-xs">⭐ 0</span>
+                    <div class="flex items-center justify-between mb-1.5 sm:mb-2">
+                        <span id="dash-level-pill" class="text-[10px] sm:text-[11px] font-black uppercase tracking-wider bg-white/20 px-2.5 py-0.5 sm:py-1 rounded-full backdrop-blur-xs">HSK 1 · NỀN TẢNG</span>
+                        <span id="dash-total-stars" class="font-black text-xs sm:text-sm bg-black/20 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full backdrop-blur-xs">⭐ 0</span>
                     </div>
-                    <h2 id="dash-banner-title" class="text-xl sm:text-2xl font-black mb-1">Chinh Phục Dịch Chuẩn HSK 1</h2>
+                    <h2 id="dash-banner-title" class="text-base sm:text-2xl font-black mb-0.5 sm:mb-1">Chinh Phục Dịch Chuẩn HSK 1</h2>
                     <p id="dash-banner-desc" class="text-xs sm:text-sm text-white/90 font-medium">Bóc tách cú pháp, tiêu diệt bẫy dịch thô và hình thành phản xạ dịch tự nhiên.</p>
-                    <div class="mt-4 flex items-center justify-between gap-2 flex-wrap">
-                        <div class="flex items-center gap-2">
-                            <span id="dash-progress-summary" class="text-xs font-extrabold bg-black/30 px-3 py-1.5 rounded-xl border border-white/20">0/15 bài hoàn thành</span>
-                            <span id="current-level-badge" class="text-xs font-bold bg-white/15 px-2.5 py-1 rounded-xl backdrop-blur-xs">Đang học HSK 1</span>
+                    <div class="mt-2.5 sm:mt-4 flex items-center justify-between gap-2 flex-wrap">
+                        <div class="flex items-center gap-1.5 sm:gap-2">
+                            <span id="dash-progress-summary" class="text-[11px] sm:text-xs font-extrabold bg-black/30 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-white/20">0/15 bài hoàn thành</span>
+                            <span id="current-level-badge" class="hidden sm:inline text-xs font-bold bg-white/15 px-2.5 py-1 rounded-xl backdrop-blur-xs">Đang học HSK 1</span>
                         </div>
                         <!-- Nút Chế Độ Tester (Ẩn với người dùng thường; bật bằng ?debug=1 hoặc 7-tap logo) -->
                         <button id="btn-toggle-tester-unlock" class="hidden text-[11px] font-black bg-white/20 hover:bg-white/30 text-white px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border border-white/25 cursor-pointer backdrop-blur-xs" title="Chế độ Tester: Tạm mở khóa toàn bộ bài học để kiểm thử nội dung">
@@ -162,14 +236,36 @@
                         </button>
                     </div>
                 </div>
-                <div class="absolute -right-4 -bottom-6 text-8xl opacity-15 select-none pointer-events-none font-serif">汉</div>
+                <div class="absolute -right-4 -bottom-6 text-7xl sm:text-8xl opacity-15 select-none pointer-events-none font-serif">汉</div>
             </div>
 
-            <!-- THANH ĐIỀU HƯỚNG CẤP ĐỘ PHÂN ĐOẠN (SEGMENTED CONTROL CAO CẤP) -->
-            <div class="flex items-center justify-between gap-2 px-1 mt-1">
-                <div class="flex items-center gap-2">
-                    <span class="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">Trình Độ:</span>
-                    <div class="inline-flex p-1 bg-slate-200/80 dark:bg-slate-800/80 rounded-2xl border border-slate-300/80 dark:border-slate-700/80 shadow-inner flex-wrap gap-1" id="level-selector-tabs">
+            <!-- THANH ĐIỀU HƯỚNG CẤP ĐỘ PHÂN ĐOẠN (CUỘN NGANG MƯỢT MÀ TRÊN MOBILE) -->
+            <div class="flex items-center justify-between gap-2 px-1 mt-0.5 sm:mt-1">
+                <div class="flex items-center gap-2 min-w-0 flex-1">
+                    <span class="text-[11px] sm:text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 shrink-0">Trình Độ:</span>
+                    <div class="utility-scroll-row inline-flex p-1 bg-slate-200/80 dark:bg-slate-800/80 rounded-2xl border border-slate-300/80 dark:border-slate-700/80 shadow-inner" id="level-selector-tabs">
+                        <button data-level="hsk1" class="level-tab-btn active px-3 py-1.5 rounded-xl text-xs font-black transition-all bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shadow-sm cursor-pointer flex items-center gap-1.5 shrink-0">
+                            <span class="w-2 h-2 rounded-full bg-[#10B981]"></span> HSK 1
+                        </button>
+                        <button data-level="hsk2" class="level-tab-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 cursor-pointer flex items-center gap-1.5 shrink-0">
+                            <span class="w-2 h-2 rounded-full bg-[#0EA5E9]"></span> HSK 2
+                        </button>
+                        <button data-level="hsk3" class="level-tab-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer flex items-center gap-1.5 shrink-0">
+                            <span class="w-2 h-2 rounded-full bg-[#3B82F6]"></span> HSK 3
+                        </button>
+                        <button data-level="hsk4" class="level-tab-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer flex items-center gap-1.5 shrink-0">
+                            <span class="w-2 h-2 rounded-full bg-[#F59E0B]"></span> HSK 4
+                        </button>
+                        <button data-level="hsk5" class="level-tab-btn px-2.5 py-1.5 rounded-xl text-xs font-bold text-slate-400 dark:text-slate-500 opacity-60 cursor-not-allowed flex items-center gap-1.5 shrink-0" title="Sắp ra mắt">
+                            <span class="w-2 h-2 rounded-full bg-[#EF4444]"></span> HSK 5 🔒
+                        </button>
+                        <button data-level="hsk6" class="level-tab-btn px-2.5 py-1.5 rounded-xl text-xs font-bold text-slate-400 dark:text-slate-500 opacity-60 cursor-not-allowed flex items-center gap-1.5 shrink-0" title="Sắp ra mắt">
+                            <span class="w-2 h-2 rounded-full bg-[#8B5CF6]"></span> HSK 6 🔒
+                        </button>
+                    </div>
+                </div>
+                <h3 id="lesson-list-level-title" class="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 hidden sm:inline shrink-0">Danh Sách Bài Học HSK 1</h3>
+            </div>
                         <button data-level="hsk1" class="level-tab-btn active px-3 py-1.5 rounded-xl text-xs font-black transition-all bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shadow-sm cursor-pointer flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-[#10B981]"></span> HSK 1
                         </button>
@@ -300,15 +396,15 @@
                     </div>
                 </div>
 
-                <!-- Cảnh báo Bẫy Ngữ Pháp Realtime -->
-                <div id="realtime-trap-alert" class="hidden animate-pop mb-3 p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/80 text-amber-800 dark:text-amber-200 text-xs flex items-start gap-2.5 shadow-xs">
+                <!-- Cảnh báo Bẫy Ngữ Pháp Realtime (Responsive Mobile) -->
+                <div id="realtime-trap-alert" class="hidden animate-pop mb-3 p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/80 text-amber-800 dark:text-amber-200 text-xs flex items-start gap-2 sm:gap-2.5 shadow-xs">
                     <span class="text-base shrink-0 mt-0.5">⚠️</span>
-                    <div class="flex-grow">
-                        <div class="font-black text-xs text-amber-900 dark:text-amber-200 flex items-center gap-1.5 flex-wrap">
-                            <span>Phát hiện bẫy cú pháp:</span>
-                            <span id="trap-pattern-badge" class="px-2 py-0.5 rounded-lg bg-amber-200/80 dark:bg-amber-900/60 font-mono text-rose-700 dark:text-rose-300 font-bold"></span>
+                    <div class="flex-grow min-w-0">
+                        <div class="font-black text-xs text-amber-900 dark:text-amber-200 flex flex-col xs:flex-row xs:items-center gap-1 xs:gap-1.5 flex-wrap">
+                            <span class="shrink-0">Phát hiện bẫy cú pháp:</span>
+                            <span id="trap-pattern-badge" class="px-2 py-0.5 rounded-lg bg-amber-200/80 dark:bg-amber-900/60 font-mono text-rose-700 dark:text-rose-300 font-bold break-all max-w-full"></span>
                         </div>
-                        <p id="trap-msg-content" class="text-[11px] mt-1 leading-relaxed text-slate-700 dark:text-slate-300"></p>
+                        <p id="trap-msg-content" class="text-[11px] mt-1 leading-relaxed text-slate-700 dark:text-slate-300 overflow-x-auto"></p>
                     </div>
                 </div>
 
@@ -332,18 +428,18 @@
         </div>
     </main>
 
-    <footer id="bottom-action-drawer" class="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-3 px-4 sticky bottom-0 z-30 shadow-lg">
-        <div class="max-w-3xl mx-auto flex flex-col gap-2.5">
-            <div id="evaluation-banner" class="hidden rounded-2xl p-4 border transition-all text-sm leading-relaxed animate-pop">
-                <div class="flex items-start gap-3">
-                    <span id="eval-icon" class="text-2xl mt-0.5">💡</span>
+    <footer id="bottom-action-drawer" class="w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 py-2.5 sm:py-3 px-3 sm:px-4 sticky bottom-0 z-30 shadow-lg transition-all" style="padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));">
+        <div class="max-w-3xl mx-auto flex flex-col gap-2">
+            <div id="evaluation-banner" class="hidden rounded-2xl p-3 sm:p-4 border transition-all text-sm leading-relaxed animate-pop">
+                <div class="flex items-start gap-2.5 sm:gap-3">
+                    <span id="eval-icon" class="text-xl sm:text-2xl mt-0.5">💡</span>
                     <div class="flex-grow">
                         <div class="flex items-center justify-between">
-                            <h4 id="eval-status-title" class="font-black text-base">Phân tích bản dịch</h4>
+                            <h4 id="eval-status-title" class="font-black text-sm sm:text-base">Phân tích bản dịch</h4>
                             <span id="eval-score-badge" class="text-xs font-black px-2.5 py-0.5 rounded-full"></span>
                         </div>
-                        <div id="eval-message-body" class="mt-1.5 text-xs sm:text-sm space-y-1.5 font-medium"></div>
-                        <div id="standard-answer-box" class="hidden mt-2.5 pt-2.5 border-t border-slate-200/80 dark:border-slate-700/80 text-xs sm:text-sm font-bold">
+                        <div id="eval-message-body" class="mt-1 text-xs sm:text-sm space-y-1 font-medium"></div>
+                        <div id="standard-answer-box" class="hidden mt-2 pt-2 border-t border-slate-200/80 dark:border-slate-700/80 text-xs sm:text-sm font-bold">
                             <span class="opacity-80">✓ Đáp án chuẩn:</span>
                             <span id="tier-standard" class="font-extrabold ml-1"></span>
                         </div>
@@ -351,12 +447,12 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-between gap-3 w-full">
+            <div class="flex items-center justify-between gap-2 sm:gap-3 w-full">
                 <div id="left-actions">
-                    <button id="btn-pass-action" class="px-4 py-3 text-xs sm:text-sm font-bold text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition">Bỏ qua</button>
+                    <button id="btn-pass-action" class="min-h-[44px] px-3 sm:px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition flex items-center justify-center">Bỏ qua</button>
                 </div>
                 <div class="ml-auto flex items-center justify-end">
-                    <button id="btn-submit-action" class="min-w-[180px] py-3.5 px-6 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-sm shadow-md btn-press tracking-wide disabled:opacity-40 disabled:cursor-not-allowed" disabled>KIỂM TRA DỊCH</button>
+                    <button id="btn-submit-action" class="min-h-[48px] min-w-[150px] sm:min-w-[180px] py-3 px-5 sm:px-6 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-xs sm:text-sm shadow-md btn-press tracking-wide disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center" disabled>KIỂM TRA DỊCH</button>
                 </div>
             </div>
         </div>
