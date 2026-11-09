@@ -1,580 +1,641 @@
-[
-  {
-    "id": "b11-01",
-    "type": "sentence_parsing",
-    "title": "Giới thiệu bạn bè qua trung gian",
-    "vi": "Hôm qua Edward giới thiệu với tôi một người bạn người Canada.",
-    "zh": "昨天爱德华给我介绍一个加拿大朋友",
-    "standardTrans": "昨天爱德华给我介绍一个加拿大朋友",
-    "pinyin": "Zuótiān, Àidéhuá gěi wǒ jièshào yí gè Jiānádà péngyou.",
-    "grammarPoint": "Cấu trúc giới thiệu cho ai: S + 给 + Đối tượng + 介绍 + Tân ngữ",
-    "tokens": [
+{
+  "lessonId": "b11",
+  "lessonTitle": "第十一课: 我们都是留学生",
+  "quickNotes": {
+    "vocabTips": [
       {
-        "text": "Edward",
-        "hz": "爱德华",
-        "py": "Àidéhuá",
-        "hv": "Ái Đức Hoa",
-        "role": "Chủ ngữ (tên riêng)",
-        "vn": "Edward",
-        "radicals": "爱 = Bộ trảo 爫 + chữ mịch 冖 + bộ tâm 心 + bộ truy 夂; 德 = Bộ xích 彳 + bộ thập 十 + chữ tứ 罒 + bộ nhất 一 + bộ tâm 心; 华 = Bộ thập 十 + chữ hóa 化"
+        "word": "也 (yě) vs 都 (dōu)",
+        "py": "yě vs dōu",
+        "note": "也 biểu thị sự đồng nhất với đối tượng khác ('cũng'). 都 biểu thị toàn bộ tập thể ('đều'). Khi đi cùng nhau, 也 luôn đứng trước 都: 也都 (cũng đều), không nói 都也."
       },
       {
-        "text": "Giới thiệu cho tôi",
-        "hz": "给我介绍",
-        "py": "gěi wǒ jièshào",
-        "hv": "Cấp ngã giới thiệu",
-        "role": "Giới từ kết cấu + Động từ",
-        "vn": "Giới thiệu với tôi, giới thiệu cho tôi",
-        "radicals": "介 = Bộ nhân 人 + nét phẩy + nét sổ; 绍 = Bộ mịch 纟 + chữ triệu 召"
+        "word": "俩 (liǎ)",
+        "py": "liǎ",
+        "note": "Bản thân 俩 đã tương đương 两个 (hai người), tuyệt đối không thêm lượng từ 个 (nói 我们俩, 你们俩, 他们俩; không nói 两个俩)."
       },
       {
-        "text": "Canada",
-        "hz": "加拿大",
-        "py": "Jiānádà",
-        "hv": "Gia Nã Đại",
-        "role": "Định ngữ chỉ quốc gia",
-        "vn": "Nước Canada",
-        "radicals": "加 = Bộ lực 力 + bộ khẩu 口; 拿 = Chữ hợp 合 + bộ thủ 手; 大 = Bộ đại 大"
+        "word": "位 (wèi)",
+        "py": "wèi",
+        "note": "Lượng từ lịch sự chỉ người (一位老师, 哪位教授). Khi hỏi 'là vị nào/ai thế', dùng 哪位 thay vì 哪个."
+      },
+      {
+        "word": "给...介绍 (gěi... jièshào)",
+        "py": "gěi... jièshào",
+        "note": "Cấu trúc giới từ: 给 + Người + 介绍 + Đối tượng (giới thiệu ai cho ai). Tự mình giới thiệu: 我来介绍一下儿."
+      },
+      {
+        "word": "教 (jiāo)",
+        "py": "jiāo",
+        "note": "Động từ mang 2 tân ngữ: 教 + Người (Tân ngữ 1) + Môn học/Nội dung (Tân ngữ 2). Ví dụ: 教我们汉语."
       }
     ],
-    "tiles": [
-      { "id": "t5", "text": "跟我不介绍", "tag": "Bẫy dịch bồi" },
-      { "id": "t2", "text": "爱德华", "tag": "Chủ ngữ" },
-      { "id": "t4", "text": "一个加拿大朋友", "tag": "Tân ngữ" },
-      { "id": "t1", "text": "昨天", "tag": "Thời gian" },
-      { "id": "t6", "text": "朋友加拿大", "tag": "Bẫy đảo ngữ" },
-      { "id": "t3", "text": "给我介绍", "tag": "Vị ngữ" }
-    ],
-    "targetOrder": ["t1", "t2", "t3", "t4"],
-    "requiredKeywordsZh": ["昨天", "爱德华", "给我介绍", "加拿大朋友"],
-    "wordBankPool": ["一个加拿大朋友", "跟我不介绍", "爱德华", "朋友加拿大", "昨天", "给我介绍", "介绍给我"],
-    "traps": [
-      {
-        "pattern": "介绍给我",
-        "msg": "Lỗi ngữ tự: Trong tiếng Trung, cụm giới từ '给 + đối tượng' phải đứng TRƯỚC động từ ('给我介绍'), không đặt sau động từ như tiếng Việt."
-      },
-      {
-        "pattern": "朋友加拿大",
-        "msg": "Lỗi định ngữ: Tên quốc gia bổ nghĩa chỉ xuất xứ phải đứng trước danh từ ('加拿大朋友'), không nói ngược '朋友加拿大'."
-      }
-    ],
-    "explanation": "Cấu trúc giới từ chỉ đối tượng tiếp nhận hành động: 给 + Người + Động từ ('给我介绍' = giới thiệu cho tôi)."
+    "grammarTips": [
+      "Vị trí phó từ 也 và 都: Bắt buộc đứng TRƯỚC động từ hoặc tính từ, không đặt ở đầu câu hoặc cuối câu như tiếng Việt.",
+      "Phủ định toàn bộ vs Phủ định bộ phận: 都不 (tất cả đều không) vs 不都 (không phải tất cả đều). Ví dụ: 都不去 (đều không đi).",
+      "Phó từ 还 biểu thị sự bổ sung, tăng tiến: Đã làm A, 还 làm thêm B (她学德语，还学英语).",
+      "Cụm động từ làm tân ngữ cho 给: S + 给 + Đối tượng + Động từ (爱德华给我介绍一个朋友)."
+    ]
   },
-  {
-    "id": "b11-02",
-    "type": "anti_word_by_word",
-    "title": "Hỏi danh tính tôn kính với lượng từ 位",
-    "vi": "Xin hỏi, giáo sư Vương là vị nào?",
-    "zh": "请问王教授是哪位",
-    "standardTrans": "请问王教授是哪位",
-    "pinyin": "Qǐngwèn, Wáng jiàoshòu shì nǎ wèi?",
-    "grammarPoint": "Lượng từ lịch sự chỉ người: 哪 + 位 (thay thế cho 哪个人)",
-    "tokens": [
-      {
-        "text": "Giáo sư Vương",
-        "hz": "王教授",
-        "py": "Wáng jiàoshòu",
-        "hv": "Vương giáo thụ",
-        "role": "Chủ ngữ (họ + chức danh)",
-        "vn": "Giáo sư Vương",
-        "radicals": "教 = Chữ hiếu 孝 (bộ lão 老 + bộ tử 子) + bộ phộc 攵; 授 = Bộ thủ 扌 + chữ thụ 受 (bộ mịch 冖 + bộ hựu 又)"
-      },
-      {
-        "text": "Vị nào",
-        "hz": "哪位",
-        "py": "nǎ wèi",
-        "hv": "Nả vị",
-        "role": "Đại từ nghi vấn lịch sự",
-        "vn": "Vị nào, người nào",
-        "radicals": "哪 = Bộ khẩu 口 + chữ na 那; 位 = Bộ nhân đứng 亻 + chữ lập 立"
-      }
-    ],
-    "tiles": [
-      { "id": "t4", "text": "教授王", "tag": "Bẫy danh xưng" },
-      { "id": "t2", "text": "王教授", "tag": "Chủ ngữ" },
-      { "id": "t1", "text": "请问", "tag": "Từ lịch sự" },
-      { "id": "t5", "text": "哪位吗", "tag": "Bẫy thừa 吗" },
-      { "id": "t3", "text": "是哪位", "tag": "Vị ngữ hỏi" }
-    ],
-    "targetOrder": ["t1", "t2", "t3"],
-    "requiredKeywordsZh": ["请问", "王教授", "是哪位"],
-    "wordBankPool": ["教授王", "王教授", "请问", "哪个位", "是哪位", "哪位吗", "是谁"],
-    "traps": [
-      {
-        "pattern": "教授王",
-        "msg": "Lỗi danh xưng: Trong tiếng Trung, họ luôn đặt trước chức vụ nghề nghiệp ('王教授'), tuyệt đối không nói '教授王'."
-      },
-      {
-        "pattern": "哪位吗",
-        "msg": "Thừa trợ từ: '哪位' (vị nào) đã là đại từ nghi vấn, cuối câu tuyệt đối KHÔNG thêm trợ từ '吗'."
-      }
-    ],
-    "explanation": "Khi hỏi danh tính người lớn tuổi, thầy cô giáo một cách trang trọng và lịch sự, dùng '哪位' (vị nào) thay cho '谁' (ai) hoặc '哪个人'."
-  },
-  {
-    "id": "b11-03",
-    "type": "sentence_parsing",
-    "title": "Phủ định liên tiếp với phó từ 也",
-    "vi": "Tôi không biết số điện thoại của giám đốc Trương, giáo sư Bạch và thư ký của ông ấy cũng không biết số điện thoại của giám đốc Trương.",
-    "zh": "我不知道张经理的电话号码白教授和他的秘书也不知道张经理的电话号码",
-    "standardTrans": "我不知道张经理的电话号码白教授和他的秘书也不知道张经理的电话号码",
-    "pinyin": "Wǒ bù zhīdào Zhāng jīnglǐ de diànhuà hàomǎ. Bái jiàoshòu hé tā de mìshū yě bù zhīdào Zhāng jīnglǐ de diànhuà hàomǎ.",
-    "grammarPoint": "Phó từ 也 (cũng) đứng trước phó từ phủ định 不: 也 + 不 + 知道",
-    "tokens": [
-      {
-        "text": "Giám đốc Trương",
-        "hz": "张经理",
-        "py": "Zhāng jīnglǐ",
-        "hv": "Trương kinh lý",
-        "role": "Họ + Chức vụ",
-        "vn": "Giám đốc Trương",
-        "radicals": "经 = Bộ mịch 纟 + chữ kinh 𢀖; 理 = Bộ ngọc 王 + chữ lý 里"
-      },
-      {
-        "text": "Giáo sư Bạch",
-        "hz": "白教授",
-        "py": "Bái jiàoshòu",
-        "hv": "Bạch giáo thụ",
-        "role": "Họ + Chức vụ",
-        "vn": "Giáo sư Bạch",
-        "radicals": "白 = Bộ bạch 白; 教授 = Giáo sư"
-      },
-      {
-        "text": "Thư ký",
-        "hz": "秘书",
-        "py": "mìshū",
-        "hv": "Bí thư",
-        "role": "Danh từ chức vụ",
-        "vn": "Thư ký",
-        "radicals": "秘 = Bộ hòa 禾 + chữ tất 必; 书 = Bộ hoành 乛 + nét sổ + nét chấm"
-      },
-      {
-        "text": "Cũng không biết",
-        "hz": "也不知道",
-        "py": "yě bù zhīdào",
-        "hv": "Dã bất tri đạo",
-        "role": "Phó từ + Cụm vị ngữ",
-        "vn": "Cũng không biết",
-        "radicals": "也 = Bộ dã 也; 不 = Bộ nhất 一; 知道 = Biết"
-      }
-    ],
-    "tiles": [
-      { "id": "t4", "text": "白教授和他的秘书", "tag": "Chủ ngữ 2" },
-      { "id": "t2", "text": "张经理的电话号码", "tag": "Tân ngữ 1" },
-      { "id": "t5", "text": "也不知道", "tag": "Cũng không biết" },
-      { "id": "t1", "text": "我不知道", "tag": "Chủ vị 1" },
-      { "id": "t6", "text": "张经理的电话号码", "tag": "Tân ngữ 2" },
-      { "id": "t7", "text": "不也不知道", "tag": "Bẫy thứ tự phó từ" }
-    ],
-    "targetOrder": ["t1", "t2", "t4", "t5", "t6"],
-    "requiredKeywordsZh": ["张经理的电话号码", "白教授", "秘书", "也不知道"],
-    "wordBankPool": ["我不知道", "张经理的电话号码", "白教授和他的秘书", "也不知道", "不也不知道", "经理张", "教授白"],
-    "traps": [
-      {
-        "pattern": "不也",
-        "msg": "Lỗi trật tự phó từ: 'Cũng không' trong tiếng Trung bắt buộc phải đặt '也' trước '不' ('也不知道'), tuyệt đối không nói '不也'."
-      },
-      {
-        "pattern": "经理张",
-        "msg": "Lỗi chức danh: Họ luôn đứng trước chức vụ: '张经理' (Giám đốc Trương), không dịch ngược thành '经理张'."
-      }
-    ],
-    "explanation": "Quy tắc phó từ liên kết: Phó từ '也' luôn đứng trước phó từ phủ định '不' (也 + 不 + Động từ)."
-  },
-  {
-    "id": "b11-04",
-    "type": "anti_word_by_word",
-    "title": "Phối hợp các phó từ 也 và 还",
-    "vi": "Tôi học tiếng Đức, cô ấy cũng học tiếng Đức, cô ấy còn học cả tiếng Anh nữa.",
-    "zh": "我学德语她也学德语她还学英语",
-    "standardTrans": "我学德语她也学德语她还学英语",
-    "pinyin": "Wǒ xué déyǔ, tā yě xué déyǔ, tā hái xué yīngyǔ.",
-    "grammarPoint": "Phó từ đồng nhất 也 (cũng) kết hợp phó từ bổ sung 还 (còn, thêm nữa)",
-    "tokens": [
-      {
-        "text": "Tiếng Đức",
-        "hz": "德语",
-        "py": "déyǔ",
-        "hv": "Đức ngữ",
-        "role": "Tân ngữ chỉ ngôn ngữ",
-        "vn": "Tiếng Đức",
-        "radicals": "德 = Bộ xích 彳 + bộ thập 十 + chữ 罒 + bộ nhất 一 + bộ tâm 心; 语 = Bộ ngôn 讠 + chữ ngũ 五 + bộ khẩu 口"
-      },
-      {
-        "text": "Cũng học",
-        "hz": "也学",
-        "py": "yě xué",
-        "hv": "Dã học",
-        "role": "Phó từ + Động từ",
-        "vn": "Cũng học",
-        "radicals": "也 = Bộ dã 也; 学 = Bộ miên biến thể 冖 + bộ tử 子"
-      },
-      {
-        "text": "Còn học",
-        "hz": "还学",
-        "py": "hái xué",
-        "hv": "Hoàn học",
-        "role": "Phó từ bổ sung + Động từ",
-        "vn": "Còn học, học thêm",
-        "radicals": "还 = Chữ bất 不 + bộ sước 辶"
-      }
-    ],
-    "tiles": [
-      { "id": "t3", "text": "她还学英语", "tag": "Vế bổ sung" },
-      { "id": "t1", "text": "我学德语", "tag": "Vế gốc" },
-      { "id": "t2", "text": "她也学德语", "tag": "Vế đồng nhất" },
-      { "id": "t4", "text": "她还学英语也", "tag": "Bẫy vị trí phó từ" },
-      { "id": "t5", "text": "学也德语", "tag": "Bẫy trật tự" }
-    ],
-    "targetOrder": ["t1", "t2", "t3"],
-    "requiredKeywordsZh": ["我学德语", "她也学德语", "她还学英语"],
-    "wordBankPool": ["我学德语", "她也学德语", "她还学英语", "她学也德语", "和她学英语", "也学德语她"],
-    "traps": [
-      {
-        "pattern": "学也",
-        "msg": "Lỗi vị trí phó từ: Phó từ '也' và '还' bắt buộc phải đứng TRƯỚC động từ ('也学', '还学'), không đặt sau động từ."
-      },
-      {
-        "pattern": "英语也",
-        "msg": "Lỗi dịch bồi: Người Việt hay để chữ 'cũng' hoặc 'nữa' ở cuối câu, nhưng trong tiếng Trung '也' và '还' luôn đứng trước động từ vị ngữ."
-      }
-    ],
-    "explanation": "'也' biểu thị sự tương đồng (người khác cũng làm vậy), '还' biểu thị sự tăng thêm về phạm vi (làm thêm việc khác nữa)."
-  },
-  {
-    "id": "b11-05",
-    "type": "sentence_parsing",
-    "title": "Câu hai tân ngữ với động từ 教",
-    "vi": "Thầy giáo Vương dạy chúng tôi tiếng Trung, thầy ấy là một thầy giáo rất giỏi.",
-    "zh": "王老师教我们汉语他是一位很好的老师",
-    "standardTrans": "王老师教我们汉语他是一位很好的老师",
-    "pinyin": "Wáng lǎoshī jiāo wǒmen hànyǔ, tā shì yí wèi hěn hǎo de lǎoshī.",
-    "grammarPoint": "Câu hai tân ngữ: S + 教 + Tân ngữ 1 (người: 我们) + Tân ngữ 2 (môn học: 汉语); Lượng từ tôn kính: 一位 + Tính từ + 的 + 老师",
-    "tokens": [
-      {
-        "text": "Dạy chúng tôi tiếng Trung",
-        "hz": "教我们汉语",
-        "py": "jiāo wǒmen hànyǔ",
-        "hv": "Giáo ngã môn Hán ngữ",
-        "role": "Động từ + Tân ngữ kép",
-        "vn": "Dạy chúng tôi tiếng Hán",
-        "radicals": "教 = Chữ hiếu 孝 + bộ phộc 攵 (đánh nhẹ, dạy dỗ); 汉 = Bộ chấm thủy 氵 + bộ hựu 又"
-      },
-      {
-        "text": "Một vị thầy giáo rất tốt",
-        "hz": "一位很好的老师",
-        "py": "yí wèi hěn hǎo de lǎoshī",
-        "hv": "Nhất vị hẩn hảo đích lão sư",
-        "role": "Cụm danh ngữ có lượng từ lịch sự",
-        "vn": "Một người thầy rất giỏi/tốt",
-        "radicals": "位 = Bộ nhân đứng 亻 + chữ lập 立 (lượng từ lịch sự chỉ người); 老师 = Giáo viên"
-      }
-    ],
-    "tiles": [
-      { "id": "t3", "text": "他是一位", "tag": "Chủ vị 2" },
-      { "id": "t1", "text": "王老师", "tag": "Chủ ngữ 1" },
-      { "id": "t4", "text": "很好的老师", "tag": "Trung tâm ngữ" },
-      { "id": "t2", "text": "教我们汉语", "tag": "Vị ngữ hai tân ngữ" },
-      { "id": "t5", "text": "教汉语我们", "tag": "Bẫy trật tự tân ngữ" },
-      { "id": "t6", "text": "一个很好的老师", "tag": "Bẫy lượng từ" }
-    ],
-    "targetOrder": ["t1", "t2", "t3", "t4"],
-    "requiredKeywordsZh": ["王老师", "教我们汉语", "一位", "很好的老师"],
-    "wordBankPool": ["王老师", "教我们汉语", "他是一位", "很好的老师", "教汉语我们", "一个很优老师", "老师王"],
-    "traps": [
-      {
-        "pattern": "教汉语我们",
-        "msg": "Lỗi trật tự hai tân ngữ: Động từ '教' đòi hỏi tân ngữ chỉ người đứng trước, tân ngữ chỉ vật/môn học đứng sau ('教我们汉语')."
-      },
-      {
-        "pattern": "很优",
-        "msg": "Lỗi dùng từ: 'Thầy giáo giỏi/tốt' trong khẩu ngữ chuẩn dùng '很好的老师', không dùng '很优'."
-      }
-    ],
-    "explanation": "Động từ '教' (jiāo) mang 2 tân ngữ: 教 + Tân ngữ chỉ người (我们) + Tân ngữ chỉ sự vật (汉语). Dùng lượng từ '位' để thể hiện sự kính trọng đối với thầy cô."
-  },
-  {
-    "id": "b11-06",
-    "type": "anti_word_by_word",
-    "title": "Tự giới thiệu bản thân chi tiết",
-    "vi": "Tôi giới thiệu một chút, tôi tên là Edward, tôi là người Anh. Tôi là du học sinh của trường đại học Bắc Kinh. Tôi học tiếng Trung, còn học cả tiếng Nhật nữa.",
-    "zh": "我来介绍一下儿我叫爱德华我是英国人我是北京大学的留学生我学汉语还学日语",
-    "standardTrans": "我来介绍一下儿我叫爱德华我是英国人我是北京大学的留学生我学汉语还学日语",
-    "pinyin": "Wǒ lái jièshào yíxiàr, wǒ jiào Àidéhuá, wǒ shì Yīngguórén. Wǒ shì Běijīng Dàxué de liúxuéshēng. Wǒ xué hànyǔ, hái xué rìyǔ.",
-    "grammarPoint": "Khẩu ngữ chủ động: 我来 + Động từ + 一下儿; Phó từ 还 biểu thị học thêm môn thứ hai",
-    "tokens": [
-      {
-        "text": "Để tôi giới thiệu một chút",
-        "hz": "我来介绍一下儿",
-        "py": "wǒ lái jièshào yíxiàr",
-        "hv": "Ngã lai giới thiệu nhất hạ nhi",
-        "role": "Cụm mở đầu chủ động",
-        "vn": "Tôi xin giới thiệu một chút",
-        "radicals": "来 = Bộ mộc 木 + các nét chấm phẩy; 介绍 = Giới thiệu; 一下儿 = Một chút, một lát"
-      },
-      {
-        "text": "Du học sinh",
-        "hz": "留学生",
-        "py": "liúxuéshēng",
-        "hv": "Lưu học sinh",
-        "role": "Trung tâm ngữ",
-        "vn": "Du học sinh",
-        "radicals": "留 = Chữ mão 卯 + bộ điền 田; 学 = Học; 生 = Bộ sinh 生"
-      },
-      {
-        "text": "Còn học tiếng Nhật",
-        "hz": "还学日语",
-        "py": "hái xué rìyǔ",
-        "hv": "Hoàn học Nhật ngữ",
-        "role": "Vị ngữ bổ sung",
-        "vn": "Còn học tiếng Nhật",
-        "radicals": "还 = Còn; 日 = Bộ nhật 日; 语 = Bộ ngôn 讠 + chữ ngũ 五 + bộ khẩu 口"
-      }
-    ],
-    "tiles": [
-      { "id": "t3", "text": "我是北京大学的留学生", "tag": "Thân phận" },
-      { "id": "t1", "text": "我来介绍一下儿", "tag": "Mở đầu" },
-      { "id": "t4", "text": "我学汉语还学日语", "tag": "Môn học" },
-      { "id": "t2", "text": "我叫爱德华我是英国人", "tag": "Tên và quốc tịch" },
-      { "id": "t5", "text": "留学生的北京大学", "tag": "Bẫy định ngữ" }
-    ],
-    "targetOrder": ["t1", "t2", "t3", "t4"],
-    "requiredKeywordsZh": ["我来介绍一下儿", "爱德华", "英国人", "北京大学的留学生", "还学日语"],
-    "wordBankPool": ["我来介绍一下儿", "我叫爱德华我是英国人", "我是北京大学的留学生", "我学汉语还学日语", "留学生的北京大学", "介绍一下我"],
-    "traps": [
-      {
-        "pattern": "留学生的北京大学",
-        "msg": "Lỗi định ngữ sở hữu: 'Du học sinh của ĐH Bắc Kinh' phải đặt trường học lên trước ('北京大学的留学生'), không dịch ngược '留学生的北京大学'."
-      },
-      {
-        "pattern": "介绍一下我",
-        "msg": "Lỗi dùng từ: 'Tôi giới thiệu một chút' trong khẩu ngữ tự nhiên là '我来介绍一下儿', không dùng '介绍一下我' (mang nghĩa giới thiệu bản thân tôi cho ai)."
-      }
-    ],
-    "explanation": "'我来...' thường dùng trong khẩu ngữ để chủ động làm một việc gì đó một cách lịch sự ('我来介绍一下儿' = để tôi giới thiệu một chút)."
-  },
-  {
-    "id": "b11-07",
-    "type": "sentence_parsing",
-    "title": "Đại từ số lượng 俩 và phó từ 都, 也",
-    "vi": "A: Xin chào, bạn và Mary có khỏe không? B: Cảm ơn, hai chúng tôi đều rất khỏe, cũng rất bận.",
-    "zh": "你好你和玛丽好吗 谢谢我们俩都很好也很忙",
-    "standardTrans": "你好你和玛丽好吗 谢谢我们俩都很好也很忙",
-    "pinyin": "Nǐ hǎo! Nǐ hé Mǎlì hǎo ma? Xièxie! Wǒmen liǎ dōu hěn hǎo, yě hěn máng.",
-    "grammarPoint": "Từ chỉ số lượng 2 người: Đại từ (我们/你们/他们) + 俩 (tuyệt đối không kèm lượng từ 个); Liên kết phó từ: 都... 也...",
-    "tokens": [
-      {
-        "text": "Bạn và Mary",
-        "hz": "你和玛丽",
-        "py": "nǐ hé Mǎlì",
-        "hv": "Nhĩ hòa Mã Lệ",
-        "role": "Chủ ngữ ghép liên từ 和",
-        "vn": "Bạn và Mary",
-        "radicals": "和 = Bộ hòa 禾 + bộ khẩu 口; 玛 = Bộ vương 王 + chữ mã 马; 丽 = Bộ nhất 一 + các nét móc"
-      },
-      {
-        "text": "Hai chúng tôi",
-        "hz": "我们俩",
-        "py": "wǒmen liǎ",
-        "hv": "Ngã môn lưỡng",
-        "role": "Chủ ngữ số lượng 2 người",
-        "vn": "Hai chúng tôi, hai đứa mình",
-        "radicals": "俩 = Bộ nhân đứng 亻 + chữ lưỡng 两 (bản thân đã bao hàm số từ và lượng từ)"
-      },
-      {
-        "text": "Đều rất khỏe cũng rất bận",
-        "hz": "都很好也很忙",
-        "py": "dōu hěn hǎo yě hěn máng",
-        "hv": "Đô hẩn hảo dã hẩn mang",
-        "role": "Vị ngữ liên kết phó từ",
-        "vn": "Đều rất khỏe, cũng rất bận",
-        "radicals": "都 = Chữ giả 者 + bộ ấp 阝; 也 = Bộ dã 也; 忙 = Bộ tâm đứng 忄 + bộ vong 亡"
-      }
-    ],
-    "tiles": [
-      { "id": "t4", "text": "都很好也很忙", "tag": "Vị ngữ đáp" },
-      { "id": "t2", "text": "你和玛丽好吗", "tag": "Hỏi thăm" },
-      { "id": "t1", "text": "你好", "tag": "Chào" },
-      { "id": "t3", "text": "谢谢我们俩", "tag": "Chủ ngữ đáp" },
-      { "id": "t5", "text": "我们两个俩", "tag": "Bẫy lặp lượng từ" },
-      { "id": "t6", "text": "我们两", "tag": "Bẫy thiếu lượng từ" }
-    ],
-    "targetOrder": ["t1", "t2", "t3", "t4"],
-    "requiredKeywordsZh": ["你和玛丽好吗", "我们俩", "都很好", "也很忙"],
-    "wordBankPool": ["你好", "你和玛丽好吗", "谢谢我们俩", "都很好也很忙", "我们两个俩", "Chúng tôi hai người", "他们俩"],
-    "traps": [
-      {
-        "pattern": "个俩",
-        "msg": "Lỗi lặp lượng từ: Chữ '俩' (liǎ) vốn là sự kết hợp của '两' + '个'. Đã dùng '俩' thì TUYỆT ĐỐI KHÔNG thêm lượng từ '个' (nói '两个俩' là sai hoàn toàn)."
-      },
-      {
-        "pattern": "我们两好",
-        "msg": "Thiếu lượng từ: Không nói '我们两', phải nói '我们俩' hoặc 'Chúng tôi hai người' (我们两个人)."
-      }
-    ],
-    "explanation": "Chữ '俩' (liǎ) nghĩa là 'hai người' (bằng 两 + 个), do đó sau 俩 không bao giờ được dùng thêm lượng từ '个' (chỉ dùng: 我们俩, 你们俩, 他们俩)."
-  },
-  {
-    "id": "b11-08",
-    "type": "anti_word_by_word",
-    "title": "Hỏi nơi chốn và phủ định thân phận sinh viên",
-    "vi": "A: Xin hỏi, thư viện của trường đại học Bắc Kinh ở đâu? B: Xin lỗi, tôi không phải là học sinh của trường đại học Bắc Kinh, tôi không biết.",
-    "zh": "请问北京大学的图书馆在哪儿 对不起我不是北京大学的学生我不知道",
-    "standardTrans": "请问北京大学的图书馆在哪儿 对不起我不是北京大学的学生我不知道",
-    "pinyin": "Qǐngwèn, Běijīng Dàxué de túshūguǎn zài nǎr? Duìbuqǐ, wǒ bú shì Běijīng Dàxué de xuésheng, wǒ bù zhīdào.",
-    "grammarPoint": "Cụm định ngữ tên trường: 北京大学的 + Danh từ; Phán đoán phủ định: 不是... 的学生",
-    "tokens": [
-      {
-        "text": "Thư viện của ĐH Bắc Kinh",
-        "hz": "北京大学的图书馆",
-        "py": "Běijīng Dàxué de túshūguǎn",
-        "hv": "Bắc Kinh Đại học đích đồ thư quán",
-        "role": "Cụm danh ngữ sở hữu",
-        "vn": "Thư viện trường ĐH Bắc Kinh",
-        "radicals": "北京 = Bắc Kinh; 大学 = Đại học; 图书馆 = Thư viện"
-      },
-      {
-        "text": "Không phải sinh viên ĐH Bắc Kinh",
-        "hz": "不是北京大学的学生",
-        "py": "bú shì Běijīng Dàxué de xuésheng",
-        "hv": "Bất thị Bắc Kinh Đại học đích học sinh",
-        "role": "Vị ngữ phán đoán phủ định",
-        "vn": "Không phải học sinh trường ĐH Bắc Kinh",
-        "radicals": "不是 = Không phải; 学生 = Học sinh, sinh viên"
-      }
-    ],
-    "tiles": [
-      { "id": "t2", "text": "在哪儿", "tag": "Vị ngữ hỏi" },
-      { "id": "t4", "text": "我不知道", "tag": "Không biết" },
-      { "id": "t1", "text": "请问北京大学的图书馆", "tag": "Chủ ngữ hỏi" },
-      { "id": "t3", "text": "对不起我不是北京大学的学生", "tag": "Phủ định thân phận" },
-      { "id": "t5", "text": "图书馆的北京大学", "tag": "Bẫy dịch ngược" }
-    ],
-    "targetOrder": ["t1", "t2", "t3", "t4"],
-    "requiredKeywordsZh": ["北京大学的图书馆", "在哪儿", "对不起", "不是北京大学的学生", "我不知道"],
-    "wordBankPool": ["请问北京大学的图书馆", "在哪儿", "对不起我不是北京大学的学生", "我不知道", "图书馆的北京大学", "大学北京"],
-    "traps": [
-      {
-        "pattern": "图书馆的北京大学",
-        "msg": "Lỗi định ngữ: Cụm 'thư viện của trường ĐH Bắc Kinh' phải đặt tên trường lên trước ('北京大学的图书馆'), không dịch ngược theo tiếng Việt."
-      },
-      {
-        "pattern": "大学北京",
-        "msg": "Lỗi tên riêng: Tên địa danh phải đứng trước cấp bậc trường học: '北京大学', không nói '大学北京'."
-      }
-    ],
-    "explanation": "Định ngữ chỉ cơ quan sở hữu đứng trước trung tâm ngữ: Tên trường + 的 + Công trình (北京大学的图书馆 / 北京大学的学生)."
-  },
-  {
-    "id": "b11-09",
-    "type": "sentence_parsing",
-    "title": "Giới thiệu du học sinh và bạn bè với phó từ 也",
-    "vi": "Đây là Mike, cậu ấy là du học sinh Mỹ, cũng là bạn tốt của tôi.",
-    "zh": "这是麦克他是美国留学生也是我的好朋友",
-    "standardTrans": "这是麦克他是美国留学生也是我的好朋友",
-    "pinyin": "Zhè shì Màikè, tā shì Měiguó liúxuéshēng, yě shì wǒ de hǎo péngyou.",
-    "grammarPoint": "Phán đoán liên tiếp với 也: S + 是 + O1, 也 + 是 + O2",
-    "tokens": [
-      {
-        "text": "Du học sinh Mỹ",
-        "hz": "美国留学生",
-        "py": "Měiguó liúxuéshēng",
-        "hv": "Mỹ Quốc lưu học sinh",
-        "role": "Cụm danh ngữ định - trung",
-        "vn": "Lưu học sinh Mỹ, du học sinh Mỹ",
-        "radicals": "美国 = Nước Mỹ; 留学生 = Du học sinh (chữ 留 + chữ 学 + chữ 生)"
-      },
-      {
-        "text": "Cũng là bạn tốt của tôi",
-        "hz": "也是我的好朋友",
-        "py": "yě shì wǒ de hǎo péngyou",
-        "hv": "Dã thị ngã đích hảo bằng hữu",
-        "role": "Vị ngữ đẳng lập 2",
-        "vn": "Cũng là bạn tốt của tôi",
-        "radicals": "也 = Cũng; 是 = Là; 我的 = Của tôi; 好朋友 = Bạn tốt"
-      }
-    ],
-    "tiles": [
-      { "id": "t3", "text": "也是我的好朋友", "tag": "Vị ngữ 2" },
-      { "id": "t1", "text": "这是麦克", "tag": "Giới thiệu tên" },
-      { "id": "t2", "text": "他是美国留学生", "tag": "Vị ngữ 1" },
-      { "id": "t4", "text": "留学生美国", "tag": "Bẫy dịch ngược" },
-      { "id": "t5", "text": "也是朋友好我", "tag": "Bẫy sở hữu" }
-    ],
-    "targetOrder": ["t1", "t2", "t3"],
-    "requiredKeywordsZh": ["这是麦克", "美国留学生", "也是我的好朋友"],
-    "wordBankPool": ["这是麦克", "他是美国留学生", "也是我的好朋友", "留学生美国", "也是朋友好我", "他是美国学生"],
-    "traps": [
-      {
-        "pattern": "留学生美国",
-        "msg": "Lỗi định ngữ: Tên quốc gia làm định ngữ chỉ xuất xứ phải đứng trước danh từ '留学生' ('美国留学生'), không dịch xuôi theo tiếng Việt."
-      },
-      {
-        "pattern": "朋友好我",
-        "msg": "Lỗi cụm sở hữu: 'Bạn tốt của tôi' phải dịch là '我的好朋友', không dịch chắp vá thành '朋友好我'."
-      }
-    ],
-    "explanation": "Cấu trúc song hành với phó từ 也: S + 是... + 也是... (vừa là... cũng là...)."
-  },
-  {
-    "id": "b11-10",
-    "type": "anti_word_by_word",
-    "title": "Phủ định toàn bộ với 都不 và trợ từ ngữ khí 了, 吧",
-    "vi": "A: Ngày mai chúng tớ đi công viên, hai cậu đều không đi hả? B: Chúng tớ đều bận rồi, các cậu đi đi.",
-    "zh": "明天我们去公园你们俩都不去吗 我们都忙了你们去吧",
-    "standardTrans": "明天我们去公园你们俩都不去吗 我们都忙了你们去吧",
-    "pinyin": "Míngtiān wǒmen qù gōngyuán, nǐmen liǎ dōu bú qù ma? Wǒmen dōu máng le, nǐmen qù ba.",
-    "grammarPoint": "Phủ định toàn bộ: 都 + 不 + 去; Biến đổi trạng thái: 都 + 忙 + 了; Cầu khiến khuyên nhủ: 你们去吧",
-    "tokens": [
-      {
-        "text": "Hai cậu đều không đi à",
-        "hz": "你们俩都不去吗",
-        "py": "nǐmen liǎ dōu bú qù ma",
-        "hv": "Nhĩ môn lưỡng đô bất khứ ma",
-        "role": "Mệnh đề hỏi phủ định toàn bộ",
-        "vn": "Hai cậu đều không đi hả",
-        "radicals": "俩 = Hai người; 都 = Đều; 不 = Không; 去 = Đi; 吗 = Trợ từ nghi vấn"
-      },
-      {
-        "text": "Chúng tớ đều bận rồi",
-        "hz": "我们都忙了",
-        "py": "wǒmen dōu máng le",
-        "hv": "Ngã môn đô mang liễu",
-        "role": "Mệnh đề nêu trạng thái mới",
-        "vn": "Chúng tớ đều bận rồi",
-        "radicals": "都 = Đều; 忙 = Bận; 了 = Trợ từ ngữ khí (biểu thị tình huống mới)"
-      },
-      {
-        "text": "Các cậu đi đi",
-        "hz": "你们去吧",
-        "py": "nǐmen qù ba",
-        "hv": "Nhĩ môn khứ ba",
-        "role": "Câu cầu khiến thúc giục",
-        "vn": "Các cậu đi đi",
-        "radicals": "去 = Đi; 吧 = Trợ từ ngữ khí"
-      }
-    ],
-    "tiles": [
-      { "id": "t3", "text": "我们都忙了", "tag": "Lý do đáp" },
-      { "id": "t1", "text": "明天我们去公园", "tag": "Thời gian & nơi chốn" },
-      { "id": "t4", "text": "你们去吧", "tag": "Giục đối phương" },
-      { "id": "t2", "text": "你们俩都不去吗", "tag": "Hỏi 2 người" },
-      { "id": "t5", "text": "都不去你们俩吗", "tag": "Bẫy trật tự" },
-      { "id": "t6", "text": "不都去", "tag": "Bẫy phủ định bộ phận" }
-    ],
-    "targetOrder": ["t1", "t2", "t3", "t4"],
-    "requiredKeywordsZh": ["明天我们去公园", "你们俩都不去吗", "我们都忙了", "你们去吧"],
-    "wordBankPool": ["明天我们去公园", "你们俩都不去吗", "我们都忙了", "你们去吧", "不都去", "你们走吧", "我们两都不去"],
-    "traps": [
-      {
-        "pattern": "不都",
-        "msg": "Lỗi sai ngữ nghĩa phủ định: '都不去' là phủ định toàn bộ (cả hai đều không đi). Nếu dùng '不都去' sẽ thành phủ định bộ phận (không phải ai cũng đi/có người đi người không)."
-      },
-      {
-        "pattern": "你们走吧",
-        "msg": "Lỗi dùng từ: Khuyên bạn cứ đi công viên chơi dùng '你们去吧', '走' mang nghĩa rời bước/đi bộ không sát sắc thái ngữ cảnh này."
-      }
-    ],
-    "explanation": "Phân biệt: '都不...' = phủ định toàn bộ (tất cả đều không...), còn '不都...' = phủ định bộ phận (không phải tất cả đều...)."
-  }
-]
+  "sentences": [
+    {
+      "id": "b11-01",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc giới từ 给 chỉ đối tượng tiếp nhận hành động giới thiệu",
+      "vi": "Hôm qua Edward giới thiệu với tôi một người bạn người Canada.",
+      "zh": "昨天爱德华给我介绍一个加拿大朋友",
+      "standardTrans": "昨天爱德华给我介绍一个加拿大朋友",
+      "pinyin": "Zuótiān, Àidéhuá gěi wǒ jièshào yí gè Jiānádà péngyou.",
+      "grammarPoint": "Cụm giới từ: 给 + Người + Động từ (给我介绍); Định ngữ quốc tịch: 加拿大朋友",
+      "tokens": [
+        {
+          "text": "Edward",
+          "hz": "爱德华",
+          "py": "Àidéhuá",
+          "hv": "Ái Đức Hoa",
+          "role": "Chủ ngữ (tên riêng)",
+          "vn": "Edward (tên người nước ngoài)",
+          "radicals": "爱 = Bộ trảo 爫 + chữ ái; 德 = Chữ đức (bộ xích 彳 + bộ tâm 心); 华 = Bộ thập 十 + chữ hoa"
+        },
+        {
+          "text": "Giới thiệu cho tôi",
+          "hz": "给我介绍",
+          "py": "gěi wǒ jièshào",
+          "hv": "Cấp ngã giới thiệu",
+          "role": "Cụm giới từ + Động từ",
+          "vn": "Giới thiệu cho tôi, giới thiệu với tôi",
+          "radicals": "给 = Bộ mịch 纟; 介 = Bộ nhân 人 + nét phẩy, nét sổ; 绍 = Bộ mịch 纟 + chữ triệu 召"
+        },
+        {
+          "text": "Bạn người Canada",
+          "hz": "加拿大朋友",
+          "py": "Jiānádà péngyou",
+          "hv": "Gia Nã Đại bằng hữu",
+          "role": "Cụm danh ngữ tân ngữ",
+          "vn": "Người bạn nước Canada",
+          "radicals": "加拿大 = Nước Canada (Gia Nã Đại); 朋友 = Bạn bè"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "爱德华给我介绍", "tag": "Chủ ngữ + Giới từ + Động từ" },
+        { "id": "t1", "text": "昨天", "tag": "Thời gian" },
+        { "id": "t3", "text": "一个加拿大朋友", "tag": "Tân ngữ số lượng" },
+        { "id": "t4", "text": "介绍给我", "tag": "Bẫy ngữ tự giới từ" },
+        { "id": "t5", "text": "朋友加拿大", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["昨天", "爱德华给我介绍", "加拿大朋友"],
+      "wordBankPool": ["昨天", "爱德华给我介绍", "一个加拿大朋友", "介绍给我", "朋友加拿大", "跟我不介绍"],
+      "traps": [
+        {
+          "pattern": "介绍给我",
+          "msg": "Lỗi ngữ tự giới từ: Cấu trúc làm gì cho ai trong Hán ngữ bắt buộc đưa cụm giới từ lên trước động từ: '给我介绍', không nói '介绍给我' theo tiếng Việt."
+        },
+        {
+          "pattern": "朋友加拿大",
+          "msg": "Lỗi định ngữ: Tên quốc tịch/đất nước phải đứng trước danh từ trung tâm: '加拿大朋友', không nói '朋友加拿大'."
+        }
+      ],
+      "explanation": "Cấu trúc giới từ chuẩn: [Chủ ngữ + 给 + Người + Động từ + Tân ngữ]. '昨天' làm trạng ngữ thời gian đứng đầu câu."
+    },
+    {
+      "id": "b11-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi nhân sự trang trọng với lượng từ 位",
+      "vi": "Xin hỏi, giáo sư Vương là vị nào?",
+      "zh": "请问王教授是哪位",
+      "standardTrans": "请问王教授是哪位",
+      "pinyin": "Qǐngwèn, Wáng jiàoshòu shì nǎ wèi?",
+      "grammarPoint": "Lượng từ lịch sự 位; Đại từ nghi vấn chỉ người tôn trọng: 哪位 (vị nào / ai); Chức danh: 王教授",
+      "tokens": [
+        {
+          "text": "Xin hỏi",
+          "hz": "请问",
+          "py": "qǐngwèn",
+          "hv": "Thỉnh vấn",
+          "role": "Kính ngữ mở đầu",
+          "vn": "Xin hỏi, làm ơn cho hỏi",
+          "radicals": "请 = Bộ ngôn 讠 + bộ thanh 青; 问 = Bộ môn 门 + bộ khẩu 口"
+        },
+        {
+          "text": "Giáo sư Vương",
+          "hz": "王教授",
+          "py": "Wáng jiàoshòu",
+          "hv": "Vương giáo thụ",
+          "role": "Chủ ngữ",
+          "vn": "Giáo sư họ Vương",
+          "radicals": "王 = Bộ vương 王; 教 = Bộ hiếu 孝 + bộ phộc 攵; 授 = Bộ thủ 扌 + chữ thụ 受"
+        },
+        {
+          "text": "Là vị nào",
+          "hz": "是哪位",
+          "py": "shì nǎ wèi",
+          "hv": "Thị na vị",
+          "role": "Cụm vị ngữ nghi vấn lịch sự",
+          "vn": "Là vị nào, là ai (kính ngữ)",
+          "radicals": "是 = Là; 哪 = Bộ khẩu 口 + chữ na 那; 位 = Bộ nhân đứng 亻 + chữ lập 立"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "王教授", "tag": "Chủ ngữ chức danh" },
+        { "id": "t1", "text": "请问", "tag": "Kính ngữ" },
+        { "id": "t3", "text": "是哪位", "tag": "Hỏi vị nào" },
+        { "id": "t4", "text": "教授王", "tag": "Bẫy xưng danh" },
+        { "id": "t5", "text": "是哪个位", "tag": "Bẫy lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["请问", "王教授", "是哪位"],
+      "wordBankPool": ["请问", "王教授", "是哪位", "教授王", "是哪个位", "哪位是王教授"],
+      "traps": [
+        {
+          "pattern": "教授王",
+          "msg": "Lỗi xưng hô: Trong tiếng Hán, họ luôn đứng TRƯỚC chức vụ/học hàm: '王教授' (Giáo sư Vương), không nói '教授王'."
+        },
+        {
+          "pattern": "哪个位",
+          "msg": "Lỗi lặp lượng từ: Bản thân '位' đã là lượng từ lịch sự, hỏi vị nào chỉ dùng '哪位', không chèn '个' thành '哪个位'."
+        }
+      ],
+      "explanation": "Câu hỏi lịch sự xác định danh tính: [Kính xưng + 是哪位?]. '位' là lượng từ trang trọng dùng cho giáo sư, giáo viên, khách quý."
+    },
+    {
+      "id": "b11-03",
+      "type": "anti_word_by_word",
+      "title": "Phối hợp phó từ 也都 và định ngữ chức vụ giám đốc Trương",
+      "vi": "Tôi không biết số điện thoại của giám đốc Trương, giáo sư Bạch và thư ký của ông ấy cũng đều không biết số điện thoại của giám đốc Trương.",
+      "zh": "我不知道张经理的电话号码白教授和他的秘书也都不知道张经理的电话号码",
+      "standardTrans": "我不知道张经理的电话号码白教授和他的秘书也都不知道张经理的电话号码",
+      "pinyin": "Wǒ bù zhīdào Zhāng jīnglǐ de diànhuà hàomǎ. Bái jiàoshòu hé tā de mìshū yě dōu bù zhīdào Zhāng jīnglǐ de diànhuà hàomǎ.",
+      "grammarPoint": "Trật tự phó từ kép: 也都 (cũng đều); Phủ định bộ phận phó từ: 也都不知道; Định ngữ sở hữu chức vụ",
+      "tokens": [
+        {
+          "text": "Giám đốc Trương",
+          "hz": "张经理",
+          "py": "Zhāng jīnglǐ",
+          "hv": "Trương kinh lý",
+          "role": "Định ngữ sở hữu",
+          "vn": "Giám đốc họ Trương",
+          "radicals": "张 = Bộ cung 弓 + chữ trường 长; 经理 = Giám đốc (bộ mịch 纟, bộ ngọc 王, bộ lý 里)"
+        },
+        {
+          "text": "Giáo sư Bạch",
+          "hz": "白教授",
+          "py": "Bái jiàoshòu",
+          "hv": "Bạch giáo thụ",
+          "role": "Chủ ngữ vế 2",
+          "vn": "Giáo sư họ Bạch",
+          "radicals": "白 = Bộ bạch 白; 教授 = Giáo sư"
+        },
+        {
+          "text": "Cũng đều không biết",
+          "hz": "也都不知道",
+          "py": "yě dōu bù zhīdào",
+          "hv": "Dã đô bất tri đạo",
+          "role": "Phó từ kép + Vị ngữ phủ định",
+          "vn": "Cũng đều không biết",
+          "radicals": "也 = Cũng; 都 = Đều; 不 = Không; 知道 = Biết"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "白教授和他的秘书", "tag": "Chủ thể vế 2" },
+        { "id": "t1", "text": "我不知道张经理的电话号码", "tag": "Vế 1 (Tôi không biết)" },
+        { "id": "t3", "text": "也都不知道张经理的电话号码", "tag": "Vị ngữ kép vế 2" },
+        { "id": "t4", "text": "都也不", "tag": "Bẫy trật tự phó từ" },
+        { "id": "t5", "text": "经理张", "tag": "Bẫy xưng danh" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["张经理的电话号码", "白教授和他的秘书", "也都不知道"],
+      "wordBankPool": ["我不知道张经理的电话号码", "白教授和他的秘书", "也都不知道张经理的电话号码", "都也不", "经理张", "不也都知道"],
+      "traps": [
+        {
+          "pattern": "都也不",
+          "msg": "Lỗi ngữ tự phó từ kép: Khi '也' (cũng) và '都' (đều) cùng xuất hiện, '也' bắt buộc phải đứng TRƯỚC '都' ('也都'), tuyệt đối không nói '都也'."
+        },
+        {
+          "pattern": "经理张",
+          "msg": "Lỗi xưng danh: Họ luôn đứng trước chức vụ: '张经理' (Giám đốc Trương), không nói ngược '经理张'."
+        }
+      ],
+      "explanation": "Quy tắc vàng phó từ Hán ngữ: '也' luôn đứng trước '都' tạo thành cụm '也都' (cũng đều). Định ngữ chức vụ: [Họ + Chức vụ + 的 + Danh từ]."
+    },
+    {
+      "id": "b11-04",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc tăng tiến bổ sung với 也 và 还",
+      "vi": "Tôi học tiếng Đức, cô ấy cũng học tiếng Đức, cô ấy còn học cả tiếng Anh nữa.",
+      "zh": "我学德语她也学德语她还学英语",
+      "standardTrans": "我学德语她也学德语她还学英语",
+      "pinyin": "Wǒ xué déyǔ, tā yě xué déyǔ, tā hái xué yīngyǔ.",
+      "grammarPoint": "Phó từ đồng nhất: 也 (cũng); Phó từ bổ sung tăng tiến: 还 (còn, thêm)",
+      "tokens": [
+        {
+          "text": "Tiếng Đức",
+          "hz": "德语",
+          "py": "déyǔ",
+          "hv": "Đức ngữ",
+          "role": "Tân ngữ 1",
+          "vn": "Tiếng Đức",
+          "radicals": "德 = Bộ xích 彳 + bộ thập 十 + bộ tứ 罒 + bộ nhất 一 + bộ tâm 心; 语 = Bộ ngôn 讠 + chữ ngũ 五 + bộ khẩu 口"
+        },
+        {
+          "text": "Cũng học tiếng Đức",
+          "hz": "也学德语",
+          "py": "yě xué déyǔ",
+          "hv": "Dã học Đức ngữ",
+          "role": "Phó từ + Động tân",
+          "vn": "Cũng học tiếng Đức",
+          "radicals": "也 = Phó từ cũng; 学 = Học"
+        },
+        {
+          "text": "Còn học tiếng Anh",
+          "hz": "还学英语",
+          "py": "hái xué yīngyǔ",
+          "hv": "Hoàn học Anh ngữ",
+          "role": "Phó từ + Động tân",
+          "vn": "Còn học thêm cả tiếng Anh",
+          "radicals": "还 = Bộ quai xước 辶; 英语 = Tiếng Anh (bộ thảo 艹, chữ ương 央, bộ ngôn 讠)"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "她也学德语", "tag": "Vế cũng học" },
+        { "id": "t1", "text": "我学德语", "tag": "Vế khởi điểm" },
+        { "id": "t3", "text": "她还学英语", "tag": "Vế tăng tiến bổ sung" },
+        { "id": "t4", "text": "也她学", "tag": "Bẫy vị trí 也" },
+        { "id": "t5", "text": "学英语还", "tag": "Bẫy vị trí 还" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我学德语", "她也学德语", "她还学英语"],
+      "wordBankPool": ["我学德语", "她也学德语", "她还学英语", "也她学", "学英语还", "她还学德语"],
+      "traps": [
+        {
+          "pattern": "也她",
+          "msg": "Lỗi vị trí phó từ: '也' (cũng) bắt buộc phải đứng SAU chủ ngữ và TRƯỚC động từ ('她也学'), không đặt ở đầu câu như 'Cũng cô ấy học'."
+        },
+        {
+          "pattern": "英语还",
+          "msg": "Lỗi vị trí phó từ: '还' (còn) là phó từ bổ nghĩa cho hành động học, phải đứng trước động từ: '还学英语'."
+        }
+      ],
+      "explanation": "Liên kết 3 phân câu biểu thị tính tăng tiến: [S1 + V] -> [S2 + 也 + V] -> [S2 + 还 + V2]. '也' biểu thị sự giống nhau, '还' biểu thị làm thêm việc khác."
+    },
+    {
+      "id": "b11-05",
+      "type": "anti_word_by_word",
+      "title": "Động từ hai tân ngữ 教 và lượng từ lịch sự 位",
+      "vi": "Thầy giáo Vương dạy chúng tôi tiếng Trung, thầy ấy là một thầy giáo rất giỏi.",
+      "zh": "王老师教我们汉语他是一位很好的老师",
+      "standardTrans": "王老师教我们汉语他是一位很好的老师",
+      "pinyin": "Wáng lǎoshī jiāo wǒmen hànyǔ, tā shì yí wèi hěn hǎo de lǎoshī.",
+      "grammarPoint": "Động từ 2 tân ngữ 教: 教 + Người (Tân ngữ 1) + Môn học (Tân ngữ 2); Lượng từ kính trọng: 一位 + Tính từ + 的老师",
+      "tokens": [
+        {
+          "text": "Dạy chúng tôi tiếng Trung",
+          "hz": "教我们汉语",
+          "py": "jiāo wǒmen hànyǔ",
+          "hv": "Giáo ngã môn Hán ngữ",
+          "role": "Động từ + 2 tân ngữ",
+          "vn": "Dạy tiếng Hán cho chúng tôi",
+          "radicals": "教 = Bộ hiếu 孝 + bộ phộc 攵; 我们 = Chúng tôi; 汉语 = Tiếng Hán"
+        },
+        {
+          "text": "Một người thầy rất tốt (rất giỏi)",
+          "hz": "一位很好的老师",
+          "py": "yí wèi hěn hǎo de lǎoshī",
+          "hv": "Nhất vị khẩn hảo đích lão sư",
+          "role": "Cụm số lượng định danh tân ngữ",
+          "vn": "Một người thầy giáo rất tốt / giỏi",
+          "radicals": "位 = Bộ nhân đứng 亻 + chữ lập 立; 好 = Bộ nữ 女 + bộ tử 子; 老师 = Giáo viên"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "他是一位很好的老师", "tag": "Vế đánh giá khen ngợi" },
+        { "id": "t1", "text": "王老师教我们汉语", "tag": "Vế hành động 2 tân ngữ" },
+        { "id": "t3", "text": "教汉语我们", "tag": "Bẫy trật tự 2 tân ngữ" },
+        { "id": "t4", "text": "一个很好的老师", "tag": "Bẫy lượng từ lịch sự" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["王老师教我们汉语", "一位很好的老师"],
+      "wordBankPool": ["王老师教我们汉语", "他是一位很好的老师", "教汉语我们", "一个很好的老师", "教我们老师"],
+      "traps": [
+        {
+          "pattern": "教汉语我们",
+          "msg": "Lỗi 2 tân ngữ: Động từ '教' (dạy) truyền hành động trực tiếp cho NGƯỜI trước rồi mới đến MÔN HỌC ('教我们汉语'), không nói '教汉语我们'."
+        },
+        {
+          "pattern": "教给我们",
+          "msg": "Lỗi dịch bồi: Bản thân động từ '教' đã nhận trực tiếp 2 tân ngữ, không cần thêm giới từ '给'."
+        }
+      ],
+      "explanation": "Quy tắc động từ 2 tân ngữ: [S + 教 + Người + Môn học]. Khi ca ngợi giáo viên, người Trung Quốc ưu tiên dùng lượng từ tôn kính '位' (一位很好的老师)."
+    },
+    {
+      "id": "b11-06",
+      "type": "sentence_parsing",
+      "title": "Mẫu giới thiệu bản thân toàn diện với 我来介绍一下儿",
+      "vi": "Tôi giới thiệu một chút, tôi tên là Edward, tôi là người Anh. Tôi là du học sinh của trường đại học Bắc Kinh. Tôi học tiếng Trung, còn học cả tiếng Nhật nữa.",
+      "zh": "我来介绍一下儿我叫爱德华我是英国人我是北京大学的留学生我学汉语还学日语",
+      "standardTrans": "我来介绍一下儿我叫爱德华我是英国人我是北京大学的留学生我学汉语还学日语",
+      "pinyin": "Wǒ lái jièshào yíxiàr, wǒ jiào Àidéhuá, wǒ shì Yīngguórén. Wǒ shì Běijīng Dàxué de liúxuéshēng. Wǒ xué hànyǔ, hái xué rìyǔ.",
+      "grammarPoint": "Động tác thử / nhanh: 一下儿; Cụm định ngữ sở hữu: 北京大学的留学生; Phó từ bổ sung: 还",
+      "tokens": [
+        {
+          "text": "Để tôi giới thiệu một chút",
+          "hz": "我来介绍一下儿",
+          "py": "wǒ lái jièshào yíxiàr",
+          "hv": "Ngã lai giới thiệu nhất hạ nhi",
+          "role": "Câu mở đầu giao tiếp",
+          "vn": "Để tôi xin tự giới thiệu một chút",
+          "radicals": "来 = Để (chủ động làm); 介绍 = Giới thiệu; 一下儿 = Một chút, một lát (động lượng từ)"
+        },
+        {
+          "text": "Người Anh",
+          "hz": "英国人",
+          "py": "Yīngguórén",
+          "hv": "Anh quốc nhân",
+          "role": "Tân ngữ phán đoán",
+          "vn": "Người mang quốc tịch Anh",
+          "radicals": "英国 = Nước Anh; 人 = Người"
+        },
+        {
+          "text": "Du học sinh ĐH Bắc Kinh",
+          "hz": "北京大学的留学生",
+          "py": "Běijīng Dàxué de liúxuéshēng",
+          "hv": "Bắc Kinh Đại học đích lưu học sinh",
+          "role": "Cụm danh ngữ tân ngữ",
+          "vn": "Lưu học sinh của trường ĐH Bắc Kinh",
+          "radicals": "北京大学 = Đại học Bắc Kinh; 留学生 = Du học sinh (chữ lưu 留, bộ miên 宀 biến thể, bộ sinh 生)"
+        },
+        {
+          "text": "Còn học tiếng Nhật",
+          "hz": "还学日语",
+          "py": "hái xué rìyǔ",
+          "hv": "Hoàn học Nhật ngữ",
+          "role": "Phó từ + Động tân",
+          "vn": "Còn học thêm cả tiếng Nhật",
+          "radicals": "还 = Còn; 日语 = Tiếng Nhật (bộ nhật 日, bộ ngôn 讠)"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我是北京大学的留学生", "tag": "Trường học & Thân phận" },
+        { "id": "t1", "text": "我来介绍一下儿我叫爱德华我是英国人", "tag": "Mở đầu + Tên + Quốc tịch" },
+        { "id": "t3", "text": "我学汉语还学日语", "tag": "Ngôn ngữ học tập" },
+        { "id": "t4", "text": "留学生北京大学", "tag": "Bẫy định ngữ" },
+        { "id": "t5", "text": "一下儿介绍", "tag": "Bẫy bổ ngữ động lượng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我来介绍一下儿", "爱德华", "英国人", "北京大学的留学生", "学汉语还学日语"],
+      "wordBankPool": ["我来介绍一下儿我叫爱德华我是英国人", "我是北京大学的留学生", "我学汉语还学日语", "留学生北京大学", "一下儿介绍", "介绍我一下儿"],
+      "traps": [
+        {
+          "pattern": "一下儿介绍",
+          "msg": "Lỗi bổ ngữ động lượng: '一下儿' (một chút) biểu thị động tác diễn ra nhanh, bắt buộc đứng SAU động từ: '介绍一下儿'."
+        },
+        {
+          "pattern": "留学生北京大学",
+          "msg": "Lỗi định ngữ: Tên cơ sở giáo dục phải đứng trước danh từ trung tâm: '北京大学的留学生', không dịch thuận theo tiếng Việt."
+        }
+      ],
+      "explanation": "Chuỗi tự giới thiệu hoàn chỉnh trong ngữ cảnh học đường: [我来介绍一下儿] -> [我叫...] -> [我是...人] -> [我是...的留学生] -> [我学..., 还学...]."
+    },
+    {
+      "id": "b11-07",
+      "type": "anti_word_by_word",
+      "title": "Hỏi thăm hai người và đại từ số lượng 俩",
+      "vi": "A: Xin chào, bạn và Mary có khỏe không? B: Cảm ơn, hai chúng tôi đều rất khỏe, cũng đều rất bận.",
+      "zh": "你好你和玛丽好吗谢谢我们俩都很好也很忙",
+      "standardTrans": "你好你和玛丽好吗谢谢我们俩都很好也很忙",
+      "pinyin": "Nǐ hǎo! Nǐ hé Mǎlì hǎo ma? Xièxie! Wǒmen liǎ dōu hěn hǎo, yě hěn máng.",
+      "grammarPoint": "Liên từ kết nối danh từ: 和; Đại từ chỉ 2 người: 我们俩 (không kèm 个); Cặp phó từ liên kết: 都很好, 也很忙",
+      "tokens": [
+        {
+          "text": "Bạn và Mary",
+          "hz": "你和玛丽",
+          "py": "nǐ hé Mǎlì",
+          "hv": "Nhĩ hòa Mã Lệ",
+          "role": "Chủ ngữ ghép hỏi",
+          "vn": "Cậu và Mary",
+          "radicals": "你 = Bạn; 和 = Bộ hòa 禾 + bộ khẩu 口; 玛丽 = Tên riêng Mary"
+        },
+        {
+          "text": "Hai chúng tôi",
+          "hz": "我们俩",
+          "py": "wǒmen liǎ",
+          "hv": "Ngã môn lưỡng",
+          "role": "Chủ ngữ đáp",
+          "vn": "Hai đứa chúng tôi, hai chúng tôi",
+          "radicals": "我们 = Chúng tôi; 俩 = Bộ nhân đứng 亻 + chữ lưỡng 两 (tự thân mang nghĩa 2 người)"
+        },
+        {
+          "text": "Đều rất khỏe, cũng rất bận",
+          "hz": "都很好也很忙",
+          "py": "dōu hěn hǎo, yě hěn máng",
+          "hv": "Đô khẩn hảo, dã khẩn mang",
+          "role": "Vị ngữ ghép đẳng lập",
+          "vn": "Đều rất khỏe, cũng rất bận rộn",
+          "radicals": "都 = Bộ ấp 阝; 很 = Rất; 好 = Khỏe; 也 = Cũng; 忙 = Bận"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你和玛丽好吗", "tag": "Hỏi sức khỏe 2 người" },
+        { "id": "t1", "text": "你好", "tag": "Chào hỏi" },
+        { "id": "t4", "text": "我们俩都很好也很忙", "tag": "Trả lời tình trạng 2 người" },
+        { "id": "t3", "text": "谢谢", "tag": "Cảm ơn" },
+        { "id": "t5", "text": "我们两个俩", "tag": "Bẫy lặp lượng từ" },
+        { "id": "t6", "text": "都我们俩", "tag": "Bẫy vị trí 都" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你和玛丽好吗", "我们俩都很好", "也很忙"],
+      "wordBankPool": ["你好", "你和玛丽好吗", "谢谢", "我们俩都很好也很忙", "我们两个俩", "都我们俩", "很好都"],
+      "traps": [
+        {
+          "pattern": "两个俩",
+          "msg": "Lỗi lặp lượng từ: Bản thân '俩' (liǎ) đã tương đương với '两个', tuyệt đối không được thêm lượng từ '个' thành '两个俩'."
+        },
+        {
+          "pattern": "都我们",
+          "msg": "Lỗi vị trí phó từ: Phó từ '都' (đều) bắt buộc phải đứng SAU chủ ngữ: '我们俩都很好', không đặt ở đầu câu."
+        }
+      ],
+      "explanation": "Đại từ số lượng 2 người trong khẩu ngữ dùng '俩' (wǒmen liǎ). Vế đáp sử dụng cặp phó từ kết nối trạng thái liên tiếp: 都很好, 也很忙."
+    },
+    {
+      "id": "b11-08",
+      "type": "sentence_parsing",
+      "title": "Hỏi nơi chốn với 在哪儿 và từ chối vì không phải sinh viên trường",
+      "vi": "A: Xin hỏi, thư viện của trường đại học Bắc Kinh ở đâu? B: Xin lỗi, tôi không phải là học sinh của trường đại học Bắc Kinh, tôi không biết.",
+      "zh": "请问北京大学的图书馆在哪儿对不起我不是北京大学的学生我不知道",
+      "standardTrans": "请问北京大学的图书馆在哪儿对不起我不是北京大学的学生我不知道",
+      "pinyin": "Qǐngwèn, Běijīng Dàxué de túshūguǎn zài nǎr? Duìbuqǐ, wǒ bú shì Běijīng Dàxué de xuésheng, wǒ bù zhīdào.",
+      "grammarPoint": "Hỏi nơi chốn: 在哪儿; Xin lỗi: 对不起; Phủ định phán đoán: 不是...的学生; Không biết: 我不知道",
+      "tokens": [
+        {
+          "text": "Thư viện của ĐH Bắc Kinh",
+          "hz": "北京大学的图书馆",
+          "py": "Běijīng Dàxué de túshūguǎn",
+          "hv": "Bắc Kinh Đại học đích đồ thư quán",
+          "role": "Chủ ngữ hỏi",
+          "vn": "Thư viện trường ĐH Bắc Kinh",
+          "radicals": "北京大学 = Đại học Bắc Kinh; 图书馆 = Thư viện"
+        },
+        {
+          "text": "Xin lỗi",
+          "hz": "对不起",
+          "py": "duìbuqǐ",
+          "hv": "Đối bất khởi",
+          "role": "Khẩu ngữ tạ lỗi",
+          "vn": "Xin lỗi",
+          "radicals": "对 = Bộ hựu 又 + bộ thốn 寸; 不 = Bộ nhất 一; 起 = Bộ tẩu 走 + bộ kỷ 己"
+        },
+        {
+          "text": "Học sinh của ĐH Bắc Kinh",
+          "hz": "北京大学的学生",
+          "py": "Běijīng Dàxué de xuésheng",
+          "hv": "Bắc Kinh Đại học đích học sinh",
+          "role": "Cụm danh ngữ tân ngữ",
+          "vn": "Sinh viên/học sinh của ĐH Bắc Kinh",
+          "radicals": "北京大学 = Trường ĐH Bắc Kinh; 学生 = Học sinh, sinh viên"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "对不起我不是北京大学的学生我不知道", "tag": "Lời đáp từ chối B" },
+        { "id": "t1", "text": "请问北京大学的图书馆在哪儿", "tag": "Câu hỏi địa điểm A" },
+        { "id": "t3", "text": "在哪儿图书馆", "tag": "Bẫy ngữ tự hỏi" },
+        { "id": "t4", "text": "学生北京大学的", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["请问", "北京大学的图书馆在哪儿", "对不起", "不是北京大学的学生", "我不知道"],
+      "wordBankPool": ["请问北京大学的图书馆在哪儿", "对不起我不是北京大学的学生我不知道", "在哪儿图书馆", "学生北京大学的", "不知道我"],
+      "traps": [
+        {
+          "pattern": "在哪儿图书馆",
+          "msg": "Lỗi ngữ tự: Trong câu hỏi vị trí, chủ ngữ phải đứng TRƯỚC vị ngữ nghi vấn: '北京大学的图书馆在哪儿', không đảo ra sau."
+        },
+        {
+          "pattern": "学生北京大学",
+          "msg": "Lỗi định ngữ: Cơ sở đào tạo phải đứng trước danh từ trung tâm: '北京大学的学生'."
+        }
+      ],
+      "explanation": "Mẫu hỏi đường lịch sự: [请问 + Địa điểm + 在哪儿?]. Đáp lại từ chối lịch sự: [对不起, 我不是...的学生, 我不知道]."
+    },
+    {
+      "id": "b11-09",
+      "type": "anti_word_by_word",
+      "title": "Phán đoán đẳng lập 是...也是 và danh xưng du học sinh Mỹ",
+      "vi": "Đây là Mike, cậu ấy là du học sinh Mỹ, cũng là bạn tốt của tôi.",
+      "zh": "这是麦克他是美国留学生也是我的好朋友",
+      "standardTrans": "这是麦克他是美国留学生也是我的好朋友",
+      "pinyin": "Zhè shì Màikè, tā shì Měiguó liúxuéshēng, yě shì wǒ de hǎo péngyou.",
+      "grammarPoint": "Kết cấu liên kết phán đoán: 是... 也是...; Định ngữ xuất xứ: 美国留学生; Định ngữ phẩm chất: 我的好朋友",
+      "tokens": [
+        {
+          "text": "Mike",
+          "hz": "麦克",
+          "py": "Màikè",
+          "hv": "Mạch Khắc",
+          "role": "Tân ngữ 1 (tên riêng)",
+          "vn": "Mike (tên người nước ngoài)",
+          "radicals": "麦 = Bộ mạch 麦; 克 = Bộ thập 十 + bộ khẩu 口 + bộ nhi 儿"
+        },
+        {
+          "text": "Du học sinh Mỹ",
+          "hz": "美国留学生",
+          "py": "Měiguó liúxuéshēng",
+          "hv": "Mỹ Quốc lưu học sinh",
+          "role": "Cụm danh ngữ tân ngữ 2",
+          "vn": "Du học sinh người Mỹ",
+          "radicals": "美国 = Nước Mỹ; 留学生 = Lưu học sinh, du học sinh"
+        },
+        {
+          "text": "Bạn tốt của tôi",
+          "hz": "我的好朋友",
+          "py": "wǒ de hǎo péngyou",
+          "hv": "Ngã đích hảo bằng hữu",
+          "role": "Cụm danh ngữ tân ngữ 3",
+          "vn": "Người bạn tốt của tôi",
+          "radicals": "我 = Tôi; 的 = Trợ từ; 好朋友 = Bạn tốt"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "他是美国留学生", "tag": "Vế xuất thân" },
+        { "id": "t1", "text": "这是麦克", "tag": "Giới thiệu tên" },
+        { "id": "t3", "text": "也是我的好朋友", "tag": "Vế quan hệ thân hữu" },
+        { "id": "t4", "text": "留学生美国", "tag": "Bẫy định ngữ" },
+        { "id": "t5", "text": "朋友好我的", "tag": "Bẫy ngữ tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这是麦克", "美国留学生", "也是我的好朋友"],
+      "wordBankPool": ["这是麦克", "他是美国留学生", "也是我的好朋友", "留学生美国", "朋友好我的", "好朋友是我的"],
+      "traps": [
+        {
+          "pattern": "留学生美国",
+          "msg": "Lỗi định ngữ: Tên quốc gia/quốc tịch làm định ngữ phải đứng trước: '美国留学生', không dịch xuôi theo tiếng Việt."
+        },
+        {
+          "pattern": "朋友好",
+          "msg": "Lỗi ngữ tự tính từ: Tính từ '好' (tốt) phải đứng trước danh từ '朋友': '好朋友'."
+        }
+      ],
+      "explanation": "Cấu trúc giới thiệu đẳng lập: [这是 + Tên người, 他是 + Xuất thân, 也是 + Mối quan hệ]. Cụm định ngữ '美国留学生' không cần chữ '的'."
+    },
+    {
+      "id": "b11-10",
+      "type": "sentence_parsing",
+      "title": "Phủ định toàn bộ 都不 và trợ từ ngữ khí 吧 nhượng bộ",
+      "vi": "A: Ngày mai chúng tớ đi công viên, hai cậu đều không đi hả? B: Chúng tớ đều bận rồi, các cậu đi đi.",
+      "zh": "明天我们去公园你们俩都不去吗我们都忙了你们去吧",
+      "standardTrans": "明天我们去公园你们俩都不去吗我们都忙了你们去吧",
+      "pinyin": "Míngtiān wǒmen qù gōngyuán, nǐmen liǎ dōu bú qù ma? Wǒmen dōu máng le, nǐmen qù ba.",
+      "grammarPoint": "Phủ định toàn bộ: 都不 (đều không); Đại từ 2 người: 你们俩; Trợ từ 了 biểu thị trạng thái bận rộn; Trợ từ 吧 khuyên đi",
+      "tokens": [
+        {
+          "text": "Đi công viên",
+          "hz": "去公园",
+          "py": "qù gōngyuán",
+          "hv": "Khứ công viên",
+          "role": "Cụm động tân",
+          "vn": "Đi công viên",
+          "radicals": "去 = Đi; 公 = Bộ bát 八 + bộ khư 厶; 园 = Bộ vi 囗 + chữ nguyên 元"
+        },
+        {
+          "text": "Hai cậu đều không đi hả",
+          "hz": "你们俩都不去吗",
+          "py": "nǐmen liǎ dōu bú qù ma",
+          "hv": "Nhĩ môn lưỡng đô bất khứ ma",
+          "role": "Cụm vị ngữ phủ định nghi vấn",
+          "vn": "Hai bạn đều không đi à",
+          "radicals": "你们俩 = Hai bạn; 都不 = Đều không (phủ định toàn bộ); 去 = Đi; 吗 = Trợ từ"
+        },
+        {
+          "text": "Các cậu đi đi",
+          "hz": "你们去吧",
+          "py": "nǐmen qù ba",
+          "hv": "Nhĩ môn khứ ba",
+          "role": "Câu khuyên nhủ/cầu khiến",
+          "vn": "Các bạn cứ đi đi",
+          "radicals": "你们 = Các bạn; 去 = Đi; 吧 = Trợ từ ngữ khí"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你们俩都不去吗", "tag": "Hỏi 2 bạn có đi không" },
+        { "id": "t4", "text": "你们去吧", "tag": "Khuyên các bạn đi đi" },
+        { "id": "t1", "text": "明天我们去公园", "tag": "Kế hoạch đi công viên" },
+        { "id": "t3", "text": "我们都忙了", "tag": "Lý do đều bận" },
+        { "id": "t5", "text": "不都去吗", "tag": "Bẫy phủ định bộ phận" },
+        { "id": "t6", "text": "你们两个俩", "tag": "Bẫy lặp lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["明天我们去公园", "你们俩都不去吗", "我们都忙了", "你们去吧"],
+      "wordBankPool": ["明天我们去公园", "你们俩都不去吗", "我们都忙了", "你们去吧", "不都去吗", "你们两个俩", "都忙我们"],
+      "traps": [
+        {
+          "pattern": "不都去",
+          "msg": "Lỗi ngữ nghĩa phủ định: '不都' là phủ định bộ phận (không phải đều đi - có người đi người không), còn '都不' mới là phủ định toàn bộ (cả hai đều KHÔNG đi: '都不去')."
+        },
+        {
+          "pattern": "两个俩",
+          "msg": "Lỗi lặp lượng từ: '俩' đã bao hàm số lượng 2 người, không nói '两个俩'."
+        }
+      ],
+      "explanation": "Phân biệt then chốt trong Hán ngữ: '都不去' (tất cả đều không đi - phủ định toàn bộ). Trợ từ ngữ khí '吧' ở vế cuối biểu thị sự giục giã hoặc nhượng bộ: '你们去吧' (các bạn cứ đi đi)."
+    }
+  ]
+}

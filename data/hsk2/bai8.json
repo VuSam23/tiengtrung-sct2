@@ -410,7 +410,7 @@
       "wordBankPool": ["图书馆在教学楼左边", "教学楼后边就是足球场", "左边教学楼", "后边教学楼", "教学楼左边在图书馆"],
       "traps": [
         {
-          "pattern": "左边教学楼",
+          "pattern": "在左边教学楼",
           "msg": "Lỗi ngữ tự từ phương vị: 'Bên trái giảng đường' phải nói là '教学楼左边', danh từ mốc chuẩn đặt trước từ phương vị."
         }
       ],

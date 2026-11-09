@@ -675,7 +675,7 @@
           "msg": "Lỗi thiếu lượng từ: Khi chỉ định cụ thể một quyển sách ('cuốn sách này'), bắt buộc phải có lượng từ '本' ('这本中文书')."
         },
         {
-          "pattern": "是谁",
+          "pattern": "是谁是",
           "msg": "Lỗi thiếu kết cấu chữ 的: 'Cuốn sách này là của ai' bắt buộc phải có chữ '的' ('是谁的'). Nếu chỉ nói '是谁' câu sẽ biến thành nghĩa vô lý 'Cuốn sách này là ai?'."
         }
       ],
