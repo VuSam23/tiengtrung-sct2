@@ -1,0 +1,628 @@
+{
+  "lessonId": "b24",
+  "lessonTitle": "第二十四课: 我想学太极拳",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "会 vs 能 vs 可以",
+        "py": "huì vs néng vs kěyǐ",
+        "note": "会: Biết làm gì nhờ qua học tập, rèn luyện (不会做中国菜). 能: Có khả năng, năng lực hoặc điều kiện khách quan cho phép (一分钟能写15个字; 有事不能去). 可以: Được phép hoặc có thể chấp nhận (这里可以停车吗)."
+      },
+      {
+        "word": "请假 vs 请假条",
+        "py": "qǐngjià vs qǐngjiàtiáo",
+        "note": "请假 (động từ ly hợp): Xin nghỉ phép (我要请假去机场). 请假条 (danh từ): Giấy/đơn xin nghỉ phép."
+      },
+      {
+        "word": "又...又...",
+        "py": "yòu... yòu...",
+        "note": "Đồng tồn tại hai trạng thái, tính chất (vừa... vừa...): 又累又困 (vừa mệt vừa buồn ngủ)."
+      },
+      {
+        "word": "怎么 vs 为什么",
+        "py": "zěnme vs wèishénme",
+        "note": "怎么 khi hỏi nguyên nhân (sao, làm sao) thường mang sắc thái ngạc nhiên, thắc mắc trước một sự việc bất thường: 昨天你怎么没去学武术?"
+      }
+    ],
+    "grammarTips": [
+      "Động từ năng nguyện (助动词): 会, 能, 可以, 想, 要 đứng trước động từ chính. Phủ định đặt 不 trước động từ năng nguyện (不能, 不会, 不想). Khi cấm đoán hoặc không được phép, phủ định của 可以 là 不能/不行.",
+      "Động từ lặp lại (AA): 想想 (nghĩ thử xem, suy nghĩ một chút) giúp ngữ khí nhẹ nhàng, mang tính thử nghiệm.",
+      "Cấu trúc mang người đi đâu: 带 + Người + 去 + Địa điểm + Động từ (带她去医院看病)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b24-01",
+      "type": "anti_word_by_word",
+      "title": "Hỏi lý do vắng mặt bằng 怎么没 và phủ định khả năng 不能",
+      "vi": "A: Hôm qua sao cậu không đi học võ? B: Hôm qua tớ có việc, không đi được.",
+      "zh": "昨天你怎么没去学武术昨天我有事不能去",
+      "standardTrans": "昨天你怎么没去学武术昨天我有事不能去",
+      "pinyin": "A: Zuótiān nǐ zěnme méi qù xué wǔshù? B: Zuótiān wǒ yǒu shì, bù néng qù.",
+      "grammarPoint": "Đại từ 怎么 hỏi nguyên do ngạc nhiên; Phủ định quá khứ 没; Động từ năng nguyện 不能",
+      "tokens": [
+        {
+          "text": "Sao lại không",
+          "hz": "怎么没",
+          "py": "zěnme méi",
+          "hv": "Chẩm ma một",
+          "role": "Phó từ nghi vấn + Phủ định",
+          "vn": "Sao lại chưa/không (quá khứ)",
+          "radicals": "怎 = Chữ sạ 乍 + bộ tâm 心; 没 = Bộ chấm thủy 氵 + chữ một 殳"
+        },
+        {
+          "text": "Võ thuật",
+          "hz": "武术",
+          "py": "wǔshù",
+          "hv": "Võ thuật",
+          "role": "Tân ngữ",
+          "vn": "Võ thuật, học võ",
+          "radicals": "武 = Bộ chỉ 止 + bộ qua 戈; 术 = Bộ mộc 木 + nét chấm"
+        },
+        {
+          "text": "Không thể đi",
+          "hz": "不能去",
+          "py": "bù néng qù",
+          "hv": "Bất năng khứ",
+          "role": "Vị ngữ năng nguyện",
+          "vn": "Không thể đi, không đi được",
+          "radicals": "不 = Phủ định; 能 = Bộ nguyệt 月 + bộ tỷ 匕; 去 = Bộ thổ 土 + bộ khư 厶"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "昨天我有事", "tag": "Lý do của B" },
+        { "id": "t1", "text": "昨天你怎么没去学武术", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "不能去", "tag": "Hệ quả không thể đi" },
+        { "id": "t4", "text": "怎么不去学武术昨天", "tag": "Bẫy phủ định quá khứ" },
+        { "id": "t5", "text": "不会去", "tag": "Bẫy nhầm động từ 会" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["昨天你怎么没去", "学武术", "我有事", "不能去"],
+      "wordBankPool": ["昨天你怎么没去学武术", "昨天我有事", "不能去", "怎么不去学武术昨天", "不会去", "不有去学武术"],
+      "traps": [
+        {
+          "pattern": "怎么不去",
+          "msg": "Lỗi phủ định quá khứ: Sự việc đã diễn ra hôm qua ('昨天'), phủ định phải dùng '没' (怎么没去), không dùng '不' (trừ khi diễn đạt ý định chủ quan không muốn đi)."
+        },
+        {
+          "pattern": "不会去",
+          "msg": "Lỗi dùng từ năng nguyện: 'Không đi được' do hoàn cảnh bận việc chi phối phải dùng '不能去', không dùng '不会去' (vốn chỉ khả năng/kỹ năng hoặc dự đoán)."
+        }
+      ],
+      "explanation": "Khi hỏi nguyên nhân tại sao một hành động không diễn ra trong quá khứ kèm sắc thái ngạc nhiên, ta dùng cấu trúc '怎么没 + Động từ'. Vế đáp dùng '不能' để biểu thị điều kiện hoàn cảnh khách quan không cho phép."
+    },
+    {
+      "id": "b24-02",
+      "type": "sentence_parsing",
+      "title": "Động từ lặp lại 想想 và câu hỏi phương thức 怎么回答",
+      "vi": "Câu hỏi này không khó, các em nghĩ xem trả lời câu hỏi này thế nào.",
+      "zh": "这个问题不难你们想想这个问题怎么回答",
+      "standardTrans": "这个问题不难你们想想这个问题怎么回答",
+      "pinyin": "Zhè ge wèntí bù nán. Nǐmen xiǎngxiang zhè ge wèntí zěnme huídá.",
+      "grammarPoint": "Động từ đơn âm lặp lại (AA): 想想; Đại từ nghi vấn phương thức: 怎么 + Động từ",
+      "tokens": [
+        {
+          "text": "Không khó",
+          "hz": "不难",
+          "py": "bù nán",
+          "hv": "Bất nan",
+          "role": "Vị ngữ tính từ",
+          "vn": "Không khó",
+          "radicals": "不 = Bộ nhất 一; 难 = Bộ hựu 又 + bộ truy 隹"
+        },
+        {
+          "text": "Nghĩ xem / suy nghĩ chút",
+          "hz": "想想",
+          "py": "xiǎngxiang",
+          "hv": "Tưởng tưởng",
+          "role": "Động từ lặp lại",
+          "vn": "Nghĩ thử xem, suy nghĩ một chút",
+          "radicals": "相 = Bộ mộc 木 + bộ mục 目; 心 = Bộ tâm 心"
+        },
+        {
+          "text": "Trả lời thế nào",
+          "hz": "怎么回答",
+          "py": "zěnme huídá",
+          "hv": "Chẩm ma hồi đáp",
+          "role": "Cụm vị ngữ hỏi cách thức",
+          "vn": "Trả lời như thế nào",
+          "radicals": "怎 = Bộ tâm 心; 回 = Bộ vi 囗; 答 = Bộ trúc 竹 + chữ hợp 合"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你们想想", "tag": "Đề nghị suy nghĩ" },
+        { "id": "t1", "text": "这个问题不难", "tag": "Nhận định độ khó" },
+        { "id": "t3", "text": "这个问题怎么回答", "tag": "Nội dung suy nghĩ" },
+        { "id": "t4", "text": "回答怎么这个问题", "tag": "Bẫy trật tự phương thức" },
+        { "id": "t5", "text": "想一想这个问题回答怎么", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这个问题不难", "你们想想", "怎么回答"],
+      "wordBankPool": ["这个问题不难", "你们想想", "这个问题怎么回答", "回答怎么这个问题", "想一想这个问题回答怎么", "难不这个问题"],
+      "traps": [
+        {
+          "pattern": "回答怎么",
+          "msg": "Lỗi vị trí đại từ nghi vấn: Hỏi cách thức thực hiện hành động thì '怎么' bắt buộc phải đứng TRƯỚC động từ ('怎么回答'), tuyệt đối không dịch xuôi theo tiếng Việt 'trả lời thế nào' thành '回答怎么'."
+        }
+      ],
+      "explanation": "Động từ đơn âm tiết '想' lặp lại thành '想想' làm cho ngữ khí câu khuyên nhủ, đề nghị trở nên nhẹ nhàng, mang hàm ý thử sức."
+    },
+    {
+      "id": "b24-03",
+      "type": "anti_word_by_word",
+      "title": "Xin phép bằng 可以 và động từ 2 tân ngữ 问",
+      "vi": "A: Thưa thầy, em có thể hỏi một câu không? B: Đương nhiên có thể. Em hỏi đi.",
+      "zh": "老师我可以问一个问题吗当然可以你问吧",
+      "standardTrans": "老师我可以问一个问题吗当然可以你问吧",
+      "pinyin": "A: Lǎoshī, wǒ kěyǐ wèn yí ge wèntí ma? B: Dāngrán kěyǐ. Nǐ wèn ba.",
+      "grammarPoint": "Xin phép: 可以...吗; Động từ 2 tân ngữ (问); Phó từ khẳng định: 当然可以",
+      "tokens": [
+        {
+          "text": "Có thể",
+          "hz": "可以",
+          "py": "kěyǐ",
+          "hv": "Khả dĩ",
+          "role": "Động từ năng nguyện",
+          "vn": "Có thể (biểu thị sự xin phép)",
+          "radicals": "可 = Bộ khẩu 口; 以 = Bộ nhân ⺅"
+        },
+        {
+          "text": "Một câu hỏi",
+          "hz": "一个问题",
+          "py": "yí ge wèntí",
+          "hv": "Nhất cá vấn đề",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "Một câu hỏi, một vấn đề",
+          "radicals": "问 = Bộ môn 门 + bộ khẩu 口; 题 = Bộ thị 是 + bộ hiệt 页"
+        },
+        {
+          "text": "Đương nhiên có thể",
+          "hz": "当然可以",
+          "py": "dāngrán kěyǐ",
+          "hv": "Đương nhiên khả dĩ",
+          "role": "Lời đáp đồng ý",
+          "vn": "Tất nhiên là được",
+          "radicals": "当 = Bộ tiểu 小; 然 = Bộ hỏa 灬"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我可以问一个问题吗", "tag": "Lời xin phép" },
+        { "id": "t1", "text": "老师", "tag": "Xưng hô" },
+        { "id": "t3", "text": "当然可以你问吧", "tag": "Cho phép" },
+        { "id": "t4", "text": "能问一个问题我不", "tag": "Bẫy dùng từ" },
+        { "id": "t5", "text": "问一个问题对你", "tag": "Bẫy giới từ 对" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["老师", "可以问", "一个问题吗", "当然可以", "你问吧"],
+      "wordBankPool": ["老师", "我可以问一个问题吗", "当然可以你问吧", "能问一个问题我不", "问一个问题对你", "可以问你吗"],
+      "traps": [
+        {
+          "pattern": "问一个问题对",
+          "msg": "Lỗi dịch bồi: Động từ '问' bản thân nó đã là động từ mang 2 tân ngữ trực tiếp (问老师 / 问一个问题), không dùng giới từ 'đối với' (对)."
+        },
+        {
+          "pattern": "当然会",
+          "msg": "Lỗi nhầm lẫn động từ năng nguyện: Xin phép 'có thể... không' (可以...吗) thì câu đồng ý chuẩn mực là '当然可以', không dùng '当然会' (chỉ biết kỹ năng)."
+        }
+      ],
+      "explanation": "Trong giao tiếp lịch sự, '可以 + Động từ + 吗' là cấu trúc chuẩn để xin phép đối phương làm một việc gì đó."
+    },
+    {
+      "id": "b24-04",
+      "type": "sentence_parsing",
+      "title": "Hỏi năng lực trong một đơn vị thời gian và phó từ 多",
+      "vi": "A: Cậu có thể viết được bao nhiêu chữ Hán trong một phút? B: Khoảng 15 chữ. Tớ còn phải luyện nhiều.",
+      "zh": "你一分钟能写多少汉字大概十五个字我还要多练习",
+      "standardTrans": "你一分钟能写多少汉字大概十五个字我还要多练习",
+      "pinyin": "A: Nǐ yì fēnzhōng néng xiě duōshao hànzì? B: Dàgài shíwǔ ge zì. Wǒ hái yào duō liànxí.",
+      "grammarPoint": "Thời lượng làm trạng ngữ (一分钟); Năng lực (能写); Hỏi số lượng (多少); Làm gì nhiều hơn (多 + Động từ)",
+      "tokens": [
+        {
+          "text": "Một phút",
+          "hz": "一分钟",
+          "py": "yì fēnzhōng",
+          "hv": "Nhất phân chung",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Một phút",
+          "radicals": "分 = Bộ bát 八 + bộ đao 刀; 钟 = Bộ kim 钅 + chữ trung 中"
+        },
+        {
+          "text": "Có thể viết",
+          "hz": "能写",
+          "py": "néng xiě",
+          "hv": "Năng tả",
+          "role": "Động từ năng lực",
+          "vn": "Có thể viết được",
+          "radicals": "能 = Năng lực; 写 = Bộ mịch 冖"
+        },
+        {
+          "text": "Luyện nhiều hơn",
+          "hz": "多练习",
+          "py": "duō liànxí",
+          "hv": "Đa luyện tập",
+          "role": "Phó từ + Động từ",
+          "vn": "Luyện tập nhiều hơn",
+          "radicals": "多 = Bộ tịch 夕; 练 = Bộ mịch 纟; 习 = Chữ tập 习"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "大概十五个字", "tag": "Ước lượng của B" },
+        { "id": "t1", "text": "你一分钟能写多少汉字", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "我还要多练习", "tag": "Dự định bổ sung" },
+        { "id": "t4", "text": "能写汉字多少在一分钟", "tag": "Bẫy trật tự thời gian" },
+        { "id": "t5", "text": "练习多", "tag": "Bẫy vị trí 多" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["一分钟", "能写多少汉字", "大概十五个字", "还要多练习"],
+      "wordBankPool": ["你一分钟能写多少汉字", "大概十五个字", "我还要多练习", "能写汉字多少在一分钟", "练习多", "会写多少汉字"],
+      "traps": [
+        {
+          "pattern": "在一分钟",
+          "msg": "Lỗi trạng ngữ thời gian: Tiếng Việt nói 'trong một phút' đặt cuối câu, nhưng tiếng Trung phải đặt cụm thời gian '一分钟' lên trước động từ năng lực ('一分钟能写...')."
+        },
+        {
+          "pattern": "练习多",
+          "msg": "Lỗi cấu trúc khuyên/yêu cầu: 'Làm gì nhiều hơn' tiếng Trung dùng cấu trúc '多 + Động từ' (多练习, 多听, 多说), không nói '练习多'."
+        }
+      ],
+      "explanation": "Động từ năng nguyện '能' được dùng chuẩn xác khi biểu thị hiệu suất, tốc độ đạt được trong một đơn vị thời gian (一分钟能写...)."
+    },
+    {
+      "id": "b24-05",
+      "type": "sentence_parsing",
+      "title": "Hỏi sự cho phép với 可以 và câu tồn tại nơi chốn",
+      "vi": "A: Xin hỏi nơi này có thể đậu xe được không? B: Phía trước có bãi đậu xe, nơi đó có thể đậu xe được.",
+      "zh": "请问这儿可以停车吗前边儿有停车场那儿可以停车",
+      "standardTrans": "请问这儿可以停车吗前边儿有停车场那儿可以停车",
+      "pinyin": "A: Qǐngwèn, zhèr kěyǐ tíng chē ma? B: Qiánbianr yǒu tíngchēchǎng, nàr kěyǐ tíng chē.",
+      "grammarPoint": "Cho phép: 可以 + Động từ; Câu tồn tại: Nơi chốn + 有 + Danh từ; Đại từ thay thế: 那儿",
+      "tokens": [
+        {
+          "text": "Đỗ xe, đậu xe",
+          "hz": "停车",
+          "py": "tíng chē",
+          "hv": "Đình xa",
+          "role": "Cụm động tân",
+          "vn": "Đỗ xe, dừng xe",
+          "radicals": "停 = Bộ nhân đứng 亻 + chữ đình 亭; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Bãi đỗ xe",
+          "hz": "停车场",
+          "py": "tíngchēchǎng",
+          "hv": "Đình xa trường",
+          "role": "Danh từ địa điểm",
+          "vn": "Bãi đỗ xe",
+          "radicals": "场 = Bộ thổ 土 + chữ dương 𠃓"
+        },
+        {
+          "text": "Nơi đó, chỗ đó",
+          "hz": "那儿",
+          "py": "nàr",
+          "hv": "Na nhi",
+          "role": "Đại từ chỉ định nơi chốn",
+          "vn": "Nơi đó, chỗ kia",
+          "radicals": "那 = Bộ ấp 阝; 儿 = Bộ nhi 儿"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "前边儿有停车场", "tag": "Câu tồn tại chỉ địa điểm" },
+        { "id": "t1", "text": "请问这儿可以停车吗", "tag": "Câu hỏi xin phép của A" },
+        { "id": "t3", "text": "那儿可以停车", "tag": "Khẳng định có thể đỗ" },
+        { "id": "t4", "text": "停车在这儿可以吗", "tag": "Bẫy trật tự nơi chốn" },
+        { "id": "t5", "text": "哪儿可以停车", "tag": "Bẫy nhầm 那儿/哪儿" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这儿可以停车吗", "前边儿有停车场", "那儿可以停车"],
+      "wordBankPool": ["请问这儿可以停车吗", "前边儿有停车场", "那儿可以停车", "停车在这儿可以吗", "哪儿可以停车", "有停车前边儿"],
+      "traps": [
+        {
+          "pattern": "停车在这儿",
+          "msg": "Lỗi trạng ngữ nơi chốn: Vị trí '这儿' làm trạng ngữ phải đặt trước động từ năng nguyện và động từ chính ('这儿可以停车'), không đặt ở cuối câu."
+        },
+        {
+          "pattern": "哪儿可以",
+          "msg": "Lỗi đại từ chỉ định: 'Nơi đó' là đại từ chỉ định '那儿' (nàr - không có bộ khẩu), không nhầm với từ để hỏi '哪儿' (nǎr)."
+        }
+      ],
+      "explanation": "Động từ '可以' dùng để hỏi quy định hoặc sự cho phép của hoàn cảnh (ở đây có được phép đỗ xe không)."
+    },
+    {
+      "id": "b24-06",
+      "type": "anti_word_by_word",
+      "title": "Phân biệt kỹ năng học được bằng 会 và phủ định 不会",
+      "vi": "Tôi rất thích món ăn Trung Quốc nhưng mà tôi không biết nấu món ăn Trung Quốc.",
+      "zh": "我很喜欢中国菜但是我不会做中国菜",
+      "standardTrans": "我很喜欢中国菜但是我不会做中国菜",
+      "pinyin": "Wǒ hěn xǐhuan Zhōngguó cài, dànshì wǒ bú huì zuò Zhōngguó cài.",
+      "grammarPoint": "Liên từ chuyển ngoặt 但是; Động từ năng nguyện chỉ kỹ năng: 会 / 不会 + Động từ (做)",
+      "tokens": [
+        {
+          "text": "Món ăn Trung Quốc",
+          "hz": "中国菜",
+          "py": "Zhōngguó cài",
+          "hv": "Trung Quốc thái",
+          "role": "Tân ngữ",
+          "vn": "Món ăn, đồ ăn Trung Quốc",
+          "radicals": "菜 = Bộ thảo 艹 + chữ thái 采"
+        },
+        {
+          "text": "Nhưng mà",
+          "hz": "但是",
+          "py": "dànshì",
+          "hv": "Đãn thị",
+          "role": "Liên từ chuyển ngoặt",
+          "vn": "Nhưng, nhưng mà",
+          "radicals": "但 = Bộ nhân đứng 亻 + chữ đán 旦; 是 = Bộ nhật 日"
+        },
+        {
+          "text": "Không biết nấu",
+          "hz": "不会做",
+          "py": "bú huì zuò",
+          "hv": "Bất hội tác",
+          "role": "Cụm vị ngữ kỹ năng",
+          "vn": "Không biết làm, không biết nấu",
+          "radicals": "会 = Bộ nhân 人 + chữ vân 云; 做 = Bộ nhân đứng 亻 + chữ cố 故"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "但是我不会做中国菜", "tag": "Vế chuyển ngoặt kỹ năng" },
+        { "id": "t1", "text": "我很喜欢中国菜", "tag": "Vế sở thích" },
+        { "id": "t3", "text": "我不知道做中国菜", "tag": "Bẫy dùng từ 知道" },
+        { "id": "t4", "text": "我不能做中国菜", "tag": "Bẫy dùng từ 不能" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["喜欢中国菜", "但是", "不会做中国菜"],
+      "wordBankPool": ["我很喜欢中国菜", "但是我不会做中国菜", "我不知道做中国菜", "我不能做中国菜", "可是不会做菜中国"],
+      "traps": [
+        {
+          "pattern": "不知道做",
+          "msg": "Lỗi dùng từ 'biết': 'Biết' một kỹ năng do học tập/rèn luyện (nấu ăn, bơi lội, ngoại ngữ, lái xe) bắt buộc dùng '会/不会', không dùng '知道' (biết thông tin)."
+        },
+        {
+          "pattern": "不能做",
+          "msg": "Lỗi phân biệt 能 và 会: '不能做' nghĩa là bản thân biết làm nhưng hiện tại bị đau tay hoặc thiếu bếp nên không làm được; còn câu này nói về việc chưa học cách nấu nên phải dùng '不会做'."
+        }
+      ],
+      "explanation": "Điểm ngữ pháp mấu chốt: Kỹ năng có được qua rèn luyện dùng '会', không biết dùng '不会'."
+    },
+    {
+      "id": "b24-07",
+      "type": "sentence_parsing",
+      "title": "Hỏi tình trạng sức khỏe và cấu trúc 带 ai đi đâu khám bệnh",
+      "vi": "A: Mẹ cậu thế nào rồi? B: Mẹ tớ còn sốt, buổi chiều tớ định đưa mẹ tớ đi bệnh viện khám bệnh.",
+      "zh": "你妈妈身体怎么样了她还发烧下午我打算带她去医院看病",
+      "standardTrans": "你妈妈身体怎么样了她还发烧下午我打算带她去医院看病",
+      "pinyin": "A: Nǐ māma shēntǐ zěnmeyàng le? B: Tā hái fāshāo, xiàwù wǒ dǎsuàn dài tā qù yīyuàn kàn bìng.",
+      "grammarPoint": "Hỏi sức khỏe: 身体怎么样了; Bệnh lý: 发烧; Cấu trúc dẫn dắt: 带 + Ai + 去 + Nơi chốn + Động từ",
+      "tokens": [
+        {
+          "text": "Sức khỏe thế nào rồi",
+          "hz": "身体怎么样了",
+          "py": "shēntǐ zěnmeyàng le",
+          "hv": "Thân thể chẩm ma dạng liễu",
+          "role": "Vị ngữ hỏi",
+          "vn": "Sức khỏe ra sao rồi",
+          "radicals": "身 = Bộ thân 身; 体 = Bộ nhân đứng 亻; 样 = Bộ mộc 木"
+        },
+        {
+          "text": "Còn sốt",
+          "hz": "还发烧",
+          "py": "hái fāshāo",
+          "hv": "Hoàn phát thiêu",
+          "role": "Vị ngữ bệnh lý",
+          "vn": "Vẫn còn bị sốt",
+          "radicals": "还 = Bộ sước 辶; 发 = Chữ phát 发; 烧 = Bộ hỏa 火 + chữ nghiêu 尧"
+        },
+        {
+          "text": "Đưa mẹ đi khám bệnh",
+          "hz": "带她去医院看病",
+          "py": "dài tā qù yīyuàn kàn bìng",
+          "hv": "Đái tha khứ y viện khán bệnh",
+          "role": "Cụm liên động liên hoàn",
+          "vn": "Dẫn mẹ đến bệnh viện khám",
+          "radicals": "带 = Bộ cân 巾; 医 = Bộ phương 匚; 院 = Bộ ấp 阝; 病 = Bộ nạch 疒"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "她还发烧", "tag": "Tình trạng của mẹ" },
+        { "id": "t1", "text": "你妈妈身体怎么样了", "tag": "Câu hỏi thăm của A" },
+        { "id": "t3", "text": "下午我打算带她去医院看病", "tag": "Kế hoạch của B" },
+        { "id": "t4", "text": "带她医院去看病", "tag": "Bẫy trật tự liên động" },
+        { "id": "t5", "text": "怎么样你妈妈身体", "tag": "Bẫy trật tự câu hỏi" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["身体怎么样了", "还发烧", "打算带她去", "医院看病"],
+      "wordBankPool": ["你妈妈身体怎么样了", "她还发烧", "下午我打算带她去医院看病", "带她医院去看病", "怎么样你妈妈身体", "去医院看病带她"],
+      "traps": [
+        {
+          "pattern": "去医院看病带她",
+          "msg": "Lỗi câu liên động: Hành động đưa người đi đâu diễn ra trước, phải là '带她去医院看病', không đảo '带她' ra sau."
+        }
+      ],
+      "explanation": "Cấu trúc đưa/dẫn ai đi đâu làm gì là: 带 + Người + 去 + Địa điểm + Hành động. Lưu ý '看病' vừa có nghĩa là bác sĩ khám bệnh, vừa có nghĩa là bệnh nhân đi khám bệnh."
+    },
+    {
+      "id": "b24-08",
+      "type": "anti_word_by_word",
+      "title": "Hội thoại xin nghỉ phép 请假 và danh từ 请假条",
+      "vi": "Thầy giáo: Mary, em tìm tôi có việc gì vậy? Mary: Thưa thầy, hôm nay mẹ em đến Việt Nam thăm em, em muốn xin nghỉ để đến sân bay đón mẹ em. Đây là giấy xin phép em.",
+      "zh": "老师玛丽你找我有什么事玛丽老师今天我妈妈来越南看我我要请假去机场接她这是我的请假条",
+      "standardTrans": "老师玛丽你找我有什么事玛丽老师今天我妈妈来越南看我我要请假去机场接她这是我的请假条",
+      "pinyin": "Lǎoshī: Mǎlì, nǐ zhǎo wǒ yǒu shénme shì? Mǎlì: Lǎoshī, jīntiān wǒ māma lái Yuènán kàn wǒ, wǒ yào qǐngjià qù jīchǎng jiē tā. Zhè shì wǒ de qǐngjiàtiáo.",
+      "grammarPoint": "Hỏi việc: 有什么事; Động từ ly hợp xin nghỉ: 请假; Đơn xin phép: 请假条; Mục đích liên động: 去机场接她",
+      "tokens": [
+        {
+          "text": "Có việc gì",
+          "hz": "有什么事",
+          "py": "yǒu shénme shì",
+          "hv": "Hữu thập ma sự",
+          "role": "Cụm vị ngữ hỏi",
+          "vn": "Có chuyện gì, có việc gì",
+          "radicals": "有 = Bộ nguyệt 月; 什 = Bộ nhân đứng 亻; 事 = Bộ quyết 亅"
+        },
+        {
+          "text": "Xin nghỉ phép",
+          "hz": "请假",
+          "py": "qǐngjià",
+          "hv": "Thỉnh giả",
+          "role": "Động từ ly hợp",
+          "vn": "Xin nghỉ học, xin phép nghỉ",
+          "radicals": "请 = Bộ ngôn 讠; 假 = Bộ nhân đứng 亻 + chữ đoạn 叚"
+        },
+        {
+          "text": "Đơn xin nghỉ",
+          "hz": "请假条",
+          "py": "qǐngjiàtiáo",
+          "hv": "Thỉnh giả điều",
+          "role": "Danh từ",
+          "vn": "Giấy xin phép, đơn xin nghỉ phép",
+          "radicals": "条 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "玛丽老师今天我妈妈来越南看我", "tag": "Lý do của Mary" },
+        { "id": "t1", "text": "老师玛丽你找我有什么事", "tag": "Thầy hỏi việc" },
+        { "id": "t3", "text": "我要请假去机场接她", "tag": "Hành động xin nghỉ đón mẹ" },
+        { "id": "t4", "text": "这是我的请假条", "tag": "Nộp đơn xin phép" },
+        { "id": "t5", "text": "接她去机场", "tag": "Bẫy liên động" },
+        { "id": "t6", "text": "请假信", "tag": "Bẫy từ vựng 请假条" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你找我有什么事", "来越南看我", "我要请假", "去机场接她", "请假条"],
+      "wordBankPool": ["老师玛丽你找我有什么事", "玛丽老师今天我妈妈来越南看我", "我要请假去机场接她", "这是我的请假条", "接她去机场", "请假信", "去接她机场"],
+      "traps": [
+        {
+          "pattern": "接她去机场",
+          "msg": "Lỗi trật tự liên động: Phải đến địa điểm trước rồi mới thực hiện hành động đón, đúng ngữ tự là '去机场接她'."
+        },
+        {
+          "pattern": "请假信",
+          "msg": "Lỗi từ vựng: Giấy/đơn xin nghỉ học ngắn hạn trong trường học người Trung Quốc dùng từ '请假条' (tiáo), không dùng '请假信'."
+        }
+      ],
+      "explanation": "Đoạn hội thoại tình huống trường học thực tế. Cần phân biệt rõ hành động '请假' (động từ) và mảnh giấy xin nghỉ '请假条' (danh từ)."
+    },
+    {
+      "id": "b24-09",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc trạng thái song song 又...又... và động từ chỉ định 服装店",
+      "vi": "A: Tớ muốn đến cửa hàng quần áo đó mua áo sơ mi. Cậu đi không? B: Tớ vừa mệt vừa buồn ngủ, tớ muốn về nhà nghỉ ngơi, cậu đi đi.",
+      "zh": "我要去那家服装店买衬衫你去吗我又累又困我要回家休息你去吧",
+      "standardTrans": "我要去那家服装店买衬衫你去吗我又累又困我要回家休息你去吧",
+      "pinyin": "A: Wǒ yào qù nà jiā fúzhuāngdiàn mǎi chènshān. Nǐ qù ma? B: Wǒ yòu lèi yòu kùn, wǒ yào huí jiā xiūxi. Nǐ qù ba.",
+      "grammarPoint": "Lượng từ của cửa hàng (家); Cấu trúc song song: 又 + Tính từ 1 + 又 + Tính từ 2; Động từ quay về: 回家",
+      "tokens": [
+        {
+          "text": "Cửa hàng quần áo đó",
+          "hz": "那家服装店",
+          "py": "nà jiā fúzhuāngdiàn",
+          "hv": "Na gia phục trang điếm",
+          "role": "Cụm danh từ nơi chốn",
+          "vn": "Cửa hàng quần áo đó",
+          "radicals": "家 = Lượng từ cửa hàng; 服 = Bộ nguyệt 月; 装 = Bộ y 衣; 店 = Bộ quảng 广"
+        },
+        {
+          "text": "Áo sơ mi",
+          "hz": "衬衫",
+          "py": "chènshān",
+          "hv": "Sấn sam",
+          "role": "Tân ngữ",
+          "vn": "Áo sơ mi",
+          "radicals": "衬 = Bộ y 衤 + chữ thốn 寸; 衫 = Bộ y 衤 + bộ sam 彡"
+        },
+        {
+          "text": "Vừa mệt vừa buồn ngủ",
+          "hz": "又累又困",
+          "py": "yòu lèi yòu kùn",
+          "hv": "Hựu luy hựu khốn",
+          "role": "Vị ngữ trạng thái",
+          "vn": "Vừa mệt vừa buồn ngủ",
+          "radicals": "又 = Lại, vừa; 累 = Bộ điền 田 + bộ mịch 糸; 困 = Bộ vi 囗 + bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你去吗", "tag": "Hỏi ý của A" },
+        { "id": "t1", "text": "我要去那家服装店买衬衫", "tag": "Ý định của A" },
+        { "id": "t4", "text": "我要回家休息你去吧", "tag": "Kế hoạch từ chối của B" },
+        { "id": "t3", "text": "我又累又困", "tag": "Lý do của B" },
+        { "id": "t5", "text": "又累和又困", "tag": "Bẫy thừa liên từ 和" },
+        { "id": "t6", "text": "去家休息", "tag": "Bẫy động từ 回" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["那家服装店", "买衬衫", "你去吗", "又累又困", "回家休息"],
+      "wordBankPool": ["我要去那家服装店买衬衫", "你去吗", "我又累又困", "我要回家休息你去吧", "又累和又困", "去家休息", "那个服装店"],
+      "traps": [
+        {
+          "pattern": "又累和",
+          "msg": "Lỗi cấu trúc '又...又...': Hai vế tính từ đi trực tiếp sau '又', tuyệt đối không chèn liên từ '和' (và) vào giữa."
+        },
+        {
+          "pattern": "去家",
+          "msg": "Lỗi động từ phương hướng: 'Về nhà' là quay về nơi ở quen thuộc, bắt buộc dùng '回家', không nói '去家'."
+        }
+      ],
+      "explanation": "Cấu trúc '又...又...' dùng để liên kết hai tính từ có cùng chiều hướng tính chất (ở đây là hai trạng thái mệt mỏi: 累 và 困)."
+    },
+    {
+      "id": "b24-10",
+      "type": "sentence_parsing",
+      "title": "Hỏi ý nghĩa từ vựng và câu khuyên nhủ với 吧",
+      "vi": "A: Từ này có nghĩa là gì vậy? B: Tớ không biết. Cậu hỏi thầy giáo Vương đi.",
+      "zh": "这个词是什么意思我不知道你问王老师吧",
+      "standardTrans": "这个词是什么意思我不知道你问王老师吧",
+      "pinyin": "A: Zhè ge cí shì shénme yìsi? B: Wǒ bù zhīdào. Nǐ wèn Wáng lǎoshī ba.",
+      "grammarPoint": "Hỏi ý nghĩa: ...是什么意思; Động từ nhận thức: 知道; Trợ từ ngữ khí khuyên nhủ: 吧",
+      "tokens": [
+        {
+          "text": "Từ này",
+          "hz": "这个词",
+          "py": "zhè ge cí",
+          "hv": "Giá cá từ",
+          "role": "Chủ ngữ",
+          "vn": "Từ này, từ ngữ này",
+          "radicals": "这 = Bộ sước 辶; 词 = Bộ ngôn 讠 + chữ ty 司"
+        },
+        {
+          "text": "Có ý nghĩa gì",
+          "hz": "是什么意思",
+          "py": "shì shénme yìsi",
+          "hv": "Thị thập ma ý tư",
+          "role": "Cụm vị ngữ hỏi nghĩa",
+          "vn": "Là có ý nghĩa gì",
+          "radicals": "意 = Bộ âm 音 + bộ tâm 心; 思 = Bộ điền 田 + bộ tâm 心"
+        },
+        {
+          "text": "Hỏi thầy Vương đi",
+          "hz": "你问王老师吧",
+          "py": "nǐ wèn Wáng lǎoshī ba",
+          "hv": "Nhĩ vấn Vương lão sư ba",
+          "role": "Lời khuyên nhủ",
+          "vn": "Cậu hỏi thầy Vương đi",
+          "radicals": "问 = Bộ môn 门 + bộ khẩu 口; 吧 = Bộ khẩu 口 + chữ ba 巴"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我不知道", "tag": "Không biết" },
+        { "id": "t1", "text": "这个词是什么意思", "tag": "Câu hỏi ý nghĩa của A" },
+        { "id": "t3", "text": "你问王老师吧", "tag": "Khuyên nhủ của B" },
+        { "id": "t4", "text": "意思是什么这个词", "tag": "Bẫy trật tự câu hỏi" },
+        { "id": "t5", "text": "我不会", "tag": "Bẫy nhầm 不会" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这个词", "是什么意思", "我不知道", "问王老师吧"],
+      "wordBankPool": ["这个词是什么意思", "我不知道", "你问王老师吧", "意思是什么这个词", "我不会", "问去王老师"],
+      "traps": [
+        {
+          "pattern": "意思是什么",
+          "msg": "Lỗi cấu trúc: Mẫu câu hỏi ý nghĩa cố định là '[Đối tượng] + 是什么意思?', không đảo thành '意思是什么'."
+        },
+        {
+          "pattern": "我不会",
+          "msg": "Lỗi từ nhận thức: Không biết một thông tin, nội dung nào đó dùng '我不知道', không dùng '我不会' (chỉ không biết kỹ năng)."
+        }
+      ],
+      "explanation": "Câu hỏi ý nghĩa kinh điển trong lớp học tiếng Trung: '...是什么意思'. Khi không nắm rõ thông tin, câu trả lời tự nhiên nhất là '我不知道'."
+    }
+  ]
+}
