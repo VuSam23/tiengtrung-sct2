@@ -1,0 +1,509 @@
+{
+  "lessonId": "b28",
+  "lessonTitle": "第二十八课: 我吃了早饭就来了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "就 vs 才",
+        "py": "jiù vs cái",
+        "note": "就 biểu thị sự việc diễn ra sớm, nhanh, thuận lợi hoặc kết quả đến sớm (八点就上课了). 才 biểu thị sự việc diễn ra muộn, chậm trễ, có điều kiện khó khăn (八点才, 两个小时才做完)."
+      },
+      {
+        "word": "V1 + 了... 就 + V2",
+        "py": "V1 + le... jiù + V2",
+        "note": "Cấu trúc chuỗi hành động: Sau khi hoàn thành xong hành động 1 thì lập tức thực hiện ngay hành động 2 (我吃了早饭就来了)."
+      },
+      {
+        "word": "虽然... 但是...",
+        "py": "suīrán... dànshì...",
+        "note": "Cặp liên từ chỉ sự nhượng bộ (Mặc dù... nhưng mà...): 虽然外边很冷, 但是屋子里很暖和."
+      },
+      {
+        "word": "要是... 就...",
+        "py": "yàoshi... jiù...",
+        "note": "Cặp liên từ giả thiết (Nếu... thì...): 要是你来, 就给我打电话."
+      }
+    ],
+    "grammarTips": [
+      "Kết cấu hành động liên tiếp V1 + 了 + Tân ngữ + 就 + V2: Biểu thị tính liền mạch về thời gian giữa hai hành động (吃了早饭就来).",
+      "Sự khác biệt giữa 就 và 才: '就' nhấn mạnh thời gian sớm, dễ dàng; '才' nhấn mạnh thời gian muộn màng, tốn nhiều thời gian, công sức.",
+      "Cấu trúc nhượng bộ '虽然... 但是...': Dùng để kết nối hai vế câu có ý nghĩa tương phản, đối lập nhau."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b28-01",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc chuỗi hành động liền mạch V1 + 了... 就 + V2",
+      "vi": "A: Sao hôm nay cậu đến muộn thế? B: Xin lỗi, tớ ăn sáng xong liền đến ngay.",
+      "zh": "你怎么今天来得这么晚对不起我吃了早饭就来了",
+      "standardTrans": "你怎么今天来得这么晚对不起我吃了早饭就来了",
+      "pinyin": "A: Nǐ zěnme jīntiān lái de zhème wǎn? B: Duìbuqǐ, wǒ chī le zǎofàn jiù lái le.",
+      "grammarPoint": "Bổ ngữ trạng thái: 来得这么晚; Chuỗi hành động liên tiếp: 吃了早饭就来了",
+      "tokens": [
+        {
+          "text": "Sao hôm nay cậu đến muộn thế",
+          "hz": "你怎么今天来得这么晚",
+          "py": "nǐ zěnme jīntiān lái de zhème wǎn",
+          "hv": "Nhĩ chẩm ma kim thiên lai đắc giá ma vãn",
+          "role": "Câu hỏi bổ ngữ trạng thái",
+          "vn": "Sao hôm nay cậu đến trễ như vậy",
+          "radicals": "怎 = Tâm; 今 = Nhật; 晚 = Muộn"
+        },
+        {
+          "text": "Tớ ăn sáng xong liền đến ngay",
+          "hz": "我吃了早饭就来了",
+          "py": "wǒ chī le zǎofàn jiù lái le",
+          "hv": "Ngã ngật liễu tảo phạn tựu lai liễu",
+          "role": "Vế hành động liên tiếp",
+          "vn": "Tớ ăn sáng xong là đến liền",
+          "radicals": "吃 = Khẩu; 饭 = Phạn; 就 = Liền; 来 = Đến"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "对不起我吃了早饭就来了", "tag": "Lời xin lỗi & lý do" },
+        { "id": "t1", "text": "你怎么今天来得这么晚", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "来得晚这么", "tag": "Bẫy trật tự tính từ" },
+        { "id": "t4", "text": "chī le zǎofàn", "tag": "Bẫy cấu trúc V1 + 了" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["怎么今天来得这么晚", "吃了早饭", "就来了"],
+      "wordBankPool": ["你怎么今天来得这么晚", "对不起我吃了早饭就来了", "来得晚这么", "早饭吃了就来", "我就吃了早饭"],
+      "traps": [
+        {
+          "pattern": "早饭吃了就来",
+          "msg": "Lỗi cấu trúc V1 + 了: Trợ từ '了' phải đặt ngay sau động từ '吃' ('吃了早饭'), không đặt '了' sau danh từ."
+        }
+      ],
+      "explanation": "Kết cấu 'V1 + 了... 就 + V2' diễn tả hành động thứ hai (đến) diễn ra ngay lập tức sau khi hành động thứ nhất (ăn sáng) vừa hoàn tất."
+    },
+    {
+      "id": "b28-02",
+      "type": "sentence_parsing",
+      "title": "Phân biệt 就 (sớm/nhanh) và 才 (muộn/chậm) trong công việc",
+      "vi": "Bố tớ ngày nào cũng rất muộn mới tan làm, hôm nay năm giờ chiều đã tan làm rồi.",
+      "zh": "我爸爸每天都很晚才下班今天下午五点就下班了",
+      "standardTrans": "我爸爸每天都很晚才下班今天下午五点就下班了",
+      "pinyin": "Wǒ bàba měitiān dōu hěn wǎn cái xiàbān, jīntiān xiàwǔ wǔ diǎn jiù xiàbān le.",
+      "grammarPoint": "Muộn màng: 很晚才下班; Sớm nhanh chóng: 五点就下班了",
+      "tokens": [
+        {
+          "text": "Ngày nào cũng rất muộn mới tan làm",
+          "hz": "我爸爸每天都很晚才下班",
+          "py": "wǒ bàba měitiān dōu hěn wǎn cái xiàbān",
+          "hv": "Ngã bá bá mỗi thiên đô hẩn vãn tài hạ ban",
+          "role": "Mệnh đề thói quen (才)",
+          "vn": "Bố tớ hôm nào cũng muộn mới tan ca",
+          "radicals": "爸 = Phụ; 每 = Mỗi; 晚 = Muộn; 才 = Mới; 下 = Hạ; 班 = Ban"
+        },
+        {
+          "text": "Hôm nay 5 giờ chiều đã tan làm rồi",
+          "hz": "今天下午五点就下班了",
+          "py": "jīntiān xiàwǔ wǔ diǎn jiù xiàbān le",
+          "hv": "Kim thiên ngọ ngũ điểm tựu hạ ban liễu",
+          "role": "Mệnh đề thực tế (就)",
+          "vn": "Hôm nay năm giờ chiều đã về sớm rồi",
+          "radicals": "今 = Kim; 午 = Ngọ; 五 = Ngũ; 点 = Điểm; 就 = Liền; 了 = Rồi"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "今天下午五点就下班了", "tag": "Sự việc hôm nay sớm (就)" },
+        { "id": "t1", "text": "我爸爸每天都很晚才下班", "tag": "Thói quen muộn (才)" },
+        { "id": "t3", "text": "五点才下班", "tag": "Bẫy nhầm lẫn 就/才" },
+        { "id": "t4", "text": "很晚就下班", "tag": "Bẫy nhầm lẫn 才/就" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["每天都很晚才下班", "今天下午五点", "就下班了"],
+      "wordBankPool": ["我爸爸每天都很晚才下班", "今天下午五点就下班了", "五点才下班", "很晚就下班", "下班就五点"],
+      "traps": [
+        {
+          "pattern": "很晚就下班",
+          "msg": "Lỗi phân biệt 就 / 才: Diễn đạt ý về nhà muộn màng, tốn thời gian phải dùng '才' ('很晚才下班'); còn về sớm, nhanh chóng dùng '就' ('五点就下班')."
+        }
+      ],
+      "explanation": "Câu văn đối lập tuyệt vời giữa '才' (diễn tả sự việc xảy ra muộn màng, chậm chạp) và '就' (diễn tả sự việc xảy ra sớm, nhanh chóng hơn dự kiến)."
+    },
+    {
+      "id": "b28-03",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc nhượng bộ 虽然... 但是... và bổ ngữ trạng thái rất lưu loát",
+      "vi": "Mặc dù thời gian cậu ấy học chưa lâu, nhưng mà cậu ấy nói rất lưu loát.",
+      "zh": "他虽然学的时间不长但是他说得很流利",
+      "standardTrans": "他虽然学的时间不长但是他说得很流利",
+      "pinyin": "Tā suīrán xué de shíjiān bù cháng, dànshì tā shuō de hěn liúlì.",
+      "grammarPoint": "Cặp liên từ nhượng bộ: 虽然... 但是...; Bổ ngữ trạng thái: 说得 + 很 lưu loát",
+      "tokens": [
+        {
+          "text": "Mặc dù thời gian học không dài",
+          "hz": "他虽然学的时间不长",
+          "py": "tā suīrán xué de shíjiān bù cháng",
+          "hv": "Tha tuy nhiên học đích thời gian bất trường",
+          "role": "Vế nhượng bộ (虽然)",
+          "vn": "Dù thời gian học của anh ấy không lâu",
+          "radicals": "虽 = Bộ khẩu; 然 = Hỏa; 时 = Nhật; 间 = Môn; 长 = Trường"
+        },
+        {
+          "text": "Nhưng cậu ấy nói rất lưu loát",
+          "hz": "但是他说得很流利",
+          "py": "dànshì tā shuō de hěn liúlì",
+          "hv": "Đãn thị tha thuyết đắc hẩn lưu lợi",
+          "role": "Vế kết quả (但是)",
+          "vn": "Nhưng mà cậu ấy nói vô cùng trôi chảy",
+          "radicals": "但 = Nhân đứng; 是 = Nhật; 说 = Ngôn; 流 = Thủy; 利 = Đao"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "但是他说得很流利", "tag": "Vế kết quả tương phản" },
+        { "id": "t1", "text": "他虽然学的时间不长", "tag": "Vế giả thiết nhượng bộ" },
+        { "id": "t3", "text": "虽然但是", "tag": "Bẫy lặp liên từ" },
+        { "id": "t4", "text": "说得很流利但是", "tag": "Bẫy trật tự vế câu" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["他虽然学的时间不长", "但是", "说得很流利"],
+      "wordBankPool": ["他虽然学的时间不长", "但是他说得很流利", "虽然但是", "说得很流利但是", "学时间不长虽然"],
+      "traps": [
+        {
+          "pattern": "虽然但是",
+          "msg": "Lỗi ngữ pháp: Trong câu tiếng Trung, cặp liên từ nhượng bộ '虽然... 但是...' phải đi liền cấu trúc vế 1 và vế 2, không lặp lại từ thừa."
+        }
+      ],
+      "explanation": "Cấu trúc '虽然... 但是...' dùng để nối hai vế câu có ý nghĩa tương phản. Vế sau kèm theo bổ ngữ trạng thái '说得 + 很流利'."
+    },
+    {
+      "id": "b28-04",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc giả thiết nếu... thì... 要是... 就... kết hợp phản vấn",
+      "vi": "Ngày mai cậu cùng chúng tôi đi chứ? Nếu cậu không đi thì hãy gọi điện thoại cho tớ nhé.",
+      "zh": "明天你跟我们一起去吗要是你不去就给我打个电话吧",
+      "standardTrans": "明天你跟我们一起去吗要是你不去就给我打个电话吧",
+      "pinyin": "A: Míngtiān nǐ gēn wǒmen yìqǐ qù ma? B: Yàoshi nǐ bú qù, jiù gěi wǒ dǎ gè diànhuà ba.",
+      "grammarPoint": "Câu hỏi dự định; Cặp liên từ giả thiết: 要是... 就...; Cấu trúc gọi điện: 给我打个电话",
+      "tokens": [
+        {
+          "text": "Ngày mai cậu cùng đi chứ",
+          "hz": "明天你跟我们一起去吗",
+          "py": "míngtiān nǐ gēn wǒmen yìqǐ qù ma",
+          "hv": "Kim thiên nhĩ cân ngã môn nhất khởi khứ ma",
+          "role": "Câu rủ rê",
+          "vn": "Ngày mai cậu đi cùng bọn mình chứ",
+          "radicals": "明 = Nhật; 天 = Thiên; 起 = Tẩu"
+        },
+        {
+          "text": "Nếu cậu không đi thì gọi điện cho tớ nhé",
+          "hz": "要是你不去就给我打个电话吧",
+          "py": "yàoshi nǐ bú qù, jiù gěi wǒ dǎ gè diànhuà ba",
+          "hv": "Yếu thị nhĩ bất khứ, tựu cấp ngã đả cá điện thoại ba",
+          "role": "Vế giả thiết (要是... 就...)",
+          "vn": "Nếu không đi thì nhớ gọi cho tớ nha",
+          "radicals": "要 = Yếu; 是 = Thị; 就 = Liền; 电 = Điện"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "要是你不去就给我打个电话吧", "tag": "Điều kiện giả thiết" },
+        { "id": "t1", "text": "明天你跟我们一起去吗", "tag": "Lời mời gọi" },
+        { "id": "t3", "text": "就打电话给我", "tag": "Bẫy trật tự giới từ 给" },
+        { "id": "t4", "text": "去要是你", "tag": "Bẫy cấu trúc 要是" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["明天你跟我们一起去吗", "要是你不去", "就给我打个电话吧"],
+      "wordBankPool": ["明天你跟我们一起去吗", "要是你不去就给我打个电话吧", "就打电话给我", "去要是你", "要是就你"],
+      "traps": [
+        {
+          "pattern": "打电话给我",
+          "msg": "Lỗi giới từ 给: Cụm 'cho tôi' phải đứng trước động từ đánh gọi: '给我打电话', không đặt '给我' ở cuối."
+        }
+      ],
+      "explanation": "Cấu trúc giả thiết '要是... 就...' diễn tả một điều kiện giả định ở vế 1 và kết quả/yêu cầu thực hiện ở vế 2."
+    },
+    {
+      "id": "b28-05",
+      "type": "anti_word_by_word",
+      "title": "Mốc thời gian giới hạn với 1小时就... và bổ ngữ kết quả 完",
+      "vi": "Bài tập hôm nay rất dễ, tớ làm một tiếng là làm xong rồi.",
+      "zh": "今天的作业很容 易我一个小时就做完了",
+      "standardTrans": "今天的作业很容易我一个小时就做完了",
+      "pinyin": "Jīntiān de zuòyè hěn róngyì, wǒ yí gè xiǎoshí jiù zuò wán le.",
+      "grammarPoint": "Dễ dàng: 很容易; Thời lượng ngắn với 就: 一个小时就...; Bổ ngữ kết quả: 做完 + 了",
+      "tokens": [
+        {
+          "text": "Bài tập hôm nay rất dễ",
+          "hz": "今天的作业很容易",
+          "py": "jīntiān de zuòyè hěn róngyì",
+          "hv": "Kim thiên đích tác nghiệp hẩn dung dịch",
+          "role": "Bối cảnh nhận định",
+          "vn": "Bài tập hôm nay cực kỳ dễ",
+          "radicals": "容 = Bộ miên; 易 = Bộ nhật"
+        },
+        {
+          "text": "Tớ 1 tiếng là làm xong rồi",
+          "hz": "我一个小时就做完了",
+          "py": "wǒ yí gè xiǎoshí jiù zuò wán le",
+          "hv": "Ngã nhất cá tiểu thời tựu tác hoàn liễu",
+          "role": "Thời gian + 就 + Bổ ngữ kết quả hoàn thành",
+          "vn": "Tớ mất một tiếng là xong xuôi",
+          "radicals": "小 = Tiểu; 时 = Thời; 完 = Hoàn; 了 = Rồi"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我一个小时就做完了", "tag": "Thời gian hoàn thành nhanh (就)" },
+        { "id": "t1", "text": "今天的作业很容易", "tag": "Nhận xét bài dễ" },
+        { "id": "t3", "text": "一个小时才做完", "tag": "Bẫy nhầm lẫn 就/才" },
+        { "id": "t4", "text": "做完一个小时就", "tag": "Bẫy trật tự thời gian" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["今天的作业很容易", "一个小时就", "做完了"],
+      "wordBankPool": ["今天的作业很容易", "我一个小时就做完了", "一个小时才做完", "做完一个小时就", "容易作业很"],
+      "traps": [
+        {
+          "pattern": "一个小时才",
+          "msg": "Lỗi phân biệt 就 / 才: Bài tập dễ làm xong nhanh chóng trong thời gian ngắn, phải dùng '就' ('一个小时就做完'), không dùng '才' (chỉ sự muộn màng, khó khăn)."
+        },
+        {
+          "pattern": "做完一个小时",
+          "msg": "Lỗi trật tự thời gian: Trạng ngữ chỉ thời lượng thực hiện (一个小时) phải đứng TRƯỚC động từ, không đặt sau bổ ngữ kết quả."
+        }
+      ],
+      "explanation": "Cấu trúc 'Thời gian + 就 + V + 完 + 了' dùng để nhấn mạnh hành động hoàn thành rất nhanh chóng, sớm hơn hoặc dễ dàng hơn dự kiến."
+    },
+    {
+      "id": "b28-06",
+      "type": "sentence_parsing",
+      "title": "Hỏi thăm vị trí căn hộ và tính từ miêu tả 近",
+      "vi": "A: Trường học cách chỗ cậu ở có gần không? B: Rất gần, đi bộ khoảng 5 phút là đến.",
+      "zh": "学校离你住的地方近不近很近走路大概五分钟就到",
+      "standardTrans": "学校离你住的地方近不近很近走路大概五分钟就到",
+      "pinyin": "A: Xuéxiào lí nǐ zhù de dìfang jìn bú jìn? B: Hěn jìn, zǒulù dàgài wǔ fēnzhōng jiù dào.",
+      "grammarPoint": "Hỏi chính phản cự ly: 离...近不近; Trạng ngữ đi bộ: 走路; Thời gian ngắn với 就: 五分钟就到",
+      "tokens": [
+        {
+          "text": "Trường học cách chỗ cậu ở có gần không",
+          "hz": "学校离你住的地方近不近",
+          "py": "xuéxiào lí nǐ zhù de dìfang jìn bú jìn",
+          "hv": "Học hiệu ly nhĩ trú đích địa phương cận bất cận",
+          "role": "Câu hỏi chính phản cự ly",
+          "vn": "Trường cách chỗ cậu ở có gần lắm không",
+          "radicals": "离 = Cách; 住 = Trú; 地 = Địa; 方 = Phương; 近 = Cận"
+        },
+        {
+          "text": "Rất gần đi bộ 5 phút là tới",
+          "hz": "很近走路大概五分钟就到",
+          "py": "hěn jìn, zǒulù dàgài wǔ fēnzhōng jiù dào",
+          "hv": "Hẩn cận tẩu lộ đại khái ngũ phân chung tựu đáo",
+          "role": "Vế trả lời cự ly ngắn",
+          "vn": "Rất gần, đi bộ chừng năm phút là đến",
+          "radicals": "走 = Tẩu; 路 = Lộ; 大 = Đại; 概 = Khái; 到 = Đáo"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "很近走路大概五分钟就到", "tag": "Trả lời gần & thời gian" },
+        { "id": "t1", "text": "学校离你住的地方近不近", "tag": "Câu hỏi cự ly chính phản" },
+        { "id": "t3", "text": "近学校", "tag": "Bẫy trật tự 离" },
+        { "id": "t4", "text": "五分钟才到", "tag": "Bẫy nhầm lẫn 就/才" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["学校离你住的地方", "近不近", "很近", "五分钟就到"],
+      "wordBankPool": ["学校离你住的地方近不近", "很近走路大概五分钟就到", "近学校", "五分钟才到", "away from school"],
+      "traps": [
+        {
+          "pattern": "五分钟才到",
+          "msg": "Lỗi phân biệt 就 / 才: Khoảng cách gần, thời gian đi ngắn diễn ra nhanh chóng, dùng '就' ('五分钟就到'), không dùng '才'."
+        }
+      ],
+      "explanation": "Mẫu câu hỏi khoảng cách chính phản 'A 离 B + Tính từ + 不 + Tính từ' rất phổ biến. Vế trả lời dùng '就' để nhấn mạnh cự ly gần và thời gian di chuyển nhanh."
+    },
+    {
+      "id": "b28-07",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc giả thiết 要是... 就... kết hợp lời khuyên 应该",
+      "vi": "Nếu ngày mai trời mưa, chúng ta nên ở nhà xem phim.",
+      "zh": "要是明天下雨我们就应该在家看电影",
+      "standardTrans": "要是明天下雨我们就应该在家看电影",
+      "pinyin": "Yàoshi míngtiān xià yǔ, wǒmen jiù yīnggāi zàijiā kàn diànyǐng.",
+      "grammarPoint": "Cặp liên từ giả thiết: 要是... 就; Động từ năng nguyện khuyên nhủ: 应该; Nơi chốn: 在家",
+      "tokens": [
+        {
+          "text": "Nếu ngày mai trời mưa",
+          "hz": "要是明天下雨",
+          "py": "yàoshi míngtiān xià yǔ",
+          "hv": "Yếu thị kim thiên hạ vũ",
+          "role": "Vế giả thiết (要是)",
+          "vn": "Giả sử ngày mai mưa",
+          "radicals": "要 = Yếu; 是 = Thị; 明 = Minh; 天 = Thiên; 雨 = Vũ"
+        },
+        {
+          "text": "Chúng ta nên ở nhà xem phim",
+          "hz": "我们就应该在家看电影",
+          "py": "wǒmen jiù yīnggāi zàijiā kàn diànyǐng",
+          "hv": "Ngã môn tựu ưng cai tại gia khán điện ảnh",
+          "role": "Vế kết quả khuyên bảo (就)",
+          "vn": "Thì chúng mình nên ở nhà xem phim",
+          "radicals": "就 = Liền; 应 = Ứng; 该 = Cai; 在 = Tại; 家 = Gia"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们就应该在家看电影", "tag": "Kết quả đề xuất" },
+        { "id": "t1", "text": "要是明天下雨", "tag": "Giả thiết điều kiện" },
+        { "id": "t3", "text": "下雨要是明天", "tag": "Bẫy trật tự giả thiết" },
+        { "id": "t4", "text": "在家应该就", "tag": "Bẫy trật tự phó từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["要是明天下雨", "我们就应该", "在家看电影"],
+      "wordBankPool": ["要是明天下雨", "我们就应该在家看电影", "下雨要是明天", "在家应该就", "明天要是下雨就"],
+      "traps": [
+        {
+          "pattern": "在家应该就",
+          "msg": "Lỗi vị trí phó từ: Phó từ liên kết '就' phải đứng trước động từ năng nguyện '应该' ('就应该'), không đảo ra sau."
+        }
+      ],
+      "explanation": "Cấu trúc giả thiết '要是... 就...' kết hợp với từ năng nguyện '应该' giúp đưa ra lời khuyên nhủ, giải pháp hợp lý tùy theo tình huống thời tiết."
+    },
+    {
+      "id": "b28-08",
+      "type": "sentence_parsing",
+      "title": "Trạng từ mức độ 很/非常 và câu hỏi nguyên nhân 为什么",
+      "vi": "A: Tại sao cậu không thích môn thể dục? B: Bởi vì tớ cảm thấy môn thể dục rất khó, lại rất mệt.",
+      "zh": "为什么你不喜欢体育课因为我觉得体育课很难又很累",
+      "standardTrans": "왜냐하면 체육 수업이 어렵고 피곤하기 때문이다 (中文: 为什么你不喜欢体育课因为我觉得体育课很难又很累)",
+      "pinyin": "A: Wèishénme nǐ bù xǐhuan tǐyù kè? B: Yīnwèi wǒ juéde tǐyù kè hěn nán, yòu hěn lèi.",
+      "grammarPoint": "Hỏi nguyên nhân: 为什么; Không thích: 不喜欢; Cặp liên từ nguyên nhân: 因为... 所以 (rút gọn 所以); Trạng thái song song: 又... 又...",
+      "tokens": [
+        {
+          "text": "Tại sao cậu không thích môn thể dục",
+          "hz": "为什么你不喜欢体育课",
+          "py": "wèishénme nǐ bù xǐhuan tǐyù kè",
+          "hv": "Vi thập ma nhĩ bất hỉ hoan thể dục khóa",
+          "role": "Câu hỏi nguyên nhân",
+          "vn": "Vì sao cậu không thích tiết thể dục",
+          "radicals": "为 = Vi; 什 = Thập; 么 = Ma; 体 = Thể; 育 = Dục; 课 = Khóa"
+        },
+        {
+          "text": "Bởi vì tớ thấy môn thể dục vừa khó vừa mệt",
+          "hz": "因为我觉得体育课很难又很累",
+          "py": "yīnwèi wǒ juéde tǐyù kè hěn nán, yòu hěn lèi",
+          "hv": "Nhân vi ngã giác đắc thể dục khóa hẩn nan, hựu hẩn luy",
+          "role": "Vế trả lời nguyên nhân",
+          "vn": "Bởi vì tớ thấy môn thể dục vừa khó lại vừa mệt",
+          "radicals": "因 = Vi; 觉 = Giác; 难 = Nan; 又 = Lại/vừa; 累 = Mệt"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "因为我觉得体育课很难又很累", "tag": "Trả lời nguyên nhân" },
+        { "id": "t1", "text": "为什么你不喜欢体育课", "tag": "Hỏi lý do" },
+        { "id": "t3", "text": "喜欢不体育课", "tag": "Bẫy phủ định" },
+        { "id": "t4", "text": "又难又很累", "tag": "Bẫy cấu trúc 又...又..." }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["为什么你不喜欢体育课", "因为我觉得", "very hard and tired (很难又很累)"],
+      "wordBankPool": ["为什么你不喜欢体育课", "因为我觉得体育课很难又很累", "喜欢不体育课", "又难又很累", "体育课为什么"],
+      "traps": [
+        {
+          "pattern": "又难又很累",
+          "msg": "Lỗi cấu trúc '又...又...': Khi dùng '又...又...', các tính từ theo sau được liệt kê trực tiếp, không lặp lại phó từ '很' ở vế thứ hai ('又难又累')."
+        }
+      ],
+      "explanation": "Câu hỏi '为什么' được giải đáp bằng '因为'. Cấu trúc '又...又...' dùng để liệt kê hai nhược điểm (khó và mệt) cùng tồn tại ở môn thể dục."
+    },
+    {
+      "id": "b28-09",
+      "type": "anti_word_by_word",
+      "title": "Mệnh đề nhượng bộ 虽然... 但是... kết hợp tính chất 暖和",
+      "vi": "Mặc dù bên ngoài trời rất lạnh, nhưng mà trong phòng rất ấm áp.",
+      "zh": "虽然外边天气很冷但是屋子里很暖和",
+      "standardTrans": "Tuy bên ngoài trời rất lạnh, nhưng trong nhà rất ấm áp.",
+      "pinyin": "Suīrán wàibian tiānqì hěn lěng, dànshì wūzi lǐ hěn nuǎnhuo.",
+      "grammarPoint": "Cặp liên từ nhượng bộ: 虽然... 但是...; Phương vị từ: 外边, 屋子里; Tính từ thời tiết: 冷, 暖和",
+      "tokens": [
+        {
+          "text": "Mặc dù bên ngoài trời rất lạnh",
+          "hz": "虽然外边天气很冷",
+          "py": "suīrán wàibian tiānqì hěn lěng",
+          "hv": "Tuy nhiên ngoại biên thiên khí hẩn lãnh",
+          "role": "Vế nhượng bộ (虽然)",
+          "vn": "Dù thời tiết bên ngoài rất buốt giá",
+          "radicals": "虽 = Tuy; 外 = Ngoại; 天 = Thiên; 气 = Khí; 冷 = Lãnh"
+        },
+        {
+          "text": "Nhưng trong phòng rất ấm áp",
+          "hz": "但是屋子里很暖和",
+          "py": "dànshì wūzi lǐ hěn nuǎnhuo",
+          "hv": "Đãn thị ốc tử lý hẩn noãn hòa",
+          "role": "Vế kết quả tương phản (但是)",
+          "vn": "Nhưng trong căn phòng lại rất ấm áp",
+          "radicals": "但 = Nhưng; 屋 = Ốc; 子 = Tử; 暖 = Noãn; 和 = Hòa"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "但是屋子里很暖和", "tag": "Vế tương phản ấm áp" },
+        { "id": "t1", "text": "虽然外边天气很冷", "tag": "Vế lạnh giá bên ngoài" },
+        { "id": "t3", "text": "冷得很外边", "tag": "Bẫy trật tự chủ vị" },
+        { "id": "t4", "text": "暖和屋子里", "tag": "Bẫy trật tự phương vị" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["虽然外边天气很冷", "但是屋子里很暖和"],
+      "wordBankPool": ["虽然外边天气很冷", "但是屋子里很暖和", "冷得很外边", "暖和屋子里", "天气外边冷"],
+      "traps": [
+        {
+          "pattern": "暖和屋子里",
+          "msg": "Lỗi ngữ tự phương vị: Cụm từ chỉ không gian bên trong phải đặt danh từ mốc trước từ phương vị: '屋子里' (trong phòng), không nói '暖和屋子里'."
+        }
+      ],
+      "explanation": "Câu miêu tả sự đối lập giữa hai không gian (bên ngoài lạnh giá vs bên trong ấm áp) thông qua cặp liên từ nhượng bộ '虽然... 但是...'."
+    },
+    {
+      "id": "b28-10",
+      "type": "sentence_parsing",
+      "title": "Biểu thị sự việc sắp xảy ra 快要...了 và động từ khởi hành 出发",
+      "vi": "Bây giờ là 7 giờ rưỡi, chúng ta sắp xuất phát rồi, cậu nhanh lên một chút đi.",
+      "zh": "现在七点半我们要出发了你快一点儿",
+      "standardTrans": "Hiện tại là 7 rưỡi, chúng ta sắp xuất phát rồi, cậu mau lên một chút đi.",
+      "pinyin": "Xiànzài qī diǎn bàn, wǒmen kuàiyào chūfā le, nǐ kuài yìdiǎnr.",
+      "grammarPoint": "Thời gian: 七点半; Sắp sửa xảy ra: 快要...了; Động từ khởi hành: 出发; Đề nghị khẩn trương: 快一点儿",
+      "tokens": [
+        {
+          "text": "Bây giờ là 7 giờ rưỡi",
+          "hz": "现在七点半",
+          "py": "xiànzài qī diǎn bàn",
+          "hv": "Hiện tại thất điểm bán",
+          "role": "Trạng ngữ thời gian hiện tại",
+          "vn": "Bây giờ đã là bảy giờ rưỡi",
+          "radicals": "现 = Hiện; 点 = Điểm; 半 = Bán"
+        },
+        {
+          "text": "Chúng ta sắp xuất phát rồi",
+          "hz": "我们要出发了",
+          "py": "wǒmen kuàiyào chūfā le",
+          "hv": "Ngã môn khoái yếu xuất phát liễu",
+          "role": "Sự việc sắp xảy ra (快要...了)",
+          "vn": "Bọn mình chuẩn bị khởi hành đây",
+          "radicals": "快 = Khoái; 要 = Yếu; 出 = Xuất; 发 = Phát; 了 = Rồi"
+        },
+        {
+          "text": "Cậu nhanh lên một chút",
+          "hz": "你快一点儿",
+          "py": "nǐ kuài yìdiǎnr",
+          "hv": "Nhĩ khoái nhất điểm nhi",
+          "role": "Lời giục giã",
+          "vn": "Cậu mau chóng lên chút đi",
+          "radicals": "快 = Nhanh; 点 = Chút"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们要出发了", "tag": "Sắp xuất phát" },
+        { "id": "t1", "text": "现在七点半", "tag": "Mốc thời gian" },
+        { "id": "t3", "text": "你快一点儿", "tag": "Lời hối thúc" },
+        { "id": "t4", "text": "出发要快了", "tag": "Bẫy cấu trúc 快要" },
+        { "id": "t5", "text": "七点半现在", "tag": "Bẫy trật tự thời gian" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["现在七点半", "我们要出发了", "你快一点儿"],
+      "wordBankPool": ["现在七点半", "我们要出发了", "你快一点儿", "出发要快了", "七点半现在", "快一点儿,我们要出发了"],
+      "traps": [
+        {
+          "pattern": "出发要快了",
+          "msg": "Lỗi cấu trúc sắp xảy ra: Cấu trúc biểu thị sự việc sắp xảy ra là '快要 + V + 了' ('快要出发了' hoặc '要出发了'), không nói '出发要快了'."
+        }
+      ],
+      "explanation": "Cấu trúc '快要...了' hoặc '要...了' dùng để chỉ hành động, sự việc sắp sửa xảy ra trong tương lai rất gần. '快一点儿' dùng để thúc giục đối phương."
+    }
+  ]
+}
