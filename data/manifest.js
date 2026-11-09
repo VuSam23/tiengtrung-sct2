@@ -101,6 +101,46 @@ const HSK_MANIFESTS = {
             id: "bai4",
             title: "Bài 19: 第十九课: 可以试试吗? - Động từ trùng điệp & Cấu trúc 又...又...",
             file: "data/hsk2/bai4.json"
+        },
+        {
+            id: "bai5",
+            title: "Bài 20: 第二十课: 祝你生日快乐 - Ngày tháng, Tuổi tác & Tiệc sinh nhật",
+            file: "data/hsk2/bai5.json"
+        },
+        {
+            id: "bai6",
+            title: "Bài 21: 第二十一课: 我们明天七点一刻出发 - Thời gian biểu & Giờ giấc",
+            file: "data/hsk2/bai6.json"
+        },
+        {
+            id: "bai7",
+            title: "Bài 22: 第二十二课: 我打算请老师教我京剧 - Câu kiêm ngữ & Dự định 打算",
+            file: "data/hsk2/bai7.json"
+        },
+        {
+            id: "bai8",
+            title: "Bài 23: 第二十三课: 学校里边有邮局吗? - Phương vị từ & Tồn tại",
+            file: "data/hsk2/bai8.json"
+        },
+        {
+            id: "bai9",
+            title: "Bài 24: 第二十四课: 我想学太极拳 - Động từ năng nguyện 会/能/可以",
+            file: "data/hsk2/bai9.json"
+        },
+        {
+            id: "bai10",
+            title: "Bài 25: 第二十五课: 他学得很好 - Bổ ngữ trạng thái 得",
+            file: "data/hsk2/bai10.json"
+        },
+        {
+            id: "bai11",
+            title: "Bài 26: 第二十六课: 田芳去哪儿了 - Động tác đang tiếp diễn & 又/再",
+            file: "data/hsk2/bai11.json"
+        },
+        {
+            id: "bai12",
+            title: "Bài 27: 第二十七课: 玛丽哭了 - Bổ ngữ kết quả & Sự biến đổi với 了",
+            file: "data/hsk2/bai12.json"
         }
     ],
     hsk3: [
