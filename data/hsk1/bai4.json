@@ -1,0 +1,626 @@
+{
+  "lessonId": "hsk1-b04",
+  "lessonTitle": "第四课: 你去哪儿？",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "哪儿 vs 那儿",
+        "py": "nǎr / nàr",
+        "note": "哪儿 (có bộ Khẩu 口) dùng để hỏi 'ở đâu'. 那儿 (không có bộ Khẩu) dùng để chỉ định 'ở đằng kia, chỗ kia'."
+      },
+      {
+        "word": "几 vs 多少",
+        "py": "jǐ / duōshao",
+        "note": "几 dùng hỏi số lượng ước lượng nhỏ hơn 10 (星期几, 几口人). 多少 dùng hỏi số lượng lớn hơn 10 hoặc hỏi giá tiền."
+      },
+      {
+        "word": "回 vs 去",
+        "py": "huí / qù",
+        "note": "回 là quay về nơi chốn thuộc về mình (回学校, 回家, 回国). 去 là hướng tới một địa điểm làm việc/giao dịch (去银行, 去公园)."
+      }
+    ],
+    "grammarTips": [
+      "Trật tự thời gian và nơi chốn: Chủ ngữ + (Thời gian) + (在 + Địa điểm) + Hành động.",
+      "Hỏi thứ trong tuần: Ngày + 星期几? Quy tắc thứ tiếng Trung: Thứ trong tuần = Thứ tiếng Việt trừ đi 1 (Thứ 2 = 星期一, Thứ 7 = 星期六; Chủ nhật = 星期天/星期日).",
+      "Vị ngữ tính từ: Trước tính từ dùng phó từ mức độ (很, 不太, 非常), TUYỆT ĐỐI không dùng '是' (nói 汉语很难, không nói 汉语是很难)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "hsk1-b04-01",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi nghi vấn Yes/No với trợ từ 吗",
+      "vi": "Hôm nay cậu có đi Thiên An Môn không?",
+      "zh": "今天你去天安门吗",
+      "standardTrans": "今天你去天安门吗",
+      "pinyin": "Jīntiān nǐ qù Tiān'ānmén ma?",
+      "grammarPoint": "Câu hỏi nghi vấn Yes/No: Câu trần thuật + 吗; Trạng ngữ thời gian (今天) đứng trước hoặc sau chủ ngữ (你).",
+      "tokens": [
+        {
+          "text": "Hôm nay",
+          "hz": "今天",
+          "py": "jīntiān",
+          "hv": "Kim thiên",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Hôm nay",
+          "radicals": "今 = Bộ nhân 人 + nét phẩy gập; 天 = Bộ đại 大 + nét nhất 一"
+        },
+        {
+          "text": "Thiên An Môn",
+          "hz": "天安门",
+          "py": "Tiān'ānmén",
+          "hv": "Thiên An Môn",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Quảng trường Thiên An Môn",
+          "radicals": "天 = Trời; 安 = Bộ miên 宀 + bộ nữ 女; 门 = Bộ môn 门"
+        },
+        {
+          "text": "Không (hỏi)",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Không, hả, à",
+          "radicals": "Bộ khẩu 口 + chữ mã 马"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天你去", "tag": "Thời gian + Chủ vị" },
+        { "id": "t2", "text": "天安门", "tag": "Địa điểm" },
+        { "id": "t3", "text": "吗", "tag": "Trợ từ nghi vấn" },
+        { "id": "t4", "text": "你有去", "tag": "Bẫy dịch bồi 有" },
+        { "id": "t5", "text": "天安门去", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["今天", "你去", "天安门", "吗"],
+      "wordBankPool": ["今天你去", "天安门", "吗", "你有去", "天安门去", "你去今天"],
+      "traps": [
+        {
+          "pattern": "你有去",
+          "msg": "Lỗi dịch bồi từ tiếng Việt: Trong tiếng Trung, câu hỏi 'có... không?' chỉ cần thêm trợ từ '吗' ở cuối câu, tuyệt đối không dịch chữ 'có' thành '有'."
+        },
+        {
+          "pattern": "天安门去",
+          "msg": "Lỗi trật tự động tân: Động từ '去' (đi) bắt buộc phải đứng trước danh từ nơi chốn '天安门' ('去天安门')."
+        }
+      ],
+      "explanation": "Cấu trúc cơ bản: S + 去 + Địa điểm + 吗? Thời gian '今天' có thể đứng trước chủ ngữ (今天你去...) hoặc sau chủ ngữ (你今天去...)."
+    },
+    {
+      "id": "hsk1-b04-02",
+      "type": "anti_word_by_word",
+      "title": "Hành động đi đến địa điểm và quan hệ thân tộc",
+      "vi": "Ngày mai em trai tớ đi công viên.",
+      "zh": "明天我弟弟去公园",
+      "standardTrans": "明天我弟弟去公园",
+      "pinyin": "Míngtiān wǒ dìdi qù gōngyuán.",
+      "grammarPoint": "Thời gian + Chủ ngữ + 去 + Nơi chốn; Lược bỏ 的 sau quan hệ thân tộc thân thiết.",
+      "tokens": [
+        {
+          "text": "Ngày mai",
+          "hz": "明天",
+          "py": "míngtiān",
+          "hv": "Minh thiên",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Ngày mai",
+          "radicals": "明 = Bộ nhật 日 + bộ nguyệt 月; 天 = Trời"
+        },
+        {
+          "text": "Em trai tớ",
+          "hz": "我弟弟",
+          "py": "wǒ dìdi",
+          "hv": "Ngã đệ đệ",
+          "role": "Chủ ngữ",
+          "vn": "Em trai tôi",
+          "radicals": "弟 = Bộ cung 弓 + nét phẩy sổ"
+        },
+        {
+          "text": "Công viên",
+          "hz": "公园",
+          "py": "gōngyuán",
+          "hv": "Công viên",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Công viên",
+          "radicals": "公 = Bộ bát 八 + bộ khư 厶; 园 = Bộ vi 囗 + chữ nguyên 元"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "明天", "tag": "Thời gian" },
+        { "id": "t2", "text": "我弟弟去", "tag": "Chủ ngữ + Động từ" },
+        { "id": "t3", "text": "公园", "tag": "Nơi chốn" },
+        { "id": "t4", "text": "去明天", "tag": "Bẫy thời gian" },
+        { "id": "t5", "text": "公园去", "tag": "Bẫy động tân" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["明天", "我弟弟", "去公园"],
+      "wordBankPool": ["明天", "我弟弟去", "公园", "去明天", "公园去", "弟弟我"],
+      "traps": [
+        {
+          "pattern": "去明天",
+          "msg": "Lỗi vị trí thời gian: Trạng ngữ thời gian '明天' phải đứng trước động từ, không đặt ở cuối câu sau động từ như tiếng Việt."
+        }
+      ],
+      "explanation": "Trong giao tiếp thân mật, mối quan hệ ruột thịt (bố, mẹ, anh, em) không cần dùng chữ '的' (dùng '我弟弟', tránh lạm dụng '我的弟弟')."
+    },
+    {
+      "id": "hsk1-b04-03",
+      "type": "sentence_parsing",
+      "title": "Phủ định 不 trước động từ và cặp ngôn ngữ đối lập",
+      "vi": "Em gái tớ không học tiếng Hàn, em ấy học tiếng Trung.",
+      "zh": "我妹妹不学韩语她学汉语",
+      "standardTrans": "我妹妹不学韩语她学汉语",
+      "pinyin": "Wǒ mèimei bù xué Hányǔ, tā xué Hànyǔ.",
+      "grammarPoint": "Phủ định hành động hiện tại/thói quen: 不 + Động từ; Đối sánh hai vế phân câu.",
+      "tokens": [
+        {
+          "text": "Em gái tớ",
+          "hz": "我妹妹",
+          "py": "wǒ mèimei",
+          "hv": "Ngã muội muội",
+          "role": "Chủ ngữ 1",
+          "vn": "Em gái tôi",
+          "radicals": "妹 = Bộ nữ 女 + chữ vị 未"
+        },
+        {
+          "text": "Không học",
+          "hz": "不学",
+          "py": "bù xué",
+          "hv": "Bất học",
+          "role": "Phủ định + Động từ",
+          "vn": "Không học",
+          "radicals": "不 = Bộ nhất 一; 学 = Bộ miên biến thể 冖 + bộ tử 子"
+        },
+        {
+          "text": "Tiếng Hàn",
+          "hz": "韩语",
+          "py": "Hányǔ",
+          "hv": "Hàn ngữ",
+          "role": "Tân ngữ 1",
+          "vn": "Tiếng Hàn Quốc",
+          "radicals": "韩 = Chữ hàn 韩 + bộ vi 韦; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Tiếng Trung",
+          "hz": "汉语",
+          "py": "Hànyǔ",
+          "hv": "Hán ngữ",
+          "role": "Tân ngữ 2",
+          "vn": "Tiếng Hán, tiếng Trung",
+          "radicals": "汉 = Bộ chấm thủy 氵 + chữ hựu 又; 语 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我妹妹不学韩语", "tag": "Vế 1 (Phủ định)" },
+        { "id": "t2", "text": "她学汉语", "tag": "Vế 2 (Khẳng định)" },
+        { "id": "t3", "text": "学不韩语", "tag": "Bẫy trật tự phủ định" },
+        { "id": "t4", "text": "没学汉语", "tag": "Bẫy 没" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我妹妹", "不学韩语", "她学汉语"],
+      "wordBankPool": ["我妹妹不学韩语", "她学汉语", "学不韩语", "她学韩语", "我妹妹学汉语"],
+      "traps": [
+        {
+          "pattern": "学不韩语",
+          "msg": "Lỗi phủ định: Phó từ phủ định '不' bắt buộc phải đứng TRƯỚC động từ ('不学'), không đặt sau động từ."
+        },
+        {
+          "pattern": "她学韩语",
+          "msg": "Bẫy thanh điệu chữ Hán: '韩语' (Hányǔ - thanh 2) là tiếng Hàn, còn '汉语' (Hànyǔ - thanh 4) là tiếng Trung. Cần chú ý đúng tân ngữ từng vế."
+        }
+      ],
+      "explanation": "Hai vế đối chiếu song song: S1 + 不 + V + O1, S2 + V + O2. Chú ý phân biệt rạch ròi chữ viết và pinyin của 韩语 (Hányǔ) và 汉语 (Hànyǔ)."
+    },
+    {
+      "id": "hsk1-b04-04",
+      "type": "anti_word_by_word",
+      "title": "Hỏi đường đi với đại từ nghi vấn 哪儿",
+      "vi": "Cậu đi đâu vậy?",
+      "zh": "你去哪儿",
+      "standardTrans": "你去哪儿",
+      "pinyin": "Nǐ qù nǎr?",
+      "grammarPoint": "Cấu trúc hỏi địa điểm: Chủ ngữ + 去 + 哪儿/哪里?",
+      "tokens": [
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ vị ngữ",
+          "vn": "Đi",
+          "radicals": "Bộ thổ 土 + bộ tư 厶"
+        },
+        {
+          "text": "Đâu, ở đâu",
+          "hz": "哪儿",
+          "py": "nǎr",
+          "hv": "Nả nhi",
+          "role": "Đại từ nghi vấn nơi chốn",
+          "vn": "Đâu, nơi nào",
+          "radicals": "哪 = Bộ khẩu 口 + chữ na 那; 儿 = Bộ nhi 儿"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "去", "tag": "Động từ" },
+        { "id": "t3", "text": "哪儿", "tag": "Đại từ nghi vấn" },
+        { "id": "t4", "text": "那儿", "tag": "Bẫy từ vựng" },
+        { "id": "t5", "text": "哪儿去", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你", "去", "哪儿"],
+      "wordBankPool": ["你", "去", "哪儿", "那儿", "哪儿去", "去哪里吗"],
+      "traps": [
+        {
+          "pattern": "去那儿",
+          "msg": "Bẫy nhầm từ: '哪儿' (nǎr - có bộ Khẩu 口) dùng để HỎI 'đâu'. '那儿' (nàr - không có khẩu) là đại từ CHỈ ĐỊNH 'chỗ kia'."
+        },
+        {
+          "pattern": "哪儿去",
+          "msg": "Lỗi cấu trúc: Từ để hỏi nơi chốn đứng đúng vị trí của tân ngữ sau động từ '去' ('去哪儿'), không đảo lên trước."
+        }
+      ],
+      "explanation": "Trật tự hỏi thông tin trong tiếng Trung giữ nguyên mô hình câu trần thuật: Ai (你) + Làm gì (去) + Ở đâu (哪儿)."
+    },
+    {
+      "id": "hsk1-b04-05",
+      "type": "sentence_parsing",
+      "title": "Quy tắc lùi số gọi thứ trong tuần",
+      "vi": "Hôm nay là thứ 7, ngày mai là chủ nhật.",
+      "zh": "今天是星期六明天是星期天",
+      "standardTrans": "今天是星期六明天是星期天",
+      "pinyin": "Jīntiān shì xīngqīliù, míngtiān shì xīngqītiān.",
+      "grammarPoint": "Thời gian + 是 + Thứ; Quy tắc tính thứ: Thứ tiếng Trung = Thứ tiếng Việt - 1; Chủ nhật = 星期天/星期日.",
+      "tokens": [
+        {
+          "text": "Thứ 7",
+          "hz": "星期六",
+          "py": "xīngqīliù",
+          "hv": "Tinh kỳ lục",
+          "role": "Danh từ thời gian",
+          "vn": "Thứ bảy",
+          "radicals": "星 = Bộ nhật 日 + chữ sinh 生; 期 = Chữ kỳ 其 + bộ nguyệt 月; 六 = Số 6"
+        },
+        {
+          "text": "Chủ nhật",
+          "hz": "星期天",
+          "py": "xīngqītiān",
+          "hv": "Tinh kỳ thiên",
+          "role": "Danh từ thời gian",
+          "vn": "Chủ nhật",
+          "radicals": "天 = Trời"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天是星期六", "tag": "Vế 1" },
+        { "id": "t2", "text": "明天是星期天", "tag": "Vế 2" },
+        { "id": "t3", "text": "星期七", "tag": "Bẫy lùi số thứ" },
+        { "id": "t4", "text": "星期日是明天", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["今天", "星期六", "明天", "星期天"],
+      "wordBankPool": ["今天是星期六", "明天是星期天", "星期七", "明天是星期日", "今天是星期天"],
+      "traps": [
+        {
+          "pattern": "星期七",
+          "msg": "Lỗi kinh điển: Tiếng Trung KHÔNG CÓ '星期七'. Thứ bảy lùi 1 số thành '星期六'. Chủ nhật bắt buộc nói là '星期天' hoặc '星期日'."
+        }
+      ],
+      "explanation": "Trong khẩu ngữ hằng ngày, từ '是' có thể được tỉnh lược (今天星期六，明天星期天). Hệ thống chấp nhận cả 星期天 và 星期日."
+    },
+    {
+      "id": "hsk1-b04-06",
+      "type": "anti_word_by_word",
+      "title": "Hội thoại hỏi thăm hướng đi và câu liên động mục đích",
+      "vi": "A: Cậu về trường không? B: Không, tớ đi ngân hàng rút tiền.",
+      "zh": "你回学校吗不我去银行取钱",
+      "standardTrans": "你回学校吗不我去银行取钱",
+      "pinyin": "Nǐ huí xuéxiào ma? Bù, wǒ qù yínháng qǔ qián.",
+      "grammarPoint": "Động từ định hướng 回 (quay về nơi chốn); Câu liên động: 去 + Địa điểm (银行) + Mục đích (取钱).",
+      "tokens": [
+        {
+          "text": "Về trường",
+          "hz": "回学校",
+          "py": "huí xuéxiào",
+          "hv": "Hồi học hiệu",
+          "role": "Động từ + Nơi chốn",
+          "vn": "Trở về trường",
+          "radicals": "回 = Bộ vi 囗 + bộ khẩu 口; 学 = Học; 校 = Bộ mộc 木 + chữ giao 交"
+        },
+        {
+          "text": "Ngân hàng",
+          "hz": "银行",
+          "py": "yínháng",
+          "hv": "Ngân hành",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Ngân hàng",
+          "radicals": "银 = Bộ kim 钅 + chữ cấn 艮; 行 = Bộ xích 彳 + bộ súc 亍"
+        },
+        {
+          "text": "Rút tiền",
+          "hz": "取钱",
+          "py": "qǔ qián",
+          "hv": "Thủ tiền",
+          "role": "Động tân mục đích",
+          "vn": "Lấy tiền, rút tiền",
+          "radicals": "取 = Bộ nhĩ 耳 + bộ hựu 又; 钱 = Bộ kim 钅 + chữ qua 戋"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你回学校吗", "tag": "Câu hỏi A" },
+        { "id": "t2", "text": "不", "tag": "Từ chối" },
+        { "id": "t3", "text": "我去银行", "tag": "Hành động di chuyển" },
+        { "id": "t4", "text": "取钱", "tag": "Mục đích" },
+        { "id": "t5", "text": "去取钱银行", "tag": "Bẫy liên động" },
+        { "id": "t6", "text": "去学校吗", "tag": "Bẫy dùng từ 回/去" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["回学校吗", "不", "去银行", "取钱"],
+      "wordBankPool": ["你回学校吗", "不", "我去银行", "取钱", "去取钱银行", "去学校吗", "取钱在银行"],
+      "traps": [
+        {
+          "pattern": "去取钱银行",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm trước rồi mới thực hiện hành động mục đích ('去银行取钱'), không ghép 'đi rút tiền ngân hàng'."
+        },
+        {
+          "pattern": "取钱在银行",
+          "msg": "Lỗi nơi chốn: Tiếng Trung không đặt trạng ngữ nơi chốn '在银行' ở cuối câu sau động từ."
+        }
+      ],
+      "explanation": "'回' dùng khi quay về nơi mình sinh hoạt/học tập gắn bó. Chuỗi hành động liên động theo trật tự thời gian: Đi tới ngân hàng trước (去银行) -> Rút tiền sau (取钱)."
+    },
+    {
+      "id": "hsk1-b04-07",
+      "type": "sentence_parsing",
+      "title": "Câu vị ngữ tính từ và phó từ mức độ 不太 / 很",
+      "vi": "Tiếng Trung không khó lắm, tiếng Nga rất khó.",
+      "zh": "汉语不太难俄语很难",
+      "standardTrans": "汉语不太难俄语很难",
+      "pinyin": "Hànyǔ bù tài nán, éyǔ hěn nán.",
+      "grammarPoint": "Vị ngữ tính từ: Chủ ngữ + (Phó từ mức độ) + Tính từ; TUYỆT ĐỐI không dùng 是 trước tính từ.",
+      "tokens": [
+        {
+          "text": "Không... lắm",
+          "hz": "不太",
+          "py": "bú tài",
+          "hv": "Bất thái",
+          "role": "Phó từ chỉ mức độ phủ định",
+          "vn": "Không quá, không lắm",
+          "radicals": "太 = Chữ đại 大 + dấu chấm 丶"
+        },
+        {
+          "text": "Khó",
+          "hz": "难",
+          "py": "nán",
+          "hv": "Nan",
+          "role": "Tính từ",
+          "vn": "Khó, gian nan",
+          "radicals": "Bộ hựu 又 + chữ truy 隹"
+        },
+        {
+          "text": "Tiếng Nga",
+          "hz": "俄语",
+          "py": "éyǔ",
+          "hv": "Nga ngữ",
+          "role": "Chủ ngữ 2",
+          "vn": "Tiếng Nga",
+          "radicals": "俄 = Bộ nhân đứng 亻 + chữ ngã 我; 语 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "汉语不太难", "tag": "Vế 1" },
+        { "id": "t2", "text": "俄语很难", "tag": "Vế 2" },
+        { "id": "t3", "text": "汉语是不太难", "tag": "Bẫy thừa 是" },
+        { "id": "t4", "text": "俄语是很难", "tag": "Bẫy thừa 是" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["汉语不太难", "俄语很难"],
+      "wordBankPool": ["汉语不太难", "俄语很难", "汉语是不太难", "俄语是很难", "不难太"],
+      "traps": [
+        {
+          "pattern": "是很难",
+          "msg": "Lỗi dịch bồi từ chữ 'là' của tiếng Việt: Khi miêu tả đặc điểm tính chất, tiếng Trung dùng trực tiếp '很/不太 + Tính từ', cấm dùng '是' (nói '俄语很难', không nói '俄语是很难')."
+        },
+        {
+          "pattern": "不难太",
+          "msg": "Lỗi vị trí phó từ: 'Không khó lắm' phải là '不太难', phó từ mức độ phải đứng trước tính từ."
+        }
+      ],
+      "explanation": "Đây là mẫu câu vị ngữ tính từ điển hình. Cấu trúc: S1 + 不太 + Adj, S2 + 很 + Adj."
+    },
+    {
+      "id": "hsk1-b04-08",
+      "type": "sentence_parsing",
+      "title": "Hỏi thứ trong tuần bằng đại từ nghi vấn 几",
+      "vi": "Hôm nay là chủ nhật, hôm qua là thứ mấy?",
+      "zh": "今天是星期天昨天是星期几",
+      "standardTrans": "今天是星期天昨天是星期几",
+      "pinyin": "Jīntiān shì xīngqītiān, zuótiān shì xīngqījǐ?",
+      "grammarPoint": "Hỏi thứ trong tuần: Mốc ngày + (是) + 星期几? Dùng đại từ '几' thay vào vị trí con số.",
+      "tokens": [
+        {
+          "text": "Hôm qua",
+          "hz": "昨天",
+          "py": "zuótiān",
+          "hv": "Tạc thiên",
+          "role": "Trạng ngữ/Chủ ngữ thời gian",
+          "vn": "Hôm qua",
+          "radicals": "昨 = Bộ nhật 日 + chữ sạ 乍; 天 = Trời"
+        },
+        {
+          "text": "Thứ mấy",
+          "hz": "星期几",
+          "py": "xīngqījǐ",
+          "hv": "Tinh kỳ kỷ",
+          "role": "Cụm danh ngữ nghi vấn",
+          "vn": "Thứ mấy",
+          "radicals": "几 = Bộ kỷ 几"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天是星期天", "tag": "Vế 1" },
+        { "id": "t2", "text": "昨天是星期几", "tag": "Vế 2 (Hỏi thứ)" },
+        { "id": "t3", "text": "昨天星期多少", "tag": "Bẫy đại từ 几/多少" },
+        { "id": "t4", "text": "星期几是昨天", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["今天", "星期天", "昨天", "星期几"],
+      "wordBankPool": ["今天是星期天", "昨天是星期几", "昨天星期多少", "明天是星期几", "星期天是今天"],
+      "traps": [
+        {
+          "pattern": "星期多少",
+          "msg": "Lỗi dùng từ nghi vấn: Một tuần chỉ có 7 ngày (dưới 10), do đó hỏi thứ bắt buộc phải dùng '几' ('星期几'), không được dùng '多少'."
+        }
+      ],
+      "explanation": "Quy tắc hỏi thời gian: Để hỏi thứ mấy, thay trực tiếp con số bằng '几' tạo thành cụm '星期几'."
+    },
+    {
+      "id": "hsk1-b04-09",
+      "type": "anti_word_by_word",
+      "title": "Câu hỏi nghi vấn địa danh Bắc Kinh",
+      "vi": "Ngày mai chị gái cậu đi Bắc Kinh hả?",
+      "zh": "明天你姐姐去北京吗",
+      "standardTrans": "明天你姐姐去北京吗",
+      "pinyin": "Míngtiān nǐ jiějie qù Běijīng ma?",
+      "grammarPoint": "Thời gian (明天) + Chủ ngữ (你姐姐) + 去 + Địa điểm (北京) + 吗?",
+      "tokens": [
+        {
+          "text": "Chị gái cậu",
+          "hz": "你姐姐",
+          "py": "nǐ jiějie",
+          "hv": "Nhĩ tỷ tỷ",
+          "role": "Chủ ngữ",
+          "vn": "Chị gái bạn",
+          "radicals": "姐 = Bộ nữ 女 + chữ thả 且"
+        },
+        {
+          "text": "Bắc Kinh",
+          "hz": "北京",
+          "py": "Běijīng",
+          "hv": "Bắc Kinh",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Thủ đô Bắc Kinh",
+          "radicals": "北 = Bộ chủy 匕; 京 = Bộ đầu 亠 + bộ khẩu 口 + bộ tiểu 小"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "明天", "tag": "Thời gian" },
+        { "id": "t2", "text": "你姐姐去北京", "tag": "Chủ vị tân" },
+        { "id": "t3", "text": "吗", "tag": "Trợ từ nghi vấn" },
+        { "id": "t4", "text": "去北京明天", "tag": "Bẫy trật tự thời gian" },
+        { "id": "t5", "text": "你有姐姐", "tag": "Bẫy dịch bồi" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["明天", "你姐姐", "去北京", "吗"],
+      "wordBankPool": ["明天", "你姐姐去北京", "吗", "去北京明天", "你姐姐去吗", "北京去"],
+      "traps": [
+        {
+          "pattern": "去北京明天",
+          "msg": "Lỗi vị trí trạng ngữ: Trạng ngữ thời gian '明天' phải đứng trước cụm động từ '去北京', không đặt ở cuối câu."
+        }
+      ],
+      "explanation": "Từ cảm thán/hỏi của tiếng Việt như 'hả, à, ư, không' đều chuyển thành trợ từ nghi vấn '吗' đặt ở cuối câu."
+    },
+    {
+      "id": "hsk1-b04-10",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc hai phân câu: Trạng thái và Hành động tiếp nối",
+      "vi": "Hôm nay tớ không bận lắm, tớ đi công viên.",
+      "zh": "今天我不太忙我去公园",
+      "standardTrans": "今天我不太忙我去公园",
+      "pinyin": "Jīntiān wǒ bú tài máng, wǒ qù gōngyuán.",
+      "grammarPoint": "Thời gian + S + 不太 + Tính từ, S + 去 + Địa điểm (Theo gợi ý sách trang 60: S + 去 + địa điểm).",
+      "tokens": [
+        {
+          "text": "Bận",
+          "hz": "忙",
+          "py": "máng",
+          "hv": "Mang",
+          "role": "Tính từ",
+          "vn": "Bận rộn",
+          "radicals": "Bộ tâm đứng 忄 + chữ vong 亡"
+        },
+        {
+          "text": "Đi công viên",
+          "hz": "去公园",
+          "py": "qù gōngyuán",
+          "hv": "Khứ công viên",
+          "role": "Cụm động tân",
+          "vn": "Đi công viên",
+          "radicals": "去 = Đi; 公园 = Công viên"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天我不太忙", "tag": "Vế trạng thái" },
+        { "id": "t2", "text": "我去公园", "tag": "Vế hành động" },
+        { "id": "t3", "text": "我不忙太", "tag": "Bẫy trật tự phó từ" },
+        { "id": "t4", "text": "去公园我", "tag": "Bẫy chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["今天", "不太忙", "去公园"],
+      "wordBankPool": ["今天我不太忙", "我去公园", "我不忙太", "今天我不很忙", "公园去"],
+      "traps": [
+        {
+          "pattern": "不忙太",
+          "msg": "Lỗi trật tự từ: 'Không bận lắm' phải đặt phó từ mức độ trước tính từ: '不太忙', không đảo ngược thành '不忙太'."
+        }
+      ],
+      "explanation": "Theo gợi ý ngữ pháp bài 4 trong sách: cấu trúc 'S + 去 + Địa điểm'. Khi cùng một chủ ngữ, ở vế sau có thể giữ '我' hoặc lược bỏ trong khẩu ngữ."
+    },
+    {
+      "id": "hsk1-b04-11",
+      "type": "anti_word_by_word",
+      "title": "Trật tự vàng nơi chốn: Ở đâu làm gì (在 + 哪儿 + Hành động)",
+      "vi": "Các em học tiếng Nhật ở đâu?",
+      "zh": "你们在哪儿学日语",
+      "standardTrans": "你们在哪儿学日语",
+      "pinyin": "Nǐmen zài nǎr xué Rìyǔ?",
+      "grammarPoint": "Quy tắc nơi chốn (Gợi ý ngữ pháp trang 60): S + 在 + Địa điểm/哪儿 + Hành động.",
+      "tokens": [
+        {
+          "text": "Các em / Các bạn",
+          "hz": "你们",
+          "py": "nǐmen",
+          "hv": "Nhĩ môn",
+          "role": "Chủ ngữ ngôi thứ 2 số nhiều",
+          "vn": "Các bạn, các em",
+          "radicals": "你 = Bạn; 们 = Bộ nhân đứng 亻 + chữ môn 门"
+        },
+        {
+          "text": "Ở đâu",
+          "hz": "在哪儿",
+          "py": "zài nǎr",
+          "hv": "Tại nả nhi",
+          "role": "Trạng ngữ nơi chốn nghi vấn",
+          "vn": "Ở đâu, tại đâu",
+          "radicals": "在 = Bộ thổ 土; 哪儿 = Đâu"
+        },
+        {
+          "text": "Học tiếng Nhật",
+          "hz": "学日语",
+          "py": "xué Rìyǔ",
+          "hv": "Học Nhật ngữ",
+          "role": "Động tân vị ngữ",
+          "vn": "Học tiếng Nhật",
+          "radicals": "学 = Học; 日 = Bộ nhật 日; 语 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你们", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "在哪儿", "tag": "Trạng ngữ nơi chốn" },
+        { "id": "t3", "text": "学日语", "tag": "Hành động" },
+        { "id": "t4", "text": "学日语在哪儿", "tag": "Bẫy trật tự nơi chốn" },
+        { "id": "t5", "text": "在什么学日语", "tag": "Bẫy đại từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你们", "在哪儿", "学日语"],
+      "wordBankPool": ["你们", "在哪儿", "学日语", "学日语在哪儿", "在什么学日语", "在日语学"],
+      "traps": [
+        {
+          "pattern": "学日语在哪儿",
+          "msg": "LỖI TƯ DUY KINH ĐIỂN CỦA NGƯỜI VIỆT: Tiếng Việt nói 'Học tiếng Nhật [hành động] ở đâu [nơi chốn]', nhưng tiếng Trung BẮT BUỘC phải đặt nơi chốn lên trước: '在哪儿学日语' (Ở đâu rồi mới làm gì)."
+        }
+      ],
+      "explanation": "Quy tắc ngữ pháp cố định: S + 在 + Nơi chốn + Động từ + Tân ngữ. Nơi diễn ra hành động luôn đứng TRƯỚC động từ."
+    }
+  ]
+}

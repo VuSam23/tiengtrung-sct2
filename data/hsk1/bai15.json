@@ -1,0 +1,960 @@
+[
+  {
+    "id": "b15-01",
+    "type": "sentence_parsing",
+    "title": "Đối chiếu mức độ với 有点儿 và 一点儿",
+    "vi": "Tớ cảm thấy tiếng Anh hơi khó, tiếng Pháp dễ hơn một chút.",
+    "zh": "我觉得英语有点儿难 法语容易一点儿",
+    "standardTrans": "我觉得英语有点儿难 法语容易一点儿",
+    "pinyin": "Wǒ juéde yīngyǔ yǒudiǎnr nán, fǎyǔ róngyì yìdiǎnr.",
+    "grammarPoint": "Phân biệt 有点儿 (tiêu cực) và 一点儿 (kỳ vọng/so sánh hơn): 有点儿 + Tính từ; Tính từ + 一点儿",
+    "tokens": [
+      {
+        "text": "Hơi khó",
+        "hz": "有点儿难",
+        "py": "yǒudiǎnr nán",
+        "hv": "Hữu điểm nhi nan",
+        "role": "Vị ngữ tính từ 1",
+        "vn": "Hơi khó (sắc thái phàn nàn)",
+        "radicals": "有点儿 = Hơi; 难 = Bộ hựu 又 + bộ truy 隹"
+      },
+      {
+        "text": "Dễ hơn một chút",
+        "hz": "容易一点儿",
+        "py": "róngyì yìdiǎnr",
+        "hv": "Dung dị nhất điểm nhi",
+        "role": "Vị ngữ tính từ 2",
+        "vn": "Dễ hơn một chút (so sánh hơn)",
+        "radicals": "容 = Bộ miên 宀 + bộ cốc 谷; 易 = Bộ nhật 日 + nét trật 勿; 一点儿 = Một chút"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "法语容易一点儿",
+        "tag": "Vế tiếng Pháp"
+      },
+      {
+        "id": "t1",
+        "text": "我觉得英语有点儿难",
+        "tag": "Vế tiếng Anh"
+      },
+      {
+        "id": "t3",
+        "text": "一点儿难",
+        "tag": "Bẫy cấu trúc"
+      },
+      {
+        "id": "t4",
+        "text": "有点儿容易",
+        "tag": "Bẫy sắc thái"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2"
+    ],
+    "requiredKeywordsZh": [
+      "我觉得英语有点儿难",
+      "法语容易一点儿"
+    ],
+    "wordBankPool": [
+      "我觉得英语有点儿难",
+      "法语容易一点儿",
+      "一点儿难",
+      "有点儿容易",
+      "英语难一点儿",
+      "容易有点儿"
+    ],
+    "traps": [
+      {
+        "pattern": "一点儿难",
+        "msg": "Lỗi phân biệt: Biểu thị sắc thái không mong muốn (hơi khó) phải dùng '有点儿 + Tính từ' ('有点儿难'), không nói '一点儿难'."
+      },
+      {
+        "pattern": "有点儿容易",
+        "msg": "Lỗi ngữ cảnh: 'Dễ hơn một chút' là so sánh hơn mang tính tích cực, bắt buộc dùng 'Tính từ + 一点儿' ('容易一点儿')."
+      }
+    ],
+    "explanation": "Cặp cấu trúc kinh điển đối chiếu: 有点儿 + Adj (hơi khó - tiêu cực) đối xứng với Adj + 一点儿 (dễ hơn chút - so sánh hơn)."
+  },
+  {
+    "id": "b15-02",
+    "type": "anti_word_by_word",
+    "title": "Phó từ phạm vi 也 và chức vị giám đốc công ty",
+    "vi": "Công ty của chúng tôi không lớn lắm, nhân viên công ty cũng không nhiều. Ông Vương là giám đốc của công ty chúng tôi. Ông ấy là một giám đốc rất tốt.",
+    "zh": "我们的公司不太大 公司的职员也不多 王先生是我们公司的经理 他是一个很好的经理",
+    "standardTrans": "我们的公司不太大 公司的职员也不多 王先生是我们公司的经理 他是一个很好的经理",
+    "pinyin": "Wǒmen de gōngsī bú tài dà, gōngsī de zhíyuán yě bù duō. Wáng xiānsheng shì wǒmen gōngsī de jīnglǐ. Tā shì yí gè hěn hǎo de jīnglǐ.",
+    "grammarPoint": "Phủ định giảm nhẹ: 不太大 (không lớn lắm); Phó từ 也 đứng trước phó từ phủ định: 也不多; Cụm chữ 的 định ngữ",
+    "tokens": [
+      {
+        "text": "Công ty",
+        "hz": "公司",
+        "py": "gōngsī",
+        "hv": "Công ty",
+        "role": "Trung tâm ngữ",
+        "vn": "Công ty",
+        "radicals": "公 = Bộ bát 八 + bộ khư 厶; 司 = Bộ khẩu 口 + nét ngang gập"
+      },
+      {
+        "text": "Nhân viên",
+        "hz": "职员",
+        "py": "zhíyuán",
+        "hv": "Chức viên",
+        "role": "Trung tâm ngữ",
+        "vn": "Nhân viên",
+        "radicals": "职 = Bộ nhĩ 耳 + chữ trình 呈; 员 = Bộ khẩu 口 + bộ bối 贝"
+      },
+      {
+        "text": "Giám đốc",
+        "hz": "经理",
+        "py": "jīnglǐ",
+        "hv": "Kinh lý",
+        "role": "Trung tâm ngữ",
+        "vn": "Giám đốc, người quản lý",
+        "radicals": "经 = Bộ mịch 纟 + chữ kinh 𢀖; 理 = Bộ ngọc 王 + bộ lý 里"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t3",
+        "text": "王先生是我们公司的经理",
+        "tag": "Giới thiệu ông Vương"
+      },
+      {
+        "id": "t1",
+        "text": "我们的公司不太大",
+        "tag": "Quy mô công ty"
+      },
+      {
+        "id": "t4",
+        "text": "他是一个很好的经理",
+        "tag": "Đánh giá giám đốc"
+      },
+      {
+        "id": "t2",
+        "text": "公司的职员也不多",
+        "tag": "Số lượng nhân viên"
+      },
+      {
+        "id": "t5",
+        "text": "也不多职员",
+        "tag": "Bẫy trật tự"
+      },
+      {
+        "id": "t6",
+        "text": "不也多",
+        "tag": "Bẫy phó từ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3",
+      "t4"
+    ],
+    "requiredKeywordsZh": [
+      "我们的公司不太大",
+      "公司的职员也不多",
+      "王先生是我们公司的经理",
+      "很好的经理"
+    ],
+    "wordBankPool": [
+      "我们的公司不太大",
+      "公司的职员也不多",
+      "王先生是我们公司的经理",
+      "他是一个很好的经理",
+      "也不多职员",
+      "不也多",
+      "经理我们公司"
+    ],
+    "traps": [
+      {
+        "pattern": "不也",
+        "msg": "Lỗi vị trí phó từ: 'Cũng không' bắt buộc là '也不' ('也不多'), tuyệt đối không nói '不也'."
+      },
+      {
+        "pattern": "经理我们公司",
+        "msg": "Lỗi định ngữ: Cụm 'giám đốc của công ty chúng tôi' phải đặt cơ quan sở hữu lên trước: '我们公司的经理'."
+      }
+    ],
+    "explanation": "Phó từ '也' luôn đứng trước phó từ phủ định '不' (也不多: cũng không nhiều). Định ngữ sở hữu đứng trước trung tâm ngữ: 我们公司的经理."
+  },
+  {
+    "id": "b15-03",
+    "type": "sentence_parsing",
+    "title": "Cụm danh xưng xe cộ đối chiếu và sở hữu chức vụ",
+    "vi": "Công ty chúng tôi có một chiếc ô tô lớn và một chiếc ô tô nhỏ. Một chiếc lớn là màu đen, nó không mới lắm, là của giám đốc Vương. Chiếc nhỏ kia là màu trắng, là của thư ký Lưu.",
+    "zh": "我们的公司有一辆大的和一辆小的汽车 一辆大的是黑色的 它不太新 是王经理的 那辆小的是白色的 是刘秘书的",
+    "standardTrans": "我们的公司有一辆大的和一辆小的汽车 一辆大的是黑色的 它不太新 是王经理的 那辆小的是白色的 是刘秘书的",
+    "pinyin": "Wǒmen de gōngsī yǒu yí liàng dà de hé yí liàng xiǎo de qìchē. Yí liàng dà de shì hēisè de, tā bú tài xīn, shì Wáng jīnglǐ de. Nà liàng xiǎo de shì báisè de, shì Liú mìshū de.",
+    "grammarPoint": "Lượng từ xe cộ: 辆 (liàng); Cụm chữ 的 song song: 一辆大的和一辆小的; Sở hữu chức danh: Họ + Chức vụ + 的",
+    "tokens": [
+      {
+        "text": "Xe ô tô",
+        "hz": "汽车",
+        "py": "qìchē",
+        "hv": "Khí xa",
+        "role": "Trung tâm ngữ",
+        "vn": "Xe hơi, xe ô tô",
+        "radicals": "汽 = Bộ chấm thủy 氵 + bộ khí 气; 车 = Bộ xa 车"
+      },
+      {
+        "text": "Thư ký Lưu",
+        "hz": "刘秘书",
+        "py": "Liú mìshū",
+        "hv": "Lưu bí thư",
+        "role": "Định ngữ sở hữu",
+        "vn": "Thư ký họ Lưu",
+        "radicals": "刘 = Bộ văn 文 + bộ đao đứng 刂; 秘 = Bộ hòa 禾 + chữ tất 必; 书 = Chữ thư 书"
+      },
+      {
+        "text": "Giám đốc Vương",
+        "hz": "王经理",
+        "py": "Wáng jīnglǐ",
+        "hv": "Vương kinh lý",
+        "role": "Định ngữ sở hữu",
+        "vn": "Giám đốc họ Vương",
+        "radicals": "王 = Bộ vương 王; 经理 = Giám đốc"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "一辆大的是黑色的它不太新是王经理的",
+        "tag": "Mô tả xe to"
+      },
+      {
+        "id": "t1",
+        "text": "我们的公司有一辆大的和一辆小的汽车",
+        "tag": "Giới thiệu 2 xe"
+      },
+      {
+        "id": "t3",
+        "text": "那辆小的是白色的是刘秘书的",
+        "tag": "Mô tả xe nhỏ"
+      },
+      {
+        "id": "t4",
+        "text": "一个大的",
+        "tag": "Bẫy lượng từ"
+      },
+      {
+        "id": "t5",
+        "text": "秘书刘",
+        "tag": "Bẫy xưng hô"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "一辆大的和一辆小的汽车",
+      "黑色的",
+      "王经理的",
+      "白色的",
+      "刘秘书的"
+    ],
+    "wordBankPool": [
+      "我们的公司有一辆大的和一辆小的汽车",
+      "一辆大的是黑色的它不太新是王经理的",
+      "那辆小的是白色的是刘秘书的",
+      "一个大的",
+      "秘书刘",
+      "两汽车",
+      "王经理是"
+    ],
+    "traps": [
+      {
+        "pattern": "一个大的",
+        "msg": "Lỗi lượng từ: Xe ô tô bắt buộc dùng lượng từ '辆' ('一辆大的汽车'), không dùng lượng từ '个'."
+      },
+      {
+        "pattern": "秘书刘",
+        "msg": "Lỗi trật tự xưng danh: Trong tiếng Hán, họ luôn đứng trước chức vụ ('刘秘书', '王经理'), không nói ngược '秘书刘'."
+      }
+    ],
+    "explanation": "Cấu trúc họ tên kết hợp chức vụ: [Họ + Chức vụ] (王经理: Giám đốc Vương, 刘秘书: Thư ký Lưu). Lượng từ cho ô tô là '辆'."
+  },
+  {
+    "id": "b15-04",
+    "type": "anti_word_by_word",
+    "title": "Phó từ giới hạn 只 và quan hệ thân tộc",
+    "vi": "A: Cậu có anh trai không? B: Tớ không có anh trai, tớ chỉ có chị gái. Chị gái tớ là giáo viên tiếng Trung của trường đại học Hà Nội.",
+    "zh": "你有哥哥吗 我没有哥哥 我只有姐姐 我姐姐是河内大学的汉语老师",
+    "standardTrans": "你有哥哥吗 我没有哥哥 我只有姐姐 我姐姐是河内大学的汉语老师",
+    "pinyin": "Nǐ yǒu gēge ma? Wǒ méiyǒu gēge, wǒ zhǐ yǒu jiějie. Wǒ jiějie shì Hénèi Dàxué de hànyǔ lǎoshī.",
+    "grammarPoint": "Phó từ biểu thị sự duy nhất: 只 + 有 (chỉ có); Phủ định của sở hữu: 没有; Cụm định ngữ: 河内大学的汉语老师",
+    "tokens": [
+      {
+        "text": "Chỉ có",
+        "hz": "只有",
+        "py": "zhǐ yǒu",
+        "hv": "Chỉ hữu",
+        "role": "Phó từ + Động từ",
+        "vn": "Chỉ có",
+        "radicals": "只 = Bộ khẩu 口 + bộ bát 八; 有 = Bộ nguyệt 月 + bộ hựu 又"
+      },
+      {
+        "text": "Chị gái",
+        "hz": "姐姐",
+        "py": "jiějie",
+        "hv": "Tỷ tỷ",
+        "role": "Tân ngữ",
+        "vn": "Chị gái",
+        "radicals": "Bộ nữ 女 + chữ thả 且"
+      },
+      {
+        "text": "Giáo viên tiếng Trung của ĐH Hà Nội",
+        "hz": "河内大学的汉语老师",
+        "py": "Hénèi Dàxué de hànyǔ lǎoshī",
+        "hv": "Hà Nội Đại học đích Hán ngữ lão sư",
+        "role": "Cụm danh ngữ tân ngữ",
+        "vn": "Giáo viên tiếng Hán trường ĐH Hà Nội",
+        "radicals": "河内 = Hà Nội; 大学 = Đại học; 汉语老师 = Giáo viên tiếng Trung"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "我没有哥哥我只有姐姐",
+        "tag": "Vế phủ định và chỉ có"
+      },
+      {
+        "id": "t1",
+        "text": "你有哥哥吗",
+        "tag": "Câu hỏi"
+      },
+      {
+        "id": "t3",
+        "text": "我姐姐是河内大学的汉语老师",
+        "tag": "Vế nghề nghiệp chị"
+      },
+      {
+        "id": "t4",
+        "text": "不有哥哥",
+        "tag": "Bẫy phủ định"
+      },
+      {
+        "id": "t5",
+        "text": "有只姐姐",
+        "tag": "Bẫy trật tự phó từ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "你有哥哥吗",
+      "我没有哥哥",
+      "我只有姐姐",
+      "河内大学的汉语老师"
+    ],
+    "wordBankPool": [
+      "你有哥哥吗",
+      "我没有哥哥我只有姐姐",
+      "我姐姐是河内大学的汉语老师",
+      "不有哥哥",
+      "有只姐姐",
+      "汉语老师河内大学",
+      "只姐姐有"
+    ],
+    "traps": [
+      {
+        "pattern": "不有",
+        "msg": "Lỗi phủ định động từ sở hữu: Phủ định của '有' bắt buộc là '没有', tuyệt đối không bao giờ dùng '不有'."
+      },
+      {
+        "pattern": "有只",
+        "msg": "Lỗi vị trí phó từ: Phó từ '只' (chỉ) bắt buộc đứng TRƯỚC động từ ('只有'), không nói '有只'."
+      }
+    ],
+    "explanation": "Phó từ '只' đứng trước động từ để biểu thị sự giới hạn duy nhất: '只有' (chỉ có). Phủ định sở hữu dùng '没有'."
+  },
+  {
+    "id": "b15-05",
+    "type": "sentence_parsing",
+    "title": "Hỏi nghề nghiệp cha mẹ và lượng từ doanh nghiệp 家",
+    "vi": "A: Bố mẹ cậu làm nghề gì? B: Bố tớ là giám đốc của một công ty Trung Quốc. Mẹ tớ là luật sư của một công ty khá nhỏ. ",
+    "zh": "你爸爸 妈妈做什么工作 我爸爸是一家中国公司的经理 我妈妈是一家比较小的公司的律师",
+    "standardTrans": "你爸爸 妈妈做什么工作 我爸爸是一家中国公司的经理 我妈妈是一家比较小的公司的律师",
+    "pinyin": "Nǐ bàba, māma zuò shénme gōngzuò? Wǒ bàba shì yì jiā Zhōngguó gōngsī de jīnglǐ. Wǒ māma shì yì jiā bǐjiào xiǎo de gōngsī de lǜshī.",
+    "grammarPoint": "Hỏi nghề nghiệp: S + 做什么工作?; Lượng từ công ty: 家 (jiā); Cụm định ngữ nhiều tầng: 一家 + Tính từ/Quốc gia + 的 + 公司 + 的 + Chức vụ",
+    "tokens": [
+      {
+        "text": "Làm nghề gì",
+        "hz": "做什么工作",
+        "py": "zuò shénme gōngzuò",
+        "hv": "Tác thập ma công tác",
+        "role": "Vị ngữ hỏi",
+        "vn": "Làm công việc gì, làm nghề gì",
+        "radicals": "做 = Bộ nhân đứng 亻 + chữ cố 故; 什么 = Cái gì; 工作 = Công việc"
+      },
+      {
+        "text": "Một công ty Trung Quốc",
+        "hz": "一家中国公司",
+        "py": "yì jiā Zhōngguó gōngsī",
+        "hv": "Nhất gia Trung Quốc công ty",
+        "role": "Định ngữ chỉ cơ quan",
+        "vn": "Một công ty của Trung Quốc",
+        "radicals": "家 = Lượng từ công ty (bộ miên 宀 + bộ thỉ 豕); 中国 = Trung Quốc; 公司 = Công ty"
+      },
+      {
+        "text": "Luật sư",
+        "hz": "律师",
+        "py": "lǜshī",
+        "hv": "Luật sư",
+        "role": "Trung tâm ngữ",
+        "vn": "Luật sư",
+        "radicals": "律 = Bộ xích 彳 + chữ duật 聿; 师 = Bộ đao 刀 + bộ cân 巾"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "我爸爸是一家中国公司的经理",
+        "tag": "Nghề của bố"
+      },
+      {
+        "id": "t1",
+        "text": "你爸爸妈妈做什么工作",
+        "tag": "Câu hỏi nghề nghiệp"
+      },
+      {
+        "id": "t3",
+        "text": "我妈妈是一家比较小的公司的律师",
+        "tag": "Nghề của mẹ"
+      },
+      {
+        "id": "t4",
+        "text": "做工作什么",
+        "tag": "Bẫy trật tự"
+      },
+      {
+        "id": "t5",
+        "text": "个中国公司",
+        "tag": "Bẫy lượng từ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "做什么工作",
+      "一家中国公司的经理",
+      "一家比较小的公司的律师"
+    ],
+    "wordBankPool": [
+      "你爸爸妈妈做什么工作",
+      "我爸爸是一家中国公司的经理",
+      "我妈妈是一家比较小的公司的律师",
+      "做工作什么",
+      "个中国公司",
+      "做什么",
+      "公司的小"
+    ],
+    "traps": [
+      {
+        "pattern": "做工作什么",
+        "msg": "Lỗi cấu trúc nghi vấn: Hỏi làm nghề gì cấu trúc là '做 + 什么工作', không nói '做工作什么'."
+      },
+      {
+        "pattern": "个中国公司",
+        "msg": "Lỗi lượng từ công ty: Lượng từ chuẩn mực của cơ quan, doanh nghiệp, công ty là '家' ('一家公司'), không dùng '个'."
+      }
+    ],
+    "explanation": "Câu hỏi nghề nghiệp tiêu chuẩn: 'Chủ ngữ + 做什么工作?'. Lượng từ của công ty, cửa hàng, bệnh viện luôn là '家' (一家中国公司, 一家小公司)."
+  },
+  {
+    "id": "b15-06",
+    "type": "anti_word_by_word",
+    "title": "Câu liên động mua sắm sách báo và rủ rê bằng 吧",
+    "vi": "A: Chiều nay tớ đi hiệu sách mua sách, cậu đi không? B: Tớ cũng muốn đi. Tớ muốn mua vài cuốn tạp chí tiếng Trung và vài tấm bản đồ Trung Quốc. Buổi chiều chúng ta đi xe đạp đến hiệu sách nhé.",
+    "zh": "今天下午我去书店买书 你去吗 我也要去 我要买几本中文杂志和几张中国地图 下午我们骑自行车去书店吧",
+    "standardTrans": "今天下午我去书店买书 你去吗 我也要去 我要买几本中文杂志和几张中国地图 下午我们骑自行车去书店吧",
+    "pinyin": "Jīntiān xiàwǔ wǒ qù shūdiàn mǎi shū, nǐ qù ma? Wǒ yě yào qù. Wǒ yào mǎi jǐ běn zhōngwén zázhì hé jǐ zhāng Zhōngguó dìtú. Xiàwǔ wǒmen qí zìxíngchē qù shūdiàn ba.",
+    "grammarPoint": "Câu liên động: S + 骑自行车 + 去 + 书店 (đi xe đạp đến hiệu sách); Lượng từ bản đồ: 张 (zhāng); Trợ từ gợi ý: 吧",
+    "tokens": [
+      {
+        "text": "Bản đồ",
+        "hz": "地图",
+        "py": "dìtú",
+        "hv": "Địa đồ",
+        "role": "Trung tâm ngữ",
+        "vn": "Bản đồ",
+        "radicals": "地 = Bộ thổ 土 + chữ dã 也; 图 = Bộ vi 囗 + chữ đông 冬"
+      },
+      {
+        "text": "Vài tấm bản đồ",
+        "hz": "几张地图",
+        "py": "jǐ zhāng dìtú",
+        "hv": "Kỷ trương địa đồ",
+        "role": "Cụm số lượng tân ngữ",
+        "vn": "Vài tấm bản đồ (lượng từ vật phẳng)",
+        "radicals": "张 = Lượng từ vật phẳng (bộ cung 弓 + chữ trường 长); 地图 = Bản đồ"
+      },
+      {
+        "text": "Đi xe đạp",
+        "hz": "骑自行车",
+        "py": "qí zìxíngchē",
+        "hv": "Kỵ tự hành xa",
+        "role": "Cụm động tân phương thức",
+        "vn": "Đi xe đạp, cưỡi xe đạp",
+        "radicals": "骑 = Bộ mã 马 + chữ kỳ 奇; 自行车 = Xe đạp"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "我也要去我要买几本中文杂志和几张中国地图",
+        "tag": "Nhu cầu mua sách báo"
+      },
+      {
+        "id": "t1",
+        "text": "今天下午我去书店买书你去吗",
+        "tag": "Lời rủ rê ban đầu"
+      },
+      {
+        "id": "t3",
+        "text": "下午我们骑自行车去书店吧",
+        "tag": "Đề xuất phương tiện"
+      },
+      {
+        "id": "t4",
+        "text": "坐自行车",
+        "tag": "Bẫy động từ"
+      },
+      {
+        "id": "t5",
+        "text": "本中国地图",
+        "tag": "Bẫy lượng từ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "我去书店买书",
+      "我也要去",
+      "几本中文杂志",
+      "几张中国地图",
+      "骑自行车去书店吧"
+    ],
+    "wordBankPool": [
+      "今天下午我去书店买书你去吗",
+      "我也要去我要买几本中文杂志和几张中国地图",
+      "下午我们骑自行车去书店吧",
+      "坐自行车",
+      "本中国地图",
+      "去买书书店",
+      "走自行车"
+    ],
+    "traps": [
+      {
+        "pattern": "坐自行车",
+        "msg": "Lỗi động từ phương tiện: Người điều khiển xe đạp/xe máy dùng động từ '骑' ('骑自行车'), không dùng '坐' (坐 chỉ dùng khi ngồi sau hoặc ngồi xe khách/taxi)."
+      },
+      {
+        "pattern": "本地图",
+        "msg": "Lỗi lượng từ: Bản đồ dạng tờ phẳng bắt buộc dùng lượng từ '张' ('几张地图'), không dùng '本' (本 dùng cho sách đóng gáy)."
+      }
+    ],
+    "explanation": "Động từ đi xe 2 bánh là '骑' (骑自行车). Lượng từ cho vật mỏng phẳng như bản đồ, ảnh, đĩa là '张' (几张中国地图)."
+  },
+  {
+    "id": "b15-07",
+    "type": "sentence_parsing",
+    "title": "Trạng ngữ chỉ tần suất thời gian và liệt kê sách báo",
+    "vi": "Thầy giáo Trương là thầy giáo tiếng Trung của lớp chúng tôi. Thầy ấy rất bận rộn. Hàng ngày buổi sáng thầy ấy đều đến trường học, buổi chiều đến thư viện đọc sách. Thầy giáo Trương có rất nhiều sách và tạp chí, có sách tiếng Trung, cũng có sách ngoại văn.",
+    "zh": "张老师是我们班的汉语老师 他很忙 他每天上午都去学校 下午去图书馆看书 张老师有很多书和杂志 有中文书 也有外文书",
+    "standardTrans": "张老师是我们班的汉语老师 他很忙 他每天上午都去学校 下午去图书馆看书 张老师有很多书和杂志 有中文书 也有外文书",
+    "pinyin": "Zhāng lǎoshī shì wǒmen bān de hànyǔ lǎoshī. Tā hěn máng. Tā měitiān shàngwǔ dōu qù xuéxiào, xiàwǔ qù túshūguǎn kàn shū. Zhāng lǎoshī yǒu hěn duō shū hé zázhì, yǒu zhōngwén shū, yě yǒu wàiwén shū.",
+    "grammarPoint": "Tần suất thời gian: 每天上午都 + Động từ; Cấu trúc liên động: 去图书馆看书; Cặp liên từ liệt kê: 有... 也有...",
+    "tokens": [
+      {
+        "text": "Lớp chúng tôi",
+        "hz": "我们班",
+        "py": "wǒmen bān",
+        "hv": "Ngã môn ban",
+        "role": "Định ngữ sở hữu",
+        "vn": "Lớp học của chúng tôi",
+        "radicals": "班 = Hai chữ ngọc 王/玉 kẹp bộ đao 刂 ở giữa"
+      },
+      {
+        "text": "Hàng ngày buổi sáng",
+        "hz": "每天上午",
+        "py": "měitiān shàngwǔ",
+        "hv": "Mỗi thiên thượng ngọ",
+        "role": "Trạng ngữ thời gian",
+        "vn": "Sáng nào cũng, mỗi ngày buổi sáng",
+        "radicals": "每 = Bộ nhân 人 + bộ mẫu 母; 天 = Ngày; 上午 = Buổi sáng"
+      },
+      {
+        "text": "Sách ngoại văn",
+        "hz": "外文书",
+        "py": "wàiwén shū",
+        "hv": "Ngoại văn thư",
+        "role": "Tân ngữ",
+        "vn": "Sách viết bằng tiếng nước ngoài",
+        "radicals": "外 = Bộ tịch 夕 + bộ bốc 卜; 文 = Bộ văn 文; 书 = Sách"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "他每天上午都去学校下午去图书馆看书",
+        "tag": "Lịch trình hàng ngày"
+      },
+      {
+        "id": "t1",
+        "text": "张老师是我们班的汉语老师他很忙",
+        "tag": "Giới thiệu thầy Trương"
+      },
+      {
+        "id": "t3",
+        "text": "张老师有很多书和杂志有中文书也有外文书",
+        "tag": "Sách vở của thầy"
+      },
+      {
+        "id": "t4",
+        "text": "每上午天",
+        "tag": "Bẫy trật tự thời gian"
+      },
+      {
+        "id": "t5",
+        "text": "去学校每天",
+        "tag": "Bẫy trạng ngữ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "我们班的汉语老师",
+      "每天上午都去学校",
+      "下午去图书馆看书",
+      "有中文书",
+      "也有外文书"
+    ],
+    "wordBankPool": [
+      "张老师是我们班的汉语老师他很忙",
+      "他每天上午都去学校下午去图书馆看书",
+      "张老师有很多书和杂志有中文书也有外文书",
+      "每上午天",
+      "去学校每天",
+      "外文的书",
+      "都每天"
+    ],
+    "traps": [
+      {
+        "pattern": "去学校每天",
+        "msg": "Lỗi vị trí trạng ngữ thời gian: '每天上午' là thời gian, bắt buộc đứng trước động từ ('每天上午都去学校'), không đặt sau động từ."
+      },
+      {
+        "pattern": "每上午天",
+        "msg": "Lỗi trật tự từ hạn định: Bắt buộc nói từ lớn đến nhỏ: '每天上午' (mỗi ngày -> buổi sáng), không nói '每上午天'."
+      }
+    ],
+    "explanation": "Trạng ngữ thời gian và tần suất luôn đứng trước động từ: S + 每天上午 + 都 + 去学校. Liệt kê song song dùng kết cấu: '有... 也有...'."
+  },
+  {
+    "id": "b15-08",
+    "type": "anti_word_by_word",
+    "title": "Lượng từ doanh nghiệp 家 và đại từ số lượng 俩",
+    "vi": "Mary là nhân viên giao dịch của một ngân hàng. Mike là nhân viên của một công ty Nhật Bản. Hai người họ đều là bạn tốt của tôi.",
+    "zh": "玛丽是一家银行的营业员 麦克是一家日本公司的职员 他们俩都是我的好朋友",
+    "standardTrans": "玛丽是一家银行的营业员 麦克是一家日本公司的职员 他们俩都是我的好朋友",
+    "pinyin": "Mǎlì shì yì jiā yínháng de yíngyèyuán. Màikè shì yì jiā Rìběn gōngsī de zhíyuán. Tāmen liǎ dōu shì wǒ de hǎo péngyou.",
+    "grammarPoint": "Lượng từ tổ chức tài chính/doanh nghiệp: 一家 (yì jiā); Nhân viên giao dịch: 营业员; Đại từ 2 người: 他们俩 (không thêm 个)",
+    "tokens": [
+      {
+        "text": "Nhân viên giao dịch",
+        "hz": "营业员",
+        "py": "yíngyèyuán",
+        "hv": "Doanh nghiệp viên",
+        "role": "Trung tâm ngữ 1",
+        "vn": "Nhân viên bán hàng/giao dịch viên",
+        "radicals": "营 = Bộ thảo 艹 + hai bộ khẩu 口 + bộ mịch 冖 + bộ lữ 吕; 业 = Chữ nghiệp 业; 员 = Bộ khẩu 口 + bộ bối 贝"
+      },
+      {
+        "text": "Nhân viên công ty",
+        "hz": "公司的职员",
+        "py": "gōngsī de zhíyuán",
+        "hv": "Công ty đích chức viên",
+        "role": "Trung tâm ngữ 2",
+        "vn": "Nhân viên của công ty",
+        "radicals": "公司 = Công ty; 职员 = Nhân viên"
+      },
+      {
+        "text": "Hai người bọn họ",
+        "hz": "他们俩",
+        "py": "tāmen liǎ",
+        "hv": "Tha môn lưỡng",
+        "role": "Chủ ngữ vế 3",
+        "vn": "Hai người bọn họ",
+        "radicals": "他们 = Bọn họ; 俩 = Bộ nhân đứng 亻 + chữ lưỡng 两"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "麦克是一家日本公司的职员",
+        "tag": "Nghề của Mike"
+      },
+      {
+        "id": "t3",
+        "text": "他们俩都是我的好朋友",
+        "tag": "Quan hệ của cả hai"
+      },
+      {
+        "id": "t1",
+        "text": "玛丽是一家银行的营业员",
+        "tag": "Nghề của Mary"
+      },
+      {
+        "id": "t4",
+        "text": "个银行",
+        "tag": "Bẫy lượng từ"
+      },
+      {
+        "id": "t5",
+        "text": "他们两个俩",
+        "tag": "Bẫy lặp từ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "一家银行的营业员",
+      "一家日本公司的职员",
+      "他们俩都是我的好朋友"
+    ],
+    "wordBankPool": [
+      "玛丽是一家银行的营业员",
+      "麦克是一家日本公司的职员",
+      "他们俩都是我的好朋友",
+      "个银行",
+      "他们两个俩",
+      "日本公司职员",
+      "俩他们"
+    ],
+    "traps": [
+      {
+        "pattern": "个银行",
+        "msg": "Lỗi lượng từ cơ quan: Ngân hàng hay công ty có lượng từ chính thức là '家' ('一家银行'), không dùng '个'."
+      },
+      {
+        "pattern": "两个俩",
+        "msg": "Lỗi lặp lượng từ: '俩' (liǎ) đã tương đương với '两 + 个', tuyệt đối không ghép thành '两个俩'."
+      }
+    ],
+    "explanation": "Lượng từ cho ngân hàng và công ty là '家' (一家银行, 一家日本公司). Đại từ '他们俩' đại diện cho 2 người mà không cần thêm lượng từ '个'."
+  },
+  {
+    "id": "b15-09",
+    "type": "sentence_parsing",
+    "title": "Hỏi giám đốc công ty và chức vụ thư ký 秘书",
+    "vi": "A: Xin hỏi, ai là giám đốc của công ty các cậu. B: Lưu tiên sinh là giám đốc của công ty chúng tôi. Kia là thư ký của ông ấy, anh ấy tên là Trương Minh.",
+    "zh": "请问 谁是你们公司的经理 刘先生是我们公司的经理 那是他的秘书 他叫张明",
+    "standardTrans": "请问 谁是你们公司的经理 刘先生是我们公司的经理 那是他的秘书 他叫张明",
+    "pinyin": "Qǐngwèn, shéi shì nǐmen gōngsī de jīnglǐ? Liú xiānsheng shì wǒmen gōngsī de jīnglǐ. Nà shì tā de mìshū, tā jiào Zhāng Míng.",
+    "grammarPoint": "Câu hỏi chủ ngữ bằng 谁: 谁 + 是...; Kính xưng: Tiên sinh (ông/ngài): 刘先生; Chức vụ thư ký: 秘书",
+    "tokens": [
+      {
+        "text": "Thư ký",
+        "hz": "秘书",
+        "py": "mìshū",
+        "hv": "Bí thư",
+        "role": "Trung tâm ngữ",
+        "vn": "Thư ký",
+        "radicals": "秘 = Bộ hòa 禾 + chữ tất 必; 书 = Chữ thư 书"
+      },
+      {
+        "text": "Lưu tiên sinh (Ông Lưu)",
+        "hz": "刘先生",
+        "py": "Liú xiānsheng",
+        "hv": "Lưu tiên sinh",
+        "role": "Chủ ngữ",
+        "vn": "Ông Lưu, ngài Lưu",
+        "radicals": "刘 = Bộ văn 文 + bộ đao đứng 刂; 先生 = Tiên sinh, ông"
+      },
+      {
+        "text": "Trương Minh",
+        "hz": "张明",
+        "py": "Zhāng Míng",
+        "hv": "Trương Minh",
+        "role": "Tên riêng",
+        "vn": "Trương Minh",
+        "radicals": "张 = Bộ cung 弓 + chữ trường 长; 明 = Bộ nhật 日 + bộ nguyệt 月"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "刘先生是我们公司的经理",
+        "tag": "Trả lời giám đốc"
+      },
+      {
+        "id": "t1",
+        "text": "请问谁是你们公司的经理",
+        "tag": "Câu hỏi ai là giám đốc"
+      },
+      {
+        "id": "t3",
+        "text": "那是他的秘书他叫张明",
+        "tag": "Giới thiệu thư ký"
+      },
+      {
+        "id": "t4",
+        "text": "先生刘",
+        "tag": "Bẫy xưng hô"
+      },
+      {
+        "id": "t5",
+        "text": "谁是经理你们公司",
+        "tag": "Bẫy ngữ tự"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "谁是你们公司的经理",
+      "刘先生是我们公司的经理",
+      "那是他的秘书",
+      "他叫张明"
+    ],
+    "wordBankPool": [
+      "请问谁是你们公司的经理",
+      "刘先生是我们公司的经理",
+      "那是他的秘书他叫张明",
+      "先生刘",
+      "谁是经理你们公司",
+      "经理谁是",
+      "他的秘书是那"
+    ],
+    "traps": [
+      {
+        "pattern": "先生刘",
+        "msg": "Lỗi xưng hô: Trong tiếng Trung, họ luôn đặt TRƯỚC danh xưng '先生' ('刘先生: Ông Lưu'), không nói '先生刘'."
+      },
+      {
+        "pattern": "谁是经理你们公司",
+        "msg": "Lỗi định ngữ: Cụm 'giám đốc của công ty các cậu' phải đặt cơ quan sở hữu lên trước: '你们公司的经理'."
+      }
+    ],
+    "explanation": "Câu hỏi chủ ngữ với đại từ nghi vấn '谁': [谁 + 是 + Danh từ?]. Cách xưng hô tôn trọng trong kinh doanh: [Họ + 先生 / 经理 / 秘书]."
+  },
+  {
+    "id": "b15-10",
+    "type": "anti_word_by_word",
+    "title": "Công ty ngoại thương và phân biệt phủ định bộ phận 不都是",
+    "vi": "Công ty chúng tôi là một công ty thương mại quốc tế. Nhân viên công ty chúng tôi không phải đều là nhân viên người Việt, cũng có nhân viên người nước ngoài.",
+    "zh": "我们的公司是一家外贸公司 我们公司的职员不都是越南职员 也有外国职员",
+    "standardTrans": "我们的公司是一家外贸公司 我们公司的职员不都是越南职员 也有外国职员",
+    "pinyin": "Wǒmen de gōngsī shì yì jiā wàimào gōngsī. Wǒmen gōngsī de zhíyuán bù dōu shì Yuènán zhíyuán, yě yǒu wàiguó zhíyuán.",
+    "grammarPoint": "Phủ định bộ phận: 不都是 (không phải đều là); Thuật ngữ doanh nghiệp: 外贸公司 (công ty ngoại thương / TMQT); Nhân viên nước ngoài: 外国职员",
+    "tokens": [
+      {
+        "text": "Công ty thương mại quốc tế (ngoại thương)",
+        "hz": "外贸公司",
+        "py": "wàimào gōngsī",
+        "hv": "Ngoại mậu công ty",
+        "role": "Trung tâm ngữ",
+        "vn": "Công ty thương mại đối ngoại / ngoại thương",
+        "radicals": "外 = Ngoài, ngoại; 贸 = Bộ đao 刀 + chữ thảo 艹 + bộ bối 贝; 公司 = Công ty"
+      },
+      {
+        "text": "Không phải đều là",
+        "hz": "不都是",
+        "py": "bù dōu shì",
+        "hv": "Bất đô thị",
+        "role": "Cụm phủ định bộ phận",
+        "vn": "Không phải tất cả đều là",
+        "radicals": "不 = Phủ định; 都 = Đều; 是 = Là"
+      },
+      {
+        "text": "Nhân viên người nước ngoài",
+        "hz": "外国职员",
+        "py": "wàiguó zhíyuán",
+        "hv": "Ngoại quốc chức viên",
+        "role": "Tân ngữ",
+        "vn": "Nhân viên người ngoại quốc",
+        "radicals": "外国 = Nước ngoài; 职员 = Nhân viên"
+      }
+    ],
+    "tiles": [
+      {
+        "id": "t2",
+        "text": "我们公司的职员不都是越南职员",
+        "tag": "Phủ định bộ phận nhân viên"
+      },
+      {
+        "id": "t1",
+        "text": "我们的公司是一家外贸公司",
+        "tag": "Loại hình công ty"
+      },
+      {
+        "id": "t3",
+        "text": "也有外国职员",
+        "tag": "Bổ sung có nhân viên ngoại quốc"
+      },
+      {
+        "id": "t4",
+        "text": "都不是越南职员",
+        "tag": "Bẫy phủ định toàn bộ"
+      },
+      {
+        "id": "t5",
+        "text": "一个外贸公司",
+        "tag": "Bẫy lượng từ"
+      }
+    ],
+    "targetOrder": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "requiredKeywordsZh": [
+      "一家外贸公司",
+      "不都是越南职员",
+      "也有外国职员"
+    ],
+    "wordBankPool": [
+      "我们的公司是一家外贸公司",
+      "我们公司的职员不都是越南职员",
+      "也有外国职员",
+      "都不是越南职员",
+      "一个外贸公司",
+      "外贸的一家公司",
+      "职员外国"
+    ],
+    "traps": [
+      {
+        "pattern": "都不是",
+        "msg": "Lỗi ngữ nghĩa phủ định: '都不' là phủ định toàn bộ (tất cả đều KHÔNG phải người Việt), còn '不都' mới là phủ định bộ phận (KHÔNG PHẢI TẤT CẢ đều là người Việt)."
+      },
+      {
+        "pattern": "一个外贸公司",
+        "msg": "Lỗi lượng từ công ty: Lượng từ của công ty là '家' ('一家外贸公司'), không dùng '个'."
+      }
+    ],
+    "explanation": "Điểm ngữ pháp then chốt của Hán ngữ: '不都是' (phủ định bộ phận: không phải đều là...) khác biệt hoàn toàn với '都不是' (phủ định toàn bộ: đều không phải là...)."
+  }
+]

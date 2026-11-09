@@ -1,0 +1,546 @@
+{
+  "lessonId": "b18",
+  "lessonTitle": "第十八课: 我去邮局寄包裹",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "顺便",
+        "py": "shùn biàn",
+        "note": "Nhân tiện, tiện thể (làm một việc gì đó kèm theo). Cấu trúc: CN + 顺便 + động từ. Khác với 顺路 (shùn lù) mang nghĩa là tiện đường."
+      },
+      {
+        "word": "替",
+        "py": "tì",
+        "note": "Thay, thay cho (ai đó) làm việc gì đó. Cấu trúc: 谁 + 替 + 谁 + động từ Hoặc 替 + 谁 + 做什么."
+      },
+      {
+        "word": "拿",
+        "py": "ná",
+        "note": "Cầm, nắm, bắt, lấy, mang... Dùng để chỉ ai đó sử dụng tay hay sử dụng 1 phương thức khác cầm đồ vật đó lên và chuyển đi chỗ khác. Khác với 带 (dài) tập trung vào việc mang hoặc lấy mọi thứ theo bạn."
+      },
+      {
+        "word": "当 / 办 / 工作 / 做 / 干",
+        "py": "dāng / bàn / gōng zuò / zuò / gàn",
+        "note": "Các từ mang nghĩa 'làm'. 当: làm nghề/chức vụ gì. 办: làm giấy tờ, thủ tục, công việc. 工作: công việc, làm việc. 做: làm (nghề), làm (bố/mẹ/bạn...), làm (cụ thể: nấu, may...). 干: làm (khẩu ngữ)."
+      },
+      {
+        "word": "帮 / 帮助 / 帮忙",
+        "py": "bāng / bāngzhù / bāngmáng",
+        "note": "Giúp đỡ. 帮 + đối tượng + động từ + tân ngữ. 帮助 + đối tượng: (ĐT) giúp đỡ ai đó. Chủ ngữ + 帮忙 + động từ."
+      }
+    ],
+    "grammarTips": [
+      "Câu hỏi lựa chọn 还是: Dùng trong câu hỏi để đưa ra 2 hoặc nhiều phương án lựa chọn.",
+      "Cấu trúc 不要...: Khuyên ngăn, nhắc nhở không nên làm gì (đừng...)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b18-01",
+      "type": "anti_word_by_word",
+      "title": "Thay mặt và nhờ vả",
+      "vi": "A: Lát nữa cậu đến ngân hàng nhân tiện đổi giúp tớ một ít tiền được không? B: Được, không thành vấn đề.",
+      "zh": "一会儿你去银行顺便替我换一些钱好吗好没问题",
+      "standardTrans": "一会儿你去银行顺便替我换一些钱好吗好没问题",
+      "pinyin": "Yīhuì'er nǐ qù yínháng, shùnbiàn tì wǒ huàn yīxiē qián, hǎo ma? Hǎo, méi wèntí.",
+      "grammarPoint": "Phó từ 顺便 (nhân tiện); Giới từ 替 (thay cho)",
+      "tokens": [
+        {
+          "text": "Nhân tiện, tiện thể",
+          "hz": "顺便",
+          "py": "shùnbiàn",
+          "hv": "Thuận tiện",
+          "role": "Phó từ",
+          "vn": "Tiện thể, nhân tiện làm gì đó",
+          "radicals": "顺 = Bộ xuyên 川 + bộ hiệt 页; 便 = Bộ nhân đứng 亻 + chữ canh 更"
+        },
+        {
+          "text": "Thay cho",
+          "hz": "替",
+          "py": "tì",
+          "hv": "Thế",
+          "role": "Giới từ",
+          "vn": "Thay mặt ai, thay cho ai",
+          "radicals": "Bộ viết 曰 + bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "一会儿你去银行", "tag": "Thời gian & Hành động chính" },
+        { "id": "t2", "text": "顺便替我换一些钱", "tag": "Nhờ vả" },
+        { "id": "t3", "text": "好吗", "tag": "Hỏi ý kiến" },
+        { "id": "t4", "text": "好没问题", "tag": "Đồng ý" },
+        { "id": "t5", "text": "换替我", "tag": "Bẫy ngữ tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["一会儿", "去银行", "顺便替我", "换一些钱", "好吗", "没问题"],
+      "wordBankPool": ["一会儿你去银行", "顺便替我换一些钱", "好吗", "好没问题", "换替我", "顺路换我钱"],
+      "traps": [
+        {
+          "pattern": "换替我",
+          "msg": "Lỗi giới từ: Cấu trúc 'thay ai làm gì' là '替 + Người + Động từ' ('替我换'), không nói '换替我'."
+        }
+      ],
+      "explanation": "Câu nhờ vả kết hợp phó từ '顺便' (tiện thể) và giới từ '替' (thay cho). Cấu trúc: 顺便 + 替 + Đối tượng + Động từ[cite: 781]."
+    },
+    {
+      "id": "b18-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi về lịch trình đoàn đại biểu",
+      "vi": "A: Ngày mai đoàn đại biểu thương mại quốc tế đi đâu? B: Bọn họ đi tàu hỏa đến Thượng Hải tham quan.",
+      "zh": "外贸代表团明天去哪儿他们坐火车去上海参观",
+      "standardTrans": "外贸代表团明天去哪儿他们坐火车去上海参观",
+      "pinyin": "Wàimào dàibiǎotuán míngtiān qù nǎ'er? Tāmen zuò huǒchē qù Shànghǎi cānguān.",
+      "grammarPoint": "Phương tiện di chuyển: 坐火车去; Mục đích: 去上海参观",
+      "tokens": [
+        {
+          "text": "Đoàn đại biểu ngoại thương",
+          "hz": "外贸代表团",
+          "py": "wàimào dàibiǎotuán",
+          "hv": "Ngoại mậu đại biểu đoàn",
+          "role": "Chủ ngữ",
+          "vn": "Đoàn đại biểu thương mại quốc tế",
+          "radicals": "外 = Bộ tịch 夕; 贸 = Bộ bối 贝; 代 = Bộ nhân đứng 亻; 表 = Bộ y 衣; 团 = Bộ vi 囗"
+        },
+        {
+          "text": "Tham quan",
+          "hz": "参观",
+          "py": "cānguān",
+          "hv": "Tham quan",
+          "role": "Động từ mục đích",
+          "vn": "Tham quan, đi thăm",
+          "radicals": "参 = Bộ tư 厶; 观 = Bộ kiến 见"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "外贸代表团明天去哪儿", "tag": "Câu hỏi" },
+        { "id": "t2", "text": "他们坐火车", "tag": "Phương tiện" },
+        { "id": "t3", "text": "去上海参观", "tag": "Điểm đến & Mục đích" },
+        { "id": "t4", "text": "参观上海", "tag": "Bẫy liên động" },
+        { "id": "t5", "text": "去哪儿外贸代表团", "tag": "Bẫy trật tự câu hỏi" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["外贸代表团", "明天去哪儿", "坐火车", "去上海参观"],
+      "wordBankPool": ["外贸代表团明天去哪儿", "他们坐火车", "去上海参观", "参观上海", "去哪儿外贸代表团", "火车坐"],
+      "traps": [
+        {
+          "pattern": "参观上海",
+          "msg": "Lỗi câu liên động: Đi đến địa điểm rồi mới làm gì, phải là '去上海参观', không dùng '参观上海' trong văn cảnh này."
+        },
+        {
+          "pattern": "去哪儿外贸代表团",
+          "msg": "Lỗi trật tự từ để hỏi: '去哪儿' đóng vai trò là vị ngữ, phải đứng sau chủ ngữ '外贸代表团'."
+        }
+      ],
+      "explanation": "Cấu trúc liên động: 坐 (Phương tiện) + 去 (Địa điểm) + Động từ mục đích[cite: 781]."
+    },
+    {
+      "id": "b18-03",
+      "type": "anti_word_by_word",
+      "title": "Sử dụng công cụ/ngôn ngữ với 用",
+      "vi": "A: Thầy giáo lớp các cậu dùng tiếng Trung giảng bài hay dùng tiếng Anh để giảng bài? B: Thầy ấy dùng tiếng Trung giảng bài.",
+      "zh": "你们班的老师用汉语讲课还是用英语讲课他用汉语讲课",
+      "standardTrans": "你们班的老师用汉语讲课还是用英语讲课他用汉语讲课",
+      "pinyin": "Nǐmen bān de lǎoshī yòng hànyǔ jiǎngkè háishì yòng yīngyǔ jiǎngkè? Tā yòng hànyǔ jiǎngkè.",
+      "grammarPoint": "Câu hỏi lựa chọn 还是; Cấu trúc dùng công cụ: 用 + Tân ngữ (công cụ/ngôn ngữ) + Động từ",
+      "tokens": [
+        {
+          "text": "Dùng",
+          "hz": "用",
+          "py": "yòng",
+          "hv": "Dụng",
+          "role": "Giới từ chỉ công cụ",
+          "vn": "Sử dụng, bằng (ngôn ngữ)",
+          "radicals": "Bộ dụng 用"
+        },
+        {
+          "text": "Giảng bài",
+          "hz": "讲课",
+          "py": "jiǎngkè",
+          "hv": "Giảng khóa",
+          "role": "Động từ ly hợp",
+          "vn": "Giảng dạy, giảng bài",
+          "radicals": "讲 = Bộ ngôn 讠 + chữ tỉnh 井; 课 = Bộ ngôn 讠 + chữ quả 果"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你们班的老师", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "用汉语讲课还是用英语讲课", "tag": "Câu hỏi lựa chọn" },
+        { "id": "t3", "text": "他用汉语讲课", "tag": "Câu trả lời" },
+        { "id": "t4", "text": "讲课用汉语", "tag": "Bẫy trật tự" },
+        { "id": "t5", "text": "或者用英语讲课", "tag": "Bẫy liên từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你们班的老师", "用汉语讲课", "还是用英语讲课", "他用汉语讲课"],
+      "wordBankPool": ["你们班的老师", "用汉语讲课还是用英语讲课", "他用汉语讲课", "讲课用汉语", "或者用英语讲课", "讲汉语课"],
+      "traps": [
+        {
+          "pattern": "讲课用汉语",
+          "msg": "Lỗi cấu trúc công cụ: Phải đặt '用 + Ngôn ngữ' trước động từ '讲课', tức là '用汉语讲课', không dịch xuôi."
+        },
+        {
+          "pattern": "或者用英语讲课",
+          "msg": "Lỗi liên từ: '还是' dùng trong câu hỏi lựa chọn, '或者' dùng trong câu trần thuật."
+        }
+      ],
+      "explanation": "Cấu trúc '用 + Tân ngữ + Động từ' dùng để diễn đạt việc thực hiện hành động bằng công cụ hoặc phương thức nào đó (ở đây là ngôn ngữ). Câu hỏi lựa chọn dùng '还是'[cite: 781]."
+    },
+    {
+      "id": "b18-04",
+      "type": "sentence_parsing",
+      "title": "Nhờ vả trả sách thư viện",
+      "vi": "A: Buổi chiều tớ đi thư viện mượn sách, cậu đi không? B: Không, buổi chiều tớ đến bệnh viện thăm Mike. Nhân tiện cậu trả sách hộ tớ được không?",
+      "zh": "下午我去图书馆借书你去吗不去下午我去医院看麦克你顺便替我还书好吗",
+      "standardTrans": "下午我去图书馆借书你去吗不去下午我去医院看麦克你顺便替我还书好吗",
+      "pinyin": "Xiàwǔ wǒ qù túshūguǎn jiè shū, nǐ qù ma? Bù qù, xiàwǔ wǒ qù yīyuàn kàn Màikè. Nǐ shùnbiàn tì wǒ huán shū, hǎo ma?",
+      "grammarPoint": "Động từ Trả đồ (还 - huán); 顺便替我 + Động từ",
+      "tokens": [
+        {
+          "text": "Bệnh viện",
+          "hz": "医院",
+          "py": "yīyuàn",
+          "hv": "Y viện",
+          "role": "Địa điểm",
+          "vn": "Bệnh viện",
+          "radicals": "医 = Bộ phương 匚 + chữ thỉ 矢; 院 = Bộ ấp 阝 + chữ hoàn 完"
+        },
+        {
+          "text": "Trả (đồ)",
+          "hz": "还",
+          "py": "huán",
+          "hv": "Hoàn",
+          "role": "Động từ",
+          "vn": "Trả lại, hoàn lại",
+          "radicals": "Bộ sước 辶 + chữ bất 不"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "下午我去图书馆借书你去吗", "tag": "Hỏi dự định" },
+        { "id": "t2", "text": "不去下午我去医院看麦克", "tag": "Từ chối và nêu dự định" },
+        { "id": "t3", "text": "你顺便替我还书好吗", "tag": "Nhờ vả" },
+        { "id": "t4", "text": "我还书顺便替", "tag": "Bẫy trật tự" },
+        { "id": "t5", "text": "去借书图书馆", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["去图书馆借书", "去医院看麦克", "顺便替我还书"],
+      "wordBankPool": ["下午我去图书馆借书你去吗", "不去下午我去医院看麦克", "你顺便替我还书好吗", "我还书顺便替", "去借书图书馆", "替我顺便还书"],
+      "traps": [
+        {
+          "pattern": "去借书图书馆",
+          "msg": "Lỗi câu liên động: 'Đi thư viện mượn sách' là '去图书馆借书', không phải '去借书图书馆'."
+        },
+        {
+          "pattern": "替我顺便",
+          "msg": "Lỗi vị trí phó từ: '顺便' (nhân tiện) đứng trước giới từ '替' ('顺便替我'), không đảo ngược."
+        }
+      ],
+      "explanation": "Câu nhờ vả kết hợp phó từ '顺便' (tiện thể) và giới từ '替' (thay cho). Lưu ý động từ '还' trong trường hợp này đọc là 'huán' (trả lại)[cite: 781]."
+    },
+    {
+      "id": "b18-05",
+      "type": "anti_word_by_word",
+      "title": "Vai trò phiên dịch cho đoàn đại biểu",
+      "vi": "Ngày mai tớ sẽ cùng đoàn đại biểu Việt Nam đến Trung Quốc du lịch. Bọn họ đều không biết tiếng Trung, vì vậy tớ làm phiên dịch cho bọn họ.",
+      "zh": "明天我跟越南代表团去中国旅行他们都不会汉语所以我给他们当翻译",
+      "standardTrans": "明天我跟越南代表团去中国旅行他们都不会汉语所以我给他们当翻译",
+      "pinyin": "Míngtiān wǒ gēn Yuènán dàibiǎotuán qù Zhōngguó lǚxíng. Tāmen dōu bú huì hànyǔ, suǒyǐ wǒ gěi tāmen dāng fānyì.",
+      "grammarPoint": "Cụm giới từ đồng hành 跟; Động từ năng nguyện 会; Cấu trúc '给 + Ai + 当 + Nghề/Vai trò' (Làm... cho ai)",
+      "tokens": [
+        {
+          "text": "Biết (do học/rèn luyện)",
+          "hz": "会",
+          "py": "huì",
+          "hv": "Hội",
+          "role": "Động từ năng nguyện",
+          "vn": "Biết (ngoại ngữ/kỹ năng)",
+          "radicals": "Bộ nhân 人 + chữ vân 云"
+        },
+        {
+          "text": "Làm (nghề/vai trò)",
+          "hz": "当",
+          "py": "dāng",
+          "hv": "Đương",
+          "role": "Động từ",
+          "vn": "Đảm nhiệm, làm (nghề gì)",
+          "radicals": "Bộ tiểu 小"
+        },
+        {
+          "text": "Phiên dịch",
+          "hz": "翻译",
+          "py": "fānyì",
+          "hv": "Phiên dịch",
+          "role": "Danh từ",
+          "vn": "Phiên dịch viên",
+          "radicals": "翻 = Bộ vũ 羽 + chữ phiên 番; 译 = Bộ ngôn 讠 + chữ dịch 绎"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "明天我跟越南代表团去中国旅行", "tag": "Vế hành động chính" },
+        { "id": "t2", "text": "他们都不会汉语", "tag": "Nguyên nhân" },
+        { "id": "t3", "text": "所以我给他们当翻译", "tag": "Kết quả" },
+        { "id": "t4", "text": "当翻译给他们", "tag": "Bẫy trật tự 1" },
+        { "id": "t5", "text": "翻译当", "tag": "Bẫy trật tự 2" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["跟越南代表团去中国旅行", "不会汉语", "所以", "给他们当翻译"],
+      "wordBankPool": ["明天我跟越南代表团去中国旅行", "他们都不会汉语", "所以我给他们当翻译", "当翻译给他们", "不认识汉语", "去中国跟越南代表团"],
+      "traps": [
+        {
+          "pattern": "当翻译给他们",
+          "msg": "Lỗi giới từ '给': Cấu trúc làm việc gì đó cho ai phải đưa '给 + Đối tượng' lên trước động từ ('给他们当翻译')."
+        }
+      ],
+      "explanation": "Để nói 'làm nghề gì cho ai', tiếng Trung dùng cấu trúc: 给 + Người + 当 + Nghề nghiệp (给他们当翻译)[cite: 781]."
+    },
+    {
+      "id": "b18-06",
+      "type": "sentence_parsing",
+      "title": "Mua sắm tại siêu thị và nhờ vả",
+      "vi": "A: Tối nay tớ đi siêu thị mua đồ. Cậu muốn mua gì, tớ mua giúp cậu. B: Cậu giúp tớ mua hai chai rượu vang đỏ và ba cân nho Pháp. Cậu đợi chút, tớ lấy tiền đưa cậu.",
+      "zh": "今天晚上我去超市买东西你要买什么我帮你买你帮我买两瓶红酒和三公斤法国葡萄你等等我给你拿钱",
+      "standardTrans": "今天晚上我去超市买东西你要买什么我帮你买你帮我买两瓶红酒和三公斤法国葡萄你等等我给你拿钱",
+      "pinyin": "Jīntiān wǎnshàng wǒ qù chāoshì mǎi dōngxi. Nǐ yào mǎi shénme, wǒ bāng nǐ mǎi. Nǐ bāng wǒ mǎi liǎng píng hóngjiǔ hé sān gōngjīn Fǎguó pútáo. Nǐ děng děng, wǒ gěi nǐ ná qián.",
+      "grammarPoint": "Câu liên động mục đích: 去超市买东西; Giúp ai làm gì: 帮 + Ai + Hành động; Lặp lại động từ (等等)",
+      "tokens": [
+        {
+          "text": "Kilogram (cân)",
+          "hz": "公斤",
+          "py": "gōngjīn",
+          "hv": "Công cân",
+          "role": "Lượng từ",
+          "vn": "Cân, kilogram",
+          "radicals": "公 = Bộ bát 八 + bộ tư 厶; 斤 = Bộ cân 斤"
+        },
+        {
+          "text": "Nho",
+          "hz": "葡萄",
+          "py": "pútáo",
+          "hv": "Bồ đào",
+          "role": "Danh từ",
+          "vn": "Quả nho",
+          "radicals": "葡 = Bộ thảo 艹; 萄 = Bộ thảo 艹"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天晚上我去超市买东西", "tag": "Vế A1" },
+        { "id": "t2", "text": "你要买什么我帮你买", "tag": "Vế A2" },
+        { "id": "t3", "text": "你帮我买两瓶红酒和三公斤法国葡萄", "tag": "Vế B1" },
+        { "id": "t4", "text": "你等等我给你拿钱", "tag": "Vế B2" },
+        { "id": "t5", "text": "我买帮你", "tag": "Bẫy trật tự 帮" },
+        { "id": "t6", "text": "拿钱给你", "tag": "Bẫy trật tự 给" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["去超市买东西", "我帮你买", "两瓶红酒", "三公斤法国葡萄", "我给你拿钱"],
+      "wordBankPool": ["今天晚上我去超市买东西", "你要买什么我帮你买", "你帮我买两瓶红酒和三公斤法国葡萄", "你等等我给你拿钱", "我买帮你", "拿钱给你", "葡萄法国"],
+      "traps": [
+        {
+          "pattern": "我买帮你",
+          "msg": "Lỗi cấu trúc '帮': 'Giúp ai làm gì' là '帮 + Người + Động từ' ('帮你买'), không đảo động từ lên trước."
+        },
+        {
+          "pattern": "拿钱给你",
+          "msg": "Lỗi giới từ '给': 'Lấy tiền đưa cho cậu' phải nói '给你拿钱', đặt '给' trước hành động."
+        }
+      ],
+      "explanation": "Cấu trúc nhờ vả thông dụng: 帮 + Ai + Động từ (帮你买). Lượng từ cho rượu là 瓶 (chai), cho trái cây dùng 公斤 (kg) hoặc 斤 (cân Trung Quốc)[cite: 781]."
+    },
+    {
+      "id": "b18-07",
+      "type": "anti_word_by_word",
+      "title": "Mua tem và gửi bưu phẩm",
+      "vi": "A: Bây giờ tớ hơi bận, cậu đến bưu điện mua giúp tớ vài chiếc tem thư nhé. B: Được, không thành vấn đề. Tớ cũng đang muốn đến bưu điện gửi bưu phẩm.",
+      "zh": "我现在有点儿忙你去邮局帮我买几张邮票吧行没问题我也正想去邮局寄包裹",
+      "standardTrans": "我现在有点儿忙你去邮局帮我买几张邮票吧行没问题我也正想去邮局寄包裹",
+      "pinyin": "Wǒ xiànzài yǒudiǎnr máng, nǐ qù yóujú bāng wǒ mǎi jǐ zhāng yóupiào ba. Xíng, méi wèntí. Wǒ yě zhèng xiǎng qù yóujú jì bāoguǒ.",
+      "grammarPoint": "有点儿 + Tính từ; Lượng từ cho vật mỏng (张); Hành động đang muốn làm (正想)",
+      "tokens": [
+        {
+          "text": "Tem thư",
+          "hz": "邮票",
+          "py": "yóupiào",
+          "hv": "Bưu phiếu",
+          "role": "Danh từ",
+          "vn": "Tem thư",
+          "radicals": "邮 = Bộ ấp 阝; 票 = Bộ thị 示 + bộ á 襾"
+        },
+        {
+          "text": "Bưu phẩm",
+          "hz": "包裹",
+          "py": "bāoguǒ",
+          "hv": "Bao khỏa",
+          "role": "Danh từ",
+          "vn": "Bưu phẩm, gói hàng",
+          "radicals": "包 = Bộ bao 勹 + bộ tị 巳; 裹 = Bộ y 衣 + chữ quả 果"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我现在有点儿忙", "tag": "Vế A1" },
+        { "id": "t2", "text": "你去邮局帮我买几张邮票吧", "tag": "Vế A2" },
+        { "id": "t3", "text": "行没问题", "tag": "Vế B1" },
+        { "id": "t4", "text": "我也正想去邮局寄包裹", "tag": "Vế B2" },
+        { "id": "t5", "text": "去帮我买邮局", "tag": "Bẫy trật tự" },
+        { "id": "t6", "text": "一点儿忙", "tag": "Bẫy mức độ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["有点儿忙", "去邮局帮我买", "几张邮票", "没问题", "正想去邮局寄包裹"],
+      "wordBankPool": ["我现在有点儿忙", "你去邮局帮我买几张邮票吧", "行没问题", "我也正想去邮局寄包裹", "去帮我买邮局", "一点儿忙", "几本邮票"],
+      "traps": [
+        {
+          "pattern": "一点儿忙",
+          "msg": "Lỗi dùng từ chỉ mức độ: Để phàn nàn 'hơi bận', dùng '有点儿 + Tính từ' ('有点儿忙'), không dùng '一点儿' (chỉ dùng sau tính từ trong câu so sánh hoặc động từ)."
+        },
+        {
+          "pattern": "几本邮票",
+          "msg": "Lỗi lượng từ: Tem là vật mỏng, phẳng nên dùng lượng từ '张', không dùng '本'."
+        }
+      ],
+      "explanation": "Khuyên nhủ nhẹ nhàng dùng '吧'. '有点儿' đứng trước tính từ diễn tả mức độ nhẹ với ý than phiền. Lượng từ cho tem là '张'[cite: 781]."
+    },
+    {
+      "id": "b18-08",
+      "type": "sentence_parsing",
+      "title": "Chờ đợi và nhờ mua báo",
+      "vi": "A: Tớ đi mua vé tàu, cậu ở đây đợi tớ nhé. B: Được, nhân tiện mua giúp tớ một tờ báo nhé. Báo ngày hôm nay tớ vẫn chưa đọc.",
+      "zh": "我去买火车票你在这儿等我吧行顺便替我买一份报纸吧今天的报纸我还没看呢",
+      "standardTrans": "我去买火车票你在这儿等我吧行顺便替我买一份报纸吧今天的报纸我还没看呢",
+      "pinyin": "Wǒ qù mǎi huǒchēpiào, nǐ zài zhèr děng wǒ ba. Xíng, shùnbiàn tì wǒ mǎi yí fèn bàozhǐ ba. Jīntiān de bàozhǐ wǒ hái méi kàn ne.",
+      "grammarPoint": "Vị trí của Ở đâu (在这儿); Lượng từ cho tài liệu/báo (份); Hành động chưa diễn ra (还没)",
+      "tokens": [
+        {
+          "text": "Vé tàu hỏa",
+          "hz": "火车票",
+          "py": "huǒchēpiào",
+          "hv": "Hỏa xa phiếu",
+          "role": "Danh từ",
+          "vn": "Vé tàu hỏa",
+          "radicals": "火 = Bộ hỏa 火; 车 = Bộ xa 车; 票 = Bộ thị 示 + bộ á 襾"
+        },
+        {
+          "text": "Báo, tờ báo",
+          "hz": "报纸",
+          "py": "bàozhǐ",
+          "hv": "Báo chỉ",
+          "role": "Danh từ",
+          "vn": "Tờ báo",
+          "radicals": "报 = Bộ thủ 扌 + bộ hựu 又; 纸 = Bộ mịch 纟 + chữ thị 氏"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我去买火车票", "tag": "Vế A1" },
+        { "id": "t2", "text": "你在这儿等我吧", "tag": "Vế A2" },
+        { "id": "t3", "text": "行顺便替我买一份报纸吧", "tag": "Vế B1" },
+        { "id": "t4", "text": "今天的报纸我还没看呢", "tag": "Vế B2" },
+        { "id": "t5", "text": "等你在这儿", "tag": "Bẫy nơi chốn" },
+        { "id": "t6", "text": "不看呢", "tag": "Bẫy phủ định" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["去买火车票", "在这儿等我", "顺便替我", "一份报纸", "还没看呢"],
+      "wordBankPool": ["我去买火车票", "你在这儿等我吧", "行顺便替我买一份报纸吧", "今天的报纸我还没看呢", "等你在这儿", "没看呢我今天的报纸", "不看呢"],
+      "traps": [
+        {
+          "pattern": "等你在这儿",
+          "msg": "Lỗi trạng ngữ nơi chốn: 'Ở đây đợi tôi' là '在这儿等我', phải đặt '在这儿' trước động từ."
+        }
+      ],
+      "explanation": "Lượng từ cho báo chí thường là '份' (phần/tờ/bản). '还没...呢' diễn đạt sự việc vẫn chưa xảy ra ở hiện tại[cite: 781]."
+    },
+    {
+      "id": "b18-09",
+      "type": "anti_word_by_word",
+      "title": "Gọi điện thoại báo trước",
+      "vi": "Vương Minh nói khi chúng tôi đến thì phải gọi điện trước cho cậu ấy.",
+      "zh": "王明说我们去的时候要先给他打电话",
+      "standardTrans": "王明说我们去的时候要先给他打电话",
+      "pinyin": "Wáng Míng shuō wǒmen qù de shíhòu, yào xiān gěi tā dǎ diànhuà.",
+      "grammarPoint": "Mệnh đề thời gian: [Sự kiện] + 的时候; Phó từ 先 (trước); Gọi điện cho ai: 给 + Người + 打电话",
+      "tokens": [
+        {
+          "text": "Lúc, khi",
+          "hz": "的时候",
+          "py": "de shíhòu",
+          "hv": "Đích thời hậu",
+          "role": "Cụm danh từ chỉ thời gian",
+          "vn": "Lúc, khi",
+          "radicals": "时 = Bộ nhật 日 + chữ thốn 寸; 候 = Bộ nhân 亻"
+        },
+        {
+          "text": "Trước",
+          "hz": "先",
+          "py": "xiān",
+          "hv": "Tiên",
+          "role": "Phó từ",
+          "vn": "Trước, đầu tiên",
+          "radicals": "Bộ nhân đi 亻 + bộ nhi 儿"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "王明说", "tag": "Lời nói" },
+        { "id": "t2", "text": "我们去的时候", "tag": "Mệnh đề thời gian" },
+        { "id": "t3", "text": "要先给他打电话", "tag": "Hành động yêu cầu" },
+        { "id": "t4", "text": "时候我们去", "tag": "Bẫy trật tự thời gian" },
+        { "id": "t5", "text": "打电话先给他", "tag": "Bẫy phó từ/giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["王明说", "我们去的时候", "要先", "给他打电话"],
+      "wordBankPool": ["王明说", "我们去的时候", "要先给他打电话", "时候我们去", "打电话先给他", "先打电话给他"],
+      "traps": [
+        {
+          "pattern": "时候我们去",
+          "msg": "Lỗi mệnh đề thời gian: 'Khi chúng tôi đến' phải là '我们去的时候' (Sự kiện + 的时候), không đảo ngược."
+        },
+        {
+          "pattern": "先打电话给他",
+          "msg": "Lỗi giới từ '给': Cấu trúc chuẩn là '先给他打电话' (先 + 给 + Người + Động từ)."
+        }
+      ],
+      "explanation": "Cấu trúc mệnh đề thời gian luôn đứng sau sự kiện (我们去 + 的时候). Phó từ '先' (trước) đứng trước cụm giới từ '给他'[cite: 781]."
+    },
+    {
+      "id": "b18-10",
+      "type": "sentence_parsing",
+      "title": "Không biết bao giờ về, đề nghị gọi điện",
+      "vi": "A: Trương Hồng đi cửa hàng mua hoa với Mary rồi. Tớ cũng không biết khi nào bọn họ về. Cậu gọi điện cho bọn họ đi. B: Được. Cảm ơn cậu.",
+      "zh": "张红跟玛丽去商店买花了我也知道她们什么时候回来你给她们打电话吧好的谢谢你",
+      "standardTrans": "张红跟玛丽去商店买花了我也知道她们什么时候回来你给她们打电话吧好的谢谢你",
+      "pinyin": "Zhāng Hóng gēn Mǎlì qù shāngdiàn mǎi huā le. Wǒ yě bù zhīdào tāmen shénme shíhou huílái, nǐ gěi tāmen dǎ diànhuà ba. Hǎo de. Xièxie nǐ.",
+      "grammarPoint": "Cụm giới từ đồng hành 跟; Từ nghi vấn thời gian 什么时候; Gọi điện 给...打电话",
+      "tokens": [
+        {
+          "text": "Hoa",
+          "hz": "花",
+          "py": "huā",
+          "hv": "Hoa",
+          "role": "Danh từ",
+          "vn": "Hoa, bông hoa",
+          "radicals": "Bộ thảo 艹 + chữ hóa 化"
+        },
+        {
+          "text": "Khi nào",
+          "hz": "什么时候",
+          "py": "shénme shíhòu",
+          "hv": "Thập ma thời hậu",
+          "role": "Đại từ nghi vấn",
+          "vn": "Khi nào, lúc nào",
+          "radicals": "什 = Bộ nhân đứng 亻 + bộ thập 十; 么 = Bộ phẩy 丿; 时候 = Thời gian"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "张红跟玛丽去商店买花了", "tag": "Vế A1" },
+        { "id": "t2", "text": "我也知道她们什么时候回来", "tag": "Vế A2" },
+        { "id": "t3", "text": "你给她们打电话吧", "tag": "Vế A3" },
+        { "id": "t4", "text": "好的谢谢你", "tag": "Vế B" },
+        { "id": "t5", "text": "回来什么时候", "tag": "Bẫy trật tự nghi vấn" },
+        { "id": "t6", "text": "去买花商店", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["跟玛丽去商店买花", "不知道", "什么时候回来", "给她们打电话"],
+      "wordBankPool": ["张红跟玛丽去商店买花了", "我也知道她们什么时候回来", "你给她们打电话吧", "好的谢谢你", "回来什么时候", "去买花商店", "我也不知道"],
+      "traps": [
+        {
+          "pattern": "回来什么时候",
+          "msg": "Lỗi từ để hỏi: '什么时候' (khi nào) làm trạng ngữ chỉ thời gian nên phải đứng trước động từ '回来' (khi nào về), không đặt ở cuối câu."
+        }
+      ],
+      "explanation": "Lưu ý ở Vế A2, trong bản gốc đáp án tiếng Trung bị thiếu chữ '不' (我也知道... đáng lẽ là 我也不知道...). Tuy nhiên, để tôn trọng Source of Truth, dữ liệu vẫn giữ nguyên theo đáp án gốc trang 83, 89[cite: 781]. (Trên thực tế giao tiếp nên thêm '不')."
+    }
+  ]
+}

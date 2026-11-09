@@ -1,0 +1,432 @@
+{
+  "lessonId": "b01",
+  "lessonTitle": "Bài 1: 你好! - Chào hỏi & Đặc điểm ngữ pháp",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "好",
+        "py": "hǎo",
+        "note": "Mang nghĩa 'tốt, khỏe, đẹp'. Khi ghép sau đại từ hoặc danh từ thời gian sẽ tạo thành câu chào (你好: Xin chào, 早上好: Chào buổi sáng)."
+      },
+      {
+        "word": "不",
+        "py": "bù",
+        "note": "Phó từ phủ định dùng cho hiện tại, tương lai hoặc tính chất (不好: không tốt). Biến điệu: đọc thành thanh 2 (bú) nếu chữ theo sau mang thanh 4."
+      },
+      {
+        "word": "您",
+        "py": "nín",
+        "note": "Đại từ nhân xưng ngôi thứ hai số ít, dùng để xưng hô trang trọng, lịch sự với người lớn tuổi, cấp trên hoặc đối tác (không có dạng số nhiều 您们)."
+      }
+    ],
+    "grammarTips": [
+      "Trật tự câu chào hỏi: Đối tượng/Thời gian + 好 (Không dùng động từ 是 hoặc dịch ngược kiểu tiếng Việt).",
+      "Cấu trúc định ngữ đơn giản: Tính từ (đơn âm tiết) + Danh từ trung tâm (大马: ngựa to, 白马: ngựa trắng). Không cần dùng trợ từ 的.",
+      "Cấu trúc phủ định tính từ: Chủ ngữ + 不 + Tính từ (你不好: Bạn không khỏe)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b1-01",
+      "type": "sentence_parsing",
+      "title": "Chào hỏi thông dụng",
+      "vi": "Xin chào",
+      "zh": "你好",
+      "standardTrans": "你好",
+      "pinyin": "nǐ hǎo",
+      "grammarPoint": "Công thức chào hỏi thông dụng: Đại từ nhân xưng / Danh từ chỉ người + 好",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ (Đại từ)",
+          "vn": "Anh, chị, bạn",
+          "radicals": "亻 = Bộ nhân đứng + 尔 = chữ nhĩ"
+        },
+        {
+          "text": "Khỏe / Tốt",
+          "hz": "好",
+          "py": "hǎo",
+          "hv": "Hảo",
+          "role": "Vị ngữ (Tính từ)",
+          "vn": "Tốt, đẹp, khỏe",
+          "radicals": "女 = Bộ nữ + 子 = bộ tử"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你", "tag": "Đại từ" },
+        { "id": "t2", "text": "好", "tag": "Tính từ" },
+        { "id": "t3", "text": "是", "tag": "Bẫy động từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你好"],
+      "wordBankPool": ["你", "好", "是", "你是好", "好你"],
+      "traps": [
+        {
+          "pattern": "你是",
+          "msg": "Lỗi dịch thô: Trong tiếng Trung, câu chào hỏi dùng cấu trúc 'Người + 好', tuyệt đối không thêm động từ '是' (là) vào giữa."
+        },
+        {
+          "pattern": "好你",
+          "msg": "Lỗi đảo ngữ: Không đưa tính từ '好' lên trước đại từ nhân xưng giống tiếng Việt."
+        }
+      ],
+      "explanation": "Quy tắc biến điệu thanh 3: Khi hai thanh 3 đi liền nhau (nǐ hǎo), chữ đầu tiên sẽ đọc thành thanh 2 (ní hǎo)."
+    },
+    {
+      "id": "b1-02",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc phủ định với phó từ 不",
+      "vi": "Bạn không khỏe",
+      "zh": "你不好",
+      "standardTrans": "你不好",
+      "pinyin": "nǐ bù hǎo",
+      "grammarPoint": "Cấu trúc phủ định với phó từ: Chủ ngữ + 不 + Tính từ",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Anh, chị, bạn",
+          "radicals": "亻 = Bộ nhân đứng + 尔 = chữ nhĩ"
+        },
+        {
+          "text": "Không",
+          "hz": "不",
+          "py": "bù",
+          "hv": "Bất",
+          "role": "Phó từ phủ định",
+          "vn": "Không, chẳng",
+          "radicals": "一 = Bộ nhất + 丿 = nét phẩy + 丨 = nét sổ + 丶 = nét chấm"
+        },
+        {
+          "text": "Khỏe",
+          "hz": "好",
+          "py": "hǎo",
+          "hv": "Hảo",
+          "role": "Vị ngữ",
+          "vn": "Tốt, đẹp, khỏe",
+          "radicals": "女 = Bộ nữ + 子 = bộ tử"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "不", "tag": "Phó từ" },
+        { "id": "t3", "text": "好", "tag": "Tính từ" },
+        { "id": "t4", "text": "没", "tag": "Bẫy phủ định" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你不好"],
+      "wordBankPool": ["你", "不", "好", "没", "你没好", "不好你"],
+      "traps": [
+        {
+          "pattern": "你没",
+          "msg": "Lỗi dùng từ: Phủ định tính chất hoặc trạng thái (khỏe/tốt) phải dùng phó từ '不', không dùng '没' (thường dùng phủ định hành động trong quá khứ hoặc sở hữu)."
+        },
+        {
+          "pattern": "不好你",
+          "msg": "Lỗi trật tự: Chủ ngữ phải đứng trước cụm vị ngữ phủ định '不好'."
+        }
+      ],
+      "explanation": "Phó từ '不' đọc thanh 4 (bù), vì chữ '好' theo sau mang thanh 3 nên chữ '不' giữ nguyên thanh điệu, không biến điệu."
+    },
+    {
+      "id": "b1-03",
+      "type": "sentence_parsing",
+      "title": "Cụm danh từ: Tính từ + Danh từ",
+      "vi": "Ngựa to",
+      "zh": "大马",
+      "standardTrans": "大马",
+      "pinyin": "dà mǎ",
+      "grammarPoint": "Cấu trúc cụm danh từ cơ bản: Tính từ làm định ngữ + Danh từ trung tâm",
+      "tokens": [
+        {
+          "text": "To / Lớn",
+          "hz": "大",
+          "py": "dà",
+          "hv": "Đại",
+          "role": "Định ngữ",
+          "vn": "To, lớn",
+          "radicals": "大 = Bộ đại"
+        },
+        {
+          "text": "Con ngựa",
+          "hz": "马",
+          "py": "mǎ",
+          "hv": "Mã",
+          "role": "Trung tâm ngữ",
+          "vn": "Con ngựa",
+          "radicals": "马 = Bộ mã"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "大", "tag": "Định ngữ" },
+        { "id": "t2", "text": "马", "tag": "Danh từ" },
+        { "id": "t3", "text": "的", "tag": "Bẫy kết cấu" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["大马"],
+      "wordBankPool": ["大", "马", "的", "马大", "大的马"],
+      "traps": [
+        {
+          "pattern": "马大",
+          "msg": "Lỗi đảo ngữ: Người Việt quen nói danh từ trước tính từ sau (ngựa to), nhưng trong tiếng Trung tính từ (大) bắt buộc phải đứng TRƯỚC danh từ (马)."
+        },
+        {
+          "pattern": "大的马",
+          "msg": "Lỗi thừa trợ từ: Tính từ đơn âm tiết bổ nghĩa trực tiếp cho danh từ thì không cần dùng trợ từ '的'."
+        }
+      ],
+      "explanation": "Quy tắc vàng của cụm danh từ Hán ngữ: Định ngữ (phụ) luôn đứng trước Trung tâm ngữ (chính)."
+    },
+    {
+      "id": "b1-04",
+      "type": "sentence_parsing",
+      "title": "Định ngữ màu sắc: Màu sắc + Danh từ",
+      "vi": "Ngựa trắng",
+      "zh": "白马",
+      "standardTrans": "白马",
+      "pinyin": "bái mǎ",
+      "grammarPoint": "Tính từ chỉ màu sắc làm định ngữ trực tiếp cho danh từ: Màu sắc + Danh từ",
+      "tokens": [
+        {
+          "text": "Màu trắng",
+          "hz": "白",
+          "py": "bái",
+          "hv": "Bạch",
+          "role": "Định ngữ",
+          "vn": "Màu trắng, trắng",
+          "radicals": "白 = Bộ bạch"
+        },
+        {
+          "text": "Con ngựa",
+          "hz": "马",
+          "py": "mǎ",
+          "hv": "Mã",
+          "role": "Trung tâm ngữ",
+          "vn": "Con ngựa",
+          "radicals": "马 = Bộ mã"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "白", "tag": "Màu sắc" },
+        { "id": "t2", "text": "马", "tag": "Danh từ" },
+        { "id": "t3", "text": "是", "tag": "Bẫy hệ từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["白马"],
+      "wordBankPool": ["白", "马", "是", "马白", "白是马"],
+      "traps": [
+        {
+          "pattern": "马白",
+          "msg": "Lỗi định ngữ: Giống như cấu trúc tính từ chung, màu sắc (định ngữ) phải đi trước vật (trung tâm ngữ)."
+        },
+        {
+          "pattern": "是",
+          "msg": "Lỗi từ loại: Đây là cụm danh từ (Ngựa trắng), không phải câu trần thuật (Ngựa màu trắng) nên không dùng động từ '是'."
+        }
+      ],
+      "explanation": "Từ chỉ màu sắc đơn âm tiết trực tiếp bổ nghĩa cho danh từ tạo thành một khái niệm trọn vẹn (白马: ngựa trắng)."
+    },
+    {
+      "id": "b1-05",
+      "type": "sentence_parsing",
+      "title": "Chào hỏi theo các buổi trong ngày",
+      "vi": "Chào buổi sáng",
+      "zh": "早上好",
+      "standardTrans": "早上好",
+      "pinyin": "zǎoshang hǎo",
+      "grammarPoint": "Mẫu câu chào theo các buổi trong ngày: Mốc thời gian + 好",
+      "tokens": [
+        {
+          "text": "Buổi sáng",
+          "hz": "早上",
+          "py": "zǎoshang",
+          "hv": "Tảo thượng",
+          "role": "Mốc thời gian",
+          "vn": "Buổi sáng",
+          "radicals": "早 = Bộ nhật 日 + bộ thập 十; 上 = Bộ nhất 一 + nét sổ 丨 + nét chấm 丶"
+        },
+        {
+          "text": "Tốt / Chào",
+          "hz": "好",
+          "py": "hǎo",
+          "hv": "Hảo",
+          "role": "Vị ngữ",
+          "vn": "Tốt, đẹp, khỏe, an lành",
+          "radicals": "女 = Bộ nữ + 子 = bộ tử"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "早上", "tag": "Thời gian" },
+        { "id": "t2", "text": "好", "tag": "Tính từ" },
+        { "id": "t3", "text": "问", "tag": "Bẫy động từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["早上好"],
+      "wordBankPool": ["早上", "好", "问", "好早上", "早好好"],
+      "traps": [
+        {
+          "pattern": "好早上",
+          "msg": "Lỗi dịch thô: Lời chào theo buổi trong tiếng Hán luôn là 'Buổi + 好', không đặt từ '好' ra trước theo kiểu 'Chào + Buổi sáng' của tiếng Việt."
+        },
+        {
+          "pattern": "问",
+          "msg": "Lỗi dùng từ: Chào buổi sáng dùng trực tiếp cấu trúc '早上好', tuyệt đối không chèn thêm động từ '问' (hỏi/chào)."
+        }
+      ],
+      "explanation": "Âm tiết '上' trong '早上' thường đọc thanh nhẹ (khinh thanh). Quy tắc 'Thời gian/Đối tượng + 好' áp dụng cho mọi buổi trong ngày."
+    },
+    {
+      "id": "b1-06",
+      "type": "sentence_parsing",
+      "title": "Chào hỏi lịch sự, tôn kính",
+      "vi": "Chào ngài",
+      "zh": "您好",
+      "standardTrans": "您好",
+      "pinyin": "nín hǎo",
+      "grammarPoint": "Chào hỏi lịch sự, tôn kính: Đại từ tôn kính 您 + 好",
+      "tokens": [
+        {
+          "text": "Ngài / Ông / Bà",
+          "hz": "您",
+          "py": "nín",
+          "hv": "Nẫm",
+          "role": "Đại từ tôn kính",
+          "vn": "Ngài, ông, bà (ngôi thứ hai trang trọng)",
+          "radicals": "您 = Chữ 你 (nhân đứng + nhĩ) + bộ tâm nằm 心"
+        },
+        {
+          "text": "Khỏe / Tốt",
+          "hz": "好",
+          "py": "hǎo",
+          "hv": "Hảo",
+          "role": "Vị ngữ",
+          "vn": "Tốt, đẹp, khỏe",
+          "radicals": "女 = Bộ nữ + 子 = bộ tử"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "您", "tag": "Kính ngữ" },
+        { "id": "t2", "text": "好", "tag": "Tính từ" },
+        { "id": "t3", "text": "吗", "tag": "Bẫy trợ từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["您好"],
+      "wordBankPool": ["您", "好", "吗", "您好吗", "你您好"],
+      "traps": [
+        {
+          "pattern": "您好吗",
+          "msg": "Lỗi sai mục đích: Câu '您好' mang nghĩa (Xin chào ngài). Nếu thêm '吗' thành '您好吗', câu sẽ bị đổi nghĩa thành câu hỏi thăm sức khỏe (Ngài có khỏe không?)."
+        },
+        {
+          "pattern": "你您",
+          "msg": "Thừa đại từ: Đã dùng kính ngữ '您' thì không được phép dùng kèm '你'."
+        }
+      ],
+      "explanation": "Chữ '您' có bộ tâm (心) ở dưới thể hiện sự tôn trọng từ tận đáy lòng. Dùng để xưng hô ngôi thứ hai với người lớn tuổi, thầy cô hoặc cấp trên."
+    },
+    {
+      "id": "b1-07",
+      "type": "sentence_parsing",
+      "title": "Lời chúc ban mai trang nhã",
+      "vi": "Ngày mới vui vẻ nhé",
+      "zh": "早安",
+      "standardTrans": "早安",
+      "pinyin": "zǎo'ān",
+      "grammarPoint": "Cách chúc buổi sáng trang nhã, nhẹ nhàng: 早 + 安",
+      "tokens": [
+        {
+          "text": "Sớm",
+          "hz": "早",
+          "py": "zǎo",
+          "hv": "Tảo",
+          "role": "Thời gian",
+          "vn": "Sớm, buổi sáng",
+          "radicals": "早 = Bộ nhật 日 + bộ thập 十"
+        },
+        {
+          "text": "An lành",
+          "hz": "安",
+          "py": "ān",
+          "hv": "An",
+          "role": "Chúc an",
+          "vn": "Yên tĩnh, an lành, bình an",
+          "radicals": "安 = Bộ miên 宀 (mái nhà) + bộ nữ 女 (phụ nữ)"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "早", "tag": "Buổi sáng" },
+        { "id": "t2", "text": "安", "tag": "An lành" },
+        { "id": "t3", "text": "你", "tag": "Bẫy đại từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["早安"],
+      "wordBankPool": ["早", "安", "你", "安早", "早安你"],
+      "traps": [
+        {
+          "pattern": "安早",
+          "msg": "Lỗi đảo ngữ: Lời chúc buổi sáng là cụm từ cố định '早安', tuyệt đối không được đảo lộn trật tự chữ."
+        },
+        {
+          "pattern": "早安你",
+          "msg": "Lỗi thừa đại từ: Câu chúc '早安' bản thân nó đã trọn vẹn, không ghép đuôi đại từ nhân xưng '你' vào sau."
+        }
+      ],
+      "explanation": "Sử dụng '早安' mang lại cảm giác thân thiện, nhẹ nhàng, thường dùng nhắn tin chào đầu ngày cho người thân quen, mang hàm ý chúc một ngày mới an lành."
+    },
+    {
+      "id": "b1-08",
+      "type": "sentence_parsing",
+      "title": "Chào hỏi buổi tối khi gặp mặt",
+      "vi": "Chào buổi tối",
+      "zh": "晚上好",
+      "standardTrans": "晚上好",
+      "pinyin": "wǎnshang hǎo",
+      "grammarPoint": "Công thức chào hỏi buổi tối khi gặp mặt: 晚上 + 好",
+      "tokens": [
+        {
+          "text": "Buổi tối",
+          "hz": "晚上",
+          "py": "wǎnshang",
+          "hv": "Vãn thượng",
+          "role": "Mốc thời gian",
+          "vn": "Buổi tối",
+          "radicals": "晚 = Bộ nhật 日 + chữ miễn 免; 上 = Bộ nhất 一 + nét sổ 丨 + nét chấm 丶"
+        },
+        {
+          "text": "Tốt / Chào",
+          "hz": "好",
+          "py": "hǎo",
+          "hv": "Hảo",
+          "role": "Vị ngữ",
+          "vn": "Tốt, đẹp, an lành",
+          "radicals": "女 = Bộ nữ + 子 = bộ tử"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "晚上", "tag": "Thời gian" },
+        { "id": "t2", "text": "好", "tag": "Tính từ" },
+        { "id": "t3", "text": "安", "tag": "Bẫy ngữ cảnh" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["晚上好"],
+      "wordBankPool": ["晚上", "好", "安", "晚安", "好晚上"],
+      "traps": [
+        {
+          "pattern": "晚安",
+          "msg": "Lỗi sai ngữ cảnh: '晚安' mang nghĩa là 'Chúc ngủ ngon' (nói khi chuẩn bị đi ngủ), trong khi '晚上好' là câu chào gặp mặt vào buổi tối."
+        },
+        {
+          "pattern": "好晚上",
+          "msg": "Lỗi trật tự thời gian: Công thức là 'Mốc thời gian + 好', không dịch thuận theo tiếng Việt thành '好晚上'."
+        }
+      ],
+      "explanation": "Cần phân biệt rõ ràng cách chào gặp mặt buổi tối (晚上好) và lời chúc tạm biệt trước khi đi ngủ (晚安)."
+    }
+  ]
+}

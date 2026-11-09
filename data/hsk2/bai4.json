@@ -1,0 +1,512 @@
+{
+  "lessonId": "b19",
+  "lessonTitle": "第十九课: 可以试试吗?",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "合适 vs 适合",
+        "py": "héshì vs shìhé",
+        "note": "合适 (Tính từ): Vừa vặn, thích hợp (这件衣服正合适). 适合 (Động từ): Phù hợp với (这件衣服很适合你)."
+      },
+      {
+        "word": "打折",
+        "py": "dǎ zhé",
+        "note": "Giảm giá theo cách Trung Quốc: Giữ lại bao nhiêu phần. 打八折 = Giữ lại 8 phần = Giảm 20%. 打六折 = Giảm 40%."
+      },
+      {
+        "word": "再",
+        "py": "zài",
+        "note": "Biểu thị hành động sẽ lặp lại hoặc tiếp tục trong TƯƠNG LAI: 你再试试 (Cậu thử lại / thử tiếp đi)."
+      }
+    ],
+    "grammarTips": [
+      "Phân biệt 有点儿 và 一点儿:\n1. 有点儿 + Tính từ: Hơi... (Mang nghĩa phàn nàn, không vừa ý: 有点儿贵 - hơi đắt).\n2. Tính từ + 一点儿: ...hơn một chút (Dùng để yêu cầu, so sánh: 便宜一点儿 - rẻ hơn 1 chút).\n3. V + 一点儿 + (Danh từ): Làm gì 1 chút (买点儿东西 - mua chút đồ).",
+      "Cấu trúc đồng tồn tại 又... 又... (Vừa ... Vừa ...): Dùng với tính từ hoặc động từ để chỉ 2 trạng thái tồn tại cùng lúc (又干净又安静 - vừa sạch vừa yên tĩnh).",
+      "Động từ lặp lại (AA / ABAB): 听听, 试试, 介绍介绍... Biểu thị động tác diễn ra nhanh, thử làm gì đó hoặc làm cho ngữ khí nhẹ nhàng đi."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b19-01",
+      "type": "anti_word_by_word",
+      "title": "Phàn nàn và yêu cầu khi mua sắm",
+      "vi": "Đôi giày này hơi to, có đôi nào nhỏ hơn một chút không?",
+      "zh": "这双鞋有点儿大有没有小一点儿的",
+      "standardTrans": "这双鞋有点儿大有没有小一点儿的",
+      "pinyin": "Zhè shuāng xié yǒudiǎnr dà, yǒu méiyǒu xiǎo yìdiǎnr de?",
+      "grammarPoint": "Phàn nàn: 有点儿 + Tính từ; Yêu cầu: Tính từ + 一点儿 + 的",
+      "tokens": [
+        {
+          "text": "Đôi",
+          "hz": "双",
+          "py": "shuāng",
+          "hv": "Song",
+          "role": "Lượng từ",
+          "vn": "Đôi (giày, tất, đũa...)",
+          "radicals": "Bộ hựu 又 + bộ hựu 又"
+        },
+        {
+          "text": "Hơi, có chút",
+          "hz": "有点儿",
+          "py": "yǒudiǎnr",
+          "hv": "Hữu điểm nhi",
+          "role": "Phó từ",
+          "vn": "Hơi... (thường biểu thị sự phàn nàn)",
+          "radicals": "有 = Bộ nguyệt 月; 点 = Bộ hỏa 灬"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "有点儿大", "tag": "Chê bai" },
+        { "id": "t4", "text": "小一点儿的", "tag": "Đại từ hóa yêu cầu" },
+        { "id": "t1", "text": "这双鞋", "tag": "Chủ đề" },
+        { "id": "t3", "text": "有没有", "tag": "Hỏi sự tồn tại" },
+        { "id": "t5", "text": "一点儿大", "tag": "Bẫy phó từ 1" },
+        { "id": "t6", "text": "小有点儿", "tag": "Bẫy phó từ 2" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["这双鞋", "有点儿大", "有没有", "小一点儿的"],
+      "wordBankPool": ["这双鞋", "有点儿大", "有没有", "小一点儿的", "一点儿大", "小有点儿", "一点儿的鞋"],
+      "traps": [
+        {
+          "pattern": "一点儿大",
+          "msg": "Lỗi dùng từ: Để chê bai hoặc phàn nàn (hơi to), phải dùng '有点儿大'. '一点儿' chỉ đặt SAU tính từ khi muốn so sánh/yêu cầu (大一点儿 - to hơn 1 chút)."
+        },
+        {
+          "pattern": "小有点儿",
+          "msg": "Lỗi dùng từ: Để yêu cầu cỡ 'nhỏ hơn một chút', phải đặt '一点儿' sau tính từ ('小一点儿')."
+        }
+      ],
+      "explanation": "Câu kinh điển khi mua sắm: Chê bai dùng '有点儿 + Tính từ'. Yêu cầu đổi cái khác dùng 'Tính từ + 一点儿 + 的' (chữ '的' đóng vai trò thay thế cho danh từ '鞋')."
+    },
+    {
+      "id": "b19-02",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc đồng tồn tại 又... 又...",
+      "vi": "Thư viện của trường học vừa sạch sẽ vừa yên tĩnh, vì vậy tối nào tôi cũng đến thư viện học bài.",
+      "zh": "学校的图书馆又干净又安静所以我每天晚上都去图书馆学习",
+      "standardTrans": "学校的图书馆又干净又安静所以我每天晚上都去图书馆学习",
+      "pinyin": "Xuéxiào de túshūguǎn yòu gānjìng yòu ānjìng, suǒyǐ wǒ měitiān wǎnshang dōu qù túshūguǎn xuéxí.",
+      "grammarPoint": "Liệt kê tính chất: 又 + Tính từ 1 + 又 + Tính từ 2; Đại từ phiếm chỉ 'mỗi': 每天 + 都",
+      "tokens": [
+        {
+          "text": "Sạch sẽ",
+          "hz": "干净",
+          "py": "gānjìng",
+          "hv": "Can tịnh",
+          "role": "Tính từ",
+          "vn": "Sạch sẽ",
+          "radicals": "干 = Bộ can 干; 净 = Bộ băng 冫 + chữ tranh 争"
+        },
+        {
+          "text": "Yên tĩnh",
+          "hz": "安静",
+          "py": "ānjìng",
+          "hv": "An tĩnh",
+          "role": "Tính từ",
+          "vn": "Yên tĩnh",
+          "radicals": "安 = Bộ miên 宀 + bộ nữ 女; 静 = Bộ thanh 青 + chữ tranh 争"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "又干净又安静", "tag": "Liệt kê tính chất" },
+        { "id": "t4", "text": "都去图书馆学习", "tag": "Hành động lặp lại" },
+        { "id": "t1", "text": "学校的图书馆", "tag": "Chủ đề" },
+        { "id": "t3", "text": "所以我每天晚上", "tag": "Kết quả + Thời gian" },
+        { "id": "t5", "text": "干净和安静", "tag": "Bẫy liên từ" },
+        { "id": "t6", "text": "图书馆的学校", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["学校的图书馆", "又干净又安静", "所以我", "每天晚上都去"],
+      "wordBankPool": ["学校的图书馆", "又干净又安静", "所以我每天晚上", "都去图书馆学习", "干净和安静", "图书馆的学校", "我每天晚上去"],
+      "traps": [
+        {
+          "pattern": "干净和安静",
+          "msg": "Lỗi dùng từ: Liên từ '和' (và) chủ yếu để nối danh từ. Để nói 'Vừa... Vừa...' nối 2 tính từ, bắt buộc dùng cấu trúc '又... 又...' (又干净又安静)."
+        },
+        {
+          "pattern": "图书馆的学校",
+          "msg": "Lỗi định ngữ: 'Thư viện của trường' thì 'trường' là sở hữu phải đứng trước: '学校的图书馆'."
+        }
+      ],
+      "explanation": "Khi miêu tả 2 tính chất cùng tồn tại ở một sự vật, dùng cấu trúc '又... 又...'. Phía sau cụm '每天' (mỗi ngày) thường bắt buộc có phó từ '都' (đều) bổ trợ."
+    },
+    {
+      "id": "b19-03",
+      "type": "anti_word_by_word",
+      "title": "Mua sắm, gợi ý và nghe nói",
+      "vi": "Tớ hơi đói rồi, chúng ta đi siêu thị mua chút đồ đi. Tớ nghe nói bánh mỳ của siêu thị này vừa rẻ vừa ngon.",
+      "zh": "我有点儿饿了我们去超市买点儿东西吧我听说这家超市的面包又便宜又好吃",
+      "standardTrans": "我有点儿饿了我们去超市买点儿东西吧我听说这家超市的面包又便宜又好吃",
+      "pinyin": "Wǒ yǒudiǎnr è le, wǒmen qù chāoshì mǎi diǎnr dōngxi ba. Wǒ tīngshuō zhè jiā chāoshì de miànbāo yòu piányi yòu hǎochī.",
+      "grammarPoint": "Hơi đói: 有点儿 + 饿; Mua chút đồ: 买点儿 + 东西; Nghe nói: 听说",
+      "tokens": [
+        {
+          "text": "Nghe nói",
+          "hz": "听说",
+          "py": "tīngshuō",
+          "hv": "Thính thuyết",
+          "role": "Động từ",
+          "vn": "Nghe nói, nghe bảo",
+          "radicals": "听 = Bộ khẩu 口 + bộ cân 斤; 说 = Bộ ngôn 讠 + chữ duyệt 兑"
+        },
+        {
+          "text": "Rẻ",
+          "hz": "便宜",
+          "py": "piányi",
+          "hv": "Tiện nghi",
+          "role": "Tính từ",
+          "vn": "Rẻ, rẻ tiền",
+          "radicals": "便 = Bộ nhân đứng 亻 + chữ canh 更; 宜 = Bộ miên 宀 + chữ thả 且"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们去超市买点儿东西吧", "tag": "Đề nghị liên động" },
+        { "id": "t4", "text": "又便宜又好吃", "tag": "Đánh giá chất lượng" },
+        { "id": "t1", "text": "我有点儿饿了", "tag": "Trình trạng" },
+        { "id": "t3", "text": "我听说这家超市的面包", "tag": "Nghe nói + Định ngữ" },
+        { "id": "t5", "text": "一点儿饿了", "tag": "Bẫy phó từ" },
+        { "id": "t6", "text": "去买点儿东西超市", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["有点儿饿了", "买点儿东西", "我听说", "这家超市的面包", "又便宜又好吃"],
+      "wordBankPool": ["我有点儿饿了", "我们去超市买点儿东西吧", "我听说这家超市的面包", "又便宜又好吃", "一点儿饿了", "去买点儿东西超市", "面包的这家超市"],
+      "traps": [
+        {
+          "pattern": "一点儿饿",
+          "msg": "Lỗi dùng từ: 'Đói' là cảm giác tiêu cực, phải dùng '有点儿 + Tính từ' (有点儿饿). Không dùng '一点儿饿'."
+        },
+        {
+          "pattern": "去买点儿东西超市",
+          "msg": "Lỗi câu liên động: Đi đến đâu (去超市) rồi mới thực hiện hành động (买东西), không đặt địa điểm ở cuối."
+        }
+      ],
+      "explanation": "'有点儿' đứng trước tính từ/động từ tâm lý (hơi...). '一点儿' (nói tắt là '点儿') đứng sau động từ biểu thị số lượng ít (买点儿东西 - mua chút đồ). Lượng từ của siêu thị là '家' (这家超市)."
+    },
+    {
+      "id": "b19-04",
+      "type": "sentence_parsing",
+      "title": "Chê bai và phủ định toàn bộ",
+      "vi": "Chiếc màu đen này hơi dài, chiếc màu cà phê đó hơi đắt. Cả hai chiếc áo len này tôi đều không thích.",
+      "zh": "这件黑色的有点儿长那件咖啡色的有点儿贵这两件毛衣我都不喜欢",
+      "standardTrans": "这件黑色的有点儿长那件咖啡色的有点儿贵这两件毛衣我都不喜欢",
+      "pinyin": "Zhè jiàn hēisè de yǒudiǎnr cháng, nà jiàn kāfēisè de yǒudiǎnr guì. Zhè liǎng jiàn máoyī wǒ dōu bù xǐhuan.",
+      "grammarPoint": "Đại từ hóa: [Màu sắc] + 的 (thay cho áo); Phủ định toàn bộ nhóm đối tượng: [Đối tượng] + 都 + 不 + Động từ",
+      "tokens": [
+        {
+          "text": "Màu đen",
+          "hz": "黑色",
+          "py": "hēisè",
+          "hv": "Hắc sắc",
+          "role": "Danh từ",
+          "vn": "Màu đen",
+          "radicals": "黑 = Bộ hắc 黑; 色 = Bộ sắc 色"
+        },
+        {
+          "text": "Màu cà phê",
+          "hz": "咖啡色",
+          "py": "kāfēisè",
+          "hv": "Ca phê sắc",
+          "role": "Danh từ",
+          "vn": "Màu cà phê, màu nâu",
+          "radicals": "咖 = Bộ khẩu 口 + chữ gia 加; 啡 = Bộ khẩu 口 + chữ phi 非"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "有点儿长", "tag": "Chê 1" },
+        { "id": "t1", "text": "这件黑色的", "tag": "Vật 1" },
+        { "id": "t4", "text": "有点儿贵", "tag": "Chê 2" },
+        { "id": "t3", "text": "那件咖啡色的", "tag": "Vật 2" },
+        { "id": "t5", "text": "这两件毛衣我都不喜欢", "tag": "Phủ định tổng" },
+        { "id": "t6", "text": "长一点儿", "tag": "Bẫy phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["黑色的", "有点儿长", "咖啡色的", "有点儿贵", "这两件毛衣", "我都不喜欢"],
+      "wordBankPool": ["这件黑色的", "有点儿长", "那件咖啡色的", "有点儿贵", "这两件毛衣我都不喜欢", "长一点儿", "我都不喜欢这两件毛衣"],
+      "traps": [
+        {
+          "pattern": "长一点儿",
+          "msg": "Lỗi dùng từ: 'Hơi dài' mang ý chê bai, không vừa ý phải dùng '有点儿长'. Dùng '长一点儿' có nghĩa là bạn đang TÌM/YÊU CẦU chiếc dài hơn một chút."
+        }
+      ],
+      "explanation": "Cụm 'Màu sắc + 的' (黑色的) lược bỏ danh từ '衣服' vì ngữ cảnh đã rõ. Trong câu '这两件毛衣我都不喜欢', chủ ngữ '这两件毛衣' được đưa lên đầu làm Topic (chủ đề) để nhấn mạnh."
+    },
+    {
+      "id": "b19-05",
+      "type": "sentence_parsing",
+      "title": "Động từ lặp lại và hỏi ý nghĩa",
+      "vi": "Cậu thử nghe xem câu này có nghĩa là gì?",
+      "zh": "你听听这个句子是什么意思",
+      "standardTrans": "你听听这个句子是什么意思",
+      "pinyin": "Nǐ tīngting zhè ge jùzi shì shénme yìsi?",
+      "grammarPoint": "Động từ lặp lại (AA): 听听 (nghe thử); Hỏi ý nghĩa: ... 是什么意思?",
+      "tokens": [
+        {
+          "text": "Câu",
+          "hz": "句子",
+          "py": "jùzi",
+          "hv": "Cú tử",
+          "role": "Danh từ",
+          "vn": "Câu văn",
+          "radicals": "句 = Bộ bao 勹 + bộ khẩu 口; 子 = Bộ tử 子"
+        },
+        {
+          "text": "Ý nghĩa",
+          "hz": "意思",
+          "py": "yìsi",
+          "hv": "Ý tư",
+          "role": "Danh từ",
+          "vn": "Ý nghĩa",
+          "radicals": "意 = Bộ âm 音 + bộ tâm 心; 思 = Bộ điền 田 + bộ tâm 心"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这个句子", "tag": "Đối tượng" },
+        { "id": "t1", "text": "你听听", "tag": "Động từ lặp lại" },
+        { "id": "t3", "text": "是什么意思", "tag": "Hỏi ý nghĩa" },
+        { "id": "t4", "text": "意思是什么", "tag": "Bẫy đại từ nghi vấn" },
+        { "id": "t5", "text": "听听你", "tag": "Bẫy trật tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你听听", "这个句子", "是什么意思"],
+      "wordBankPool": ["你听听", "这个句子", "是什么意思", "意思是什么", "听听你", "有意思吗"],
+      "traps": [
+        {
+          "pattern": "意思是什么",
+          "msg": "Lỗi cấu trúc câu hỏi: Cấu trúc hỏi ý nghĩa cố định là '是什么意思' (Là ý nghĩa gì). Không nói ngược thành '意思是什么'."
+        }
+      ],
+      "explanation": "Động từ đơn âm tiết lặp lại (听听, 看看, 试试) biểu thị hành động diễn ra nhanh, nhẹ nhàng, mang ý 'thử làm gì xem sao'. '是什么意思' là cụm cố định để hỏi nghĩa."
+    },
+    {
+      "id": "b19-06",
+      "type": "anti_word_by_word",
+      "title": "Thử quần áo và khen ngợi vừa vặn",
+      "vi": "A: Cậu thử tiếp bộ này đi. B: Bộ quần áo này không dài không ngắn, rất vừa.",
+      "zh": "你再试试这一件这件衣服不长不短正合适",
+      "standardTrans": "你再试试这一件这件衣服不长不短正合适",
+      "pinyin": "Nǐ zài shìshi zhè yí jiàn. Zhè jiàn yīfu bù cháng bù duǎn, zhèng héshì.",
+      "grammarPoint": "Phó từ chỉ sự lặp lại tương lai: 再 + Động từ (làm tiếp); Thành ngữ 4 chữ: 不长不短; Phó từ 正 (rất, vừa hay)",
+      "tokens": [
+        {
+          "text": "Lại, tiếp",
+          "hz": "再",
+          "py": "zài",
+          "hv": "Tái",
+          "role": "Phó từ",
+          "vn": "Lại (sẽ xảy ra trong tương lai), tiếp tục",
+          "radicals": "Bộ quynh 冂 + chữ vương 王"
+        },
+        {
+          "text": "Vừa vặn",
+          "hz": "合适",
+          "py": "héshì",
+          "hv": "Hợp thích",
+          "role": "Tính từ",
+          "vn": "Vừa vặn, thích hợp",
+          "radicals": "合 = Bộ nhân Nhân + nhất 一 + khẩu 口; 适 = Bộ sước 辶 + chữ thiệt 舌"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这一件", "tag": "Đối tượng 1" },
+        { "id": "t1", "text": "你再试试", "tag": "Khuyên thử tiếp" },
+        { "id": "t3", "text": "这件衣服不长不短", "tag": "Đánh giá 1" },
+        { "id": "t4", "text": "正合适", "tag": "Đánh giá 2" },
+        { "id": "t5", "text": "试试再", "tag": "Bẫy phó từ" },
+        { "id": "t6", "text": "适合", "tag": "Bẫy từ vựng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["再试试", "这一件", "不长不短", "正合适"],
+      "wordBankPool": ["你再试试", "这一件", "这件衣服不长不短", "正合适", "试试再", "适合", "又试试"],
+      "traps": [
+        {
+          "pattern": "试试再",
+          "msg": "Lỗi ngữ tự phó từ: '再' (nữa/tiếp) phải đứng TRƯỚC động từ ('再试试'), không dịch xuôi 'thử tiếp' thành '试试再'."
+        },
+        {
+          "pattern": "又试试",
+          "msg": "Lỗi phân biệt 又 / 再: '又' dùng cho hành động ĐÃ lặp lại trong quá khứ. Ở đây bảo người ta CHUẨN BỊ thử thêm bộ nữa trong tương lai, bắt buộc dùng '再'."
+        }
+      ],
+      "explanation": "Từ '再' (zài) đứng trước động từ yêu cầu ai đó làm tiếp việc gì. Cụm '正合适' (zhèng héshì) nghĩa là vừa vặn một cách hoàn hảo, không dư không thiếu."
+    },
+    {
+      "id": "b19-07",
+      "type": "sentence_parsing",
+      "title": "Động từ năng nguyện 会 và Động từ 2 tân ngữ",
+      "vi": "A: Tớ không biết tiếng Trung, tớ chỉ biết một chút tiếng Anh. Cậu có thể dạy tớ tiếng Trung không? B: Đương nhiên có thể. Tối nay chúng ta đến thư viện học nhé.",
+      "zh": "我不会汉语我只会一点儿英语你可以教我汉语吗当然可以今天晚上我们去图书馆学吧",
+      "standardTrans": "我不会汉语我只会一点儿英语你可以教我汉语吗当然可以今天晚上我们去图书馆学吧",
+      "pinyin": "Wǒ bú huì hànyǔ, wǒ zhǐ huì yìdiǎnr yīngyǔ. Nǐ kěyǐ jiāo wǒ hànyǔ ma? Dāngrán kěyǐ. Jīntiān wǎnshang wǒmen qù túshūguǎn xué ba.",
+      "grammarPoint": "Biết qua rèn luyện: 会; Chỉ biết: 只会; Động từ 2 tân ngữ: 教 + Người + Môn học",
+      "tokens": [
+        {
+          "text": "Biết",
+          "hz": "会",
+          "py": "huì",
+          "hv": "Hội",
+          "role": "Động từ năng nguyện",
+          "vn": "Biết (ngoại ngữ, kỹ năng do học tập)",
+          "radicals": "Bộ nhân 人 + chữ vân 云"
+        },
+        {
+          "text": "Đương nhiên",
+          "hz": "当然",
+          "py": "dāngrán",
+          "hv": "Đương nhiên",
+          "role": "Phó từ",
+          "vn": "Tất nhiên, đương nhiên",
+          "radicals": "当 = Bộ tiểu 小; 然 = Bộ hỏa 灬"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我不会汉语我只会一点儿英语", "tag": "Vế A1" },
+        { "id": "t2", "text": "你可以教我汉语吗", "tag": "Vế A2 (nhờ vả)" },
+        { "id": "t3", "text": "当然可以", "tag": "Vế B1 (đồng ý)" },
+        { "id": "t4", "text": "今天晚上我们去图书馆学吧", "tag": "Vế B2 (rủ rê)" },
+        { "id": "t5", "text": "教汉语我", "tag": "Bẫy 2 tân ngữ" },
+        { "id": "t6", "text": "不知道汉语", "tag": "Bẫy từ vựng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["不会汉语", "只会一点儿英语", "教我汉语吗", "当然可以", "去图书馆学吧"],
+      "wordBankPool": ["我不会汉语我只会一点儿英语", "你可以教我汉语吗", "当然可以", "今天晚上我们去图书馆学吧", "教汉语我", "不知道汉语", "去学图书馆"],
+      "traps": [
+        {
+          "pattern": "教汉语我",
+          "msg": "Lỗi 2 tân ngữ: Động từ '教' (dạy) truyền hành động cho NGƯỜI trước, MÔN HỌC sau. Phải là '教我汉语'."
+        },
+        {
+          "pattern": "不知道汉语",
+          "msg": "Lỗi dùng từ: Không biết ngôn ngữ, bơi lội, lái xe (kỹ năng) bắt buộc dùng '不会', không dùng '不知道' (chỉ việc không biết thông tin)."
+        }
+      ],
+      "explanation": "Động từ năng nguyện '会' dùng để chỉ khả năng có được thông qua học tập, rèn luyện (biết tiếng, biết bơi). '教' là động từ mang 2 tân ngữ (教 + Người + Vật)."
+    },
+    {
+      "id": "b19-08",
+      "type": "anti_word_by_word",
+      "title": "So sánh hơn khi mua sắm áo lông vũ",
+      "vi": "Chiếc áo lông vũ này đắt quá, tôi muốn xem cái rẻ hơn một chút.",
+      "zh": "这件羽绒服太贵了我要看便宜一点儿的",
+      "standardTrans": "这件羽绒服太贵了我要看便宜一点儿的",
+      "pinyin": "Zhè jiàn yǔróngfú tài guì le. Wǒ yào kàn piányi yìdiǎnr de.",
+      "grammarPoint": "Yêu cầu rẻ hơn: 便宜 + 一点儿 + 的 (đại từ hóa cụm tính từ)",
+      "tokens": [
+        {
+          "text": "Áo lông vũ",
+          "hz": "羽绒服",
+          "py": "yǔróngfú",
+          "hv": "Vũ nhung phục",
+          "role": "Danh từ",
+          "vn": "Áo lông vũ, áo khoác bông",
+          "radicals": "羽 = Bộ vũ 羽; 绒 = Bộ mịch 纟 + chữ nhung 戎; 服 = Bộ nguyệt 月"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "太贵了", "tag": "Nhận xét" },
+        { "id": "t4", "text": "便宜一点儿的", "tag": "Yêu cầu" },
+        { "id": "t1", "text": "这件羽绒服", "tag": "Đối tượng" },
+        { "id": "t3", "text": "我要看", "tag": "Ý định" },
+        { "id": "t5", "text": "有点儿便宜的", "tag": "Bẫy phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["羽绒服", "太贵了", "我要看", "便宜一点儿的"],
+      "wordBankPool": ["这件羽绒服", "太贵了", "我要看", "便宜一点儿的", "有点儿便宜的", "一点儿便宜的"],
+      "traps": [
+        {
+          "pattern": "有点儿便宜",
+          "msg": "Lỗi dùng từ: '有点儿 + Tính từ' dùng để chê bai những gì không vừa ý. Người mua muốn tìm đồ 'rẻ hơn một chút' thì phải đặt 一点儿 sau tính từ -> '便宜一点儿的'."
+        },
+        {
+          "pattern": "一点儿便宜",
+          "msg": "Lỗi ngữ tự: '一点儿' dùng để so sánh/yêu cầu phải đứng SAU tính từ ('便宜一点儿'), không được đứng trước."
+        }
+      ],
+      "explanation": "Cấu trúc 'Tính từ + 一点儿 + 的' (便宜一点儿的) dùng để yêu cầu một món đồ có tính chất hơn món hiện tại một chút (rẻ hơn 1 chút, to hơn 1 chút)."
+    },
+    {
+      "id": "b19-09",
+      "type": "sentence_parsing",
+      "title": "Định ngữ phức tạp với 的",
+      "vi": "Hôm qua Mike không lên lớp, vì vậy hôm nay lúc ở trên lớp, câu hỏi mà thầy giáo hỏi Mike đều không biết.",
+      "zh": "昨天麦克没上课所以今天上课的时候老师问的问题麦克都不会",
+      "standardTrans": "昨天麦克没上课所以今天上课的时候老师问的问题麦克都不会",
+      "pinyin": "Zuótiān Màikè méi shàngkè, suǒyǐ jīntiān shàngkè de shíhou, lǎoshī wèn de wèntí Màikè dōu bú huì.",
+      "grammarPoint": "Phủ định quá khứ (没); Mệnh đề thời gian (...的时候); Định ngữ mệnh đề (老师问的 + 问题)",
+      "tokens": [
+        {
+          "text": "Câu hỏi thầy hỏi",
+          "hz": "老师问的问题",
+          "py": "lǎoshī wèn de wèntí",
+          "hv": "Lão sư vấn đích vấn đề",
+          "role": "Cụm danh từ (Định ngữ + Trung tâm ngữ)",
+          "vn": "Câu hỏi mà thầy giáo hỏi",
+          "radicals": "老师 = Thầy giáo; 问 = Hỏi; 的 = Trợ từ; 问题 = Vấn đề, câu hỏi"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "昨天麦克没上课", "tag": "Nguyên nhân" },
+        { "id": "t3", "text": "老师问的问题", "tag": "Tân ngữ được đưa lên đầu" },
+        { "id": "t2", "text": "所以今天上课的时候", "tag": "Thời gian hiện tại" },
+        { "id": "t4", "text": "麦克都不会", "tag": "Kết quả" },
+        { "id": "t5", "text": "问题老师问", "tag": "Bẫy định ngữ" },
+        { "id": "t6", "text": "不都上课", "tag": "Bẫy phủ định quá khứ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["昨天麦克没上课", "上课的时候", "老师问的问题", "麦克都不会"],
+      "wordBankPool": ["昨天麦克没上课", "所以今天上课的时候", "老师问的问题", "麦克都不会", "问题老师问", "不上课昨天", "都不在"],
+      "traps": [
+        {
+          "pattern": "不上课昨天",
+          "msg": "Lỗi phủ định: Sự việc 'không đi học' đã xảy ra trong QUÁ KHỨ (hôm qua), bắt buộc phải dùng '没(有)' để phủ định ('没上课'), không dùng '不'."
+        },
+        {
+          "pattern": "问题老师问",
+          "msg": "Lỗi định ngữ: Cụm 'câu hỏi mà thầy hỏi' thì 'thầy hỏi' là mệnh đề bổ nghĩa, phải đặt TRƯỚC danh từ trung tâm 'câu hỏi' -> '老师问的问题'."
+        }
+      ],
+      "explanation": "Câu có cấu trúc định ngữ kinh điển của tiếng Trung: Mệnh đề (老师问) + 的 + Danh từ (问题). Động từ '会' ở đây mang nghĩa là 'biết trả lời/giải quyết' câu hỏi."
+    },
+    {
+      "id": "b19-10",
+      "type": "anti_word_by_word",
+      "title": "Hỏi và đánh giá không gian (phòng)",
+      "vi": "A: Phòng của cậu ấy thế nào? B: Đó là một căn phòng vừa sạch sẽ vừa yên tĩnh.",
+      "zh": "他的房间怎么样那是一间又干净又安静的房间",
+      "standardTrans": "他的房间怎么样那是一间又干净又安静的房间",
+      "pinyin": "Tā de fángjiān zěnmeyàng? Nà shì yì jiān yòu gānjìng yòu ānjìng de fángjiān.",
+      "grammarPoint": "Đại từ hỏi tính chất: 怎么样; Cụm 又...又... làm định ngữ (又干净又安静的 + 房间); Lượng từ cho phòng (间)",
+      "tokens": [
+        {
+          "text": "Gian, căn",
+          "hz": "间",
+          "py": "jiān",
+          "hv": "Gian",
+          "role": "Lượng từ",
+          "vn": "Căn, gian (phòng)",
+          "radicals": "Bộ môn 门 + bộ nhật 日"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "怎么样", "tag": "Từ để hỏi" },
+        { "id": "t1", "text": "他的房间", "tag": "Chủ đề hỏi" },
+        { "id": "t4", "text": "又干净又安静的房间", "tag": "Định ngữ + Trung tâm ngữ" },
+        { "id": "t3", "text": "那是一间", "tag": "Chủ vị đáp" },
+        { "id": "t5", "text": "一个", "tag": "Bẫy lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["他的房间", "怎么样", "一间", "又干净又安静的房间"],
+      "wordBankPool": ["他的房间", "怎么样", "那是一间", "又干净又安静的房间", "一个房间", "房间怎么", "干净和安静"],
+      "traps": [
+        {
+          "pattern": "一个房间",
+          "msg": "Lỗi lượng từ: Dù '个' có thể dùng tạm, nhưng lượng từ chuẩn xác và hay nhất dành cho căn phòng (房间) trong tiếng Trung là '间' ('一间房间')."
+        },
+        {
+          "pattern": "干净和安静",
+          "msg": "Lỗi liên từ: Tuyệt đối KHÔNG dùng liên từ '和' để nối trực tiếp hai tính từ ('干净和安静' là lỗi dịch bồi theo tiếng Việt). Để biểu thị hai đặc điểm cùng tồn tại, phải dùng cấu trúc '又...又...' ('又干净又安静')."
+        }
+      ],
+      "explanation": "Cấu trúc '又...又...' không chỉ làm vị ngữ mà còn có thể thêm '的' để làm cụm định ngữ dài bổ nghĩa cho danh từ (一间[又干净又安静]的房间)."
+    }
+  ]
+}

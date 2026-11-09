@@ -1,0 +1,9 @@
+{
+  "name": "hsk-translation-app",
+  "version": "1.0.0",
+  "description": "Ứng dụng luyện dịch câu tiếng Trung HSK thông minh",
+  "scripts": {
+    "test": "node master-test.js"
+  }
+}
+

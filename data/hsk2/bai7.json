@@ -1,0 +1,516 @@
+{
+  "lessonId": "b22",
+  "lessonTitle": "第二十二课: 我打算请老师教我京剧",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "对...感兴趣",
+        "py": "duì... gǎn xìngqù",
+        "note": "Có hứng thú / yêu thích với điều gì. Phủ định: 对...不感兴趣 (không có hứng thú). Cực kỳ yêu thích: 对...非常/特别/很 感兴趣."
+      },
+      {
+        "word": "请 vs 让 vs 叫",
+        "py": "qǐng vs ràng vs jiào",
+        "note": "Đều là động từ kiêm ngữ: 请 (mời, nhờ - lịch sự), 让 (bảo, để, cho phép), 叫 (bảo, gọi, yêu cầu - khẩu ngữ)."
+      },
+      {
+        "word": "业余时间",
+        "py": "yèyú shíjiān",
+        "note": "Thời gian rảnh rỗi, thời gian ngoài giờ làm việc/học tập chính khóa."
+      },
+      {
+        "word": "派",
+        "py": "pài",
+        "note": "Cử, phái (ai đi đâu làm gì): 公司派我去中国学习 (Công ty cử tôi sang Trung Quốc học tập)."
+      }
+    ],
+    "grammarTips": [
+      "Câu kiêm ngữ (兼语句): S + 请/让/叫/派 + Tân ngữ 1 (kiêm Chủ ngữ 2) + Động từ 2. Ví dụ: 他请我去吃晚饭.",
+      "Cấu trúc hứng thú: Chủ ngữ + 对 + Đối tượng + 感兴趣 / 不感兴趣.",
+      "Mốc thời gian 以前 và 以后: [Khoảng thời gian/Sự kiện] + 前/以前 (Trước khi...) và [Khoảng thời gian/Sự kiện] + 后/以后 (Sau khi...). Luôn đưa sự kiện/thời gian lên trước 前/后."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b22-01",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc hứng thú và sở thích thể thao",
+      "vi": "A: Tớ thích chơi tennis, cũng thích bơi lội. B: Tớ chỉ thích bơi lội. Tớ không hứng thú với tennis.",
+      "zh": "我喜欢打网球也喜欢游泳我只喜欢游泳我对网球不感兴趣",
+      "standardTrans": "我喜欢打网球也喜欢游泳我只喜欢游泳我对网球不感兴趣",
+      "pinyin": "Wǒ xǐhuan dǎ wǎngqiú, yě xǐhuan yóuyǒng. Wǒ zhǐ xǐhuan yóuyǒng. Wǒ duì wǎngqiú bù gǎn xìngqù.",
+      "grammarPoint": "Cấu trúc biểu thị sự quan tâm, hứng thú: 对 + Đối tượng + 不感兴趣",
+      "tokens": [
+        {
+          "text": "Tennis (quần vợt)",
+          "hz": "网球",
+          "py": "wǎngqiú",
+          "hv": "Võng cầu",
+          "role": "Tân ngữ",
+          "vn": "Bóng quần vợt, tennis",
+          "radicals": "网 = Bộ võng; 球 = Bộ ngọc + chữ cầu 求"
+        },
+        {
+          "text": "Không hứng thú",
+          "hz": "不感兴趣",
+          "py": "bù gǎn xìngqù",
+          "hv": "Bất cảm thú",
+          "role": "Cụm vị ngữ tính từ/tâm lý",
+          "vn": "Không có hứng thú, không thích",
+          "radicals": "感 = Bộ tâm; 趣 = Bộ tẩu 走 + bộ nhĩ 耳"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我只喜欢游泳", "tag": "Sở thích duy nhất" },
+        { "id": "t1", "text": "我喜欢打网球也喜欢游泳", "tag": "Sở thích của A" },
+        { "id": "t3", "text": "我对网球不感兴趣", "tag": "Không hứng thú" },
+        { "id": "t4", "text": "我不感兴趣网球", "tag": "Bẫy trật tự giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["喜欢打网球", "也喜欢游泳", "只喜欢游泳", "对网球不感兴趣"],
+      "wordBankPool": ["我喜欢打网球也喜欢游泳", "我只喜欢游泳", "我对网球不感兴趣", "我不感兴趣网球", "网球我对不感兴趣"],
+      "traps": [
+        {
+          "pattern": "不感兴趣网球",
+          "msg": "Lỗi giới từ 对: Trong tiếng Trung không nói '不感兴趣 + Danh từ'. Bắt buộc dùng cấu trúc giới từ đưa tân ngữ lên trước: '对 + Đối tượng + 不感兴趣'."
+        }
+      ],
+      "explanation": "Cấu trúc cố định biểu thị sự hứng thú là '对...感兴趣'. Khi phủ định, phó từ '不' đặt trước '感兴趣' thành '对...不感兴趣'."
+    },
+    {
+      "id": "b22-02",
+      "type": "sentence_parsing",
+      "title": "Kế hoạch tương lai và tình hình công việc",
+      "vi": "Năm nay công việc của tớ không thuận lợi lắm, tớ dự định sang năm sẽ đi Trung Quốc du học.",
+      "zh": "今年我工作不太顺利明年我打算去中国留学",
+      "standardTrans": "今年我工作不太顺利明年我打算去中国留学",
+      "pinyin": "Jīnnián wǒ gōngzuò bú tài shùnlì, míngnián wǒ dǎsuàn qù Zhōngguó liúxué.",
+      "grammarPoint": "Trạng ngữ thời gian; Động từ năng nguyện chỉ ý định (打算); Tính từ 顺利",
+      "tokens": [
+        {
+          "text": "Thuận lợi",
+          "hz": "顺利",
+          "py": "shùnlì",
+          "hv": "Thuận lợi",
+          "role": "Tính từ",
+          "vn": "Thuận lợi, suôn sẻ",
+          "radicals": "顺 = Bộ xuyên 川 + bộ hiệt 页; 利 = Bộ hòa 禾 + bộ đao 刂"
+        },
+        {
+          "text": "Dự định",
+          "hz": "打算",
+          "py": "dǎsuàn",
+          "hv": "Đả toán",
+          "role": "Động từ năng nguyện",
+          "vn": "Dự định, tính toán",
+          "radicals": "打 = Bộ thủ 扌; 算 = Bộ trúc 竹 + bộ mục 目"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "明年我打算", "tag": "Thời gian + Dự định" },
+        { "id": "t1", "text": "今年我工作不太顺利", "tag": "Hiện trạng" },
+        { "id": "t3", "text": "去中国留学", "tag": "Hành động liên động" },
+        { "id": "t4", "text": "不太顺利我工作", "tag": "Bẫy trật tự chủ vị" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["今年我工作", "不太顺利", "明年我打算", "去中国留学"],
+      "wordBankPool": ["今年我工作不太顺利", "明年我打算", "去中国留学", "不太顺利我工作", "我打算明年留学中国"],
+      "traps": [
+        {
+          "pattern": "不太顺利我工作",
+          "msg": "Lỗi cấu trúc câu: 'Công việc của tôi' (我工作) đóng vai trò chủ ngữ nên phải đứng trước cụm vị ngữ tính từ '不太顺利'."
+        }
+      ],
+      "explanation": "Câu ghép gồm 2 vế nối tiếp nhau qua các mốc thời gian đối lập '今年' (năm nay) và '明年' (sang năm). Động từ năng nguyện '打算' đứng trước cụm liên động '去中国留学'."
+    },
+    {
+      "id": "b22-03",
+      "type": "sentence_parsing",
+      "title": "Câu kiêm ngữ với động từ 派 và mốc thời gian 以后的",
+      "vi": "Hai tháng trước công ty cử Vương Minh đến Trung Quốc học tiếng Trung. Sau khi về nước cậu ấy sẽ làm phiên dịch cho công ty đó.",
+      "zh": "两个月前公司派王明去中国学习汉语回国以后他给那家公司当翻译",
+      "standardTrans": "两个月前公司派王明去中国学习汉语回国以后他给那家公司当翻译",
+      "pinyin": "Liǎng gè yuè qián, gōngsī pài Wáng Míng qù Zhōngguó xuéxí hànyǔ. Huíguó yǐhòu, tā gěi nà jiā gōngsī dāng fānyì.",
+      "grammarPoint": "Câu kiêm ngữ với động từ 派; Mệnh đề thời gian: [Sự việc] + 以后; Cấu trúc 给...当翻译",
+      "tokens": [
+        {
+          "text": "Cử, phái",
+          "hz": "派",
+          "py": "pài",
+          "hv": "Phái",
+          "role": "Động từ kiêm ngữ",
+          "vn": "Phái cử, điều động",
+          "radicals": "Bộ thủy 氵 + chữ phái 𠂢"
+        },
+        {
+          "text": "Về nước",
+          "hz": "回国",
+          "py": "huíguó",
+          "hv": "Hồi quốc",
+          "role": "Động từ ly hợp",
+          "vn": "Trở về nước",
+          "radicals": "回 = Bộ vi 囗 + bộ khẩu 口; 国 = Bộ vi 囗 + chữ ngọc 玉"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "回国以后", "tag": "Mệnh đề thời gian" },
+        { "id": "t1", "text": "两个月前", "tag": "Thời gian quá khứ" },
+        { "id": "t4", "text": "他给那家公司当翻译", "tag": "Hành động sau khi về" },
+        { "id": "t2", "text": "公司派王明去中国学习汉语", "tag": "Câu kiêm ngữ" },
+        { "id": "t5", "text": "以后回国", "tag": "Bẫy trật tự thời gian" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["两个月前", "派王明去中国", "学习汉语", "回国以后", "给那家公司当翻译"],
+      "wordBankPool": ["两个月前", "公司派王明去中国学习汉语", "回国以后", "他给那家公司当翻译", "以后回国", "当翻译给那家公司"],
+      "traps": [
+        {
+          "pattern": "以后回国",
+          "msg": "Lỗi cấu trúc thời gian: Khác với tiếng Việt ('sau khi về nước'), tiếng Trung bắt buộc phải đặt hành động lên trước: '回国以后'."
+        },
+        {
+          "pattern": "当翻译给",
+          "msg": "Lỗi cụm giới từ: Cấu trúc làm gì cho ai phải đưa '给 + Đối tượng' lên trước động từ ('给那家公司当翻译')."
+        }
+      ],
+      "explanation": "Câu kiêm ngữ điển hình: 公司 (Chủ ngữ) + 派 (Động từ) + 王明 (Tân ngữ của 派 kiêm Chủ ngữ của 去中国学习). Mệnh đề '回国以后' xác định thời điểm bắt đầu vai trò mới."
+    },
+    {
+      "id": "b22-04",
+      "type": "anti_word_by_word",
+      "title": "Sự thay đổi sở thích qua thời gian (以前 vs 现在)",
+      "vi": "Trước kia tôi rất hứng thú với các trận đấu bóng đá nước ngoài. Nhưng mà hiện tại tôi không còn hứng thú với bóng đá nữa, tôi thích xem thi đấu tennis.",
+      "zh": "以前我对外国足球比赛很感兴趣可是现在我对足球不感兴趣我喜欢看网球比赛",
+      "standardTrans": "以前我对外国足球比赛很感兴趣可是现在我对足球不感兴趣我喜欢看网球比赛",
+      "pinyin": "Yǐqián wǒ duì wàiguó zúqiú bǐsài hěn gǎn xìngqù. Kěshì xiànzài wǒ duì zúqiú bù gǎn xìngqù, wǒ xǐhuan kàn wǎngqiú bǐsài.",
+      "grammarPoint": "Đối lập thời gian 以前 vs 现在; Liên từ chuyển ngoặt 可是; Cấu trúc 对...很/不 感兴趣",
+      "tokens": [
+        {
+          "text": "Trước kia",
+          "hz": "以前",
+          "py": "yǐqián",
+          "hv": "Dĩ tiền",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Trước đây, trước kia",
+          "radicals": "以 = Bộ nhân ⺅; 前 = Bộ đao 刂"
+        },
+        {
+          "text": "Thi đấu, trận đấu",
+          "hz": "比赛",
+          "py": "bǐsài",
+          "hv": "Tỷ tái",
+          "role": "Danh từ",
+          "vn": "Trận thi đấu, cuộc thi",
+          "radicals": "比 = Bộ tỷ 比; 赛 = Bộ bối 贝"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "可是现在我对足球不感兴趣", "tag": "Chuyển ngoặt hiện tại" },
+        { "id": "t1", "text": "以前我对外国足球比赛很感兴趣", "tag": "Sở thích quá khứ" },
+        { "id": "t3", "text": "我喜欢看网球比赛", "tag": "Sở thích mới" },
+        { "id": "t4", "text": "我很感兴趣外国足球", "tag": "Bẫy thiếu giới từ 对" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["以前我对", "外国足球比赛", "很感兴趣", "可是现在", "不感兴趣", "看网球比赛"],
+      "wordBankPool": ["以前我对外国足球比赛很感兴趣", "可是现在我对足球不感兴趣", "我喜欢看网球比赛", "我很感兴趣外国足球", "现在我足球不感兴趣"],
+      "traps": [
+        {
+          "pattern": "很感兴趣外国足球",
+          "msg": "Lỗi thiếu giới từ: '感兴趣' không trực tiếp mang tân ngữ danh từ phía sau. Bắt buộc phải đưa danh từ lên trước đi cùng giới từ '对'."
+        }
+      ],
+      "explanation": "Câu so sánh sự thay đổi sở thích giữa quá khứ và hiện tại. Lưu ý cấu trúc chuẩn xác luôn là: 对 + Đối tượng + (很/不) 感兴趣."
+    },
+    {
+      "id": "b22-05",
+      "type": "sentence_parsing",
+      "title": "Hội thoại hỏi thói quen lúc rảnh rỗi và đại từ nơi chốn 那儿",
+      "vi": "A: Thời gian rảnh rỗi cậu thường làm gì? B: Thời gian rảnh rỗi tôi thường đến chỗ thầy giáo để học vẽ.",
+      "zh": "业余时间你常做什么业余时间我常到老师那儿学画画儿",
+      "standardTrans": "业余时间你常做什么业余时间我常到老师那儿学画画儿",
+      "pinyin": "Yèyú shíjiān nǐ cháng zuò shénme? Yèyú shíjiān, wǒ cháng dào lǎoshī nàr xué huà huàr.",
+      "grammarPoint": "Cụm danh từ chỉ thời gian (业余时间); Đại từ nơi chốn đi sau danh từ chỉ người: 到/去 + Người + 那儿",
+      "tokens": [
+        {
+          "text": "Thời gian rảnh rỗi",
+          "hz": "业余时间",
+          "py": "yèyú shíjiān",
+          "hv": "Nghiệp dư thời gian",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Thời gian ngoài giờ, lúc rảnh rỗi",
+          "radicals": "业 = Bộ nhất 一; 余 = Bộ nhân 人; 时 = Bộ nhật 日; 间 = Bộ môn 门"
+        },
+        {
+          "text": "Học vẽ tranh",
+          "hz": "学画画儿",
+          "py": "xué huà huàr",
+          "hv": "Học họa họa nhi",
+          "role": "Cụm động tân",
+          "vn": "Học vẽ tranh",
+          "radicals": "学 = Bộ tử 子; 画 = Bộ điền 田"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "业余时间", "tag": "Thời gian lặp lại" },
+        { "id": "t1", "text": "业余时间你常做什么", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "我常到老师那儿学画画儿", "tag": "Câu trả lời của B" },
+        { "id": "t4", "text": "到老师学画画儿", "tag": "Bẫy thiếu 那儿" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["业余时间", "常做什么", "到老师那儿", "学画画儿"],
+      "wordBankPool": ["业余时间你常做什么", "业余时间", "我常到老师那儿学画画儿", "到老师学画画儿", "画画儿学到老师"],
+      "traps": [
+        {
+          "pattern": "到老师学",
+          "msg": "Lỗi thiếu từ chỉ nơi chốn: '老师' là từ chỉ người. Muốn biến thành điểm đến sau động từ '到' hoặc '去', bắt buộc phải thêm '那儿' -> '到老师那儿'."
+        }
+      ],
+      "explanation": "Quy tắc ngữ pháp quan trọng: Khi động từ chuyển dịch (去/到/来) kết hợp với danh từ chỉ người, phải thêm '这儿' hoặc '那儿' để biến thành cụm từ chỉ địa điểm."
+    },
+    {
+      "id": "b22-06",
+      "type": "anti_word_by_word",
+      "title": "Bày tỏ cảm xúc và câu kiêm ngữ phái cử",
+      "vi": "Tôi vô cùng hứng thú với văn hóa Trung Quốc. Tháng 9 năm nay công ty cử tôi đến Trung Quốc học tập, tôi vô cùng vui mừng.",
+      "zh": "我对中国文化非常感兴趣今年九月公司派我去中国学习我非常高兴",
+      "standardTrans": "我对中国文化非常感兴趣今年九月公司派我去中国学习我非常高兴",
+      "pinyin": "Wǒ duì Zhōngguó wénhuà fēicháng gǎn xìngqù. Jīnnián jiǔ yuè gōngsī pài wǒ qù Zhōngguó xuéxí, wǒ fēicháng gāoxìng.",
+      "grammarPoint": "Phó từ mức độ cao 非常; Câu kiêm ngữ: 公司 + 派 + 我 + 去...",
+      "tokens": [
+        {
+          "text": "Vô cùng, hết sức",
+          "hz": "非常",
+          "py": "fēicháng",
+          "hv": "Phi thường",
+          "role": "Phó từ mức độ",
+          "vn": "Rất, vô cùng, cực kỳ",
+          "radicals": "非 = Bộ phi 非; 常 = Bộ cân 巾"
+        },
+        {
+          "text": "Vui mừng",
+          "hz": "高兴",
+          "py": "gāoxìng",
+          "hv": "Cao hứng",
+          "role": "Tính từ",
+          "vn": "Vui mừng, phấn khởi",
+          "radicals": "高 = Bộ cao 高; 兴 = Bộ bát 八"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "今年九月公司派我去中国学习", "tag": "Sự kiện được cử đi" },
+        { "id": "t1", "text": "我对中国文化非常感兴趣", "tag": "Nguyên nhân / Đam mê" },
+        { "id": "t3", "text": "我非常高兴", "tag": "Cảm xúc" },
+        { "id": "t4", "text": "派我去学习中国", "tag": "Bẫy trật tự liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["中国文化", "非常感兴趣", "今年九月", "公司派我去中国学习", "非常高兴"],
+      "wordBankPool": ["我对中国文化非常感兴趣", "今年九月公司派我去中国学习", "我非常高兴", "派我去学习中国", "文化中国"],
+      "traps": [
+        {
+          "pattern": "派我去学习中国",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm trước rồi mới thực hiện hành động, trật tự chuẩn là '去中国学习', không nói '去学习中国'."
+        }
+      ],
+      "explanation": "Câu kết hợp cấu trúc biểu thị mức độ cao '非常' đi kèm tính từ/động từ tâm lý, cùng câu kiêm ngữ do động từ '派' dẫn dắt."
+    },
+    {
+      "id": "b22-07",
+      "type": "sentence_parsing",
+      "title": "Câu kiêm ngữ mời mọc và liên từ nối tiếp 然后",
+      "vi": "Tối nay cậu ấy mời tớ đi ăn tối, sau đó đi xem phim.",
+      "zh": "今天晚上他请我去吃晚饭然后去看电影",
+      "standardTrans": "今天晚上他请我去吃晚饭然后去看电影",
+      "pinyin": "Jīntiān wǎnshang tā qǐng wǒ qù chī wǎnfàn, ránhòu qù kàn diànyǐng.",
+      "grammarPoint": "Câu kiêm ngữ với động từ 请 (mời); Liên từ nối tiếp thời gian 然后 (sau đó)",
+      "tokens": [
+        {
+          "text": "Mời",
+          "hz": "请",
+          "py": "qǐng",
+          "hv": "Thỉnh",
+          "role": "Động từ kiêm ngữ",
+          "vn": "Mời, xin, nhờ",
+          "radicals": "Bộ ngôn 讠 + chữ thanh 青"
+        },
+        {
+          "text": "Sau đó",
+          "hz": "然后",
+          "py": "ránhòu",
+          "hv": "Nhiên hậu",
+          "role": "Liên từ",
+          "vn": "Sau đó, tiếp theo",
+          "radicals": "然 = Bộ hỏa 灬; 后 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "他请我去吃晚饭", "tag": "Câu kiêm ngữ mời" },
+        { "id": "t1", "text": "今天晚上", "tag": "Thời gian" },
+        { "id": "t3", "text": "然后去看电影", "tag": "Hành động tiếp nối" },
+        { "id": "t4", "text": "请我吃晚饭去", "tag": "Bẫy câu liên động" },
+        { "id": "t5", "text": "以后去看电影", "tag": "Bẫy liên từ 以后" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["今天晚上", "请我", "去吃晚饭", "然后", "去看电影"],
+      "wordBankPool": ["今天晚上", "他请我去吃晚饭", "然后去看电影", "请我吃晚饭去", "以后去看电影", "他请去我"],
+      "traps": [
+        {
+          "pattern": "以后去看电影",
+          "msg": "Lỗi liên từ: Để nối hai hành động xảy ra trước sau trong câu trần thuật, dùng liên từ '然后' (sau đó) ở đầu phân câu sau, không dùng '以后' độc lập như vậy."
+        }
+      ],
+      "explanation": "Trong câu kiêm ngữ 他请我去吃晚饭, từ '我' vừa là tân ngữ của '请', vừa là chủ ngữ thực hiện hành động '去吃晚饭'. '然后' liên kết hành động giải trí tiếp theo."
+    },
+    {
+      "id": "b22-08",
+      "type": "anti_word_by_word",
+      "title": "Mối quan hệ thay đổi theo thời gian và định ngữ trường học",
+      "vi": "Trước đây cậu ấy là học trò của tôi, bây giờ cậu ấy là đồng nghiệp của tôi. Chúng tôi đều là giáo viên tiếng Trung của trường đại học Hà Nội.",
+      "zh": "以前他是我的学生现在他是我的同事我们都是河内大学的汉语老师",
+      "standardTrans": "以前他是我的学生现在他是我的同事我们都是河内大学的汉语老师",
+      "pinyin": "Yǐqián tā shì wǒ de xuésheng, xiànzài tā shì wǒ de tóngshì. Wǒmen dōu shì Hénèi Dàxué de hànyǔ lǎoshī.",
+      "grammarPoint": "Đối chiếu thời gian 以前 vs 现在; Danh từ quan hệ 同事; Định ngữ nhiều tầng với 的",
+      "tokens": [
+        {
+          "text": "Đồng nghiệp",
+          "hz": "同事",
+          "py": "tóngshì",
+          "hv": "Đồng sự",
+          "role": "Danh từ",
+          "vn": "Đồng nghiệp, cùng làm việc",
+          "radicals": "同 = Bộ khẩu 口; 事 = Bộ quyết 亅"
+        },
+        {
+          "text": "Đại học Hà Nội",
+          "hz": "河内大学",
+          "py": "Hénèi Dàxué",
+          "hv": "Hà Nội đại học",
+          "role": "Định ngữ nơi chốn",
+          "vn": "Trường Đại học Hà Nội",
+          "radicals": "河 = Bộ thủy 氵; 内 = Bộ quynh 冂"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "现在他是我的同事", "tag": "Quan hệ hiện tại" },
+        { "id": "t1", "text": "以前他是我的学生", "tag": "Quan hệ quá khứ" },
+        { "id": "t3", "text": "我们都是河内大学的汉语老师", "tag": "Tổng kết vị trí" },
+        { "id": "t4", "text": "汉语老师的河内大学", "tag": "Bẫy định ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["以前他是我的学生", "现在他是我的同事", "都是", "河内大学的", "汉语老师"],
+      "wordBankPool": ["以前他是我的学生", "现在他是我的同事", "我们都是河内大学的汉语老师", "汉语老师的河内大学", "他是学生我的以前"],
+      "traps": [
+        {
+          "pattern": "汉语老师的河内大学",
+          "msg": "Lỗi định ngữ: Cơ quan/trường học (河内大学) làm định ngữ bổ nghĩa cho nghề nghiệp (汉语老师), phải đứng trước trợ từ '的'."
+        }
+      ],
+      "explanation": "Câu trần thuật gồm ba mệnh đề ngắn gọn, logic chặt chẽ. Cụm định ngữ nhiều tầng: [Đơn vị: 河内大学] + 的 + [Chuyên môn: 汉语] + [Trung tâm ngữ: 老师]."
+    },
+    {
+      "id": "b22-09",
+      "type": "sentence_parsing",
+      "title": "Câu kiêm ngữ sai khiến 让 và chuỗi lượng từ thực phẩm",
+      "vi": "Mẹ tôi bảo tôi đi siêu thị mua giúp bà ấy hai cân táo, một chai rượu vang, một cân thịt bò và một quả dưa hấu.",
+      "zh": "我妈妈让我去超市帮她买两公斤苹果一瓶红酒一公斤牛肉和一个西瓜",
+      "standardTrans": "我妈妈让我去超市帮她买两公斤苹果一瓶红酒一公斤牛肉和一个西瓜",
+      "pinyin": "Wǒ māma ràng wǒ qù chāoshì bāng tā mǎi liǎng gōngjīn píngguǒ, yì píng hóngjiǔ, yì gōngjīn niúròu hé yí gè xīguā.",
+      "grammarPoint": "Câu kiêm ngữ với động từ 让 (bảo, sai); Giúp ai làm gì (帮 + Người + Động từ); Lượng từ: 公斤, 瓶, 个",
+      "tokens": [
+        {
+          "text": "Bảo, cho phép",
+          "hz": "让",
+          "py": "ràng",
+          "hv": "Nhượng",
+          "role": "Động từ kiêm ngữ",
+          "vn": "Bảo, nhường, để cho",
+          "radicals": "Bộ ngôn 讠 + chữ thượng 上"
+        },
+        {
+          "text": "Thịt bò",
+          "hz": "牛肉",
+          "py": "niúròu",
+          "hv": "Ngưu nhục",
+          "role": "Danh từ",
+          "vn": "Thịt bò",
+          "radicals": "牛 = Bộ ngưu 牛; 肉 = Bộ nhục 肉"
+        },
+        {
+          "text": "Dưa hấu",
+          "hz": "西瓜",
+          "py": "xīguā",
+          "hv": "Tây qua",
+          "role": "Danh từ",
+          "vn": "Quả dưa hấu",
+          "radicals": "西 = Bộ tây 西; 瓜 = Bộ qua 瓜"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "去超市帮她买", "tag": "Mục đích kiêm ngữ" },
+        { "id": "t1", "text": "我妈妈让我", "tag": "Chủ ngữ + Kiêm ngữ 让" },
+        { "id": "t4", "text": "一公斤牛肉和一个西瓜", "tag": "Danh sách mua 2" },
+        { "id": "t3", "text": "两公斤苹果一瓶红酒", "tag": "Danh sách mua 1" },
+        { "id": "t5", "text": "买帮她", "tag": "Bẫy trật tự từ 帮" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["我妈妈让我", "去超市帮她买", "两公斤苹果", "一瓶红酒", "一公斤牛肉", "一个西瓜"],
+      "wordBankPool": ["我妈妈让我", "去超市帮她买", "两公斤苹果一瓶红酒", "一公斤牛肉和一个西瓜", "买帮她", "两斤苹果一瓶红酒"],
+      "traps": [
+        {
+          "pattern": "买帮她",
+          "msg": "Lỗi giới từ 帮: Giúp ai làm việc gì phải đặt '帮 + Người' lên trước động từ ('帮她买'), không dịch xuôi theo tiếng Việt thành '买帮她'."
+        }
+      ],
+      "explanation": "Câu kiêm ngữ lồng ghép câu liên động: 我妈妈 (Chủ ngữ) + 让 (Động từ sai khiến) + 我 (Kiêm ngữ) + 去超市帮她买 (Vị ngữ 2). Cần chú ý lượng từ tương ứng cho từng món hàng."
+    },
+    {
+      "id": "b22-10",
+      "type": "anti_word_by_word",
+      "title": "Câu kiêm ngữ nhờ vả với 让 và động từ mượn 借",
+      "vi": "Hôm nay Mary rất bận. Cô ấy bảo tôi đến thư viện mượn sách giúp cô ấy.",
+      "zh": "今天玛丽很忙他让我去图书馆帮她借书",
+      "standardTrans": "今天玛丽很忙他让我去图书馆帮她借书",
+      "pinyin": "Jīntiān Mǎlì hěn máng, tā ràng wǒ qù túshūguǎn bāng tā jiè shū.",
+      "grammarPoint": "Câu kiêm ngữ: 让 + Người + Động từ; Cấu trúc nhờ vả: 帮 + Người + 借书",
+      "tokens": [
+        {
+          "text": "Bận",
+          "hz": "忙",
+          "py": "máng",
+          "hv": "Mang",
+          "role": "Tính từ",
+          "vn": "Bận rộn",
+          "radicals": "Bộ tâm đứng 忄 + chữ vong 亡"
+        },
+        {
+          "text": "Mượn sách",
+          "hz": "借书",
+          "py": "jiè shū",
+          "hv": "Tá thư",
+          "role": "Cụm động tân",
+          "vn": "Mượn sách",
+          "radicals": "借 = Bộ nhân đứng 亻 + chữ tích 昔; 书 = Chữ thư 书"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天玛丽很忙", "tag": "Nguyên nhân" },
+        { "id": "t3", "text": "帮她借书", "tag": "Hành động giúp đỡ" },
+        { "id": "t2", "text": "他让我去图书馆", "tag": "Câu kiêm ngữ sai khiến" },
+        { "id": "t4", "text": "借书帮她", "tag": "Bẫy trật tự 帮" },
+        { "id": "t5", "text": "去借书图书馆", "tag": "Bẫy câu liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["今天玛丽很忙", "让我去图书馆", "帮她借书"],
+      "wordBankPool": ["今天玛丽很忙", "他让我去图书馆", "帮她借书", "借书帮她", "去借书图书馆", "她让我去"],
+      "traps": [
+        {
+          "pattern": "去借书图书馆",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm rồi mới thực hiện mục đích, phải nói '去图书馆借书', không đặt danh từ địa điểm ở cuối."
+        },
+        {
+          "pattern": "借书帮她",
+          "msg": "Lỗi cấu trúc 帮: Phải đưa cụm '帮 + Người' lên trước hành động: '帮她借书'."
+        }
+      ],
+      "explanation": "Câu thể hiện rõ cấu trúc kiêm ngữ thông dụng hàng ngày. Trong bản gốc sách trang 205 ghi đại từ 他 (nói chung), hệ thống giữ đúng dữ liệu gốc từ Source of Truth để đảm bảo tính toàn vẹn của bài tập."
+    }
+  ]
+}

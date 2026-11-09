@@ -1,0 +1,27 @@
+# Node & Build artifacts
+node_modules/
+dist/
+build/
+
+# Python & Audio Cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE & Editor Settings
+.vscode/
+.continue/
+.idea/
+*.swp
+*.swo
+
+# Antigravity & Agent workspace logs
+.gemini/
+.system_generated/
+*.log
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini

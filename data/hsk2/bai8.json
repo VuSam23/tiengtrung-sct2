@@ -1,0 +1,563 @@
+{
+  "lessonId": "b23",
+  "lessonTitle": "第二十三课: 学校里边有邮局吗?",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "方位词 (Từ chỉ phương vị)",
+        "py": "fāngwèicí",
+        "note": "Các từ chỉ phương hướng và vị trí: 东边 (đông), 西边 (tây), 南边 (nam), 北边 (bắc), 前边 (trước), 后边 (sau), 左边 (trái), 右边 (phải), 里边 (trong), 外边 (ngoài), 中间 (ở giữa)."
+      },
+      {
+        "word": "离",
+        "py": "lí",
+        "note": "Giới từ 'cách' chỉ cự ly không gian hoặc thời gian: A + 离 + B + (很/不) 远 / 近 / [Khoảng cách]. Ví dụ: 我家离学校不太远."
+      },
+      {
+        "word": "往 vs 从",
+        "py": "wǎng vs cóng",
+        "note": "往 (hướng về phía): 往 + Phương hướng + Động từ (往前走: đi về phía trước, 往左拐: rẽ trái). 从 (từ điểm nào): 从...到... (từ... đến...)."
+      },
+      {
+        "word": "一直",
+        "py": "yìzhí",
+        "note": "Phó từ biểu thị hướng đi không đổi (thẳng) hoặc hành động liên tục: 一直往前走 (cứ đi thẳng về phía trước)."
+      }
+    ],
+    "grammarTips": [
+      "Câu tồn tại vị trí (在 / 有 / 是):\n1. Vật/Người + 在 + Nơi chốn (Ai/cái gì ở đâu): 图书馆在教学楼左边.\n2. Nơi chốn + 有 + Vật/Người (Ở đâu có cái gì - tồn tại khách quan): 学校里边有邮局.\n3. Nơi chốn + 是 + Vật/Người (Ở đâu chính là cái gì - xác định danh tính): 教学楼后边就是足球场.",
+      "Cấu trúc khoảng cách: A + 离 + B + 有多远 / [Số lượng khoảng cách] (A cách B bao xa).",
+      "Cấu trúc chỉ đường: 从 + Địa điểm + 一直往 + Phương hướng + 走/拐 + 到 + Địa điểm."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b23-01",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc khoảng cách 离 và đại từ nơi chốn 那儿",
+      "vi": "Thư viện quốc gia cách nhà tôi không xa, tôi thường đến đó mượn sách vào buổi sáng.",
+      "zh": "国家图书馆离我家不远上午我常常到那儿借书",
+      "standardTrans": "国家图书馆离我家不远上午我常常到那儿借书",
+      "pinyin": "Guójiā túshūguǎn lí wǒ jiā bù yuǎn, shàngwǔ wǒ chángcháng dào nàr jiè shū.",
+      "grammarPoint": "Cấu trúc khoảng cách: A + 离 + B + 不远; Đến đó làm gì: 到那儿 + Động từ",
+      "tokens": [
+        {
+          "text": "Thư viện quốc gia",
+          "hz": "国家图书馆",
+          "py": "guójiā túshūguǎn",
+          "hv": "Quốc gia đồ thư quán",
+          "role": "Chủ ngữ",
+          "vn": "Thư viện quốc gia",
+          "radicals": "国 = Bộ vi 囗; 图 = Bộ vi 囗; 书 = Chữ thư 书; 馆 = Bộ thực 饣"
+        },
+        {
+          "text": "Cách",
+          "hz": "离",
+          "py": "lí",
+          "hv": "Ly",
+          "role": "Giới từ khoảng cách",
+          "vn": "Cách (khoảng cách không gian)",
+          "radicals": "Bộ khám 凵 + chữ ly 离"
+        },
+        {
+          "text": "Đến đó",
+          "hz": "到那儿",
+          "py": "dào nàr",
+          "hv": "Đáo na nhi",
+          "role": "Trạng ngữ nơi chốn",
+          "vn": "Đến chỗ đó, tới nơi đó",
+          "radicals": "到 = Bộ đao 刂; 那 = Bộ ấp 阝; 儿 = Bộ nhi 儿"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "上午我常常", "tag": "Thời gian + Tần suất" },
+        { "id": "t1", "text": "国家图书馆离我家不远", "tag": "Khoảng cách cự ly" },
+        { "id": "t3", "text": "到那儿借书", "tag": "Mục đích nơi chốn" },
+        { "id": "t4", "text": "借书到那儿", "tag": "Bẫy trật tự nơi chốn" },
+        { "id": "t5", "text": "我家从国家图书馆不远", "tag": "Bẫy giới từ 从" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["国家图书馆", "离我家不远", "上午我常常", "到那儿借书"],
+      "wordBankPool": ["国家图书馆离我家不远", "上午我常常", "到那儿借书", "借书到那儿", "我家从国家图书馆不远", "常常借书到那儿"],
+      "traps": [
+        {
+          "pattern": "借书到那儿",
+          "msg": "Lỗi trạng ngữ nơi chốn: Cụm 'đến chỗ đó' (到那儿) bổ nghĩa cho hành động mượn sách nên bắt buộc phải đứng TRƯỚC động từ chính '借书'."
+        },
+        {
+          "pattern": "从我家不远",
+          "msg": "Lỗi dùng từ khoảng cách: Để diễn đạt 'Cách nơi nào bao xa', tiếng Trung dùng giới từ '离' (离我家不远), không dùng giới từ xuất phát điểm '从'."
+        }
+      ],
+      "explanation": "Cấu trúc cự ly chuẩn: [Địa điểm A] + 离 + [Địa điểm B] + Tính từ khoảng cách (不远). Vế sau dùng cấu trúc 到 + Nơi chốn + Động từ để biểu thị đến đâu làm gì."
+    },
+    {
+      "id": "b23-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi đường và chỉ đường với 一直往 và 就是",
+      "vi": "A: Xin hỏi, đến bưu điện Hà Nội thì đi như thế nào? B: Anh cứ đi đến chỗ đèn báo giao thông, tòa nhà màu vàng ở phía đông đường lớn chính là bưu điện Hà Nội.",
+      "zh": "请问去河内邮局怎么走你一直往红绿灯那儿走马路东边黄色的楼就是河内邮局",
+      "standardTrans": "请问去河内邮局怎么走你一直往红绿灯那儿走马路东边黄色的楼就是河内邮局",
+      "pinyin": "Qǐngwèn, qù Hénèi yóujú zěnme zǒu? Nǐ yìzhí wǎng hónglǜdēng nàr zǒu, mǎlù dōngbian huángsè de lóu jiù shì Hénèi yóujú.",
+      "grammarPoint": "Hỏi cách đi: 怎么走; Chỉ hướng: 一直往 + Địa điểm + 走; Nhấn mạnh khẳng định 就是",
+      "tokens": [
+        {
+          "text": "Đèn xanh đèn đỏ",
+          "hz": "红绿灯",
+          "py": "hónglǜdēng",
+          "hv": "Hồng lục đăng",
+          "role": "Danh từ",
+          "vn": "Đèn tín hiệu giao thông",
+          "radicals": "红 = Bộ mịch 纟; 绿 = Bộ mịch 纟; 灯 = Bộ hỏa 火"
+        },
+        {
+          "text": "Phía đông đường lớn",
+          "hz": "马路东边",
+          "py": "mǎlù dōngbian",
+          "hv": "Mã lộ đông biên",
+          "role": "Định ngữ nơi chốn",
+          "vn": "Bên phía đông của con đường",
+          "radicals": "马 = Bộ mã 马; 路 = Bộ túc 足; 东 = Bộ nhất 一"
+        },
+        {
+          "text": "Chính là",
+          "hz": "就是",
+          "py": "jiù shì",
+          "hv": "Tựu thị",
+          "role": "Phó từ nhấn mạnh",
+          "vn": "Chính là, ngay là",
+          "radicals": "就 = Bộ kinh 京 + bộ vu 尢; 是 = Bộ nhật 日"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你一直往红绿灯那儿走", "tag": "Chỉ đường đi thẳng" },
+        { "id": "t1", "text": "请问去河内邮局怎么走", "tag": "Câu hỏi đường của A" },
+        { "id": "t3", "text": "马路东边黄色的楼就是河内邮局", "tag": "Nhận diện đích đến" },
+        { "id": "t4", "text": "走怎么去河内邮局", "tag": "Bẫy trật tự câu hỏi" },
+        { "id": "t5", "text": "往一直走", "tag": "Bẫy phó từ 一直" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["去河内邮局怎么走", "一直往红绿灯那儿走", "马路东边", "黄色的楼", "就是河内邮局"],
+      "wordBankPool": ["请问去河内邮局怎么走", "你一直往红绿灯那儿走", "马路东边黄色的楼就是河内邮局", "走怎么去河内邮局", "往一直走", "东边马路黄色的楼"],
+      "traps": [
+        {
+          "pattern": "往一直走",
+          "msg": "Lỗi phó từ: '一直' (thẳng, liên tục) là phó từ, bắt buộc phải đứng trước giới từ '往' ('一直往...走'), không đảo ngược thành '往一直走'."
+        },
+        {
+          "pattern": "东边马路",
+          "msg": "Lỗi định ngữ phương vị: 'Phía đông của đường lớn' thì con đường là phạm vi gốc, phải đặt trước: '马路东边', không dịch xuôi theo tiếng Việt."
+        }
+      ],
+      "explanation": "Câu giao tiếp chỉ đường điển hình. Cấu trúc hỏi đường: [去 + Địa điểm] + 怎么走. Cụm chỉ đường: 一直 + 往 + Hướng/Mục tiêu + 走. Từ '就是' nhấn mạnh đối tượng ngay trước mắt."
+    },
+    {
+      "id": "b23-03",
+      "type": "anti_word_by_word",
+      "title": "Câu vị ngữ chữ 是 chỉ sự tồn tại xác định",
+      "vi": "Phía đông ký túc xá chúng tôi là một công ty thương mại quốc tế rất lớn của Thượng Hải.",
+      "zh": "我们宿舍的东边是上海一个很大的外贸公司",
+      "standardTrans": "我们宿舍的东边是上海一个很大的外贸公司",
+      "pinyin": "Wǒmen sùshè de dōngbian shì Shànghǎi yí ge hěn dà de wàimào gōngsī.",
+      "grammarPoint": "Câu tồn tại với 是: Nơi chốn + 是 + Thực thể tồn tại; Cụm định ngữ nhiều tầng",
+      "tokens": [
+        {
+          "text": "Phía đông ký túc xá",
+          "hz": "宿舍的东边",
+          "py": "sùshè de dōngbian",
+          "hv": "Túc xá đích đông biên",
+          "role": "Chủ ngữ nơi chốn",
+          "vn": "Phía đông của khu ký túc xá",
+          "radicals": "宿 = Bộ miên 宀; 舍 = Bộ thiệt 舌; 东 = Bộ nhất 一; 边 = Bộ sước 辶"
+        },
+        {
+          "text": "Công ty ngoại thương",
+          "hz": "外贸公司",
+          "py": "wàimào gōngsī",
+          "hv": "Ngoại mậu công ty",
+          "role": "Trung tâm ngữ",
+          "vn": "Công ty thương mại quốc tế",
+          "radicals": "外 = Bộ tịch 夕; 贸 = Bộ bối 贝; 公 = Bộ bát 八; 司 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "是上海一个很大的", "tag": "Vị ngữ + Định ngữ bổ sung" },
+        { "id": "t1", "text": "我们宿舍的东边", "tag": "Chủ ngữ phương vị" },
+        { "id": "t3", "text": "外贸公司", "tag": "Trung tâm ngữ tân ngữ" },
+        { "id": "t4", "text": "东边我们宿舍", "tag": "Bẫy từ chỉ phương vị" },
+        { "id": "t5", "text": "外贸公司的上海", "tag": "Bẫy định ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我们宿舍的东边", "是上海", "一个很大的", "外贸公司"],
+      "wordBankPool": ["我们宿舍的东边", "是上海一个很大的", "外贸公司", "东边我们宿舍", "外贸公司的上海", "很很大外贸公司"],
+      "traps": [
+        {
+          "pattern": "东边我们宿舍",
+          "msg": "Lỗi từ phương vị: Trong tiếng Trung, từ chỉ phương vị (东边) bắt buộc phải đứng SAU danh từ làm mốc (我们宿舍的东边), không dịch thuận theo tiếng Việt là 'phía đông KTX'."
+        }
+      ],
+      "explanation": "Câu chữ '是' diễn tả vị trí xác định: [Nơi chốn] + 是 + [Đối tượng duy nhất / cụ thể]. Lưu ý danh từ chỉ nơi chốn sở hữu luôn đứng trước từ phương vị."
+    },
+    {
+      "id": "b23-04",
+      "type": "sentence_parsing",
+      "title": "Hỏi cự ly bằng 有多远 và thời gian di chuyển với 要",
+      "vi": "A: Xin hỏi từ đây đến bảo tàng bao xa? B: Khoảng 3 km. Từ nơi này đến viện bảo tàng, đi xe buýt mất 10 phút.",
+      "zh": "请问从这儿到博物馆有多远大概三公里从这儿到博物馆坐公共汽车要十分钟",
+      "standardTrans": "请问从这儿到博物馆有多远大概三公里从这儿到博物馆坐公共汽车要十分钟",
+      "pinyin": "Qǐngwèn, cóng zhèr dào bówùguǎn yǒu duō yuǎn? Dàgài sān gōnglǐ. Cóng zhèr dào bówùguǎn, zuò gōnggòng qìchē yào shí fēnzhōng.",
+      "grammarPoint": "Hỏi cự ly: 从...到...有多远; Ước lượng: 大概; Tiêu tốn thời gian: 要 + [Thời lượng]",
+      "tokens": [
+        {
+          "text": "Bao xa",
+          "hz": "有多远",
+          "py": "yǒu duō yuǎn",
+          "hv": "Hữu đa viễn",
+          "role": "Cụm vị ngữ nghi vấn",
+          "vn": "Bao xa, cách bao xa",
+          "radicals": "有 = Bộ nguyệt 月; 多 = Bộ tịch 夕; 远 = Bộ sước 辶"
+        },
+        {
+          "text": "Kilomet (cây số)",
+          "hz": "公里",
+          "py": "gōnglǐ",
+          "hv": "Công lý",
+          "role": "Lượng từ khoảng cách",
+          "vn": "Cây số, kilomet (km)",
+          "radicals": "公 = Bộ bát 八; 里 = Bộ lý 里"
+        },
+        {
+          "text": "Xe buýt",
+          "hz": "公共汽车",
+          "py": "gōnggòng qìchē",
+          "hv": "Công cộng khí xa",
+          "role": "Phương tiện di chuyển",
+          "vn": "Xe buýt",
+          "radicals": "汽 = Bộ thủy 氵; 车 = Bộ xa 车"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "大概三公里", "tag": "Ước lượng khoảng cách" },
+        { "id": "t1", "text": "请问从这儿到博物馆有多远", "tag": "Câu hỏi cự ly của A" },
+        { "id": "t3", "text": "从这儿到博物馆坐公共汽车要十分钟", "tag": "Thời gian phương tiện" },
+        { "id": "t4", "text": "远多有", "tag": "Bẫy từ để hỏi" },
+        { "id": "t5", "text": "要坐公共汽车十分钟", "tag": "Bẫy trật tự động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["从这儿到博物馆", "有多远", "大概三公里", "坐公共汽车", "要十分钟"],
+      "wordBankPool": ["请问从这儿到博物馆有多远", "大概三公里", "从这儿到博物馆坐公共汽车要十分钟", "远多有", "要坐公共汽车十分钟", "多少远从这儿"],
+      "traps": [
+        {
+          "pattern": "多少远",
+          "msg": "Lỗi hỏi khoảng cách: Để hỏi 'bao xa', tiếng Trung dùng '有多远' hoặc '多远', tuyệt đối không nói '多少远'."
+        },
+        {
+          "pattern": "要坐公共汽车",
+          "msg": "Lỗi vị trí động từ: Phương thức di chuyển (坐公共汽车) đứng trước động từ chỉ sự tiêu tốn thời gian '要' (mất/cần)."
+        }
+      ],
+      "explanation": "Cấu trúc kinh điển hỏi khoảng cách: 从 A 到 B + 有多远. Động từ '要' ở vế sau biểu thị sự hao phí thời gian (cần mất 10 phút)."
+    },
+    {
+      "id": "b23-05",
+      "type": "sentence_parsing",
+      "title": "Miêu tả vị trí khuôn viên trường học và các tòa nhà",
+      "vi": "Học viện thể thao ở phía Bắc đại học Bắc Kinh. Trong trường này có rất nhiều tòa nhà, tòa phía Đông là tòa nhà dạy học, tòa phía Tây là tòa ký túc xá.",
+      "zh": "体育学院在北京大学北边这个学校里有很多楼东边的是教学楼西边的是宿舍楼",
+      "standardTrans": "体育学院在北京大学北边这个学校里有很多楼东边的是教学楼西边的是宿舍楼",
+      "pinyin": "Tǐyù Xuéyuàn zài Běijīng Dàxué běibian. Zhè ge xuéxiào lǐ yǒu hěn duō lóu, dōngbian de shì jiàoxuélóu, xībian de shì sùshèlóu.",
+      "grammarPoint": "Vị trí với 在 (在...北边); Câu tồn tại với 有 (学校里有很多楼); Phân loại đại từ hóa 的",
+      "tokens": [
+        {
+          "text": "Phía Bắc",
+          "hz": "北边",
+          "py": "běibian",
+          "hv": "Bắc biên",
+          "role": "Từ phương vị",
+          "vn": "Phía bắc, bên bắc",
+          "radicals": "北 = Bộ tỷ 匕; 边 = Bộ sước 辶"
+        },
+        {
+          "text": "Tòa nhà dạy học",
+          "hz": "教学楼",
+          "py": "jiàoxuélóu",
+          "hv": "Giáo học lâu",
+          "role": "Danh từ nơi chốn",
+          "vn": "Tòa nhà giảng đường, khu học",
+          "radicals": "教 = Bộ phộc 攵; 学 = Bộ tử 子; 楼 = Bộ mộc 木"
+        },
+        {
+          "text": "Tòa ký túc xá",
+          "hz": "宿舍楼",
+          "py": "sùshèlóu",
+          "hv": "Túc xá lâu",
+          "role": "Danh từ nơi chốn",
+          "vn": "Tòa nhà ký túc xá",
+          "radicals": "宿 = Bộ miên 宀; 舍 = Bộ thiệt 舌; 楼 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这个学校里有很多楼", "tag": "Câu tồn tại 有" },
+        { "id": "t1", "text": "体育学院在北京大学北边", "tag": "Vị trí địa lý" },
+        { "id": "t3", "text": "东边的是教学楼", "tag": "Tòa phía đông" },
+        { "id": "t4", "text": "西边的是宿舍楼", "tag": "Tòa phía tây" },
+        { "id": "t5", "text": "北边北京大学", "tag": "Bẫy từ phương vị" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["体育学院", "北京大学北边", "很多楼", "东边的是教学楼", "西边的是宿舍楼"],
+      "wordBankPool": ["体育学院在北京大学北边", "这个学校里有很多楼", "东边的是教学楼", "西边的是宿舍楼", "北边北京大学", "教学楼是东边的"],
+      "traps": [
+        {
+          "pattern": "北边北京大学",
+          "msg": "Lỗi ngữ tự phương vị: Phải đưa mốc tham chiếu lên trước từ chỉ phương vị: '北京大学北边', không nói '北边北京大学'."
+        }
+      ],
+      "explanation": "Đoạn văn kết hợp cả 3 cấu trúc phương vị trọng điểm: câu chữ 在 (ở phía bắc), câu chữ 有 (có nhiều tòa nhà), và cấu trúc 'Phương vị + 的是...' (tòa phía đông là...)."
+    },
+    {
+      "id": "b23-06",
+      "type": "anti_word_by_word",
+      "title": "Khoảng cách cự ly không xa lắm và phương tiện di chuyển",
+      "vi": "Nhà tôi cách trường học không xa lắm, hàng ngày tôi thường đến trường bằng xe buýt.",
+      "zh": "我家离学校不太远每天我常坐公共汽车去学校",
+      "standardTrans": "我家离学校不太远每天我常坐公共汽车去学校",
+      "pinyin": "Wǒ jiā lí xuéxiào bú tài yuǎn, měitiān wǒ cháng zuò gōnggòng qìchē qù xuéxiào.",
+      "grammarPoint": "Cấu trúc cự ly: A + 离 + B + 不太远; Phương tiện làm trạng ngữ: 坐公共汽车 + 去学校",
+      "tokens": [
+        {
+          "text": "Không xa lắm",
+          "hz": "不太远",
+          "py": "bú tài yuǎn",
+          "hv": "Bất thái viễn",
+          "role": "Cụm tính từ vị ngữ",
+          "vn": "Không xa lắm",
+          "radicals": "不 = Bộ nhất 一; 太 = Bộ đại 大; 远 = Bộ sước 辶"
+        },
+        {
+          "text": "Đi xe buýt",
+          "hz": "坐公共汽车",
+          "py": "zuò gōnggòng qìchē",
+          "hv": "Tọa công cộng khí xa",
+          "role": "Cụm động tân phương tiện",
+          "vn": "Ngồi xe buýt, đi xe buýt",
+          "radicals": "坐 = Bộ thổ 土; 车 = Bộ xa 车"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "每天我常", "tag": "Thời gian + Tần suất" },
+        { "id": "t1", "text": "我家离学校不太远", "tag": "Cự ly khoảng cách" },
+        { "id": "t3", "text": "坐公共汽车去学校", "tag": "Phương tiện + Mục đích" },
+        { "id": "t4", "text": "去学校坐公共汽车", "tag": "Bẫy trật tự phương tiện" },
+        { "id": "t5", "text": "我家学校离不太远", "tag": "Bẫy vị trí giới từ 离" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我家离学校", "不太远", "每天我常", "坐公共汽车去学校"],
+      "wordBankPool": ["我家离学校不太远", "每天我常", "坐公共汽车去学校", "去学校坐公共汽车", "我家学校离不太远", "常坐车公共汽车"],
+      "traps": [
+        {
+          "pattern": "去学校坐公共汽车",
+          "msg": "Lỗi phương tiện di chuyển: Trong câu liên động, phương thức/phương tiện (坐公共汽车) bắt buộc phải đứng TRƯỚC hướng đi đến điểm đến (去学校)."
+        }
+      ],
+      "explanation": "Quy tắc ngữ tự tiếng Trung: Cách thức thực hiện hành động (ngồi xe buýt) phải đặt trước động từ hành động chính (đến trường)."
+    },
+    {
+      "id": "b23-07",
+      "type": "sentence_parsing",
+      "title": "Phương vị bên trái, phía sau và phó từ 就是",
+      "vi": "Thư viện ở bên trái tòa nhà dạy học, phía sau tòa nhà dạy học chính là sân bóng đá.",
+      "zh": "图书馆在教学楼左边教学楼后边就是足球场",
+      "standardTrans": "图书馆在教学楼左边教学楼后边就是足球场",
+      "pinyin": "Túshūguǎn zài jiàoxuélóu zuǒbian, jiàoxuélóu hòubian jiù shì zúqiúchǎng.",
+      "grammarPoint": "Vị trí với 在 (在...左边); Câu tồn tại với 是 (后边就是); Từ chỉ phương vị: 左边, 后边",
+      "tokens": [
+        {
+          "text": "Bên trái",
+          "hz": "左边",
+          "py": "zuǒbian",
+          "hv": "Tả biên",
+          "role": "Từ phương vị",
+          "vn": "Phía bên trái",
+          "radicals": "左 = Bộ công 工; 边 = Bộ sước 辶"
+        },
+        {
+          "text": "Phía sau",
+          "hz": "后边",
+          "py": "hòubian",
+          "hv": "Hậu biên",
+          "role": "Từ phương vị",
+          "vn": "Phía sau, đằng sau",
+          "radicals": "后 = Bộ khẩu 口; 边 = Bộ sước 辶"
+        },
+        {
+          "text": "Sân bóng đá",
+          "hz": "足球场",
+          "py": "zúqiúchǎng",
+          "hv": "Túc cầu trường",
+          "role": "Danh từ địa điểm",
+          "vn": "Sân vận động, sân bóng đá",
+          "radicals": "足 = Bộ túc 足; 球 = Bộ ngọc 王; 场 = Bộ thổ 土"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "教学楼后边就是足球场", "tag": "Vị trí phía sau" },
+        { "id": "t1", "text": "图书馆在教学楼左边", "tag": "Vị trí bên trái" },
+        { "id": "t3", "text": "左边教学楼", "tag": "Bẫy từ phương vị 1" },
+        { "id": "t4", "text": "后边教学楼", "tag": "Bẫy từ phương vị 2" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["图书馆在", "教学楼左边", "教学楼后边", "就是足球场"],
+      "wordBankPool": ["图书馆在教学楼左边", "教学楼后边就是足球场", "左边教学楼", "后边教学楼", "教学楼左边在图书馆"],
+      "traps": [
+        {
+          "pattern": "左边教学楼",
+          "msg": "Lỗi ngữ tự từ phương vị: 'Bên trái giảng đường' phải nói là '教学楼左边', danh từ mốc chuẩn đặt trước từ phương vị."
+        }
+      ],
+      "explanation": "Câu ghép gồm 2 vế miêu tả hai vị trí không gian cạnh nhau. Cụm '就是' dùng để nhấn mạnh sự tồn tại rõ ràng của sân bóng đá ngay phía sau giảng đường."
+    },
+    {
+      "id": "b23-08",
+      "type": "anti_word_by_word",
+      "title": "Hành động đang tiếp diễn và hỏi khoảng cách với 离",
+      "vi": "A: Bọn họ đang thi đấu trên sân thể thao, chúng ta đi xem đi. B: Được, sân thể thao cách nơi này xa không?",
+      "zh": "他们正在操场比赛咱们去看看吧好操场离这儿远吗",
+      "standardTrans": "他们正在操场比赛咱们去看看吧好操场离这儿远吗",
+      "pinyin": "Tāmen zhèngzài cāochǎng bǐsài, zánmen qù kànkan ba. Hǎo, cāochǎng lí zhèr yuǎn ma?",
+      "grammarPoint": "Tiếp diễn: 正在 + Địa điểm + Động từ; Động từ lặp lại: 看看; Hỏi cự ly: 离这儿远吗",
+      "tokens": [
+        {
+          "text": "Đang thi đấu",
+          "hz": "正在操场比赛",
+          "py": "zhèngzài cāochǎng bǐsài",
+          "hv": "Chính tại thao trường tỷ tái",
+          "role": "Trạng ngữ tiếp diễn + Vị ngữ",
+          "vn": "Đang thi đấu ở sân tập",
+          "radicals": "正 = Bộ nhất 一; 操 = Bộ thủ 扌; 赛 = Bộ bối 贝"
+        },
+        {
+          "text": "Đi xem thử",
+          "hz": "去看看吧",
+          "py": "qù kànkan ba",
+          "hv": "Khứ khán khán ba",
+          "role": "Cụm liên động rủ rê",
+          "vn": "Đi xem thử chút đi",
+          "radicals": "看 = Bộ thủ 手 + bộ mục 目; 吧 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "咱们去看看吧", "tag": "Lời rủ rê của A" },
+        { "id": "t1", "text": "他们正在操场比赛", "tag": "Hành động tiếp diễn" },
+        { "id": "t3", "text": "好操场离这儿远吗", "tag": "Hỏi cự ly của B" },
+        { "id": "t4", "text": "比赛在操场正在", "tag": "Bẫy trật tự nơi chốn" },
+        { "id": "t5", "text": "从这儿操场远吗", "tag": "Bẫy giới từ 从" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["正在操场比赛", "咱们去看看吧", "好", "操场离这儿远吗"],
+      "wordBankPool": ["他们正在操场比赛", "咱们去看看吧", "好操场离这儿远吗", "比赛在操场正在", "从这儿操场远吗", "去操场看看吧"],
+      "traps": [
+        {
+          "pattern": "比赛在操场",
+          "msg": "Lỗi nơi chốn: Nơi chốn diễn ra hành động (在操场) bắt buộc phải đứng trước động từ chính (比赛), không dịch theo trật tự tiếng Việt 'thi đấu ở sân tập'."
+        },
+        {
+          "pattern": "从这儿远吗",
+          "msg": "Lỗi cự ly: Hỏi khoảng cách từ mốc này đến mốc kia phải dùng giới từ '离' (离这儿远吗), không dùng '从'."
+        }
+      ],
+      "explanation": "Đại từ '咱们' bao hàm cả người nói lẫn người nghe khi rủ rê. Động từ đơn âm tiết lặp lại '看看' tạo ngữ khí nhẹ nhàng, thoải mái."
+    },
+    {
+      "id": "b23-09",
+      "type": "sentence_parsing",
+      "title": "Hỏi vị trí bằng 什么地方 và trả lời với câu chữ 是",
+      "vi": "A: Phía trước trường học là nơi nào? B: Phía trước trường học là hiệu sách.",
+      "zh": "学校前边是什么地方学校前边是书店",
+      "standardTrans": "学校前边是什么地方学校前边是书店",
+      "pinyin": "Xuéxiào qiánbian shì shénme dìfang? Xuéxiào qiánbian shì shūdiàn.",
+      "grammarPoint": "Đại từ nghi vấn nơi chốn: 什么地方; Câu vị ngữ chữ 是 xác định phương vị",
+      "tokens": [
+        {
+          "text": "Phía trước trường học",
+          "hz": "学校前边",
+          "py": "xuéxiào qiánbian",
+          "hv": "Học hiệu tiền biên",
+          "role": "Chủ ngữ nơi chốn",
+          "vn": "Phía trước trường học",
+          "radicals": "学 = Bộ tử 子; 校 = Bộ mộc 木; 前 = Bộ đao 刂; 边 = Bộ sước 辶"
+        },
+        {
+          "text": "Nơi nào, chỗ nào",
+          "hz": "什么地方",
+          "py": "shénme dìfang",
+          "hv": "Thập ma địa phương",
+          "role": "Cụm danh từ nghi vấn",
+          "vn": "Nơi nào, địa điểm nào",
+          "radicals": "地 = Bộ thổ 土; 方 = Bộ phương 方"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "学校前边是书店", "tag": "Câu trả lời của B" },
+        { "id": "t1", "text": "学校前边是什么地方", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "前边学校", "tag": "Bẫy từ phương vị" },
+        { "id": "t4", "text": "哪儿地方是", "tag": "Bẫy từ nghi vấn" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["学校前边", "是什么地方", "是书店"],
+      "wordBankPool": ["学校前边是什么地方", "学校前边是书店", "前边学校", "哪儿地方是", "书店是学校前边"],
+      "traps": [
+        {
+          "pattern": "前边学校",
+          "msg": "Lỗi phương vị từ: Phải đặt danh từ mốc (学校) trước từ chỉ phương vị (前边) để tạo thành cụm '学校前边'."
+        }
+      ],
+      "explanation": "Cấu trúc hỏi phương vị đơn giản và trực quan: [Danh từ + 方位词] + 是 + 什么地方? Câu trả lời thay thế '什么地方' bằng danh từ địa điểm cụ thể (书店)."
+    },
+    {
+      "id": "b23-10",
+      "type": "anti_word_by_word",
+      "title": "Hỏi nguồn gốc trường học bằng 哪个学校的",
+      "vi": "A: Học sinh phía trước là học sinh của trường nào? B: Là học sinh của trường tớ.",
+      "zh": "前边的学生是哪个学校的是我们学校的",
+      "standardTrans": "前边的学生是哪个学校的是我们学校的",
+      "pinyin": "Qiánbian de xuésheng shì nǎ ge xuéxiào de? Shì wǒmen xuéxiào de.",
+      "grammarPoint": "Từ phương vị làm định ngữ (前边的学生); Cấu trúc đại từ hóa lược bỏ danh từ: ...的",
+      "tokens": [
+        {
+          "text": "Học sinh phía trước",
+          "hz": "前边的学生",
+          "py": "qiánbian de xuésheng",
+          "hv": "Tiền biên đích học sinh",
+          "role": "Cụm danh từ chủ ngữ",
+          "vn": "Học sinh ở phía đằng trước",
+          "radicals": "前 = Bộ đao 刂; 的 = Bộ bạch 白; 生 = Chữ sinh 生"
+        },
+        {
+          "text": "Trường nào",
+          "hz": "哪个学校",
+          "py": "nǎ ge xuéxiào",
+          "hv": "Na cá học hiệu",
+          "role": "Cụm nghi vấn",
+          "vn": "Trường học nào",
+          "radicals": "哪 = Bộ khẩu 口 + chữ na 那; 校 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "是我们学校的", "tag": "Câu trả lời của B" },
+        { "id": "t1", "text": "前边的学生是哪个学校的", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "学生的前边", "tag": "Bẫy định ngữ" },
+        { "id": "t4", "text": "什么学校的学生", "tag": "Bẫy đại từ nghi vấn" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["前边的学生", "是哪个学校的", "是我们学校的"],
+      "wordBankPool": ["前边的学生是哪个学校的", "是我们学校的", "学生的前边", "什么学校的学生", "哪个的学生学校"],
+      "traps": [
+        {
+          "pattern": "学生的前边",
+          "msg": "Lỗi định ngữ: 'Học sinh phía trước' thì 'phía trước' là vị trí bổ nghĩa cho 'học sinh', phải đặt trước trợ từ 的: '前边的学生'."
+        }
+      ],
+      "explanation": "Câu áp dụng kết cấu chữ '的' để lược bỏ danh từ '学生' đã được nhắc tới ở trước (是我们学校的 = 是我们学校的学生)."
+    }
+  ]
+}

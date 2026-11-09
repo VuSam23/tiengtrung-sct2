@@ -1,0 +1,237 @@
+[
+  {
+    "id": "hsk3-b1-01",
+    "type": "sentence_parsing",
+    "title": "Cuối tuần bạn có dự định gì",
+    "vi": "Cuối tuần cậu có kế hoạch gì chưa?",
+    "zh": "{周末|你}有什么打算",
+    "pinyin": "zhōumò nǐ yǒu shénme dǎsuàn",
+    "grammarPoint": "Đại từ phiếm chỉ: 什么 dùng trong câu khẳng định/nghi vấn nhẹ nhàng biểu thị 'có việc/kế hoạch gì đó'",
+    "tokens": [
+      {
+        "text": "Cuối tuần",
+        "hz": "周末",
+        "py": "zhōumò",
+        "hv": "Chu mạt",
+        "role": "Trạng ngữ thời gian",
+        "vn": "Cuối tuần",
+        "radicals": "Chữ 周 (bộ khẩu 口) + chữ 末 (bộ mộc 木)"
+      },
+      {
+        "text": "Bạn",
+        "hz": "你",
+        "py": "nǐ",
+        "hv": "Nhĩ",
+        "role": "Chủ ngữ",
+        "vn": "Bạn, cậu",
+        "radicals": "Bộ nhân 亻 + chữ 尔"
+      },
+      {
+        "text": "Có",
+        "hz": "有",
+        "py": "yǒu",
+        "hv": "Hữu",
+        "role": "Động từ",
+        "vn": "Có",
+        "radicals": "Bộ nguyệt 月 + nét ngang phẩy"
+      },
+      {
+        "text": "Gì đó / Nào đó",
+        "hz": "什么",
+        "py": "shénme",
+        "hv": "Thập ma",
+        "role": "Đại từ phiếm chỉ",
+        "vn": "Gì, nào",
+        "radicals": "Chữ 什 + chữ 么"
+      },
+      {
+        "text": "Dự định",
+        "hz": "打算",
+        "py": "dǎsuàn",
+        "hv": "Đả toán",
+        "role": "Tân ngữ",
+        "vn": "Kế hoạch, dự định",
+        "radicals": "Chữ 打 (bộ thủ 扌) + chữ 算 (bộ trúc ⺮ + bộ mục 目 + chữ củng 廾)"
+      }
+    ],
+    "targetOrder": [
+      "t-h3-b1-01-zhoumo",
+      "t-h3-b1-01-ni",
+      "t-h3-b1-01-you",
+      "t-h3-b1-01-shenme",
+      "t-h3-b1-01-dasuan"
+    ],
+    "tiles": [
+      { "id": "t-h3-b1-01-zhoumo", "text": "周末", "tag": "Thời gian" },
+      { "id": "t-h3-b1-01-ni", "text": "你", "tag": "Chủ ngữ" },
+      { "id": "t-h3-b1-01-you", "text": "有", "tag": "Động từ" },
+      { "id": "t-h3-b1-01-shenme", "text": "什么", "tag": "Đại từ" },
+      { "id": "t-h3-b1-01-dasuan", "text": "打算", "tag": "Tân ngữ" },
+      { "id": "t-h3-b1-01-le", "text": "了", "tag": "Bẫy (Chưa/Rồi)" }
+    ],
+    "standardTrans": "周末你有什么打算",
+    "trapDetect": [
+      "周末你有什么打算了吗",
+      "周末你有打算什么"
+    ],
+    "trapMsg": "Lỗi dịch thô: Đừng dịch chữ 'chưa' thành '了吗' một cách rập khuôn; đại từ '什么' đứng trước danh từ '打算' đóng vai trò định ngữ chỉ điều chưa xác định.",
+    "explanation": "Câu hỏi dự định thông dụng trong giao tiếp HSK 3: 有什么打算."
+  },
+  {
+    "id": "hsk3-b1-02",
+    "type": "sentence_parsing",
+    "title": "Mời ai đó làm gì 请 + Tân ngữ + Động từ",
+    "vi": "Tớ đã hẹn mời Tiểu Cương đi ăn cơm, xem phim.",
+    "zh": "我早就请小刚吃饭看电影了",
+    "pinyin": "wǒ zǎojiù qǐng Xiǎogāng chīfàn kàn diànyǐng le",
+    "grammarPoint": "Câu kiêm ngữ với động từ 请 và phó từ 早就 (đã từ lâu)",
+    "tokens": [
+      {
+        "text": "Tôi",
+        "hz": "我",
+        "py": "wǒ",
+        "hv": "Ngã",
+        "role": "Chủ ngữ",
+        "vn": "Tôi",
+        "radicals": "Bộ qua 戈 + chữ thủ 手"
+      },
+      {
+        "text": "Đã từ lâu / Sớm đã",
+        "hz": "早就",
+        "py": "zǎojiù",
+        "hv": "Tảo tựu",
+        "role": "Phó từ chỉ thời điểm sớm",
+        "vn": "Đã sớm, từ lâu",
+        "radicals": "Chữ 早 (bộ nhật 日 + bộ thập 十) + chữ 就"
+      },
+      {
+        "text": "Mời",
+        "hz": "请",
+        "py": "qǐng",
+        "hv": "Thỉnh",
+        "role": "Động từ kiêm ngữ",
+        "vn": "Mời",
+        "radicals": "Bộ ngôn 讠 + chữ thanh 青"
+      },
+      {
+        "text": "Tiểu Cương",
+        "hz": "小刚",
+        "py": "Xiǎogāng",
+        "hv": "Tiểu Cương",
+        "role": "Kiêm ngữ (Tân ngữ 1 & Chủ ngữ 2)",
+        "vn": "Tên riêng",
+        "radicals": "Chữ 小 + chữ 刚"
+      },
+      {
+        "text": "Ăn cơm xem phim",
+        "hz": "吃饭看电影了",
+        "py": "chīfàn kàn diànyǐng le",
+        "hv": "Ngật phạn khán điện ảnh liễu",
+        "role": "Cụm vị ngữ thứ hai",
+        "vn": "Ăn cơm và xem phim",
+        "radicals": "Chữ 吃 + 饭 + 看 + 电影"
+      }
+    ],
+    "targetOrder": [
+      "t-h3-b1-02-wo",
+      "t-h3-b1-02-zaojiu",
+      "t-h3-b1-02-qing",
+      "t-h3-b1-02-xiaogang",
+      "t-h3-b1-02-chifankan"
+    ],
+    "tiles": [
+      { "id": "t-h3-b1-02-wo", "text": "我", "tag": "Chủ ngữ" },
+      { "id": "t-h3-b1-02-zaojiu", "text": "早就", "tag": "Phó từ" },
+      { "id": "t-h3-b1-02-qing", "text": "请", "tag": "Động từ" },
+      { "id": "t-h3-b1-02-xiaogang", "text": "小刚", "tag": "Kiêm ngữ" },
+      { "id": "t-h3-b1-02-chifankan", "text": "吃饭看电影了", "tag": "Vị ngữ" },
+      { "id": "t-h3-b1-02-he", "text": "和", "tag": "Bẫy (Và)" }
+    ],
+    "standardTrans": "我早就请小刚吃饭看电影了",
+    "trapDetect": [
+      "我早就请小刚吃饭和看电影了",
+      "早就我请小刚吃饭看电影了"
+    ],
+    "trapMsg": "Lỗi dịch thô: Hai hành động liên tiếp 'ăn cơm', 'xem phim' đặt cạnh nhau trong câu kiêm ngữ không cần liên từ '和' để nối.",
+    "explanation": "Câu kiêm ngữ biểu thị quan hệ sai khiến/mời mọc: Chủ ngữ + 请/叫/让 + Tân ngữ (đồng thời là chủ ngữ hành động sau) + Hành động."
+  },
+  {
+    "id": "hsk3-b1-03",
+    "type": "sentence_parsing",
+    "title": "Liên từ biểu thị ý bổ sung 而且",
+    "vi": "Tớ đã chuẩn bị xong tất cả đồ đạc rồi, hơn nữa còn mua cả vé xem phim rồi.",
+    "zh": "我都准备好了而且电影票也买好了",
+    "pinyin": "wǒ dōu zhǔnbèi hǎo le érqiě diànyǐng piào yě mǎihǎo le",
+    "grammarPoint": "Liên từ bổ sung cấp tiến 而且 (hơn nữa, vả lại) và bổ ngữ kết quả 好 (xong, hoàn tất)",
+    "tokens": [
+      {
+        "text": "Tôi đều",
+        "hz": "我都",
+        "py": "wǒ dōu",
+        "hv": "Ngã đô",
+        "role": "Chủ ngữ + Phó từ",
+        "vn": "Tôi đều",
+        "radicals": "Chữ 我 + chữ 都"
+      },
+      {
+        "text": "Chuẩn bị xong rồi",
+        "hz": "准备好了",
+        "py": "zhǔnbèi hǎo le",
+        "hv": "Chuẩn bị hảo liễu",
+        "role": "Động từ + Bổ ngữ kết quả",
+        "vn": "Chuẩn bị xong xuôi rồi",
+        "radicals": "Chữ 准 + 备 + 好 + 了"
+      },
+      {
+        "text": "Hơn nữa",
+        "hz": "而且",
+        "py": "érqiě",
+        "hv": "Nhi thả",
+        "role": "Liên từ bổ sung",
+        "vn": "Hơn nữa, vả lại",
+        "radicals": "Chữ 而 (bộ nhi 而) + chữ 且 (bộ nhất 一)"
+      },
+      {
+        "text": "Vé xem phim",
+        "hz": "电影票",
+        "py": "diànyǐng piào",
+        "hv": "Điện ảnh phiếu",
+        "role": "Chủ ngữ vế 2",
+        "vn": "Vé phim",
+        "radicals": "Chữ 电影 + chữ 票 (bộ phiêu 覀 + bộ thị 示)"
+      },
+      {
+        "text": "Cũng mua xong rồi",
+        "hz": "也买好了",
+        "py": "yě mǎihǎo le",
+        "hv": "Dã mãi hảo liễu",
+        "role": "Vị ngữ vế 2",
+        "vn": "Cũng mua xong rồi",
+        "radicals": "Chữ 也 + 买 + 好 + 了"
+      }
+    ],
+    "targetOrder": [
+      "t-h3-b1-03-wodou",
+      "t-h3-b1-03-zhunbeihaole",
+      "t-h3-b1-03-erqie",
+      "t-h3-b1-03-dianyingpiao",
+      "t-h3-b1-03-yemaihaole"
+    ],
+    "tiles": [
+      { "id": "t-h3-b1-03-wodou", "text": "我都", "tag": "Chủ ngữ" },
+      { "id": "t-h3-b1-03-zhunbeihaole", "text": "准备好了", "tag": "Vị ngữ 1" },
+      { "id": "t-h3-b1-03-erqie", "text": "而且", "tag": "Liên từ" },
+      { "id": "t-h3-b1-03-dianyingpiao", "text": "电影票", "tag": "Chủ ngữ 2" },
+      { "id": "t-h3-b1-03-yemaihaole", "text": "也买好了", "tag": "Vị ngữ 2" },
+      { "id": "t-h3-b1-03-dan", "text": "但是", "tag": "Bẫy (Nhưng)" }
+    ],
+    "standardTrans": "我都准备好了而且电影票也买好了",
+    "trapDetect": [
+      "我都准备好了但是电影票也买好了",
+      "我都准备而且电影票也买好了"
+    ],
+    "trapMsg": "Lỗi dịch thô: Quan hệ giữa hai vế là bổ sung tăng tiến, dùng '而且', không dùng liên từ chuyển ngoặt '但是' (nhưng); bổ ngữ kết quả '好' biểu đạt hành động đã hoàn tất mỹ mãn.",
+    "explanation": "Cấu trúc bổ sung: Vế 1, 而且 + Vế 2 (thường có 也 hoặc 还 đi kèm)."
+  }
+]
+

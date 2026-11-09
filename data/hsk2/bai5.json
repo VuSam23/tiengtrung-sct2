@@ -1,0 +1,507 @@
+{
+  "lessonId": "b20",
+  "lessonTitle": "第二十课: 祝你生日快乐",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "过",
+        "py": "guò",
+        "note": "Ngoài nghĩa 'đi qua', động từ 过 còn mang nghĩa 'đón, trải qua' một dịp lễ tết/sự kiện nào đó (过生日: đón sinh nhật, 过年: đón năm mới)."
+      },
+      {
+        "word": "打算",
+        "py": "dǎsuàn",
+        "note": "Vừa là động từ (dự định làm gì), vừa là danh từ (dự định, kế hoạch). Ví dụ: 你有什么打算？ (Cậu có dự định gì?)."
+      },
+      {
+        "word": "辆",
+        "py": "liàng",
+        "note": "Lượng từ chuyên dụng cho các loại xe cộ có bánh (一辆自行车: 1 chiếc xe đạp, 一辆汽车: 1 chiếc ô tô)."
+      }
+    ],
+    "grammarTips": [
+      "Câu vị ngữ danh từ: Chủ ngữ + Danh từ chỉ thời gian/tuổi tác/quê quán... (không cần dùng 是, nhưng nếu dùng 是 để nhấn mạnh vẫn đúng). Ví dụ: 明天(是)九号.",
+      "Mệnh đề thời gian 'Sau khi': [Sự việc] + 以后. Bắt buộc phải đưa sự việc lên trước 以后 (大学毕业以后: Sau khi tốt nghiệp đại học).",
+      "Động từ 2 tân ngữ '送': 送 + Người nhận (Tân ngữ 1) + Vật (Tân ngữ 2). Ví dụ: 送我一个蛋糕 (Tặng tôi một chiếc bánh kem)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b20-01",
+      "type": "sentence_parsing",
+      "title": "Hỏi ngày tháng năm",
+      "vi": "Mùng 10 tháng này là thứ mấy?",
+      "zh": "这个月十号是星期几",
+      "standardTrans": "这个月十号是星期几",
+      "pinyin": "Zhè ge yuè shí hào shì xīngqī jǐ?",
+      "grammarPoint": "Câu vị ngữ danh từ diễn đạt thời gian; Trật tự từ lớn đến bé (Tháng -> Ngày -> Thứ)",
+      "tokens": [
+        {
+          "text": "Số, ngày",
+          "hz": "号",
+          "py": "hào",
+          "hv": "Hiệu",
+          "role": "Lượng từ / Danh từ",
+          "vn": "Mùng, ngày (trong văn nói)",
+          "radicals": "Bộ khẩu 口 + nét ngang gập"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "这个月", "tag": "Thời gian lớn" },
+        { "id": "t3", "text": "是", "tag": "Động từ hệ từ" },
+        { "id": "t2", "text": "十号", "tag": "Thời gian nhỏ" },
+        { "id": "t4", "text": "星期几", "tag": "Đại từ nghi vấn" },
+        { "id": "t5", "text": "十号这个月", "tag": "Bẫy trật tự thời gian" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["这个月", "十号", "星期几"],
+      "wordBankPool": ["这个月", "十号", "是", "星期几", "十号这个月", "几个星期"],
+      "traps": [
+        {
+          "pattern": "十号这个月",
+          "msg": "Lỗi trật tự thời gian: Trong tiếng Trung, quy tắc xếp thời gian phải đi từ LỚN đến BÉ (Năm -> Tháng -> Ngày). Phải nói '这个月十号'."
+        }
+      ],
+      "explanation": "Câu hỏi thời gian tuân thủ nguyên tắc từ đơn vị lớn (tháng này) đến đơn vị nhỏ (ngày mùng 10). Câu này có thể lược bỏ chữ 是 vẫn đúng ngữ pháp."
+    },
+    {
+      "id": "b20-02",
+      "type": "anti_word_by_word",
+      "title": "Hội thoại dự định và hẹn gặp",
+      "vi": "A: Mike, ngày mai chúng tớ dự định đến rạp chiếu phim xem phim, cậu đi không? B: Đương nhiên đi. 7 giờ tối mai tớ đợi các cậu ở cổng trường nhé.",
+      "zh": "麦克明天我们打算去电影院看电影你去吗当然去明天晚上七点我在学校门口等你们",
+      "standardTrans": "麦克明天我们打算去电影院看电影你去吗当然去明天晚上七点我在学校门口等你们",
+      "pinyin": "Màikè, míngtiān wǒmen dǎsuàn qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma? Dāngrán qù. Míngtiān wǎnshang qī diǎn wǒ zài xuéxiào ménkǒu děng nǐmen.",
+      "grammarPoint": "Động từ năng nguyện 打算 (dự định); Trạng ngữ nơi chốn đứng trước hành động (在学校门口等)",
+      "tokens": [
+        {
+          "text": "Dự định",
+          "hz": "打算",
+          "py": "dǎsuàn",
+          "hv": "Đả toán",
+          "role": "Động từ năng nguyện",
+          "vn": "Dự định, tính toán",
+          "radicals": "打 = Bộ thủ 扌 + chữ đinh 丁; 算 = Bộ trúc 竹 + bộ mục 目 + bộ củng 廾"
+        },
+        {
+          "text": "Đương nhiên",
+          "hz": "当然",
+          "py": "dāngrán",
+          "hv": "Đương nhiên",
+          "role": "Phó từ",
+          "vn": "Tất nhiên, dĩ nhiên",
+          "radicals": "当 = Bộ tiểu 小; 然 = Bộ hỏa 灬"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "麦克明天我们打算去电影院看电影", "tag": "Vế dự định" },
+        { "id": "t2", "text": "你去吗", "tag": "Hỏi ý kiến" },
+        { "id": "t3", "text": "当然去", "tag": "Đồng ý" },
+        { "id": "t4", "text": "明天晚上七点", "tag": "Thời gian" },
+        { "id": "t5", "text": "我在学校门口等你们", "tag": "Nơi chốn + Hành động" },
+        { "id": "t6", "text": "等你们在学校门口", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["我们打算去", "电影院看电影", "当然去", "明天晚上七点", "在学校门口等你们"],
+      "wordBankPool": ["麦克明天我们打算去电影院看电影", "你去吗", "当然去", "明天晚上七点", "我在学校门口等你们", "等你们在学校门口", "去打算电影院"],
+      "traps": [
+        {
+          "pattern": "等你们在学校门口",
+          "msg": "Lỗi trạng ngữ nơi chốn: Hành động 'đợi' diễn ra ở đâu thì cụm '在 + Nơi chốn' phải đứng TRƯỚC động từ đó ('在学校门口等'). Không đặt cuối câu như tiếng Việt."
+        },
+        {
+          "pattern": "去打算",
+          "msg": "Lỗi ngữ tự: '打算' là động từ năng nguyện chỉ ý định, phải đứng trước động từ chỉ hành động ('打算去'), không nói ngược."
+        }
+      ],
+      "explanation": "Câu liên động kết hợp dự định '打算' + 去 + Địa điểm + Hành động. Vế B tuân thủ chặt chẽ trật tự: Thời gian (明天晚上七点) + Chủ ngữ (我) + Nơi chốn (在学校门口) + Hành động (等你们)."
+    },
+    {
+      "id": "b20-03",
+      "type": "sentence_parsing",
+      "title": "Hỏi phương thức đón sinh nhật",
+      "vi": "Cậu có biết người Trung Quốc đón sinh nhật thế nào không?",
+      "zh": "你知道中国人怎么过生日吗",
+      "standardTrans": "你知道中国人怎么过生日吗",
+      "pinyin": "Nǐ zhīdào Zhōngguórén zěnme guò shēngrì ma?",
+      "grammarPoint": "Đại từ nghi vấn 怎么 + Động từ (hỏi cách thức); Động từ 过 (đón, trải qua)",
+      "tokens": [
+        {
+          "text": "Trải qua, đón",
+          "hz": "过",
+          "py": "guò",
+          "hv": "Quá",
+          "role": "Động từ",
+          "vn": "Đón (lễ, sinh nhật), đi qua",
+          "radicals": "Bộ sước 辶 + chữ thốn 寸"
+        },
+        {
+          "text": "Làm sao, thế nào",
+          "hz": "怎么",
+          "py": "zěnme",
+          "hv": "Chẩm ma",
+          "role": "Đại từ nghi vấn",
+          "vn": "Như thế nào (hỏi cách thức)",
+          "radicals": "怎 = Chữ sạ 乍 + bộ tâm 心; 么 = Bộ phẩy 丿"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你知道", "tag": "Động từ nhận thức" },
+        { "id": "t2", "text": "中国人", "tag": "Chủ ngữ phụ" },
+        { "id": "t3", "text": "怎么过生日吗", "tag": "Cụm phương thức" },
+        { "id": "t4", "text": "过生日怎么", "tag": "Bẫy đại từ nghi vấn" },
+        { "id": "t5", "text": "怎么生日", "tag": "Bẫy thiếu động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你知道", "中国人", "怎么过生日吗"],
+      "wordBankPool": ["你知道", "中国人", "怎么过生日吗", "过生日怎么", "怎么生日", "怎么过生日"],
+      "traps": [
+        {
+          "pattern": "过生日怎么",
+          "msg": "Lỗi vị trí đại từ nghi vấn: Để hỏi phương thức thực hiện, '怎么' (thế nào) phải đứng TRƯỚC động từ hành động ('怎么过'), tuyệt đối không đặt ở cuối."
+        },
+        {
+          "pattern": "怎么生日",
+          "msg": "Lỗi thiếu động từ: 'Sinh nhật' (生日) chỉ là danh từ, bắt buộc phải có động từ 'đón' (过) đi kèm tạo thành cụm '过生日'."
+        }
+      ],
+      "explanation": "Câu nghi vấn phức mang tân ngữ là một mệnh đề (中国人怎么过生日). Cấu trúc hỏi cách thức: 怎么 + Động từ (怎么过: đón như thế nào)."
+    },
+    {
+      "id": "b20-04",
+      "type": "anti_word_by_word",
+      "title": "Mục đích tặng quà bằng câu liên động",
+      "vi": "Ngày mai là sinh nhật của bạn tôi, tôi dự định làm một chiếc bánh kem tặng cho cô ấy.",
+      "zh": "明天是我朋友的生日我打算做一个蛋糕送给她",
+      "standardTrans": "明天是我朋友的生日我打算做一个蛋糕送给她",
+      "pinyin": "Míngtiān shì wǒ péngyou de shēngrì, wǒ dǎsuàn zuò yí ge dàngāo sòng gěi tā.",
+      "grammarPoint": "Câu liên động mục đích: 做 + Vật + 送给她; Động từ 送 (tặng)",
+      "tokens": [
+        {
+          "text": "Bánh ngọt, bánh kem",
+          "hz": "蛋糕",
+          "py": "dàngāo",
+          "hv": "Đản cao",
+          "role": "Tân ngữ",
+          "vn": "Bánh kem, bánh sinh nhật",
+          "radicals": "蛋 = Bộ thất 疋 + bộ trùng 虫; 糕 = Bộ mễ 米 + chữ cao 羔"
+        },
+        {
+          "text": "Tặng",
+          "hz": "送",
+          "py": "sòng",
+          "hv": "Tống",
+          "role": "Động từ",
+          "vn": "Tặng, biếu, đưa, tiễn",
+          "radicals": "Bộ sước 辶 + chữ quan 关"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "明天是我朋友的生日", "tag": "Thông tin" },
+        { "id": "t2", "text": "我打算", "tag": "Dự định" },
+        { "id": "t3", "text": "做一个蛋糕送给她", "tag": "Hành động liên tiếp" },
+        { "id": "t4", "text": "送给她一个蛋糕", "tag": "Bẫy ngữ cảnh" },
+        { "id": "t5", "text": "为她送", "tag": "Bẫy giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我朋友的生日", "我打算", "做", "一个蛋糕送给她"],
+      "wordBankPool": ["明天是我朋友的生日", "我打算", "做一个蛋糕送给她", "送给她一个蛋糕", "为她送", "做送给她一个蛋糕"],
+      "traps": [
+        {
+          "pattern": "做送给",
+          "msg": "Lỗi liên động: Phải 'làm cái bánh' (做一个蛋糕) xong rồi mới lấy cái bánh đó đi 'tặng' (送给她), các động từ diễn ra theo trình tự thời gian."
+        },
+        {
+          "pattern": "为她送",
+          "msg": "Lỗi dùng từ: 'Tặng cho cô ấy' thường dùng luôn cấu trúc '送给她', không cần dùng thêm giới từ '为'."
+        }
+      ],
+      "explanation": "Câu liên động biểu thị hai hành động liên tiếp nhau: Hành động 1 (做一个蛋糕) xảy ra trước, tạo tiền đề cho Hành động 2 (送给她). Không ghép chung các động từ lại với nhau."
+    },
+    {
+      "id": "b20-05",
+      "type": "sentence_parsing",
+      "title": "Kể chuyện, lý do tặng quà và rủ rê mua sắm",
+      "vi": "A: Thứ bảy em trai tớ đi Trung Quốc du học. Nghe nói mùa đông ở nơi đó khá lạnh nên tớ dự định tặng em ấy một chiếc áo len. Chiều nay cậu đi cùng tớ đến cửa hàng mua áo len nhé. B: Được. Chiều nay chúng ta đi xe đạp đến cửa hàng đó nhé.",
+      "zh": "星期六我弟弟去中国留学听说那里的冬天比较冷所以我打算送他一件毛衣今天下午你跟我一起去商店买毛衣吧行今天下午我们骑自行车去那家商店吧",
+      "standardTrans": "星期六我弟弟去中国留学听说那里的冬天比较冷所以我打算送他一件毛衣今天下午你跟我一起去商店买毛衣吧行今天下午我们骑自行车去那家商店吧",
+      "pinyin": "Xīngqīliù wǒ dìdi qù Zhōngguó liúxué. Tīngshuō nàlǐ de dōngtiān bǐjiào lěng, suǒyǐ wǒ dǎsuàn sòng tā yí jiàn máoyī. Jīntiān xiàwǔ nǐ gēn wǒ yìqǐ qù shāngdiàn mǎi máoyī ba. Xíng. Jīntiān xiàwǔ wǒmen qí zìxíngchē qù nà jiā shāngdiàn ba.",
+      "grammarPoint": "Phó từ so sánh: 比较 + Tính từ; Động từ 2 tân ngữ: 送 + Người + Vật; Lượng từ của cửa hàng: 家",
+      "tokens": [
+        {
+          "text": "Khá, tương đối",
+          "hz": "比较",
+          "py": "bǐjiào",
+          "hv": "Tỷ giảo",
+          "role": "Phó từ chỉ mức độ",
+          "vn": "Khá, tương đối",
+          "radicals": "比 = Bộ tỷ 比; 较 = Bộ xa 车 + chữ giao 交"
+        },
+        {
+          "text": "Du học",
+          "hz": "留学",
+          "py": "liúxué",
+          "hv": "Lưu học",
+          "role": "Động từ",
+          "vn": "Đi du học",
+          "radicals": "留 = Bộ điền 田 + ...; 学 = Bộ miên biến thể 冖 + bộ tử 子"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "星期六我弟弟去中国留学", "tag": "Vế A1" },
+        { "id": "t2", "text": "听说那里的冬天比较冷", "tag": "Vế A2" },
+        { "id": "t3", "text": "所以我打算送他一件毛衣", "tag": "Vế A3" },
+        { "id": "t4", "text": "今天下午你跟我一起去商店买毛衣吧", "tag": "Vế A4" },
+        { "id": "t5", "text": "行今天下午我们骑自行车去那家商店吧", "tag": "Vế B" },
+        { "id": "t6", "text": "冬天的那里", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["去中国留学", "那里的冬天", "比较冷", "送他一件毛衣", "跟我一起", "去那家商店吧"],
+      "wordBankPool": ["星期六我弟弟去中国留学", "听说那里的冬天比较冷", "所以我打算送他一件毛衣", "今天下午你跟我一起去商店买毛衣吧", "行今天下午我们骑自行车去那家商店吧", "冬天的那里", "比较冷那里的冬天"],
+      "traps": [
+        {
+          "pattern": "冬天的那里",
+          "msg": "Lỗi định ngữ: 'Mùa đông ở nơi đó' thì 'nơi đó' (那里) là thành phần sở hữu/phân loại, phải đứng trước 'mùa đông' (冬天) -> '那里的冬天'."
+        },
+        {
+          "pattern": "比较冷那里的冬天",
+          "msg": "Lỗi cấu trúc câu: 'Mùa đông ở đó khá lạnh' thì chủ ngữ là mùa đông phải đứng trước vị ngữ tính từ '比较冷'."
+        }
+      ],
+      "explanation": "Đoạn hội thoại tổng hợp nhiều điểm ngữ pháp: '比较 + Tính từ' (khá lạnh). '送他一件毛衣' dùng động từ 2 tân ngữ (Tặng ai cái gì). Khi nhắc lại 'cửa hàng đó', dùng đại từ chỉ thị '那' + lượng từ '家' (那家商店)."
+    },
+    {
+      "id": "b20-06",
+      "type": "anti_word_by_word",
+      "title": "Hỏi và đáp về dự định tương lai",
+      "vi": "A: Cậu dự định sau khi tốt nghiệp đại học làm công việc gì? B: Tớ dự định sau khi tốt nghiệp làm phiên dịch. Còn cậu?",
+      "zh": "你打算大学毕业以后做什么工作我打算大学毕业以后当翻译你呢",
+      "standardTrans": "你打算大学毕业以后做什么工作我打算大学毕业以后当翻译你呢",
+      "pinyin": "Nǐ dǎsuàn dàxué bìyè yǐhòu zuò shénme gōngzuò? Wǒ dǎsuàn dàxué bìyè yǐhòu dāng fānyì. Nǐ ne?",
+      "grammarPoint": "Cấu trúc thời gian tương lai: [Sự kiện] + 以后; Nghề nghiệp: 当/做 + Nghề",
+      "tokens": [
+        {
+          "text": "Tốt nghiệp",
+          "hz": "毕业",
+          "py": "bìyè",
+          "hv": "Tất nghiệp",
+          "role": "Động từ",
+          "vn": "Tốt nghiệp",
+          "radicals": "毕 = Bộ tỷ 比 + bộ thập 十; 业 = Bộ nhất 一 + nét sổ, phẩy"
+        },
+        {
+          "text": "Sau này, sau khi",
+          "hz": "以后",
+          "py": "yǐhòu",
+          "hv": "Dĩ hậu",
+          "role": "Danh từ thời gian",
+          "vn": "Sau này, sau khi (sự kiện)",
+          "radicals": "以 = Bộ nhân 亻; 后 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你打算", "tag": "Chủ ngữ + Dự định (A)" },
+        { "id": "t2", "text": "大学毕业以后", "tag": "Sự kiện thời gian" },
+        { "id": "t3", "text": "做什么工作", "tag": "Hỏi nghề" },
+        { "id": "t4", "text": "我打算大学毕业以后当翻译", "tag": "Câu trả lời của B" },
+        { "id": "t5", "text": "你呢", "tag": "Hỏi ngược" },
+        { "id": "t6", "text": "以后大学毕业", "tag": "Bẫy thời gian" },
+        { "id": "t7", "text": "毕业大学", "tag": "Bẫy từ vựng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["你打算", "大学毕业以后", "做什么工作", "当翻译", "你呢"],
+      "wordBankPool": ["你打算", "大学毕业以后", "做什么工作", "我打算大学毕业以后当翻译", "你呢", "以后大学毕业", "毕业大学"],
+      "traps": [
+        {
+          "pattern": "以后大学毕业",
+          "msg": "Lỗi cấu trúc thời gian: Khác với tiếng Việt, cụm từ chỉ thời gian '以后' (sau khi) bắt buộc phải đứng SAU sự kiện ('大学毕业以后'). Tuyệt đối không dịch xuôi thành '以后大学毕业'."
+        },
+        {
+          "pattern": "毕业大学",
+          "msg": "Lỗi ghép từ: Cụm từ cố định trong tiếng Trung là '大学毕业' (tốt nghiệp đại học), không đảo ngược."
+        }
+      ],
+      "explanation": "Cấu trúc kinh điển [Sự việc + 以后] dùng để xác định mốc thời gian sau khi sự việc đó hoàn thành. '当' (làm/đảm nhiệm) đứng trước danh từ chỉ nghề nghiệp."
+    },
+    {
+      "id": "b20-07",
+      "type": "sentence_parsing",
+      "title": "Liệt kê quà sinh nhật với lượng từ",
+      "vi": "Hôm nay là sinh nhật của tôi, bố mẹ tôi tặng tôi một chiếc bánh kem và một chiếc xe mới.",
+      "zh": "今天是我的生日我爸爸妈妈送我一个蛋糕和一辆新车",
+      "standardTrans": "今天是我的生日我爸爸妈妈送我一个蛋糕和一辆新车",
+      "pinyin": "Jīntiān shì wǒ de shēngrì, wǒ bàba māma sòng wǒ yí ge dàngāo hé yí liàng xīn chē.",
+      "grammarPoint": "Động từ 2 tân ngữ: 送 + Người + Vật; Lượng từ cho xe cộ: 辆",
+      "tokens": [
+        {
+          "text": "Chiếc, cỗ (xe)",
+          "hz": "辆",
+          "py": "liàng",
+          "hv": "Lượng",
+          "role": "Lượng từ",
+          "vn": "Chiếc (lượng từ của xe cộ)",
+          "radicals": "Bộ xa 车 + chữ lưỡng 两"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天是我的生日", "tag": "Bối cảnh" },
+        { "id": "t2", "text": "我爸爸妈妈", "tag": "Chủ ngữ hành động" },
+        { "id": "t3", "text": "送我一个蛋糕", "tag": "Tân ngữ 1" },
+        { "id": "t4", "text": "和一辆新车", "tag": "Tân ngữ 2" },
+        { "id": "t5", "text": "一个新车", "tag": "Bẫy lượng từ" },
+        { "id": "t6", "text": "送一个蛋糕我", "tag": "Bẫy 2 tân ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["今天是我的生日", "送我", "一个蛋糕", "和一辆新车"],
+      "wordBankPool": ["今天是我的生日", "我爸爸妈妈", "送我一个蛋糕", "和一辆新车", "一个新车", "送一个蛋糕给我爸爸妈妈", "送一个蛋糕我"],
+      "traps": [
+        {
+          "pattern": "一个新车",
+          "msg": "Lỗi lượng từ: Các loại xe cộ có bánh (ô tô, xe máy, xe đạp) bắt buộc dùng lượng từ '辆', không dùng lượng từ chung '个'."
+        },
+        {
+          "pattern": "送一个蛋糕我",
+          "msg": "Lỗi trật tự 2 tân ngữ: Động từ '送' truyền hành động trực tiếp cho NGƯỜI trước rồi mới đến VẬT ('送我一个蛋糕')."
+        }
+      ],
+      "explanation": "Động từ '送' có thể nhận trực tiếp 2 tân ngữ mà không cần thêm giới từ '给'. Sự kết hợp chuẩn xác của lượng từ: 一个蛋糕 (1 cái bánh), 一辆新车 (1 chiếc xe mới)."
+    },
+    {
+      "id": "b20-08",
+      "type": "anti_word_by_word",
+      "title": "Dự định tổ chức sự kiện tại địa điểm",
+      "vi": "Tôi dự định sẽ tổ chức một bữa tiệc sinh nhật ở phòng tôi.",
+      "zh": "我打算在我的房间举行一个生日晚会",
+      "standardTrans": "我打算在我的房间举行一个生日晚会",
+      "pinyin": "Wǒ dǎsuàn zài wǒ de fángjiān jǔxíng yí ge shēngrì wǎnhuì.",
+      "grammarPoint": "Trạng ngữ nơi chốn đứng trước động từ: 在 + Nơi chốn + Động từ (举行); Cụm danh từ: 生日晚会",
+      "tokens": [
+        {
+          "text": "Tổ chức",
+          "hz": "举行",
+          "py": "jǔxíng",
+          "hv": "Cử hành",
+          "role": "Động từ",
+          "vn": "Tổ chức, cử hành (sự kiện)",
+          "radicals": "举 = Bộ thủ 扌 (hoặc chấm) + bát 八; 行 = Bộ xích 彳 + xúc 亍"
+        },
+        {
+          "text": "Tiệc tối",
+          "hz": "晚会",
+          "py": "wǎnhuì",
+          "hv": "Vãn hội",
+          "role": "Danh từ",
+          "vn": "Bữa tiệc, dạ tiệc",
+          "radicals": "晚 = Bộ nhật 日 + chữ miễn 免; 会 = Bộ nhân 人 + chữ vân 云"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我打算", "tag": "Dự định" },
+        { "id": "t2", "text": "在我的房间", "tag": "Nơi chốn" },
+        { "id": "t3", "text": "举行一个生日晚会", "tag": "Hành động" },
+        { "id": "t4", "text": "举行在我的房间", "tag": "Bẫy nơi chốn" },
+        { "id": "t5", "text": "晚会生日", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我打算", "在我的房间", "举行", "生日晚会"],
+      "wordBankPool": ["我打算", "在我的房间", "举行一个生日晚会", "举行在我的房间", "晚会生日", "一个在房间"],
+      "traps": [
+        {
+          "pattern": "举行在我的房间",
+          "msg": "Lỗi vị trí trạng ngữ nơi chốn: Trong tiếng Trung, việc tổ chức diễn ra ở đâu thì cụm '在 + Nơi chốn' phải đặt TRƯỚC động từ ('在我的房间举行'). Tuyệt đối không dịch xuôi theo tiếng Việt."
+        }
+      ],
+      "explanation": "Quy tắc cốt lõi: 'Ở đâu làm gì' (在 + Nơi chốn + Động từ). Bữa tiệc mang chủ đề sinh nhật thì 'sinh nhật' là định ngữ phân loại phải đứng trước 'tiệc' (生日晚会)."
+    },
+    {
+      "id": "b20-09",
+      "type": "sentence_parsing",
+      "title": "Hỏi và nói về tuổi tác, tốt nghiệp",
+      "vi": "Vương Lan năm nay 21 tuổi. Sang năm bạn ấy sẽ tốt nghiệp đại học.",
+      "zh": "王兰今年二十一岁明年她大学毕业",
+      "standardTrans": "王兰今年二十一岁明年她大学毕业",
+      "pinyin": "Wáng Lán jīnnián èrshíyī suì. Míngnián tā dàxué bìyè.",
+      "grammarPoint": "Câu vị ngữ danh từ biểu đạt tuổi tác: Chủ ngữ + (Thời gian) + Tuổi + 岁; Động từ ly hợp 大学毕业",
+      "tokens": [
+        {
+          "text": "Tuổi",
+          "hz": "岁",
+          "py": "suì",
+          "hv": "Tuế",
+          "role": "Lượng từ / Danh từ",
+          "vn": "Tuổi",
+          "radicals": "Bộ sơn 山 + chữ tịch 夕"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "王兰今年", "tag": "Chủ ngữ + Thời gian" },
+        { "id": "t2", "text": "二十一岁", "tag": "Vị ngữ tuổi tác" },
+        { "id": "t3", "text": "明年她", "tag": "Thời gian + Chủ ngữ" },
+        { "id": "t4", "text": "大学毕业", "tag": "Hành động" },
+        { "id": "t5", "text": "二十一岁今年", "tag": "Bẫy thời gian" },
+        { "id": "t6", "text": "毕业大学", "tag": "Bẫy từ vựng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["今年二十一岁", "明年", "她大学毕业"],
+      "wordBankPool": ["王兰今年", "二十一岁", "明年她", "大学毕业", "二十一岁今年", "毕业大学", "是二十一岁"],
+      "traps": [
+        {
+          "pattern": "二十一岁今年",
+          "msg": "Lỗi trật tự thời gian: Trạng ngữ thời gian (今年, 明年) phải đứng trước hoặc ngay sau chủ ngữ, không đặt ở cuối câu sau tuổi tác."
+        },
+        {
+          "pattern": "毕业大学",
+          "msg": "Lỗi động từ ly hợp: '毕业' mang tính chất bất cập vật, người Trung Quốc nói '大学毕业' (tốt nghiệp đại học), không đảo ngược '毕业大学'."
+        }
+      ],
+      "explanation": "Câu nói về tuổi tác không cần dùng động từ '是' (王兰今年二十一岁). Tương tự 'lên mạng' (上网), 'tốt nghiệp đại học' (大学毕业) là cụm từ có trật tự cố định."
+    },
+    {
+      "id": "b20-10",
+      "type": "anti_word_by_word",
+      "title": "Câu chúc mừng và trao quà",
+      "vi": "Chúc bạn sinh nhật vui vẻ. Đây là quà tặng bạn.",
+      "zh": "祝你生日快乐这是送你的礼物",
+      "standardTrans": "祝你生日快乐这是送你的礼物",
+      "pinyin": "Zhù nǐ shēngrì kuàilè. Zhè shì sòng nǐ de lǐwù.",
+      "grammarPoint": "Cấu trúc lời chúc: 祝 + Người + Lời chúc; Định ngữ mang động từ: 送你的 + 礼物",
+      "tokens": [
+        {
+          "text": "Chúc",
+          "hz": "祝",
+          "py": "zhù",
+          "hv": "Chúc",
+          "role": "Động từ",
+          "vn": "Chúc, chúc mừng",
+          "radicals": "Bộ thị 礻 + chữ huynh 兄"
+        },
+        {
+          "text": "Quà tặng",
+          "hz": "礼物",
+          "py": "lǐwù",
+          "hv": "Lễ vật",
+          "role": "Danh từ",
+          "vn": "Quà tặng, lễ vật",
+          "radicals": "礼 = Bộ thị 礻 + chữ ất 乙; 物 = Bộ ngưu 牛 + chữ vật 勿"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "祝你", "tag": "Động từ chúc" },
+        { "id": "t2", "text": "生日快乐", "tag": "Nội dung chúc" },
+        { "id": "t3", "text": "这是", "tag": "Chỉ định" },
+        { "id": "t4", "text": "送你的礼物", "tag": "Quà tặng" },
+        { "id": "t5", "text": "礼物送你", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["祝你生日快乐", "这是", "送你的礼物"],
+      "wordBankPool": ["祝你", "生日快乐", "这是", "送你的礼物", "礼物送你", "这是礼物送你"],
+      "traps": [
+        {
+          "pattern": "礼物送你",
+          "msg": "Lỗi định ngữ: Cụm từ 'quà tặng cậu' thì 'tặng cậu' là mệnh đề miêu tả cho món quà. Bắt buộc đặt trước chữ '的' -> '送你的礼物'."
+        }
+      ],
+      "explanation": "Câu chúc kinh điển: 祝 + Đối tượng + Niềm vui (祝你生日快乐, 祝你新年快乐). Mệnh đề '送你' (tặng bạn) được đóng gói bằng trợ từ '的' để bổ nghĩa cho '礼物'."
+    }
+  ]
+}

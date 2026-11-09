@@ -1,0 +1,843 @@
+{
+  "lessonId": "b02",
+  "lessonTitle": "第二课: 汉语不太难 - Tiếng Hán không khó lắm",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "吗",
+        "py": "ma",
+        "note": "Trợ từ nghi vấn đứng ở cuối câu trần thuật để biến câu thành câu hỏi có... không (你忙吗: Cậu bận không?)."
+      },
+      {
+        "word": "很",
+        "py": "hěn",
+        "note": "Phó từ chỉ mức độ 'rất', bắt buộc đứng trước vị ngữ tính từ trong câu khẳng định đơn giản để cân bằng ngữ pháp."
+      },
+      {
+        "word": "不太",
+        "py": "bù tài",
+        "note": "Phủ định giảm nhẹ 'không... lắm' (不太难: không khó lắm, 不太好: không khỏe lắm). Tuyệt đối không nói '不很' hay '不难太'."
+      },
+      {
+        "word": "Xưng hô gia đình",
+        "py": "chēnghu",
+        "note": "Các từ lặp âm tiết chỉ người thân ruột thịt (爸爸, 妈妈, 哥哥, 弟弟, 姐姐, 奶奶, 爷爷) có âm tiết thứ hai đọc thanh nhẹ. Khi đi sau đại từ xưng hô có thể lược bỏ '的'."
+      }
+    ],
+    "grammarTips": [
+      "Câu hỏi nghi vấn với 吗: Chủ ngữ + Vị ngữ (Tính từ/Động từ) + 吗? (Giữ nguyên trật tự câu khẳng định, không thêm 'có/là' như tiếng Việt).",
+      "Câu vị ngữ tính từ khẳng định: Chủ ngữ + 很 + Tính từ (Không chèn động từ '是' vào giữa chủ ngữ và tính từ đơn).",
+      "Cấu trúc phủ định giảm nhẹ: Chủ ngữ + 不太 + Tính từ (不太 đứng liền trước tính từ)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b2-01",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi nghi vấn trạng thái với trợ từ 吗",
+      "vi": "Cậu bận không?",
+      "zh": "你忙吗",
+      "standardTrans": "你忙吗",
+      "pinyin": "Nǐ máng ma?",
+      "grammarPoint": "Câu hỏi nghi vấn có... không: Chủ ngữ + Tính từ + 吗",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ (Đại từ)",
+          "vn": "Cậu, bạn, anh, chị",
+          "radicals": "亻 = Bộ nhân đứng + 尔 = chữ nhĩ"
+        },
+        {
+          "text": "Bận",
+          "hz": "忙",
+          "py": "máng",
+          "hv": "Mang",
+          "role": "Vị ngữ (Tính từ)",
+          "vn": "Bận, bận rộn",
+          "radicals": "忄 = Bộ tâm đứng + 亡 = bộ vong"
+        },
+        {
+          "text": "Không",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Không, chưa",
+          "radicals": "口 = Bộ khẩu + 马 = bộ mã"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "忙", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "吗", "tag": "Trợ từ nghi vấn" },
+        { "id": "t4", "text": "有", "tag": "Bẫy dịch bồi" },
+        { "id": "t5", "text": "是不", "tag": "Bẫy ngữ tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你忙吗"],
+      "wordBankPool": ["你", "忙", "吗", "有", "是不", "你有忙吗", "你忙不"],
+      "traps": [
+        {
+          "pattern": "你有忙",
+          "msg": "Lỗi dịch bồi: Người Việt quen hỏi 'có bận không' nên hay dịch thuận thành '你有忙吗'. Tiếng Trung hỏi nghi vấn tính từ dùng trực tiếp 'Tính từ + 吗', không thêm '有'."
+        },
+        {
+          "pattern": "你忙不",
+          "msg": "Lỗi trợ từ nghi vấn: Cuối câu hỏi nghi vấn chuẩn phải dùng trợ từ '吗', không kết câu bằng '不' cộc lốc."
+        }
+      ],
+      "explanation": "Trong câu hỏi với trợ từ nghi vấn 吗, trật tự từ giữ nguyên hệt như câu trần thuật và chỉ việc đặt 吗 ở cuối câu."
+    },
+    {
+      "id": "b2-02",
+      "type": "anti_word_by_word",
+      "title": "Hỏi thăm sức khỏe người thân ruột thịt",
+      "vi": "Anh trai cậu khỏe không?",
+      "zh": "你哥哥好吗",
+      "standardTrans": "你哥哥好吗",
+      "pinyin": "Nǐ gēge hǎo ma?",
+      "grammarPoint": "Hỏi thăm sức khỏe người thân: Đại từ nhân xưng + Danh từ thân tộc + 好 + 吗",
+      "tokens": [
+        {
+          "text": "Anh trai bạn",
+          "hz": "你哥哥",
+          "py": "nǐ gēge",
+          "hv": "Nhĩ ca ca",
+          "role": "Chủ ngữ",
+          "vn": "Anh trai của bạn",
+          "radicals": "你 = Đại từ; 哥 = Hai chữ khả 可 ghép lại"
+        },
+        {
+          "text": "Khỏe không",
+          "hz": "好吗",
+          "py": "hǎo ma",
+          "hv": "Hảo ma",
+          "role": "Vị ngữ hỏi",
+          "vn": "Có khỏe không",
+          "radicals": "好 = Bộ nữ 女 + bộ tử 子; 吗 = Bộ khẩu 口 + bộ mã 马"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "好吗", "tag": "Vị ngữ hỏi" },
+        { "id": "t1", "text": "你哥哥", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "好不好吗", "tag": "Bẫy lặp dạng hỏi" },
+        { "id": "t4", "text": "是有好", "tag": "Bẫy dịch thô" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你哥哥", "好吗"],
+      "wordBankPool": ["你哥哥", "好吗", "好不好吗", "是有好", "你哥哥健康吗"],
+      "traps": [
+        {
+          "pattern": "好不好吗",
+          "msg": "Lỗi lẫn lộn dạng hỏi: Đã dùng dạng hỏi chính phản '好不好' thì tuyệt đối KHÔNG thêm trợ từ '吗' vào cuối câu."
+        },
+        {
+          "pattern": "是有好",
+          "msg": "Lỗi dịch bồi: Không ghép chữ '是/有' trước tính từ '好' để dịch từ 'có khỏe không' của tiếng Việt."
+        }
+      ],
+      "explanation": "Mối quan hệ gia đình ruột thịt thân thiết như 哥哥 có thể lược bỏ trợ từ sở hữu 的 sau đại từ 你."
+    },
+    {
+      "id": "b2-03",
+      "type": "sentence_parsing",
+      "title": "Câu vị ngữ tính từ khẳng định với phó từ 很",
+      "vi": "Tiếng Hán rất khó.",
+      "zh": "汉语很难",
+      "standardTrans": "汉语很难",
+      "pinyin": "Hànyǔ hěn nán.",
+      "grammarPoint": "Câu vị ngữ tính từ: Chủ ngữ + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Tiếng Hán",
+          "hz": "汉语",
+          "py": "hànyǔ",
+          "hv": "Hán ngữ",
+          "role": "Chủ ngữ",
+          "vn": "Tiếng Hán, tiếng Trung",
+          "radicals": "汉 = Bộ chấm thủy 氵 + bộ hựu 又; 语 = Bộ ngôn 讠 + chữ ngũ 五 + bộ khẩu 口"
+        },
+        {
+          "text": "Rất",
+          "hz": "很",
+          "py": "hěn",
+          "hv": "Hẩn",
+          "role": "Phó từ mức độ",
+          "vn": "Rất",
+          "radicals": "彳 = Bộ xích + 艮 = bộ cấn"
+        },
+        {
+          "text": "Khó",
+          "hz": "难",
+          "py": "nán",
+          "hv": "Nan",
+          "role": "Vị ngữ tính từ",
+          "vn": "Khó",
+          "radicals": "又 = Bộ hựu + 隹 = bộ truy"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "很", "tag": "Phó từ mức độ" },
+        { "id": "t1", "text": "汉语", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "难", "tag": "Tính từ" },
+        { "id": "t4", "text": "是", "tag": "Bẫy hệ từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["汉语", "很难"],
+      "wordBankPool": ["汉语", "很", "难", "是", "汉语是很难", "汉语难很"],
+      "traps": [
+        {
+          "pattern": "是很难",
+          "msg": "Lỗi chèn động từ 是: Trong tiếng Trung, vị ngữ tính từ đứng trực tiếp sau phó từ mức độ (很难), không chèn '是' vào giữa."
+        },
+        {
+          "pattern": "难很",
+          "msg": "Lỗi vị trí phó từ: Phó từ chỉ mức độ '很' bắt buộc phải đứng TRƯỚC tính từ ('很难'), không đặt sau."
+        }
+      ],
+      "explanation": "Phó từ 很 đứng trước tính từ vừa biểu thị mức độ vừa có chức năng làm cầu nối ngữ pháp để câu vị ngữ tính từ hoàn chỉnh."
+    },
+    {
+      "id": "b2-04",
+      "type": "anti_word_by_word",
+      "title": "Hỏi thăm sức khỏe em trai",
+      "vi": "Em trai cậu khỏe không?",
+      "zh": "你弟弟好吗",
+      "standardTrans": "你弟弟好吗",
+      "pinyin": "Nǐ dìdi hǎo ma?",
+      "grammarPoint": "Công thức hỏi thăm người thân: Chủ ngữ + 好 + 吗",
+      "tokens": [
+        {
+          "text": "Em trai cậu",
+          "hz": "你弟弟",
+          "py": "nǐ dìdi",
+          "hv": "Nhĩ đệ đệ",
+          "role": "Chủ ngữ",
+          "vn": "Em trai của bạn",
+          "radicals": "你 = Đại từ; 弟 = Bộ cung 弓 kết hợp các nét phẩy, sổ"
+        },
+        {
+          "text": "Khỏe không",
+          "hz": "好吗",
+          "py": "hǎo ma",
+          "hv": "Hảo ma",
+          "role": "Vị ngữ hỏi",
+          "vn": "Khỏe không",
+          "radicals": "好 = Tính từ; 吗 = Trợ từ nghi vấn"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "好吗", "tag": "Vị ngữ hỏi" },
+        { "id": "t1", "text": "你弟弟", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "好不", "tag": "Bẫy cụt câu" },
+        { "id": "t4", "text": "是不好", "tag": "Bẫy dịch thô" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你弟弟", "好吗"],
+      "wordBankPool": ["你弟弟", "好吗", "好不", "是不好", "你的弟弟好不"],
+      "traps": [
+        {
+          "pattern": "好不",
+          "msg": "Lỗi cộc lốc: Tránh dịch 'không' thành '好不' cụt lủn ở cuối câu. Câu nghi vấn chuẩn mực luôn kết thúc bằng trợ từ '吗'."
+        },
+        {
+          "pattern": "是不好",
+          "msg": "Lỗi dịch bồi: Không dùng cấu trúc sai 'Chủ ngữ + 是不好' để hỏi thăm sức khỏe."
+        }
+      ],
+      "explanation": "Âm tiết thứ hai của danh từ xưng hô gia đình lặp lại như 弟弟 phát âm thanh nhẹ (dìdi)."
+    },
+    {
+      "id": "b2-05",
+      "type": "sentence_parsing",
+      "title": "Hỏi xác nhận trạng thái bận rộn của anh trai",
+      "vi": "Anh trai cậu bận không?",
+      "zh": "你哥哥忙吗",
+      "standardTrans": "你哥哥忙吗",
+      "pinyin": "Nǐ gēge máng ma?",
+      "grammarPoint": "Câu hỏi trạng thái: Chủ ngữ + 忙 + 吗",
+      "tokens": [
+        {
+          "text": "Anh trai cậu",
+          "hz": "你哥哥",
+          "py": "nǐ gēge",
+          "hv": "Nhĩ ca ca",
+          "role": "Chủ ngữ",
+          "vn": "Anh trai của bạn",
+          "radicals": "你 = Bạn; 哥哥 = Anh trai"
+        },
+        {
+          "text": "Bận không",
+          "hz": "忙吗",
+          "py": "máng ma",
+          "hv": "Mang ma",
+          "role": "Vị ngữ hỏi",
+          "vn": "Bận không",
+          "radicals": "忙 = Bận; 吗 = Trợ từ nghi vấn"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "忙吗", "tag": "Vị ngữ hỏi" },
+        { "id": "t1", "text": "你哥哥", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "有忙吗", "tag": "Bẫy dịch bồi" },
+        { "id": "t4", "text": "哥哥你", "tag": "Bẫy xưng hô đảo" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你哥哥", "忙吗"],
+      "wordBankPool": ["你哥哥", "忙吗", "有忙吗", "哥哥你", "你哥哥忙不"],
+      "traps": [
+        {
+          "pattern": "有忙",
+          "msg": "Lỗi dịch thô: Đừng thêm trợ động từ '有' trước tính từ '忙'. Tiếng Trung nói '你哥哥忙吗', không nói '你有忙吗'."
+        },
+        {
+          "pattern": "哥哥你",
+          "msg": "Lỗi đảo ngữ: 'Anh trai cậu' là cụm sở hữu (cậu là định ngữ), không đảo thành '哥哥你' theo thói quen gọi tên của người Việt."
+        }
+      ],
+      "explanation": "Câu nghi vấn đơn giản dùng trợ từ 吗 ở cuối câu để thăm dò tình trạng của đối tượng được đề cập."
+    },
+    {
+      "id": "b2-06",
+      "type": "anti_word_by_word",
+      "title": "Đối lập mức độ sức khỏe giữa bố và mẹ",
+      "vi": "Bố không khỏe lắm. Mẹ rất khỏe.",
+      "zh": "爸爸不太好妈妈很好",
+      "standardTrans": "爸爸不太好妈妈很好",
+      "pinyin": "Bàba bú tài hǎo, māma hěn hǎo.",
+      "grammarPoint": "Đối lập hai trạng thái: S1 + 不太 + Tính từ, S2 + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Bố",
+          "hz": "爸爸",
+          "py": "bàba",
+          "hv": "Bá bá",
+          "role": "Chủ ngữ 1",
+          "vn": "Bố, ba, cha",
+          "radicals": "父 = Bộ phụ + 巴 = chữ ba"
+        },
+        {
+          "text": "Không khỏe lắm",
+          "hz": "不太好",
+          "py": "bú tài hǎo",
+          "hv": "Bất thái hảo",
+          "role": "Vị ngữ 1",
+          "vn": "Không khỏe lắm, không tốt lắm",
+          "radicals": "不 = Phủ định + 太 = quá, lắm + 好 = tốt, khỏe"
+        },
+        {
+          "text": "Mẹ",
+          "hz": "妈妈",
+          "py": "māma",
+          "hv": "Ma ma",
+          "role": "Chủ ngữ 2",
+          "vn": "Mẹ, má",
+          "radicals": "女 = Bộ nữ + 马 = bộ mã"
+        },
+        {
+          "text": "Rất khỏe",
+          "hz": "很好",
+          "py": "hěn hǎo",
+          "hv": "Hẩn hảo",
+          "role": "Vị ngữ 2",
+          "vn": "Rất khỏe, rất tốt",
+          "radicals": "很 = Rất + 好 = tốt, khỏe"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "不太好", "tag": "Vị ngữ 1" },
+        { "id": "t1", "text": "爸爸", "tag": "Chủ ngữ 1" },
+        { "id": "t4", "text": "很好", "tag": "Vị ngữ 2" },
+        { "id": "t3", "text": "妈妈", "tag": "Chủ ngữ 2" },
+        { "id": "t5", "text": "不很好", "tag": "Bẫy dịch bồi" },
+        { "id": "t6", "text": "没太好", "tag": "Bẫy dùng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["爸爸不太好", "妈妈很好"],
+      "wordBankPool": ["爸爸", "不太好", "妈妈", "很好", "不很好", "没太好", "妈妈是很好"],
+      "traps": [
+        {
+          "pattern": "不很好",
+          "msg": "Lỗi dịch thô: Người Việt quen dịch từng chữ 'không rất khỏe' thành '不很好'. Chuẩn diễn đạt tiếng Hán để biểu thị giảm nhẹ là '不太好'."
+        },
+        {
+          "pattern": "没太好",
+          "msg": "Lỗi dùng từ phủ định: Phủ định mức độ của tính từ hiện tại dùng '不' (不太好), không dùng '没'."
+        }
+      ],
+      "explanation": "Cấu trúc phủ định giảm nhẹ '不太 + Tính từ' đối lập hoàn hảo với khẳng định '很 + Tính từ'."
+    },
+    {
+      "id": "b2-07",
+      "type": "sentence_parsing",
+      "title": "Đánh giá mức độ với cấu trúc 不太",
+      "vi": "Tiếng Trung không khó lắm.",
+      "zh": "汉语不太难",
+      "standardTrans": "汉语不太难",
+      "pinyin": "Hànyǔ bú tài nán.",
+      "grammarPoint": "Cấu trúc giảm nhẹ sắc thái: Chủ ngữ + 不太 + Tính từ",
+      "tokens": [
+        {
+          "text": "Tiếng Trung",
+          "hz": "汉语",
+          "py": "hànyǔ",
+          "hv": "Hán ngữ",
+          "role": "Chủ ngữ",
+          "vn": "Tiếng Hán, tiếng Trung",
+          "radicals": "汉 = Chữ Hán; 语 = Ngôn ngữ"
+        },
+        {
+          "text": "Không... lắm",
+          "hz": "不太",
+          "py": "bú tài",
+          "hv": "Bất thái",
+          "role": "Phó từ giảm nhẹ",
+          "vn": "Không quá, không lắm",
+          "radicals": "不 = Không + 太 = quá, lắm"
+        },
+        {
+          "text": "Khó",
+          "hz": "难",
+          "py": "nán",
+          "hv": "Nan",
+          "role": "Vị ngữ tính từ",
+          "vn": "Khó",
+          "radicals": "又 = Bộ hựu + 隹 = bộ truy"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "不太", "tag": "Phó từ giảm nhẹ" },
+        { "id": "t1", "text": "汉语", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "难", "tag": "Tính từ" },
+        { "id": "t4", "text": "不难太", "tag": "Bẫy trật tự" },
+        { "id": "t5", "text": "没太难", "tag": "Bẫy phủ định" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["汉语不太难"],
+      "wordBankPool": ["汉语", "不太", "难", "不难太", "没太难", "汉语不是太难"],
+      "traps": [
+        {
+          "pattern": "不难太",
+          "msg": "Lỗi ngữ tự: Đừng để từ '太' ở cuối câu theo thói quen đặt từ 'lắm' ở cuối trong tiếng Việt. Cụm '不太' phải đứng trước tính từ '难'."
+        },
+        {
+          "pattern": "不是太难",
+          "msg": "Lỗi thừa động từ: Cấu trúc trực tiếp là 'Chủ ngữ + 不太 + Tính từ', không chèn thêm động từ '是'."
+        }
+      ],
+      "explanation": "Đây là mẫu câu then chốt của bài học, biểu thị sự phán đoán, đánh giá khách quan và mềm mỏng."
+    },
+    {
+      "id": "b2-08",
+      "type": "sentence_parsing",
+      "title": "Miêu tả trạng thái của chị gái",
+      "vi": "Chị gái rất bận.",
+      "zh": "姐姐很忙",
+      "standardTrans": "姐姐很忙",
+      "pinyin": "Jiějie hěn máng.",
+      "grammarPoint": "Câu miêu tả trạng thái: Chủ ngữ + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Chị gái",
+          "hz": "姐姐",
+          "py": "jiějie",
+          "hv": "Tỷ tỷ",
+          "role": "Chủ ngữ",
+          "vn": "Chị gái",
+          "radicals": "女 = Bộ nữ + 且 = chữ thả"
+        },
+        {
+          "text": "Rất bận",
+          "hz": "很忙",
+          "py": "hěn máng",
+          "hv": "Hẩn mang",
+          "role": "Cụm vị ngữ",
+          "vn": "Rất bận rộn",
+          "radicals": "很 = Rất; 忙 = Bận"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "很忙", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "姐姐", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "是忙", "tag": "Bẫy hệ từ" },
+        { "id": "t4", "text": "忙很", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["姐姐很忙"],
+      "wordBankPool": ["姐姐", "很忙", "是忙", "忙很", "姐姐是忙"],
+      "traps": [
+        {
+          "pattern": "是忙",
+          "msg": "Lỗi chèn động từ: Tính từ đơn làm vị ngữ không kết hợp với động từ hệ từ '是'. Nói '姐姐很忙', không nói '姐姐是忙'."
+        },
+        {
+          "pattern": "忙很",
+          "msg": "Lỗi trật tự từ: Phó từ mức độ '很' luôn luôn đứng trước tính từ '忙'."
+        }
+      ],
+      "explanation": "Từ xưng hô thân tộc 姐姐 có âm tiết thứ hai đọc thanh nhẹ (jiějie)."
+    },
+    {
+      "id": "b2-09",
+      "type": "anti_word_by_word",
+      "title": "Hỏi xác nhận trạng thái bận rộn của em trai",
+      "vi": "Em trai cậu bận không?",
+      "zh": "你弟弟忙吗",
+      "standardTrans": "你弟弟忙吗",
+      "pinyin": "Nǐ dìdi máng ma?",
+      "grammarPoint": "Công thức câu hỏi nghi vấn: Chủ ngữ + Tính từ + 吗",
+      "tokens": [
+        {
+          "text": "Em trai cậu",
+          "hz": "你弟弟",
+          "py": "nǐ dìdi",
+          "hv": "Nhĩ đệ đệ",
+          "role": "Chủ ngữ",
+          "vn": "Em trai của bạn",
+          "radicals": "你 = Đại từ; 弟弟 = Em trai"
+        },
+        {
+          "text": "Bận",
+          "hz": "忙",
+          "py": "máng",
+          "hv": "Mang",
+          "role": "Vị ngữ",
+          "vn": "Bận",
+          "radicals": "忄 = Bộ tâm đứng + 亡 = bộ vong"
+        },
+        {
+          "text": "Không",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Không, chưa",
+          "radicals": "口 = Bộ khẩu + 马 = bộ mã"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "忙", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "你弟弟", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t4", "text": "忙不忙吗", "tag": "Bẫy lặp hỏi" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你弟弟", "忙吗"],
+      "wordBankPool": ["你弟弟", "忙", "吗", "忙不忙吗", "你弟弟有忙吗"],
+      "traps": [
+        {
+          "pattern": "忙不忙吗",
+          "msg": "Lỗi trùng lặp câu hỏi: Dạng chính phản '忙不忙' đã mang bản chất hỏi, tuyệt đối không được thêm trợ từ '吗' vào đuôi."
+        },
+        {
+          "pattern": "有忙",
+          "msg": "Lỗi dịch bồi: Không dùng '有' trước vị ngữ tính từ trong câu hỏi."
+        }
+      ],
+      "explanation": "Đại từ sở hữu '你' đi liền trước danh từ chỉ người thân '弟弟' thể hiện quan hệ thân mật, không cần trợ từ sở hữu '的'."
+    },
+    {
+      "id": "b2-10",
+      "type": "sentence_parsing",
+      "title": "Miêu tả trạng thái của ông ngoại",
+      "vi": "Ông ngoại rất bận.",
+      "zh": "外公很忙",
+      "standardTrans": "外公很忙",
+      "pinyin": "Wàigōng hěn máng.",
+      "grammarPoint": "Câu vị ngữ tính từ: Chủ ngữ + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Ông ngoại",
+          "hz": "外公",
+          "py": "wàigōng",
+          "hv": "Ngoại công",
+          "role": "Chủ ngữ",
+          "vn": "Ông ngoại",
+          "radicals": "外 = Bộ tịch 夕 + bộ bặc 卜; 公 = Bộ bát 八 + bộ khư 厶"
+        },
+        {
+          "text": "Rất bận",
+          "hz": "很忙",
+          "py": "hěn máng",
+          "hv": "Hẩn mang",
+          "role": "Vị ngữ",
+          "vn": "Rất bận",
+          "radicals": "很 = Rất; 忙 = Bận"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "很忙", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "外公", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "爷爷外", "tag": "Bẫy sai danh xưng" },
+        { "id": "t4", "text": "是忙", "tag": "Bẫy hệ từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["外公很忙"],
+      "wordBankPool": ["外公", "很忙", "爷爷外", "是忙", "外公忙很"],
+      "traps": [
+        {
+          "pattern": "爷爷外",
+          "msg": "Lỗi danh xưng: Ông ngoại trong tiếng Trung là '外公' (wàigōng), không ghép ngược hay nhầm với ông nội (爷爷)."
+        },
+        {
+          "pattern": "是忙",
+          "msg": "Lỗi chèn động từ: Câu tính từ miêu tả không dùng '是', hãy dùng phó từ '很' kết hợp trực tiếp."
+        }
+      ],
+      "explanation": "Từ '外公' là từ chuẩn mực trong tiếng Hán phổ thông để gọi ông ngoại (bên mẹ)."
+    },
+    {
+      "id": "b2-11",
+      "type": "anti_word_by_word",
+      "title": "Phủ định giảm nhẹ trạng thái của ông nội",
+      "vi": "Ông nội không bận lắm.",
+      "zh": "爷爷不太忙",
+      "standardTrans": "爷爷不太忙",
+      "pinyin": "Yéye bú tài máng.",
+      "grammarPoint": "Cấu trúc phủ định mức độ: Chủ ngữ + 不太 + Tính từ",
+      "tokens": [
+        {
+          "text": "Ông nội",
+          "hz": "爷爷",
+          "py": "yéye",
+          "hv": "Gia gia",
+          "role": "Chủ ngữ",
+          "vn": "Ông nội",
+          "radicals": "父 = Bộ phụ + 耶 = chữ da"
+        },
+        {
+          "text": "Không bận lắm",
+          "hz": "不太忙",
+          "py": "bú tài máng",
+          "hv": "Bất thái mang",
+          "role": "Cụm vị ngữ phủ định",
+          "vn": "Không bận lắm",
+          "radicals": "不 = Phủ định + 太 = quá, lắm + 忙 = bận"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "不太忙", "tag": "Vị ngữ giảm nhẹ" },
+        { "id": "t1", "text": "爷爷", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "不很忙", "tag": "Bẫy dịch thô" },
+        { "id": "t4", "text": "不忙太", "tag": "Bẫy trật tự" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["爷爷不太忙"],
+      "wordBankPool": ["爷爷", "不太忙", "不很忙", "不忙太", "爷爷没太忙"],
+      "traps": [
+        {
+          "pattern": "不很忙",
+          "msg": "Lỗi dịch thô: Đừng dịch word-by-word 'không bận lắm' thành '不很忙'. Mẫu câu phủ định mức độ giảm nhẹ chuẩn là '不太 + Tính từ'."
+        },
+        {
+          "pattern": "不忙太",
+          "msg": "Lỗi đảo ngữ: Từ '太' không đứng sau tính từ giống như từ 'lắm' của tiếng Việt."
+        }
+      ],
+      "explanation": "Từ 爷爷 có âm tiết thứ hai đọc thanh nhẹ (yéye), phân biệt với 外公 (ông ngoại)."
+    },
+    {
+      "id": "b2-12",
+      "type": "sentence_parsing",
+      "title": "Diễn đạt tình trạng sức khỏe của bà ngoại",
+      "vi": "Bà ngoại không khỏe lắm.",
+      "zh": "外婆不太好",
+      "standardTrans": "外婆不太好",
+      "pinyin": "Wàipó bú tài hǎo.",
+      "grammarPoint": "Diễn đạt trạng thái sức khỏe: Chủ ngữ + 不太好",
+      "tokens": [
+        {
+          "text": "Bà ngoại",
+          "hz": "外婆",
+          "py": "wàipó",
+          "hv": "Ngoại bà",
+          "role": "Chủ ngữ",
+          "vn": "Bà ngoại",
+          "radicals": "外 = Ngoài + 婆 = chữ ba 波 + bộ nữ 女"
+        },
+        {
+          "text": "Không khỏe lắm",
+          "hz": "不太好",
+          "py": "bú tài hǎo",
+          "hv": "Bất thái hảo",
+          "role": "Vị ngữ",
+          "vn": "Không khỏe lắm, không tốt lắm",
+          "radicals": "不 = Phủ định + 太 = lắm + 好 = khỏe"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "不太好", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "外婆", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "不健康", "tag": "Bẫy văn cảnh" },
+        { "id": "t4", "text": "没好", "tag": "Bẫy dùng từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["外婆不太好"],
+      "wordBankPool": ["外婆", "不太好", "不健康", "没好", "外婆不很好"],
+      "traps": [
+        {
+          "pattern": "不健康",
+          "msg": "Lỗi sắc thái giao tiếp: Trong sinh hoạt hàng ngày, hỏi thăm sức khỏe dùng '好/不太好', không dùng từ '健康' vì mang tính y khoa/trang trọng quá mức."
+        },
+        {
+          "pattern": "没好",
+          "msg": "Lỗi ngữ pháp: '没好' thường biểu thị 'chưa khỏi bệnh/chưa xong'. Để nói 'không khỏe lắm' bắt buộc dùng '不太好'."
+        }
+      ],
+      "explanation": "Trong khẩu ngữ đời sống, từ '好' khi đi cùng đại từ xưng hô thường trực tiếp đại diện cho tình trạng sức khỏe."
+    },
+    {
+      "id": "b2-13",
+      "type": "sentence_parsing",
+      "title": "Miêu tả trạng thái bận rộn của bà nội",
+      "vi": "Bà nội rất bận.",
+      "zh": "奶奶很忙",
+      "standardTrans": "奶奶很忙",
+      "pinyin": "Nǎinai hěn máng.",
+      "grammarPoint": "Mẫu câu miêu tả: Chủ ngữ + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Bà nội",
+          "hz": "奶奶",
+          "py": "nǎinai",
+          "hv": "Nãi nãi",
+          "role": "Chủ ngữ",
+          "vn": "Bà nội",
+          "radicals": "女 = Bộ nữ + 乃 = chữ nãi"
+        },
+        {
+          "text": "Rất bận",
+          "hz": "很忙",
+          "py": "hěn máng",
+          "hv": "Hẩn mang",
+          "role": "Vị ngữ",
+          "vn": "Rất bận",
+          "radicals": "很 = Rất; 忙 = Bận"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "很忙", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "奶奶", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "婆婆", "tag": "Bẫy danh xưng" },
+        { "id": "t4", "text": "忙很", "tag": "Bẫy trật tự" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["奶奶很忙"],
+      "wordBankPool": ["奶奶", "很忙", "婆婆", "忙很", "奶奶是忙"],
+      "traps": [
+        {
+          "pattern": "婆婆",
+          "msg": "Lỗi danh xưng: '奶奶' là bà nội. Còn '婆婆' thường chỉ mẹ chồng hoặc bà cụ già, không dùng để gọi bà nội."
+        },
+        {
+          "pattern": "忙很",
+          "msg": "Lỗi ngữ tự: Phó từ chỉ mức độ '很' bắt buộc đứng trước tính từ ('很忙')."
+        }
+      ],
+      "explanation": "Phân biệt rõ hai danh từ chỉ bà trong gia đình: 奶奶 (bà nội) và 外婆 (bà ngoại)."
+    },
+    {
+      "id": "b2-14",
+      "type": "anti_word_by_word",
+      "title": "Hỏi thăm sức khỏe ngôi thứ ba nam",
+      "vi": "Anh ấy khỏe không?",
+      "zh": "他好吗",
+      "standardTrans": "他好吗",
+      "pinyin": "Tā hǎo ma?",
+      "grammarPoint": "Hỏi thăm ngôi thứ ba: Đại từ ngôi thứ ba + 好 + 吗",
+      "tokens": [
+        {
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Anh ấy, ông ấy, cậu ấy",
+          "radicals": "亻 = Bộ nhân đứng + 也 = chữ dã"
+        },
+        {
+          "text": "Khỏe không",
+          "hz": "好吗",
+          "py": "hǎo ma",
+          "hv": "Hảo ma",
+          "role": "Vị ngữ hỏi",
+          "vn": "Khỏe không",
+          "radicals": "好 = Khỏe + 吗 = Không"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "好吗", "tag": "Vị ngữ hỏi" },
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "是好吗", "tag": "Bẫy hệ từ" },
+        { "id": "t4", "text": "好不", "tag": "Bẫy cụt câu" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["他好吗"],
+      "wordBankPool": ["他", "好吗", "是好吗", "好不", "他好不好吗"],
+      "traps": [
+        {
+          "pattern": "是好吗",
+          "msg": "Lỗi chèn động từ: Tiếng Việt hỏi 'Anh ấy CÓ khỏe không', tiếng Trung dùng '他好吗', tuyệt đối không chèn '是' hay '有' vào trước '好'."
+        },
+        {
+          "pattern": "好不好吗",
+          "msg": "Lỗi thừa trợ từ: Đã dùng dạng hỏi chính phản '好不好' thì không thêm '吗'."
+        }
+      ],
+      "explanation": "Chữ 他 có bộ nhân đứng 亻 dùng cho nam giới, phân biệt với chữ 她 có bộ nữ 女 dùng cho nữ giới."
+    },
+    {
+      "id": "b2-15",
+      "type": "sentence_parsing",
+      "title": "Phủ định giảm nhẹ trạng thái ngôi thứ ba nữ",
+      "vi": "Cô ấy không khỏe lắm.",
+      "zh": "她不太好",
+      "standardTrans": "她不太好",
+      "pinyin": "Tā bú tài hǎo.",
+      "grammarPoint": "Phủ định giảm nhẹ ngôi thứ ba: S + 不太 + Tính từ",
+      "tokens": [
+        {
+          "text": "Cô ấy",
+          "hz": "她",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Cô ấy, chị ấy, bà ấy",
+          "radicals": "女 = Bộ nữ + 也 = chữ dã"
+        },
+        {
+          "text": "Không khỏe lắm",
+          "hz": "不太好",
+          "py": "bú tài hǎo",
+          "hv": "Bất thái hảo",
+          "role": "Vị ngữ phủ định",
+          "vn": "Không khỏe lắm",
+          "radicals": "不 = Phủ định + 太 = lắm + 好 = khỏe"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "不太好", "tag": "Vị ngữ giảm nhẹ" },
+        { "id": "t1", "text": "她", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "不很好", "tag": "Bẫy dịch bồi" },
+        { "id": "t4", "text": "不是太好", "tag": "Bẫy hệ từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["她不太好"],
+      "wordBankPool": ["她", "不太好", "不很好", "不是太好", "她没太好"],
+      "traps": [
+        {
+          "pattern": "不很好",
+          "msg": "Lỗi dịch bồi: Không dịch theo ngữ cảm tiếng Việt thành '不很好'. Cách diễn đạt chuẩn mực là '不太好'."
+        },
+        {
+          "pattern": "不是太好",
+          "msg": "Lỗi chèn động từ: 'Chủ ngữ + 不太 + Tính từ' là cấu trúc trực tiếp, không đưa '是' vào giữa."
+        }
+      ],
+      "explanation": "Chữ 她 đồng âm (tā) với 他 nhưng mang bộ nữ 女 để chỉ phái nữ."
+    }
+  ]
+}

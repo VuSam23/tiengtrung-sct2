@@ -1,0 +1,665 @@
+{
+  "lessonId": "b05",
+  "lessonTitle": "第五课: 这是王老师 - Đây là thầy giáo Vương",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "这 / 那",
+        "py": "zhè / nà",
+        "note": "Đại từ chỉ thị: 这 (đây, này - chỉ vật/người ở gần), 那 (kia, đó - chỉ vật/người ở xa). Cấu trúc giới thiệu: 这/那 + 是 + Danh từ."
+      },
+      {
+        "word": "请",
+        "py": "qǐng",
+        "note": "Kính từ 'xin, mời'. Dùng đứng trước động từ thể hiện lời mời lịch sự: 请进 (mời vào), 请坐 (mời ngồi), 请喝茶 (mời uống trà)."
+      },
+      {
+        "word": "Trợ từ 的",
+        "py": "de",
+        "note": "Biểu thị quan hệ sở hữu hoặc bổ nghĩa (của): Định ngữ + 的 + Danh từ trung tâm (我的朋友: bạn của tôi, 我们的老师: thầy giáo của chúng tôi)."
+      },
+      {
+        "word": "Xưng hô họ tên & chức vụ",
+        "py": "xìngmíng",
+        "note": "Trong tiếng Trung, Họ luôn đứng trước Chức vụ hoặc Chức danh: 王老师 (Thầy Vương), 张东 (Trương Đông - Họ Trương tên Đông), không nói '老师王'."
+      }
+    ],
+    "grammarTips": [
+      "Câu phán đoán chữ 是: Chủ ngữ + 是 + Tân ngữ (Đây là / Kia là: 这是... / 那是...).",
+      "Câu kiêm ngữ với động từ 请: Chủ ngữ + 请 + Tân ngữ 1 (kiêm chủ ngữ 2) + Động từ 2 (王老师请我们喝茶: Thầy Vương mời chúng tôi uống trà).",
+      "Cụm danh từ định - trung: Thành phần sở hữu / tính chất luôn đứng trước danh từ chính (我们的汉语老师)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b5-01",
+      "type": "sentence_parsing",
+      "title": "Đại từ chỉ thị giới thiệu người và sở hữu bạn bè",
+      "vi": "Đây là Mike, kia là Mary, họ là bạn của tôi.",
+      "zh": "这是麦克那是玛丽他们是我的朋友",
+      "standardTrans": "这是麦克那是玛丽他们是我的朋友",
+      "pinyin": "Zhè shì Màikè, nà shì Mǎlì, tāmen shì wǒ de péngyou.",
+      "grammarPoint": "Cấu trúc giới thiệu song song: 这 + 是 + Người 1, 那 + 是 + Người 2; Sở hữu: 我的 + 朋友",
+      "tokens": [
+        {
+          "text": "Đây là",
+          "hz": "这是",
+          "py": "zhè shì",
+          "hv": "Giá thị",
+          "role": "Chủ vị giới thiệu gần",
+          "vn": "Đây là",
+          "radicals": "这 = Bộ sước 辶 + chữ văn 文; 是 = Bộ nhật 日 + bộ sơ 疋"
+        },
+        {
+          "text": "Kia là",
+          "hz": "那是",
+          "py": "nà shì",
+          "hv": "Na thị",
+          "role": "Chủ vị giới thiệu xa",
+          "vn": "Kia là, đó là",
+          "radicals": "那 = Chữ hoành 𠄎 + bộ ấp 阝; 是 = Bộ nhật 日 + bộ sơ 疋"
+        },
+        {
+          "text": "Bạn của tôi",
+          "hz": "我的朋友",
+          "py": "wǒ de péngyou",
+          "hv": "Ngã đích bằng hữu",
+          "role": "Cụm danh từ tân ngữ",
+          "vn": "Bạn bè của tôi",
+          "radicals": "我 = Bộ qua 戈; 的 = Bộ bạch 白 + bộ bao 勺; 朋 = Hai bộ nguyệt 月; 友 = Bộ hựu 又"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "那是玛丽", "tag": "Giới thiệu Mary" },
+        { "id": "t1", "text": "这是麦克", "tag": "Giới thiệu Mike" },
+        { "id": "t3", "text": "他们是我的朋友", "tag": "Mối quan hệ bạn bè" },
+        { "id": "t4", "text": "我的朋友是他们", "tag": "Bẫy đảo ngữ" },
+        { "id": "t5", "text": "这麦克是", "tag": "Bẫy ngữ tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这是麦克", "那是玛丽", "他们是我的朋友"],
+      "wordBankPool": ["这是麦克", "那是玛丽", "他们是我的朋友", "我的朋友是他们", "这麦克是", "我的朋友他们是"],
+      "traps": [
+        {
+          "pattern": "我的朋友是他们",
+          "msg": "Lỗi đảo trật tự chủ vị: Đại từ nhân xưng chỉ người '他们' (họ) làm chủ ngữ đứng trước, vị ngữ là '是我的朋友'."
+        },
+        {
+          "pattern": "这麦克是",
+          "msg": "Lỗi cấu trúc câu phán đoán: 'Đây là Mike' cấu trúc chuẩn là '这 + 是 + 麦克', không đặt động từ '是' ra sau danh từ."
+        }
+      ],
+      "explanation": "Đại từ chỉ thị '这' dùng cho đối tượng ở cự ly gần người nói, '那' dùng cho đối tượng ở cự ly xa hơn."
+    },
+    {
+      "id": "b5-02",
+      "type": "anti_word_by_word",
+      "title": "Câu kiêm ngữ mời uống trà và trật tự họ tên chức vụ",
+      "vi": "Thầy giáo Vương mời chúng tôi uống trà.",
+      "zh": "王老师请我们喝茶",
+      "standardTrans": "王老师请我们喝茶",
+      "pinyin": "Wáng lǎoshī qǐng wǒmen hē chá.",
+      "grammarPoint": "Câu kiêm ngữ: Chủ ngữ (王老师) + 请 + Tân ngữ kiêm Chủ ngữ 2 (我们) + Động từ (喝茶)",
+      "tokens": [
+        {
+          "text": "Thầy giáo Vương",
+          "hz": "王老师",
+          "py": "Wáng lǎoshī",
+          "hv": "Vương lão sư",
+          "role": "Chủ ngữ",
+          "vn": "Thầy giáo họ Vương",
+          "radicals": "王 = Bộ vương 王; 老 = Bộ lão 老; 师 = Bộ cân 巾"
+        },
+        {
+          "text": "Mời",
+          "hz": "请",
+          "py": "qǐng",
+          "hv": "Thỉnh",
+          "role": "Động từ kiêm ngữ",
+          "vn": "Mời, nhờ",
+          "radicals": "讠 = Bộ ngôn + 青 = chữ thanh"
+        },
+        {
+          "text": "Uống trà",
+          "hz": "喝茶",
+          "py": "hē chá",
+          "hv": "Hát trà",
+          "role": "Hành động được mời",
+          "vn": "Uống nước trà",
+          "radicals": "喝 = Bộ khẩu 口 + chữ hạt 曷; 茶 = Bộ thảo 艹 + bộ nhân 人 + bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "请我们", "tag": "Động từ mời kèm tân ngữ" },
+        { "id": "t1", "text": "王老师", "tag": "Chủ ngữ họ chức vụ" },
+        { "id": "t3", "text": "喝茶", "tag": "Hành động uống trà" },
+        { "id": "t4", "text": "老师王", "tag": "Bẫy trật tự xưng hô" },
+        { "id": "t5", "text": "喝茶请我们", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["王老师", "请我们", "喝茶"],
+      "wordBankPool": ["王老师", "请我们", "喝茶", "老师王", "喝茶请我们", "请喝茶我们"],
+      "traps": [
+        {
+          "pattern": "老师王",
+          "msg": "Lỗi xưng hô: Trong tiếng Trung, họ luôn đứng TRƯỚC chức danh ('王老师': Thầy Vương), không dịch thuận theo tiếng Việt thành '老师王'."
+        },
+        {
+          "pattern": "喝茶请",
+          "msg": "Lỗi câu kiêm ngữ: Người mời (王老师) + động từ mời (请) + người được mời (我们) + hành động (喝茶), không đảo hành động lên trước."
+        }
+      ],
+      "explanation": "Câu kiêm ngữ là dạng câu mà tân ngữ của động từ thứ nhất (我们) đồng thời đóng vai trò làm chủ ngữ thực hiện hành động thứ hai (喝茶)."
+    },
+    {
+      "id": "b5-03",
+      "type": "sentence_parsing",
+      "title": "Cụm danh từ định trung nhiều tầng giới thiệu giáo viên",
+      "vi": "Đây là thầy giáo tiếng Hán của chúng tôi.",
+      "zh": "这是我们的汉语老师",
+      "standardTrans": "这是我们的汉语老师",
+      "pinyin": "Zhè shì wǒmen de hànyǔ lǎoshī.",
+      "grammarPoint": "Câu phán đoán chữ 是; Cụm định trung nhiều tầng: Định ngữ sở hữu (我们的) + Định ngữ thuộc tính (汉语) + Trung tâm ngữ (老师)",
+      "tokens": [
+        {
+          "text": "Đây là",
+          "hz": "这是",
+          "py": "zhè shì",
+          "hv": "Giá thị",
+          "role": "Chủ ngữ + Hệ từ",
+          "vn": "Đây là",
+          "radicals": "这 = Bộ sước 辶; 是 = Bộ nhật 日"
+        },
+        {
+          "text": "Của chúng tôi",
+          "hz": "我们的",
+          "py": "wǒmen de",
+          "hv": "Ngã môn đích",
+          "role": "Định ngữ sở hữu",
+          "vn": "Của chúng tôi",
+          "radicals": "我 = Tôi; 们 = Số nhiều; 的 = Trợ từ sở hữu"
+        },
+        {
+          "text": "Thầy giáo tiếng Hán",
+          "hz": "汉语老师",
+          "py": "hànyǔ lǎoshī",
+          "hv": "Hán ngữ lão sư",
+          "role": "Trung tâm ngữ",
+          "vn": "Giáo viên dạy tiếng Trung",
+          "radicals": "汉语 = Tiếng Hán; 老师 = Giáo viên"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们的", "tag": "Định ngữ sở hữu" },
+        { "id": "t1", "text": "这是", "tag": "Chủ vị phán đoán" },
+        { "id": "t3", "text": "汉语老师", "tag": "Trung tâm ngữ" },
+        { "id": "t4", "text": "老师汉语", "tag": "Bẫy định ngữ" },
+        { "id": "t5", "text": "汉语老师我们", "tag": "Bẫy trật tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这是", "我们的", "汉语老师"],
+      "wordBankPool": ["这是", "我们的", "汉语老师", "老师汉语", "汉语老师我们", "这是老师我们的汉语"],
+      "traps": [
+        {
+          "pattern": "老师汉语",
+          "msg": "Lỗi cụm danh từ: Môn học (汉语) đóng vai trò định ngữ bổ nghĩa cho nghề nghiệp (老师), bắt buộc đứng trước: '汉语老师'."
+        },
+        {
+          "pattern": "汉语老师我们",
+          "msg": "Lỗi định ngữ sở hữu: Người sở hữu (我们的) phải đứng trước toàn bộ cụm danh từ trung tâm ('我们的汉语老师')."
+        }
+      ],
+      "explanation": "Quy tắc trật tự cụm danh từ tiếng Hán: Ai sở hữu (我们的) + Loại hình/Môn học (汉语) + Đối tượng chính (老师)."
+    },
+    {
+      "id": "b5-04",
+      "type": "sentence_parsing",
+      "title": "Câu kiêm ngữ mời đi công viên",
+      "vi": "Anh ấy mời tôi đi công viên.",
+      "zh": "他请我去公园",
+      "standardTrans": "他请我去公园",
+      "pinyin": "Tā qǐng wǒ qù gōngyuán.",
+      "grammarPoint": "Câu kiêm ngữ: Chủ ngữ (他) + 请 + Tân ngữ 1 (我) + Động từ 2 (去) + Nơi chốn (公园)",
+      "tokens": [
+        {
+          "text": "Anh ấy mời tôi",
+          "hz": "他请我",
+          "py": "tā qǐng wǒ",
+          "hv": "Tha thỉnh ngã",
+          "role": "Chủ ngữ + Động từ kiêm ngữ + Tân ngữ",
+          "vn": "Anh ấy mời tôi",
+          "radicals": "他 = Bộ nhân đứng 亻; 请 = Bộ ngôn 讠; 我 = Bộ qua 戈"
+        },
+        {
+          "text": "Đi công viên",
+          "hz": "去公园",
+          "py": "qù gōngyuán",
+          "hv": "Khứ công viên",
+          "role": "Hành động liên kết",
+          "vn": "Đi công viên",
+          "radicals": "去 = Bộ thổ 土 + bộ khư 厶; 公 = Bộ bát 八; 园 = Bộ vi 囗"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "去公园", "tag": "Hành động đi công viên" },
+        { "id": "t1", "text": "他请我", "tag": "Chủ vị kiêm ngữ" },
+        { "id": "t3", "text": "走公园", "tag": "Bẫy động từ" },
+        { "id": "t4", "text": "公园去", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["他请我", "去公园"],
+      "wordBankPool": ["他请我", "去公园", "走公园", "公园去", "请我去公园他"],
+      "traps": [
+        {
+          "pattern": "走公园",
+          "msg": "Lỗi dùng từ di chuyển: Đến một địa điểm vui chơi cụ thể dùng '去公园', không dùng '走' (đi bộ dạo bước)."
+        },
+        {
+          "pattern": "公园去",
+          "msg": "Lỗi trật tự động tân: Động từ '去' (đi) đứng trước địa điểm đến '公园' (công viên)."
+        }
+      ],
+      "explanation": "Đại từ '我' vừa là tân ngữ chịu tác động của '请', vừa là chủ ngữ trực tiếp thực hiện hành động '去公园'."
+    },
+    {
+      "id": "b5-05",
+      "type": "anti_word_by_word",
+      "title": "Giao tiếp trao thư từ và lời cảm ơn",
+      "vi": "A: Xin chào! Đây là thư của anh. B: Cảm ơn!",
+      "zh": "你好这是你的信谢谢",
+      "standardTrans": "你好这是你的信谢谢",
+      "pinyin": "Nǐ hǎo, zhè shì nǐ de xìn. Xièxie!",
+      "grammarPoint": "Lời chào mở đầu: 你好; Câu phán đoán sở hữu: 这是 + 你的 + Danh từ; Lời cảm ơn: 谢谢",
+      "tokens": [
+        {
+          "text": "Xin chào",
+          "hz": "你好",
+          "py": "nǐ hǎo",
+          "hv": "Nhĩ hảo",
+          "role": "Lời chào",
+          "vn": "Xin chào",
+          "radicals": "你 = Bộ nhân đứng 亻; 好 = Bộ nữ 女 + bộ tử 子"
+        },
+        {
+          "text": "Đây là thư của anh",
+          "hz": "这是你的信",
+          "py": "zhè shì nǐ de xìn",
+          "hv": "Giá thị nhĩ đích tín",
+          "role": "Câu trao đồ",
+          "vn": "Đây là lá thư của bạn",
+          "radicals": "这 = Đây; 是 = Là; 你 = Bạn; 的 = Của; 信 = Bộ nhân đứng 亻 + chữ ngôn 言"
+        },
+        {
+          "text": "Cảm ơn",
+          "hz": "谢谢",
+          "py": "xièxie",
+          "hv": "Tạ tạ",
+          "role": "Lời cảm ơn",
+          "vn": "Cảm ơn",
+          "radicals": "Bộ ngôn 讠 + chữ xạ 射"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这是你的信", "tag": "Vế trao thư" },
+        { "id": "t1", "text": "你好", "tag": "Lời chào" },
+        { "id": "t3", "text": "谢谢", "tag": "Đáp lễ cảm ơn" },
+        { "id": "t4", "text": "信是你的", "tag": "Bẫy trật tự" },
+        { "id": "t5", "text": "你的信这是", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你好", "这是你的信", "谢谢"],
+      "wordBankPool": ["你好", "这是你的信", "谢谢", "信是你的", "你的信这是", "这是信你的"],
+      "traps": [
+        {
+          "pattern": "信是你的",
+          "msg": "Lỗi diễn đạt trao nhận: Khi đưa đồ cho ai, dùng mẫu câu chỉ định '这是 + Đồ của ai' ('这是你的信'), không nói '信是你的'."
+        },
+        {
+          "pattern": "这是信你的",
+          "msg": "Lỗi định ngữ: Định ngữ sở hữu (你的) bắt buộc đứng trước danh từ trung tâm (信), không dịch bồi theo tiếng Việt."
+        }
+      ],
+      "explanation": "Câu khẩu ngữ trao thư từ đồ đạc kinh điển: '这是你的...' (Đây là... của bạn)."
+    },
+    {
+      "id": "b5-06",
+      "type": "sentence_parsing",
+      "title": "Giới thiệu thân thế quốc tịch và xưng danh giáo viên",
+      "vi": "Kia là thầy giáo tiếng Trung của chúng tôi, thầy ấy là người Trung Quốc. Thầy tên là Trương Đông.",
+      "zh": "那是我们的汉语老师他是中国人他叫张东",
+      "standardTrans": "那是我们的汉语老师他是中国人他叫张东",
+      "pinyin": "Nà shì wǒmen de hànyǔ lǎoshī, tā shì Zhōngguórén. Tā jiào Zhāng Dōng.",
+      "grammarPoint": "Chỉ định xa: 那是; Quốc tịch: 是 + Tên quốc gia + 人; Tên riêng: 叫 + Tên người",
+      "tokens": [
+        {
+          "text": "Kia là thầy giáo tiếng Trung của chúng tôi",
+          "hz": "那是我们的汉语老师",
+          "py": "nà shì wǒmen de hànyǔ lǎoshī",
+          "hv": "Na thị ngã môn đích Hán ngữ lão sư",
+          "role": "Phân câu 1",
+          "vn": "Kia là giáo viên tiếng Hán của chúng tôi",
+          "radicals": "那 = Kia; 是 = Là; 我们的 = Của chúng tôi; 汉语老师 = Giáo viên tiếng Trung"
+        },
+        {
+          "text": "Người Trung Quốc",
+          "hz": "中国人",
+          "py": "Zhōngguórén",
+          "hv": "Trung Quốc nhân",
+          "role": "Tân ngữ quốc tịch",
+          "vn": "Người nước Trung Quốc",
+          "radicals": "中 = Bộ khôn 丨; 国 = Bộ vi 囗 + chữ ngọc 玉; 人 = Bộ nhân 人"
+        },
+        {
+          "text": "Tên là Trương Đông",
+          "hz": "他叫张东",
+          "py": "tā jiào Zhāng Dōng",
+          "hv": "Tha khiếu Trương Đông",
+          "role": "Phân câu 3",
+          "vn": "Thầy ấy tên là Trương Đông",
+          "radicals": "叫 = Bộ khẩu 口 + bộ khiếu 丩; 张 = Bộ cung 弓 + chữ trường 长; 东 = Chữ đông 东"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "他是中国人", "tag": "Vế quốc tịch" },
+        { "id": "t1", "text": "那是我们的汉语老师", "tag": "Vế chỉ định" },
+        { "id": "t3", "text": "他叫张东", "tag": "Vế xưng danh" },
+        { "id": "t4", "text": "中国人是他", "tag": "Bẫy đảo ngữ" },
+        { "id": "t5", "text": "他是叫张东", "tag": "Bẫy thừa 是" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["那是我们的汉语老师", "他是中国人", "他叫张东"],
+      "wordBankPool": ["那是我们的汉语老师", "他是中国人", "他叫张东", "中国人是他", "他是叫张东", "东张叫他"],
+      "traps": [
+        {
+          "pattern": "中国人是他",
+          "msg": "Lỗi trật tự câu hệ từ: Chủ ngữ '他' (thầy ấy) đứng trước hệ từ '是' và danh từ quốc tịch '中国人'."
+        },
+        {
+          "pattern": "是叫",
+          "msg": "Lỗi lặp động từ: Để giới thiệu tên người dùng trực tiếp động từ '叫' ('他叫张东'), không ghép thừa '是叫'."
+        }
+      ],
+      "explanation": "Đoạn văn ghép 3 mệnh đề ngắn cung cấp thông tin hoàn chỉnh: Nhận diện vai trò -> Quốc tịch -> Họ tên."
+    },
+    {
+      "id": "b5-07",
+      "type": "anti_word_by_word",
+      "title": "Hỏi lựa chọn môn học và trả lời phủ định lặp động từ",
+      "vi": "A: Cậu học tiếng Anh à? B: Không, tớ học tiếng Trung.",
+      "zh": "你学英语吗不学我学汉语",
+      "standardTrans": "你学英语吗不学我学汉语",
+      "pinyin": "Nǐ xué yīngyǔ ma? Bù xué, wǒ xué hànyǔ.",
+      "grammarPoint": "Câu hỏi nghi vấn động tân: S + V + O + 吗; Phủ định ngắn bằng động từ: 不 + Động từ (不学)",
+      "tokens": [
+        {
+          "text": "Bạn học tiếng Anh không",
+          "hz": "你学英语吗",
+          "py": "nǐ xué yīngyǔ ma",
+          "hv": "Nhĩ học Anh ngữ ma",
+          "role": "Câu hỏi nghi vấn",
+          "vn": "Cậu học tiếng Anh à",
+          "radicals": "你 = Bạn; 学 = Học; 英语 = Tiếng Anh; 吗 = Trợ từ"
+        },
+        {
+          "text": "Không học",
+          "hz": "不学",
+          "py": "bù xué",
+          "hv": "Bất học",
+          "role": "Phủ định đáp",
+          "vn": "Không học",
+          "radicals": "不 = Phủ định + 学 = học"
+        },
+        {
+          "text": "Tôi học tiếng Trung",
+          "hz": "我学汉语",
+          "py": "wǒ xué hànyǔ",
+          "hv": "Ngã học Hán ngữ",
+          "role": "Vế khẳng định môn học",
+          "vn": "Tớ học tiếng Hán",
+          "radicals": "我 = Tôi; 学 = Học; 汉语 = Tiếng Trung"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "不学", "tag": "Phủ định ngắn" },
+        { "id": "t1", "text": "你学英语吗", "tag": "Câu hỏi" },
+        { "id": "t3", "text": "我学汉语", "tag": "Khẳng định môn học" },
+        { "id": "t4", "text": "没有学", "tag": "Bẫy dùng từ 没" },
+        { "id": "t5", "text": "不我学汉语", "tag": "Bẫy dịch thô" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你学英语吗", "不学", "我学汉语"],
+      "wordBankPool": ["你学英语吗", "不学", "我学汉语", "没有学", "不我学汉语", "不是学英语"],
+      "traps": [
+        {
+          "pattern": "没有学",
+          "msg": "Lỗi phó từ phủ định: 'Không học' (thói quen/chủ định) dùng '不学'. '没学' chỉ dùng diễn tả việc chưa học trong quá khứ."
+        },
+        {
+          "pattern": "不我学",
+          "msg": "Lỗi trả lời cộc: Tiếng Trung trả lời 'Không' bằng cách lặp lại động từ kèm phó từ phủ định ('不学'), không để trơ trọi một chữ '不' trước đại từ."
+        }
+      ],
+      "explanation": "Quy tắc trả lời phủ định tự nhiên của người bản xứ: lặp lại chính động từ được hỏi kèm chữ 不 (不学)."
+    },
+    {
+      "id": "b5-08",
+      "type": "sentence_parsing",
+      "title": "Đối xứng phủ định tiếng Pháp và khẳng định tiếng Hàn",
+      "vi": "Tớ không học tiếng Pháp, tớ học tiếng Hàn.",
+      "zh": "我不学法语我学韩语",
+      "standardTrans": "我不学法语我学韩语",
+      "pinyin": "Wǒ bù xué fǎyǔ, wǒ xué hányǔ.",
+      "grammarPoint": "Cấu trúc song hành đối xứng: 我 + 不 + 学 + Ngoại ngữ 1, 我 + 学 + Ngoại ngữ 2",
+      "tokens": [
+        {
+          "text": "Tiếng Pháp",
+          "hz": "法语",
+          "py": "fǎyǔ",
+          "hv": "Pháp ngữ",
+          "role": "Tân ngữ 1",
+          "vn": "Tiếng Pháp",
+          "radicals": "法 = Bộ chấm thủy 氵 + chữ khứ 去; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Tiếng Hàn",
+          "hz": "韩语",
+          "py": "hányǔ",
+          "hv": "Hàn ngữ",
+          "role": "Tân ngữ 2",
+          "vn": "Tiếng Hàn Quốc",
+          "radicals": "韩 = Chữ tràng 倝 + bộ vi 韦; 语 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我学韩语", "tag": "Vế khẳng định" },
+        { "id": "t1", "text": "我不学法语", "tag": "Vế phủ định" },
+        { "id": "t3", "text": "我没学法语", "tag": "Bẫy dùng 没" },
+        { "id": "t4", "text": "法语不学", "tag": "Bẫy ngữ tự" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我不学法语", "我学韩语"],
+      "wordBankPool": ["我不学法语", "我学韩语", "我没学法语", "法语不学", "学韩语我"],
+      "traps": [
+        {
+          "pattern": "没学法语",
+          "msg": "Lỗi dùng từ phủ định: Diễn đạt sự lựa chọn ngành học hiện tại phải dùng '不学', không dùng '没学'."
+        },
+        {
+          "pattern": "法语不学",
+          "msg": "Lỗi đảo ngữ: Cấu trúc câu trần thuật chuẩn là 'Chủ ngữ + 不学 + Tân ngữ' ('我不学法语')."
+        }
+      ],
+      "explanation": "Cần chú ý cách phân biệt chữ viết và thanh điệu giữa 法语 (fǎyǔ - thanh 3) và 韩语 (hányǔ - thanh 2)."
+    },
+    {
+      "id": "b5-09",
+      "type": "anti_word_by_word",
+      "title": "Xưng danh giáo viên và quan hệ sở hữu với 的",
+      "vi": "Thầy giáo Vương là thầy giáo tiếng Trung của tớ.",
+      "zh": "王老师是我的汉语老师",
+      "standardTrans": "王老师是我的汉语老师",
+      "pinyin": "Wáng lǎoshī shì wǒ de hànyǔ lǎoshī.",
+      "grammarPoint": "Chủ ngữ (王老师) + 是 + Tân ngữ (我的汉语老师)",
+      "tokens": [
+        {
+          "text": "Thầy giáo Vương là",
+          "hz": "王老师是",
+          "py": "Wáng lǎoshī shì",
+          "hv": "Vương lão sư thị",
+          "role": "Chủ ngữ + Hệ từ",
+          "vn": "Thầy giáo họ Vương là",
+          "radicals": "王 = Bộ vương; 老师 = Giáo viên; 是 = Là"
+        },
+        {
+          "text": "Của tôi",
+          "hz": "我的",
+          "py": "wǒ de",
+          "hv": "Ngã đích",
+          "role": "Định ngữ sở hữu",
+          "vn": "Của tôi, của tớ",
+          "radicals": "我 = Tôi; 的 = Trợ từ sở hữu"
+        },
+        {
+          "text": "Thầy giáo tiếng Trung",
+          "hz": "汉语老师",
+          "py": "hànyǔ lǎoshī",
+          "hv": "Hán ngữ lão sư",
+          "role": "Trung tâm ngữ",
+          "vn": "Giáo viên dạy tiếng Trung",
+          "radicals": "汉语 = Tiếng Hán; 老师 = Thầy cô giáo"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我的", "tag": "Định ngữ sở hữu" },
+        { "id": "t1", "text": "王老师是", "tag": "Chủ ngữ kèm hệ từ" },
+        { "id": "t3", "text": "汉语老师", "tag": "Trung tâm ngữ" },
+        { "id": "t4", "text": "老师王是", "tag": "Bẫy xưng danh" },
+        { "id": "t5", "text": "我的老师汉语", "tag": "Bẫy ngữ tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["王老师是", "我的", "汉语老师"],
+      "wordBankPool": ["王老师是", "我的", "汉语老师", "老师王是", "我的老师汉语", "汉语老师是我"],
+      "traps": [
+        {
+          "pattern": "老师王",
+          "msg": "Lỗi xưng hô: Trong tiếng Trung, họ của thầy cô luôn đặt TRƯỚC danh xưng '老师' ('王老师'), tuyệt đối không nói '老师王'."
+        },
+        {
+          "pattern": "我的老师汉语",
+          "msg": "Lỗi trật tự định ngữ: 'Thầy giáo tiếng Trung' là '汉语老师', định ngữ 'tiếng Trung' phải đứng trước danh từ trung tâm 'thầy giáo'."
+        }
+      ],
+      "explanation": "Mẫu câu phán đoán định danh hoàn chỉnh: S (王老师) + 是 + Cụm định trung (我的汉语老师)."
+    },
+    {
+      "id": "b5-10",
+      "type": "sentence_parsing",
+      "title": "Kính từ mời ngồi và câu hỏi tân ngữ với đại từ nghi vấn 什么",
+      "vi": "Mời ngồi! Cậu uống gì?",
+      "zh": "请坐你喝什么",
+      "standardTrans": "请坐你喝什么",
+      "pinyin": "Qǐng zuò, nǐ hē shénme?",
+      "grammarPoint": "Kính từ cầu khiến: 请 + Động từ (坐); Câu hỏi tân ngữ nghi vấn: Chủ ngữ + Động từ (喝) + 什么",
+      "tokens": [
+        {
+          "text": "Mời ngồi",
+          "hz": "请坐",
+          "py": "qǐng zuò",
+          "hv": "Thỉnh tọa",
+          "role": "Cụm cầu khiến lịch sự",
+          "vn": "Mời ngồi, xin mời ngồi",
+          "radicals": "请 = Bộ ngôn 讠; 坐 = Hai bộ nhân 人 ngồi trên bộ thổ 土"
+        },
+        {
+          "text": "Cậu uống gì",
+          "hz": "你喝什么",
+          "py": "nǐ hē shénme",
+          "hv": "Nhĩ hát thập ma",
+          "role": "Câu hỏi tân ngữ",
+          "vn": "Bạn uống cái gì",
+          "radicals": "你 = Bạn; 喝 = Bộ khẩu 口; 什 = Bộ nhân đứng 亻 + bộ thập 十; 么 = Bộ phẩy 丿"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你喝什么", "tag": "Câu hỏi đồ uống" },
+        { "id": "t1", "text": "请坐", "tag": "Lời mời lịch sự" },
+        { "id": "t3", "text": "坐请", "tag": "Bẫy đảo ngữ" },
+        { "id": "t4", "text": "你喝什么呢吗", "tag": "Bẫy thừa trợ từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["请坐", "你喝什么"],
+      "wordBankPool": ["请坐", "你喝什么", "坐请", "你喝什么呢吗", "喝什么你"],
+      "traps": [
+        {
+          "pattern": "坐请",
+          "msg": "Lỗi kính ngữ: Từ kính cẩn '请' (mời) luôn luôn đứng TRƯỚC động từ hành động ('请坐'), không đặt sau động từ."
+        },
+        {
+          "pattern": "什么吗",
+          "msg": "Lỗi thừa trợ từ nghi vấn: Câu đã có đại từ nghi vấn '什么' (gì/cái gì) thì tuyệt đối KHÔNG thêm trợ từ '吗' vào cuối câu."
+        }
+      ],
+      "explanation": "Câu giao tiếp tiếp khách kinh điển trong tiếng Hán: Khách đến nhà chào mời '请进, 请坐, 请喝茶'."
+    },
+    {
+      "id": "b5-11",
+      "type": "anti_word_by_word",
+      "title": "Tự giới thiệu phụ huynh và kính ngữ thăm hỏi danh tính",
+      "vi": "Tôi là bố của Mike, xin hỏi thầy có phải là thầy giáo Trương không?",
+      "zh": "我是麦克的爸爸请问您是张老师吗",
+      "standardTrans": "我是麦克的爸爸请问您是张老师吗",
+      "pinyin": "Wǒ shì Màikè de bàba, qǐngwèn nín shì Zhāng lǎoshī ma?",
+      "grammarPoint": "Sở hữu: 麦克的爸爸; Mở đầu lịch sự: 请问; Kính ngữ ngôi thứ hai: 您; Hỏi nghi vấn: 是...吗",
+      "tokens": [
+        {
+          "text": "Tôi là bố của Mike",
+          "hz": "我是麦克的爸爸",
+          "py": "wǒ shì Màikè de bàba",
+          "hv": "Ngã thị Mạch Khắc đích bá bá",
+          "role": "Mệnh đề giới thiệu bản thân",
+          "vn": "Tôi là bố của Mike",
+          "radicals": "我 = Tôi; 是 = Là; 麦克 = Mike; 的 = Của; 爸爸 = Bố"
+        },
+        {
+          "text": "Xin hỏi",
+          "hz": "请问",
+          "py": "qǐngwèn",
+          "hv": "Thỉnh vấn",
+          "role": "Cụm mở đầu lịch sự",
+          "vn": "Xin hỏi, cho hỏi",
+          "radicals": "请 = Bộ ngôn 讠; 问 = Bộ môn 门 + bộ khẩu 口"
+        },
+        {
+          "text": "Thầy là thầy giáo Trương phải không",
+          "hz": "您是张老师吗",
+          "py": "nín shì Zhāng lǎoshī ma",
+          "hv": "Nẫm thị Trương lão sư ma",
+          "role": "Mệnh đề hỏi xác nhận",
+          "vn": "Ngài có phải là thầy Trương không",
+          "radicals": "您 = Đại từ tôn kính 您; 张 = Bộ cung 弓; 老师 = Giáo viên; 吗 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "请问", "tag": "Lời mở đầu lịch sự" },
+        { "id": "t1", "text": "我是麦克的爸爸", "tag": "Giới thiệu bản thân" },
+        { "id": "t3", "text": "您是张老师吗", "tag": "Hỏi danh xưng kính ngữ" },
+        { "id": "t4", "text": "爸爸麦克", "tag": "Bẫy định ngữ sở hữu" },
+        { "id": "t5", "text": "老师张吗", "tag": "Bẫy họ tên chức vụ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我是麦克的爸爸", "请问", "您是张老师吗"],
+      "wordBankPool": ["我是麦克的爸爸", "请问", "您是张老师吗", "爸爸麦克", "老师张吗", "你是张老师吗"],
+      "traps": [
+        {
+          "pattern": "爸爸麦克",
+          "msg": "Lỗi định ngữ: 'Bố của Mike' phải đưa người sở hữu '麦克' lên trước trung tâm ngữ '爸爸', có trợ từ '的': '麦克的爸爸'."
+        },
+        {
+          "pattern": "老师张",
+          "msg": "Lỗi trật tự xưng danh: Họ '张' (Trương) luôn đứng trước chức danh '老师' ('张老师'), không nói '老师张'."
+        }
+      ],
+      "explanation": "Sử dụng đại từ tôn kính '您' thay cho '你' khi nói chuyện với thầy cô giáo thể hiện thái độ lịch sự, chuẩn mực."
+    }
+  ]
+}

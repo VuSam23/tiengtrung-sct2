@@ -1,0 +1,504 @@
+{
+  "lessonId": "b21",
+  "lessonTitle": "第二十一课: 我们明天七点一刻出发",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "刻",
+        "py": "kè",
+        "note": "Khắc (15 phút). Dùng để nói giờ: 七点一刻 (7 giờ 15 phút), 八点三刻 (8 giờ 45 phút). KHÔNG dùng 两刻 (30 phút) mà dùng 半 (rưỡi)."
+      },
+      {
+        "word": "那儿 / 这儿",
+        "py": "nàr / zhèr",
+        "note": "Khi muốn biểu đạt 'đến chỗ của ai', bắt buộc thêm 那儿/这儿 sau danh từ chỉ người: 去我朋友那儿 (đến chỗ bạn tôi), không nói 去我朋友."
+      }
+    ],
+    "grammarTips": [
+      "Vị trí trạng ngữ thời gian: Đứng đầu câu hoặc ngay SAU chủ ngữ, TRƯỚC động từ: 我们明天出发 hoặc 明天我们出发.",
+      "Mệnh đề thời gian 'Sau khi': [Sự việc/Hành động] + 以后. Bắt buộc đưa hành động lên trước (做作业以后: Sau khi làm bài tập).",
+      "Phân biệt 以后 và 然后: 以后 dùng để chỉ mốc thời gian sau một sự kiện (Tan học sau này/sau khi). 然后 (Sau đó) là liên từ, dùng để nối 2 hành động xảy ra nối tiếp nhau."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b21-01",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc 每... 都...",
+      "vi": "Mỗi năm đều có rất nhiều du học sinh đến Việt Nam học tập.",
+      "zh": "每年都有很多留学生来越南学习",
+      "standardTrans": "每年都有很多留学生来越南学习",
+      "pinyin": "Měinián dōu yǒu hěn duō liúxuéshēng lái Yuènán xuéxí.",
+      "grammarPoint": "Cấu trúc bao quát: 每 (Mỗi) + Danh từ + 都 (Đều) + Động từ",
+      "tokens": [
+        {
+          "text": "Mỗi năm",
+          "hz": "每年",
+          "py": "měinián",
+          "hv": "Mỗi niên",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Mỗi năm, hàng năm",
+          "radicals": "每 = Bộ nhân nằm 𠂉 + bộ mẫu 母; 年 = Bộ can 干"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "每年都有", "tag": "Thời gian + Đều có" },
+        { "id": "t2", "text": "很多留学生", "tag": "Chủ thể" },
+        { "id": "t3", "text": "来越南学习", "tag": "Liên động mục đích" },
+        { "id": "t4", "text": "每年有", "tag": "Bẫy thiếu 都" },
+        { "id": "t5", "text": "学习来越南", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["每年都有", "很多留学生", "来越南学习"],
+      "wordBankPool": ["每年都有", "很多留学生", "来越南学习", "每年有", "学习来越南", "都在"],
+      "traps": [
+        {
+          "pattern": "每年有",
+          "msg": "Lỗi thiếu phó từ: Trong tiếng Trung, khi dùng '每' (Mỗi) ở phía trước, thường bắt buộc phải có phó từ '都' (Đều) đi kèm tạo thành cấu trúc '每...都...' (Mỗi... đều...)."
+        },
+        {
+          "pattern": "学习来越南",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm (来越南) rồi mới thực hiện hành động (学习), không đảo ngược trật tự."
+        }
+      ],
+      "explanation": "Câu liên động kết hợp cấu trúc '每...都...'. Hướng di chuyển '来' (đến) vì người nói đang ở Việt Nam (đến Việt Nam học tập)."
+    },
+    {
+      "id": "b21-02",
+      "type": "anti_word_by_word",
+      "title": "Hẹn giờ và cách nói 15 phút (一刻)",
+      "vi": "A: 7 giờ sáng mai chúng ta gặp nhau ở cổng rạp chiếu phim nhé, được không? B: 7 giờ sớm quá, 7 giờ 15 phút nhé.",
+      "zh": "明天七点我们在电影院门口见好吗七点太早了七点一刻吧",
+      "standardTrans": "明天七点我们在电影院门口见好吗七点太早了七点一刻吧",
+      "pinyin": "Míngtiān qī diǎn wǒmen zài diànyǐngyuàn ménkǒu jiàn, hǎo ma? Qī diǎn tài zǎo le, qī diǎn yí kè ba.",
+      "grammarPoint": "Thời gian đứng trước địa điểm (明天七点 + 在...); Cách nói giờ: 一刻 (1 khắc = 15 phút)",
+      "tokens": [
+        {
+          "text": "Sớm",
+          "hz": "早",
+          "py": "zǎo",
+          "hv": "Tảo",
+          "role": "Tính từ",
+          "vn": "Sớm",
+          "radicals": "Bộ nhật 日 + bộ thập 十"
+        },
+        {
+          "text": "Khắc (15 phút)",
+          "hz": "一刻",
+          "py": "yí kè",
+          "hv": "Nhất khắc",
+          "role": "Lượng từ thời gian",
+          "vn": "1 khắc (bằng 15 phút)",
+          "radicals": "刻 = Bộ hợi 亥 + bộ đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们在电影院门口见", "tag": "Nơi chốn + Hành động" },
+        { "id": "t1", "text": "明天七点", "tag": "Thời gian" },
+        { "id": "t4", "text": "七点太早了", "tag": "Lời chê" },
+        { "id": "t3", "text": "好吗", "tag": "Hỏi ý kiến" },
+        { "id": "t5", "text": "七点一刻吧", "tag": "Chốt giờ" },
+        { "id": "t6", "text": "见在电影院门口", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["明天七点", "在电影院门口见", "好吗", "太早了", "七点一刻"],
+      "wordBankPool": ["明天七点", "我们在电影院门口见", "好吗", "七点太早了", "七点一刻吧", "见在电影院门口", "我们在电影院去见"],
+      "traps": [
+        {
+          "pattern": "见在电影院",
+          "msg": "Lỗi vị trí nơi chốn: Hành động gặp nhau diễn ra ở đâu thì cụm '在 + Nơi chốn' phải đứng TRƯỚC động từ '见'."
+        }
+      ],
+      "explanation": "Trật tự câu chuẩn: Thời gian (明天七点) + Chủ ngữ (我们) + Trạng ngữ nơi chốn (在电影院门口) + Động từ (见). Để nói 15 phút, người Trung Quốc thường dùng '一刻' (1 khắc)."
+    },
+    {
+      "id": "b21-03",
+      "type": "sentence_parsing",
+      "title": "Thời gian làm định ngữ bổ nghĩa cho danh từ",
+      "vi": "Tôi rất thích xem bộ phim chiếu vào lúc 7 giờ 15 phút tối.",
+      "zh": "我很喜欢晚上七点一刻的电影",
+      "standardTrans": "我很喜欢晚上七点一刻的电影",
+      "pinyin": "Wǒ hěn xǐhuan wǎnshang qī diǎn yí kè de diànyǐng.",
+      "grammarPoint": "Cụm danh từ: Thời gian + 的 + Danh từ (晚上七点一刻的电影)",
+      "tokens": [
+        {
+          "text": "Bộ phim",
+          "hz": "电影",
+          "py": "diànyǐng",
+          "hv": "Điện ảnh",
+          "role": "Danh từ trung tâm",
+          "vn": "Phim điện ảnh",
+          "radicals": "电 = Bộ điền 田 + nét sổ cong móc; 影 = Bộ cảnh 景 + bộ sam 彡"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我很喜欢", "tag": "Chủ ngữ + Động từ" },
+        { "id": "t2", "text": "晚上七点一刻的", "tag": "Định ngữ thời gian" },
+        { "id": "t3", "text": "电影", "tag": "Trung tâm ngữ" },
+        { "id": "t4", "text": "的晚上七点一刻", "tag": "Bẫy định ngữ" },
+        { "id": "t5", "text": "看电影晚上", "tag": "Bẫy thời gian" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我很喜欢", "晚上七点一刻的", "电影"],
+      "wordBankPool": ["我很喜欢", "晚上七点一刻的", "电影", "的晚上七点一刻", "看电影晚上", "喜欢看"],
+      "traps": [
+        {
+          "pattern": "看电影晚上",
+          "msg": "Lỗi định ngữ: Cụm 'chiếu vào lúc 7h15 tối' ở đây đóng vai trò bổ nghĩa cho 'bộ phim'. Do đó phải đưa thời gian lên trước chữ 的 tạo thành '晚上七点一刻的电影'."
+        }
+      ],
+      "explanation": "Thay vì dùng mệnh đề phức tạp, tiếng Trung đóng gói mốc thời gian thành định ngữ bổ nghĩa trực tiếp cho danh từ: [Thời gian] + 的 + [Sự vật]."
+    },
+    {
+      "id": "b21-04",
+      "type": "anti_word_by_word",
+      "title": "Mệnh đề 以后 và đại từ chỉ địa điểm 那儿",
+      "vi": "Buổi chiều sau khi làm bài tập, tôi thường đến chỗ bạn tôi chơi.",
+      "zh": "下午做作业以后我常去我朋友那儿玩儿",
+      "standardTrans": "下午做作业以后我常去我朋友那儿玩儿",
+      "pinyin": "Xiàwǔ zuò zuòyè yǐhòu, wǒ cháng qù wǒ péngyou nàr wánr.",
+      "grammarPoint": "Mệnh đề thời gian: Sự việc + 以后 (Sau khi...); Đại từ chỉ điểm: Người + 那儿/这儿 (Chỗ của ai)",
+      "tokens": [
+        {
+          "text": "Chỗ kia, nơi đó",
+          "hz": "那儿",
+          "py": "nàr",
+          "hv": "Na nhi",
+          "role": "Đại từ chỉ định",
+          "vn": "Chỗ, nơi (đứng sau danh từ chỉ người)",
+          "radicals": "那 = Chữ na 那; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Bài tập",
+          "hz": "作业",
+          "py": "zuòyè",
+          "hv": "Tác nghiệp",
+          "role": "Danh từ",
+          "vn": "Bài tập về nhà",
+          "radicals": "作 = Bộ nhân đứng 亻; 业 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "做作业以后", "tag": "Mệnh đề thời gian" },
+        { "id": "t1", "text": "下午", "tag": "Thời gian chung" },
+        { "id": "t3", "text": "我常去我朋友那儿", "tag": "Hành động 1 + Nơi chốn" },
+        { "id": "t4", "text": "玩儿", "tag": "Mục đích" },
+        { "id": "t5", "text": "去我朋友玩儿", "tag": "Bẫy địa điểm" },
+        { "id": "t6", "text": "以后做作业", "tag": "Bẫy 以后" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["下午", "做作业以后", "常去", "我朋友那儿"],
+      "wordBankPool": ["下午", "做作业以后", "我常去我朋友那儿", "玩儿", "去我朋友玩儿", "以后做作业", "那儿朋友"],
+      "traps": [
+        {
+          "pattern": "以后做作业",
+          "msg": "Lỗi cấu trúc 'sau khi': Trái với tiếng Việt, từ '以后' bắt buộc phải đứng SAU hành động ('做作业以后'), tuyệt đối không dịch xuôi 'sau khi làm bài tập' thành '以后做作业'."
+        },
+        {
+          "pattern": "去我朋友玩儿",
+          "msg": "Lỗi từ loại địa điểm: Động từ '去' yêu cầu một địa điểm. '朋友' (bạn) là danh từ chỉ người, bắt buộc phải thêm '那儿' vào sau để biến thành 'chỗ của bạn tôi' (我朋友那儿)."
+        }
+      ],
+      "explanation": "Cấu trúc mốc thời gian: [Sự việc] + 以后. Khi muốn nói 'đến chỗ/nơi của ai', phải dùng 'Người + 那儿/这儿' để tạo thành từ chỉ địa điểm (去我朋友那儿)."
+    },
+    {
+      "id": "b21-05",
+      "type": "sentence_parsing",
+      "title": "Thói quen hàng ngày và sự xen kẽ (有时候)",
+      "vi": "Buổi tối tôi ít khi xem ti vi, cũng ít khi đi dạo, tôi thường ở nhà đọc sách, có lúc tôi đến ký túc xá luyện khẩu ngữ với bạn tôi.",
+      "zh": "晚上我很少看电影也很少散步我常在家看书有时候我去宿舍跟我朋友练习口语",
+      "standardTrans": "晚上我很少看电影也很少散步我常在家看书有时候我去宿舍跟我朋友练习口语",
+      "pinyin": "Wǎnshang wǒ hěn shǎo kàn diànyǐng, yě hěn shǎo sànbù, wǒ cháng zài jiā kàn shū, yǒushíhou wǒ qù sùshè gēn wǒ péngyou liànxí kǒuyǔ.",
+      "grammarPoint": "Liệt kê thói quen (很少... 也很少...); Giới từ đồng hành (跟 + Người + Động từ)",
+      "tokens": [
+        {
+          "text": "Đi dạo",
+          "hz": "散步",
+          "py": "sànbù",
+          "hv": "Tán bộ",
+          "role": "Động từ ly hợp",
+          "vn": "Đi dạo, tản bộ",
+          "radicals": "散 = Bộ phác 攵; 步 = Bộ chỉ 止 + bộ thiếu 少"
+        },
+        {
+          "text": "Khẩu ngữ",
+          "hz": "口语",
+          "py": "kǒuyǔ",
+          "hv": "Khẩu ngữ",
+          "role": "Danh từ",
+          "vn": "Khẩu ngữ, kỹ năng nói",
+          "radicals": "口 = Bộ khẩu 口; 语 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "晚上我很少看电影", "tag": "Thói quen 1" },
+        { "id": "t2", "text": "也很少散步", "tag": "Thói quen 2" },
+        { "id": "t3", "text": "我常在家看书", "tag": "Thói quen 3" },
+        { "id": "t4", "text": "有时候我去宿舍", "tag": "Thói quen 4 (Địa điểm)" },
+        { "id": "t5", "text": "跟我朋友练习口语", "tag": "Thói quen 4 (Hành động)" },
+        { "id": "t6", "text": "练习跟朋友", "tag": "Bẫy đồng hành" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["很少看电影", "很少散步", "常在家看书", "有时候", "跟我朋友练习"],
+      "wordBankPool": ["晚上我很少看电影", "也很少散步", "我常在家看书", "有时候我去宿舍", "跟我朋友练习口语", "练习跟朋友", "看电影很少"],
+      "traps": [
+        {
+          "pattern": "练习跟朋友",
+          "msg": "Lỗi giới từ đồng hành: Làm việc gì cùng ai bắt buộc đưa cụm '跟 + Đối tượng' lên trước động từ ('跟我朋友练习')."
+        }
+      ],
+      "explanation": "Chú ý: Trong đáp án sách, từ 'xem ti vi' được dùng là '看电影' (xem phim), bài tập bám sát 100% đáp án gốc. Phó từ '很少' (hiếm khi) và '常' (thường) luôn đứng trước cụm động từ hoặc giới từ."
+    },
+    {
+      "id": "b21-06",
+      "type": "anti_word_by_word",
+      "title": "Trình tự hành động với 然后",
+      "vi": "Sau 5 giờ chiều chúng tôi thường đến sân tập tập thể dục, sau đó chúng tôi về ký túc xá nghỉ ngơi.",
+      "zh": "下午五点后我们常去操场锻炼身体然后我们回宿舍休息",
+      "standardTrans": "下午五点后我们常去操场锻炼身体然后我们回宿舍休息",
+      "pinyin": "Xiàwǔ wǔ diǎn hòu, wǒmen cháng qù cāochǎng duànliàn shēntǐ, ránhòu wǒmen huí sùshè xiūxi.",
+      "grammarPoint": "Mốc thời gian: Thời gian + 后; Nối tiếp hành động: 然后 (Sau đó)",
+      "tokens": [
+        {
+          "text": "Sau đó",
+          "hz": "然后",
+          "py": "ránhòu",
+          "hv": "Nhiên hậu",
+          "role": "Liên từ",
+          "vn": "Sau đó, tiếp đó",
+          "radicals": "然 = Bộ hỏa 灬; 后 = Bộ khẩu 口"
+        },
+        {
+          "text": "Sân tập",
+          "hz": "操场",
+          "py": "cāochǎng",
+          "hv": "Thao trường",
+          "role": "Danh từ địa điểm",
+          "vn": "Sân thể dục, bãi tập",
+          "radicals": "操 = Bộ thủ 扌 + chữ tào 曹; 场 = Bộ thổ 土"
+        },
+        {
+          "text": "Rèn luyện",
+          "hz": "锻炼",
+          "py": "duànliàn",
+          "hv": "Đoán luyện",
+          "role": "Động từ",
+          "vn": "Tập thể dục, rèn luyện",
+          "radicals": "锻 = Bộ kim 钅 + chữ đoạn 段; 炼 = Bộ hỏa 火 + chữ đông 东"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "下午五点后", "tag": "Thời gian" },
+        { "id": "t2", "text": "我们常去操场", "tag": "Hành động 1" },
+        { "id": "t3", "text": "锻炼身体", "tag": "Mục đích 1" },
+        { "id": "t4", "text": "然后我们回宿舍休息", "tag": "Hành động nối tiếp" },
+        { "id": "t5", "text": "锻炼操场", "tag": "Bẫy liên động" },
+        { "id": "t6", "text": "以后我们回", "tag": "Bẫy liên từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["五点后", "去操场锻炼身体", "然后", "回宿舍休息"],
+      "wordBankPool": ["下午五点后", "我们常去操场", "锻炼身体", "然后我们回宿舍休息", "锻炼操场", "以后我们回", "后五点"],
+      "traps": [
+        {
+          "pattern": "以后我们回",
+          "msg": "Lỗi liên từ: '以后' (sau khi) dùng để chỉ mốc thời gian, '然后' (sau đó) dùng ở đầu vế câu sau để nối tiếp 2 hành động liên tiếp."
+        },
+        {
+          "pattern": "锻炼操场",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm rồi mới làm việc ('去操场锻炼身体'), không ghép 'tập thể dục sân tập' thành '锻炼操场'."
+        }
+      ],
+      "explanation": "Từ '后' ở đây dùng rút gọn cho '以后' chỉ mốc thời gian (五点后). Liên từ '然后' (sau đó) cực kỳ phổ biến để liên kết chuỗi hành động theo thời gian."
+    },
+    {
+      "id": "b21-07",
+      "type": "sentence_parsing",
+      "title": "Hỏi đáp giờ lên lớp, tan học",
+      "vi": "A: Mấy giờ các cậu vào lớp? B: Chúng tớ vào lớp lúc 8 giờ sáng, 12 giờ trưa tan học.",
+      "zh": "你们几点上课我们早上八点上课中午十二点下课",
+      "standardTrans": "你们几点上课我们早上八点上课中午十二点下课",
+      "pinyin": "Nǐmen jǐ diǎn shàngkè? Wǒmen zǎoshang bā diǎn shàngkè, zhōngwǔ shí'èr diǎn xiàkè.",
+      "grammarPoint": "Hỏi thời gian cụ thể (几点); Động từ ly hợp: 上课 (vào lớp), 下课 (tan học)",
+      "tokens": [
+        {
+          "text": "Tan học",
+          "hz": "下课",
+          "py": "xiàkè",
+          "hv": "Hạ khóa",
+          "role": "Động từ ly hợp",
+          "vn": "Tan học, xuống lớp",
+          "radicals": "下 = Bộ nhất 一; 课 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你们几点上课", "tag": "Câu hỏi" },
+        { "id": "t2", "text": "我们早上八点上课", "tag": "Trả lời giờ vào" },
+        { "id": "t3", "text": "中午十二点下课", "tag": "Trả lời giờ ra" },
+        { "id": "t4", "text": "上课几点", "tag": "Bẫy vị trí thời gian" },
+        { "id": "t5", "text": "十二点中午", "tag": "Bẫy trật tự thời gian lớn bé" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["几点上课", "早上八点上课", "中午十二点下课"],
+      "wordBankPool": ["你们几点上课", "我们早上八点上课", "中午十二点下课", "上课几点", "十二点中午", "下课十二点"],
+      "traps": [
+        {
+          "pattern": "上课几点",
+          "msg": "Lỗi vị trí từ để hỏi: '几点' (mấy giờ) đóng vai trò trạng ngữ thời gian, bắt buộc phải đứng TRƯỚC động từ ('几点上课')."
+        },
+        {
+          "pattern": "十二点中午",
+          "msg": "Lỗi trật tự thời gian: Khái niệm thời gian lớn (Buổi trưa - 中午) phải đặt trước khái niệm nhỏ (12 giờ - 十二点)."
+        }
+      ],
+      "explanation": "Câu hỏi thời gian đơn giản. Nhớ quy tắc: Thời gian (sáng/trưa/tối) + Giờ cụ thể + Động từ."
+    },
+    {
+      "id": "b21-08",
+      "type": "anti_word_by_word",
+      "title": "Tổ chức liên hoan và phó từ 一定",
+      "vi": "A: 8 rưỡi tối mai lớp chúng tớ sẽ tổ chức một bữa tiệc liên hoan ở phòng học. Mary và Mike cũng tham gia, cậu cũng tham gia nhé. B: Được, tôi nhất định sẽ tham gia bữa tiệc của các cậu.",
+      "zh": "晚上八点半我们班在教室举行一个联欢会玛丽和麦克也来参加你也来参加吧好我一定参加你们的晚会",
+      "standardTrans": "晚上八点半我们班在教室举行一个联欢会玛丽和麦克也来参加你也来参加吧好我一定参加你们的晚会",
+      "pinyin": "Wǎnshang bā diǎn bàn wǒmen bān zài jiàoshì jǔxíng yí ge liánhuānhuì. Mǎlì hé Màikè yě lái cānjiā, nǐ yě lái cānjiā ba. Hǎo, wǒ yídìng cānjiā nǐmen de wǎnhuì.",
+      "grammarPoint": "Thời gian và Nơi chốn đứng trước động từ (在教室举行); Phó từ chỉ sự quả quyết (一定)",
+      "tokens": [
+        {
+          "text": "Tiệc liên hoan",
+          "hz": "联欢会",
+          "py": "liánhuānhuì",
+          "hv": "Liên hoan hội",
+          "role": "Danh từ",
+          "vn": "Buổi liên hoan, tiệc liên hoan",
+          "radicals": "联 = Bộ nhĩ 耳; 欢 = Bộ hựu 又 + bộ khiếm 欠; 会 = Bộ nhân 人 + chữ vân 云"
+        },
+        {
+          "text": "Nhất định",
+          "hz": "一定",
+          "py": "yídìng",
+          "hv": "Nhất định",
+          "role": "Phó từ",
+          "vn": "Nhất định, chắc chắn",
+          "radicals": "一 = Số 1; 定 = Bộ miên 宀 + chữ chính 正"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "晚上八点半", "tag": "Thời gian" },
+        { "id": "t2", "text": "我们班在教室举行一个联欢会", "tag": "Sự kiện chính" },
+        { "id": "t3", "text": "玛丽和麦克也来参加", "tag": "Mời gọi 1" },
+        { "id": "t4", "text": "你也来参加吧", "tag": "Mời gọi 2" },
+        { "id": "t5", "text": "好我一定参加你们的晚会", "tag": "Vế B" },
+        { "id": "t6", "text": "举行在教室", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["晚上八点半", "在教室举行", "也来参加", "一定参加"],
+      "wordBankPool": ["晚上八点半", "我们班在教室举行一个联欢会", "玛丽和麦克也来参加", "你也来参加吧", "好我一定参加你们的晚会", "举行在教室", "一定来在晚会"],
+      "traps": [
+        {
+          "pattern": "举行在教室",
+          "msg": "Lỗi vị trí nơi chốn: Hành động tổ chức diễn ra ở đâu thì cụm '在 + Nơi chốn' phải đứng TRƯỚC động từ ('在教室举行')."
+        }
+      ],
+      "explanation": "Trong Hán ngữ, chuỗi Trạng ngữ Thời gian và Nơi chốn có thể dài nhưng luôn tuân thủ việc đặt TRƯỚC động từ. '一定' đóng vai trò phó từ thể hiện sự quyết tâm mạnh mẽ."
+    },
+    {
+      "id": "b21-09",
+      "type": "sentence_parsing",
+      "title": "Hỏi thời gian và nhờ đón tại sân bay",
+      "vi": "A: Khi nào cậu về nước? B: 3 giờ chiều mai. Chiều mai cậu đến sân bay đón tớ nhé.",
+      "zh": "什么时候你回国明天下午三点明天下午你去机场接我吧",
+      "standardTrans": "什么时候你回国明天下午三点明天下午你去机场接我吧",
+      "pinyin": "Shénme shíhou nǐ huíguó? Míngtiān xiàwǔ sān diǎn. Míngtiān xiàwǔ nǐ qù jīchǎng jiē wǒ ba.",
+      "grammarPoint": "Đại từ nghi vấn thời gian: 什么时候; Câu liên động nhờ vả: 去 + 机场 + 接我吧",
+      "tokens": [
+        {
+          "text": "Sân bay",
+          "hz": "机场",
+          "py": "jīchǎng",
+          "hv": "Cơ trường",
+          "role": "Địa điểm",
+          "vn": "Sân bay",
+          "radicals": "机 = Bộ mộc 木 + chữ kỷ 几; 场 = Bộ thổ 土"
+        },
+        {
+          "text": "Đón",
+          "hz": "接",
+          "py": "jiē",
+          "hv": "Tiếp",
+          "role": "Động từ",
+          "vn": "Đón, rước (ai đó)",
+          "radicals": "Bộ thủ 扌 + chữ thiếp 妾"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "什么时候你回国", "tag": "Câu hỏi" },
+        { "id": "t2", "text": "明天下午三点", "tag": "Trả lời thời gian" },
+        { "id": "t3", "text": "明天下午", "tag": "Thời gian hẹn" },
+        { "id": "t4", "text": "你去机场接我吧", "tag": "Nhờ vả" },
+        { "id": "t5", "text": "你回国什么时候", "tag": "Bẫy từ để hỏi" },
+        { "id": "t6", "text": "接我在机场", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["什么时候", "回国", "明天下午三点", "去机场接我"],
+      "wordBankPool": ["什么时候你回国", "明天下午三点", "明天下午", "你去机场接我吧", "你回国什么时候", "接我在机场", "去接我机场"],
+      "traps": [
+        {
+          "pattern": "你回国什么时候",
+          "msg": "Lỗi từ để hỏi thời gian: '什么时候' (khi nào) làm trạng ngữ chỉ thời gian, bắt buộc đứng trước động từ '回国' (khi nào về), không đặt ở cuối câu."
+        },
+        {
+          "pattern": "去接我机场",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm (去机场) rồi mới thực hiện hành động đón (接我), không đảo ngược thành 'đến đón tôi ở sân bay'."
+        }
+      ],
+      "explanation": "'什么时候' có thể đứng trước hoặc sau chủ ngữ (什么时候你回国 / 你什么时候回国) nhưng luôn phải đứng trước động từ."
+    },
+    {
+      "id": "b21-10",
+      "type": "anti_word_by_word",
+      "title": "Lời mời leo núi và từ chối vì tăng ca",
+      "vi": "A: Ngày mai cậu đi leo núi với chúng tớ không? B: Xin lỗi, gần đây công việc rất bận rộn, tớ không có thời gian. Ngày mai tớ còn phải tăng ca nữa nên tớ không đi.",
+      "zh": "明天你跟我一起去爬山吗对不起最近工作很忙我没有时间明天我还要加班所以我也不去",
+      "standardTrans": "明天你跟我一起去爬山吗对不起最近工作很忙我没有时间明天我还要加班所以我也不去",
+      "pinyin": "Míngtiān nǐ gēn wǒ yìqǐ qù páshān ma? Duìbùqǐ, zuìjìn gōngzuò hěn máng, wǒ méiyǒu shíjiān. Míngtiān wǒ hái yào jiābān, suǒyǐ wǒ yě bú qù.",
+      "grammarPoint": "Đồng hành (跟...一起); Động từ năng nguyện kết hợp phó từ (还要); Động từ ly hợp (加班)",
+      "tokens": [
+        {
+          "text": "Leo núi",
+          "hz": "爬山",
+          "py": "páshān",
+          "hv": "Ba san",
+          "role": "Động từ ly hợp",
+          "vn": "Leo núi",
+          "radicals": "爬 = Bộ trảo 爪 + chữ ba 巴; 山 = Bộ sơn 山"
+        },
+        {
+          "text": "Tăng ca",
+          "hz": "加班",
+          "py": "jiābān",
+          "hv": "Gia ban",
+          "role": "Động từ ly hợp",
+          "vn": "Làm thêm giờ, tăng ca",
+          "radicals": "加 = Bộ lực 力 + bộ khẩu 口; 班 = Hai bộ ngọc 王 + bộ đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "明天你跟我一起去爬山吗", "tag": "Câu hỏi A" },
+        { "id": "t2", "text": "对不起最近工作很忙", "tag": "Lời từ chối 1" },
+        { "id": "t3", "text": "我没有时间", "tag": "Lời từ chối 2" },
+        { "id": "t4", "text": "明天我还要加班", "tag": "Lý do bổ sung" },
+        { "id": "t5", "text": "所以我也不去", "tag": "Kết luận" },
+        { "id": "t6", "text": "一起去爬山跟我", "tag": "Bẫy đồng hành" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["跟你一起去爬山", "最近工作很忙", "没有时间", "还要加班", "所以我也不去"],
+      "wordBankPool": ["明天你跟我一起去爬山吗", "对不起最近工作很忙", "我没有时间", "明天我还要加班", "所以我也不去", "一起去爬山跟我", "不去所以"],
+      "traps": [
+        {
+          "pattern": "一起去爬山跟我",
+          "msg": "Lỗi giới từ: Cụm giới từ đồng hành '跟你(一起)' bắt buộc phải đứng TRƯỚC động từ hành động '去爬山', không đặt ở cuối câu."
+        }
+      ],
+      "explanation": "Ở vế cuối sách dịch thêm chữ '也' (所以我也...) để nhấn mạnh ý 'vì vậy tớ (cũng) không đi'. '还要' là cụm phó từ + động từ năng nguyện diễn tả 'vẫn còn phải (làm gì đó)'."
+    }
+  ]
+}

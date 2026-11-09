@@ -1,0 +1,772 @@
+{
+  "lessonId": "b13",
+  "lessonTitle": "第十三课: 这是不是中药?",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "旧 vs 老",
+        "py": "jiù vs lǎo",
+        "note": "旧 (jiù) dùng cho đồ vật cũ (旧箱子, 旧词典), tuyệt đối KHÔNG dùng cho người; bạn cũ/người quen lâu năm dùng 老 (老朋友, 老同学)."
+      },
+      {
+        "word": "Lượng từ đặc thù",
+        "py": "liàngcí",
+        "note": "把 (bǎ): vật có cán cầm (一把雨伞); 件 (jiàn): quần áo (两件衣服); 瓶 (píng): chai/lọ (两瓶红酒); 张 (zhāng): vật mỏng phẳng (几张光盘); 支 (zhī): vật thon dài (一支笔)."
+      },
+      {
+        "word": "里 (Trong)",
+        "py": "lǐ",
+        "note": "Phương vị từ '里' đứng sau danh từ tạo cụm biểu thị vị trí bên trong (箱子里: trong vali, 房间里: trong phòng). Không nói '在里箱子'."
+      },
+      {
+        "word": "吃药 (Uống thuốc)",
+        "py": "chī yào",
+        "note": "Người Trung Quốc dùng động từ '吃' (ăn) với thuốc tây/viên (吃药, 吃点儿药), không dùng động từ '喝' (trừ thuốc thang sắc dạng nước)."
+      }
+    ],
+    "grammarTips": [
+      "Cụm chữ '的' thay thế danh từ: [Tính từ / Danh từ / Đại từ] + 的 đại diện cho người hoặc vật đã nhắc đến (大的是他的: cái to là của anh ấy; 新的是我的: cái mới là của tớ).",
+      "Câu hỏi chính phản: Tính từ / Động từ + 不 + Tính từ / Động từ (重不重: nặng hay không; 是不是: có phải là). Tuyệt đối không thêm '吗' ở cuối câu.",
+      "Số thứ tự tầng lầu: Dùng số đếm '二' (二楼: tầng 2), tuyệt đối không dùng '两楼'."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b13-01",
+      "type": "sentence_parsing",
+      "title": "Vị trí của vật và Cụm chữ 的 tỉnh lược danh từ",
+      "vi": "Vali của chúng tôi ở đằng kia, chiếc to là của anh ấy, chiếc nhỏ là của tôi.",
+      "zh": "我们的箱子在那儿 大的是他的 小的是我的",
+      "standardTrans": "我们的箱子在那儿 大的是他的 小的是我的",
+      "pinyin": "Wǒmen de xiāngzi zài nàr, dà de shì tā de, xiǎo de shì wǒ de.",
+      "grammarPoint": "Cụm chữ 的 thay thế danh từ: Tính từ + 的 (大的是...: chiếc to là...; 小的是...: chiếc nhỏ là...)",
+      "tokens": [
+        {
+          "text": "Vali",
+          "hz": "箱子",
+          "py": "xiāngzi",
+          "hv": "Tương tử",
+          "role": "Trung tâm ngữ",
+          "vn": "Vali, hòm, rương",
+          "radicals": "箱 = Bộ trúc 竹 + chữ tương 相 (bộ mộc 木 + bộ mục 目); 子 = Bộ tử 子"
+        },
+        {
+          "text": "Chiếc to",
+          "hz": "大的",
+          "py": "dà de",
+          "hv": "Đại đích",
+          "role": "Chủ ngữ phân câu 2",
+          "vn": "Cái to, chiếc to",
+          "radicals": "大 = Bộ đại 大; 的 = Bộ bạch 白 + bộ bao 勺"
+        },
+        {
+          "text": "Chiếc nhỏ",
+          "hz": "小的",
+          "py": "xiǎo de",
+          "hv": "Tiểu đích",
+          "role": "Chủ ngữ phân câu 3",
+          "vn": "Cái nhỏ, chiếc nhỏ",
+          "radicals": "小 = Bộ tiểu 小; 的 = Bộ bạch 白 + bộ bao 勺"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "大的是他的", "tag": "Phân câu 2" },
+        { "id": "t1", "text": "我们的箱子在那儿", "tag": "Phân câu 1" },
+        { "id": "t3", "text": "小的是我的", "tag": "Phân câu 3" },
+        { "id": "t4", "text": "在那是我们的箱子", "tag": "Bẫy trật tự" },
+        { "id": "t5", "text": "大箱子是", "tag": "Bẫy thừa từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我们的箱子在那儿", "大的是他的", "小的是我的"],
+      "wordBankPool": ["我们的箱子在那儿", "大的是他的", "小的是我的", "在那是我们的箱子", "大箱子是", "他的大", "我的小"],
+      "traps": [
+        {
+          "pattern": "在那是",
+          "msg": "Lỗi ngữ tự: 'Ở đằng kia' là vị ngữ chỉ nơi chốn đứng sau chủ ngữ ('我们的箱子在那儿'), không dịch word-by-word thành '在那是'."
+        },
+        {
+          "pattern": "大箱子是",
+          "msg": "Lỗi lặp danh từ: Khi danh từ '箱子' đã được nhắc tới ở vế trước, vế sau dùng cụm chữ 的 ('大的', '小的') để tinh giản, tránh lặp lại '大箱子'."
+        }
+      ],
+      "explanation": "Khi đối tượng (箱子) đã xuất hiện rõ ràng ở vế đầu, các vế tiếp theo sử dụng kết cấu 'Tính từ + 的' (大的, 小的) đóng vai trò danh từ hóa để câu văn cô đọng chuẩn ngữ pháp Hán ngữ."
+    },
+    {
+      "id": "b13-02",
+      "type": "anti_word_by_word",
+      "title": "Hỏi nhận biết người và trả lời quan hệ thân hữu",
+      "vi": "A: Bạn có quen anh ấy không? B: Có, anh ấy là bạn của anh trai tôi.",
+      "zh": "你认识他吗 认识 他是我哥哥的朋友",
+      "standardTrans": "你认识他吗 认识 他是我哥哥的朋友",
+      "pinyin": "Nǐ rènshi tā ma? Rènshi. Tā shì wǒ gēge de péngyou.",
+      "grammarPoint": "Động từ nhận thức: 认识 (quen biết); Trả lời khẳng định bằng việc lặp lại động từ: 认识",
+      "tokens": [
+        {
+          "text": "Quen biết",
+          "hz": "认识",
+          "py": "rènshi",
+          "hv": "Nhận thức",
+          "role": "Động từ vị ngữ",
+          "vn": "Quen biết, nhận biết",
+          "radicals": "认 = Bộ ngôn 讠 + chữ nhân 人; 识 = Bộ ngôn 讠 + chữ chức 只"
+        },
+        {
+          "text": "Bạn của anh trai tôi",
+          "hz": "我哥哥的朋友",
+          "py": "wǒ gēge de péngyou",
+          "hv": "Ngã ca ca đích bằng hữu",
+          "role": "Cụm danh từ tân ngữ",
+          "vn": "Bạn bè của anh trai tôi",
+          "radicals": "哥哥 = Anh trai (hai bộ khả 可); 朋友 = Bạn bè (bộ nguyệt 月 + bộ hựu 又)"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "他是我哥哥的朋友", "tag": "Vế giải thích" },
+        { "id": "t1", "text": "你认识他吗", "tag": "Câu hỏi" },
+        { "id": "t2", "text": "认识", "tag": "Khẳng định" },
+        { "id": "t4", "text": "有认识", "tag": "Bẫy dịch bồi" },
+        { "id": "t5", "text": "朋友我哥哥", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你认识他吗", "认识", "我哥哥的朋友"],
+      "wordBankPool": ["你认识他吗", "认识", "他是我哥哥的朋友", "有认识", "朋友我哥哥", "不认识", "是的认识"],
+      "traps": [
+        {
+          "pattern": "有认识",
+          "msg": "Lỗi dịch bồi từ tiếng Việt: Tiếng Việt trả lời 'Có (quen)', nhưng tiếng Trung phải lặp lại chính động từ đó ('认识'), không ghép chữ '有' trước động từ."
+        },
+        {
+          "pattern": "朋友我哥哥",
+          "msg": "Lỗi định ngữ: 'Bạn của anh trai tôi' bắt buộc đặt định ngữ sở hữu lên trước trung tâm ngữ: '我哥哥的朋友'."
+        }
+      ],
+      "explanation": "Trong giao tiếp Hán ngữ, để trả lời khẳng định cho câu hỏi nghi vấn dạng 'V + 吗?', người nói lặp lại trực tiếp động từ (认识) thay vì nói '有'."
+    },
+    {
+      "id": "b13-03",
+      "type": "sentence_parsing",
+      "title": "Đại từ chỉ thị số nhiều và Câu chữ 的 nhấn mạnh",
+      "vi": "A: Những thứ này là của ai? B: Những thứ này đều là của mẹ tôi mua cho tôi hôm qua.",
+      "zh": "这些东西是谁的 这些东西都是我妈妈昨天给我买的",
+      "standardTrans": "这些东西是谁的 这些东西都是我妈妈昨天给我买的",
+      "pinyin": "Zhèxiē dōngxi shì shéi de? Zhèxiē dōngxi dōu shì wǒ māma zuótiān gěi wǒ mǎi de.",
+      "grammarPoint": "Cấu trúc nhấn mạnh đối tượng/phương thức: 是...的; Giới từ 给 chỉ đối tượng tiếp nhận: 给 + Tôi + Mua",
+      "tokens": [
+        {
+          "text": "Đồ đạc",
+          "hz": "东西",
+          "py": "dōngxi",
+          "hv": "Đông tây",
+          "role": "Trung tâm ngữ",
+          "vn": "Đồ vật, đồ đạc, thứ",
+          "radicals": "东 = Chữ đông 东; 西 = Bộ á 西"
+        },
+        {
+          "text": "Mua cho tôi",
+          "hz": "给我买",
+          "py": "gěi wǒ mǎi",
+          "hv": "Cấp ngã mãi",
+          "role": "Cụm giới tân làm trạng ngữ",
+          "vn": "Mua cho tôi",
+          "radicals": "给 = Bộ mịch 纟 + chữ hợp 合; 买 = Chữ mãi 买"
+        },
+        {
+          "text": "Những thứ này",
+          "hz": "这些东西",
+          "py": "zhèxiē dōngxi",
+          "hv": "Giá ta đông tây",
+          "role": "Chủ ngữ",
+          "vn": "Các món đồ này",
+          "radicals": "这 = Đây; 些 = Bộ chỉ 止 + bộ nhị 二; 东西 = Đồ đạc"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这些东西都是", "tag": "Chủ vị đáp" },
+        { "id": "t1", "text": "这些东西是谁的", "tag": "Câu hỏi" },
+        { "id": "t3", "text": "我妈妈昨天给我买的", "tag": "Vế nhấn mạnh 的" },
+        { "id": "t4", "text": "买给我", "tag": "Bẫy ngữ tự" },
+        { "id": "t5", "text": "谁的东西是", "tag": "Bẫy đảo ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这些东西是谁的", "这些东西都是", "昨天给我买的"],
+      "wordBankPool": ["这些东西是谁的", "这些东西都是", "我妈妈昨天给我买的", "买给我", "谁的东西是", "妈妈买我", "那些东西"],
+      "traps": [
+        {
+          "pattern": "买给我",
+          "msg": "Lỗi ngữ tự giới từ: Cấu trúc làm gì cho ai bắt buộc đưa cụm giới từ lên trước động từ: '给我买', không dịch xuôi theo tiếng Việt thành '买给我'."
+        },
+        {
+          "pattern": "谁的东西是",
+          "msg": "Lỗi trật tự vị ngữ: Hỏi 'của ai' trong câu phán đoán là '是 + 谁的' ('这些东西是谁的'), không đặt '谁' lên trước làm chủ ngữ."
+        }
+      ],
+      "explanation": "Cấu trúc 'S + 是 + [Người + Thời gian + 给 + Đối tượng + V] + 的' dùng để nhấn mạnh ai đã mua món đồ đó vào thời điểm nào."
+    },
+    {
+      "id": "b13-04",
+      "type": "anti_word_by_word",
+      "title": "Hỏi giá trang phục và đơn vị tiền tệ vạn 95.000",
+      "vi": "A: Áo len bao nhiêu tiền một cái? B: Cái màu đỏ 100000 đồng, cái màu trắng 95000 đồng. Chị muốn cái nào?",
+      "zh": "毛衣多少钱一件 红的十万越南盾 白的九万五千越南盾 你要哪件",
+      "standardTrans": "毛衣多少钱一件 红的十万越南盾 白的九万五千越南盾 你要哪件",
+      "pinyin": "Máoyī duōshao qián yí jiàn? Hóng de shí wàn yuènándùn, bái de jiǔ wàn wǔ qiān yuènándùn. Nǐ yào nǎ jiàn?",
+      "grammarPoint": "Hỏi đơn giá: Danh từ + 多少钱 + Số lượng từ; Đơn vị tiền tệ 4 chữ số: 万 (chục nghìn/vạn); Cụm màu sắc + 的",
+      "tokens": [
+        {
+          "text": "Áo len",
+          "hz": "毛衣",
+          "py": "máoyī",
+          "hv": "Mao y",
+          "role": "Chủ ngữ hỏi",
+          "vn": "Áo len",
+          "radicals": "毛 = Bộ mao 毛; 衣 = Bộ y 衣"
+        },
+        {
+          "text": "Một chiếc (áo)",
+          "hz": "一件",
+          "py": "yí jiàn",
+          "hv": "Nhất kiện",
+          "role": "Số lượng từ",
+          "vn": "Một chiếc, một bộ áo",
+          "radicals": "一 = Số 1; 件 = Bộ nhân đứng 亻 + bộ ngưu 牛"
+        },
+        {
+          "text": "Mười vạn (100.000)",
+          "hz": "十万",
+          "py": "shí wàn",
+          "hv": "Thập vạn",
+          "role": "Số từ chỉ giá",
+          "vn": "100.000 (10 vạn)",
+          "radicals": "十 = Bộ thập 十; 万 = Bộ nhất 一 + nét ngang sổ móc"
+        },
+        {
+          "text": "Chín vạn năm nghìn (95.000)",
+          "hz": "九万五千",
+          "py": "jiǔ wàn wǔ qiān",
+          "hv": "Cửu vạn ngũ thiên",
+          "role": "Số từ chỉ giá",
+          "vn": "95.000 (9 vạn 5 nghìn)",
+          "radicals": "九 = Số 9; 万 = Vạn; 五 = Số 5; 千 = Bộ thập 十 + nét phẩy"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "红的十万越南盾", "tag": "Giá áo đỏ" },
+        { "id": "t4", "text": "你要哪件", "tag": "Hỏi lựa chọn" },
+        { "id": "t1", "text": "毛衣多少钱一件", "tag": "Hỏi giá áo len" },
+        { "id": "t3", "text": "白的九万五千越南盾", "tag": "Giá áo trắng" },
+        { "id": "t5", "text": "一百千", "tag": "Bẫy đếm tiền" },
+        { "id": "t6", "text": "九十五千", "tag": "Bẫy tách số" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["毛衣多少钱一件", "十万越南盾", "九万五千越南盾", "你要哪件"],
+      "wordBankPool": ["毛衣多少钱一件", "红的十万越南盾", "白的九万五千越南盾", "你要哪件", "一百千", "九十五千", "哪件你要"],
+      "traps": [
+        {
+          "pattern": "一百千",
+          "msg": "Lỗi quy đổi số đếm: Tiếng Trung tách 4 chữ số (vạn), 100.000 phải nói là '十万' (10 vạn), tuyệt đối không nói '一百千'."
+        },
+        {
+          "pattern": "九十五千",
+          "msg": "Lỗi tách số 95.000: Bắt buộc tách thành '9 vạn + 5 nghìn' ('九万五千'), không được dịch thô thành '九十五千'."
+        }
+      ],
+      "explanation": "Hỏi đơn giá: Danh từ + 多少钱 + Số lượng từ ('毛衣多少钱一件'). Quy tắc đếm tiền tiếng Trung phân nhóm 4 chữ số (万): 100.000 là 十万, 95.000 là 九万五千."
+    },
+    {
+      "id": "b13-05",
+      "type": "sentence_parsing",
+      "title": "Liệt kê đồ đạc trong vali với lượng từ đa dạng",
+      "vi": "Hai chiếc vali này đều là của tôi. Trong chiếc va li mới có hai chai rượu vang đỏ, vài bộ quần áo, hai cái ô, còn có vài đĩa CD và một ít thuốc. Trong chiếc va li cũ đều là sách tiếng Trung.",
+      "zh": "这两个箱子都是我的 新的箱子里有两瓶红酒 几件衣服 两把雨伞 还有几张光盘和一些药 旧的箱子里都是中文书",
+      "standardTrans": "这两个箱子都是我的 新的箱子里有两瓶红酒 几件衣服 两把雨伞 还有几张光盘和一些药 旧的箱子里都是中文书",
+      "pinyin": "Zhè liǎng ge xiāngzi dōu shì wǒ de. Xīn de xiāngzi lǐ yǒu liǎng píng hóngjiǔ, jǐ jiàn yīfu, liǎng bǎ yǔsǎn, hái yǒu jǐ zhāng guāngpán hé yìxiē yào. Jiù de xiāngzi lǐ dōu shì zhōngwén shū.",
+      "grammarPoint": "Cấu trúc phương vị: Nơi chốn + 里; Hệ thống lượng từ đặc thù: 瓶 (chai), 件 (bộ), 把 (cái ô), 张 (chiếc đĩa CD); Cũ chỉ đồ vật: 旧",
+      "tokens": [
+        {
+          "text": "Rượu vang đỏ",
+          "hz": "红酒",
+          "py": "hóngjiǔ",
+          "hv": "Hồng tửu",
+          "role": "Tân ngữ liệt kê 1",
+          "vn": "Rượu vang đỏ",
+          "radicals": "红 = Bộ mịch 纟 + chữ công 工; 酒 = Bộ chấm thủy 氵 + bộ dậu 酉"
+        },
+        {
+          "text": "Ô, dù",
+          "hz": "雨伞",
+          "py": "yǔsǎn",
+          "hv": "Vũ tản",
+          "role": "Tân ngữ liệt kê 3",
+          "vn": "Cái ô, cái dù che mưa",
+          "radicals": "雨 = Bộ vũ 雨; 伞 = Bộ nhân 人 + các nét mô phỏng nan ô"
+        },
+        {
+          "text": "Đĩa CD",
+          "hz": "光盘",
+          "py": "guāngpán",
+          "hv": "Quang bàn",
+          "role": "Tân ngữ liệt kê 4",
+          "vn": "Đĩa CD, đĩa quang",
+          "radicals": "光 = Bộ tiểu 小 + bộ nhi 儿; 盘 = Chữ chu 舟 + bộ mãnh 皿"
+        },
+        {
+          "text": "Cũ (đồ vật)",
+          "hz": "旧",
+          "py": "jiù",
+          "hv": "Cựu",
+          "role": "Định ngữ chỉ trạng thái",
+          "vn": "Cũ kỹ (chỉ dùng cho đồ vật)",
+          "radicals": "Bộ cựu 旧 = Nét sổ 丨 + bộ nhật 日"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "新的箱子里有两瓶红酒", "tag": "Vế vali mới 1" },
+        { "id": "t4", "text": "还有几张光盘和一些药", "tag": "Vế vali mới 3" },
+        { "id": "t1", "text": "这两个箱子都是我的", "tag": "Khẳng định chủ quyền" },
+        { "id": "t5", "text": "旧的箱子里都是中文书", "tag": "Vế vali cũ" },
+        { "id": "t3", "text": "几件衣服两把雨伞", "tag": "Vế vali mới 2" },
+        { "id": "t6", "text": "老箱子", "tag": "Bẫy dùng từ" },
+        { "id": "t7", "text": "二个雨伞", "tag": "Bẫy lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["这两个箱子都是我的", "两瓶红酒", "两把雨伞", "几张光盘", "旧的箱子里"],
+      "wordBankPool": ["这两个箱子都是我的", "新的箱子里有两瓶红酒", "几件衣服两把雨伞", "还有几张光盘和一些药", "旧的箱子里都是中文书", "老箱子", "二个雨伞", "两件雨伞"],
+      "traps": [
+        {
+          "pattern": "老箱子",
+          "msg": "Lỗi dùng từ 'cũ': Đồ vật cũ phải dùng '旧' ('旧箱子'), '老' chỉ dùng cho người già, tuổi tác hoặc quan hệ lâu năm (老朋友)."
+        },
+        {
+          "pattern": "二个雨伞",
+          "msg": "Lỗi lượng từ: Ô dù có cán cầm bắt buộc dùng lượng từ '把' ('两把雨伞'), không dùng lượng từ '个'."
+        }
+      ],
+      "explanation": "Câu diễn tả sự sở hữu và vị trí nhiều tầng. Ghi nhớ các cặp lượng từ chính xác: 两瓶红酒 (2 chai vang), 几件衣服 (vài bộ đồ), 两把雨伞 (2 chiếc ô), 几张光盘 (vài chiếc đĩa CD)."
+    },
+    {
+      "id": "b13-06",
+      "type": "anti_word_by_word",
+      "title": "Câu liên động đi siêu thị mua đồ dùng hàng ngày",
+      "vi": "A: Chiều nay tớ siêu thị mua đồ dùng hàng ngày, cậu đi không? B: Có, tớ cũng muốn đi siêu thị mua một cái ô và vài bộ quần áo.",
+      "zh": "今天下午我去超市买日用品 你去吗 去 我也要去超市买一把雨伞和几件衣服",
+      "standardTrans": "今天下午我去超市买日用品 你去吗 去 我也要去超市买一把雨伞和几件衣服",
+      "pinyin": "Jīntiān xiàwǔ wǒ qù chāoshì mǎi rìyòngpǐn, nǐ qù ma? Qù. Wǒ yě yào qù chāoshì mǎi yì bǎ yǔsǎn hé jǐ jiàn yīfu.",
+      "grammarPoint": "Câu liên động: 去 + Địa điểm (超市) + Mua; Trả lời rủ rê bằng lặp lại động từ: 去",
+      "tokens": [
+        {
+          "text": "Siêu thị",
+          "hz": "超市",
+          "py": "chāoshì",
+          "hv": "Siêu thị",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Siêu thị",
+          "radicals": "超 = Bộ tẩu 走 + chữ đao 刀 + bộ khẩu 口; 市 = Bộ đầu 亠 + bộ cân 巾"
+        },
+        {
+          "text": "Đồ dùng hàng ngày",
+          "hz": "日用品",
+          "py": "rìyòngpǐn",
+          "hv": "Nhật dụng phẩm",
+          "role": "Tân ngữ hành động 1",
+          "vn": "Đồ dùng cá nhân, nhu yếu phẩm",
+          "radicals": "日 = Bộ nhật 日; 用 = Bộ dụng 用; 品 = Ba bộ khẩu 口"
+        },
+        {
+          "text": "Một chiếc ô",
+          "hz": "一把雨伞",
+          "py": "yì bǎ yǔsǎn",
+          "hv": "Nhất bả vũ tản",
+          "role": "Cụm số lượng tân ngữ",
+          "vn": "Một cái ô che mưa",
+          "radicals": "把 = Lượng từ vật có cán (bộ thủ 扌 + chữ 巴); 雨伞 = Ô che mưa"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你去吗", "tag": "Lời rủ rê" },
+        { "id": "t4", "text": "我也要去超市买一把雨伞和几件衣服", "tag": "Vế đáp" },
+        { "id": "t1", "text": "今天下午我去超市买日用品", "tag": "Vế đi siêu thị" },
+        { "id": "t3", "text": "去", "tag": "Đồng ý" },
+        { "id": "t5", "text": "有一个雨伞", "tag": "Bẫy lượng từ" },
+        { "id": "t6", "text": "超市买去", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["今天下午我去超市买日用品", "你去吗", "去", "买一把雨伞和几件衣服"],
+      "wordBankPool": ["今天下午我去超市买日用品", "你去吗", "去", "我也要去超市买一把雨伞和几件衣服", "有一个雨伞", "超市买去", "有去"],
+      "traps": [
+        {
+          "pattern": "超市买去",
+          "msg": "Lỗi câu liên động: Đi đến đâu làm gì phải dùng '去 + Địa điểm + Động từ' ('去超市买'), không đảo ngược thành '超市买去'."
+        },
+        {
+          "pattern": "有去",
+          "msg": "Lỗi khẳng định: Trả lời đồng ý cho lời mời '你去吗?' dùng trực tiếp động từ '去', không dùng '有去'."
+        }
+      ],
+      "explanation": "Câu liên động chỉ mục đích: Đi đâu làm việc gì (去 + 超市 + 买...). Trả lời đồng ý bằng cách lặp lại chính động từ được hỏi ('去')."
+    },
+    {
+      "id": "b13-07",
+      "type": "sentence_parsing",
+      "title": "Cụm từ chỉ định và đối chiếu cái mới – cái cũ",
+      "vi": "A: Hai cuốn từ điển này đều là của cậu hả? B: Cuốn mới này là của tớ, cuốn cũ kia là của anh trai tớ.",
+      "zh": "这两本词典都是你的吗 这本新的是我的 那本旧的是我哥哥的",
+      "standardTrans": "这两本词典都是你的吗 这本新的是我的 那本旧的是我哥哥的",
+      "pinyin": "Zhè liǎng běn cídiǎn dōu shì nǐ de ma? Zhè běn xīn de shì wǒ de, nà běn jiù de shì wǒ gēge de.",
+      "grammarPoint": "Chỉ định số lượng: 这/那 + Lượng từ + Tính từ + 的; Lượng từ cho sách vở: 本 (běn)",
+      "tokens": [
+        {
+          "text": "Từ điển",
+          "hz": "词典",
+          "py": "cídiǎn",
+          "hv": "Từ điển",
+          "role": "Trung tâm ngữ",
+          "vn": "Sách từ điển",
+          "radicals": "词 = Bộ ngôn 讠 + chữ ty 司; 典 = Chữ khúc 曲 + bộ bát 八"
+        },
+        {
+          "text": "Cuốn mới này",
+          "hz": "这本新的",
+          "py": "zhè běn xīn de",
+          "hv": "Giá bản tân đích",
+          "role": "Chủ ngữ vế 1",
+          "vn": "Cuốn mới này",
+          "radicals": "这 = Đây; 本 = Bộ mộc 木 + nét ngang 一; 新 = Bộ lập 立 + chữ mộc 木 + bộ cân 斤"
+        },
+        {
+          "text": "Cuốn cũ kia",
+          "hz": "那本旧的",
+          "py": "nà běn jiù de",
+          "hv": "Na bản cựu đích",
+          "role": "Chủ ngữ vế 2",
+          "vn": "Cuốn cũ kia",
+          "radicals": "那 = Kia; 本 = Lượng từ cuốn; 旧 = Bộ cựu 旧 (cũ)"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这本新的是我的", "tag": "Vế mới" },
+        { "id": "t1", "text": "这两本词典都是你的吗", "tag": "Câu hỏi" },
+        { "id": "t3", "text": "那本旧的是我哥哥的", "tag": "Vế cũ" },
+        { "id": "t4", "text": "这二本", "tag": "Bẫy số từ" },
+        { "id": "t5", "text": "老的词典", "tag": "Bẫy từ vựng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这两本词典都是你的吗", "这本新的是我的", "那本旧的是我哥哥的"],
+      "wordBankPool": ["这两本词典都是你的吗", "这本新的是我的", "那本旧的是我哥哥的", "这二本", "老的词典", "词典这本", "新词典是"],
+      "traps": [
+        {
+          "pattern": "这二本",
+          "msg": "Lỗi số từ: Khi đứng trước lượng từ '本' để chỉ số lượng 2 bắt buộc dùng '两' ('这两本'), không dùng '二'."
+        },
+        {
+          "pattern": "老的",
+          "msg": "Lỗi dùng từ: Sách từ điển cũ là đồ vật, bắt buộc dùng '旧' ('旧的'), không dùng '老'."
+        }
+      ],
+      "explanation": "Cấu trúc so sánh đối xứng hai vật: [这/那 + Lượng từ + Tính từ + 的 + 是 + Người]. Cụm chữ 的 thay thế cho danh từ 词典 đã nhắc ở trước."
+    },
+    {
+      "id": "b13-08",
+      "type": "anti_word_by_word",
+      "title": "Phủ định sở hữu và câu hỏi đại từ nghi vấn 谁",
+      "vi": "Đây không phải là ô của tớ, ô của tớ ở đằng kia. Đây là ô của ai?",
+      "zh": "这不是我的雨伞 我的雨伞在那儿 这是谁的雨伞",
+      "standardTrans": "这不是我的雨伞 我的雨伞在那儿 这是谁的雨伞",
+      "pinyin": "Zhè bú shì wǒ de yǔsǎn, wǒ de yǔsǎn zài nàr. Zhè shì shéi de yǔsǎn?",
+      "grammarPoint": "Phủ định quan hệ phán đoán: 不是; Hỏi sở hữu: 是谁的 + Danh từ",
+      "tokens": [
+        {
+          "text": "Không phải",
+          "hz": "不是",
+          "py": "bú shì",
+          "hv": "Bất thị",
+          "role": "Phó từ + Động từ hệ từ",
+          "vn": "Không phải là",
+          "radicals": "不 = Bộ nhất 一; 是 = Bộ nhật 日 + bộ sơ 疋"
+        },
+        {
+          "text": "Ở đằng kia",
+          "hz": "在那儿",
+          "py": "zài nàr",
+          "hv": "Tại na nhi",
+          "role": "Vị ngữ chỉ nơi chốn",
+          "vn": "Ở chỗ kia, ở đằng kia",
+          "radicals": "在 = Bộ thổ 土; 那儿 = Đại từ chỉ nơi chốn ở xa"
+        },
+        {
+          "text": "Của ai",
+          "hz": "谁的",
+          "py": "shéi de",
+          "hv": "Thùy đích",
+          "role": "Định ngữ nghi vấn",
+          "vn": "Của ai",
+          "radicals": "谁 = Bộ ngôn 讠 + chữ truy 隹; 的 = Trợ từ sở hữu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我的雨伞在那儿", "tag": "Chỉ vị trí" },
+        { "id": "t3", "text": "这是谁的雨伞", "tag": "Hỏi chủ nhân" },
+        { "id": "t1", "text": "这不是我的雨伞", "tag": "Phủ định" },
+        { "id": "t4", "text": "谁的这是", "tag": "Bẫy đảo ngữ" },
+        { "id": "t5", "text": "在那是", "tag": "Bẫy dịch thô" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这不是我的雨伞", "我的雨伞在那儿", "这是谁的雨伞"],
+      "wordBankPool": ["这不是我的雨伞", "我的雨伞在那儿", "这是谁的雨伞", "谁的这是", "在那是", "那儿是我的雨伞", "谁是雨伞"],
+      "traps": [
+        {
+          "pattern": "谁的这是",
+          "msg": "Lỗi cấu trúc hỏi: 'Đây là ô của ai' phải theo đúng trật tự Hán ngữ: '这是谁的雨伞', không đưa '谁的' lên đầu câu."
+        },
+        {
+          "pattern": "在那是",
+          "msg": "Lỗi ngữ pháp nơi chốn: 'Ô của tôi ở đằng kia' là câu vị ngữ nơi chốn: '我的雨伞在那儿', không ghép thừa chữ '是'."
+        }
+      ],
+      "explanation": "Câu khẳng định vị trí của vật: Chủ ngữ + 在 + Nơi chốn (在那儿). Câu hỏi thuộc quyền sở hữu của ai: 这/那 + 是 + 谁的 + Danh từ?"
+    },
+    {
+      "id": "b13-09",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc bên trong vị trí và cụm danh từ ngôn ngữ kết hợp",
+      "vi": "A: Trong chiếc va li này là gì vậy? B: Đều là sách, có hai cuốn tạp chí tiếng Pháp, một cuốn từ điển Pháp – Việt và ba cuốn sách tiếng Pháp.",
+      "zh": "这个箱子里是什么 都是书 有两本英文杂志 一本法越词典和三本法文书",
+      "standardTrans": "这个箱子里是什么 都是书 有两本英文杂志 一本法越词典和三本法文书",
+      "pinyin": "Zhè ge xiāngzi lǐ shì shénme? Dōu shì shū. Yǒu liǎng běn yīngwén zázhì, yì běn fǎ-yuè cídiǎn hé sān běn fǎwén shū.",
+      "grammarPoint": "Phương vị từ chỉ vị trí: Danh từ + 里 (trong); Cụm từ điển song ngữ: Ngôn ngữ 1 - Ngôn ngữ 2 + 词典 (法越词典)",
+      "tokens": [
+        {
+          "text": "Trong vali",
+          "hz": "箱子里",
+          "py": "xiāngzi lǐ",
+          "hv": "Tương tử lý",
+          "role": "Trạng ngữ nơi chốn",
+          "vn": "Bên trong chiếc vali",
+          "radicals": "箱子 = Vali; 里 = Bộ lý 里"
+        },
+        {
+          "text": "Từ điển Pháp - Việt",
+          "hz": "法越词典",
+          "py": "fǎ-yuè cídiǎn",
+          "hv": "Pháp Việt từ điển",
+          "role": "Tân ngữ liệt kê 2",
+          "vn": "Sách từ điển tiếng Pháp - tiếng Việt",
+          "radicals": "法 = Nước Pháp; 越 = Nước Việt Nam; 词典 = Từ điển"
+        },
+        {
+          "text": "Sách tiếng Pháp",
+          "hz": "法文书",
+          "py": "fǎwén shū",
+          "hv": "Pháp văn thư",
+          "role": "Tân ngữ liệt kê 3",
+          "vn": "Sách bằng tiếng Pháp",
+          "radicals": "法文 = Chữ Pháp, tiếng Pháp; 书 = Sách"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "都是书", "tag": "Khẳng định chung" },
+        { "id": "t4", "text": "一本法越词典和三本法文书", "tag": "Liệt kê chi tiết 2" },
+        { "id": "t1", "text": "这个箱子里是什么", "tag": "Câu hỏi" },
+        { "id": "t3", "text": "有两本英文杂志", "tag": "Liệt kê chi tiết 1" },
+        { "id": "t5", "text": "在里箱子", "tag": "Bẫy phương vị từ" },
+        { "id": "t6", "text": "书是都", "tag": "Bẫy phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["这个箱子里是什么", "都是书", "两本英文杂志", "法越词典", "三本法文书"],
+      "wordBankPool": ["这个箱子里是什么", "都是书", "有两本英文杂志", "一本法越词典和三本法文书", "在里箱子", "书是都", "法语本"],
+      "traps": [
+        {
+          "pattern": "在里箱子",
+          "msg": "Lỗi phương vị từ: Tiếng Hán bắt buộc đặt từ chỉ phương vị '里' sau danh từ ('箱子里'), tuyệt đối không nói '在里箱子'."
+        },
+        {
+          "pattern": "书是都",
+          "msg": "Lỗi phó từ: Phó từ phạm vi '都' bắt buộc đứng trước động từ/hệ từ: '都是书', không đặt sau danh từ."
+        }
+      ],
+      "explanation": "Phương vị từ '里' đứng sau danh từ tạo cụm biểu thị không gian bên trong (这个箱子里). Danh xưng sách từ điển song ngữ: Tên viết tắt hai nước + 词典 (法越词典: từ điển Pháp - Việt)."
+    },
+    {
+      "id": "b13-10",
+      "type": "anti_word_by_word",
+      "title": "Hỏi vị trí phòng và quy tắc gọi tầng lầu",
+      "vi": "A: Xin hỏi, nhà vệ sinh ở đâu? B: Ở trên tầng 2.",
+      "zh": "请问 洗手间在哪儿 在二楼",
+      "standardTrans": "请问 洗手间在哪儿 在二楼",
+      "pinyin": "Qǐngwèn, xǐshǒujiān zài nǎr? Zài èr lóu.",
+      "grammarPoint": "Hỏi nơi chốn: S + 在哪儿; Thứ tự số tầng nhà dùng số đếm: Số từ + 楼 (tầng 2 bắt buộc dùng 二楼, không dùng 两楼)",
+      "tokens": [
+        {
+          "text": "Nhà vệ sinh",
+          "hz": "洗手间",
+          "py": "xǐshǒujiān",
+          "hv": "Tẩy thủ gian",
+          "role": "Chủ ngữ hỏi",
+          "vn": "Phòng vệ sinh, nhà vệ sinh",
+          "radicals": "洗 = Bộ chấm thủy 氵 + chữ tiên 先; 手 = Bộ thủ 手; 间 = Bộ môn 门 + bộ nhật 日"
+        },
+        {
+          "text": "Tầng 2",
+          "hz": "二楼",
+          "py": "èr lóu",
+          "hv": "Nhị lâu",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Tầng hai, lầu hai",
+          "radicals": "二 = Số 2; 楼 = Bộ mộc 木 + chữ lâu 娄"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "洗手间在哪儿", "tag": "Hỏi vị trí" },
+        { "id": "t1", "text": "请问", "tag": "Kính ngữ" },
+        { "id": "t3", "text": "在二楼", "tag": "Vị trí tầng" },
+        { "id": "t4", "text": "在两楼", "tag": "Bẫy số đếm" },
+        { "id": "t5", "text": "在楼二", "tag": "Bẫy trật tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["请问", "洗手间在哪儿", "在二楼"],
+      "wordBankPool": ["请问", "洗手间在哪儿", "在二楼", "在两楼", "在楼二", "洗手间在哪", "楼二在"],
+      "traps": [
+        {
+          "pattern": "两楼",
+          "msg": "Lỗi số thứ tự tầng lầu: Tầng lầu trong tiếng Trung dùng số thứ tự thông thường (一楼, 二楼, 三楼...), tuyệt đối không dùng '两楼'."
+        },
+        {
+          "pattern": "在楼二",
+          "msg": "Lỗi ngữ tự: Số thứ tự tầng phải đứng trước danh từ '楼' ('二楼'), không nói '楼二'."
+        }
+      ],
+      "explanation": "Lời mở đầu lịch sự: '请问' (xin hỏi). Tầng lầu trong tiếng Trung dùng số đếm trực tiếp đứng trước '楼': 一楼 (tầng 1), 二楼 (tầng 2 - không dùng 两楼)."
+    },
+    {
+      "id": "b13-11",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi chính phản về tính chất và so sánh mức độ",
+      "vi": "A: Chiếc vali của tôi rất nặng. Chiếc của bạn nặng hay không nặng? B: Cái màu đen này rất nặng, cái màu đỏ kia tương đối nhẹ.",
+      "zh": "我的箱子很重 你的箱子重不重 这个黑色的很重 那个红色的比较轻",
+      "standardTrans": "我的箱子很重 你的箱子重不重 这个黑色的很重 那个红色的比较轻",
+      "pinyin": "Wǒ de xiāngzi hěn zhòng. Nǐ de xiāngzi zhòng bú zhòng? Zhè ge hēisè de hěn zhòng, nà ge hóngsè de bǐjiào qīng.",
+      "grammarPoint": "Câu hỏi chính phản tính từ: Tính từ + 不 + Tính từ (重不重); Phó từ so sánh: 比较 + Tính từ (比较轻)",
+      "tokens": [
+        {
+          "text": "Nặng",
+          "hz": "重",
+          "py": "zhòng",
+          "hv": "Trọng",
+          "role": "Vị ngữ tính từ",
+          "vn": "Nặng, có trọng lượng lớn",
+          "radicals": "Bộ phẩy 丿 + bộ nhất 一 + bộ lý 里"
+        },
+        {
+          "text": "Nặng hay không",
+          "hz": "重不重",
+          "py": "zhòng bú zhòng",
+          "hv": "Trọng bất trọng",
+          "role": "Vị ngữ hỏi chính phản",
+          "vn": "Nặng hay không nặng",
+          "radicals": "重 = Nặng; 不 = Không"
+        },
+        {
+          "text": "Màu đen",
+          "hz": "黑色",
+          "py": "hēisè",
+          "hv": "Hắc sắc",
+          "role": "Định ngữ chỉ màu",
+          "vn": "Màu đen",
+          "radicals": "黑 = Bộ hắc 黑; 色 = Bộ sắc 色"
+        },
+        {
+          "text": "Khá nhẹ",
+          "hz": "比较轻",
+          "py": "bǐjiào qīng",
+          "hv": "Tỷ giác khinh",
+          "role": "Phó từ + Tính từ",
+          "vn": "Tương đối nhẹ, khá nhẹ",
+          "radicals": "比较 = So sánh, khá; 轻 = Bộ xa 车 + chữ kinh 𢀖"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "这个黑色的很重", "tag": "Mô tả cái đen" },
+        { "id": "t1", "text": "我的箱子很重", "tag": "Khẳng định mình" },
+        { "id": "t4", "text": "那个红色的比较轻", "tag": "Mô tả cái đỏ" },
+        { "id": "t2", "text": "你的箱子重不重", "tag": "Hỏi chính phản" },
+        { "id": "t5", "text": "重不重吗", "tag": "Bẫy thừa 吗" },
+        { "id": "t6", "text": "轻比较", "tag": "Bẫy vị trí phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["我的箱子很重", "你的箱子重不重", "黑色的很重", "红色的比较轻"],
+      "wordBankPool": ["我的箱子很重", "你的箱子重不重", "这个黑色的很重", "那个红色的比较轻", "重不重吗", "轻比较", "不重很"],
+      "traps": [
+        {
+          "pattern": "重不重吗",
+          "msg": "Lỗi câu hỏi chính phản: Đã dùng cấu trúc chính phản '重不重' thì cuối câu tuyệt đối KHÔNG thêm trợ từ '吗'."
+        },
+        {
+          "pattern": "轻比较",
+          "msg": "Lỗi vị trí phó từ: '比较' (khá/tương đối) luôn đứng trước tính từ ('比较轻'), không đặt sau tính từ."
+        }
+      ],
+      "explanation": "Câu hỏi chính phản dùng hình thức 'A + 不 + A' (重不重) để thay thế câu hỏi chữ '吗'. Cụm 'Màu sắc + 的' (黑色的, 红色的) dùng để đại diện cho vali màu đen và vali màu đỏ."
+    },
+    {
+      "id": "b13-12",
+      "type": "anti_word_by_word",
+      "title": "Danh từ thuốc tây thuốc đông và động từ uống thuốc 吃药",
+      "vi": "A: Thưa ông, những cái màu trắng này là đồ gì vậy? B: Những cái màu trắng này là thuốc tây. Thuốc này rất đắt tiền đó, ông muốn uống chút không?",
+      "zh": "先生 这些白色的是什么东西 这些白色的是西药 这种药很贵的 你要吃点儿吗",
+      "standardTrans": "先生 这些白色的是什么东西 这些白色的是西药 这种药很贵的 你要吃点儿吗",
+      "pinyin": "Xiānsheng, zhèxiē báisè de shì shénme dōngxi? Zhèxiē báisè de shì xīyào. Zhè zhǒng yào hěn guì de. Nǐ yào chī diǎnr ma?",
+      "grammarPoint": "Thói quen ngôn ngữ: Uống thuốc là 吃药 (không dùng 喝药); Cụm số lượng mờ: 吃点儿 (uống một ít); Lượng từ chủng loại: 种 (zhǒng)",
+      "tokens": [
+        {
+          "text": "Thuốc tây",
+          "hz": "西药",
+          "py": "xīyào",
+          "hv": "Tây dược",
+          "role": "Tân ngữ phán đoán",
+          "vn": "Thuốc tây y",
+          "radicals": "西 = Bộ á 西 (phía tây); 药 = Bộ thảo 艹 + chữ ước 约"
+        },
+        {
+          "text": "Loại thuốc này",
+          "hz": "这种药",
+          "py": "zhè zhǒng yào",
+          "hv": "Giá chủng dược",
+          "role": "Chủ ngữ",
+          "vn": "Loại thuốc này",
+          "radicals": "这 = Này; 种 = Bộ hòa 禾 + chữ trung 中; 药 = Thuốc"
+        },
+        {
+          "text": "Uống một chút",
+          "hz": "吃点儿",
+          "py": "chī diǎnr",
+          "hv": "Ngật điểm nhi",
+          "role": "Động từ + Số lượng mờ",
+          "vn": "Uống chút, ăn chút thuốc",
+          "radicals": "吃 = Bộ khẩu 口 + chữ khất 乞; 点儿 = Một chút, một ít"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "这些白色的是西药", "tag": "Giải thích là thuốc tây" },
+        { "id": "t1", "text": "先生", "tag": "Xưng hô" },
+        { "id": "t5", "text": "你要吃点儿吗", "tag": "Hỏi mời dùng" },
+        { "id": "t2", "text": "这些白色的是什么东西", "tag": "Lời hỏi của khách" },
+        { "id": "t4", "text": "这种药很贵的", "tag": "Đặc điểm giá cả" },
+        { "id": "t6", "text": "喝点儿药", "tag": "Bẫy động từ" },
+        { "id": "t7", "text": "喝药吗", "tag": "Bẫy thói quen" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["这些白色的是什么东西", "这些白色的是西药", "这种药很贵的", "你要吃点儿吗"],
+      "wordBankPool": ["先生", "这些白色的是什么东西", "这些白色的是西药", "这种药很贵的", "你要吃点儿吗", "喝点儿药", "喝药吗", "西药这些"],
+      "traps": [
+        {
+          "pattern": "喝药",
+          "msg": "Lỗi giao thoa ngôn ngữ: Tiếng Việt nói 'uống thuốc', nhưng tiếng Trung bắt buộc dùng động từ '吃' ('吃药', '吃点儿'), tuyệt đối không dùng '喝药'."
+        },
+        {
+          "pattern": "白色东西的",
+          "msg": "Lỗi định ngữ: Cụm chữ 的 mang tính danh từ hóa là '白色的是...' hoặc '白色的东西', không nói ngược '白色东西的'."
+        }
+      ],
+      "explanation": "Đặc biệt lưu ý bẫy tư duy dịch Việt - Trung: Người Trung Quốc coi thuốc viên là thứ phải nuốt nên dùng động từ '吃药' (ăn thuốc = uống thuốc), không nói '喝药'."
+    }
+  ]
+}

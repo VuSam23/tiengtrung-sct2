@@ -1,0 +1,542 @@
+{
+  "lessonId": "b16",
+  "lessonTitle": "第十六课: 你常去图书馆吗?",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "或者 vs 还是",
+        "py": "huòzhě vs háishì",
+        "note": "Đều mang nghĩa 'hoặc/hay là'. Nhưng 还是 dùng trong CÂU HỎI (lựa chọn), còn 或者 dùng trong CÂU TRẦN THUẬT (kể lể)."
+      },
+      {
+        "word": "咱们 vs 我们",
+        "py": "zánmen vs wǒmen",
+        "note": "咱们 (Chúng ta) bắt buộc bao gồm cả người nói và người nghe. 我们 (Chúng tôi/chúng ta) có thể bao gồm hoặc không bao gồm người nghe."
+      },
+      {
+        "word": "借",
+        "py": "jiè",
+        "note": "A 借 B: A mượn của B. / A 借给 B: A cho B mượn."
+      }
+    ],
+    "grammarTips": [
+      "Làm việc cùng ai: S + 跟 + Đối tượng + [一起] + Động từ (跟朋友去: đi cùng bạn).",
+      "Phó từ tần suất: 总是 (luôn luôn) > 常常/常 (thường) > 有时候 (có lúc) > 很少 (rất ít khi) > 从不 (chưa từng).",
+      "Hành động đồng thời: Một số phó từ như 一起 phải đứng TRƯỚC động từ chính (一起去, không nói 去一起)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b16-01",
+      "type": "anti_word_by_word",
+      "title": "Phó từ tần suất và Liên từ lựa chọn",
+      "vi": "Buổi sáng tôi rất ít khi ăn cơm, tôi thường ăn bánh mỳ hoặc ăn mỳ sợi.",
+      "zh": "早上我很少吃饭我常吃面包或者吃面条",
+      "standardTrans": "早上我很少吃饭我常吃面包或者吃面条",
+      "pinyin": "Zǎoshang wǒ hěn shǎo chī fàn, wǒ cháng chī miànbāo huòzhě chī miàntiáo.",
+      "grammarPoint": "Phó từ tần suất (很少, 常); Liên từ lựa chọn trong câu khẳng định (或者)",
+      "tokens": [
+        {
+          "text": "Rất ít khi",
+          "hz": "很少",
+          "py": "hěn shǎo",
+          "hv": "Khẩn thiểu",
+          "role": "Phó từ chỉ tần suất",
+          "vn": "Rất ít khi",
+          "radicals": "很 = Bộ xích 彳; 少 = Bộ tiểu 小 + nét phẩy 丿"
+        },
+        {
+          "text": "Hoặc là",
+          "hz": "或者",
+          "py": "huòzhě",
+          "hv": "Hoặc giả",
+          "role": "Liên từ lựa chọn",
+          "vn": "Hoặc, hoặc là (dùng trong câu trần thuật)",
+          "radicals": "或 = Bộ qua 戈 + bộ vi 囗; 者 = Bộ lão 老 + bộ nhật 日"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我很少吃饭", "tag": "Vế tần suất thấp" },
+        { "id": "t1", "text": "早上", "tag": "Thời gian" },
+        { "id": "t4", "text": "或者吃面条", "tag": "Lựa chọn 2" },
+        { "id": "t3", "text": "我常吃面包", "tag": "Lựa chọn 1" },
+        { "id": "t5", "text": "还是吃面条", "tag": "Bẫy liên từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["早上", "很少吃饭", "常吃面包", "或者"],
+      "wordBankPool": ["早上", "我很少吃饭", "我常吃面包", "或者吃面条", "还是吃面条", "我吃很少饭"],
+      "traps": [
+        {
+          "pattern": "还是吃",
+          "msg": "Lỗi liên từ: Câu trần thuật (kể lại thói quen) bắt buộc dùng '或者' (hoặc là). '还是' chỉ dùng để hỏi sự lựa chọn."
+        },
+        {
+          "pattern": "吃很少饭",
+          "msg": "Lỗi vị trí phó từ: '很少' (rất ít khi) là phó từ chỉ tần suất, phải đứng trước động từ '吃饭', không tách ra."
+        }
+      ],
+      "explanation": "Câu trần thuật diễn tả thói quen sử dụng '或者' để liên kết 2 sự lựa chọn. Phó từ tần suất '很少', '常' đứng trước động từ."
+    },
+    {
+      "id": "b16-02",
+      "type": "sentence_parsing",
+      "title": "Cụm giới từ 跟 chỉ sự đồng hành",
+      "vi": "Thứ 7 và chủ nhật bố mẹ tôi không phải làm việc, tôi thường cùng họ về Hà Nội thăm bà.",
+      "zh": "星期六和星期日我爸妈不要工作我常跟他们回河内看奶奶",
+      "standardTrans": "星期六和星期日我爸妈不要工作我常跟他们回河内看奶奶",
+      "pinyin": "Xīngqīliù hé xīngqīrì, wǒ bà mā bú yào gōngzuò, wǒ cháng gēn tāmen huí Hénèi kàn nǎinai.",
+      "grammarPoint": "Trạng ngữ đồng hành: 跟 + Người + Động từ (cùng ai làm gì)",
+      "tokens": [
+        {
+          "text": "Bà nội",
+          "hz": "奶奶",
+          "py": "nǎinai",
+          "hv": "Nãi nãi",
+          "role": "Tân ngữ",
+          "vn": "Bà nội",
+          "radicals": "奶 = Bộ nữ 女 + chữ nãi 乃"
+        },
+        {
+          "text": "Cùng bọn họ",
+          "hz": "跟他们",
+          "py": "gēn tāmen",
+          "hv": "Cân tha môn",
+          "role": "Cụm giới từ đồng hành",
+          "vn": "Cùng họ, với họ",
+          "radicals": "跟 = Bộ túc 足 + chữ cấn 艮"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "我常跟他们回河内", "tag": "Vế hành động" },
+        { "id": "t1", "text": "星期六和星期日", "tag": "Thời gian" },
+        { "id": "t4", "text": "看奶奶", "tag": "Mục đích" },
+        { "id": "t2", "text": "我爸妈不要工作", "tag": "Hoàn cảnh" },
+        { "id": "t5", "text": "回河内跟他们", "tag": "Bẫy trật tự" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["星期六和星期日", "不要工作", "跟他们回河内", "看奶奶"],
+      "wordBankPool": ["星期六和星期日", "我爸妈不要工作", "我常跟他们回河内", "看奶奶", "回河内跟他们", "常回河内跟他们"],
+      "traps": [
+        {
+          "pattern": "回河内跟他们",
+          "msg": "Lỗi ngữ tự: Trong tiếng Trung, giới từ đồng hành phải đứng TRƯỚC động từ hành động ('跟他们回河内'), tuyệt đối không dịch xuôi theo tiếng Việt."
+        }
+      ],
+      "explanation": "Quy tắc cốt lõi: Làm việc cùng ai đó phải dùng cấu trúc '跟 + Người + Động từ'. Mục đích của hành động (thăm bà - 看奶奶) đặt ở cuối cấu trúc liên động."
+    },
+    {
+      "id": "b16-03",
+      "type": "sentence_parsing",
+      "title": "Câu phức chỉ nguyên nhân - kết quả",
+      "vi": "Ký túc xá của tớ không yên tĩnh lắm, nên buổi tối tớ thường đến thư viện học bài. Thư viện của trường tớ cũng có rất nhiều sách, tớ thường ở đó đọc sách, xem tạp chí tiếng Trung.",
+      "zh": "我的宿舍不太安静所以晚上我常去图书馆学习我们学校的图书馆也有很多书我常在那儿看书看中文杂志",
+      "standardTrans": "我的宿舍不太安静所以晚上我常去图书馆学习我们学校的图书馆也有很多书我常在那儿看书看中文杂志",
+      "pinyin": "Wǒ de sùshè bú tài ānjìng, suǒyǐ wǎnshang wǒ cháng qù túshūguǎn xuéxí. Wǒmen xuéxiào de túshūguǎn yě yǒu hěn duō shū, wǒ cháng zài nàr kàn shū, kàn zhōngwén zázhì.",
+      "grammarPoint": "Liên từ kết quả: 所以 (cho nên, vì vậy); Cấu trúc nơi chốn: 在 + Địa điểm + Động từ",
+      "tokens": [
+        {
+          "text": "Yên tĩnh",
+          "hz": "安静",
+          "py": "ānjìng",
+          "hv": "An tĩnh",
+          "role": "Tính từ vị ngữ",
+          "vn": "Yên tĩnh",
+          "radicals": "安 = Bộ miên 宀 + bộ nữ 女; 静 = Bộ thanh 青 + bộ tranh 争"
+        },
+        {
+          "text": "Cho nên",
+          "hz": "所以",
+          "py": "suǒyǐ",
+          "hv": "Sở dĩ",
+          "role": "Liên từ kết quả",
+          "vn": "Cho nên, vì vậy",
+          "radicals": "所 = Bộ hộ 户 + bộ cân 斤; 以 = Bộ nhân 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我的宿舍不太安静", "tag": "Vế nguyên nhân" },
+        { "id": "t4", "text": "我们学校的图书馆也有很多书", "tag": "Vế miêu tả" },
+        { "id": "t3", "text": "我常去图书馆学习", "tag": "Hành động" },
+        { "id": "t2", "text": "所以晚上", "tag": "Kết quả" },
+        { "id": "t5", "text": "我常在那儿看书看中文杂志", "tag": "Vế hoạt động" },
+        { "id": "t6", "text": "看书在那儿", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["不太安静", "所以", "去图书馆学习", "也有很多书", "在那儿看书"],
+      "wordBankPool": ["我的宿舍不太安静", "所以晚上", "我常去图书馆学习", "我们学校的图书馆也有很多书", "我常在那儿看书看中文杂志", "看书在那儿", "图书馆我们学校的"],
+      "traps": [
+        {
+          "pattern": "看书在那儿",
+          "msg": "Lỗi ngữ tự: Trạng ngữ nơi chốn bắt buộc đứng TRƯỚC động từ ('在那儿看书'), không được đặt cuối câu như tiếng Việt."
+        }
+      ],
+      "explanation": "Câu dài kết hợp nhiều điểm ngữ pháp: Liên từ '所以' nối câu nguyên nhân-kết quả. Cấu trúc nơi chốn chuẩn xác: '在 + Nơi chốn (那儿) + Động từ (看书)'."
+    },
+    {
+      "id": "b16-04",
+      "type": "anti_word_by_word",
+      "title": "Hội thoại hỏi thói quen và các hoạt động trực tuyến",
+      "vi": "A: Cậu thường lên mạng làm gì? B: Tớ thường lên mạng tìm tài liệu hoặc gửi, nhận email, có lúc thì tớ còn lên mạng xem phim.",
+      "zh": "你常上网做什么我常上网查资料或者收发伊妹儿有时候我还上网看电影",
+      "standardTrans": "你常上网做什么我常上网查资料或者收发伊妹儿有时候我还上网看电影",
+      "pinyin": "Nǐ cháng shàngwǎng zuò shénme? Wǒ cháng shàngwǎng chá zīliào huòzhě shōufā yīmèir, yǒushíhou wǒ hái shàngwǎng kàn diànyǐng.",
+      "grammarPoint": "Câu hỏi mục đích liên động: 上网 + 做什么; Từ ghép hiện đại (伊妹儿 - email)",
+      "tokens": [
+        {
+          "text": "Lên mạng",
+          "hz": "上网",
+          "py": "shàngwǎng",
+          "hv": "Thượng võng",
+          "role": "Động từ",
+          "vn": "Lên mạng, lướt web",
+          "radicals": "网 = Bộ võng 冂 + hai dấu x"
+        },
+        {
+          "text": "Gửi nhận (thu phát)",
+          "hz": "收发",
+          "py": "shōufā",
+          "hv": "Thu phát",
+          "role": "Động từ",
+          "vn": "Gửi và nhận",
+          "radicals": "收 = Bộ phộc ⽁; 发 = Chữ phát 发"
+        },
+        {
+          "text": "Email",
+          "hz": "伊妹儿",
+          "py": "yīmèir",
+          "hv": "Y muội nhi",
+          "role": "Danh từ ngoại lai",
+          "vn": "Thư điện tử, email",
+          "radicals": "Âm dịch từ tiếng Anh 'Email'"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我常上网查资料", "tag": "Mục đích 1" },
+        { "id": "t4", "text": "有时候我还上网看电影", "tag": "Mục đích 3" },
+        { "id": "t1", "text": "你常上网做什么", "tag": "Câu hỏi" },
+        { "id": "t3", "text": "或者收发伊妹儿", "tag": "Mục đích 2" },
+        { "id": "t5", "text": "还是收发", "tag": "Bẫy liên từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["上网做什么", "查资料", "或者", "收发伊妹儿", "有时候"],
+      "wordBankPool": ["你常上网做什么", "我常上网查资料", "或者收发伊妹儿", "有时候我还上网看电影", "还是收发伊妹儿", "做上网什么"],
+      "traps": [
+        {
+          "pattern": "还是收发",
+          "msg": "Lỗi liên từ: Vế trả lời (câu trần thuật) bắt buộc dùng '或者' để nối các lựa chọn, không dùng '还是' (chỉ dành cho câu hỏi)."
+        }
+      ],
+      "explanation": "Câu liên động chỉ mục đích: Đi đâu / Làm gì 1 + Làm gì 2. (上网 + 查资料: Lên mạng tìm tài liệu). Động từ '收发' (thu và phát) là từ ghép đại diện cho gửi và nhận."
+    },
+    {
+      "id": "b16-05",
+      "type": "sentence_parsing",
+      "title": "Hội thoại hỏi nghề nghiệp và nơi làm việc",
+      "vi": "A: Bây giờ cậu làm việc ở đâu? B: Tớ làm việc ở Hà Nội. Tớ là nhân viên văn phòng của một công ty thương mại quốc tế. Còn cậu?",
+      "zh": "你现在在哪儿工作我在河内工作我是一家外贸公司的办公室职员你呢",
+      "standardTrans": "你现在在哪儿工作我在河内工作我是一家外贸公司的办公室职员你呢",
+      "pinyin": "Nǐ xiànzài zài nǎr gōngzuò? Wǒ zài Hénèi gōngzuò. Wǒ shì yī jiā wàimào gōngsī de bàngōngshì zhíyuán. Nǐ ne?",
+      "grammarPoint": "Câu hỏi nơi chốn: 在 + 哪儿 + Động từ; Cụm định ngữ nhiều tầng với 的",
+      "tokens": [
+        {
+          "text": "Thương mại quốc tế",
+          "hz": "外贸",
+          "py": "wàimào",
+          "hv": "Ngoại mậu",
+          "role": "Định ngữ",
+          "vn": "Ngoại thương",
+          "radicals": "外 = Bộ tịch 夕 + bộ bốc 卜; 贸 = Bộ bối 贝"
+        },
+        {
+          "text": "Nhân viên văn phòng",
+          "hz": "办公室职员",
+          "py": "bàngōngshì zhíyuán",
+          "hv": "Biện công thất chức viên",
+          "role": "Trung tâm ngữ",
+          "vn": "Nhân viên văn phòng",
+          "radicals": "职 = Bộ nhĩ 耳; 员 = Bộ khẩu 口 + bộ bối 贝"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你现在在哪儿工作", "tag": "Câu hỏi" },
+        { "id": "t4", "text": "你呢", "tag": "Hỏi ngược lại" },
+        { "id": "t2", "text": "我在河内工作", "tag": "Trả lời nơi chốn" },
+        { "id": "t3", "text": "我是一家外贸公司的办公室职员", "tag": "Trả lời nghề nghiệp" },
+        { "id": "t5", "text": "工作在哪儿", "tag": "Bẫy nơi chốn" },
+        { "id": "t6", "text": "职员的外贸公司", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["在哪儿工作", "在河内工作", "外贸公司的", "办公室职员"],
+      "wordBankPool": ["你现在在哪儿工作", "我在河内工作", "我是一家外贸公司的办公室职员", "你呢", "工作在哪儿", "办公室职员的外贸公司"],
+      "traps": [
+        {
+          "pattern": "工作在哪儿",
+          "msg": "Lỗi nơi chốn: Từ để hỏi '在哪儿' phải đứng trước động từ ('在哪儿工作'), tuyệt đối không đảo ra sau cùng."
+        },
+        {
+          "pattern": "职员的外贸",
+          "msg": "Lỗi cụm danh từ: Cơ quan sở hữu (外贸公司) phải đứng trước trợ từ '的', danh từ trung tâm (办公室职员) đứng sau cùng."
+        }
+      ],
+      "explanation": "Cấu trúc giới từ '在' chỉ nơi chốn phải luôn đứng trước động từ hành động. Lượng từ dành cho công ty là '家' (一家外贸公司)."
+    },
+    {
+      "id": "b16-06",
+      "type": "anti_word_by_word",
+      "title": "Câu rủ rê, đề nghị làm việc cùng nhau",
+      "vi": "A: Tớ muốn đi siêu thị mua đồ, cậu đi cùng tớ được không? B: Được. Chúng ta đi thôi.",
+      "zh": "我要去超市买东西你跟我一起去好吗好咱们走吧",
+      "standardTrans": "我要去超市买东西你跟我一起去好吗好咱们走吧",
+      "pinyin": "Wǒ yào qù chāoshì mǎi dōngxi, nǐ gēn wǒ yìqǐ qù, hǎo ma? Hǎo, zánmen zǒu ba.",
+      "grammarPoint": "Câu hỏi thương lượng: 好吗; Từ rủ rê tập thể: 咱们 + Động từ + 吧",
+      "tokens": [
+        {
+          "text": "Cùng đi",
+          "hz": "一起去",
+          "py": "yìqǐ qù",
+          "hv": "Nhất khởi khứ",
+          "role": "Phó từ + Động từ",
+          "vn": "Đi cùng nhau",
+          "radicals": "起 = Bộ tẩu 走 + chữ kỷ 己"
+        },
+        {
+          "text": "Chúng ta",
+          "hz": "咱们",
+          "py": "zánmen",
+          "hv": "Tảm môn",
+          "role": "Đại từ nhân xưng",
+          "vn": "Chúng ta (bao gồm cả người nghe)",
+          "radicals": "咱 = Bộ khẩu 口 + chữ tự 自"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你跟我一起去好吗", "tag": "Lời đề nghị" },
+        { "id": "t4", "text": "咱们走吧", "tag": "Đồng ý" },
+        { "id": "t1", "text": "我要去超市买东西", "tag": "Mục đích" },
+        { "id": "t3", "text": "好", "tag": "Phản hồi" },
+        { "id": "t5", "text": "去一起", "tag": "Bẫy phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["去超市买东西", "跟我一起去好吗", "咱们走吧"],
+      "wordBankPool": ["我要去超市买东西", "你跟我一起去好吗", "好", "咱们走吧", "一起跟我去", "去一起好吗", "走咱们吧"],
+      "traps": [
+        {
+          "pattern": "去一起",
+          "msg": "Lỗi vị trí phó từ: Phó từ '一起' (cùng nhau) bắt buộc đứng trước động từ chính ('一起去'), không dịch ngược thành '去一起'."
+        },
+        {
+          "pattern": "一起跟我",
+          "msg": "Lỗi cấu trúc đồng hành: Phải nói '跟 + Đối tượng + 一起' ('跟我一起'), không đảo '一起' lên trước '跟'."
+        }
+      ],
+      "explanation": "Câu rủ rê dùng '好吗' ở cuối câu để thăm dò ý kiến. Khi phản hồi đồng ý và muốn cả hai cùng thực hiện hành động ngay, dùng đại từ bao gộp '咱们' + động từ."
+    },
+    {
+      "id": "b16-07",
+      "type": "sentence_parsing",
+      "title": "Câu mời mọc và đưa ra lý do từ chối",
+      "vi": "A: Tối nay cậu với tớ đến rạp chiếu phim xem phim đi. B: Tớ không đi đâu. Từ mới hôm nay rất nhiều, tớ muốn ở nhà học bài.",
+      "zh": "今天晚上你跟我一起去电影院看电影吧我不去今天的生词很多我要在家学习",
+      "standardTrans": "今天晚上你跟我一起去电影院看电影吧我不去今天的生词很多我要在家学习",
+      "pinyin": "Jīntiān wǎnshang nǐ gēn wǒ yìqǐ qù diànyǐngyuàn kàn diànyǐng ba. Wǒ bú qù. Jīntiān de shēngcí hěn duō, wǒ yào zài jiā xuéxí.",
+      "grammarPoint": "Từ ngữ khí yêu cầu/rủ rê: 吧; Lý do từ chối: Cụm danh từ (今天的生词) + Tính từ",
+      "tokens": [
+        {
+          "text": "Rạp chiếu phim",
+          "hz": "电影院",
+          "py": "diànyǐngyuàn",
+          "hv": "Điện ảnh viện",
+          "role": "Tân ngữ địa điểm",
+          "vn": "Rạp chiếu phim",
+          "radicals": "院 = Bộ ấp 阝 + chữ hoàn 完"
+        },
+        {
+          "text": "Từ mới",
+          "hz": "生词",
+          "py": "shēngcí",
+          "hv": "Sinh từ",
+          "role": "Chủ ngữ vế 2",
+          "vn": "Từ mới",
+          "radicals": "生 = Sinh; 词 = Bộ ngôn 讠 + chữ ty 司"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天晚上", "tag": "Thời gian" },
+        { "id": "t3", "text": "我不去", "tag": "Từ chối" },
+        { "id": "t5", "text": "我要在家学习", "tag": "Mục đích ở nhà" },
+        { "id": "t2", "text": "你跟我一起去电影院看电影吧", "tag": "Lời mời" },
+        { "id": "t4", "text": "今天的生词很多", "tag": "Lý do" },
+        { "id": "t6", "text": "很多生词今天", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["跟我一起去", "电影院", "我不去", "生词很多", "在家学习"],
+      "wordBankPool": ["今天晚上", "你跟我一起去电影院看电影吧", "我不去", "今天的生词很多", "我要在家学习", "很多生词今天", "学习在家"],
+      "traps": [
+        {
+          "pattern": "学习在家",
+          "msg": "Lỗi trạng ngữ nơi chốn: Học ở nhà phải đưa '在家' lên trước động từ '学习', tuyệt đối không nói '学习在家'."
+        },
+        {
+          "pattern": "很多生词今天",
+          "msg": "Lỗi định ngữ: Thời gian làm định ngữ phải đứng trước '的' ('今天的生词'), không đặt thời gian ở cuối câu vô tội vạ."
+        }
+      ],
+      "explanation": "Cấu trúc liên động: 去 + Địa điểm (电影院) + Động từ (看电影). Khi từ chối, nêu rõ ý định '我要在家学习' (Tôi muốn/phải học ở nhà)."
+    },
+    {
+      "id": "b16-08",
+      "type": "anti_word_by_word",
+      "title": "Sử dụng phó từ tần suất mức độ cao",
+      "vi": "Cuối tuần Mike rất ít khi ở ký túc xá nghỉ ngơi, cậu ấy luôn luôn cùng bạn bè đi công viên chơi.",
+      "zh": "周末麦克很少在宿舍休息他总跟朋友去公园玩儿",
+      "standardTrans": "周末麦克很少在宿舍休息他总跟朋友去公园玩儿",
+      "pinyin": "Zhōumò Màikè hěn shǎo zài sùshè xiūxi, tā zǒng gēn péngyou qù gōngyuán wánr.",
+      "grammarPoint": "Phó từ tần suất: 很少 (ít khi), 总(是) (luôn luôn) đứng ngay sau chủ ngữ",
+      "tokens": [
+        {
+          "text": "Luôn luôn",
+          "hz": "总",
+          "py": "zǒng",
+          "hv": "Tổng",
+          "role": "Phó từ tần suất",
+          "vn": "Luôn luôn, lúc nào cũng",
+          "radicals": "Bộ tâm 心 (nằm dưới cùng)"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "麦克很少在宿舍休息", "tag": "Vế tần suất thấp" },
+        { "id": "t1", "text": "周末", "tag": "Thời gian" },
+        { "id": "t3", "text": "他总跟朋友", "tag": "Vế tần suất cao" },
+        { "id": "t4", "text": "去公园玩儿", "tag": "Hành động" },
+        { "id": "t5", "text": "总是休息在宿舍", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["周末", "很少在宿舍", "他总跟朋友", "去公园玩儿"],
+      "wordBankPool": ["周末", "麦克很少在宿舍休息", "他总跟朋友", "去公园玩儿", "休息在宿舍", "去玩儿公园"],
+      "traps": [
+        {
+          "pattern": "休息在宿舍",
+          "msg": "Lỗi nơi chốn: Nơi chốn '在宿舍' bắt buộc đứng trước động từ '休息', không dịch xuôi 'nghỉ ngơi ở KTX'."
+        },
+        {
+          "pattern": "去玩儿公园",
+          "msg": "Lỗi câu liên động: Đi đến địa điểm rồi mới chơi, phải nói '去公园玩儿', không đảo lộn trật tự logic hành động."
+        }
+      ],
+      "explanation": "Câu đối lập tần suất. '总' là cách nói rút gọn của '总是' (luôn luôn). Phó từ tần suất đứng trước cụm giới từ nơi chốn/đồng hành: 很少 + 在宿舍... / 总 + 跟朋友..."
+    },
+    {
+      "id": "b16-09",
+      "type": "sentence_parsing",
+      "title": "Hội thoại hỏi thăm tần suất về nhà và lý do công việc",
+      "vi": "A: Cuối tuần cậu thường về nhà thăm bố mẹ không? B: Gần đây công việc rất bận rộn, cuối tuần tớ cũng phải đi làm, vì vậy tớ rất ít khi về nhà.",
+      "zh": "周末你常回家看爸爸妈妈吗最近工作很忙周末我也要上班所以我很少回家",
+      "standardTrans": "周末你常回家看爸爸妈妈吗最近工作很忙周末我也要上班所以我很少回家",
+      "pinyin": "Zhōumò nǐ cháng huí jiā kàn bàba māma ma? Zuìjìn gōngzuò hěn máng, zhōumò wǒ yě yào shàngbān, suǒyǐ wǒ hěn shǎo huí jiā.",
+      "grammarPoint": "Trạng từ thời gian chỉ quá khứ gần (最近); Phó từ kết quả (所以); Động từ năng nguyện (要)",
+      "tokens": [
+        {
+          "text": "Gần đây",
+          "hz": "最近",
+          "py": "zuìjìn",
+          "hv": "Tối cận",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Dạo này, gần đây",
+          "radicals": "最 = Bộ viết 曰 + bộ nhĩ 耳; 近 = Bộ sước 辶 + chữ cân 斤"
+        },
+        {
+          "text": "Đi làm",
+          "hz": "上班",
+          "py": "shàngbān",
+          "hv": "Thượng ban",
+          "role": "Động từ ly hợp",
+          "vn": "Đi làm, vào ca",
+          "radicals": "班 = Hai bộ ngọc 王 + bộ đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "最近工作很忙", "tag": "Hoàn cảnh" },
+        { "id": "t1", "text": "周末你常回家看爸爸妈妈吗", "tag": "Câu hỏi" },
+        { "id": "t4", "text": "所以我很少回家", "tag": "Kết luận" },
+        { "id": "t3", "text": "周末我也要上班", "tag": "Lý do bổ sung" },
+        { "id": "t5", "text": "回家很少", "tag": "Bẫy phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["周末你常", "回家看爸爸妈妈吗", "最近工作很忙", "也要上班", "所以我很少回家"],
+      "wordBankPool": ["周末你常回家看爸爸妈妈吗", "最近工作很忙", "周末我也要上班", "所以我很少回家", "回家很少", "看爸爸妈妈在家", "所以很少我回家"],
+      "traps": [
+        {
+          "pattern": "回家很少",
+          "msg": "Lỗi phó từ tần suất: '很少' (ít khi) phải đặt trước động từ '回家', tuyệt đối không đặt sau động từ."
+        },
+        {
+          "pattern": "所以很少我",
+          "msg": "Lỗi trật tự chủ ngữ: Chủ ngữ '我' phải đứng ngay sau liên từ '所以' và trước phó từ '很少' ('所以我很少回家')."
+        }
+      ],
+      "explanation": "Câu phức với nhiều vế. '要' ở đây biểu thị sự bắt buộc (phải đi làm). Chú ý trật tự: Liên từ (所以) + Chủ ngữ (我) + Phó từ (很少) + Động từ (回家)."
+    },
+    {
+      "id": "b16-10",
+      "type": "anti_word_by_word",
+      "title": "Hội thoại mua sắm đồ dùng học tập và lượng từ đặc thù",
+      "vi": "A: Chiều nay không có tiết học, cậu có muốn cùng tớ đi hiệu sách mua từ điển không? B: Được. Tớ cũng muốn mua vài chiếc bút bi và một tấm bản đồ Trung Quốc.",
+      "zh": "今天下午没有课你要不要跟我一起去书店买书行我也要买几支圆珠笔和一张中国地图",
+      "standardTrans": "今天下午没有课你要不要跟我一起去书店买书行我也要买几支圆珠笔和一张中国地图",
+      "pinyin": "Jīntiān xiàwǔ méiyǒu kè, nǐ yào bú yào gēn wǒ yìqǐ qù shūdiàn mǎi shū? Xíng. Wǒ yě yào mǎi jǐ zhī yuánzhūbǐ hé yì zhāng Zhōngguó dìtú.",
+      "grammarPoint": "Lượng từ vật thon dài (支) và vật mặt phẳng (张); Cấu trúc hỏi chính phản (要不要)",
+      "tokens": [
+        {
+          "text": "Bút bi",
+          "hz": "圆珠笔",
+          "py": "yuánzhūbǐ",
+          "hv": "Viên châu bút",
+          "role": "Danh từ",
+          "vn": "Bút bi",
+          "radicals": "圆 = Bộ vi 囗 + chữ viên 员; 珠 = Bộ ngọc 王 + chữ chu 朱; 笔 = Bộ trúc 竹 + bộ mao 毛"
+        },
+        {
+          "text": "Bản đồ",
+          "hz": "地图",
+          "py": "dìtú",
+          "hv": "Địa đồ",
+          "role": "Danh từ",
+          "vn": "Bản đồ",
+          "radicals": "图 = Bộ vi 囗 + chữ đông 冬"
+        },
+        {
+          "text": "Tấm, bức",
+          "hz": "张",
+          "py": "zhāng",
+          "hv": "Trương",
+          "role": "Lượng từ (mặt phẳng)",
+          "vn": "Tấm, tờ, chiếc",
+          "radicals": "Bộ cung 弓 + chữ trường 长"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你要不要跟我一起去书店买书", "tag": "Lời mời" },
+        { "id": "t4", "text": "我也要买几支圆珠笔", "tag": "Mục đích 1" },
+        { "id": "t1", "text": "今天下午没有课", "tag": "Hoàn cảnh" },
+        { "id": "t5", "text": "和一张中国地图", "tag": "Mục đích 2" },
+        { "id": "t3", "text": "行", "tag": "Đồng ý" },
+        { "id": "t6", "text": "不有课", "tag": "Bẫy phủ định" },
+        { "id": "t7", "text": "几个圆珠笔", "tag": "Bẫy lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["没有课", "要不要跟", "去书店买书", "几支圆珠笔", "一张中国地图"],
+      "wordBankPool": ["今天下午没有课", "你要不要跟我一起去书店买书", "行", "我也要买几支圆珠笔", "和一张中国地图", "不有课", "几个圆珠笔", "地图中国"],
+      "traps": [
+        {
+          "pattern": "不有",
+          "msg": "Lỗi phủ định của '有': Bắt buộc phải dùng '没(有)' để phủ định sự sở hữu hoặc tồn tại, tuyệt đối không dùng '不有'."
+        },
+        {
+          "pattern": "几个圆珠笔",
+          "msg": "Lỗi lượng từ: Các vật thon dài như bút phải dùng lượng từ '支', không dùng lượng từ chung '个'."
+        }
+      ],
+      "explanation": "Câu hỏi chính phản dùng '要不要'. Khi liệt kê đồ vật đi kèm lượng từ đặc thù phải nhớ: 支 (vật dài/bút), 张 (vật mỏng phẳng/bản đồ)."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+# CURSOR & AI OPERATING PROTOCOL (STRICT TOKEN EFFICIENCY)
+
+## 1. NGUYÊN TẮC QUẢN TRỊ CONTEXT & OUTPUT (ZERO TOKEN WASTE)
+- Mục tiêu tối thượng: Giữ Context Window nhỏ gọn, súc tích, phản hồi tức thì.
+- Khi thực thi lệnh kiểm thử dữ liệu ngầm, BẮT BUỘC dùng cờ yên lặng:
+  `powershell -ExecutionPolicy Bypass -File .\master-test.ps1 -Quiet` hoặc `node master-test.js --quiet`
+- Nếu Terminal trả về `PASS`, AI KHÔNG ĐƯỢC giải thích, KHÔNG in lại chi tiết. Chỉ ghi đúng 1 icon: `⚡ [Data: Passed]`.
+
+## 2. PHÂN LẬP NHIỆM VỤ (STRICT TASK SCOPING)
+- Yêu cầu UI/CSS/Layout: 
+  + Tuyệt đối KHÔNG đọc thư mục `data/`.
+  + Tuyệt đối KHÔNG chạy script kiểm thử bài học.
+  + Chỉ chạm vào đúng file view (`index.html`, CSS hoặc JS tương ứng).
+- Yêu cầu Thêm/Sửa Dữ liệu Bài học:
+  + Chỉ đọc file bài học mục tiêu (ví dụ: `data/bai4.json`).
+  + Tuyệt đối không đọc các file bài học khác không liên quan.
+  + Chạy test ngầm bằng lệnh quiet mode để đảm bảo không lỗi cú pháp.
+
+## 3. CƠ CHẾ SỬA CODE CỰC TIỂU (MINIMAL DIFF MANDATE)
+- Tuyệt đối KHÔNG viết lại toàn bộ file nếu file trên 40 dòng.
+- Sử dụng format comment giữ nguyên code cũ:
+  // ... existing code ...
+  [Code mới]
+  // ... existing code ...
+
+## 4. KHUÔN MẪU PHẢN HỒI (CHỈ 3 DÒNG TỐI GIẢN)
+Mọi câu trả lời của AI BẮT BUỘC tuân thủ đúng khung này:
+1. `✅ [Thực hiện]:` [1 câu ngắn giải thích đã sửa gì]
+2. `⚡ [Kiểm thử]:` `Passed (0 lỗi)` (hoặc `Bỏ qua do chỉ sửa CSS`)
+3. `👉 [Xem trước]:` [1 thao tác để người dùng mở web test thử]

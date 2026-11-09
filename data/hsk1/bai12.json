@@ -1,0 +1,649 @@
+{
+  "lessonId": "b12",
+  "lessonTitle": "第十二课: 你在哪儿学习?",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "在 + Địa điểm",
+        "py": "zài + dìdiǎn",
+        "note": "Trạng ngữ chỉ nơi chốn '在 + Địa điểm' bắt buộc đứng TRƯỚC động từ ('在北京语言大学学习'), tuyệt đối không đặt sau động từ như tiếng Việt."
+      },
+      {
+        "word": "哪个 vs 哪儿",
+        "py": "nǎ ge vs nǎr",
+        "note": "哪个 (nǎ ge): cái nào / trường nào (đi kèm danh từ); 哪儿 (nǎr): ở đâu (hỏi vị trí nơi chốn)."
+      },
+      {
+        "word": "大学 vs 语言",
+        "py": "dàxué vs yǔyán",
+        "note": "北京语言大学 (Đại học Ngôn ngữ Bắc Kinh): tên trường riêng đứng trước danh xưng chung."
+      }
+    ],
+    "grammarTips": [
+      "Trật tự câu chỉ nơi chốn: Chủ ngữ + 在 + Nơi chốn + Động từ + Tân ngữ (Ví dụ: 我在北京语言大学学习汉语).",
+      "Câu hỏi lựa chọn hoặc hỏi thông tin nơi chốn: 你在哪个大学学习? (Bạn học ở trường đại học nào?).",
+      "Thương lượng phân công đối xứng: 我读你写好不好 (Tớ đọc cậu viết được không)."
+    ]
+  },
+  "sentences": [
+  {
+    "id": "b12-01",
+    "type": "sentence_parsing",
+    "title": "Hỏi và trả lời về địa điểm học tập",
+    "vi": "A: Cậu học tiếng Trung ở trường nào vậy? B: Tớ học tiếng Trung ở trường đại học ngôn ngữ Bắc Kinh.",
+    "zh": "你在哪个大学学习汉语 我在北京语言大学学习汉语",
+    "standardTrans": "你在哪个大学学习汉语 我在北京语言大学学习汉语",
+    "pinyin": "Nǐ zài nǎ ge dàxué xuéxí hànyǔ? Wǒ zài Běijīng Yǔyán Dàxué xuéxí hànyǔ.",
+    "grammarPoint": "Cấu trúc trạng ngữ chỉ nơi chốn đứng trước động từ: S + 在 + Địa điểm + Động từ + Tân ngữ",
+    "tokens": [
+      {
+        "text": "Ngôn ngữ",
+        "hz": "语言",
+        "py": "yǔyán",
+        "hv": "Ngữ ngôn",
+        "role": "Định ngữ danh từ",
+        "vn": "Ngôn ngữ, tiếng",
+        "radicals": "语 = Bộ ngôn 讠 + chữ ngũ 五 + bộ khẩu 口; 言 = Bộ ngôn 言"
+      },
+      {
+        "text": "Đại học",
+        "hz": "大学",
+        "py": "dàxué",
+        "hv": "Đại học",
+        "role": "Trung tâm ngữ",
+        "vn": "Trường đại học",
+        "radicals": "大 = Bộ đại 大; 学 = Bộ miên biến thể 冖 + bộ tử 子"
+      },
+      {
+        "text": "Trường nào",
+        "hz": "哪个大学",
+        "py": "nǎ ge dàxué",
+        "hv": "Nả cá đại học",
+        "role": "Cụm danh ngữ nghi vấn",
+        "vn": "Trường đại học nào",
+        "radicals": "哪 = Bộ khẩu 口 + chữ na 那; 个 = Bộ nhân 人 + nét sổ 丨"
+      }
+    ],
+    "tiles": [
+      { "id": "t3", "text": "学习汉语", "tag": "Vị ngữ hỏi" },
+      { "id": "t1", "text": "你在哪个大学", "tag": "Trạng ngữ hỏi" },
+      { "id": "t4", "text": "我在北京语言大学", "tag": "Trạng ngữ đáp" },
+      { "id": "t2", "text": "学习汉语", "tag": "Vị ngữ đáp" },
+      { "id": "t5", "text": "学习汉语在哪个大学", "tag": "Bẫy trật tự từ" }
+    ],
+    "targetOrder": ["t1", "t3", "t4", "t2"],
+    "requiredKeywordsZh": ["在哪个大学", "学习汉语", "北京语言大学"],
+    "wordBankPool": ["你在哪个大学", "学习汉语", "我在北京语言大学", "学习汉语在哪个大学", "在大学哪个", "北京大学语言"],
+    "traps": [
+      {
+        "pattern": "学习汉语在",
+        "msg": "Lỗi ngữ tự: Trong tiếng Trung, trạng ngữ chỉ nơi chốn bắt buộc đứng TRƯỚC động từ ('在哪个大学学习汉语'), không đặt sau động từ như tiếng Việt."
+      },
+      {
+        "pattern": "大学哪个",
+        "msg": "Lỗi cụm danh từ: Đại từ nghi vấn và lượng từ phải đứng trước danh từ ('哪个大学'), không nói '大学哪个'."
+      }
+    ],
+    "explanation": "Quy tắc ngữ tự cốt lõi: 'Ở đâu làm gì' = Chủ ngữ + 在 + Nơi chốn + Động từ + Tân ngữ. Cụm tên trường '北京语言大学' (Đại học Ngôn ngữ Bắc Kinh) giữ nguyên danh xưng riêng đứng trước danh xưng chung."
+  },
+  {
+    "id": "b12-02",
+    "type": "anti_word_by_word",
+    "title": "Câu hỏi thương lượng và động từ phân công hành động",
+    "vi": "A: Tớ đọc cậu viết, được không? B: Được, cậu đọc đi.",
+    "zh": "我读你写好不好 好的你读吧",
+    "standardTrans": "我读你写好不好 好的你读吧",
+    "pinyin": "Wǒ dú nǐ xiě, hǎo bù hǎo? Hǎo de, nǐ dú ba.",
+    "grammarPoint": "Hai phân câu phân công đối xứng: S1 + V1, S2 + V2 + 好不好; Trợ từ ngữ khí thúc giục: 吧",
+    "tokens": [
+      {
+        "text": "Đọc",
+        "hz": "读",
+        "py": "dú",
+        "hv": "Độc",
+        "role": "Động từ vị ngữ",
+        "vn": "Đọc, học",
+        "radicals": "Bộ ngôn 讠 (nói) + chữ mại 卖 (bộ thập 十 + chữ 买)"
+      },
+      {
+        "text": "Viết",
+        "hz": "写",
+        "py": "xiě",
+        "hv": "Tả",
+        "role": "Động từ vị ngữ",
+        "vn": "Viết",
+        "radicals": "Bộ mịch 冖 (trùm khăn lên) + bộ nhất 一 + nét sổ gập gập móc 丂"
+      },
+      {
+        "text": "Được không",
+        "hz": "好不好",
+        "py": "hǎo bù hǎo",
+        "hv": "Hảo bất hảo",
+        "role": "Cụm hỏi chính phản thương lượng",
+        "vn": "Được không, được chưa",
+        "radicals": "好 = Bộ nữ 女 + bộ tử 子; 不 = Bộ nhất 一"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "好的", "tag": "Đồng ý" },
+      { "id": "t1", "text": "我读你写好不好", "tag": "Lời đề nghị" },
+      { "id": "t3", "text": "你读吧", "tag": "Giục đối phương" },
+      { "id": "t4", "text": "你读去", "tag": "Bẫy dùng từ" },
+      { "id": "t5", "text": "好不好吗", "tag": "Bẫy thừa 吗" }
+    ],
+    "targetOrder": ["t1", "t2", "t3"],
+    "requiredKeywordsZh": ["我读你写", "好不好", "好的", "你读吧"],
+    "wordBankPool": ["我读你写好不好", "好的", "你读吧", "你读去", "好不好吗", "我念你写", "读吧你"],
+    "traps": [
+      {
+        "pattern": "好不好吗",
+        "msg": "Thừa trợ từ: Đã dùng dạng hỏi chính phản '好不好' thì cuối câu tuyệt đối KHÔNG thêm trợ từ '吗'."
+      },
+      {
+        "pattern": "你读去",
+        "msg": "Lỗi trợ từ ngữ khí: Động viên, giục ai làm việc gì ('cậu đọc đi') dùng trợ từ '吧' ('你读吧'), không dùng động từ di chuyển '去'."
+      }
+    ],
+    "explanation": "Động từ '读' dùng cho việc đọc thành tiếng hoặc học tập. '好不好' đặt ở cuối câu để thăm dò ý kiến hoặc đề nghị một cách khéo léo, nhẹ nhàng."
+  },
+  {
+    "id": "b12-03",
+    "type": "sentence_parsing",
+    "title": "Bạn cùng phòng và đại từ số lượng 俩",
+    "vi": "Lâm Anh là bạn học của Mary, cũng là bạn cùng phòng của Mary. Hai bọn họ đều là du học sinh của trường đại học Hà Nội.",
+    "zh": "林英是玛丽的同学也是玛丽的同屋他们俩都是河内大学的留学生",
+    "standardTrans": "林英是玛丽的同学也是玛丽的同屋他们俩都是河内大学的留学生",
+    "pinyin": "Lín Yīng shì Mǎlì de tóngxué, yě shì Mǎlì de tóngwū. Tāmen liǎ dōu shì Hénèi Dàxué de liúxuéshēng.",
+    "grammarPoint": "Phán đoán đẳng lập: 是... 也是...; Đại từ chỉ hai người: 他们俩 (tương đương 两个, không thêm 个); Cụm định ngữ sở hữu: 河内大学的留学生",
+    "tokens": [
+      {
+        "text": "Lâm Anh",
+        "hz": "林英",
+        "py": "Lín Yīng",
+        "hv": "Lâm Anh",
+        "role": "Chủ ngữ (tên riêng)",
+        "vn": "Lâm Anh",
+        "radicals": "林 = Hai bộ mộc 木 (rừng cây); 英 = Bộ thảo 艹 + chữ ương 央"
+      },
+      {
+        "text": "Bạn cùng phòng",
+        "hz": "同屋",
+        "py": "tóngwū",
+        "hv": "Đồng ốc",
+        "role": "Trung tâm ngữ",
+        "vn": "Bạn cùng phòng",
+        "radicals": "同 = Bộ quynh 冂 + bộ nhất 一 + bộ khẩu 口; 屋 = Bộ thi 尸 (mái nhà) + chữ chí 至"
+      },
+      {
+        "text": "Bạn học",
+        "hz": "同学",
+        "py": "tóngxué",
+        "hv": "Đồng học",
+        "role": "Trung tâm ngữ",
+        "vn": "Bạn học, bạn cùng lớp",
+        "radicals": "同 = Cùng; 学 = Bộ miên biến thể 冖 + bộ tử 子"
+      },
+      {
+        "text": "Đại học Hà Nội",
+        "hz": "河内大学",
+        "py": "Hénèi Dàxué",
+        "hv": "Hà Nội Đại học",
+        "role": "Định ngữ sở hữu",
+        "vn": "Trường ĐH Hà Nội",
+        "radicals": "河 = Bộ chấm thủy 氵 + chữ khả 可; 内 = Bộ quynh 冂 + nét nhân 人 vào trong; 大学 = Đại học"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "也是玛丽的同屋", "tag": "Vị ngữ 2" },
+      { "id": "t4", "text": "留学生", "tag": "Trung tâm ngữ" },
+      { "id": "t1", "text": "林英是玛丽的同学", "tag": "Chủ vị 1" },
+      { "id": "t3", "text": "他们俩都是河内大学的", "tag": "Vị ngữ 3" },
+      { "id": "t5", "text": "他们两个俩", "tag": "Bẫy lặp từ" },
+      { "id": "t6", "text": "屋同", "tag": "Bẫy đảo ngữ" }
+    ],
+    "targetOrder": ["t1", "t2", "t3", "t4"],
+    "requiredKeywordsZh": ["林英", "玛丽的同学", "玛丽的同屋", "他们俩", "河内大学的留学生"],
+    "wordBankPool": ["林英是玛丽的同学", "也是玛丽的同屋", "他们俩都是河内大学的", "留学生", "他们两个俩", "屋同", "留学生河内大学"],
+    "traps": [
+      {
+        "pattern": "两个俩",
+        "msg": "Lỗi lặp lượng từ: '俩' (liǎ) trong Hán ngữ đã bao hàm ý nghĩa '两 + 个', do đó tuyệt đối không thêm lượng từ '个' vào sau '俩'."
+      },
+      {
+        "pattern": "留学生河内大学",
+        "msg": "Lỗi định ngữ: Danh từ chỉ cơ quan, đơn vị sở hữu phải đứng trước danh từ trung tâm: '河内大学的留学生', không dịch thuận theo tiếng Việt."
+      }
+    ],
+    "explanation": "'同屋' (tóngwū) là bạn cùng phòng trong ký túc xá. '他们俩' (hai người bọn họ) dùng độc lập làm chủ ngữ mà không cần thêm lượng từ '个'."
+  },
+  {
+    "id": "b12-04",
+    "type": "anti_word_by_word",
+    "title": "Hỏi và đánh giá tính cách, phẩm chất con người",
+    "vi": "A: Cậu cảm thấy Mary là người thế nào? B: Tớ cảm thấy cậu ấy là một người rất tốt.",
+    "zh": "你觉得玛丽是怎么样的人 我觉得她是一个很好的人",
+    "standardTrans": "你觉得玛丽是怎么样的人 我觉得她是一个很好的人",
+    "pinyin": "Nǐ juéde Mǎlì shì zěnmeyàng de rén? Wǒ juéde tā shì yí gè hěn hǎo de rén.",
+    "grammarPoint": "Đại từ 怎么样 làm định ngữ: 怎么样 + 的 + Danh từ (hỏi tính chất, đặc điểm)",
+    "tokens": [
+      {
+        "text": "Cảm thấy",
+        "hz": "觉得",
+        "py": "juéde",
+        "hv": "Giác đắc",
+        "role": "Động từ nhận thức",
+        "vn": "Cảm thấy, thấy rằng",
+        "radicals": "觉 = Bộ kiến 见 + ba nét đầu ⺍; 得 = Bộ xích 彳 + chữ đán 旦 + bộ thốn 寸"
+      },
+      {
+        "text": "Thế nào",
+        "hz": "怎么样",
+        "py": "zěnmeyàng",
+        "hv": "Chẩm ma dạng",
+        "role": "Đại từ nghi vấn",
+        "vn": "Như thế nào, ra sao",
+        "radicals": "怎 = Chữ sạ 乍 + bộ tâm 心; 样 = Bộ mộc 木 + chữ dương 羊"
+      },
+      {
+        "text": "Người thế nào",
+        "hz": "怎么样的人",
+        "py": "zěnmeyàng de rén",
+        "hv": "Chẩm ma dạng đích nhân",
+        "role": "Cụm danh ngữ nghi vấn",
+        "vn": "Người như thế nào",
+        "radicals": "怎么样 + trợ từ 的 + danh từ 人"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "我觉得她是一个很好的人", "tag": "Lời đáp" },
+      { "id": "t1", "text": "你觉得玛丽是怎么样的人", "tag": "Câu hỏi" },
+      { "id": "t3", "text": "怎么样的人吗", "tag": "Bẫy thừa 吗" },
+      { "id": "t4", "text": "人怎么样", "tag": "Bẫy dịch ngược" }
+    ],
+    "targetOrder": ["t1", "t2"],
+    "requiredKeywordsZh": ["你觉得", "玛丽", "怎么样的人", "很好的人"],
+    "wordBankPool": ["你觉得玛丽是怎么样的人", "我觉得她是一个很好的人", "怎么样的人吗", "人怎么样", "怎么样玛丽", "好人"],
+    "traps": [
+      {
+        "pattern": "人怎么样",
+        "msg": "Lỗi định ngữ: Cụm 'người thế nào' phải đưa thành phần nghi vấn bổ nghĩa lên trước danh từ trung tâm ('怎么样的人'), không nói '人怎么样'."
+      },
+      {
+        "pattern": "怎么样的人吗",
+        "msg": "Thừa trợ từ: Đã dùng đại từ nghi vấn '怎么样' thì cuối câu hỏi không dùng trợ từ nghi vấn '吗'."
+      }
+    ],
+    "explanation": "Khi '怎么样' làm định ngữ để hỏi phẩm chất, tính cách của một người, bắt buộc phải có trợ từ '的': '怎么样 + 的 + Danh từ' (怎么样的人 = người như thế nào)."
+  },
+  {
+    "id": "b12-05",
+    "type": "sentence_parsing",
+    "title": "Cấu trúc gọi điện thoại cho ai bằng giới từ 给",
+    "vi": "Tớ cũng không biết, cậu gọi điện thoại cho Điền Phương hỏi cậu ấy đi.",
+    "zh": "我也不知道你给田芳打电话问她吧",
+    "standardTrans": "我也不知道你给田芳打电话问她吧",
+    "pinyin": "Wǒ yě bù zhīdào, nǐ gěi Tián Fāng dǎ diànhuà wèn tā ba.",
+    "grammarPoint": "Cấu trúc gọi điện thoại: S + 给 + Đối tượng + 打电话; Câu liên động: 打电话 + 问 + 她",
+    "tokens": [
+      {
+        "text": "Điền Phương",
+        "hz": "田芳",
+        "py": "Tián Fāng",
+        "hv": "Điền Phương",
+        "role": "Tên riêng (tân ngữ của 给)",
+        "vn": "Điền Phương",
+        "radicals": "田 = Bộ điền 田; 芳 = Bộ thảo 艹 + chữ phương 方"
+      },
+      {
+        "text": "Gọi điện thoại cho Điền Phương",
+        "hz": "给田芳打电话",
+        "py": "gěi Tián Fāng dǎ diànhuà",
+        "hv": "Cấp Điền Phương đả điện thoại",
+        "role": "Cụm giới từ + Động tân",
+        "vn": "Gọi điện cho Điền Phương",
+        "radicals": "给 = Bộ mịch 纟 + chữ hợp 合; 打 = Bộ thủ 扌 + chữ đinh 丁; 电话 = Điện thoại"
+      },
+      {
+        "text": "Hỏi cậu ấy đi",
+        "hz": "问她吧",
+        "py": "wèn tā ba",
+        "hv": "Vấn tha ba",
+        "role": "Động từ + Tân ngữ + Trợ từ ngữ khí",
+        "vn": "Hỏi cô ấy đi",
+        "radicals": "问 = Bộ môn 门 + bộ khẩu 口; 她 = Bộ nữ 女 + chữ dã 也; 吧 = Trợ từ ngữ khí"
+      }
+    ],
+    "tiles": [
+      { "id": "t3", "text": "问她吧", "tag": "Mục đích" },
+      { "id": "t1", "text": "我也不知道", "tag": "Không biết" },
+      { "id": "t2", "text": "你给田芳打电话", "tag": "Hành động gọi" },
+      { "id": "t4", "text": "打电话给田芳", "tag": "Bẫy ngữ tự" },
+      { "id": "t5", "text": "问她去", "tag": "Bẫy dùng từ" }
+    ],
+    "targetOrder": ["t1", "t2", "t3"],
+    "requiredKeywordsZh": ["我也不知道", "给田芳打电话", "问她吧"],
+    "wordBankPool": ["我也不知道", "你给田芳打电话", "问她吧", "打电话给田芳", "问她去", "我不也知道", "打给田芳电话"],
+    "traps": [
+      {
+        "pattern": "打电话给",
+        "msg": "Lỗi ngữ tự giới từ: Cấu trúc giới từ chuẩn mực trong ngữ pháp HSK1 là '给 + Đối tượng + 打电话' ('给田芳打电话'), không dịch xuôi theo tiếng Việt."
+      },
+      {
+        "pattern": "我不也",
+        "msg": "Lỗi trật tự phó từ: 'Cũng không' trong tiếng Hán bắt buộc là '也不' ('我也不知道'), không được đặt phó từ phủ định trước '也'."
+      }
+    ],
+    "explanation": "Cấu trúc giao tiếp kinh điển: S + 给 + Tân ngữ + 打电话 (gọi điện thoại cho ai). Động từ '问' kết hợp với trợ từ ngữ khí '吧' biểu thị lời gợi ý, khuyên bảo nhẹ nhàng."
+  },
+  {
+    "id": "b12-06",
+    "type": "anti_word_by_word",
+    "title": "Hỏi danh xưng trường và cụm từ chỉ sinh viên đại học",
+    "vi": "A: Mike là bạn cậu à? Cậu ấy là sinh viên của trường đại học nào vậy? B: Cậu ấy là sinh viên của trường đại học văn hóa ngôn ngữ Bắc Kinh.",
+    "zh": "麦克是你的朋友吗他是哪个大学的大学生 他是北京语言文化大学的大学生",
+    "standardTrans": "麦克是你的朋友吗他是哪个大学的大学生 他是北京语言文化大学的大学生",
+    "pinyin": "Màikè shì nǐ de péngyou ma? Tā shì nǎ ge dàxué de dàxuéshēng? Tā shì Běijīng Yǔyán Wénhuà Dàxué de dàxuéshēng.",
+    "grammarPoint": "Hỏi sinh viên trường nào: 是 + 哪个大学的 + 大学生; Cụm danh xưng cơ quan đào tạo: 北京语言文化大学",
+    "tokens": [
+      {
+        "text": "Sinh viên đại học",
+        "hz": "大学生",
+        "py": "dàxuéshēng",
+        "hv": "Đại học sinh",
+        "role": "Trung tâm ngữ",
+        "vn": "Sinh viên đại học",
+        "radicals": "大 = Bộ đại 大; 学 = Bộ miên biến thể 冖 + bộ tử 子; 生 = Bộ sinh 生"
+      },
+      {
+        "text": "Đại học Văn hóa Ngôn ngữ Bắc Kinh",
+        "hz": "北京语言文化大学",
+        "py": "Běijīng Yǔyán Wénhuà Dàxué",
+        "hv": "Bắc Kinh Ngữ ngôn Văn hóa Đại học",
+        "role": "Định ngữ tên trường",
+        "vn": "Trường ĐH Văn hóa Ngôn ngữ Bắc Kinh",
+        "radicals": "文 = Bộ văn 文; 化 = Bộ nhân đứng 亻 + chữ chủy 匕"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "他是哪个大学的大学生", "tag": "Hỏi trường" },
+      { "id": "t1", "text": "麦克是你的朋友吗", "tag": "Hỏi quan hệ" },
+      { "id": "t3", "text": "他是北京语言文化大学的大学生", "tag": "Lời đáp" },
+      { "id": "t4", "text": "大学生哪个大学", "tag": "Bẫy đảo ngữ" },
+      { "id": "t5", "text": "麦克有是你的朋友吗", "tag": "Bẫy thừa 有" }
+    ],
+    "targetOrder": ["t1", "t2", "t3"],
+    "requiredKeywordsZh": ["麦克是你的朋友吗", "哪个大学的大学生", "北京语言文化大学"],
+    "wordBankPool": ["麦克是你的朋友吗", "他是哪个大学的大学生", "他是北京语言文化大学的大学生", "大学生哪个大学", "麦克有是你的朋友吗", "大学的学生"],
+    "traps": [
+      {
+        "pattern": "大学生哪个",
+        "msg": "Lỗi định ngữ: Cụm 'sinh viên của trường nào' phải đặt thành phần hỏi '哪个大学' lên trước danh từ trung tâm: '哪个大学的大学生'."
+      },
+      {
+        "pattern": "有是",
+        "msg": "Lỗi dịch bồi: Tiếng Việt dùng 'có phải là... không', tiếng Trung dùng cấu trúc '...是...吗' hoặc '是不是', tuyệt đối không ghép thô '有是'."
+      }
+    ],
+    "explanation": "Sinh viên bậc đại học trong tiếng Hán gọi chuẩn là '大学生' (dàxuéshēng). Cấu trúc định ngữ nhiều tầng: Tên trường + 的 + 大学生."
+  },
+  {
+    "id": "b12-07",
+    "type": "sentence_parsing",
+    "title": "Bày tỏ cảm nhận, phó từ so sánh 比较 và liên từ 但是",
+    "vi": "A: Cậu cảm thấy học tiếng Trung khó không? B: Tớ cảm thấy ngữ pháp tiếng Trung khá dễ, nghe và nói cũng không khó lắm, nhưng đọc và viết khá khó.",
+    "zh": "你觉得学汉语难吗 我觉得汉语的语法比较容易听和说也不太难但是读和写比较难",
+    "standardTrans": "你觉得学汉语难吗 我觉得汉语的语法比较容易听和说也不太难但是读和写比较难",
+    "pinyin": "Nǐ juéde xué hànyǔ nán ma? Wǒ juéde hànyǔ de yǔfǎ bǐjiào róngyì, tīng hé shuō yě bú tài nán, dànshì dú hé xiě bǐjiào nán.",
+    "grammarPoint": "Phó từ mức độ: 比较 + Tính từ (tương đối / khá); Liên từ chuyển ngoặt: 但是; Bốn kỹ năng: 听, 说, 读, 写",
+    "tokens": [
+      {
+        "text": "Ngữ pháp",
+        "hz": "语法",
+        "py": "yǔfǎ",
+        "hv": "Ngữ pháp",
+        "role": "Chủ ngữ phân câu",
+        "vn": "Ngữ pháp",
+        "radicals": "语 = Bộ ngôn 讠; 法 = Bộ chấm thủy 氵 + chữ khứ 去"
+      },
+      {
+        "text": "Khá dễ",
+        "hz": "比较容易",
+        "py": "bǐjiào róngyì",
+        "hv": "Tỷ giác dung dị",
+        "role": "Phó từ + Tính từ",
+        "vn": "Khá dễ, tương đối dễ",
+        "radicals": "比 = Bộ tỷ 比; 较 = Bộ xa 车 + chữ giao 交; 容 = Bộ miên 宀 + bộ cốc 谷; 易 = Bộ nhật 日 + nét trật 勿"
+      },
+      {
+        "text": "Nhưng mà",
+        "hz": "但是",
+        "py": "dànshì",
+        "hv": "Đãn thị",
+        "role": "Liên từ chuyển ngoặt",
+        "vn": "Nhưng, nhưng mà",
+        "radicals": "但 = Bộ nhân đứng 亻 + chữ đán 旦; 是 = Bộ nhật 日 + bộ sơ 疋"
+      },
+      {
+        "text": "Nghe và nói",
+        "hz": "听和说",
+        "py": "tīng hé shuō",
+        "hv": "Thính hòa thuyết",
+        "role": "Chủ ngữ ghép",
+        "vn": "Nghe và nói",
+        "radicals": "听 = Bộ khẩu 口 + bộ cân 斤; 说 = Bộ ngôn 讠 + chữ duyệt 兑"
+      }
+    ],
+    "tiles": [
+      { "id": "t3", "text": "听和说也不太难", "tag": "Vế kỹ năng 1" },
+      { "id": "t1", "text": "你觉得学汉语难吗", "tag": "Câu hỏi" },
+      { "id": "t4", "text": "但是读和写比较难", "tag": "Vế chuyển ngoặt" },
+      { "id": "t2", "text": "我觉得汉语的语法比较容易", "tag": "Vế nhận xét 1" },
+      { "id": "t5", "text": "容易比较", "tag": "Bẫy trật tự phó từ" },
+      { "id": "t6", "text": "虽然", "tag": "Bẫy liên từ" }
+    ],
+    "targetOrder": ["t1", "t2", "t3", "t4"],
+    "requiredKeywordsZh": ["你觉得学汉语难吗", "比较容易", "听和说", "也不太难", "但是", "读和写比较难"],
+    "wordBankPool": ["你觉得学汉语难吗", "我觉得汉语的语法比较容易", "听和说也不太难", "但是读和写比较难", "容易比较", "难比较", "不难太"],
+    "traps": [
+      {
+        "pattern": "容易比较",
+        "msg": "Lỗi vị trí phó từ: Phó từ chỉ mức độ '比较' bắt buộc phải đứng TRƯỚC tính từ ('比较容易'), không nói ngược '容易比较'."
+      },
+      {
+        "pattern": "不难太",
+        "msg": "Lỗi dịch bồi: 'Không khó lắm' phải dịch là '不太难', không dịch theo ngữ tự tiếng Việt thành '不难太'."
+      }
+    ],
+    "explanation": "'比较' (bǐjiào) đóng vai trò làm phó từ mang nghĩa 'tương đối / khá', đứng trước tính từ: 比较 + Tính từ (比较容易, 比较难). Liên từ '但是' dùng mở đầu mệnh đề chuyển ngoặt mang ý nghĩa tương phản."
+  },
+  {
+    "id": "b12-08",
+    "type": "anti_word_by_word",
+    "title": "Giới thiệu trang trọng hai người bằng lượng từ 位 và phó từ 都",
+    "vi": "Hai vị này là người Trung Quốc, cậu ấy tên là Trương Đông, cô ấy tên là Điền Phương, bọn họ đều học tiếng Trung.",
+    "zh": "这两位是中国人他叫张东她叫田芳他们都学汉语",
+    "standardTrans": "这两位是中国人他叫张东她叫田芳他们都学汉语",
+    "pinyin": "Zhè liǎng wèi shì Zhōngguórén, tā jiào Zhāng Dōng, tā jiào Tián Fāng, tāmen dōu xué hànyǔ.",
+    "grammarPoint": "Đại từ chỉ định + Số từ + Lượng từ lịch sự: 这两位; Phó từ phạm vi: 都 + Động từ",
+    "tokens": [
+      {
+        "text": "Hai vị này",
+        "hz": "这两位",
+        "py": "zhè liǎng wèi",
+        "hv": "Giá lưỡng vị",
+        "role": "Cụm chủ ngữ chỉ định lịch sự",
+        "vn": "Hai vị này, hai người này",
+        "radicals": "这 = Chữ văn 文 + bộ sước 辶; 两 = Chữ lưỡng 两; 位 = Bộ nhân đứng 亻 + chữ lập 立"
+      },
+      {
+        "text": "Cô ấy tên là Điền Phương",
+        "hz": "她叫田芳",
+        "py": "tā jiào Tián Fāng",
+        "hv": "Tha khiếu Điền Phương",
+        "role": "Phân câu xưng danh nữ",
+        "vn": "Cô ấy tên Điền Phương",
+        "radicals": "她 = Bộ nữ 女 + chữ dã 也; 田芳 = Tên riêng"
+      },
+      {
+        "text": "Đều học tiếng Trung",
+        "hz": "都学汉语",
+        "py": "dōu xué hànyǔ",
+        "hv": "Đô học Hán ngữ",
+        "role": "Phó từ + Động tân",
+        "vn": "Đều học tiếng Trung",
+        "radicals": "都 = Bộ giả 者 + bộ ấp 阝; 学 = Học; 汉语 = Tiếng Trung"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "他叫张东她叫田芳", "tag": "Giới thiệu tên" },
+      { "id": "t1", "text": "这两位是中国人", "tag": "Giới thiệu xuất thân" },
+      { "id": "t3", "text": "他们都学汉语", "tag": "Hoạt động chung" },
+      { "id": "t4", "text": "这二位", "tag": "Bẫy số từ" },
+      { "id": "t5", "text": "这两个位", "tag": "Bẫy lượng từ" }
+    ],
+    "targetOrder": ["t1", "t2", "t3"],
+    "requiredKeywordsZh": ["这两位", "中国人", "张东", "田芳", "都学汉语"],
+    "wordBankPool": ["这两位是中国人", "他叫张东她叫田芳", "他们都学汉语", "这二位", "这两个位", "他们也学汉语"],
+    "traps": [
+      {
+        "pattern": "这二位",
+        "msg": "Lỗi số từ: Khi đứng trước lượng từ chỉ số lượng 2 bắt buộc dùng '两' ('两位'), không dùng '二' trong ngữ cảnh chỉ định này."
+      },
+      {
+        "pattern": "两个位",
+        "msg": "Lỗi lặp lượng từ: Bản thân '位' đã là lượng từ xưng hô tôn trọng, không được lồng thêm lượng từ '个' vào phía trước."
+      }
+    ],
+    "explanation": "Cấu trúc chỉ định lịch sự số lượng 2 người: 这 + 两 + 位. Khi diễn tả hành động chung của cả tập thể/hai người, dùng phó từ phạm vi '都' đứng trước động từ: 他们都学汉语."
+  },
+  {
+    "id": "b12-09",
+    "type": "sentence_parsing",
+    "title": "Hỏi thăm sức khỏe bậc phụ huynh",
+    "vi": "A: Sức khỏe của bố mẹ bạn thế nào? B: Bọn họ đều rất khỏe. Cảm ơn!",
+    "zh": "你爸爸妈妈身体怎么样 他们都很好谢谢",
+    "standardTrans": "你爸爸妈妈身体怎么样 他们都很好谢谢",
+    "pinyin": "Nǐ bàba māma shēntǐ zěnmeyàng? Tāmen dōu hěn hǎo. Xièxie!",
+    "grammarPoint": "Câu vị ngữ chủ vị hỏi thăm tình trạng: Chủ ngữ lớn (你爸爸妈妈) + Chủ ngữ nhỏ (身体) + 怎么样; Phó từ phạm vi: 都 + 很 + 好",
+    "tokens": [
+      {
+        "text": "Bố mẹ bạn",
+        "hz": "你爸爸妈妈",
+        "py": "nǐ bàba māma",
+        "hv": "Nhĩ bá bá ma ma",
+        "role": "Chủ ngữ lớn",
+        "vn": "Bố mẹ của bạn",
+        "radicals": "爸爸 = Bố (bộ phụ 父); 妈妈 = Mẹ (bộ nữ 女)"
+      },
+      {
+        "text": "Sức khỏe thế nào",
+        "hz": "身体怎么样",
+        "py": "shēntǐ zěnmeyàng",
+        "hv": "Thân thể chẩm ma dạng",
+        "role": "Cụm vị ngữ chủ vị",
+        "vn": "Sức khỏe ra sao",
+        "radicals": "身 = Bộ thân 身; 体 = Bộ nhân đứng 亻 + chữ bản 本; 怎么样 = Thế nào"
+      },
+      {
+        "text": "Đều rất khỏe",
+        "hz": "都很好",
+        "py": "dōu hěn hǎo",
+        "hv": "Đô hẩn hảo",
+        "role": "Vị ngữ đáp",
+        "vn": "Đều rất khỏe, đều rất tốt",
+        "radicals": "都 = Bộ ấp 阝; 很 = Bộ xích 彳; 好 = Bộ nữ 女 + bộ tử 子"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "身体怎么样", "tag": "Vị ngữ hỏi" },
+      { "id": "t1", "text": "你爸爸妈妈", "tag": "Chủ ngữ hỏi" },
+      { "id": "t3", "text": "他们都很好谢谢", "tag": "Đáp từ" },
+      { "id": "t4", "text": "怎么样身体", "tag": "Bẫy đảo ngữ" },
+      { "id": "t5", "text": "身体怎么样吗", "tag": "Bẫy thừa 吗" }
+    ],
+    "targetOrder": ["t1", "t2", "t3"],
+    "requiredKeywordsZh": ["你爸爸妈妈", "身体怎么样", "他们都很好", "谢谢"],
+    "wordBankPool": ["你爸爸妈妈", "身体怎么样", "他们都很好谢谢", "怎么样身体", "身体怎么样吗", "很健康", "他们也很忙"],
+    "traps": [
+      {
+        "pattern": "怎么样身体",
+        "msg": "Lỗi trật tự từ: Muốn hỏi tình trạng của sự vật/đối tượng nào thì đối tượng đó phải đứng trước đại từ '怎么样' ('身体怎么样'), không nói ngược."
+      },
+      {
+        "pattern": "怎么样吗",
+        "msg": "Thừa trợ từ: Đã dùng đại từ nghi vấn '怎么样' thì câu đã mang bản chất hỏi, không thêm trợ từ '吗' vào cuối câu."
+      }
+    ],
+    "explanation": "Câu vị ngữ chủ vị hỏi thăm sức khỏe: Đối tượng + 身体怎么样? Danh từ chỉ người thân ruột thịt (爸爸妈妈) theo thói quen giao tiếp không cần dùng trợ từ kết cấu '的'."
+  },
+  {
+    "id": "b12-10",
+    "type": "anti_word_by_word",
+    "title": "Câu liên động mua sắm và cụm danh từ phân loại sách",
+    "vi": "Sáng nay tôi và Mã Đức đi hiệu sách mua sách. Tôi mua một cuốn sách pháp luật, Mã Đức mua một cuốn sách lịch sử Việt Nam.",
+    "zh": "今天上午我和马德去书店买书我买一本法律书马德买一本越南历史书",
+    "standardTrans": "今天上午我和马德去书店买书我买一本法律书马德买一本越南历史书",
+    "pinyin": "Jīntiān shàngwǔ wǒ hé Mǎdé qù shūdiàn mǎi shū. Wǒ mǎi yì běn fǎlǜ shū, Mǎdé mǎi yì běn Yuènán lìshǐ shū.",
+    "grammarPoint": "Câu liên động mục đích: S + 去 + Địa điểm + Động từ; Cụm danh từ chuyên ngành: Lĩnh vực + 书 (法律书, 越南历史书)",
+    "tokens": [
+      {
+        "text": "Mã Đức",
+        "hz": "马德",
+        "py": "Mǎdé",
+        "hv": "Mã Đức",
+        "role": "Tên riêng",
+        "vn": "Mã Đức",
+        "radicals": "马 = Bộ mã 马; 德 = Bộ xích 彳 + chữ thập 十 + chữ tứ 四 + bộ nhất 一 + bộ tâm 心"
+      },
+      {
+        "text": "Hiệu sách",
+        "hz": "书店",
+        "py": "shūdiàn",
+        "hv": "Thư điếm",
+        "role": "Tân ngữ nơi chốn",
+        "vn": "Hiệu sách, nhà sách",
+        "radicals": "书 = Chữ thư 书; 店 = Bộ quảng 广 + chữ chiêm 占"
+      },
+      {
+        "text": "Sách pháp luật",
+        "hz": "法律书",
+        "py": "fǎlǜ shū",
+        "hv": "Pháp luật thư",
+        "role": "Cụm danh ngữ tân ngữ 1",
+        "vn": "Sách luật, sách pháp luật",
+        "radicals": "法 = Bộ chấm thủy 氵 + chữ khứ 去; 律 = Bộ xích 彳 + chữ duật 聿; 书 = Chữ thư 书"
+      },
+      {
+        "text": "Sách lịch sử Việt Nam",
+        "hz": "越南历史书",
+        "py": "Yuènán lìshǐ shū",
+        "hv": "Việt Nam lịch sử thư",
+        "role": "Cụm danh ngữ tân ngữ 2",
+        "vn": "Sách lịch sử Việt Nam",
+        "radicals": "越南 = Việt Nam; 历 = Bộ xưởng 厂 + chữ lực 力; 史 = Bộ khẩu 口 + nét sổ kéo dài; 书 = Chữ thư 书"
+      }
+    ],
+    "tiles": [
+      { "id": "t2", "text": "我买一本法律书", "tag": "Hành động 1" },
+      { "id": "t1", "text": "今天上午我和马德去书店买书", "tag": "Vế liên động chính" },
+      { "id": "t3", "text": "马德买一本越南历史书", "tag": "Hành động 2" },
+      { "id": "t4", "text": "书法律", "tag": "Bẫy dịch ngược" },
+      { "id": "t5", "text": "去买书书店", "tag": "Bẫy liên động" }
+    ],
+    "targetOrder": ["t1", "t2", "t3"],
+    "requiredKeywordsZh": ["今天上午", "马德", "去书店买书", "法律书", "越南历史书"],
+    "wordBankPool": ["今天上午我和马德去书店买书", "我买一本法律书", "马德买一本越南历史书", "书法律", "去买书书店", "历史越南书", "买书在书店"],
+    "traps": [
+      {
+        "pattern": "去买书书店",
+        "msg": "Lỗi câu liên động: Đến địa điểm nào làm việc gì cấu trúc phải là '去 + Nơi chốn + Động từ' ('去书店买书'), không nói '去买书书店'."
+      },
+      {
+        "pattern": "书法律",
+        "msg": "Lỗi định ngữ: Tên thể loại sách phải đứng trước danh từ '书' đóng vai trò định ngữ ('法律书', '越南历史书'), không dịch thuận theo tiếng Việt thành '书法律'."
+      }
+    ],
+    "explanation": "Câu liên động mục đích: S + 去 + Địa điểm (书店) + Hành động (买书). Danh xưng thể loại sách trong tiếng Trung đặt lĩnh vực lên trước chữ 书: Chuyên ngành + 书 (法律书: sách luật; 越南历史书: sách lịch sử Việt Nam)."
+  }
+  ]
+}

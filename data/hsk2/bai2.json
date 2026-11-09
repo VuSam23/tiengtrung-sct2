@@ -1,0 +1,495 @@
+{
+  "lessonId": "b17",
+  "lessonTitle": "第十七课: 他在做什么呢?",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "借",
+        "py": "jiè",
+        "note": "A 借 B: A mượn B. / A 借给 B: A cho B mượn. (Ví dụ: 你借给我 = Cậu cho tớ mượn)."
+      },
+      {
+        "word": "骑 vs 坐",
+        "py": "qí vs zuò",
+        "note": "骑 dùng cho phương tiện cưỡi (骑自行车: đạp xe đạp, 骑摩托车: đi xe máy). 坐 dùng cho phương tiện có khoang ngồi (坐出租车: đi taxi, 坐飞机: đi máy bay)."
+      }
+    ],
+    "grammarTips": [
+      "Hành động đang diễn ra: 正在/正/在 + Động từ + 呢 (他在看书呢: Cậu ấy đang đọc sách).",
+      "Mệnh đề thời gian: [Sự việc] + 的时候 (Lúc/khi...). Phải đưa sự kiện lên trước '的时候'.",
+      "Động từ 2 tân ngữ: 教 / 问 / 给 + Người (Tân ngữ 1) + Vật/Việc (Tân ngữ 2). Ví dụ: 问你一个问题 (Hỏi cậu 1 câu hỏi)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b17-01",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc thời gian và sự lặp lại 有时候",
+      "vi": "Chủ nhật có lúc tôi với bạn bè đi công viên chơi, có lúc tôi đi siêu thị mua đồ.",
+      "zh": "星期天有时候我跟朋友去公园玩儿有时候我去超市买东西",
+      "standardTrans": "星期天有时候我跟朋友去公园玩儿有时候我去超市买东西",
+      "pinyin": "Xīngqītiān yǒu shíhou wǒ gēn péngyou qù gōngyuán wánr, yǒu shíhou wǒ qù chāoshì mǎi dōngxi.",
+      "grammarPoint": "Trạng ngữ chỉ sự thỉnh thoảng: 有时候... 有时候...; Câu liên động mục đích",
+      "tokens": [
+        {
+          "text": "Có lúc, thỉnh thoảng",
+          "hz": "有时候",
+          "py": "yǒu shíhou",
+          "hv": "Hữu thời hậu",
+          "role": "Trạng ngữ chỉ thời gian/tần suất",
+          "vn": "Có lúc, thỉnh thoảng",
+          "radicals": "有 = Bộ nguyệt 月; 时 = Bộ nhật 日 + chữ thốn 寸; 候 = Bộ nhân 亻"
+        },
+        {
+          "text": "Đi công viên chơi",
+          "hz": "去公园玩儿",
+          "py": "qù gōngyuán wánr",
+          "hv": "Khứ công viên ngoạn nhi",
+          "role": "Cụm liên động",
+          "vn": "Đến công viên chơi",
+          "radicals": "玩 = Bộ ngọc 王 + chữ nguyên 元"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "有时候我跟朋友", "tag": "Tần suất 1" },
+        { "id": "t5", "text": "买东西", "tag": "Mục đích 2" },
+        { "id": "t1", "text": "星期天", "tag": "Thời gian chung" },
+        { "id": "t3", "text": "去公园玩儿", "tag": "Mục đích 1" },
+        { "id": "t4", "text": "有时候我去超市", "tag": "Tần suất 2" },
+        { "id": "t6", "text": "去玩儿公园", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["星期天", "有时候", "去公园玩儿", "去超市买东西"],
+      "wordBankPool": ["星期天", "有时候我跟朋友", "去公园玩儿", "有时候我去超市", "买东西", "去玩儿公园", "有时候朋友自我"],
+      "traps": [
+        {
+          "pattern": "去玩儿公园",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm (去公园) rồi mới thực hiện hành động (玩儿). Tiếng Trung không nói 'đi chơi công viên' thành '去玩儿公园'."
+        }
+      ],
+      "explanation": "Cấu trúc liệt kê tần suất: 有时候 (có lúc)... 有时候 (có lúc)... Đi đâu làm gì dùng cấu trúc liên động: 去 + Địa điểm + Động từ."
+    },
+    {
+      "id": "b17-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi việc và hỏi hành động đang tiếp diễn",
+      "vi": "A: Cậu có việc gì à? Chúng tôi đang lên lớp. B: Tôi muốn tìm thầy giáo Vương. Thầy ấy đang dạy các cậu phải không?",
+      "zh": "你有什么事吗我们在上课我要找王老师他是不是在教你们",
+      "standardTrans": "你有什么事吗我们在上课我要找王老师他是不是在教你们",
+      "pinyin": "Nǐ yǒu shénme shì ma? Wǒmen zài shàngkè. Wǒ yào zhǎo Wáng lǎoshī. Tā shì bu shì zài jiāo nǐmen?",
+      "grammarPoint": "Hành động đang tiếp diễn: 在 + Động từ; Cấu trúc hỏi chính phản: 是不是",
+      "tokens": [
+        {
+          "text": "Đang",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Phó từ chỉ tiếp diễn",
+          "vn": "Đang (làm gì đó)",
+          "radicals": "Bộ thổ 土 (đứng trước động từ biểu thị hành động đang xảy ra)"
+        },
+        {
+          "text": "Lên lớp",
+          "hz": "上课",
+          "py": "shàngkè",
+          "hv": "Thượng khóa",
+          "role": "Động từ ly hợp",
+          "vn": "Lên lớp, học bài",
+          "radicals": "课 = Bộ ngôn 讠 + chữ quả 果"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们在上课", "tag": "Đang xảy ra" },
+        { "id": "t1", "text": "你有什么事吗", "tag": "Hỏi việc" },
+        { "id": "t4", "text": "他是不是在教你们", "tag": "Hỏi chính phản tiếp diễn" },
+        { "id": "t3", "text": "我要找王老师", "tag": "Mục đích" },
+        { "id": "t5", "text": "有事什么吗", "tag": "Bẫy từ vựng" },
+        { "id": "t6", "text": "教你们吗", "tag": "Bẫy phủ định" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你有什么事吗", "我们在上课", "找王老师", "是不是在教你们"],
+      "wordBankPool": ["你有什么事吗", "我们在上课", "我要找王老师", "他是不是在教你们", "有事什么吗", "教你们吗"],
+      "traps": [
+        {
+          "pattern": "有事什么",
+          "msg": "Lỗi định ngữ: 'Việc gì' trong tiếng Trung là '什么事', không nói ngược thành '事什么'."
+        },
+        {
+          "pattern": "是不是在教你们吗",
+          "msg": "Thừa trợ từ: Đã dùng cấu trúc hỏi chính phản '是不是' (có phải không) thì tuyệt đối không thêm chữ '吗' ở cuối câu."
+        }
+      ],
+      "explanation": "Câu hỏi 'Cậu có việc gì à?' chuẩn giao tiếp là '你有什么事吗？'. Phó từ '在' đặt trước động từ (在上课, 在教) diễn tả hành động đang xảy ra ở hiện tại."
+    },
+    {
+      "id": "b17-03",
+      "type": "anti_word_by_word",
+      "title": "Mệnh đề chỉ thời gian ...的时候",
+      "vi": "Khi Mary đến tìm tôi, tôi đang đọc sách ở trong phòng.",
+      "zh": "玛丽来找我的时候我正在房间里看书呢",
+      "standardTrans": "玛丽来找我的时候我正在房间里看书呢",
+      "pinyin": "Mǎlì lái zhǎo wǒ de shíhou, wǒ zhèngzài fángjiān lǐ kàn shū ne.",
+      "grammarPoint": "Mệnh đề thời gian: [Sự việc] + 的时候; Đang làm gì: 正在... 呢",
+      "tokens": [
+        {
+          "text": "Lúc, khi",
+          "hz": "的时候",
+          "py": "de shíhou",
+          "hv": "Đích thời hậu",
+          "role": "Trợ từ thời gian",
+          "vn": "Lúc..., Khi...",
+          "radicals": "时 = Thời gian; 候 = Khí hậu, chờ đợi"
+        },
+        {
+          "text": "Đang",
+          "hz": "正在",
+          "py": "zhèngzài",
+          "hv": "Chính tại",
+          "role": "Phó từ",
+          "vn": "Đang (nhấn mạnh thời điểm và trạng thái)",
+          "radicals": "正 = Bộ nhất 一 + chữ chỉ 止"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我正在房间里", "tag": "Chỉ nơi chốn + tiếp diễn" },
+        { "id": "t1", "text": "玛丽来找我的时候", "tag": "Mệnh đề thời gian" },
+        { "id": "t3", "text": "看书呢", "tag": "Hành động" },
+        { "id": "t4", "text": "时候玛丽", "tag": "Bẫy đảo ngữ" },
+        { "id": "t5", "text": "看书在房间里", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["玛丽来找我的", "时候", "正在房间里", "看书呢"],
+      "wordBankPool": ["玛丽来找我的时候", "我正在房间里", "看书呢", "时候玛丽", "看书在房间里", "当玛丽"],
+      "traps": [
+        {
+          "pattern": "时候玛丽",
+          "msg": "Lỗi mệnh đề thời gian: Trong tiếng Trung, sự việc (Mary đến tìm tôi) phải đứng TRƯỚC cụm '的时候' (khi). Không dịch xuôi 'khi Mary...' thành '时候玛丽'."
+        },
+        {
+          "pattern": "看书在房间",
+          "msg": "Lỗi nơi chốn: Cụm 'ở trong phòng' (在房间里) phải đứng trước động từ 'đọc sách' (看书)."
+        }
+      ],
+      "explanation": "Toàn bộ sự kiện (玛丽来找我) được đóng gói làm định ngữ đứng trước '的时候' để tạo thành cụm 'Lúc Mary đến tìm tôi'. Cấu trúc đang làm gì đầy đủ: 正在 + Nơi chốn + Động từ + 呢."
+    },
+    {
+      "id": "b17-04",
+      "type": "sentence_parsing",
+      "title": "Thương lượng và chọn phương tiện di chuyển",
+      "vi": "A: Chiều nay chúng ta đi xem phim nhé. B: Được. Rạp chiếu phim cũng không xa lắm, chúng ta đi xe đạp đến rạp chiếu phim, được không?",
+      "zh": "今天下午我们去看电影吧好的电影院也不太远我们骑自行车去电影院好吗",
+      "standardTrans": "今天下午我们去看电影吧好的电影院也不太远我们骑自行车去电影院好吗",
+      "pinyin": "Jīntiān xiàwǔ wǒmen qù kàn diànyǐng ba. Hǎo de. Diànyǐngyuàn yě bú tài yuǎn, wǒmen qí zìxíngchē qù diànyǐngyuàn, hǎo ma?",
+      "grammarPoint": "Phương tiện di chuyển: Phương tiện + 去 + Nơi chốn; Rủ rê thương lượng: 吧 / 好吗",
+      "tokens": [
+        {
+          "text": "Xa",
+          "hz": "远",
+          "py": "yuǎn",
+          "hv": "Viễn",
+          "role": "Tính từ",
+          "vn": "Xa xôi",
+          "radicals": "远 = Bộ sước 辶 + chữ nguyên 元"
+        },
+        {
+          "text": "Đạp xe đạp",
+          "hz": "骑自行车",
+          "py": "qí zìxíngchē",
+          "hv": "Kỵ tự hành xa",
+          "role": "Cụm động tân phương tiện",
+          "vn": "Đi xe đạp",
+          "radicals": "骑 = Bộ mã 马 + chữ kỳ 奇"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "好的电影院也不太远", "tag": "Đồng ý + nhận xét" },
+        { "id": "t4", "text": "好吗", "tag": "Thương lượng" },
+        { "id": "t1", "text": "今天下午我们去看电影吧", "tag": "Rủ rê" },
+        { "id": "t3", "text": "我们骑自行车去电影院", "tag": "Đề xuất phương tiện" },
+        { "id": "t5", "text": "去电影院骑自行车", "tag": "Bẫy phương tiện" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["去看电影吧", "不太远", "骑自行车去", "好吗"],
+      "wordBankPool": ["今天下午我们去看电影吧", "好的电影院也不太远", "我们骑自行车去电影院", "好吗", "去电影院骑自行车", "不远太"],
+      "traps": [
+        {
+          "pattern": "去电影院骑自行车",
+          "msg": "Lỗi phương thức hành động: Trong tiếng Trung, phương tiện (đạp xe đạp) phải đứng TRƯỚC hướng đi (đến rạp phim) -> '骑自行车去电影院'."
+        }
+      ],
+      "explanation": "Động từ '骑' (cưỡi, đạp) dành cho xe 2 bánh (自行车, 摩托车). Đề xuất làm gì thường kết thúc bằng '吧', hỏi ý kiến đối phương dùng '好吗'."
+    },
+    {
+      "id": "b17-05",
+      "type": "anti_word_by_word",
+      "title": "Phó từ tần suất mức độ thấp 很少",
+      "vi": "Buổi tối tôi rất ít khi xem ti vi, cũng rất ít khi đến cửa hàng mua đồ, tôi thường ở nhà đọc sách.",
+      "zh": "晚上我很少看电视也很少去商店买东西我常在家看书",
+      "standardTrans": "晚上我很少看电视也很少去商店买东西我常在家看书",
+      "pinyin": "Wǎnshang wǒ hěn shǎo kàn diànshì, yě hěn shǎo qù shāngdiàn mǎi dōngxi, wǒ cháng zài jiā kàn shū.",
+      "grammarPoint": "Phó từ 很少 (rất ít khi) đứng trước cụm động từ; Phó từ 常 (thường) đứng trước trạng ngữ nơi chốn.",
+      "tokens": [
+        {
+          "text": "Ít khi",
+          "hz": "很少",
+          "py": "hěn shǎo",
+          "hv": "Khẩn thiểu",
+          "role": "Phó từ chỉ tần suất",
+          "vn": "Rất ít khi",
+          "radicals": "少 = Bộ tiểu 小 + nét phẩy 丿"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "晚上我很少看电视", "tag": "Thói quen 1" },
+        { "id": "t3", "text": "我常在家看书", "tag": "Thói quen 3" },
+        { "id": "t2", "text": "也很少去商店买东西", "tag": "Thói quen 2" },
+        { "id": "t4", "text": "看电视很少", "tag": "Bẫy phó từ" },
+        { "id": "t5", "text": "看书在家", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["很少看电视", "很少去商店", "常在家看书"],
+      "wordBankPool": ["晚上我很少看电视", "也很少去商店买东西", "我常在家看书", "看电视很少", "看书在家", "我很少看"],
+      "traps": [
+        {
+          "pattern": "看电视很少",
+          "msg": "Lỗi phó từ tần suất: '很少' (rất ít khi) bổ nghĩa cho hành động nên phải đứng TRƯỚC động từ ('很少看电视'), không đặt ở cuối câu."
+        },
+        {
+          "pattern": "看书在家",
+          "msg": "Lỗi nơi chốn: Cụm 'ở nhà' (在家) bắt buộc phải đứng trước động từ 'đọc sách' (看书)."
+        }
+      ],
+      "explanation": "Câu liệt kê các thói quen đối lập. '很少' (hiếm khi) và '常' (thường) là phó từ, luôn được đặt trực tiếp trước cụm động từ hoặc cụm giới từ nơi chốn (很少去..., 常在家...)."
+    },
+    {
+      "id": "b17-06",
+      "type": "sentence_parsing",
+      "title": "Động từ mang 2 tân ngữ: 问 (hỏi)",
+      "vi": "A: Thưa thầy, em hỏi thầy một câu, được không? B: Được, em hỏi đi.",
+      "zh": "老师我问你一个问题好吗好你问吧",
+      "standardTrans": "老师我问你一个问题好吗好你问吧",
+      "pinyin": "Lǎoshī, wǒ wèn nǐ yí ge wèntí, hǎo ma? Hǎo, nǐ wèn ba.",
+      "grammarPoint": "Động từ 2 tân ngữ: 问 + Đại từ (Tân ngữ 1) + Sự vật (Tân ngữ 2)",
+      "tokens": [
+        {
+          "text": "Vấn đề, câu hỏi",
+          "hz": "问题",
+          "py": "wèntí",
+          "hv": "Vấn đề",
+          "role": "Tân ngữ 2",
+          "vn": "Câu hỏi, vấn đề",
+          "radicals": "问 = Bộ môn 门 + bộ khẩu 口; 题 = Bộ hiệt 页 + chữ thị 是"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我问你一个问题", "tag": "Động từ 2 tân ngữ" },
+        { "id": "t1", "text": "老师", "tag": "Xưng hô" },
+        { "id": "t4", "text": "好你问吧", "tag": "Cho phép" },
+        { "id": "t3", "text": "好吗", "tag": "Thương lượng" },
+        { "id": "t5", "text": "问一个问题你", "tag": "Bẫy 2 tân ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["问你", "一个问题", "好你问吧"],
+      "wordBankPool": ["老师", "我问你一个问题", "好吗", "好你问吧", "问一个问题你", "我问一个问题对你"],
+      "traps": [
+        {
+          "pattern": "问一个问题你",
+          "msg": "Lỗi 2 tân ngữ: Động từ '问' (hỏi) truyền hành động trực tiếp cho người trước, vật sau. Phải là '问 + Người + Vấn đề' (问你一个问题)."
+        },
+        {
+          "pattern": "问一个问题对",
+          "msg": "Lỗi dịch bồi: Không cần dùng giới từ 'đối với' (对). Động từ '问' bản thân đã mang được trực tiếp tân ngữ chỉ người."
+        }
+      ],
+      "explanation": "Trong Hán ngữ, '问' (hỏi), '教' (dạy), '给' (cho) là các động từ đặc biệt có thể theo sau bởi 2 tân ngữ liên tiếp. Cấu trúc: Động từ + Người (nhận/chịu hành động) + Vật (sự vật được truyền đi)."
+    },
+    {
+      "id": "b17-07",
+      "type": "sentence_parsing",
+      "title": "Hỏi phương thức hành động bằng 怎么",
+      "vi": "A: Chữ Hán này rất khó viết. Tớ không biết viết thế nào. B: Tớ cũng không biết viết thế nào. Cậu hỏi thầy Vương đi.",
+      "zh": "这个汉字很难写我不知道怎么写我也不知道怎么写你问王老师吧",
+      "standardTrans": "这个汉字很难写我不知道怎么写我也不知道怎么写你问王老师吧",
+      "pinyin": "Zhè ge hànzì hěn nán xiě. Wǒ bù zhīdào zěnme xiě. Wǒ yě bù zhīdào zěnme xiě. Nǐ wèn Wáng lǎoshī ba.",
+      "grammarPoint": "Đại từ nghi vấn 怎么 + Động từ (hỏi cách thức thực hiện)",
+      "tokens": [
+        {
+          "text": "Thế nào, làm sao",
+          "hz": "怎么",
+          "py": "zěnme",
+          "hv": "Chẩm ma",
+          "role": "Đại từ nghi vấn phương thức",
+          "vn": "Như thế nào, ra sao",
+          "radicals": "怎 = Chữ sạ 乍 + bộ tâm 心"
+        },
+        {
+          "text": "Viết",
+          "hz": "写",
+          "py": "xiě",
+          "hv": "Tả",
+          "role": "Động từ",
+          "vn": "Viết",
+          "radicals": "写 = Bộ mịch 冖 + nét gập ngang"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我不知道怎么写", "tag": "Không biết cách" },
+        { "id": "t4", "text": "你问王老师吧", "tag": "Đề xuất" },
+        { "id": "t1", "text": "这个汉字很难写", "tag": "Tình trạng" },
+        { "id": "t3", "text": "我也不知道怎么写", "tag": "Đồng cảm" },
+        { "id": "t5", "text": "写怎么", "tag": "Bẫy đại từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["很难写", "不知道怎么写", "也不知道怎么写", "你问王老师吧"],
+      "wordBankPool": ["这个汉字很难写", "我不知道怎么写", "我也不知道怎么写", "你问王老师吧", "写怎么", "怎么知道写"],
+      "traps": [
+        {
+          "pattern": "写怎么",
+          "msg": "Lỗi phương thức: Đại từ '怎么' (làm thế nào) bắt buộc phải đứng TRƯỚC động từ ('怎么写': viết thế nào), không nói ngược '写怎么'."
+        }
+      ],
+      "explanation": "Cụm '难写' (khó viết) ghép từ tính từ + động từ. Để hỏi cách thức tiến hành hành động, sử dụng cấu trúc cố định: '怎么' + Động từ (怎么写, 怎么读, 怎么做)."
+    },
+    {
+      "id": "b17-08",
+      "type": "anti_word_by_word",
+      "title": "Động từ mang 2 tân ngữ: 借给 (cho mượn)",
+      "vi": "A: Tớ không có tạp chí âm nhạc. Cậu cho tớ mượn tạp chí âm nhạc của cậu được không? B: Được. Cậu đợi tớ tìm nhé.",
+      "zh": "我没有音乐杂志你借给我你的音乐杂志好吗好你等我找吧",
+      "standardTrans": "我没有音乐杂志你借给我你的音乐杂志好吗好你等我找吧",
+      "pinyin": "Wǒ méiyǒu yīnyuè zázhì. Nǐ jiè gěi wǒ nǐ de yīnyuè zázhì, hǎo ma? Hǎo, nǐ děng wǒ zhǎo ba.",
+      "grammarPoint": "Động từ 2 tân ngữ: 借给 + Người (Tân ngữ 1) + Vật (Tân ngữ 2)",
+      "tokens": [
+        {
+          "text": "Cho mượn",
+          "hz": "借给",
+          "py": "jiè gěi",
+          "hv": "Tá cấp",
+          "role": "Động từ kép 2 tân ngữ",
+          "vn": "Cho (ai) mượn (cái gì)",
+          "radicals": "借 = Bộ nhân đứng 亻 + chữ tích 昔; 给 = Bộ mịch 纟 + chữ hợp 合"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你借给我你的音乐杂志", "tag": "Nhờ mượn đồ" },
+        { "id": "t1", "text": "我没有音乐杂志", "tag": "Trình bày vấn đề" },
+        { "id": "t3", "text": "好吗", "tag": "Hỏi ý" },
+        { "id": "t4", "text": "好你等我找吧", "tag": "Đồng ý tìm" },
+        { "id": "t5", "text": "借我给", "tag": "Bẫy trật tự 借给" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["没有音乐杂志", "借给我", "你的音乐杂志", "等我找吧"],
+      "wordBankPool": ["我没有音乐杂志", "你借给我你的音乐杂志", "好吗", "好你等我找吧", "借我给", "给借我", "你的杂志音乐"],
+      "traps": [
+        {
+          "pattern": "借我给",
+          "msg": "Lỗi cụm động từ: Từ 'cho mượn' ghép chặt thành '借给'. Theo sau là Người được mượn -> '借给我' (cho tôi mượn). Không tách rời '借' và '给'."
+        },
+        {
+          "pattern": "杂志音乐",
+          "msg": "Lỗi định ngữ: Tạp chí về chủ đề âm nhạc thì 'âm nhạc' là định ngữ phân loại, phải đứng trước 'tạp chí' -> '音乐杂志'."
+        }
+      ],
+      "explanation": "'借' đứng một mình có nghĩa là mượn. Để diễn đạt 'cho ai mượn', ta dùng '借给' + Đối tượng + Vật. Cấu trúc câu A cầu khiến B làm gì đó luôn dùng '好吗' cuối câu."
+    },
+    {
+      "id": "b17-09",
+      "type": "sentence_parsing",
+      "title": "Phân biệt 坐 (ngồi/đi xe) và 骑 (cưỡi/đạp xe)",
+      "vi": "Hôm nay là chủ nhật, tôi cùng Mary đến công viên chơi. Mary muốn ngồi taxi đến công viên, nhưng mà người đợi taxi rất nhiều, vì vậy chúng tôi đi xe đạp đến công viên.",
+      "zh": "今天星期日我跟玛丽一起去公园玩儿玛丽想坐出租车去公园但是等出租车的人很多所以我们骑自行车去公园",
+      "standardTrans": "今天星期日我跟玛丽一起去公园玩儿玛丽想坐出租车去公园但是等出租车的人很多所以我们骑自行车去公园",
+      "pinyin": "Jīntiān xīngqīrì, wǒ gēn Mǎlì yìqǐ qù gōngyuán wánr. Mǎlì xiǎng zuò chūzūchē qù gōngyuán, dànshì děng chūzūchē de rén hěn duō, suǒyǐ wǒmen qí zìxíngchē qù gōngyuán.",
+      "grammarPoint": "Phương tiện di chuyển: 坐出租车 (đi taxi) vs 骑自行车 (đi xe đạp); Cụm định ngữ dài: 等出租车的人",
+      "tokens": [
+        {
+          "text": "Xe taxi",
+          "hz": "出租车",
+          "py": "chūzūchē",
+          "hv": "Xuất tô xa",
+          "role": "Danh từ phương tiện",
+          "vn": "Xe taxi, xe cho thuê",
+          "radicals": "出 = Chữ xuất 出; 租 = Bộ hòa 禾 + chữ thả 且; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Người đợi taxi",
+          "hz": "等出租车的人",
+          "py": "děng chūzūchē de rén",
+          "hv": "Đẳng xuất tô xa đích nhân",
+          "role": "Cụm danh từ",
+          "vn": "Người đứng chờ taxi",
+          "radicals": "等 = Bộ trúc 竹 + chữ tự 寺"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我跟玛丽一起去公园玩儿", "tag": "Vế hành động 1" },
+        { "id": "t4", "text": "但是等出租车的人很多", "tag": "Vế chuyển ngoặt" },
+        { "id": "t1", "text": "今天星期日", "tag": "Thời gian" },
+        { "id": "t5", "text": "所以我们骑自行车去公园", "tag": "Vế kết quả" },
+        { "id": "t3", "text": "玛丽想坐出租车去公园", "tag": "Ý định" },
+        { "id": "t6", "text": "坐出租车的人很多", "tag": "Bẫy định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["跟玛丽一起", "坐出租车", "等出租车的人", "所以", "骑自行车去"],
+      "wordBankPool": ["今天星期日", "我跟玛丽一起去公园玩儿", "玛丽想坐出租车去公园", "但是等出租车的人很多", "所以我们骑自行车去公园", "坐出租车的人很多", "骑出租车"],
+      "traps": [
+        {
+          "pattern": "坐出租车的人很多",
+          "msg": "Lỗi đọc hiểu: 'Người chờ taxi' (等出租车的人) khác với 'Người ngồi taxi' (坐出租车的人). Mary thấy đông người đang đợi nên mới quyết định đạp xe."
+        },
+        {
+          "pattern": "骑出租车",
+          "msg": "Lỗi dùng từ: '骑' (cưỡi) chỉ dùng cho xe đạp, xe máy, ngựa. Taxi là phương tiện có khoang, phải dùng '坐' (ngồi)."
+        }
+      ],
+      "explanation": "Câu dài diễn tả thay đổi quyết định. Chú ý động từ kết hợp phương tiện giao thông: '坐' dành cho taxi, máy bay, tàu hỏa. '骑' dành cho xe đạp, xe máy. Cụm 'người đợi taxi' dùng cả cụm động tân (等出租车) làm định ngữ cho '人'."
+    },
+    {
+      "id": "b17-10",
+      "type": "anti_word_by_word",
+      "title": "Động từ 2 tân ngữ: 教 (dạy)",
+      "vi": "A: Thầy giáo Lâm dạy các cậu môn tổng hợp và môn văn hóa. Ai dạy các cậu môn thể dục? B: Thầy giáo Trương.",
+      "zh": "林老师教你们综合课和文化课谁教你们体育课张老师",
+      "standardTrans": "林老师教你们综合课和文化课谁教你们体育课张老师",
+      "pinyin": "Lín lǎoshī jiāo nǐmen zōnghé kè hé wénhuà kè. Shéi jiāo nǐmen tǐyù kè? Zhāng lǎoshī.",
+      "grammarPoint": "Động từ 2 tân ngữ: 教 + Người (Tân ngữ 1) + Môn học (Tân ngữ 2)",
+      "tokens": [
+        {
+          "text": "Môn tổng hợp",
+          "hz": "综合课",
+          "py": "zōnghé kè",
+          "hv": "Tổng hợp khóa",
+          "role": "Tân ngữ 2",
+          "vn": "Môn học tổng hợp",
+          "radicals": "综 = Bộ mịch 纟 + chữ tông 宗; 合 = Bộ nhân Nhân + chữ nhất 一 + bộ khẩu 口"
+        },
+        {
+          "text": "Môn thể dục",
+          "hz": "体育课",
+          "py": "tǐyù kè",
+          "hv": "Thể dục khóa",
+          "role": "Tân ngữ 2",
+          "vn": "Tiết học thể dục",
+          "radicals": "体 = Bộ nhân đứng 亻 + chữ bản 本; 育 = Bộ nhục 肉 + phần trên"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "谁教你们体育课", "tag": "Hỏi giáo viên" },
+        { "id": "t1", "text": "林老师教你们综合课和文化课", "tag": "Cung cấp thông tin" },
+        { "id": "t3", "text": "张老师", "tag": "Đáp" },
+        { "id": "t4", "text": "教体育课你们", "tag": "Bẫy tân ngữ" },
+        { "id": "t5", "text": "你们教体育课", "tag": "Bẫy chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["教你们", "综合课", "谁教你们体育课"],
+      "wordBankPool": ["林老师教你们综合课和文化课", "谁教你们体育课", "张老师", "教体育课你们", "你们教体育课", "教你们和文化课"],
+      "traps": [
+        {
+          "pattern": "教体育课你们",
+          "msg": "Lỗi trật tự 2 tân ngữ: Động từ 'dạy' truyền hành động trực tiếp cho người (các bạn) rồi mới đến vật (môn thể dục). Bắt buộc phải là '教你们体育课'."
+        }
+      ],
+      "explanation": "Động từ '教' mang 2 tân ngữ: Người (nhận sự giáo dục) và Môn học (nội dung được truyền đạt). Cấu trúc chuẩn: Giáo viên + 教 + Sinh viên + Môn học."
+    }
+  ]
+}

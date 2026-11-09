@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Luyện Dịch Tiếng Trung HSK 1 - Chuẩn Sư Phạm SCT2</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+                        chinese: ['"Noto Serif SC"', '"Noto Sans SC"', '"PingFang SC"', '"Microsoft YaHei"', 'serif'],
+                    },
+                    colors: {
+                        brandGreen: '#10b981',
+                        brandGreenDark: '#059669',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts for Chinese characters -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        html { scrollbar-gutter: stable; overflow-y: scroll; }
+        .chinese-text { font-family: "Noto Serif SC", "Kaiti SC", "STKaiti", "PingFang SC", "Microsoft YaHei", serif; }
+        button, .clickable-chip { touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+        .btn-press { transition: transform 0.08s ease, box-shadow 0.08s ease; }
+        .btn-press:active:not(:disabled) { transform: translateY(1px); }
+        @keyframes slideUpFade { 0% { transform: translateY(6px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+        .animate-pop { animation: slideUpFade 0.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .modal-active { opacity: 1 !important; pointer-events: auto !important; }
+        .modal-card-active { transform: translateY(0) !important; }
+        @keyframes heartBeat { 0% { transform: scale(1); } 25% { transform: scale(1.3); } 50% { transform: scale(0.95); } 100% { transform: scale(1); } }
+        .heart-beat { animation: heartBeat 0.4s ease-in-out; }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+
+    <header class="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-40 px-3 py-2.5 sm:px-6 shadow-sm">
+        <div class="max-w-4xl mx-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <!-- NÚT QUAY LẠI LỘ TRÌNH (Chỉ hiện khi ở phòng luyện tập) -->
+                <button id="btn-back-dashboard" class="hidden px-2.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold text-xs flex items-center gap-1 transition active:scale-95 shadow-xs" title="Quay lại Lộ trình">
+                    <span>⟵</span> <span class="hidden sm:inline">Lộ trình</span>
+                </button>
+
+                <div id="brand-badge" class="flex items-center gap-2 cursor-pointer select-none" title="Trang chủ Lộ trình">
+                    <span id="brand-badge-icon" class="w-9 h-9 rounded-xl bg-emerald-600 text-white font-black flex items-center justify-center text-lg shadow-sm transition-colors duration-300">汉</span>
+                    <div>
+                        <h1 id="brand-header-title" class="text-xs sm:text-sm font-black tracking-tight text-slate-900 dark:text-white leading-tight">Luyện Dịch HSK 1 · SCT2</h1>
+                        <span id="brand-subtitle" class="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold block transition-colors duration-300">Phương pháp bóc tách ngữ pháp</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHỌN BÀI HỌC NHANH (Modal Trigger) -->
+            <div class="flex items-center gap-1.5">
+                <button id="btn-open-lesson-modal" onclick="if(window.NavigationHub)NavigationHub.openModal()" class="max-w-[160px] sm:max-w-[240px] px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 text-xs font-black truncate flex items-center gap-1.5 shadow-xs transition active:scale-95 cursor-pointer" title="Bấm để chọn bài học nhanh">
+                    <span id="header-lesson-dot" class="w-2 h-2 rounded-full shrink-0 bg-[#10B981]"></span>
+                    <span id="header-lesson-title" class="truncate">Bài 1: Chào hỏi</span>
+                    <span class="text-[10px] text-slate-400 shrink-0">▾</span>
+                </button>
+                <!-- Giữ lại select ẩn để tương thích code cũ -->
+                <select id="lesson-picker" class="hidden"></select>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <div id="heart-container" class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-rose-50 dark:bg-rose-950/50 border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-400 font-black text-xs cursor-pointer select-none transition-transform active:scale-95" title="Số lượt tim còn lại (Bấm để nạp đầy)">
+                    <span id="heart-icon">❤️</span>
+                    <span id="stat-hearts">5</span>
+                </div>
+                <div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-950/50 border border-amber-300 dark:border-amber-800 text-amber-700 dark:text-amber-400 font-black text-xs" title="Chuỗi ngày luyện dịch">
+                    <span>🔥</span>
+                    <span id="stat-streak">7</span>
+                </div>
+                <!-- NÚT CÀI ĐẶT HỆ THỐNG -->
+                <button id="btn-admin" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition active:scale-95 shadow-xs border border-slate-200 dark:border-slate-700" title="Cài đặt hệ thống & luyện tập">
+                    <span>⚙️</span>
+                    <span class="hidden sm:inline">Cài đặt</span>
+                </button>
+                <button id="btn-theme-toggle" class="p-1.5 rounded-lg text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 text-sm" title="Chế độ Sáng / Tối">
+                    <span id="theme-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+        <div id="session-progress-header" class="hidden max-w-4xl mx-auto mt-2 flex items-center gap-3">
+            <div class="flex-grow bg-[#E5E7EB] dark:bg-slate-800 h-2.5 rounded-full overflow-hidden shadow-inner">
+                <div id="session-progress-bar" class="bg-[#10B981] h-full rounded-full transition-all duration-300 ease-out" style="width: 0%;"></div>
+            </div>
+            <span id="session-progress-text" class="text-[11px] font-bold text-slate-400 min-w-[36px] text-right">0/0</span>
+        </div>
+    </header>
+
+    <main class="flex-grow w-full max-w-3xl mx-auto px-4 py-4 sm:py-5 flex flex-col justify-start pb-28 sm:pb-32">
+        <!-- TẦNG 1: DASHBOARD LỘ TRÌNH (Trang chủ) -->
+        <div id="dashboard-view" class="w-full flex flex-col gap-4 animate-pop">
+            <!-- Banner Tổng Quan Tiến Trình -->
+            <div id="dash-banner-card" class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-3xl p-5 sm:p-6 shadow-md relative overflow-hidden transition-all duration-300">
+                <div class="relative z-10">
+                    <div class="flex items-center justify-between mb-2">
+                        <span id="dash-level-pill" class="text-[11px] font-black uppercase tracking-wider bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-xs">HSK 1 · NỀN TẢNG</span>
+                        <span id="dash-total-stars" class="font-black text-sm bg-black/20 px-3 py-1 rounded-full backdrop-blur-xs">⭐ 0</span>
+                    </div>
+                    <h2 id="dash-banner-title" class="text-xl sm:text-2xl font-black mb-1">Chinh Phục Dịch Chuẩn HSK 1</h2>
+                    <p id="dash-banner-desc" class="text-xs sm:text-sm text-white/90 font-medium">Bóc tách cú pháp, tiêu diệt bẫy dịch thô và hình thành phản xạ dịch tự nhiên.</p>
+                    <div class="mt-4 flex items-center justify-between gap-2 flex-wrap">
+                        <div class="flex items-center gap-2">
+                            <span id="dash-progress-summary" class="text-xs font-extrabold bg-black/30 px-3 py-1.5 rounded-xl border border-white/20">0/15 bài hoàn thành</span>
+                            <span id="current-level-badge" class="text-xs font-bold bg-white/15 px-2.5 py-1 rounded-xl backdrop-blur-xs">Đang học HSK 1</span>
+                        </div>
+                        <!-- Nút Chế Độ Tester Tạm Mở Toàn Bộ Bài -->
+                        <button id="btn-toggle-tester-unlock" class="text-[11px] font-black bg-white/20 hover:bg-white/30 text-white px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border border-white/25 cursor-pointer backdrop-blur-xs" title="Chế độ Tester: Tạm mở khóa toàn bộ bài học để kiểm thử nội dung">
+                            <span>🔓</span> <span id="tester-unlock-label">Tester: Đã Mở Khóa Tất Cả</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="absolute -right-4 -bottom-6 text-8xl opacity-15 select-none pointer-events-none font-serif">汉</div>
+            </div>
+
+            <!-- THANH ĐIỀU HƯỚNG CẤP ĐỘ PHÂN ĐOẠN (SEGMENTED CONTROL CAO CẤP) -->
+            <div class="flex items-center justify-between gap-2 px-1 mt-1">
+                <div class="flex items-center gap-2">
+                    <span class="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400">Trình Độ:</span>
+                    <div class="inline-flex p-1 bg-slate-200/80 dark:bg-slate-800/80 rounded-2xl border border-slate-300/80 dark:border-slate-700/80 shadow-inner flex-wrap gap-1" id="level-selector-tabs">
+                        <button data-level="hsk1" class="level-tab-btn active px-3 py-1.5 rounded-xl text-xs font-black transition-all bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 shadow-sm cursor-pointer flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-[#10B981]"></span> HSK 1
+                        </button>
+                        <button data-level="hsk2" class="level-tab-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 cursor-pointer flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-[#0EA5E9]"></span> HSK 2
+                        </button>
+                        <button data-level="hsk3" class="level-tab-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-[#3B82F6]"></span> HSK 3
+                        </button>
+                        <button data-level="hsk4" class="level-tab-btn px-3 py-1.5 rounded-xl text-xs font-bold transition-all text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 cursor-pointer flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-[#F59E0B]"></span> HSK 4
+                        </button>
+                        <button data-level="hsk5" class="level-tab-btn px-2.5 py-1.5 rounded-xl text-xs font-bold text-slate-400 dark:text-slate-500 opacity-60 cursor-not-allowed flex items-center gap-1.5" title="Sắp ra mắt">
+                            <span class="w-2 h-2 rounded-full bg-[#EF4444]"></span> HSK 5 🔒
+                        </button>
+                        <button data-level="hsk6" class="level-tab-btn px-2.5 py-1.5 rounded-xl text-xs font-bold text-slate-400 dark:text-slate-500 opacity-60 cursor-not-allowed flex items-center gap-1.5" title="Sắp ra mắt">
+                            <span class="w-2 h-2 rounded-full bg-[#8B5CF6]"></span> HSK 6 🔒
+                        </button>
+                    </div>
+                </div>
+                <h3 id="lesson-list-level-title" class="text-xs font-black uppercase tracking-wider text-slate-500 dark:text-slate-400 hidden sm:inline">Danh Sách Bài Học HSK 1</h3>
+            </div>
+
+            <!-- Timeline Cards List -->
+            <div id="dashboard-lesson-list" class="flex flex-col gap-3 min-h-[500px]"></div>
+        </div>
+
+        <!-- TẦNG 2: PHÒNG THỰC HÀNH FOCUS MODE -->
+        <div id="practice-view" class="hidden w-full flex-grow flex flex-col">
+            <div id="practice-card" class="w-full flex-grow flex flex-col">
+                <div class="flex items-center justify-between mb-2.5">
+                    <div class="flex items-center gap-2">
+                        <span id="exercise-type-badge" class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+                            Bóc tách khung câu
+                        </span>
+                        <button id="btn-toggle-mode" class="px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 transition flex items-center gap-1 shadow-xs active:scale-95" title="Chuyển chế độ: Tự gõ / Xếp từ">
+                            <span id="mode-icon">⌨️</span>
+                            <span id="mode-label">Tự gõ</span>
+                        </button>
+                        <button id="btn-quick-notes" onclick="App.openQuestionHintModal()" class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/60 dark:hover:bg-amber-900/60 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-800 transition flex items-center gap-1 shadow-xs active:scale-95" title="Xem mẹo & ngữ pháp câu đang làm">
+                            <span>💡</span>
+                            <span id="quick-notes-label">Mẹo câu</span>
+                        </button>
+                        <button id="btn-lesson-notes" onclick="App.openLessonBriefingModal()" class="hidden px-2.5 py-1 rounded-full text-xs font-bold bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 transition flex items-center gap-1 shadow-xs active:scale-95" title="Xem lại tóm tắt trọng tâm bài học">
+                            <span>📚</span>
+                            <span>Tóm tắt bài</span>
+                        </button>
+                    </div>
+                    <span class="text-xs text-slate-400 flex items-center gap-1 font-medium">
+                        <span>💡</span> Chạm từ để nghe & giải phẫu
+                    </span>
+                </div>
+
+                <h2 id="prompt-instruction" class="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100 mb-2 leading-snug"></h2>
+
+                <div class="bg-emerald-50 dark:bg-emerald-950/40 p-3.5 sm:p-4 rounded-2xl border border-emerald-200 dark:border-emerald-800/80 mb-3 shadow-xs">
+                    <span class="text-[10px] font-black uppercase tracking-wider text-emerald-800 dark:text-emerald-400 block mb-1">Đề bài tiếng Việt gốc:</span>
+                    <p id="source-vi-text" class="text-base sm:lg font-black text-slate-900 dark:text-white leading-relaxed"></p>
+                </div>
+
+                <div class="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-3.5">
+                    <div class="flex items-start justify-between gap-3">
+                        <div>
+                            <span class="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-1.5">Giải phẫu thành phần & Từ vựng (Bấm để mở):</span>
+                            <div id="source-chips-container" class="flex flex-wrap items-center gap-2"></div>
+                        </div>
+                        <div class="flex items-center gap-1.5 shrink-0">
+                            <button id="btn-audio-slow" class="p-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/60 text-amber-700 dark:text-amber-300 transition shrink-0 active:scale-95 text-base shadow-xs" title="Đọc chậm từng âm tiết (Con rùa 🐢 0.72x)">
+                                🐢
+                            </button>
+                            <button id="btn-audio-speak" class="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition shrink-0 active:scale-95 text-base shadow-xs" title="Nghe phát âm chuẩn người bản xứ (🗣️ 1.0x)">
+                                🔊
+                            </button>
+                        </div>
+                    </div>
+                    <div id="source-meta-row" class="mt-2.5 pt-2 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-1">
+                        <span id="source-pinyin-display" class="font-mono text-emerald-600 dark:text-emerald-400 font-bold"></span>
+                        <div class="flex items-center gap-3">
+                            <span id="source-core-grammar" class="font-semibold text-slate-700 dark:text-slate-300"></span>
+                            <button id="btn-feedback-trigger" class="text-[11px] font-bold text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center gap-1 transition" title="Góp ý hoặc báo lỗi câu này">
+                                💬 Góp ý
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cảnh báo Bẫy Ngữ Pháp Realtime -->
+                <div id="realtime-trap-alert" class="hidden animate-pop mb-3 p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-700/80 text-amber-800 dark:text-amber-200 text-xs flex items-start gap-2.5 shadow-xs">
+                    <span class="text-base shrink-0 mt-0.5">⚠️</span>
+                    <div class="flex-grow">
+                        <div class="font-black text-xs text-amber-900 dark:text-amber-200 flex items-center gap-1.5 flex-wrap">
+                            <span>Phát hiện bẫy cú pháp:</span>
+                            <span id="trap-pattern-badge" class="px-2 py-0.5 rounded-lg bg-amber-200/80 dark:bg-amber-900/60 font-mono text-rose-700 dark:text-rose-300 font-bold"></span>
+                        </div>
+                        <p id="trap-msg-content" class="text-[11px] mt-1 leading-relaxed text-slate-700 dark:text-slate-300"></p>
+                    </div>
+                </div>
+
+                <div id="interactive-workspace" class="w-full flex-grow flex flex-col justify-start"></div>
+            </div>
+
+            <div id="victory-card" class="hidden w-full text-center py-6 animate-pop my-auto">
+                <div class="w-16 h-16 mx-auto mb-3 bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 rounded-2xl flex items-center justify-center text-3xl shadow-sm">🎓</div>
+                <h2 class="text-2xl font-black text-slate-900 dark:text-white">Xuất Sắc! Hoàn Thành Bài Học!</h2>
+                <div id="victory-stars" class="text-3xl my-2 tracking-widest animate-bounce">⭐⭐⭐</div>
+                <div class="mb-2">
+                    <span id="victory-accuracy-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300 border border-amber-300 dark:border-amber-700">Độ chính xác: 100% (3 Sao)</span>
+                </div>
+                <p id="victory-subtitle" class="text-sm text-slate-500 dark:text-slate-400 mt-1 mb-5">Bạn đã nắm trọn tư duy bóc tách cú pháp và khắc phục các bẫy dịch thô.</p>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <button id="btn-victory-dashboard" class="px-5 py-3.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-bold rounded-xl transition text-sm">⟵ Về Lộ Trình</button>
+                    <button id="btn-restart-lesson" class="px-5 py-3.5 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-800 dark:text-slate-200 font-bold rounded-xl transition text-sm">Luyện Lại</button>
+                    <button id="btn-advance-lesson" class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl transition text-sm shadow-soft btn-press">Sang Bài Kế Tiếp ➔</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="bottom-action-drawer" class="w-full bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-3 px-4 sticky bottom-0 z-30 shadow-lg">
+        <div class="max-w-3xl mx-auto flex flex-col gap-2.5">
+            <div id="evaluation-banner" class="hidden rounded-2xl p-4 border transition-all text-sm leading-relaxed animate-pop">
+                <div class="flex items-start gap-3">
+                    <span id="eval-icon" class="text-2xl mt-0.5">💡</span>
+                    <div class="flex-grow">
+                        <div class="flex items-center justify-between">
+                            <h4 id="eval-status-title" class="font-black text-base">Phân tích bản dịch</h4>
+                            <span id="eval-score-badge" class="text-xs font-black px-2.5 py-0.5 rounded-full"></span>
+                        </div>
+                        <div id="eval-message-body" class="mt-1.5 text-xs sm:text-sm space-y-1.5 font-medium"></div>
+                        <div id="standard-answer-box" class="hidden mt-2.5 pt-2.5 border-t border-slate-200/80 dark:border-slate-700/80 text-xs sm:text-sm font-bold">
+                            <span class="opacity-80">✓ Đáp án chuẩn:</span>
+                            <span id="tier-standard" class="font-extrabold ml-1"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between gap-3 w-full">
+                <div id="left-actions">
+                    <button id="btn-pass-action" class="px-4 py-3 text-xs sm:text-sm font-bold text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition">Bỏ qua</button>
+                </div>
+                <div class="ml-auto flex items-center justify-end">
+                    <button id="btn-submit-action" class="min-w-[180px] py-3.5 px-6 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-sm shadow-md btn-press tracking-wide disabled:opacity-40 disabled:cursor-not-allowed" disabled>KIỂM TRA DỊCH</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hint Modal -->
+    <div id="hint-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4 hidden opacity-0 transition-opacity duration-200">
+        <div id="hint-dialog-card" class="bg-white dark:bg-slate-900 w-full sm:max-w-md rounded-t-3xl sm:rounded-2xl p-5 shadow-2xl border border-slate-200 dark:border-slate-800 transform transition-transform duration-200 translate-y-full sm:translate-y-0">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <span id="hint-gram-role" class="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Thành phần</span>
+                    <div class="flex items-center gap-2 mt-1">
+                        <h3 id="hint-hz" class="chinese-text text-3xl font-extrabold text-slate-900 dark:text-white"></h3>
+                        <button id="btn-hint-audio" class="p-1.5 rounded-lg bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:hover:bg-emerald-900 text-emerald-600 dark:text-emerald-400 text-sm transition" title="Nghe phát âm từ này">
+                            🔊
+                        </button>
+                    </div>
+                </div>
+                <button id="btn-close-hint" class="text-slate-400 text-2xl font-bold p-1">&times;</button>
+            </div>
+            <div class="space-y-2 bg-slate-50 dark:bg-slate-800/60 p-3 rounded-xl border border-slate-200 dark:border-slate-700 text-xs sm:text-sm">
+                <div class="flex justify-between"><span class="text-slate-500">Pinyin:</span><span id="hint-py" class="font-mono font-bold text-slate-800 dark:text-slate-200"></span></div>
+                <div class="flex justify-between"><span class="text-slate-500">Hán-Việt:</span><span id="hint-hv" class="font-bold text-amber-600 dark:text-amber-400"></span></div>
+                <div class="flex justify-between"><span class="text-slate-500">Nghĩa tiếng Việt:</span><span id="hint-vn" class="font-extrabold text-emerald-600 dark:text-emerald-400"></span></div>
+                <div class="pt-1 border-t border-slate-200 dark:border-slate-700"><span class="text-slate-500 block text-[11px] mb-0.5">Chiết tự:</span><span id="hint-radicals" class="font-semibold text-slate-700 dark:text-slate-300 text-xs"></span></div>
+            </div>
+            <div id="hint-trans-trap" class="mt-3 p-3 bg-rose-50 dark:bg-rose-950/40 rounded-xl border border-rose-200 dark:border-rose-900 text-xs text-rose-900 dark:text-rose-200 hidden">
+                <span class="font-bold">⚠️ Bẫy dịch:</span> <span id="hint-trap-text"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal (Cài đặt hệ thống & luyện tập) -->
+    <div id="admin-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3 hidden">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-xl max-h-[90vh] rounded-3xl p-5 sm:p-6 shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col overflow-hidden animate-pop">
+            <!-- Header -->
+            <div class="flex justify-between items-center pb-3 border-b border-slate-200 dark:border-slate-800 shrink-0">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg font-black shadow-xs">
+                        ⚙️
+                    </div>
+                    <div>
+                        <h3 class="text-base sm:text-lg font-black text-slate-900 dark:text-white">Cài Đặt Hệ Thống</h3>
+                        <p class="text-[11px] text-slate-500">Tùy biến trải nghiệm học tập, âm thanh & dữ liệu</p>
+                    </div>
+                </div>
+                <button id="btn-close-admin" class="w-8 h-8 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500 text-lg font-bold flex items-center justify-center transition active:scale-90">&times;</button>
+            </div>
+            
+            <!-- Body: Scrollable content -->
+            <div class="flex-grow overflow-y-auto py-4 space-y-4 pr-1 text-slate-800 dark:text-slate-200">
+                
+                <!-- Nhóm 1: Âm thanh & Phát âm -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 space-y-3">
+                    <div class="text-xs font-black text-slate-700 dark:text-slate-300 flex items-center gap-2">
+                        <span>🎧</span> ÂM THANH & PHÁT ÂM
+                    </div>
+                    <div class="flex items-center justify-between text-xs gap-3">
+                        <div>
+                            <div class="font-bold">Tốc độ đọc câu / từ vựng</div>
+                            <div class="text-[11px] text-slate-400">Chọn tốc độ giọng phát âm tự nhiên</div>
+                        </div>
+                        <select id="setting-voice-speed" class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold focus:outline-none focus:border-emerald-500">
+                            <option value="0.98">🗣️ Chuẩn (1.0x)</option>
+                            <option value="0.72">🐢 Chậm rãi (0.72x)</option>
+                            <option value="1.15">⚡ Nhanh (1.15x)</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center justify-between text-xs pt-1 border-t border-slate-200/60 dark:border-slate-700/60">
+                        <div>
+                            <div class="font-bold">Tự động phát âm khi trả lời đúng</div>
+                            <div class="text-[11px] text-slate-400">Nghe ngay câu chuẩn tiếng Trung khi vừa vượt qua</div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-auto-audio" class="sr-only peer" checked>
+                            <div class="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Nhóm 2: Luyện dịch & Hiển thị -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 space-y-3">
+                    <div class="text-xs font-black text-slate-700 dark:text-slate-300 flex items-center gap-2">
+                        <span>📝</span> CHẾ ĐỘ LUYỆN DỊCH & HIỂN THỊ
+                    </div>
+                    <div class="flex items-center justify-between text-xs gap-3">
+                        <div>
+                            <div class="font-bold">Chế độ luyện dịch ưu tiên</div>
+                            <div class="text-[11px] text-slate-400">Phương pháp nhập câu trả lời mặc định khi vào bài</div>
+                        </div>
+                        <select id="setting-default-mode" class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold focus:outline-none focus:border-emerald-500">
+                            <option value="parsing">🧩 Ghép thẻ từ (Word Bank)</option>
+                            <option value="typing">⌨️ Tự gõ bàn phím IME</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center justify-between text-xs pt-1 border-t border-slate-200/60 dark:border-slate-700/60">
+                        <div>
+                            <div class="font-bold">Gợi ý phiên âm Pinyin</div>
+                            <div class="text-[11px] text-slate-400">Hiển thị dòng Pinyin phía dưới câu tiếng Việt</div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-show-pinyin" class="sr-only peer" checked>
+                            <div class="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500"></div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Nhóm 3: Tiến trình & Học tập -->
+                <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/60 space-y-3">
+                    <div class="text-xs font-black text-slate-700 dark:text-slate-300 flex items-center gap-2">
+                        <span>📊</span> TIẾN TRÌNH & HỌC TẬP
+                    </div>
+                    <div class="flex items-center justify-between text-xs">
+                        <div>
+                            <div class="font-bold">Mở khóa toàn bộ bài học (Tester Mode)</div>
+                            <div class="text-[11px] text-slate-400">Bỏ qua điều kiện tuần tự để thử nghiệm mọi bài học</div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" id="setting-tester-mode" class="sr-only peer" checked>
+                            <div class="w-9 h-5 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500"></div>
+                        </label>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-1 border-t border-slate-200/60 dark:border-slate-700/60">
+                        <button id="btn-setting-refill-hearts" class="px-3 py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/40 text-rose-600 dark:text-rose-300 border border-rose-200 dark:border-rose-900 font-bold text-xs transition active:scale-95 flex items-center justify-center gap-1.5" title="Hồi phục 5 lượt tim">
+                            <span>❤️</span> Nạp 5 Tim
+                        </button>
+                        <button id="btn-reset-data" class="px-3 py-2.5 bg-slate-100 hover:bg-rose-50 dark:bg-slate-800 dark:hover:bg-rose-950/40 text-slate-700 hover:text-rose-600 dark:text-slate-300 dark:hover:text-rose-300 border border-slate-200 dark:border-slate-700 hover:border-rose-300 rounded-xl font-bold text-xs transition active:scale-95 flex items-center justify-center gap-1.5" title="Đặt lại toàn bộ tiến độ học tập về Bài 1">
+                            <span>🔄</span> Reset Tiến Độ
+                        </button>
+                        <button id="btn-open-app-feedback" class="px-3 py-2.5 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 rounded-xl font-bold text-xs transition active:scale-95 flex items-center justify-center gap-1.5" title="Gửi ý kiến đóng góp cho ban phát triển app">
+                            <span>💡</span> Góp Ý Cho App
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- No Hearts Modal -->
+    <div id="no-hearts-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-sm rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 text-center animate-pop">
+            <div class="w-16 h-16 mx-auto mb-3 bg-rose-100 dark:bg-rose-950/60 text-rose-500 rounded-2xl flex items-center justify-center text-3xl shadow-sm">💔</div>
+            <h3 class="text-xl font-black text-slate-900 dark:text-white">Bạn Đã Hết Tim!</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 mb-6 leading-relaxed">Đừng nản lòng nhé! Hãy nạp lại tim để tiếp tục thử thách và rèn luyện dịch câu.</p>
+            <button id="btn-refill-hearts" class="w-full py-3.5 bg-rose-600 hover:bg-rose-700 text-white font-black rounded-xl text-sm shadow-md btn-press flex items-center justify-center gap-1.5">
+                <span>❤️</span> HỒI PHỤC ĐẦY 5 TIM
+            </button>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div id="feedback-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-md rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 animate-pop">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h3 class="text-lg font-black text-slate-900 dark:text-white flex items-center gap-2">💬 Góp Ý & Báo Lỗi Câu Hỏi</h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Ý kiến của bạn giúp bài học chuẩn xác hơn</p>
+                </div>
+                <button id="btn-close-feedback" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-2xl font-bold p-1 leading-none">&times;</button>
+            </div>
+
+            <!-- Câu hỏi đang xem -->
+            <div class="bg-slate-50 dark:bg-slate-800/60 p-3 rounded-2xl border border-slate-200 dark:border-slate-700 text-xs mb-3 space-y-1">
+                <div><span class="text-slate-400 font-bold">Đề bài:</span> <span id="feedback-vi-target" class="font-bold text-slate-800 dark:text-slate-200"></span></div>
+                <div><span class="text-slate-400 font-bold">Đáp án:</span> <span id="feedback-zh-target" class="chinese-text font-bold text-emerald-600 dark:text-emerald-400"></span></div>
+            </div>
+
+            <!-- Loại đóng góp -->
+            <div class="mb-3">
+                <label class="text-[11px] font-bold text-slate-500 uppercase block mb-1.5">Loại đóng góp</label>
+                <div class="grid grid-cols-2 gap-2 text-xs">
+                    <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/40 cursor-pointer hover:border-emerald-500">
+                        <input type="radio" name="feedback-type" value="ans_missing" checked class="text-emerald-600">
+                        <span class="font-bold">Thiếu biến thể</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/40 cursor-pointer hover:border-emerald-500">
+                        <input type="radio" name="feedback-type" value="audio_error" class="text-emerald-600">
+                        <span class="font-bold">Lỗi đọc/Pinyin</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/40 cursor-pointer hover:border-emerald-500">
+                        <input type="radio" name="feedback-type" value="grammar_sugg" class="text-emerald-600">
+                        <span class="font-bold">Góp ý ngữ pháp</span>
+                    </label>
+                    <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/40 cursor-pointer hover:border-emerald-500">
+                        <input type="radio" name="feedback-type" value="other" class="text-emerald-600">
+                        <span class="font-bold">Ý kiến khác</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Chi tiết nội dung -->
+            <div class="mb-4">
+                <label class="text-[11px] font-bold text-slate-500 uppercase block mb-1">Nội dung chi tiết</label>
+                <textarea id="feedback-content" rows="3" class="w-full p-3 rounded-2xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-xs text-slate-800 dark:text-slate-200 focus:outline-none focus:border-emerald-500 resize-none font-sans" placeholder="Nhập câu bạn cho là đúng hoặc cách giải thích hay hơn..."></textarea>
+            </div>
+
+            <button id="btn-submit-feedback" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-sm shadow-md btn-press transition">
+                GỬI ĐÓNG GÓP Ý KIẾN
+            </button>
+        </div>
+    </div>
+
+    <!-- App Improvement Feedback Modal (Góp ý phát triển ứng dụng) -->
+    <div id="app-feedback-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-md rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 animate-pop">
+            <div class="flex justify-between items-start mb-4">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl font-black shadow-xs">
+                        💡
+                    </div>
+                    <div>
+                        <h3 class="text-base font-black text-slate-900 dark:text-white">Góp Ý Phát Triển App</h3>
+                        <p class="text-xs text-slate-500 mt-0.5">Giúp đội ngũ hoàn thiện ứng dụng tốt hơn</p>
+                    </div>
+                </div>
+                <button id="btn-close-app-feedback" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-2xl font-bold p-1 leading-none">&times;</button>
+            </div>
+
+            <div class="space-y-3 mb-4 text-xs">
+                <div>
+                    <label class="text-[11px] font-bold text-slate-500 uppercase block mb-1.5">Chủ đề đóng góp</label>
+                    <select id="app-feedback-topic" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 font-bold focus:outline-none focus:border-emerald-500 text-slate-800 dark:text-slate-200">
+                        <option value="feature">🚀 Đề xuất tính năng mới</option>
+                        <option value="ui_ux">🎨 Giao diện & Trải nghiệm sử dụng</option>
+                        <option value="content">📚 Nội dung bài học & Phương pháp</option>
+                        <option value="audio">🗣️ Giọng đọc & Âm thanh</option>
+                        <option value="other">💬 Đóng góp ý kiến khác</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="text-[11px] font-bold text-slate-500 uppercase block mb-1">Nội dung đóng góp chi tiết</label>
+                    <textarea id="app-feedback-content" rows="4" class="w-full p-3 rounded-2xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-xs text-slate-800 dark:text-slate-200 focus:outline-none focus:border-emerald-500 resize-none font-sans" placeholder="Chia sẻ ý tưởng, cảm nhận hoặc điều bạn muốn ứng dụng nâng cấp nhé..."></textarea>
+                </div>
+            </div>
+
+            <button id="btn-submit-app-feedback" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-xs shadow-md btn-press transition">
+                GỬI Ý KIẾN ĐÓNG GÓP
+            </button>
+        </div>
+    </div>
+
+    <!-- Quick Notes & Grammar Tips Modal (Tóm tắt trọng tâm toàn bài - Bên ngoài) -->
+    <div id="quick-notes-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4 hidden">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-md max-h-[85vh] rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col animate-pop">
+            <div class="flex justify-between items-start pb-3 border-b border-slate-200 dark:border-slate-800 shrink-0">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl font-black shadow-xs shrink-0">
+                        💡
+                    </div>
+                    <div>
+                        <span id="qn-pre-badge" class="hidden mb-1 px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 inline-block"></span>
+                        <h3 id="qn-title" class="text-base font-black text-slate-900 dark:text-white leading-tight">💡 Trọng Tâm & Từ Vựng Cần Nhớ</h3>
+                        <p id="quick-notes-subtitle" class="text-xs text-slate-500 mt-0.5">Tóm tắt nhanh trước khi vào luyện dịch</p>
+                    </div>
+                </div>
+                <button id="btn-close-quick-notes" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-2xl font-bold p-1 leading-none" onclick="App.closeLessonBriefingModal()">&times;</button>
+            </div>
+            
+            <div id="quick-notes-body" class="overflow-y-auto py-4 space-y-3 pr-1 text-xs text-slate-700 dark:text-slate-300 leading-relaxed flex-grow">
+            </div>
+
+            <div class="pt-3 border-t border-slate-200/60 dark:border-slate-800 shrink-0">
+                <button id="btn-ack-quick-notes" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-sm shadow-md btn-press transition shrink-0" onclick="App.closeLessonBriefingModal()">
+                    Bắt đầu luyện dịch ➔
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Question Hint Modal (Mẹo câu đang làm - Bên trong) -->
+    <div id="question-hint-dialog" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-md max-h-[85vh] rounded-3xl p-6 shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col animate-pop">
+            <div class="flex justify-between items-start pb-3 border-b border-slate-200 dark:border-slate-800 shrink-0">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl font-black shadow-xs shrink-0">
+                        💡
+                    </div>
+                    <div>
+                        <h3 class="text-base font-black text-slate-900 dark:text-white leading-tight">Mẹo & Ngữ Pháp Câu</h3>
+                        <p id="question-hint-subtitle" class="text-xs text-slate-500 mt-0.5 line-clamp-1">Gợi ý cho câu hỏi hiện tại</p>
+                    </div>
+                </div>
+                <button id="btn-close-question-hint" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-2xl font-bold p-1 leading-none" onclick="App.closeQuestionHintModal()">&times;</button>
+            </div>
+            
+            <div id="question-hint-body" class="overflow-y-auto py-4 space-y-3 pr-1 text-xs text-slate-700 dark:text-slate-300 leading-relaxed flex-grow">
+            </div>
+
+            <div class="pt-3 border-t border-slate-200/60 dark:border-slate-800 shrink-0">
+                <button id="btn-ack-question-hint" class="w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-sm shadow-md btn-press transition" onclick="App.closeQuestionHintModal()">
+                    ĐÃ HIỂU, LÀM TIẾP ➔
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Lesson Picker Modal -->
+    <div id="lesson-modal" onclick="if(event.target===this && window.NavigationHub)NavigationHub.closeModal()" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-200">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-xl max-h-[85vh] rounded-3xl p-5 shadow-2xl border border-slate-200 dark:border-slate-800 flex flex-col">
+            <div class="flex justify-between items-center mb-3">
+                <div class="flex items-center gap-2">
+                    <span class="text-lg">📖</span>
+                    <h3 class="text-base font-black text-slate-900 dark:text-white">Chọn Bài Học Nhanh</h3>
+                </div>
+                <button id="btn-close-modal" onclick="if(window.NavigationHub)NavigationHub.closeModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-2xl font-bold p-1 leading-none cursor-pointer">&times;</button>
+            </div>
+
+            <!-- Search input -->
+            <div class="relative mb-3.5">
+                <input id="modal-search-input" type="text" class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 border border-slate-300 dark:border-slate-700 text-xs sm:text-sm text-slate-800 dark:text-slate-200 focus:outline-none focus:border-emerald-500 font-medium" placeholder="Tìm kiếm theo tên bài, chủ đề ngữ pháp...">
+                <span class="absolute left-3 top-2.5 text-slate-400 text-xs">🔍</span>
+            </div>
+
+            <!-- Grid bài học -->
+            <div id="modal-lesson-grid" class="flex-grow overflow-y-auto grid grid-cols-1 sm:grid-cols-2 gap-2.5 pr-1"></div>
+        </div>
+    </div>
+
+    <!-- Lesson Loading Overlay -->
+    <div id="lesson-loading-overlay" class="fixed inset-0 z-50 bg-slate-900/40 dark:bg-black/60 backdrop-blur-xs flex flex-col items-center justify-center hidden transition-opacity duration-200">
+        <div class="flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-white dark:bg-slate-800 shadow-2xl border border-slate-200 dark:border-slate-700 animate-pop">
+            <svg class="animate-spin h-5 w-5 text-emerald-600 dark:text-emerald-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <span class="text-xs font-black text-slate-800 dark:text-slate-100 tracking-wide">Đang nạp bài học...</span>
+        </div>
+    </div>
+
+    <!-- Data & Application Logic Modules -->
+    <script src="data/manifest.js"></script>
+    <script src="data/database.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/evaluator.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
