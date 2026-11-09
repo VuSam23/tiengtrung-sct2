@@ -504,40 +504,52 @@ const App = {
 
         const q = this.activeQ;
         this.updateModeUI();
-        document.getElementById('prompt-instruction').textContent = q.title || "Luyện dịch câu sau:";
-        document.getElementById('source-vi-text').textContent = q.vi || "";
-        document.getElementById('source-pinyin-display').textContent = q.pinyin ? `🗣️ ${q.pinyin}` : "";
-        this.applyPinyinVisibility();
-        document.getElementById('source-core-grammar').textContent = q.grammarPoint ? `Ngữ pháp: ${q.grammarPoint}` : "";
 
-        // Reset trạng thái bẫy realtime và hiển thị nút mẹo nếu có
-        document.getElementById('realtime-trap-alert')?.classList.add('hidden');
-        this.renderQuickNotesButton();
-
-        // Render chips từ vựng
-        const chips = document.getElementById('source-chips-container');
-        chips.innerHTML = '';
-        (q.tokens || []).forEach(t => {
-            const b = document.createElement('button');
-            b.className = "clickable-chip px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold transition active:scale-95";
-            b.innerHTML = `${t.text} <span class="text-[10px] text-emerald-500">ℹ️</span>`;
-            b.onclick = (e) => {
-                e.stopPropagation();
-                // Phát âm chữ Hán chuẩn xác ngay khi bấm vào chip
-                AudioSvc.speak(t.hz || t.text, 0.85);
-                this.showHint(t);
-            };
-            chips.appendChild(b);
-        });
-
-        // Render workspace tương tác theo chế độ người dùng lựa chọn (Xếp từ hoặc Tự gõ)
+        // Skeleton thoáng qua cho workspace khi chuyển câu
         const ws = document.getElementById('interactive-workspace');
-        ws.innerHTML = '';
-        if (this.mode === 'parsing') {
-            this.renderParse(ws, q);
-        } else {
-            this.renderTyping(ws, q);
-        }
+        ws.innerHTML = `
+            <div class="flex flex-wrap gap-2 justify-center py-2">
+                <div class="skeleton h-10 w-20 rounded-full"></div>
+                <div class="skeleton h-10 w-16 rounded-full"></div>
+                <div class="skeleton h-10 w-24 rounded-full"></div>
+                <div class="skeleton h-10 w-14 rounded-full"></div>
+            </div>`;
+
+        // Dùng requestAnimationFrame để render nội dung thật sau 1 frame (tạo cảm giác chuyển mượt)
+        requestAnimationFrame(() => {
+            document.getElementById('prompt-instruction').textContent = q.title || "Luyện dịch câu sau:";
+            document.getElementById('source-vi-text').textContent = q.vi || "";
+            document.getElementById('source-pinyin-display').textContent = q.pinyin ? `🗣️ ${q.pinyin}` : "";
+            this.applyPinyinVisibility();
+            document.getElementById('source-core-grammar').textContent = q.grammarPoint ? `Ngữ pháp: ${q.grammarPoint}` : "";
+
+            // Reset trạng thái bẫy realtime và hiển thị nút mẹo nếu có
+            document.getElementById('realtime-trap-alert')?.classList.add('hidden');
+            this.renderQuickNotesButton();
+
+            // Render chips từ vựng
+            const chips = document.getElementById('source-chips-container');
+            chips.innerHTML = '';
+            (q.tokens || []).forEach(t => {
+                const b = document.createElement('button');
+                b.className = "clickable-chip px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold transition active:scale-95";
+                b.innerHTML = `${t.text} <span class="text-[10px] text-emerald-500">ℹ️</span>`;
+                b.onclick = (e) => {
+                    e.stopPropagation();
+                    AudioSvc.speak(t.hz || t.text, 0.85);
+                    this.showHint(t);
+                };
+                chips.appendChild(b);
+            });
+
+            // Render workspace tương tác theo chế độ người dùng lựa chọn (Xếp từ hoặc Tự gõ)
+            ws.innerHTML = '';
+            if (this.mode === 'parsing') {
+                this.renderParse(ws, q);
+            } else {
+                this.renderTyping(ws, q);
+            }
+        });
     },
 
     renderParse(ws, q) {

@@ -211,6 +211,10 @@ const NavigationHub = {
     renderDashboardCards() {
         const container = document.getElementById('dashboard-lesson-list');
         if (!container) return;
+
+        // Xóa skeleton placeholder (nếu có) và nội dung cũ
+        const skeletonEl = document.getElementById('skeleton-cards');
+        if (skeletonEl) skeletonEl.remove();
         container.innerHTML = '';
 
         const currentLvl = (typeof LevelManager !== 'undefined' && LevelManager.currentLevel) ? LevelManager.currentLevel : 'hsk1';
@@ -264,13 +268,15 @@ const NavigationHub = {
 
             const theme = (typeof LevelManager !== 'undefined' && LevelManager.getTheme) ? LevelManager.getTheme() : null;
             const card = document.createElement('div');
-            card.className = `p-4 sm:p-5 rounded-3xl border-2 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
+            card.className = `card-reveal p-4 sm:p-5 rounded-3xl border-2 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
                 isCompleted 
                     ? 'bg-white dark:bg-slate-900 border-amber-300 dark:border-amber-700/80 shadow-xs' 
                     : isUnlocked 
                         ? (theme ? theme.cardActiveBg : 'bg-emerald-50/50 dark:bg-emerald-950/30 border-emerald-500 shadow-sm ring-2 ring-emerald-400/20')
                         : 'bg-slate-100/80 dark:bg-slate-900/40 border-slate-200 dark:border-slate-800 opacity-60'
             }`;
+            // Stagger animation delay theo thứ tự card (tối đa 400ms)
+            card.style.animationDelay = `${Math.min(idx * 40, 400)}ms`;
 
             // Nội dung bài học
             const infoDiv = document.createElement('div');
@@ -349,10 +355,13 @@ const NavigationHub = {
     renderModalGrid(filter = '') {
         const grid = document.getElementById('modal-lesson-grid');
         if (!grid) return;
+        // Xóa skeleton placeholders và nội dung cũ
+        grid.querySelectorAll('.modal-skeleton').forEach(el => el.remove());
         grid.innerHTML = '';
 
         const manifest = window.LESSON_MANIFEST || [];
         const keys = this.getLessonKeys();
+        let visibleIdx = 0;
 
         keys.forEach((key, idx) => {
             const mItem = manifest.find(m => m.id === key);
@@ -369,13 +378,15 @@ const NavigationHub = {
 
             const theme = (typeof LevelManager !== 'undefined' && LevelManager.getTheme) ? LevelManager.getTheme() : null;
             const card = document.createElement('div');
-            card.className = `p-3.5 rounded-2xl border transition-all flex flex-col justify-between ${
+            card.className = `card-reveal p-3.5 rounded-2xl border transition-all flex flex-col justify-between ${
                 isUnlocked ? 'cursor-pointer hover:border-slate-400 dark:hover:border-slate-500 hover:shadow-xs active:scale-95' : 'opacity-50 cursor-not-allowed'
             } ${
                 isCurrent 
                     ? (theme ? theme.modalActiveBorder : 'bg-emerald-50/90 dark:bg-emerald-950/50 border-emerald-500 ring-2 ring-emerald-400/30')
                     : 'bg-slate-50 dark:bg-slate-800/60 border-slate-200 dark:border-slate-700'
             }`;
+            card.style.animationDelay = `${Math.min(visibleIdx * 30, 300)}ms`;
+            visibleIdx++;
 
             card.innerHTML = `
                 <div>
