@@ -1,0 +1,856 @@
+{
+  "lessonId": "b27",
+  "lessonTitle": "第二十七课: 玛丽哭了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "疼得厉害",
+        "py": "téng de lìhai",
+        "note": "Đau dữ dội, đau khủng khiếp. 厉害 (lìhai): nghiêm trọng, dữ dội, lợi hại; làm bổ ngữ trạng thái sau 得 để biểu thị mức độ cao: 牙疼得厉害 (đau răng dữ dội), 哭得这么厉害 (khóc dữ dội như vậy)."
+      },
+      {
+        "word": "开药",
+        "py": "kāi yào",
+        "note": "Kê đơn thuốc, bốc thuốc: 医生给我开了很多药 (Bác sĩ kê cho tôi rất nhiều thuốc)."
+      },
+      {
+        "word": "难过 vs 寂寞",
+        "py": "nánguò vs jìmò",
+        "note": "难过: Buồn lòng, đau lòng, khó chịu (về mặt cảm xúc khi gặp chuyện thất vọng hoặc đau buồn). 寂寞: Cô đơn, quạnh quẽ (khi ở một mình xa nhà, thiếu người chuyện trò)."
+      },
+      {
+        "word": "放心",
+        "py": "fàngxīn",
+        "note": "Động từ ly hợp: Yên tâm, an tâm (你放心吧)."
+      }
+    ],
+    "grammarTips": [
+      "Trợ từ động thái 了 biểu thị sự hoàn thành của hành động trong quá khứ hoặc tương lai: V + 了 + Số lượng + Danh từ (吃了药, 看了不少电影).",
+      "Kết cấu liên kết hai hành động kế tiếp V1 + 了... 就 + V2: Biểu thị sau khi hoàn thành hành động 1 thì lập tức thực hiện hành động 2 (吃了午饭就去教室, 买了书就回学校).",
+      "Biểu thị sự việc sắp xảy ra: 快要 / 就要 + V + 了 (下星期要考试了).",
+      "Khuyên ngăn ngừng hành động với 别...了: Dùng để khuyên người khác đừng tiếp tục hành động nữa (别看电视了, 别哭了, 大家别说话了)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b27-01",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ trạng thái chỉ mức độ bệnh lý và động từ năng nguyện 要",
+      "vi": "Hôm nay tôi đau răng kinh khủng, buổi chiều tôi phải đến bệnh viện kiểm tra.",
+      "zh": "今天我牙疼得很厉害下午我要去医院检查",
+      "standardTrans": "今天我牙疼得很厉害下午我要去医院检查",
+      "pinyin": "Jīntiān wǒ yá téng de hěn lìhai, xiàwǔ wǒ yào qù yīyuàn jiǎnchá.",
+      "grammarPoint": "Bổ ngữ trạng thái: 牙疼 + 得 + 很厉害; Động từ năng nguyện: 要 (phải, cần)",
+      "tokens": [
+        {
+          "text": "Đau răng kinh khủng",
+          "hz": "牙疼得很厉害",
+          "py": "yá téng de hěn lìhai",
+          "hv": "Nha thống đắc hẩn lệ hại",
+          "role": "Chủ vị nhỏ + Bổ ngữ trạng thái",
+          "vn": "Răng đau dữ dội, đau khủng khiếp",
+          "radicals": "牙 = Bộ nha 牙; 疼 = Bộ nạch 疒; 得 = Trợ từ; 厉 = Bộ hán 厂; 害 = Bộ miên 宀"
+        },
+        {
+          "text": "Đến bệnh viện kiểm tra",
+          "hz": "去医院检查",
+          "py": "qù yīyuàn jiǎnchá",
+          "hv": "Khứ y viện kiểm tra",
+          "role": "Cụm liên động mục đích",
+          "vn": "Đi tới bệnh viện khám/kiểm tra",
+          "radicals": "去 = Đi; 医 = Bộ phương 匚; 院 = Bộ ấp 阝; 检 = Bộ mộc 木; 查 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "下午我要去医院检查", "tag": "Kế hoạch khám bệnh" },
+        { "id": "t1", "text": "今天我牙疼得很厉害", "tag": "Triệu chứng đau đớn" },
+        { "id": "t3", "text": "很厉害牙疼", "tag": "Bẫy trật tự bổ ngữ" },
+        { "id": "t4", "text": "检查去医院", "tag": "Bẫy câu liên động" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["今天我牙疼得很厉害", "下午我要去医院检查"],
+      "wordBankPool": ["今天我牙疼得很厉害", "下午我要去医院检查", "很厉害牙疼", "检查去医院", "牙疼厉害得很"],
+      "traps": [
+        {
+          "pattern": "很厉害牙疼",
+          "msg": "Lỗi bổ ngữ trạng thái: Miêu tả mức độ 'đau kinh khủng' phải dùng kết cấu 'Động từ/Tính từ + 得 + Bổ ngữ' ('疼得很厉害'), không đưa '很厉害' lên trước vị ngữ."
+        },
+        {
+          "pattern": "检查去医院",
+          "msg": "Lỗi câu liên động: Quy tắc chuyển động là đi đến địa điểm trước rồi mới thực hiện mục đích khám ('去医院检查')."
+        }
+      ],
+      "explanation": "Cấu trúc bổ ngữ trạng thái miêu tả mức độ nghiêm trọng: [Bộ phận + 疼] + 得 + 很厉害. Vế sau dùng câu liên động biểu thị mục đích đến bệnh viện để khám."
+    },
+    {
+      "id": "b27-02",
+      "type": "sentence_parsing",
+      "title": "Trợ từ động thái hoàn thành 了 và cụm giới từ 给...开药",
+      "vi": "Tuần trước tôi bị ốm, bác sĩ kê cho tôi rất nhiều thuốc.",
+      "zh": "上星期我生病了医生给我开了很多药",
+      "standardTrans": "上星期我生病了医生给我开了很多药",
+      "pinyin": "Shàng xīngqī wǒ shēngbìng le, yīshēng gěi wǒ kāi le hěn duō yào.",
+      "grammarPoint": "Trạng thái quá khứ: 生病了; Giới từ 给 chỉ đối tượng tiếp nhận; Động từ hoàn thành: 开了 + Số lượng danh từ",
+      "tokens": [
+        {
+          "text": "Tuần trước tôi bị ốm rồi",
+          "hz": "上星期我生病了",
+          "py": "shàng xīngqī wǒ shēngbìng le",
+          "hv": "Thượng tinh kỳ ngã sinh bệnh liễu",
+          "role": "Trạng ngữ thời gian + Vị ngữ",
+          "vn": "Tuần trước tôi bị ốm",
+          "radicals": "上 = Lên, trước; 星 = Bộ nhật; 期 = Bộ nguyệt; 病 = Bộ nạch 疒; 了 = Trợ từ"
+        },
+        {
+          "text": "Kê cho tôi rất nhiều thuốc",
+          "hz": "医生给我开了很多药",
+          "py": "yīshēng gěi wǒ kāi le hěn duō yào",
+          "hv": "Y sinh cấp ngã khai liễu hẩn đa dược",
+          "role": "Chủ ngữ + Giới từ + Vị ngữ hoàn thành",
+          "vn": "Bác sĩ đã kê cho tôi rất nhiều thuốc",
+          "radicals": "生 = Sinh; 给 = Bộ mịch 纟; 开 = Bộ củng 廾; 药 = Bộ thảo 艹"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "医生给我开了很多药", "tag": "Hành động của bác sĩ" },
+        { "id": "t1", "text": "上星期我生病了", "tag": "Thời gian & bị ốm" },
+        { "id": "t3", "text": "开了很多药给我", "tag": "Bẫy trật tự giới từ 给" },
+        { "id": "t4", "text": "我生病在星期上", "tag": "Bẫy thời gian" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["上星期我生病了", "医生给我开了", "很多药"],
+      "wordBankPool": ["上星期我生病了", "医生给我开了很多药", "开了很多药给我", "我生病在星期上", "医生开我很多药"],
+      "traps": [
+        {
+          "pattern": "开了很多药给我",
+          "msg": "Lỗi giới từ 给: Cụm 'cho tôi' phải đứng trước động từ: '给我开药', không dịch thuận theo tiếng Việt thành '开药给我'."
+        }
+      ],
+      "explanation": "Cấu trúc '给 + Ai + 开药' là cụm cố định biểu thị việc bác sĩ kê đơn thuốc cho bệnh nhân. Trợ từ '了' đặt ngay sau động từ '开' biểu thị hành động đã hoàn tất và có tân ngữ mang số lượng cụ thể (很多药)."
+    },
+    {
+      "id": "b27-03",
+      "type": "anti_word_by_word",
+      "title": "Phương tiện di chuyển 坐飞机 và trợ từ ngữ khí 了 ở cuối câu",
+      "vi": "Thứ sáu tuần trước tôi và bạn tôi đã đến Thượng Hải bằng máy bay.",
+      "zh": "上星期五我和我朋友坐飞机去上海了",
+      "standardTrans": "上星期五我和我朋友坐飞机去上海了",
+      "pinyin": "Shàng xīngqīwǔ wǒ hé wǒ péngyou zuò fēijī qù Shànghǎi le.",
+      "grammarPoint": "Thời gian quá khứ: 上星期五; Cụm liên động phương tiện: 坐飞机去; Trợ từ ngữ khí cuối câu 了",
+      "tokens": [
+        {
+          "text": "Thứ sáu tuần trước",
+          "hz": "上星期五",
+          "py": "shàng xīngqīwǔ",
+          "hv": "Thượng tinh kỳ ngũ",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Thứ sáu tuần trước",
+          "radicals": "上 = Trước; 星 = Sao; 五 = Số năm"
+        },
+        {
+          "text": "Tôi và bạn tôi",
+          "hz": "我和我朋友",
+          "py": "wǒ hé wǒ péngyou",
+          "hv": "Ngã hòa ngã bằng hữu",
+          "role": "Chủ ngữ ghép",
+          "vn": "Tôi cùng bạn của tôi",
+          "radicals": "和 = Bộ hòa 禾; 朋 = Bộ nguyệt 月; 友 = Bộ hựu 又"
+        },
+        {
+          "text": "Đi máy bay đến Thượng Hải rồi",
+          "hz": "坐飞机去上海了",
+          "py": "zuò fēijī qù Shànghǎi le",
+          "hv": "Tọa phi cơ khứ Thượng Hải liễu",
+          "role": "Cụm liên động vị ngữ",
+          "vn": "Ngồi máy bay đến Thượng Hải rồi",
+          "radicals": "坐 = Bộ thổ 土; 飞 = Bay; 机 = Bộ mộc 木; 海 = Bộ thủy 氵"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我和我朋友", "tag": "Chủ ngữ" },
+        { "id": "t1", "text": "上星期五", "tag": "Thời gian" },
+        { "id": "t3", "text": "坐飞机去上海了", "tag": "Phương tiện + Đích đến + 了" },
+        { "id": "t4", "text": "去上海坐飞机了", "tag": "Bẫy trật tự phương tiện" },
+        { "id": "t5", "text": "我和朋友坐飞机去", "tag": "Bẫy thiếu 了" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["上星期五", "我和我朋友", "坐飞机去上海了"],
+      "wordBankPool": ["上星期五", "我和我朋友", "坐飞机去上海了", "去上海坐飞机了", "我和朋友坐飞机去", "飞机构去上海"],
+      "traps": [
+        {
+          "pattern": "去上海坐飞机",
+          "msg": "Lỗi câu liên động: Phương tiện di chuyển (坐飞机) bắt buộc phải đứng TRƯỚC động từ chuyển dịch và đích đến ('去上海')."
+        }
+      ],
+      "explanation": "Câu liên động biểu thị việc di chuyển bằng phương tiện: S + 坐飞机 + 去 + Nơi chốn + 了. Trợ từ '了' ở cuối câu khẳng định sự việc đã hoàn thành trong quá khứ."
+    },
+    {
+      "id": "b27-04",
+      "type": "sentence_parsing",
+      "title": "Câu kiêm ngữ 让 kết hợp phủ định 不想 và liên từ giải thích 因为...所以...",
+      "vi": "A: Vì sao bố mẹ cậu không muốn cho cậu đi Hàn Quốc du học? B: Bởi vì bố tớ làm việc ở Trung Quốc nên bố tớ muốn tớ đến Trung Quốc du học.",
+      "zh": "为什么你爸妈不想让你去韩国留学因为我爸爸在中国工作所以他要我来中国留学",
+      "standardTrans": "为什么你爸妈不想让你去韩国留学因为我爸爸在中国工作所以他要我来中国留学",
+      "pinyin": "A: Wèishénme nǐ bàmā bù xiǎng ràng nǐ qù Hánguó liúxué? B: Yīnwèi wǒ bàba zài Zhōngguó gōngzuò, suǒyǐ tā yào wǒ lái Zhōngguó liúxué.",
+      "grammarPoint": "Hỏi lý do: 为什么; Kiêm ngữ phủ định: 不想让...; Cặp liên từ: 因为...所以...; Kiêm ngữ yêu cầu: 要 + Người + 来...",
+      "tokens": [
+        {
+          "text": "Không muốn cho bạn đi Hàn Quốc du học",
+          "hz": "不想让你去韩国留学",
+          "py": "bù xiǎng ràng nǐ qù Hánguó liúxué",
+          "hv": "Bất tưởng nhượng nhĩ khứ Hàn Quốc lưu học",
+          "role": "Cụm vị ngữ kiêm ngữ",
+          "vn": "Không muốn để cậu đi Hàn Quốc du học",
+          "radicals": "想 = Tâm; 让 = Ngôn; 韩 = Bộ vi 韦; 留 = Bộ điền 田"
+        },
+        {
+          "text": "Bởi vì bố tôi làm việc ở Trung Quốc",
+          "hz": "因为我爸爸在中国工作",
+          "py": "yīnwèi wǒ bàba zài Zhōngguó gōngzuò",
+          "hv": "Nhân vi ngã bá bá tại Trung Quốc công tác",
+          "role": "Vế nguyên nhân",
+          "vn": "Vì bố tớ công tác ở Trung Quốc",
+          "radicals": "因 = Bộ vi 囗; 爸 = Bộ phụ 父; 在 = Tại; 工 = Công"
+        },
+        {
+          "text": "Nên ông ấy muốn tôi sang Trung Quốc du học",
+          "hz": "所以他要我来中国留学",
+          "py": "suǒyǐ tā yào wǒ lái Zhōngguó liúxué",
+          "hv": "Sở dĩ tha yếu ngã lai Trung Quốc lưu học",
+          "role": "Vế kết quả kiêm ngữ",
+          "vn": "Nên ông ấy muốn tôi đến Trung Quốc học",
+          "radicals": "所 = Hộ; 要 = Yếu; 来 = Đến"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "因为我爸爸在中国工作", "tag": "Nguyên nhân của B" },
+        { "id": "t1", "text": "为什么你爸妈不想让你去韩国留学", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "所以他要我来中国留学", "tag": "Kết quả của B" },
+        { "id": "t4", "text": "不让你想去", "tag": "Bẫy trật tự năng nguyện" },
+        { "id": "t5", "text": "工作在中国因为", "tag": "Bẫy nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["为什么你爸妈", "不想让你去韩国留学", "因为我爸爸在中国工作", "所以他要我来中国留学"],
+      "wordBankPool": ["为什么你爸妈不想让你去韩国留学", "因为我爸爸在中国工作", "所以他要我来中国留学", "不让你想去", "工作在中国因为", "要我来留学中国"],
+      "traps": [
+        {
+          "pattern": "不让你想",
+          "msg": "Lỗi vị trí động từ năng nguyện: 'Không muốn cho đi' thì 'không muốn' (不想) chi phối sự cho phép (让), phải nói là '不想让你...', không đảo ngược."
+        },
+        {
+          "pattern": "工作在中国",
+          "msg": "Lỗi trạng ngữ nơi chốn: Nơi chốn diễn ra công việc (在中国) bắt buộc phải đứng trước động từ ('在中国工作')."
+        }
+      ],
+      "explanation": "Câu hội thoại kết hợp cấu trúc nhân quả '因为...所以...' cùng hai cấu trúc câu kiêm ngữ: câu hỏi dùng '让' (cho phép/để), câu trả lời dùng '要' (yêu cầu/muốn ai làm gì)."
+    },
+    {
+      "id": "b27-05",
+      "type": "anti_word_by_word",
+      "title": "Cảm giác cô đơn 寂寞 và kết cấu thời gian 过一会儿就好了",
+      "vi": "A: Một mình cậu ở Bắc Kinh học tập, cậu có cảm thấy cô đơn không? B: Có lúc tớ cũng cảm thấy cô đơn, nhưng mà một lát thì ổn.",
+      "zh": "你一个人在北京学习你感到寂寞吗有时候我也觉得很寂寞但是过一会儿就好了",
+      "standardTrans": "你一个人在北京学习你感到寂寞吗有时候我也觉得很寂寞但是过一会儿就好了",
+      "pinyin": "A: Nǐ yí ge rén zài Běijīng xuéxí, nǐ gǎndào jìmò ma? B: Yǒushíhou wǒ yě juéde hěn jìmò, dànshì guò yíhuìr jiù hǎo le.",
+      "grammarPoint": "Trạng thái một mình: 一个人; Động từ cảm xúc: 感到 / 觉得 + 寂寞; Cụm biến đổi: 过一会儿就好了",
+      "tokens": [
+        {
+          "text": "Một mình ở Bắc Kinh học tập",
+          "hz": "你一个人在北京学习",
+          "py": "nǐ yí ge rén zài Běijīng xuéxí",
+          "hv": "Nhĩ nhất cá nhân tại Bắc Kinh học tập",
+          "role": "Bối cảnh câu hỏi",
+          "vn": "Cậu một mình học tập ở Bắc Kinh",
+          "radicals": "个 = Bộ nhân; 北 = Bộ tỷ; 京 = Bộ đầu; 学 = Bộ tử"
+        },
+        {
+          "text": "Bạn có cảm thấy cô đơn không",
+          "hz": "你感到寂寞吗",
+          "py": "nǐ gǎndào jìmò ma",
+          "hv": "Nhĩ cảm đáo tịch mịch ma",
+          "role": "Câu hỏi tâm lý",
+          "vn": "Cậu có thấy cô đơn quạnh quẽ không",
+          "radicals": "感 = Bộ tâm; 寂 = Bộ miên 宀; 寞 = Bộ miên 宀; 吗 = Bộ khẩu"
+        },
+        {
+          "text": "Nhưng qua một lát là đỡ rồi",
+          "hz": "但是过一会儿就好了",
+          "py": "dànshì guò yíhuìr jiù hǎo le",
+          "hv": "Đãn thị quá nhất hội nhi tựu hảo liễu",
+          "role": "Vế chuyển ngoặt kết quả",
+          "vn": "Nhưng mà lát sau là ổn ngay",
+          "radicals": "但 = Bộ nhân đứng; 过 = Bộ sước; 就 = Bộ kinh; 好 = Bộ nữ; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你感到寂寞吗", "tag": "Hỏi cảm giác của A" },
+        { "id": "t1", "text": "你一个人在北京学习", "tag": "Bối cảnh một mình" },
+        { "id": "t3", "text": "有时候我也觉得很寂寞", "tag": "Thừa nhận của B" },
+        { "id": "t4", "text": "但是过一会儿就好了", "tag": "Chuyển ngoặt của B" },
+        { "id": "t5", "text": "一个人你", "tag": "Bẫy trật tự chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["一个人在北京学习", "感到寂寞吗", "觉得很寂寞", "过一会儿就好了"],
+      "wordBankPool": ["你一个人在北京学习", "你感到寂寞吗", "有时候我也觉得很寂寞", "但是过一会儿就好了", "一个人你", "寂寞觉得很"],
+      "traps": [
+        {
+          "pattern": "一个人你",
+          "msg": "Lỗi cấu trúc: 'Bản thân một mình ai đó' thì đại từ nhân xưng đứng trước: '你一个人' (cậu một mình), không nói '一个人你'."
+        }
+      ],
+      "explanation": "Từ '寂寞' miêu tả cảm giác cô đơn trống trải. Cụm '过一会儿就好了' là cách diễn đạt khẩu ngữ thông dụng biểu thị sau một khoảng thời gian ngắn thì trạng thái tiêu cực sẽ tự hết."
+    },
+    {
+      "id": "b27-06",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc thứ tự hành động 先... 再... với trợ từ năng nguyện 应该",
+      "vi": "Các bạn nên học từ mới và ngữ pháp trước rồi hãy đọc bài khóa.",
+      "zh": "你们应该先学生词和语法再读课文",
+      "standardTrans": "你们应该先学生词和语法再读课文",
+      "pinyin": "Nǐmen yīnggāi xiān xué shēngcí hé yǔfǎ, zài dú kèwén.",
+      "grammarPoint": "Khuyên bảo: 应该; Thứ tự làm trước làm sau: 先 + V1 + 再 + V2",
+      "tokens": [
+        {
+          "text": "Các bạn nên",
+          "hz": "你们应该",
+          "py": "nǐmen yīnggāi",
+          "hv": "Nhĩ môn ưng cai",
+          "role": "Chủ ngữ + Động từ năng nguyện",
+          "vn": "Các bạn/các em nên",
+          "radicals": "应 = Bộ quảng 广; 该 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Học từ mới và ngữ pháp trước",
+          "hz": "先学生词和语法",
+          "py": "xiān xué shēngcí hé yǔfǎ",
+          "hv": "Tiên học sinh từ hòa ngữ pháp",
+          "role": "Hành động thực hiện trước (先)",
+          "vn": "Học từ mới và ngữ pháp trước tiên",
+          "radicals": "先 = Bộ nhi 儿; 生 = Sinh; 词 = Ngôn; 语 = Ngôn; 法 = Thủy"
+        },
+        {
+          "text": "Rồi hãy đọc bài khóa",
+          "hz": "再读课文",
+          "py": "zài dú kèwén",
+          "hv": "Tái độc khóa văn",
+          "role": "Hành động thực hiện sau (再)",
+          "vn": "Sau đó hẵng đọc bài đọc",
+          "radicals": "再 = Lại, rồi mới; 读 = Bộ ngôn 讠; 课 = Bộ ngôn 讠; 文 = Bộ văn 文"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "先学生词和语法", "tag": "Hành động trước (先)" },
+        { "id": "t1", "text": "你们应该", "tag": "Lời khuyên" },
+        { "id": "t3", "text": "再读课文", "tag": "Hành động sau (再)" },
+        { "id": "t4", "text": "又读课文", "tag": "Bẫy nhầm lẫn 又/再" },
+        { "id": "t5", "text": "学生词和语法先", "tag": "Bẫy vị trí phó từ 先" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你们应该", "先学", "生词和语法", "再读课文"],
+      "wordBankPool": ["你们应该", "先学生词和语法", "再读课文", "又读课文", "学生词和语法先", "应该先读课文"],
+      "traps": [
+        {
+          "pattern": "又读课文",
+          "msg": "Lỗi phân biệt 又 / 再: Hành động đọc bài khóa diễn ra sau trong tương lai ('hãy đọc sau'), bắt buộc dùng '再', không dùng '又'."
+        },
+        {
+          "pattern": "生词和语法先",
+          "msg": "Lỗi vị trí phó từ: Phó từ '先' (trước) phải đứng TRƯỚC động từ ('先学生词...'), không đặt ở cuối câu như tiếng Việt."
+        }
+      ],
+      "explanation": "Cấu trúc '先... 再...' biểu thị trình tự trước sau của hai hành động: hoàn thành bước 1 trước rồi mới tiến hành bước 2."
+    },
+    {
+      "id": "b27-07",
+      "type": "sentence_parsing",
+      "title": "Mẫu câu liên kết hai hành động liên tiếp V1 + 了... 就 + V2",
+      "vi": "Bài tập hôm nay rất nhiều, tớ muốn ăn cơm trưa xong thì đến phòng học làm bài tập.",
+      "zh": "今天的作业很多我想吃了午饭就去教室做作业",
+      "standardTrans": "今天的作业很多我想吃了午饭就去教室做作业",
+      "pinyin": "Jīntiān de zuòyè hěn duō, wǒ xiǎng chī le wǔfàn jiù qù jiàoshì zuò zuòyè.",
+      "grammarPoint": "Nguyên nhân bài tập nhiều; Kết cấu hai hành động liền nhau: V1 + 了... 就 + V2; Cụm nơi chốn: 去教室做作业",
+      "tokens": [
+        {
+          "text": "Bài tập hôm nay rất nhiều",
+          "hz": "今天的作业很多",
+          "py": "jīntiān de zuòyè hěn duō",
+          "hv": "Kim thiên đích tác nghiệp hẩn đa",
+          "role": "Bối cảnh / Nguyên nhân",
+          "vn": "Bài tập của ngày hôm nay rất nhiều",
+          "radicals": "作 = Bộ nhân đứng; 业 = Bộ nhất; 多 = Bộ tịch"
+        },
+        {
+          "text": "Tôi muốn ăn xong cơm trưa",
+          "hz": "我想吃了午饭",
+          "py": "wǒ xiǎng chī le wǔfàn",
+          "hv": "Ngã tưởng ngật liễu ngọ phạn",
+          "role": "Hành động 1 hoàn thành",
+          "vn": "Tớ muốn ăn cơm trưa xong",
+          "radicals": "想 = Muốn; 吃 = Ăn; 了 = Trợ từ động thái; 饭 = Cơm"
+        },
+        {
+          "text": "Thì đến lớp làm bài tập ngay",
+          "hz": "就去教室做作业",
+          "py": "jiù qù jiàoshì zuò zuòyè",
+          "hv": "Tựu khứ giáo thất tác tác nghiệp",
+          "role": "Hành động 2 nối tiếp ngay lập tức",
+          "vn": "Liền đến phòng học làm bài tập",
+          "radicals": "就 = Liền; 教 = Dạy; 室 = Phòng; 做 = Làm"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我想吃了午饭", "tag": "Hành động 1 có 了" },
+        { "id": "t1", "text": "今天的作业很多", "tag": "Lý do bài nhiều" },
+        { "id": "t3", "text": "就去教室做作业", "tag": "Hành động 2 với 就" },
+        { "id": "t4", "text": "做作业就去教室", "tag": "Bẫy đảo câu liên động" },
+        { "id": "t5", "text": "吃了午饭再去", "tag": "Bẫy thay 就 bằng 再" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["今天的作业很多", "吃了午饭", "就去教室做作业"],
+      "wordBankPool": ["今天的作业很多", "我想吃了午饭", "就去教室做作业", "做作业就去教室", "吃了午饭再去", "作业很多今天"],
+      "traps": [
+        {
+          "pattern": "做作业就去教室",
+          "msg": "Lỗi liên động: Phải đến địa điểm trước rồi mới làm bài tập, cấu trúc là '去教室做作业', không đảo lộn."
+        }
+      ],
+      "explanation": "Cấu trúc kinh điển 'V1 + 了... 就 + V2' nhấn mạnh hành động 2 diễn ra ngay tức khắc sau khi hành động 1 kết thúc mà không có khoảng cách gián đoạn."
+    },
+    {
+      "id": "b27-08",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái phủ định 考得不太好 và cảm giác 难过",
+      "vi": "A: Cậu ấy làm sao vậy? B: Bởi vì cậu ấy làm bài không tốt, nên cậu ấy cảm thấy rất buồn.",
+      "zh": "她怎么了因为她考得不太好所以她觉得很难过",
+      "standardTrans": "她怎么了因为她考得不太好所以她觉得很难过",
+      "pinyin": "A: Tā zěnme le? B: Yīnwèi tā kǎo de bú tài hǎo, suǒyǐ tā juéde hěn nánguò.",
+      "grammarPoint": "Hỏi tình hình: 怎么了; Bổ ngữ trạng thái phủ định: 考得 + 不太好; Cặp liên từ: 因为...所以...; Cảm xúc: 难过",
+      "tokens": [
+        {
+          "text": "Cô ấy bị làm sao vậy",
+          "hz": "她怎么了",
+          "py": "tā zěnme le",
+          "hv": "Tha chẩm ma liễu",
+          "role": "Câu hỏi tình huống",
+          "vn": "Cô ấy có chuyện gì thế",
+          "radicals": "她 = Nữ; 怎 = Tâm; 了 = Trợ từ"
+        },
+        {
+          "text": "Bởi vì cô ấy thi không tốt lắm",
+          "hz": "因为她考得不太好",
+          "py": "yīnwèi tā kǎo de bú tài hǎo",
+          "hv": "Nhân vi tha khảo đắc bất thái hảo",
+          "role": "Vế nguyên nhân bổ ngữ trạng thái",
+          "vn": "Vì cô ấy thi không được tốt lắm",
+          "radicals": "因 = Vi; 考 = Lão 耂; 得 = Đắc; 不 = Bất; 好 = Hảo"
+        },
+        {
+          "text": "Nên cô ấy cảm thấy rất buồn",
+          "hz": "所以她觉得很难过",
+          "py": "suǒyǐ tā juéde hěn nánguò",
+          "hv": "Sở dĩ tha giác đắc hẩn nan quá",
+          "role": "Vế kết quả cảm xúc",
+          "vn": "Nên cô ấy cảm thấy rất buồn lòng",
+          "radicals": "所 = Hộ; 难 = Nan; 过 = Sước"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "因为她考得不太好", "tag": "Nguyên nhân thi kém" },
+        { "id": "t1", "text": "她怎么了", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "所以她觉得很难过", "tag": "Tâm trạng buồn của B" },
+        { "id": "t4", "text": "不考得好", "tag": "Bẫy phủ định đặt trước động từ" },
+        { "id": "t5", "text": "考得不好太", "tag": "Bẫy trật tự tính từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["她怎么了", "因为她考得不太好", "所以她觉得很难过"],
+      "wordBankPool": ["她怎么了", "因为她考得不太好", "所以她觉得很难过", "不考得好", "考得不好太", "考不太好得"],
+      "traps": [
+        {
+          "pattern": "不考得好",
+          "msg": "Lỗi phủ định bổ ngữ trạng thái: Từ phủ định '不' bắt buộc phải đặt sau '得' và trước tính từ miêu tả ('考得不好 / 考得不太好'), không đặt trước động từ '考'."
+        }
+      ],
+      "explanation": "Khi hỏi thăm ai đó có biểu hiện bất thường, mẫu câu chuẩn là '怎么了'. '难过' chỉ cảm xúc buồn bã đau lòng khi kết quả bài thi không như ý."
+    },
+    {
+      "id": "b27-09",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc sắp sửa xảy ra 要...了 và khuyên ngăn 别...了",
+      "vi": "Tuần sau thi rồi, cậu nên ôn tập đi, đừng xem ti vi nữa.",
+      "zh": "下星期要考试了你应该复习吧别看电视了",
+      "standardTrans": "下星期要考试了你应该复习吧别看电视了",
+      "pinyin": "Xià xīngqī yào kǎoshì le, nǐ yīnggāi fùxí ba, bié kàn diànshì le.",
+      "grammarPoint": "Sắp diễn ra: 要 + V + 了; Khuyên nhủ: 应该...吧; Chấm dứt hành động: 别...了",
+      "tokens": [
+        {
+          "text": "Tuần sau sắp thi rồi",
+          "hz": "下星期要考试了",
+          "py": "xià xīngqī yào kǎoshì le",
+          "hv": "Hạ tinh kỳ yếu khảo thí liễu",
+          "role": "Trạng ngữ thời gian sắp tới",
+          "vn": "Tuần sau sắp sửa thi cử rồi",
+          "radicals": "下 = Dưới, sau; 考 = Lão 耂; 试 = Bộ ngôn 讠; 了 = Trợ từ"
+        },
+        {
+          "text": "Bạn nên ôn tập đi",
+          "hz": "你应该复习吧",
+          "py": "nǐ yīnggāi fùxí ba",
+          "hv": "Nhĩ ưng cai phục tập ba",
+          "role": "Lời khuyên nhủ",
+          "vn": "Cậu nên ôn bài đi",
+          "radicals": "应 = Quảng; 复 = Bộ phộc 攵; 吧 = Khẩu"
+        },
+        {
+          "text": "Đừng xem ti vi nữa",
+          "hz": "别看电视了",
+          "py": "bié kàn diànshì le",
+          "hv": "Biệt khán điện thị liễu",
+          "role": "Khuyên ngăn chấm dứt",
+          "vn": "Đừng xem tivi nữa",
+          "radicals": "别 = Đao 刂; 电 = Điền; 视 = Bộ kiến 见; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "你应该复习吧", "tag": "Lời khuyên ôn tập" },
+        { "id": "t1", "text": "下星期要考试了", "tag": "Thời điểm sắp thi" },
+        { "id": "t3", "text": "别看电视了", "tag": "Ngăn xem tivi" },
+        { "id": "t4", "text": "不要看电视", "tag": "Bẫy thiếu trợ từ 了" },
+        { "id": "t5", "text": "要考试下星期了", "tag": "Bẫy trật tự thời gian" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["下星期要考试了", "你应该复习吧", "别看电视了"],
+      "wordBankPool": ["下星期要考试了", "你应该复习吧", "别看电视了", "不要看电视", "要考试下星期了", "别看电视"],
+      "traps": [
+        {
+          "pattern": "不要看电视",
+          "msg": "Lỗi thiếu trợ từ '了': Để diễn đạt ý khuyên đối phương 'đừng làm việc gì nữa' (đang xem thì dừng lại), bắt buộc phải có trợ từ '了' ở cuối câu ('别看电视了')."
+        }
+      ],
+      "explanation": "Kết cấu '要...了' báo hiệu sự kiện thi cử sắp tới gần. Cụm '别 + V + 了' mang ngữ khí khuyên bảo dứt khoát dừng ngay việc xem tivi để tập trung học."
+    },
+    {
+      "id": "b27-10",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc nhân quả và bổ ngữ trạng thái 学得很好",
+      "vi": "Bởi vì cô ấy học tập rất nỗ lực, nên cô ấy học rất giỏi.",
+      "zh": "因为她学习很努力所以她学得很好",
+      "standardTrans": "因为她学习很努力所以她学得很好",
+      "pinyin": "Yīnwèi tā xuéxí hěn nǔlì, suǒyǐ tā xué de hěn hǎo.",
+      "grammarPoint": "Cặp liên từ: 因为...所以...; Trạng thái nỗ lực: 很努力; Bổ ngữ trạng thái: 学得很好",
+      "tokens": [
+        {
+          "text": "Bởi vì cô ấy học tập rất nỗ lực",
+          "hz": "因为她学习很努力",
+          "py": "yīnwèi tā xuéxí hěn nǔlì",
+          "hv": "Nhân vi tha học tập hẩn nỗ lực",
+          "role": "Vế nguyên nhân",
+          "vn": "Bởi vì cô ấy học tập rất chăm chỉ",
+          "radicals": "因 = Vi; 努 = Lực; 力 = Lực"
+        },
+        {
+          "text": "Nên cô ấy học rất giỏi",
+          "hz": "所以她学得很好",
+          "py": "suǒyǐ tā xué de hěn hǎo",
+          "hv": "Sở dĩ tha học đắc hẩn hảo",
+          "role": "Vế kết quả bổ ngữ trạng thái",
+          "vn": "Cho nên cô ấy học rất tốt/giỏi",
+          "radicals": "所 = Hộ; 学 = Tử; 得 = Trợ từ; 好 = Hảo"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "因为她学习很努力", "tag": "Vế nguyên nhân" },
+        { "id": "t2", "text": "所以她学得很好", "tag": "Vế kết quả" },
+        { "id": "t3", "text": "学很好", "tag": "Bẫy thiếu trợ từ 得" },
+        { "id": "t4", "text": "学习得很努力", "tag": "Bẫy nhầm bổ ngữ ở vế 1" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["因为她学习很努力", "所以她学得很好"],
+      "wordBankPool": ["因为她学习很努力", "所以她学得很好", "学很好", "学习得很努力", "所以学得好很"],
+      "traps": [
+        {
+          "pattern": "学很好",
+          "msg": "Lỗi thiếu trợ từ '得': Đánh giá kết quả của động từ '学' phải có trợ từ kết cấu '得' ('学得很好')."
+        }
+      ],
+      "explanation": "Trong bản in sách giáo khoa (trang 343), vế đầu in nhầm thành '因为他学习...', bản chuẩn hóa văn cảnh nhân vật nữ đồng nhất đại từ '她'. Vế sau dùng bổ ngữ trạng thái rút gọn '学得很好'."
+    },
+    {
+      "id": "b27-11",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc 对...很感兴趣 và số lượng không xác định 不少",
+      "vi": "Cậu ấy rất hứng thú với phim Trung Quốc. Sau khi đến Trung Quốc, cậu ấy đã xem không ít phim Trung Quốc.",
+      "zh": "他对中国电影很感兴趣来中国以后他看了不少中国电影",
+      "standardTrans": "他对中国电影很感兴趣来中国以后他看了不少中国电影",
+      "pinyin": "Tā duì Zhōngguó diànyǐng hěn gǎn xìngqù. Lái Zhōngguó yǐhòu, tā kàn le bù shǎo Zhōngguó diànyǐng.",
+      "grammarPoint": "Cấu trúc quan tâm: 对...很感兴趣; Mệnh đề thời gian: [Sự việc] + 以后; Động từ hoàn thành: 看了 + 不少...",
+      "tokens": [
+        {
+          "text": "Rất có hứng thú với phim Trung Quốc",
+          "hz": "他对中国电影很感兴趣",
+          "py": "tā duì Zhōngguó diànyǐng hěn gǎn xìngqù",
+          "hv": "Tha đối Trung Quốc điện ảnh hẩn cảm thú",
+          "role": "Phân câu 1 (giới từ 对)",
+          "vn": "Cậu ấy rất thích phim Trung Quốc",
+          "radicals": "对 = Đối; 影 = Sam; 感 = Tâm; 趣 = Tẩu"
+        },
+        {
+          "text": "Sau khi đến Trung Quốc",
+          "hz": "来中国以后",
+          "py": "lái Zhōngguó yǐhòu",
+          "hv": "Lai Trung Quốc dĩ hậu",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Sau khi sang Trung Quốc",
+          "radicals": "来 = Đến; 以 = Dĩ; 后 = Hậu"
+        },
+        {
+          "text": "Đã xem không ít phim Trung Quốc",
+          "hz": "他看了不少中国电影",
+          "py": "tā kàn le bù shǎo Zhōngguó diànyǐng",
+          "hv": "Tha khán liễu bất thiếu Trung Quốc điện ảnh",
+          "role": "Phân câu vị ngữ hoàn thành",
+          "vn": "Cậu ấy đã xem nhiều bộ phim Trung Quốc",
+          "radicals": "看 = Xem; 了 = Trợ từ động thái; 少 = Thiếu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "来中国以后", "tag": "Thời gian sau khi đến" },
+        { "id": "t1", "text": "他对中国电影很感兴趣", "tag": "Sở thích đam mê" },
+        { "id": "t3", "text": "他看了不少中国电影", "tag": "Hành động xem nhiều phim" },
+        { "id": "t4", "text": "以后来中国", "tag": "Bẫy trật tự 以后" },
+        { "id": "t5", "text": "看不少中国电影了", "tag": "Bẫy vị trí trợ từ 了" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["对中国电影很感兴趣", "来中国以后", "看了不少中国电影"],
+      "wordBankPool": ["他对中国电影很感兴趣", "来中国以后", "他看了不少中国电影", "以后来中国", "看不少中国电影了", "感兴趣对中国电影"],
+      "traps": [
+        {
+          "pattern": "以后来中国",
+          "msg": "Lỗi cấu trúc thời gian: 'Sau khi đến Trung Quốc' bắt buộc phải đưa hành động lên trước: '来中国以后'."
+        },
+        {
+          "pattern": "看不少中国电影了",
+          "msg": "Lỗi trợ từ động thái: Khi tân ngữ có số lượng từ hạn định rõ ràng ('不少中国电影'), trợ từ '了' phải đặt ngay sau động từ ('看了不少...')."
+        }
+      ],
+      "explanation": "Cụm '不少' (không ít) làm định ngữ chỉ số lượng nhiều. Động từ '看' mang trợ từ động thái '了' đứng trước cụm tân ngữ định lượng."
+    },
+    {
+      "id": "b27-12",
+      "type": "anti_word_by_word",
+      "title": "Mẫu câu liên hoàn V1 + 了... 就 + V2 và câu hỏi ngược 你呢",
+      "vi": "Hôm qua tớ mua sách xong liền về trường. Còn cậu?",
+      "zh": "昨天我买了书就回学校了你呢",
+      "standardTrans": "昨天我买了书就回学校了你呢",
+      "pinyin": "Zuótiān wǒ mǎi le shū jiù huí xuéxiào le, nǐ ne?",
+      "grammarPoint": "Hành động liên tiếp: V1 + 了 + Tân ngữ + 就 + V2 + 了; Hỏi ngược lại: 你呢",
+      "tokens": [
+        {
+          "text": "Tôi mua sách xong",
+          "hz": "昨天我买了书",
+          "py": "zuótiān wǒ mǎi le shū",
+          "hv": "Tác thiên ngã mãi liễu thư",
+          "role": "Thời gian + Hành động 1",
+          "vn": "Hôm qua tôi mua sách xong",
+          "radicals": "昨 = Nhật; 买 = Mua; 书 = Thư"
+        },
+        {
+          "text": "Liền quay về trường học rồi",
+          "hz": "就回学校了",
+          "py": "jiù huí xuéxiào le",
+          "hv": "Tựu hồi học hiệu liễu",
+          "role": "Hành động 2 nối tiếp",
+          "vn": "Thì về trường luôn rồi",
+          "radicals": "就 = Liền; 回 = Về; 校 = Mộc; 了 = Ngữ khí"
+        },
+        {
+          "text": "Còn cậu",
+          "hz": "你呢",
+          "py": "nǐ ne",
+          "hv": "Nhĩ ni",
+          "role": "Hỏi tỉnh lược",
+          "vn": "Còn bạn thì sao",
+          "radicals": "你 = Nhân; 呢 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "就回学校了", "tag": "Hành động 2 với 就" },
+        { "id": "t1", "text": "昨天我买了书", "tag": "Hành động 1 với 了" },
+        { "id": "t3", "text": "你呢", "tag": "Hỏi ngược" },
+        { "id": "t4", "text": "去回学校了", "tag": "Bẫy động từ" },
+        { "id": "t5", "text": "买书了就", "tag": "Bẫy vị trí trợ từ 了" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["昨天我买了书", "就回学校了", "你呢"],
+      "wordBankPool": ["昨天我买了书", "就回学校了", "你呢", "去回学校了", "买书了就", "我买书昨天就"],
+      "traps": [
+        {
+          "pattern": "买书了就",
+          "msg": "Lỗi vị trí trợ từ: Trong kết cấu 'V1 + 了... 就 + V2', trợ từ '了' phải đặt ngay sau động từ thứ nhất trước tân ngữ ('买了书就...')."
+        }
+      ],
+      "explanation": "Hai hành động diễn ra nối tiếp trong quá khứ: 买了书 (hoàn thành mua sách) -> 就回学校了 (liền quay về trường ngay). '你呢' hỏi lại đối phương về trải nghiệm tương tự."
+    },
+    {
+      "id": "b27-13",
+      "type": "sentence_parsing",
+      "title": "Hỏi thăm bệnh tình với 怎么样 và động từ mắc bệnh 得了",
+      "vi": "A: Mary, Điền Phương thế nào rồi? Cậu ấy không sao chứ? B: Bác sĩ nói cậu ấy bị viêm ruột, phải nằm viện.",
+      "zh": "玛丽田芳怎么样了她没事吧医生说她得了肠炎要住院",
+      "standardTrans": "玛丽田芳怎么样了她没事吧医生说她得了肠炎要住院",
+      "pinyin": "A: Mǎlì, Tián Fāng zěnmeyàng le? Tā méi shì ba? B: Yīshēng shuō tā dé le chángyán, yào zhùyuàn.",
+      "grammarPoint": "Hỏi tình hình biến chuyển: 怎么样了; Phỏng đoán nhẹ: 没事吧; Mắc bệnh: 得了 + Tên bệnh; Bắt buộc: 要住院",
+      "tokens": [
+        {
+          "text": "Điền Phương thế nào rồi",
+          "hz": "田芳怎么样了",
+          "py": "Tián Fāng zěnmeyàng le",
+          "hv": "Điền Phương chẩm ma dạng liễu",
+          "role": "Hỏi thăm sức khỏe",
+          "vn": "Điền Phương ra sao rồi",
+          "radicals": "田 = Điền; 芳 = Thảo; 样 = Mộc"
+        },
+        {
+          "text": "Cậu ấy không sao chứ",
+          "hz": "她没事吧",
+          "py": "tā méi shì ba",
+          "hv": "Tha một sự ba",
+          "role": "Câu hỏi thăm dò nhẹ nhàng",
+          "vn": "Cô ấy không việc gì chứ",
+          "radicals": "事 = Quyết; 吧 = Khẩu"
+        },
+        {
+          "text": "Bác sĩ nói cô ấy bị viêm ruột phải nằm viện",
+          "hz": "医生说她得了肠炎要住院",
+          "py": "yīshēng shuō tā dé le chángyán yào zhùyuàn",
+          "hv": "Y sinh thuyết tha đắc liễu tràng viêm yếu trụ viện",
+          "role": "Lời đáp thông báo bệnh tình",
+          "vn": "Bác sĩ bảo bạn ấy mắc viêm ruột, cần nằm viện",
+          "radicals": "得 = Đắc (mắc bệnh); 肠 = Bộ nhục 月; 炎 = Hai bộ hỏa 火; 住 = Trụ/ở"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "她没事吧", "tag": "Thăm dò không sao chứ" },
+        { "id": "t1", "text": "玛丽田芳怎么样了", "tag": "Hỏi thăm của A" },
+        { "id": "t3", "text": "医生说她得了肠炎要住院", "tag": "Kết quả chẩn đoán của B" },
+        { "id": "t4", "text": "生病了肠炎", "tag": "Bẫy dùng từ mắc bệnh" },
+        { "id": "t5", "text": "院住", "tag": "Bẫy đảo từ 住院" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["田芳怎么样了", "她没事吧", "得了肠炎", "要住院"],
+      "wordBankPool": ["玛丽田芳怎么样了", "她没事吧", "医生说她得了肠炎要住院", "生病了肠炎", "院住", "要院住"],
+      "traps": [
+        {
+          "pattern": "生病了肠炎",
+          "msg": "Lỗi dùng từ mắc bệnh: '生病' là từ khái quát không mang tân ngữ tên bệnh cụ thể phía sau. Muốn nói mắc chứng bệnh gì cụ thể dùng '得了 + Tên bệnh' ('得了肠炎')."
+        }
+      ],
+      "explanation": "Động từ '得' (đọc là dé) mang nghĩa mắc phải, nhiễm phải một căn bệnh cụ thể. '住院' (nằm viện) là cụm động tân cố định."
+    },
+    {
+      "id": "b27-14",
+      "type": "sentence_parsing",
+      "title": "Hỏi cảm giác hiện tại và liệt kê triệu chứng với 有点儿",
+      "vi": "A: Bây giờ cậu cảm thấy thế nào rồi? B: Tớ cảm thấy hơi sốt, đau đầu, đau họng.",
+      "zh": "现在你觉得怎么样了我觉得有点儿发烧头疼嗓子疼",
+      "standardTrans": "现在你觉得怎么样了我觉得有点儿发烧头疼嗓子疼",
+      "pinyin": "A: Xiànzài nǐ juéde zěnmeyàng le? B: Wǒ juéde yǒudiǎnr fāshāo, tóuténg, sǎngzi téng.",
+      "grammarPoint": "Hỏi cảm giác: 觉得怎么样了; Triệu chứng tiêu cực: 有点儿 + Phát sốt, đau đầu, đau cổ họng",
+      "tokens": [
+        {
+          "text": "Bây giờ cậu cảm thấy thế nào rồi",
+          "hz": "现在你觉得怎么样了",
+          "py": "xiànzài nǐ juéde zěnmeyàng le",
+          "hv": "Hiện tại nhĩ giác đắc chẩm ma dạng liễu",
+          "role": "Câu hỏi thăm sức khỏe",
+          "vn": "Giờ cậu thấy trong người thế nào rồi",
+          "radicals": "现 = Vương; 觉 = Kiến; 样 = Mộc"
+        },
+        {
+          "text": "Tôi cảm thấy hơi sốt",
+          "hz": "我觉得有点儿发烧",
+          "py": "wǒ juéde yǒudiǎnr fāshāo",
+          "hv": "Ngã giác đắc hữu điểm nhi phát thiêu",
+          "role": "Triệu chứng 1 (kèm phó từ)",
+          "vn": "Tớ thấy hơi bị sốt",
+          "radicals": "发 = Phát; 烧 = Hỏa"
+        },
+        {
+          "text": "Đau đầu đau họng",
+          "hz": "头疼嗓子疼",
+          "py": "tóuténg sǎngzi téng",
+          "hv": "Đầu thống tảng tử thống",
+          "role": "Triệu chứng 2 & 3",
+          "vn": "Nhức đầu, đau cổ họng",
+          "radicals": "头 = Đầu; 疼 = Nạch; 嗓 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我觉得有点儿发烧", "tag": "Cảm giác sốt của B" },
+        { "id": "t1", "text": "现在你觉得怎么样了", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "头疼嗓子疼", "tag": "Các triệu chứng đau nhức" },
+        { "id": "t4", "text": "一点儿发烧", "tag": "Bẫy phó từ 有点儿" },
+        { "id": "t5", "text": "疼头", "tag": "Bẫy đảo vị ngữ đau" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["觉得怎么样了", "有点儿发烧", "头疼", "嗓子疼"],
+      "wordBankPool": ["现在你觉得怎么样了", "我觉得有点儿发烧", "头疼嗓子疼", "一点儿发烧", "疼头", "发烧有点儿"],
+      "traps": [
+        {
+          "pattern": "一点儿发烧",
+          "msg": "Lỗi phó từ mức độ: Biểu thị triệu chứng khó chịu (hơi sốt) phải dùng '有点儿发烧', không dùng '一点儿'."
+        },
+        {
+          "pattern": "疼头",
+          "msg": "Lỗi ngữ tự: Trong tiếng Trung, bộ phận cơ thể đau phải đứng TRƯỚC tính từ '疼' ('头疼', '嗓子疼', '牙疼'), không nói '疼头'."
+        }
+      ],
+      "explanation": "Trong tiếng Trung, quy tắc miêu tả đau nhức ở bộ phận cơ thể luôn là: [Bộ phận] + 疼 (头疼, 牙疼, 嗓子疼, 肚子疼). '有点儿' đứng trước vị ngữ miêu tả mức độ nhẹ của bệnh."
+    },
+    {
+      "id": "b27-15",
+      "type": "anti_word_by_word",
+      "title": "Mệnh đề hoàn cảnh 上课了 và mệnh đề khuyên ngăn 请大家不要",
+      "vi": "Vào lớp rồi, mọi người không nói chuyện nữa.",
+      "zh": "上课了请大家不要说话了",
+      "standardTrans": "上课了请大家不要说话了",
+      "pinyin": "Shàngkè le, qǐng dàjiā bú yào shuōhuà le.",
+      "grammarPoint": "Thời điểm bắt đầu: 上课了; Lịch sự khuyên ngăn dừng hành vi: 请大家不要...了",
+      "tokens": [
+        {
+          "text": "Vào lớp rồi",
+          "hz": "上课了",
+          "py": "shàngkè le",
+          "hv": "Thượng khóa liễu",
+          "role": "Thời điểm / Bối cảnh",
+          "vn": "Đã bắt đầu giờ học rồi",
+          "radicals": "上 = Lên; 课 = Ngôn; 了 = Trợ từ"
+        },
+        {
+          "text": "Xin mọi người đừng nói chuyện nữa",
+          "hz": "请大家不要说话了",
+          "py": "qǐng dàjiā bú yào shuōhuà le",
+          "hv": "Thỉnh đại gia bất yếu thuyết thoại liễu",
+          "role": "Lời đề nghị khuyên ngăn",
+          "vn": "Mời mọi người không nói chuyện nữa",
+          "radicals": "请 = Ngôn; 大 = Đại; 家 = Miên; 不 = Bất; 说 = Ngôn; 话 = Ngôn; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "上课了", "tag": "Bối cảnh vào lớp" },
+        { "id": "t2", "text": "请大家不要说话了", "tag": "Khuyên giữ trật tự" },
+        { "id": "t3", "text": "不要说话大家", "tag": "Bẫy trật tự đại từ" },
+        { "id": "t4", "text": "不上课了", "tag": "Bẫy phủ định nhầm" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["上课了", "请大家不要说话了"],
+      "wordBankPool": ["上课了", "请大家不要说话了", "不要说话大家", "不上课了", "大家请不要说话"],
+      "traps": [
+        {
+          "pattern": "不要说话大家",
+          "msg": "Lỗi xưng hô: Đại từ chỉ tập thể '大家' (mọi người) phải đứng ngay sau từ lịch sự '请' và đứng trước lời cấm/khuyên ('请大家不要...')."
+        }
+      ],
+      "explanation": "Câu khẩu ngữ lớp học kinh điển: '上课了' báo hiệu sự chuyển trạng thái bắt đầu vào giờ học; kết cấu '不要...了' kết hợp với '请大家' tạo nên lời nhắc nhở lịch sự nhưng dứt khoát chấm dứt việc nói chuyện riêng."
+    }
+  ]
+}
