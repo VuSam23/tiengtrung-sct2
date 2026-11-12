@@ -1,0 +1,660 @@
+{
+  "lessonId": "b04",
+  "lessonTitle": "第4课: 快上来吧,要开车了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "送 vs 给",
+        "py": "sòng vs gěi",
+        "note": "送 dùng khi tặng quà, đưa tiễn hoặc biếu tặng mang tính chia sẻ tình cảm; 给 là động từ chung chỉ hành động đưa hoặc trao đổi đồ vật trực tiếp giữa người với người."
+      },
+      {
+        "word": "会议 vs 开会",
+        "py": "huìyì vs kāi huì",
+        "note": "会议 là danh từ chỉ sự kiện cuộc họp, hội nghị; 开会 là động từ li hợp chỉ hành vi bắt đầu tổ chức hoặc tham gia cuộc họp."
+      },
+      {
+        "word": "通过 vs 经过",
+        "py": "tōngguò vs jīngguò",
+        "note": "通过 nhấn mạnh phương thức/phương tiện để đạt mục đích hoặc vượt qua tiêu chuẩn; 经过 nhấn mạnh quá trình trải nghiệm thời gian, lộ trình đi ngang qua địa điểm."
+      },
+      {
+        "word": "马上 vs 立刻 vs 顿时",
+        "py": "mǎshàng vs lìkè vs dùnshí",
+        "note": "马上 biểu thị thời gian rất ngắn theo góc nhìn chủ quan (có thể dùng trong câu mệnh lệnh/nghi vấn); 立刻 nhấn mạnh tính tức khắc khách quan; 顿时 chỉ hành động/trạng thái diễn ra ngay trong quá khứ."
+      }
+    ],
+    "grammarTips": [
+      "Giới từ 向 (xiàng): 向 + Danh từ địa điểm/Phương vị từ + Động từ (hướng về) HOẶC 向 + Danh từ chỉ người + Động từ (đối với ai).",
+      "Bổ ngữ xu hướng đơn 来/去: Khi tân ngữ là nơi chốn, bắt buộc đặt trước 来/去 (V + Nơi chốn + 来/去). Hướng về phía người nói dùng 来, xa rời người nói dùng 去.",
+      "Động thái sắp xảy ra: 快要/就要/要...了; khi có trạng ngữ thời gian xác định thì bắt buộc dùng 就要...了, tuyệt đối không dùng 快要...了.",
+      "Bổ ngữ kết quả: V + Bổ ngữ kết quả (完/清楚/好) + Tân ngữ."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b04-01",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng chỉ vị trí nơi chốn với 来",
+      "vi": "Thầy giáo Trương ở trên xe gọi chúng tôi: Các bạn học, xe sắp chạy rồi, các em mau lên xe đi.",
+      "zh": "张老师在汽车上叫我们同学们快要开车了你们快上来吧",
+      "standardTrans": "张老师在汽车上叫我们同学们快要开车了你们快上来吧",
+      "pinyin": "Zhāng lǎoshī zài qìchē shàng jiào wǒmen: Tóngxuémen, kuàiyào kāichē le, nǐmen kuài shànglai ba",
+      "grammarPoint": "Bổ ngữ xu hướng đơn: 上来 (người nói ở trên xe hướng người khác lên); Cấu trúc sắp xảy ra: 快要...了",
+      "tokens": [
+        {
+          "text": "xe hơi, ô tô",
+          "hz": "汽车",
+          "py": "qìchē",
+          "hv": "khí xa",
+          "role": "Danh từ",
+          "vn": "xe hơi, ô tô, xe khách",
+          "radicals": "汽 = Bộ thủy 氵; 车 = Bộ xa 车"
+        },
+        {
+          "text": "sắp sửa",
+          "hz": "快要",
+          "py": "kuàiyào",
+          "hv": "khoái yếu",
+          "role": "Phó từ",
+          "vn": "sắp sửa, sắp tới lúc",
+          "radicals": "快 = Bộ tâm đứng 忄; 要 = Bộ á 覀"
+        },
+        {
+          "text": "lái xe, khởi hành",
+          "hz": "开车",
+          "py": "kāichē",
+          "hv": "khai xa",
+          "role": "Động từ",
+          "vn": "lái xe, xe chạy, khởi hành",
+          "radicals": "开 = Bộ củng 廾; 车 = Bộ xa 车"
+        },
+        {
+          "text": "bước lên đây",
+          "hz": "上来",
+          "py": "shànglai",
+          "hv": "thượng lai",
+          "role": "Bổ ngữ xu hướng",
+          "vn": "lên đây (hướng về phía người nói)",
+          "radicals": "上 = Bộ nhất 一; 来 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "张老师", "tag": "Danh từ" },
+        { "id": "t2", "text": "在汽车上", "tag": "Nơi chốn" },
+        { "id": "t3", "text": "叫我们", "tag": "Động tân" },
+        { "id": "t4", "text": "同学们", "tag": "Danh từ" },
+        { "id": "t5", "text": "快要", "tag": "Phó từ" },
+        { "id": "t6", "text": "开车了", "tag": "Động từ" },
+        { "id": "t7", "text": "你们", "tag": "Đại từ" },
+        { "id": "t8", "text": "快", "tag": "Phó từ" },
+        { "id": "t9", "text": "上来吧", "tag": "Xu hướng" },
+        { "id": "t10", "text": "快上去吧", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"],
+      "requiredKeywordsZh": ["汽车上", "同学们", "快要", "开车了", "快上来吧"],
+      "wordBankPool": ["快要", "在汽车上", "张老师", "开车了", "快上去吧", "同学们", "快", "上来吧", "你们", "叫我们"],
+      "traps": [
+        {
+          "pattern": "快上去",
+          "msg": "Lỗi phương hướng của bổ ngữ xu hướng: Thầy giáo đang đứng ở TRÊN XE gọi học sinh bước lên (hướng về phía người nói) nên bắt buộc dùng 上来, không dùng 上去."
+        },
+        {
+          "pattern": "开车快要",
+          "msg": "Lỗi trật tự phó từ: Kết cấu biểu thị sự việc sắp xảy ra là 快要...了, phó từ 快要 phải đứng trước cụm động từ 开车."
+        }
+      ],
+      "explanation": "Câu kết hợp cấu trúc động tác sắp phát sinh 快要...了 và bổ ngữ xu hướng đơn 上来. Vì người nói ở vị trí trên xe nên hành động bước lên hướng về phía người nói bắt buộc dùng 来."
+    },
+    {
+      "id": "b04-02",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 清楚 và cấu trúc câu chữ 把",
+      "vi": "Bạn vui lòng điền hết rõ ràng vào tờ này.",
+      "zh": "请你把这张表填清楚",
+      "standardTrans": "请你把这张表填清楚",
+      "pinyin": "Qǐng nǐ bǎ zhè zhāng biǎo tián qīngchu",
+      "grammarPoint": "Câu chữ 把 + V + Bổ ngữ kết quả: 填清楚 (CẤM dùng cùng lúc 完 và 清楚)",
+      "tokens": [
+        {
+          "text": "tờ biểu mẫu này",
+          "hz": "这张表",
+          "py": "zhè zhāng biǎo",
+          "hv": "giá trương biểu",
+          "role": "Tân ngữ",
+          "vn": "tờ giấy biểu mẫu, bảng khai này",
+          "radicals": "张 = Bộ cung 弓; 表 = Bộ y 衣"
+        },
+        {
+          "text": "điền vào",
+          "hz": "填",
+          "py": "tián",
+          "hv": "điền",
+          "role": "Động từ",
+          "vn": "điền, viết thông tin vào biểu mẫu",
+          "radicals": "填 = Bộ thổ 土"
+        },
+        {
+          "text": "rõ ràng",
+          "hz": "清楚",
+          "py": "qīngchu",
+          "hv": "thanh sở",
+          "role": "Bổ ngữ kết quả",
+          "vn": "rõ ràng, minh bạch, rành mạch",
+          "radicals": "清 = Bộ thủy 氵; 楚 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "请你", "tag": "Kính ngữ" },
+        { "id": "t2", "text": "把", "tag": "Giới từ" },
+        { "id": "t3", "text": "这张表", "tag": "Tân ngữ" },
+        { "id": "t4", "text": "填", "tag": "Động từ" },
+        { "id": "t5", "text": "清楚", "tag": "Bổ ngữ" },
+        { "id": "t6", "text": "填完清楚", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["请你", "把这张表", "填清楚"],
+      "wordBankPool": ["清楚", "填", "把", "请你", "填完清楚", "这张表"],
+      "traps": [
+        {
+          "pattern": "填完清楚",
+          "msg": "Lỗi xung đột bổ ngữ kết quả: Động từ 填 chỉ được phép nhận 1 bổ ngữ kết quả duy nhất (hoặc 完 biểu thị hoàn thành, hoặc 清楚 biểu thị độ rõ ràng), không được ghép thành 填完清楚."
+        },
+        {
+          "pattern": "填清楚把",
+          "msg": "Lỗi cấu trúc câu chữ 把: Cụm '把 + Tân ngữ' bắt buộc đứng trước động từ chính (把这张表填清楚), không đặt sau động từ."
+        }
+      ],
+      "explanation": "Câu chữ 把 kết hợp bổ ngữ kết quả 清楚 để chỉ rõ yêu cầu tác động làm thay đổi trạng thái của biểu mẫu. Tuyệt đối không dùng đồng thời hai bổ ngữ kết quả 完 và 清楚 cạnh nhau."
+    },
+    {
+      "id": "b04-03",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng lặp lại hành động với 回去",
+      "vi": "Cô ấy về ký túc xá lấy máy ảnh rồi, chúng ta đợi cô ấy một lát nhé.",
+      "zh": "她回宿舍去拿照相机了我们等她一会儿吧",
+      "standardTrans": "她回宿舍去拿照相机了我们等她一会儿吧",
+      "pinyin": "Tā huí sùshè qù ná zhàoxiàngjī le, wǒmen děng tā yíhuìr ba",
+      "grammarPoint": "V liên động + Tân ngữ nơi chốn đứng trước 去: 回 + Nơi chốn (宿舍) + 去 + Động từ 2",
+      "tokens": [
+        {
+          "text": "ký túc xá",
+          "hz": "宿舍",
+          "py": "sùshè",
+          "hv": "túc xá",
+          "role": "Danh từ",
+          "vn": "ký túc xá học sinh/sinh viên",
+          "radicals": "宿 = Bộ miên 宀; 舍 = Bộ thiệt 舌"
+        },
+        {
+          "text": "máy ảnh",
+          "hz": "照相机",
+          "py": "zhàoxiàngjī",
+          "hv": "chiếu tương cơ",
+          "role": "Danh từ",
+          "vn": "máy chụp hình, máy ảnh",
+          "radicals": "照 = Bộ hỏa 灬; 相 = Bộ mục 目; 机 = Bộ mộc 木"
+        },
+        {
+          "text": "đợi một lát",
+          "hz": "等一会儿",
+          "py": "děng yíhuìr",
+          "hv": "đẳng nhất hội nhi",
+          "role": "Động bổ",
+          "vn": "chờ đợi trong chốc lát",
+          "radicals": "等 = Bộ trúc 竹; 会 = Bộ nhân 人"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "她", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "回宿舍去", "tag": "Xu hướng" },
+        { "id": "t3", "text": "拿", "tag": "Động từ" },
+        { "id": "t4", "text": "照相机了", "tag": "Tân ngữ" },
+        { "id": "t5", "text": "我们", "tag": "Chủ ngữ 2" },
+        { "id": "t6", "text": "等她", "tag": "Động tân" },
+        { "id": "t7", "text": "一会儿吧", "tag": "Thời lượng" },
+        { "id": "t8", "text": "回去宿舍", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["回宿舍去", "拿照相机", "等她一会儿"],
+      "wordBankPool": ["等她", "回去宿舍", "照相机了", "她", "一会儿吧", "我们", "回宿舍去", "拿"],
+      "traps": [
+        {
+          "pattern": "回去宿舍",
+          "msg": "Lỗi vị trí tân ngữ nơi chốn: Khi động từ mang tân ngữ chỉ địa điểm (宿舍), tân ngữ bắt buộc phải đặt TRƯỚC 去 thành 回宿舍去, không được nói 回去宿舍."
+        },
+        {
+          "pattern": "拿照相机回去",
+          "msg": "Lỗi liên động: Hành động đi về ký túc xá thực hiện trước để lấy máy ảnh, cấu trúc đúng là 回宿舍去拿照相机."
+        }
+      ],
+      "explanation": "Câu liên động kết hợp bổ ngữ xu hướng chỉ nơi chốn. Theo quy tắc ngữ pháp Hán ngữ, tân ngữ nơi chốn 宿舍 bắt buộc đứng trước trợ từ xu hướng 去 (回宿舍去) rồi mới đến hành động tiếp theo 拿照相机."
+    },
+    {
+      "id": "b04-04",
+      "type": "sentence_parsing",
+      "title": "Giới từ chỉ hướng 向 biểu thị đối tượng của hành động",
+      "vi": "Cậu ấy ưu tú như vậy, chúng ta nên học tập theo cậu ấy.",
+      "zh": "他这么优秀你们应该向他学习",
+      "standardTrans": "他这么优秀你们应该向他学习",
+      "pinyin": "Tā zhème yōuxiù, nǐmen yīnggāi xiàng tā xuéxí",
+      "grammarPoint": "向 + Danh từ/Đại từ chỉ người + Động từ (向他学习: học tập ai đó)",
+      "tokens": [
+        {
+          "text": "ưu tú",
+          "hz": "优秀",
+          "py": "yōuxiù",
+          "hv": "ưu tú",
+          "role": "Tính từ",
+          "vn": "xuất sắc, ưu tú",
+          "radicals": "优 = Bộ nhân đứng 亻; 秀 = Bộ hòa 禾"
+        },
+        {
+          "text": "học tập theo ai",
+          "hz": "向他学习",
+          "py": "xiàng tā xuéxí",
+          "hv": "hướng tha học tập",
+          "role": "Cụm vị ngữ",
+          "vn": "noi gương, học hỏi từ cậu ấy",
+          "radicals": "向 = Bộ khẩu 口; 学 = Bộ tử 子; 习 = Bộ phiệt 丿"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "这么优秀", "tag": "Vị ngữ" },
+        { "id": "t3", "text": "你们", "tag": "Chủ ngữ 2" },
+        { "id": "t4", "text": "应该", "tag": "Năng nguyện" },
+        { "id": "t5", "text": "向他", "tag": "Giới từ" },
+        { "id": "t6", "text": "学习", "tag": "Động từ" },
+        { "id": "t7", "text": "朝他", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["这么优秀", "应该", "向他学习"],
+      "wordBankPool": ["向他", "这么优秀", "他", "朝他", "学习", "应该", "你们"],
+      "traps": [
+        {
+          "pattern": "学习他",
+          "msg": "Lỗi dịch bồi tiếng Việt: Tiếng Trung không dùng '学习 + Người', khi muốn học tập theo tấm gương của ai bắt buộc dùng kết cấu giới từ '向 + Người + 学习'."
+        },
+        {
+          "pattern": "朝他",
+          "msg": "Lỗi phân biệt giới từ: 朝 chỉ dùng cho phương hướng không gian cụ thể, với đối tượng trừu tượng hoặc học tập theo ai bắt buộc chỉ dùng 向."
+        }
+      ],
+      "explanation": "Giới từ 向 dẫn ra đối tượng trừu tượng tiếp nhận hành vi. Cấu trúc cố định 向...学习 mang nghĩa noi gương, học tập theo phẩm chất tốt đẹp của người khác."
+    },
+    {
+      "id": "b04-05",
+      "type": "sentence_parsing",
+      "title": "Động từ 经过 chỉ lộ trình di chuyển qua không gian",
+      "vi": "Đúng lúc tớ đi qua nơi này nên tiện đường đến thăm cậu.",
+      "zh": "我正好经过这儿顺便过来看看你",
+      "standardTrans": "我正好经过这儿顺便过来看看你",
+      "pinyin": "Wǒ zhènghǎo jīngguò zhèr, shùnbiàn guòlai kànkan nǐ",
+      "grammarPoint": "经过 + Địa điểm (đi ngang qua); 顺便 + Động từ (nhân tiện làm gì)",
+      "tokens": [
+        {
+          "text": "đi ngang qua",
+          "hz": "经过",
+          "py": "jīngguò",
+          "hv": "kinh quá",
+          "role": "Động từ",
+          "vn": "đi qua, ghé ngang qua địa điểm",
+          "radicals": "经 = Bộ mịch 纟; 过 = Bộ quai xước 辶"
+        },
+        {
+          "text": "nhân tiện",
+          "hz": "顺便",
+          "py": "shùnbiàn",
+          "hv": "thuận tiện",
+          "role": "Phó từ",
+          "vn": "nhân tiện, tiện đường làm gì",
+          "radicals": "顺 = Bộ hiệt 页; 便 = Bộ nhân đứng 亻"
+        },
+        {
+          "text": "qua đây",
+          "hz": "过来",
+          "py": "guòlai",
+          "hv": "quá lai",
+          "role": "Bổ ngữ xu hướng",
+          "vn": "ghé sang đây, lại đây",
+          "radicals": "过 = Bộ quai xước 辶; 来 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "正好", "tag": "Phó từ" },
+        { "id": "t3", "text": "经过这儿", "tag": "Động tân" },
+        { "id": "t4", "text": "顺便", "tag": "Phó từ" },
+        { "id": "t5", "text": "过来", "tag": "Xu hướng" },
+        { "id": "t6", "text": "看看你", "tag": "Động tân" },
+        { "id": "t7", "text": "通过这儿", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["正好", "经过这儿", "顺便", "看看你"],
+      "wordBankPool": ["看看你", "经过这儿", "我", "通过这儿", "顺便", "正好", "过来"],
+      "traps": [
+        {
+          "pattern": "通过这儿",
+          "msg": "Lỗi phân biệt 通过 và 经过: Khi muốn nói việc di chuyển đi ngang qua một địa điểm trên đường, bắt buộc dùng 经过, không dùng 通过."
+        },
+        {
+          "pattern": "过去看你",
+          "msg": "Lỗi góc nhìn bổ ngữ xu hướng: Người nói đã tới nơi đối thoại đối mặt với bạn nên phải dùng 过来, không dùng 过去."
+        }
+      ],
+      "explanation": "Động từ 经过 kết hợp tân ngữ nơi chốn 这儿 diễn tả hành động đi lướt qua một vị trí địa lý. Vế sau dùng phó từ 顺便 kết hợp bổ ngữ xu hướng 过来 để diễn đạt việc tiện thể ghé thăm."
+    },
+    {
+      "id": "b04-06",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc 就要...了 với phó từ thời gian 马上",
+      "vi": "Năm nay em trai tôi là sinh viên đại học năm thứ tư, sắp sửa tốt nghiệp rồi.",
+      "zh": "我弟弟今年是大学四年级学生马上就要毕业了",
+      "standardTrans": "我弟弟今年是大学四年级学生马上就要毕业了",
+      "pinyin": "Wǒ dìdi jīnnián shì dàxué sì niánjí xuésheng, mǎshàng jiù yào bìyè le",
+      "grammarPoint": "Cấu trúc hành động sắp xảy ra ngay: 马上 + 就要...了 (毕业 là động từ li hợp)",
+      "tokens": [
+        {
+          "text": "sinh viên",
+          "hz": "大学生",
+          "py": "dàxuéshēng",
+          "hv": "đại học sinh",
+          "role": "Danh từ",
+          "vn": "sinh viên đại học",
+          "radicals": "大 = Bộ đại 大; 学 = Bộ tử 子; 生 = Bộ sinh 生"
+        },
+        {
+          "text": "ngay lập tức",
+          "hz": "马上",
+          "py": "mǎshàng",
+          "hv": "mã thượng",
+          "role": "Phó từ",
+          "vn": "ngay lập tức, tức thì",
+          "radicals": "马 = Bộ mã 马; 上 = Bộ nhất 一"
+        },
+        {
+          "text": "tốt nghiệp",
+          "hz": "毕业",
+          "py": "bìyè",
+          "hv": "tất nghiệp",
+          "role": "Động từ li hợp",
+          "vn": "tốt nghiệp ra trường",
+          "radicals": "毕 = Bộ điền 田; 业 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我弟弟", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "今年是", "tag": "Thời gian" },
+        { "id": "t3", "text": "大学", "tag": "Danh từ" },
+        { "id": "t4", "text": "四年级学生", "tag": "Tân ngữ" },
+        { "id": "t5", "text": "马上", "tag": "Phó từ" },
+        { "id": "t6", "text": "就要", "tag": "Phó từ" },
+        { "id": "t7", "text": "毕业了", "tag": "Vị ngữ" },
+        { "id": "t8", "text": "毕业大学", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["四年级学生", "马上", "就要", "毕业了"],
+      "wordBankPool": ["四年级学生", "马上", "我弟弟", "毕业大学", "大学", "今年是", "就要", "毕业了"],
+      "traps": [
+        {
+          "pattern": "毕业大学",
+          "msg": "Lỗi động từ li hợp: 毕业 là động từ li hợp đã chứa sẵn tân ngữ 业, tuyệt đối không được mang thêm tân ngữ phía sau như 毕业大学."
+        },
+        {
+          "pattern": "快毕业大学",
+          "msg": "Lỗi thiếu ngữ khí: Cấu trúc biểu thị sắp tốt nghiệp cần có trợ từ 了 ở cuối cụm: 马上就要毕业了."
+        }
+      ],
+      "explanation": "Sự kết hợp giữa phó từ chỉ thời gian ngắn 马上 với cấu trúc 就要...了 để nhấn mạnh sự việc tốt nghiệp đại học sẽ diễn ra tức thì trong thời gian rất gần."
+    },
+    {
+      "id": "b04-07",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ chỉ số lượng ước đoán với 大约",
+      "vi": "Đại biểu tham gia hội thảo lần này có khoảng hơn 2000 người.",
+      "zh": "参加这次研讨会的代表大约有两千多人",
+      "standardTrans": "参加这次研讨会的代表大约有两千多人",
+      "pinyin": "Cānjiā zhè cì yántǎohuì de dàibiǎo dàyuē yǒu liǎngqiān duō rén",
+      "grammarPoint": "Ước đoán con số: 大约 + 有 + Số lượng từ (两千多人)",
+      "tokens": [
+        {
+          "text": "hội thảo",
+          "hz": "研讨会",
+          "py": "yántǎohuì",
+          "hv": "nghiên thảo hội",
+          "role": "Danh từ",
+          "vn": "hội thảo nghiên cứu học thuật",
+          "radicals": "研 = Bộ thạch 石; 讨 = Bộ ngôn 讠; 会 = Bộ nhân 人"
+        },
+        {
+          "text": "đại biểu",
+          "hz": "代表",
+          "py": "dàibiǎo",
+          "hv": "đại biểu",
+          "role": "Danh từ",
+          "vn": "người đại diện, đại biểu",
+          "radicals": "代 = Bộ nhân đứng 亻; 表 = Bộ y 衣"
+        },
+        {
+          "text": "khoảng chừng",
+          "hz": "大约",
+          "py": "dàyuē",
+          "hv": "đại ước",
+          "role": "Phó từ",
+          "vn": "khoảng chừng, xấp xỉ",
+          "radicals": "大 = Bộ đại 大; 约 = Bộ mịch 纟"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "参加", "tag": "Động từ" },
+        { "id": "t2", "text": "这次研讨会的", "tag": "Định ngữ" },
+        { "id": "t3", "text": "代表", "tag": "Danh từ" },
+        { "id": "t4", "text": "大约有", "tag": "Trạng vị" },
+        { "id": "t5", "text": "两千多人", "tag": "Số lượng" },
+        { "id": "t6", "text": "二千", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["研讨会", "代表", "大约有", "两千多人"],
+      "wordBankPool": ["代表", "参加", "二千", "两千多人", "这次研讨会的", "大约有"],
+      "traps": [
+        {
+          "pattern": "二千",
+          "msg": "Lỗi dùng số từ: Đối với hàng nghìn (千), khi biểu thị số lượng người thực tế thường dùng 两千, không đọc là 二千."
+        },
+        {
+          "pattern": "多两千人",
+          "msg": "Lỗi vị trí chữ 多: Biểu thị số lẻ hơn hai nghìn người thì 多 phải đặt ngay sau hàng nghìn: 两千多人, không đảo lên trước."
+        }
+      ],
+      "explanation": "Phó từ 大约 chuyên dùng trước các con số ước lượng hoặc thời gian. Cụm định - trung 参加这次研讨会的代表 làm chủ ngữ tiếp nhận phán đoán số lượng khoảng hơn 2000 người."
+    },
+    {
+      "id": "b04-08",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ xu hướng kép với 来 kết hợp tân ngữ cụ thể",
+      "vi": "Tôi đem tài liệu đến, anh ta lại nói không cần nữa, hại tôi chạy một chuyến phí công.",
+      "zh": "我带资料来他又说不要了害得我白跑了一趟",
+      "standardTrans": "我带资料来他又说不要了害得我白跑了一趟",
+      "pinyin": "Wǒ dài zīliào lái, tā yòu shuō bú yào le, hài de wǒ bái pǎo le yí tàng",
+      "grammarPoint": "V + Tân ngữ + 来 (mang tài liệu đến); Phó từ 白 + V (làm việc uổng công, vô ích)",
+      "tokens": [
+        {
+          "text": "tài liệu",
+          "hz": "资料",
+          "py": "zīliào",
+          "hv": "tư liệu",
+          "role": "Danh từ",
+          "vn": "tài liệu, hồ sơ giấy tờ",
+          "radicals": "资 = Bộ bối 贝; 料 = Bộ đấu 斗"
+        },
+        {
+          "text": "uổng công",
+          "hz": "白",
+          "py": "bái",
+          "hv": "bạch",
+          "role": "Phó từ",
+          "vn": "uổng công, vô ích, làm không công",
+          "radicals": "白 = Bộ bạch 白"
+        },
+        {
+          "text": "một chuyến",
+          "hz": "一趟",
+          "py": "yí tàng",
+          "hv": "nhất thặng",
+          "role": "Lượng từ",
+          "vn": "một chuyến, một lượt đi lại",
+          "radicals": "趟 = Bộ tẩu 走"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "带资料来", "tag": "Động tân" },
+        { "id": "t3", "text": "他", "tag": "Chủ ngữ 2" },
+        { "id": "t4", "text": "又说不要了", "tag": "Vị ngữ" },
+        { "id": "t5", "text": "害得我", "tag": "Liên kết" },
+        { "id": "t6", "text": "白跑了", "tag": "Vị ngữ" },
+        { "id": "t7", "text": "一趟", "tag": "Lượng từ" },
+        { "id": "t8", "text": "跑白了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["带资料来", "又说不要了", "害得我", "白跑了", "一趟"],
+      "wordBankPool": ["白跑了", "又说不要了", "带资料来", "我", "跑白了", "他", "一趟", "害得我"],
+      "traps": [
+        {
+          "pattern": "跑白了",
+          "msg": "Lỗi vị trí phó từ: Phó từ 白 (chỉ việc làm vô ích, uổng công) bắt buộc phải đứng TRƯỚC động từ: 白跑了一趟, không đặt sau động từ."
+        },
+        {
+          "pattern": "再说了",
+          "msg": "Lỗi phân biệt 又 và 再: Lời từ chối lặp lại xảy ra trong thực tế mang sắc thái không vui dùng phó từ 又."
+        }
+      ],
+      "explanation": "Tân ngữ sự vật 资料 đặt xen giữa động từ 带 và bổ ngữ xu hướng 来. Vế sau dùng phó từ 白 đặt trước động từ 跑 kết hợp lượng từ 一趟 để diễn tả việc đi lại uổng phí thời gian."
+    },
+    {
+      "id": "b04-09",
+      "type": "sentence_parsing",
+      "title": "Câu phức liên động với bổ ngữ trạng thái và so sánh",
+      "vi": "Chuyện này cậu nói muộn quá, nói sớm vài hôm thì tớ còn có thể nghĩ cách giúp cậu.",
+      "zh": "这件事你说得太晚了早几天说我还可能替你想个办法",
+      "standardTrans": "这件事你说得太晚了早几天说我还可能替你想个办法",
+      "pinyin": "Zhè jiàn shì nǐ shuō de tài wǎn le, zǎo jǐ tiān shuō wǒ hái kěnéng tì nǐ xiǎng gè bànfǎ",
+      "grammarPoint": "V + 得 + 太晚了 (Bổ ngữ trạng thái); 替 + Người + Động từ (làm thay cho ai)",
+      "tokens": [
+        {
+          "text": "chuyện này",
+          "hz": "这件事",
+          "py": "zhè jiàn shì",
+          "hv": "giá kiện sự",
+          "role": "Cụm danh từ",
+          "vn": "sự việc này, chuyện này",
+          "radicals": "件 = Bộ nhân đứng 亻; 事 = Bộ nhất 一"
+        },
+        {
+          "text": "quá muộn",
+          "hz": "太晚了",
+          "py": "tài wǎn le",
+          "hv": "thái vãn liễu",
+          "role": "Cụm tính từ",
+          "vn": "quá muộn, quá trễ",
+          "radicals": "太 = Bộ đại 大; 晚 = Bộ nhật 日"
+        },
+        {
+          "text": "nghĩ cách",
+          "hz": "想办法",
+          "py": "xiǎng bànfǎ",
+          "hv": "tưởng biện pháp",
+          "role": "Động tân",
+          "vn": "tìm biện pháp, nghĩ cách",
+          "radicals": "想 = Bộ tâm 心; 办 = Bộ lực 力; 法 = Bộ thủy 氵"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "这件事", "tag": "Chủ đề" },
+        { "id": "t2", "text": "你说得", "tag": "Chủ vị" },
+        { "id": "t3", "text": "太晚了", "tag": "Bổ ngữ" },
+        { "id": "t4", "text": "早几天说", "tag": "Thời gian" },
+        { "id": "t5", "text": "我还可能", "tag": "Phó từ" },
+        { "id": "t6", "text": "替你", "tag": "Giới từ" },
+        { "id": "t7", "text": "想个办法", "tag": "Động tân" },
+        { "id": "t8", "text": "说的太晚", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["这件事", "你说得", "太晚了", "早几天说", "想个办法"],
+      "wordBankPool": ["你说得", "这件事", "想个办法", "太晚了", "说的太晚", "替你", "早几天说", "我还可能"],
+      "traps": [
+        {
+          "pattern": "说的太晚",
+          "msg": "Lỗi dùng sai trợ từ kết cấu: Đánh giá cách thức hành động sau động từ 说 bắt buộc dùng trợ từ 得 (说得太晚), không dùng 的."
+        },
+        {
+          "pattern": "想办法替你",
+          "msg": "Lỗi ngữ tự giới từ: Cụm giới từ '替 + Đối tượng' phải đặt trước động từ hành động: 替你想个办法."
+        }
+      ],
+      "explanation": "Câu đưa cụm chủ đề 这件事 lên đầu câu. Cấu trúc vị ngữ dùng bổ ngữ trạng thái 说得太晚了 để đánh giá thời điểm thông báo, vế sau dùng giới từ 替 chỉ đối tượng thụ hưởng hành vi."
+    },
+    {
+      "id": "b04-10",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ khả năng phủ định dạng 不 + Bổ ngữ kết quả",
+      "vi": "Bạn không viết rõ ràng thì tớ xem hiểu làm sao được?",
+      "zh": "你不写清楚我怎么能看懂呢",
+      "standardTrans": "你不写清楚我怎么能看懂呢",
+      "pinyin": "Nǐ bù xiě qīngchu, wǒ zěnme néng kàndǒng ne",
+      "grammarPoint": "Bổ ngữ kết quả: 写清楚; Câu hỏi tu từ biểu thị khả năng: 怎么能 + V + Bổ ngữ kết quả (看懂) + 呢",
+      "tokens": [
+        {
+          "text": "viết rõ ràng",
+          "hz": "写清楚",
+          "py": "xiě qīngchu",
+          "hv": "tả thanh sở",
+          "role": "Động bổ",
+          "vn": "viết rành mạch, rõ nét",
+          "radicals": "写 = Bộ mịch 冖; 楚 = Bộ mộc 木"
+        },
+        {
+          "text": "làm sao có thể",
+          "hz": "怎么能",
+          "py": "zěnme néng",
+          "hv": "chẩm ma năng",
+          "role": "Phản vấn",
+          "vn": "làm sao có thể, lẽ nào lại",
+          "radicals": "怎 = Bộ tâm 心; 能 = Bộ nhục 肉"
+        },
+        {
+          "text": "xem hiểu được",
+          "hz": "看懂",
+          "py": "kàndǒng",
+          "hv": "khán đổng",
+          "role": "Động bổ",
+          "vn": "đọc mà hiểu thấu nội dung",
+          "radicals": "看 = Bộ mục 目; 懂 = Bộ tâm đứng 忄"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "不写清楚", "tag": "Điều kiện" },
+        { "id": "t3", "text": "我", "tag": "Chủ ngữ 2" },
+        { "id": "t4", "text": "怎么能", "tag": "Phản vấn" },
+        { "id": "t5", "text": "看懂呢", "tag": "Động bổ" },
+        { "id": "t6", "text": "写不清楚", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["不写清楚", "怎么能", "看懂呢"],
+      "wordBankPool": ["怎么能", "你", "看懂呢", "写不清楚", "我", "不写清楚"],
+      "traps": [
+        {
+          "pattern": "怎么看明白得",
+          "msg": "Lỗi cấu trúc phản vấn: Khi dùng câu hỏi tu từ 怎么能, phía sau chỉ cần động từ đi kèm bổ ngữ kết quả 看懂, không dịch bồi theo kiểu ghép chữ 'được' vào đuôi."
+        },
+        {
+          "pattern": "懂看",
+          "msg": "Lỗi đảo bổ ngữ kết quả: 懂 đóng vai trò là kết quả sau khi 看 (đọc/xem) nên bắt buộc đặt sau động từ: 看懂."
+        }
+      ],
+      "explanation": "Câu phản vấn dùng đại từ nghi vấn 怎么能 kết hợp động từ có bổ ngữ kết quả 看懂 và trợ từ ngữ khí 呢 ở cuối câu để khẳng định mạnh mẽ rằng đối phương viết không rõ ràng thì người đọc không thể nào hiểu được."
+    }
+  ]
+}

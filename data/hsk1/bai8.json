@@ -1,625 +1,850 @@
 {
   "lessonId": "b08",
-  "lessonTitle": "第八课: 苹果一斤多少钱?",
+  "lessonTitle": "Bài 8: Mua sắm trái cây & Hỏi giá cả",
   "quickNotes": {
     "vocabTips": [
       {
-        "word": "斤 (jīn) vs 公斤 (gōngjīn)",
-        "py": "jīn vs gōngjīn",
-        "note": "1 cân Trung Quốc (斤) bằng 0.5 kg (500g). Muốn nói 1 kg phải dùng 公斤 (gōngjīn) hoặc 两斤 (liǎng jīn)."
+        "word": "买 / 卖",
+        "py": "mǎi / mài",
+        "note": "Cặp động từ trái nghĩa dễ nhầm: 买 (mǎi - thanh 3, không có bộ Thập 十 ở trên) là 'mua'; 卖 (mài - thanh 4, có bộ Thập 十 ở trên) là 'bán'."
       },
       {
-        "word": "两 (liǎng) vs 二 (èr)",
-        "py": "liǎng vs èr",
-        "note": "Trước lượng từ (斤, 块, 本...) biểu thị số lượng 2 bắt buộc dùng 两 (两斤, 两块), không dùng 二."
+        "word": "块(元) / 毛(角) / 分",
+        "py": "kuài (yuán) / máo (jiǎo) / fēn",
+        "note": "Đơn vị tiền tệ Trung Quốc (1 块 = 10 毛 = 100 分). Trong giao tiếp hằng ngày dùng 块, 毛; trong văn viết/hóa đơn dùng 元, 角."
       },
       {
-        "word": "怎么卖 (zěnme mài)",
-        "py": "zěnme mài",
-        "note": "Đại từ 怎么 đứng trước động từ để hỏi cách thức/phương thức: 橘子怎么卖? (Quýt bán thế nào / bán giá sao?)."
-      },
-      {
-        "word": "给 (gěi) & 找 (zhǎo)",
-        "py": "gěi & zhǎo",
-        "note": "给: đưa cho, cho (给我一本书). 找: ngoài nghĩa 'tìm kiếm' còn mang nghĩa 'thối lại tiền lẻ' (找你五块: thối lại bạn 5 tệ)."
-      },
-      {
-        "word": "还 (hái) vs 别的 (bié de)",
-        "py": "hái vs bié de",
-        "note": "还: phó từ 'còn, vẫn còn' (还要买: còn muốn mua). 别的: đại từ 'cái khác, thứ khác' (还要买别的吗: còn muốn mua gì khác không?)."
+        "word": "两 / 二",
+        "py": "liǎng / èr",
+        "note": "Đứng trực tiếp trước lượng từ hoặc đơn vị đo (两斤, 两块钱, 两个) bắt buộc dùng 两; khi đếm số hoặc đứng cuối cụm tiền lẻ (三块二) dùng 二."
       }
     ],
     "grammarTips": [
-      "Hỏi giá tiền: Tên đồ vật + [Lượng từ] + 多少钱? (苹果一斤多少钱?) hoặc 怎么卖? (葡萄怎么卖?).",
-      "Đơn vị tiền tệ khẩu ngữ: 块 (kuài - tệ) > 毛 (máo - hào) > 分 (fēn - xu). Khi số cuối là 0 thường lược bỏ đơn vị (两块五 = 2 tệ 5 hào).",
-      "Phó từ 还 biểu thị sự tiếp diễn hoặc bổ sung: S + 还 + 要 / 买 + Đồ vật (我还要买两斤苹果).",
-      "Trợ từ ngữ khí 吧 ở cuối câu: Biểu thị sự thương lượng, đề nghị nhẹ nhàng hoặc nhượng bộ (你吃西瓜吧, 给二十块吧)."
+      "Hỏi giá cả: Danh từ + 多少钱 + Lượng từ? hoặc Danh từ + 怎么卖?",
+      "Cảm thán mức độ cao: Chủ ngữ + 太 + Tính từ + 了 (VD: 太贵了 - Đắt quá!).",
+      "Tính tổng & Thối tiền: 一共 + Số tiền; 给 + Người + Tiền (đưa tiền); 找 + Người + Tiền (trả lại tiền thừa)."
     ]
   },
   "sentences": [
     {
-      "id": "b08-01",
+      "id": "b08-06",
       "type": "sentence_parsing",
-      "title": "Liệt kê số lượng hoa quả và tổng số tiền",
-      "vi": "Hôm nay tôi mua rất nhiều hoa quả, 2 cân táo, 3 cân lê, tổng cộng hết 50 tệ.",
-      "zh": "今天我买很多水果两斤苹果三斤梨一共五十块钱",
-      "standardTrans": "今天我买很多水果两斤苹果三斤梨一共五十块钱",
-      "pinyin": "Jīntiān wǒ mǎi hěnduō shuǐguǒ, liǎng jīn píngguǒ, sān jīn lí, yígòng wǔshí kuài qián.",
-      "grammarPoint": "Số từ 两 đứng trước lượng từ 斤; Phó từ chỉ tổng số: 一共 + Số tiền",
+      "title": "Hỏi giá trái cây theo cân",
+      "vi": "Quýt bán bao nhiêu tiền một cân?",
+      "zh": "橘子多少钱一斤",
+      "standardTrans": "橘子多少钱一斤",
+      "pinyin": "Júzi duōshao qián yì jīn?",
+      "grammarPoint": "Hỏi giá: Danh từ + 多少钱 + Lượng từ",
       "tokens": [
+        {
+          "text": "Quýt",
+          "hz": "橘子",
+          "py": "júzi",
+          "hv": "Quất tử",
+          "role": "Danh từ",
+          "vn": "Quả quýt",
+          "radicals": "橘 = Bộ mộc 木 + Bộ mâu 矛 + Bộ khẩu 口; 子 = Bộ tử 子"
+        },
+        {
+          "text": "Bao nhiêu tiền",
+          "hz": "多少钱",
+          "py": "duōshao qián",
+          "hv": "Đa thiểu tiền",
+          "role": "Cụm nghi vấn",
+          "vn": "Bao nhiêu tiền (cụm hỏi giá cố định)",
+          "radicals": "多 = Bộ tịch 夕; 少 = Bộ tiểu 小 + Nét phẩy 丿; 钱 = Bộ kim 钅 + Bộ qua 戈"
+        },
+        {
+          "text": "Một",
+          "hz": "一",
+          "py": "yì",
+          "hv": "Nhất",
+          "role": "Số từ",
+          "vn": "Số 1 (biến điệu thành yì trước thanh 1)",
+          "radicals": "一 = Bộ nhất 一"
+        },
+        {
+          "text": "Cân",
+          "hz": "斤",
+          "py": "jīn",
+          "hv": "Cân",
+          "role": "Lượng từ",
+          "vn": "Đơn vị cân Trung Quốc (1 cân = 0.5 kg)",
+          "radicals": "斤 = Bộ cân 斤"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "一", "tag": "Số từ" },
+        { "id": "t1", "text": "橘子", "tag": "Danh từ" },
+        { "id": "t5", "text": "几", "tag": "Bẫy" },
+        { "id": "t4", "text": "斤", "tag": "Lượng từ" },
+        { "id": "t2", "text": "多少钱", "tag": "Nghi vấn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["橘子", "多少钱", "一", "斤"],
+      "wordBankPool": ["一", "橘子", "几", "斤", "多少钱"],
+      "traps": [
+        {
+          "pattern": "几",
+          "msg": "Lỗi từ nghi vấn: Hỏi giá tiền không xác định phải dùng '多少钱', không dùng '几钱'."
+        }
+      ],
+      "explanation": "Cấu trúc hỏi đơn giá phổ biến nhất: Tên hàng hóa + 多少钱 + Đơn vị tính (一斤)."
+    },
+    {
+      "id": "b08-02",
+      "type": "sentence_parsing",
+      "title": "Diễn tả ý định mua đồ",
+      "vi": "Hôm nay mẹ tôi muốn đi mua hoa quả.",
+      "zh": "今天我妈妈要买水果",
+      "standardTrans": "今天我妈妈要买水果",
+      "pinyin": "Jīntiān wǒ māma yào mǎi shuǐguǒ.",
+      "grammarPoint": "Thời gian + S + 要 + 买 + Tân ngữ",
+      "tokens": [
+        {
+          "text": "Hôm nay",
+          "hz": "今天",
+          "py": "jīntiān",
+          "hv": "Kim thiên",
+          "role": "Danh từ thời gian",
+          "vn": "Ngày hôm nay",
+          "radicals": "今 = Bộ nhân 人 + Bộ nhất 一; 天 = Bộ nhất 一 + Bộ đại 大"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Mẹ",
+          "hz": "妈妈",
+          "py": "māma",
+          "hv": "Ma ma",
+          "role": "Chủ ngữ",
+          "vn": "Mẹ, má",
+          "radicals": "妈 = Bộ nữ 女 + Bộ mã 马"
+        },
+        {
+          "text": "Muốn / Cần",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ năng nguyện",
+          "vn": "Muốn, cần, dự định làm gì",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
+        },
+        {
+          "text": "Mua",
+          "hz": "买",
+          "py": "mǎi",
+          "hv": "Mãi",
+          "role": "Động từ",
+          "vn": "Mua sắm",
+          "radicals": "买 = Bộ ất 乙 + Bộ đại 大"
+        },
         {
           "text": "Hoa quả",
           "hz": "水果",
           "py": "shuǐguǒ",
           "hv": "Thủy quả",
           "role": "Tân ngữ",
-          "vn": "Trái cây, hoa quả",
-          "radicals": "水 = Bộ thủy 水; 果 = Bộ nhật 日 + bộ mộc 木"
-        },
-        {
-          "text": "Hai cân táo",
-          "hz": "两斤苹果",
-          "py": "liǎng jīn píngguǒ",
-          "hv": "Lưỡng cân bình quả",
-          "role": "Cụm số lượng tân ngữ",
-          "vn": "2 cân táo (1 kg)",
-          "radicals": "两 = Số lượng 2; 斤 = Bộ cân 斤; 苹 = Bộ thảo 艹; 果 = Quả"
-        },
-        {
-          "text": "Tổng cộng",
-          "hz": "一共",
-          "py": "yígòng",
-          "hv": "Nhất cộng",
-          "role": "Phó từ phạm vi",
-          "vn": "Tổng cộng, tất cả",
-          "radicals": "一 = Bộ nhất 一; 共 = Bộ bát 八 + bộ củng 廾"
+          "vn": "Hoa quả, trái cây nói chung",
+          "radicals": "水 = Bộ thủy 水; 果 = Bộ điền 田 + Bộ mộc 木"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "两斤苹果", "tag": "Loại quả 1" },
-        { "id": "t4", "text": "一共五十块钱", "tag": "Tổng tiền" },
-        { "id": "t1", "text": "今天我买很多水果", "tag": "Mệnh đề chính" },
-        { "id": "t3", "text": "三斤梨", "tag": "Loại quả 2" },
-        { "id": "t5", "text": "二斤苹果", "tag": "Bẫy số từ" },
-        { "id": "t6", "text": "五十块钱一共", "tag": "Bẫy phó từ" }
+        { "id": "t4", "text": "要", "tag": "Năng nguyện" },
+        { "id": "t1", "text": "今天", "tag": "Thời gian" },
+        { "id": "t6", "text": "水果", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "我", "tag": "Định ngữ" },
+        { "id": "t7", "text": "卖", "tag": "Bẫy" },
+        { "id": "t5", "text": "买", "tag": "Động từ" },
+        { "id": "t3", "text": "妈妈", "tag": "Chủ ngữ" }
       ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["买很多水果", "两斤苹果", "三斤梨", "一共五十块钱"],
-      "wordBankPool": ["今天我买很多水果", "两斤苹果", "三斤梨", "一共五十块钱", "二斤苹果", "五十块钱一共", "买水果很多"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["今天", "妈妈", "要", "买", "水果"],
+      "wordBankPool": ["要", "今天", "水果", "我", "卖", "买", "妈妈"],
       "traps": [
         {
-          "pattern": "二斤",
-          "msg": "Lỗi số từ: Đứng trước lượng từ '斤' (cân) khi biểu thị số lượng 2 bắt buộc dùng '两' ('两斤'), không dùng '二'."
-        },
-        {
-          "pattern": "五十块钱一共",
-          "msg": "Lỗi vị trí phó từ: Phó từ '一共' (tổng cộng) bắt buộc đứng TRƯỚC số lượng từ/số tiền ('一共五十块钱'), không đặt sau."
+          "pattern": "卖",
+          "msg": "Lỗi mặt chữ: '买' (không có bộ Thập ở trên) là 'mua', còn '卖' (có bộ Thập 十 ở trên) là 'bán'."
         }
       ],
-      "explanation": "Quy tắc cốt lõi: Số lượng 2 trước lượng từ bắt buộc dùng '两'. '一共' là phó từ đứng trước vị ngữ số lượng để biểu thị tổng cộng."
+      "explanation": "Động từ năng nguyện '要' đứng trước động từ chính '买' để biểu thị nhu cầu hoặc dự định mua sắm."
     },
     {
-      "id": "b08-02",
-      "type": "anti_word_by_word",
-      "title": "Hỏi mua thêm bằng phó từ 还 và đại từ 别的",
-      "vi": "A: Ba cân dâu tây 22 đồng, cậu còn muốn mua gì khác không? B: Không cần. Cảm ơn!",
-      "zh": "三斤草莓二十二块钱你还要买别的吗不要谢谢",
-      "standardTrans": "三斤草莓二十二块钱你还要买别的吗不要谢谢",
-      "pinyin": "Sān jīn cǎoméi èrshí'èr kuài qián. Nǐ hái yào mǎi bié de ma? Bù yào, xièxie.",
-      "grammarPoint": "Phó từ 还 (còn, thêm); Đại từ 别的 (cái khác); Từ chối lịch sự: 不要",
+      "id": "b08-09",
+      "type": "sentence_parsing",
+      "title": "Hỏi người mua có cần thêm gì không",
+      "vi": "Bạn còn muốn mua thứ khác không?",
+      "zh": "你还要买别的吗",
+      "standardTrans": "你还要买别的吗",
+      "pinyin": "Nǐ hái yào mǎi biéde ma?",
+      "grammarPoint": "Phó từ 还 (còn) & Đại từ 别的 (cái khác)",
       "tokens": [
         {
-          "text": "Dâu tây",
-          "hz": "草莓",
-          "py": "cǎoméi",
-          "hv": "Thảo mai",
-          "role": "Tân ngữ",
-          "vn": "Quả dâu tây",
-          "radicals": "草 = Bộ thảo 艹 + chữ sớm 早; 莓 = Bộ thảo 艹 + chữ mỗi 每"
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Bạn, quý khách",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Còn muốn mua",
-          "hz": "还要买",
-          "py": "hái yào mǎi",
-          "hv": "Hoàn yếu mãi",
-          "role": "Phó từ + Động từ",
-          "vn": "Còn muốn mua thêm",
-          "radicals": "还 = Chữ bất 不 + bộ quai xước 辶; 要 = Muốn; 买 = Mua"
+          "text": "Còn",
+          "hz": "还",
+          "py": "hái",
+          "hv": "Hoàn",
+          "role": "Phó từ",
+          "vn": "Còn, thêm nữa (bổ sung hành động)",
+          "radicals": "还 = Bộ sước 辶 + Bộ bất 不"
         },
         {
-          "text": "Cái khác",
+          "text": "Muốn",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ năng nguyện",
+          "vn": "Muốn, cần",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
+        },
+        {
+          "text": "Mua",
+          "hz": "买",
+          "py": "mǎi",
+          "hv": "Mãi",
+          "role": "Động từ",
+          "vn": "Mua",
+          "radicals": "买 = Bộ ất 乙 + Bộ đại 大"
+        },
+        {
+          "text": "Thứ khác",
           "hz": "别的",
-          "py": "bié de",
+          "py": "biéde",
           "hv": "Biệt đích",
           "role": "Đại từ",
           "vn": "Cái khác, thứ khác",
-          "radicals": "别 = Bộ khẩu 口 + bộ lực 力 + bộ đao 刂; 的 = Trợ từ"
+          "radicals": "别 = Bộ khẩu 口 + Bộ lực 力 + Bộ đao 刂; 的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Không",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Trợ từ đặt cuối câu hỏi xác nhận",
+          "radicals": "吗 = Bộ khẩu 口 + Bộ mã 马"
         }
       ],
       "tiles": [
-        { "id": "t3", "text": "不要谢谢", "tag": "Lời đáp từ chối" },
-        { "id": "t1", "text": "三斤草莓二十二块钱", "tag": "Báo giá dâu tây" },
-        { "id": "t2", "text": "你还要买别的吗", "tag": "Hỏi mua thêm" },
-        { "id": "t4", "text": "买别的还", "tag": "Bẫy phó từ" },
-        { "id": "t5", "text": "不想要", "tag": "Bẫy từ chối" }
+        { "id": "t3", "text": "要", "tag": "Năng nguyện" },
+        { "id": "t6", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "别的", "tag": "Tân ngữ" },
+        { "id": "t7", "text": "什么", "tag": "Bẫy" },
+        { "id": "t2", "text": "还", "tag": "Phó từ" },
+        { "id": "t4", "text": "买", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["三斤草莓", "二十二块钱", "还要买别的吗", "不要谢谢"],
-      "wordBankPool": ["三斤草莓二十二块钱", "你还要买别的吗", "不要谢谢", "买别的还", "不想要", "还要别的买"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["你", "还", "要", "买", "别的", "吗"],
+      "wordBankPool": ["要", "吗", "你", "别的", "什么", "还", "买"],
       "traps": [
         {
-          "pattern": "买别的还",
-          "msg": "Lỗi ngữ tự: Phó từ '还' (còn) phải đứng TRƯỚC động từ năng nguyện/hành động ('还要买别的'), không đặt cuối câu."
-        },
-        {
-          "pattern": "别的买",
-          "msg": "Lỗi tân ngữ: '别的' đóng vai trò tân ngữ làm rõ cho hành động mua, phải đặt sau động từ: '买别的'."
+          "pattern": "什么",
+          "msg": "Lỗi từ vựng: Đề bài hỏi 'thứ khác' phải dùng '别的', không dùng '什么' (cái gì)."
         }
       ],
-      "explanation": "Cấu trúc hỏi mua thêm: '还要 + Động từ + 别的 + 吗?'. Đáp lại khi không cần mua thêm thường dùng '不要，谢谢'."
+      "explanation": "Phó từ '还' đứng trước động từ năng nguyện '要' để hỏi bổ sung thêm nhu cầu."
     },
     {
-      "id": "b08-03",
+      "id": "b08-01",
       "type": "sentence_parsing",
-      "title": "Câu phán đoán chỉ định nguồn gốc xuất xứ của quả",
-      "vi": "Đây là táo Mỹ, đây là táo Nhật Bản, kia là táo Trung Quốc.",
-      "zh": "这是美国苹果这是日本苹果那在中国苹果",
-      "standardTrans": "这是美国苹果这是日本苹果那在中国苹果",
-      "pinyin": "Zhè shì Měiguó píngguǒ, zhè shì Rìběn píngguǒ, nà shì Zhōngguó píngguǒ.",
-      "grammarPoint": "Đại từ chỉ thị 这/那; Danh từ quốc gia làm định ngữ trực tiếp chỉ xuất xứ",
+      "title": "Dùng 两 trước đơn vị đo lường",
+      "vi": "Tôi muốn mua hai cân chuối.",
+      "zh": "我要买两斤香蕉",
+      "standardTrans": "我要买两斤香蕉",
+      "pinyin": "Wǒ yào mǎi liǎng jīn xiāngjiāo.",
+      "grammarPoint": "Số lượng: 两 + Lượng từ (斤) + Danh từ",
       "tokens": [
         {
-          "text": "Táo Mỹ",
-          "hz": "美国苹果",
-          "py": "Měiguó píngguǒ",
-          "hv": "Mỹ Quốc bình quả",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Táo của nước Mỹ",
-          "radicals": "美 = Bộ dương 羊 + bộ đại 大; 国 = Bộ vi 囗; 苹果 = Quả táo"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Táo Nhật Bản",
-          "hz": "日本苹果",
-          "py": "Rìběn píngguǒ",
-          "hv": "Nhật Bản bình quả",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Táo của Nhật Bản",
-          "radicals": "日 = Bộ nhật 日; 本 = Bộ mộc 木 + nét ngang"
+          "text": "Muốn",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ năng nguyện",
+          "vn": "Muốn, lấy",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
         },
         {
-          "text": "Táo Trung Quốc",
-          "hz": "中国苹果",
-          "py": "Zhōngguó píngguǒ",
-          "hv": "Trung Quốc bình quả",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Táo của Trung Quốc",
-          "radicals": "中 = Chữ trung 中; 国 = Bộ vi 囗 + bộ ngọc 玉"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "这是日本苹果", "tag": "Vế chỉ định 2" },
-        { "id": "t1", "text": "这是美国苹果", "tag": "Vế chỉ định 1" },
-        { "id": "t3", "text": "那在中国苹果", "tag": "Vế chỉ định 3" },
-        { "id": "t4", "text": "苹果美国", "tag": "Bẫy định ngữ" },
-        { "id": "t5", "text": "苹果中国", "tag": "Bẫy ngữ tự" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这是美国苹果", "这是日本苹果", "中国苹果"],
-      "wordBankPool": ["这是美国苹果", "这是日本苹果", "那在中国苹果", "那是中国苹果", "苹果美国", "苹果中国"],
-      "traps": [
-        {
-          "pattern": "苹果美国",
-          "msg": "Lỗi định ngữ: Tên quốc gia/xuất xứ phải đứng TRƯỚC danh từ trung tâm ('美国苹果'), không dịch xuôi theo tiếng Việt."
+          "text": "Mua",
+          "hz": "买",
+          "py": "mǎi",
+          "hv": "Mãi",
+          "role": "Động từ",
+          "vn": "Mua",
+          "radicals": "买 = Bộ ất 乙 + Bộ đại 大"
         },
         {
-          "pattern": "苹果日本",
-          "msg": "Lỗi định ngữ: Bắt buộc đặt định ngữ chỉ nguồn gốc trước sự vật ('日本苹果')."
-        }
-      ],
-      "explanation": "Trong Hán ngữ, tên quốc gia làm định ngữ bổ nghĩa trực tiếp cho hoa quả/sản phẩm xuất xứ từ nước đó mà không cần trợ từ 的 (美国苹果, 日本苹果)."
-    },
-    {
-      "id": "b08-04",
-      "type": "anti_word_by_word",
-      "title": "Biểu thị thay đổi ý định với 了 và hỏi giá bằng 怎么卖",
-      "vi": "Đắt quá, tôi không mua táo nữa, tôi muốn mua quýt. Quýt bán thế nào vậy?",
-      "zh": "太贵了我我不买苹果了我买橘子橘子怎么卖",
-      "standardTrans": "太贵了我我不买苹果了我买橘子橘子怎么卖",
-      "pinyin": "Tài guì le, wǒ bù mǎi píngguǒ le, wǒ yào mǎi júzi. Júzi zěnme mài?",
-      "grammarPoint": "Cảm thán 太...了; Trợ từ 了 cuối câu biểu thị sự thay đổi trạng thái (không mua nữa); Hỏi giá: 怎么卖",
-      "tokens": [
-        {
-          "text": "Đắt quá",
-          "hz": "太贵了",
-          "py": "tài guì le",
-          "hv": "Thái quý liễu",
-          "role": "Cụm tính từ cảm thán",
-          "vn": "Đắt quá, mắc quá",
-          "radicals": "太 = Bộ đại 大 + nét chấm; 贵 = Chữ trung 中 + bộ nhất 一 + bộ bối 贝; 了 = Trợ từ"
+          "text": "Hai",
+          "hz": "两",
+          "py": "liǎng",
+          "hv": "Lưỡng",
+          "role": "Số từ",
+          "vn": "Hai (dùng trước lượng từ)",
+          "radicals": "两 = Bộ nhất 一 + Bộ nhân 人"
         },
         {
-          "text": "Quýt",
-          "hz": "橘子",
-          "py": "júzi",
-          "hv": "Quất tử",
-          "role": "Tân ngữ",
-          "vn": "Quả quýt",
-          "radicals": "橘 = Bộ mộc 木 + bộ mâu 矛 + bộ quynh 冂 + bộ khẩu 口; 子 = Bộ tử 子"
+          "text": "Cân",
+          "hz": "斤",
+          "py": "jīn",
+          "hv": "Cân",
+          "role": "Lượng từ",
+          "vn": "Cân Trung Quốc (0.5 kg)",
+          "radicals": "斤 = Bộ cân 斤"
         },
-        {
-          "text": "Bán thế nào",
-          "hz": "怎么卖",
-          "py": "zěnme mài",
-          "hv": "Chẩm ma mại",
-          "role": "Cụm vị ngữ nghi vấn",
-          "vn": "Bán như thế nào (hỏi giá)",
-          "radicals": "怎么 = Thế nào; 卖 = Bộ thập 十 + chữ mãi 买"
-        }
-      ],
-      "tiles": [
-        { "id": "t3", "text": "橘子怎么卖", "tag": "Hỏi giá quýt" },
-        { "id": "t1", "text": "太贵了我", "tag": "Than đắt" },
-        { "id": "t2", "text": "我不买苹果了我买橘子", "tag": "Đổi ý định" },
-        { "id": "t4", "text": "卖怎么", "tag": "Bẫy đại từ nghi vấn" },
-        { "id": "t5", "text": "贵太了", "tag": "Bẫy cảm thán" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["太贵了", "不买苹果了", "橘子怎么卖"],
-      "wordBankPool": ["太贵了我", "我不买苹果了我买橘子", "橘子怎么卖", "卖怎么", "贵太了", "怎么买"],
-      "traps": [
-        {
-          "pattern": "卖怎么",
-          "msg": "Lỗi đại từ nghi vấn: Đại từ '怎么' (thế nào) bắt buộc đứng TRƯỚC động từ ('怎么卖: bán thế nào'), không đảo ra sau."
-        },
-        {
-          "pattern": "贵太了",
-          "msg": "Lỗi cấu trúc cảm thán: Cấu trúc cố định là '太 + Tính từ + 了' ('太贵了'), không nói '贵太了'."
-        }
-      ],
-      "explanation": "Cấu trúc '我不买苹果了' có chữ '了' ở cuối câu mang ý nghĩa biến hóa/thay đổi trạng thái (không mua nữa). '怎么卖' là cách hỏi giá quen thuộc trong mua sắm dân dã."
-    },
-    {
-      "id": "b08-05",
-      "type": "sentence_parsing",
-      "title": "Hội thoại hỏi nhu cầu và đơn giá một cân",
-      "vi": "A: Xin chào, cô muốn mua gì? B: Tôi mua đào, một cân bao nhiêu tiền?",
-      "zh": "你好你要买什么我要买桃一斤多少钱",
-      "standardTrans": "你好你要买什么我要买桃一斤多少钱",
-      "pinyin": "Nǐ hǎo! Nǐ yào mǎi shénme? Wǒ yào mǎi táo, yì jīn duōshao qián?",
-      "grammarPoint": "Hỏi nhu cầu: 要买什么; Cấu trúc hỏi đơn giá: Số lượng + 多少钱",
-      "tokens": [
-        {
-          "text": "Đào",
-          "hz": "桃",
-          "py": "táo",
-          "hv": "Đào",
-          "role": "Tân ngữ",
-          "vn": "Quả đào",
-          "radicals": "木 = Bộ mộc 木; 兆 = Chữ triệu 兆"
-        },
-        {
-          "text": "Một cân bao nhiêu tiền",
-          "hz": "一斤多少钱",
-          "py": "yì jīn duōshao qián",
-          "hv": "Nhất cân đa thiếu tiền",
-          "role": "Vị ngữ hỏi đơn giá",
-          "vn": "Một cân bao nhiêu tiền",
-          "radicals": "斤 = Bộ cân 斤; 多少 = Bao nhiêu; 钱 = Bộ kim 钅 + chữ qua 戈"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "你要买什么", "tag": "Người bán hỏi" },
-        { "id": "t1", "text": "你好", "tag": "Chào hỏi" },
-        { "id": "t4", "text": "一斤多少钱", "tag": "Hỏi đơn giá" },
-        { "id": "t3", "text": "我要买桃", "tag": "Người mua đáp" },
-        { "id": "t5", "text": "多少钱一斤吗", "tag": "Bẫy thừa 吗" },
-        { "id": "t6", "text": "什么买", "tag": "Bẫy nghi vấn" }
-      ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["你要买什么", "我要买桃", "一斤多少钱"],
-      "wordBankPool": ["你好", "你要买什么", "我要买桃", "一斤多少钱", "多少钱一斤吗", "什么买", "一斤多少"],
-      "traps": [
-        {
-          "pattern": "多少钱吗",
-          "msg": "Thừa trợ từ: '多少' bản thân đã là đại từ nghi vấn hỏi số lượng, câu hỏi tuyệt đối KHÔNG thêm trợ từ '吗'."
-        },
-        {
-          "pattern": "什么买",
-          "msg": "Lỗi trật tự từ: Đại từ '什么' làm tân ngữ cho hành động mua, phải đứng sau động từ: '买什么'."
-        }
-      ],
-      "explanation": "Hỏi giá theo đơn vị: [Số lượng + 多少钱] như '一斤多少钱' (bao nhiêu tiền một cân). Trong giao tiếp bán hàng, '你好! 你要买什么?' là mẫu câu chào hỏi mở đầu tiêu chuẩn."
-    },
-    {
-      "id": "b08-06",
-      "type": "anti_word_by_word",
-      "title": "Khen chê mùi vị hoa quả và trợ từ ngữ khí 吧 đề nghị",
-      "vi": "Chuối không ngon lắm, dưa hấu rất ngon. Cậu ăn dưa hấu nhé.",
-      "zh": "香蕉不太好吃西瓜很好吃你吃西瓜吧",
-      "standardTrans": "香蕉不太好吃西瓜很好吃你吃西瓜吧",
-      "pinyin": "Xiāngjiāo bú tài hǎochī, xīguā hěn hǎochī. Nǐ chī xīguā ba.",
-      "grammarPoint": "Tính từ 好吃 (ngon miệng); Phủ định giảm nhẹ 不太; Trợ từ ngữ khí 吧 đưa ra lời khuyên",
-      "tokens": [
         {
           "text": "Chuối",
           "hz": "香蕉",
           "py": "xiāngjiāo",
           "hv": "Hương tiêu",
-          "role": "Chủ ngữ 1",
+          "role": "Tân ngữ",
           "vn": "Quả chuối",
-          "radicals": "香 = Bộ hương 香; 蕉 = Bộ thảo 艹 + chữ tiêu 焦"
+          "radicals": "香 = Bộ hòa 禾 + Bộ nhật 日; 蕉 = Bộ thảo 艹 + Bộ truy 隹 + Bộ hỏa 灬"
+        }
+      ],
+      "tiles": [
+        { "id": "t5", "text": "斤", "tag": "Lượng từ" },
+        { "id": "t2", "text": "要", "tag": "Năng nguyện" },
+        { "id": "t6", "text": "香蕉", "tag": "Tân ngữ" },
+        { "id": "t7", "text": "二", "tag": "Bẫy" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "两", "tag": "Số từ" },
+        { "id": "t3", "text": "买", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["我", "要", "买", "两", "斤", "香蕉"],
+      "wordBankPool": ["斤", "要", "香蕉", "二", "我", "两", "买"],
+      "traps": [
+        {
+          "pattern": "二",
+          "msg": "Lỗi số từ: Khi đứng trước đơn vị đo lường '斤' (cân) để chỉ số lượng 2, bắt buộc dùng '两', không dùng '二'."
+        }
+      ],
+      "explanation": "Quy tắc bất di bất dịch: Số lượng 2 đi liền với lượng từ/đơn vị đo dùng '两' (两斤, 两块, 两个)."
+    },
+    {
+      "id": "b08-07",
+      "type": "sentence_parsing",
+      "title": "Cảm thán giá đắt với 太...了",
+      "vi": "Táo đắt quá rẻ một chút đi.",
+      "zh": "苹果太贵了便宜一点儿吧",
+      "standardTrans": "苹果太贵了便宜一点儿吧",
+      "pinyin": "Píngguǒ tài guì le piányi yìdiǎnr ba.",
+      "grammarPoint": "Cảm thán mức độ: 太 + Tính từ + 了",
+      "tokens": [
+        {
+          "text": "Táo",
+          "hz": "苹果",
+          "py": "píngguǒ",
+          "hv": "Bình quả",
+          "role": "Chủ ngữ",
+          "vn": "Quả táo",
+          "radicals": "苹 = Bộ thảo 艹 + Bộ can 干; 果 = Bộ điền 田 + Bộ mộc 木"
+        },
+        {
+          "text": "Quá",
+          "hz": "太",
+          "py": "tài",
+          "hv": "Thái",
+          "role": "Phó từ mức độ",
+          "vn": "Quá, lắm",
+          "radicals": "太 = Bộ đại 大 + Nét chấm 丶"
+        },
+        {
+          "text": "Đắt",
+          "hz": "贵",
+          "py": "guì",
+          "hv": "Quý",
+          "role": "Tính từ",
+          "vn": "Đắt đỏ, giá cao",
+          "radicals": "贵 = Bộ trung 中 + Bộ nhất 一 + Bộ bối 贝"
+        },
+        {
+          "text": "Rồi / Quá",
+          "hz": "了",
+          "py": "le",
+          "hv": "Liễu",
+          "role": "Trợ từ ngữ khí",
+          "vn": "Kết hợp với 太 tạo ngữ khí cảm thán",
+          "radicals": "了 = Bộ quyết 亅"
+        },
+        {
+          "text": "Rẻ",
+          "hz": "便宜",
+          "py": "piányi",
+          "hv": "Tiện nghi",
+          "role": "Tính từ",
+          "vn": "Rẻ, giảm giá",
+          "radicals": "便 = Bộ nhân đứng 亻 + Bộ nhật 日; 宜 = Bộ miên 宀 + Chữ thả 且"
+        },
+        {
+          "text": "Một chút",
+          "hz": "一点儿",
+          "py": "yìdiǎnr",
+          "hv": "Nhất điểm nhi",
+          "role": "Bổ ngữ số lượng",
+          "vn": "Một chút, một ít (đặt sau tính từ để giảm nhẹ)",
+          "radicals": "一 = Bộ nhất 一; 点 = Bộ chiêm 占 + Bộ hỏa 灬; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Đi / Nhé",
+          "hz": "吧",
+          "py": "ba",
+          "hv": "Ba",
+          "role": "Trợ từ ngữ khí",
+          "vn": "Dùng cuối câu đề nghị, thương lượng nhẹ nhàng",
+          "radicals": "吧 = Bộ khẩu 口 + Chữ ba 巴"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "了", "tag": "Trợ từ" },
+        { "id": "t7", "text": "吧", "tag": "Ngữ khí" },
+        { "id": "t2", "text": "太", "tag": "Phó từ" },
+        { "id": "t5", "text": "便宜", "tag": "Tính từ" },
+        { "id": "t8", "text": "吗", "tag": "Bẫy" },
+        { "id": "t1", "text": "苹果", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "一点儿", "tag": "Bổ ngữ" },
+        { "id": "t3", "text": "贵", "tag": "Tính từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["苹果", "太", "贵", "了", "便宜", "一点儿", "吧"],
+      "wordBankPool": ["了", "吧", "太", "便宜", "吗", "苹果", "一点儿", "贵"],
+      "traps": [
+        {
+          "pattern": "吗",
+          "msg": "Lỗi ngữ khí: Câu mặc cả mang tính đề nghị 'rẻ một chút đi' phải dùng trợ từ '吧', không dùng '吗'."
+        }
+      ],
+      "explanation": "Mẫu câu '太 + Tính từ + 了' dùng để cảm thán; 'Tính từ + 一点儿' dùng để so sánh hoặc đề nghị giảm bớt mức độ."
+    },
+    {
+      "id": "b08-04",
+      "type": "sentence_parsing",
+      "title": "Hỏi cách thức bán hàng",
+      "vi": "Dưa hấu này bán thế nào?",
+      "zh": "这个西瓜怎么卖",
+      "standardTrans": "这个西瓜怎么卖",
+      "pinyin": "Zhège xīguā zěnme mài?",
+      "grammarPoint": "Hỏi cách thức/giá cả: Danh từ + 怎么卖",
+      "tokens": [
+        {
+          "text": "Này",
+          "hz": "这",
+          "py": "zhè",
+          "hv": "Giá",
+          "role": "Đại từ chỉ thị",
+          "vn": "Này, đây",
+          "radicals": "这 = Bộ sước 辶 + Bộ văn 文"
+        },
+        {
+          "text": "Quả / Cái",
+          "hz": "个",
+          "py": "gè",
+          "hv": "Cá",
+          "role": "Lượng từ",
+          "vn": "Lượng từ đứng giữa đại từ chỉ thị và danh từ",
+          "radicals": "个 = Bộ nhân 人 + Bộ cổn 丨"
         },
         {
           "text": "Dưa hấu",
           "hz": "西瓜",
           "py": "xīguā",
           "hv": "Tây qua",
-          "role": "Chủ ngữ 2",
+          "role": "Danh từ",
           "vn": "Quả dưa hấu",
-          "radicals": "西 = Bộ á 西; 瓜 = Bộ qua 瓜"
+          "radicals": "西 = Bộ á 覀; 瓜 = Bộ qua 瓜"
         },
         {
-          "text": "Ngon",
-          "hz": "好吃",
-          "py": "hǎochī",
-          "hv": "Hảo ngật",
-          "role": "Vị ngữ tính từ",
-          "vn": "Ngon miệng (đồ ăn)",
-          "radicals": "好 = Bộ nữ 女 + bộ tử 子; 吃 = Bộ khẩu 口 + chữ khất 乞"
+          "text": "Thế nào",
+          "hz": "怎么",
+          "py": "zěnme",
+          "hv": "Chẩm ma",
+          "role": "Đại từ nghi vấn",
+          "vn": "Như thế nào, bằng cách nào",
+          "radicals": "怎 = Bộ tâm 心; 么 = Bộ phiệt 丿 + Bộ khư 厶"
+        },
+        {
+          "text": "Bán",
+          "hz": "卖",
+          "py": "mài",
+          "hv": "Mại",
+          "role": "Động từ",
+          "vn": "Bán",
+          "radicals": "卖 = Bộ thập 十 + Bộ đại 大"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "西瓜很好吃", "tag": "Khen dưa hấu" },
-        { "id": "t1", "text": "香蕉不太好吃", "tag": "Chê chuối" },
-        { "id": "t3", "text": "你吃西瓜吧", "tag": "Lời rủ rê ăn" },
-        { "id": "t4", "text": "不很好吃", "tag": "Bẫy phủ định" },
-        { "id": "t5", "text": "西瓜你吃", "tag": "Bẫy ngữ tự" }
+        { "id": "t4", "text": "怎么", "tag": "Nghi vấn" },
+        { "id": "t2", "text": "个", "tag": "Lượng từ" },
+        { "id": "t6", "text": "买", "tag": "Bẫy" },
+        { "id": "t5", "text": "卖", "tag": "Động từ" },
+        { "id": "t1", "text": "这", "tag": "Chỉ thị" },
+        { "id": "t3", "text": "西瓜", "tag": "Danh từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["香蕉不太好吃", "西瓜很好吃", "你吃西瓜吧"],
-      "wordBankPool": ["香蕉不太好吃", "西瓜很好吃", "你吃西瓜吧", "不很好吃", "西瓜你吃", "好吃不"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["这", "个", "西瓜", "怎么", "卖"],
+      "wordBankPool": ["怎么", "个", "买", "卖", "这", "西瓜"],
       "traps": [
         {
-          "pattern": "不很好吃",
-          "msg": "Lỗi mức độ phủ định: Để nói 'không... lắm', cấu trúc chuẩn là '不太 + Tính từ' ('不太好吃'), không dùng '不很好吃'."
-        },
-        {
-          "pattern": "西瓜吃你",
-          "msg": "Lỗi cấu trúc câu: Chủ ngữ '你' phải đứng trước động từ vị ngữ '吃' ('你吃西瓜吧')."
+          "pattern": "买",
+          "msg": "Lỗi từ vựng: Người mua hỏi người bán phải dùng '怎么卖' (bán thế nào), không dùng '怎么买'."
         }
       ],
-      "explanation": "Đồ ăn ngon dùng tính từ '好吃' (khác với nước uống ngon là '好喝'). Trợ từ '吧' ở cuối câu biểu thị lời khuyên nhủ, đề nghị nhẹ nhàng."
-    },
-    {
-      "id": "b08-07",
-      "type": "sentence_parsing",
-      "title": "Hỏi giá và lượng từ hỏi 几斤",
-      "vi": "A: Nho bán thế nào vậy? B: Hai tệ một cân, cậu mua mấy cân?",
-      "zh": "葡萄怎么卖两块一斤你买几斤",
-      "standardTrans": "葡萄怎么卖两块一斤你买几斤",
-      "pinyin": "Pútao zěnme mài? Liǎng kuài yì jīn, nǐ mǎi jǐ jīn?",
-      "grammarPoint": "Hỏi phương thức bán: 怎么卖; Hai tệ dùng 两块 (không dùng 二块); Hỏi số lượng nhỏ: 几 + Lượng từ",
-      "tokens": [
-        {
-          "text": "Nho",
-          "hz": "葡萄",
-          "py": "pútao",
-          "hv": "Bồ đào",
-          "role": "Chủ ngữ",
-          "vn": "Quả nho",
-          "radicals": "葡 = Bộ thảo 艹 + chữ bồ 匍; 萄 = Bộ thảo 艹 + chữ đào 匋"
-        },
-        {
-          "text": "Hai tệ một cân",
-          "hz": "两块一斤",
-          "py": "liǎng kuài yì jīn",
-          "hv": "Lưỡng khối nhất cân",
-          "role": "Cụm vị ngữ báo giá",
-          "vn": "Hai tệ một cân",
-          "radicals": "两 = Số 2 trước lượng từ; 块 = Bộ thổ 土 + chữ khoái 夬; 斤 = Cân"
-        },
-        {
-          "text": "Mấy cân",
-          "hz": "几斤",
-          "py": "jǐ jīn",
-          "hv": "Kỷ cân",
-          "role": "Cụm số lượng nghi vấn",
-          "vn": "Mấy cân (dưới 10 cân)",
-          "radicals": "几 = Bộ kỷ 几; 斤 = Bộ cân 斤"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "两块一斤", "tag": "Báo giá" },
-        { "id": "t1", "text": "葡萄怎么卖", "tag": "Khách hỏi giá" },
-        { "id": "t3", "text": "你买几斤", "tag": "Chủ quán hỏi lại" },
-        { "id": "t4", "text": "二块一斤", "tag": "Bẫy số đếm" },
-        { "id": "t5", "text": "卖怎么葡萄", "tag": "Bẫy ngữ tự" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["葡萄怎么卖", "两块一斤", "你买几斤"],
-      "wordBankPool": ["葡萄怎么卖", "两块一斤", "你买几斤", "二块一斤", "卖怎么葡萄", "几斤买"],
-      "traps": [
-        {
-          "pattern": "二块",
-          "msg": "Lỗi dùng số từ: Trước đơn vị tiền tệ '块' khi chỉ số lượng 2 bắt buộc dùng '两' ('两块'), tuyệt đối không nói '二块'."
-        },
-        {
-          "pattern": "卖怎么",
-          "msg": "Lỗi từ để hỏi: '怎么' đứng TRƯỚC động từ ('怎么卖'), không dịch xuôi theo tiếng Việt là '卖怎么'."
-        }
-      ],
-      "explanation": "Cấu trúc báo đơn giá: [Số tiền + 一 + Đơn vị cân] như '两块一斤' (hai tệ một cân). Từ '几' dùng để hỏi số lượng ước chừng dưới 10."
-    },
-    {
-      "id": "b08-08",
-      "type": "anti_word_by_word",
-      "title": "Tìm người với động từ 找 và biểu thị thân phận học sinh",
-      "vi": "Xin chào! Tôi muốn tìm thầy giáo Vương, tôi là học sinh của thầy ấy.",
-      "zh": "你好我要找王老师我是他的学生",
-      "standardTrans": "你好我要找王老师我是他的学生",
-      "pinyin": "Nǐ hǎo! Wǒ yào zhǎo Wáng lǎoshī, wǒ shì tā de xuésheng.",
-      "grammarPoint": "Động từ 找 (tìm); Định ngữ sở hữu: 他的 + 学生 (học sinh của thầy ấy)",
-      "tokens": [
-        {
-          "text": "Tìm kiếm",
-          "hz": "找",
-          "py": "zhǎo",
-          "hv": "Trảo",
-          "role": "Động từ vị ngữ",
-          "vn": "Tìm, kiếm (người hoặc vật)",
-          "radicals": "扌 = Bộ thủ (tài gảy) + bộ qua 戈"
-        },
-        {
-          "text": "Học sinh của thầy ấy",
-          "hz": "他的学生",
-          "py": "tā de xuésheng",
-          "hv": "Tha đích học sinh",
-          "role": "Cụm danh từ tân ngữ",
-          "vn": "Học trò của thầy",
-          "radicals": "他 = Bộ nhân đứng 亻; 的 = Trợ từ; 学 = Bộ miên 宀 biến thể; 生 = Bộ sinh 生"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "我要找王老师", "tag": "Mục đích tìm người" },
-        { "id": "t1", "text": "你好", "tag": "Chào hỏi" },
-        { "id": "t3", "text": "我是他的学生", "tag": "Xác nhận thân phận" },
-        { "id": "t4", "text": "学生他的", "tag": "Bẫy định ngữ" },
-        { "id": "t5", "text": "找我要", "tag": "Bẫy vị trí" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["找王老师", "我是他的学生"],
-      "wordBankPool": ["你好", "我要找王老师", "我是他的学生", "学生他的", "找我要", "他是我的学生"],
-      "traps": [
-        {
-          "pattern": "学生他的",
-          "msg": "Lỗi định ngữ: Cụm 'học sinh của thầy ấy' phải đặt thành phần sở hữu lên trước: '他的学生', không nói ngược."
-        },
-        {
-          "pattern": "老师王",
-          "msg": "Lỗi xưng danh: Họ luôn đứng trước chức vị giáo viên: '王老师' (thầy Vương), không nói '老师王'."
-        }
-      ],
-      "explanation": "Động từ '找' (zhǎo) có hai nghĩa lớn: 1. Tìm kiếm ai đó (找王老师); 2. Thối tiền thừa (找钱). Định ngữ sở hữu dùng trợ từ 的: 他的学生."
-    },
-    {
-      "id": "b08-09",
-      "type": "sentence_parsing",
-      "title": "Cấu trúc đưa đồ 给 và hỏi ý kiến 好吗",
-      "vi": "Cậu đưa cho tớ một cuốn sách, được không?",
-      "zh": "你给我一本书好吗",
-      "standardTrans": "你给我一本书好吗",
-      "pinyin": "Nǐ gěi wǒ yì běn shū, hǎo ma?",
-      "grammarPoint": "Động từ mang 2 tân ngữ 给: 给 + Người (Tân ngữ 1) + Vật (Tân ngữ 2); Hỏi thương lượng: 好吗",
-      "tokens": [
-        {
-          "text": "Cho, đưa cho",
-          "hz": "给",
-          "py": "gěi",
-          "hv": "Cấp",
-          "role": "Động từ 2 tân ngữ",
-          "vn": "Đưa cho, cho",
-          "radicals": "纟 = Bộ mịch + chữ hợp 合 (bộ nhân 人 + bộ nhất 一 + bộ khẩu 口)"
-        },
-        {
-          "text": "Một cuốn sách",
-          "hz": "一本书",
-          "py": "yì běn shū",
-          "hv": "Nhất bản thư",
-          "role": "Cụm số lượng tân ngữ 2",
-          "vn": "Một quyển sách",
-          "radicals": "一 = Số 1; 本 = Bộ mộc 木 + nét ngang chỉ gốc rễ; 书 = Chữ thư 书"
-        },
-        {
-          "text": "Được không",
-          "hz": "好吗",
-          "py": "hǎo ma",
-          "hv": "Hảo ma",
-          "role": "Trợ từ hỏi ý kiến",
-          "vn": "Được không, có được không",
-          "radicals": "好 = Bộ nữ 女 + bộ tử 子; 吗 = Bộ khẩu 口 + bộ mã 马"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "一本书", "tag": "Vật đưa" },
-        { "id": "t1", "text": "你给我", "tag": "Chủ vị + Tân ngữ 1" },
-        { "id": "t3", "text": "好吗", "tag": "Hỏi thương lượng" },
-        { "id": "t4", "text": "给一本书我", "tag": "Bẫy trật tự tân ngữ" },
-        { "id": "t5", "text": "一个书", "tag": "Bẫy lượng từ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["你给我", "一本书", "好吗"],
-      "wordBankPool": ["你给我", "一本书", "好吗", "给一本书我", "一个书", "你给我书"],
-      "traps": [
-        {
-          "pattern": "给一本书我",
-          "msg": "Lỗi 2 tân ngữ: Động từ '给' truyền hành động cho NGƯỜI trước rồi mới đến VẬT ('给我一本书'), không nói '给一本书我'."
-        },
-        {
-          "pattern": "一个书",
-          "msg": "Lỗi lượng từ: Sách vở đóng cuốn bắt buộc dùng lượng từ '本' ('一本书'), không dùng lượng từ chung '个'."
-        }
-      ],
-      "explanation": "Cấu trúc động từ 2 tân ngữ: [S + 给 + Người nhận + Đồ vật]. '好吗?' đặt ở cuối câu để thăm dò ý kiến hoặc đề nghị một cách lịch sự."
+      "explanation": "'怎么卖' (bán thế nào/tính tiền sao) là cách hỏi giá tự nhiên khi chưa biết hàng bán theo cân hay theo quả."
     },
     {
       "id": "b08-10",
-      "type": "anti_word_by_word",
-      "title": "Phó từ 还要 bổ sung số lượng và câu hỏi tổng tiền 一共多少钱",
-      "vi": "Tôi còn muốn mua 2 cân táo nữa. Tổng cộng bao nhiêu tiền vậy?",
-      "zh": "我还要买两斤苹果一共多少钱",
-      "standardTrans": "我还要买两斤苹果一共多少钱",
-      "pinyin": "Wǒ hái yào mǎi liǎng jīn píngguǒ. Yígòng duōshao qián?",
-      "grammarPoint": "Phó từ 还 biểu thị mua thêm; Lượng từ táo 两斤; Câu hỏi tổng tiền chuẩn: 一共多少钱",
+      "type": "sentence_parsing",
+      "title": "Tính tổng tiền và trả tiền thừa",
+      "vi": "Tổng cộng mười lăm đồng trả lại bạn năm đồng.",
+      "zh": "一共十五块找你五块",
+      "standardTrans": "一共十五块找你五块",
+      "pinyin": "Yígòng shíwǔ kuài zhǎo nǐ wǔ kuài.",
+      "grammarPoint": "Tính tiền: 一共 + Số tiền & 找 + Người + Tiền thừa",
       "tokens": [
         {
-          "text": "Còn muốn mua",
-          "hz": "还要买",
-          "py": "hái yào mǎi",
-          "hv": "Hoàn yếu mãi",
-          "role": "Phó từ + Động từ",
-          "vn": "Còn muốn mua thêm nữa",
-          "radicals": "还 = Bộ quai xước 辶; 要 = Muốn; 买 = Mua"
+          "text": "Tổng cộng",
+          "hz": "一共",
+          "py": "yígòng",
+          "hv": "Nhất cộng",
+          "role": "Phó từ",
+          "vn": "Tổng cộng, tất cả là",
+          "radicals": "一 = Bộ nhất 一; 共 = Bộ bát 八 + Bộ nhất 一"
         },
         {
-          "text": "Hai cân táo",
-          "hz": "两斤苹果",
-          "py": "liǎng jīn píngguǒ",
-          "hv": "Lưỡng cân bình quả",
-          "role": "Cụm số lượng tân ngữ",
-          "vn": "2 cân táo (1 kg)",
-          "radicals": "两 = Lưỡng (2); 斤 = Cân; 苹果 = Táo"
+          "text": "Mười lăm",
+          "hz": "十五",
+          "py": "shíwǔ",
+          "hv": "Thập ngũ",
+          "role": "Số từ",
+          "vn": "Số 15",
+          "radicals": "十 = Bộ thập 十; 五 = Bộ nhị 二"
         },
         {
-          "text": "Tổng cộng bao nhiêu tiền",
-          "hz": "一共多少钱",
-          "py": "yígòng duōshao qián",
-          "hv": "Nhất cộng đa thiếu tiền",
-          "role": "Cụm vị ngữ hỏi tiền",
-          "vn": "Tổng cộng hết bao nhiêu tiền",
-          "radicals": "一共 = Tổng cộng; 多少 = Bao nhiêu; 钱 = Tiền"
+          "text": "Đồng",
+          "hz": "块",
+          "py": "kuài",
+          "hv": "Khoái",
+          "role": "Lượng từ tiền tệ",
+          "vn": "Đồng (Nhân dân tệ)",
+          "radicals": "块 = Bộ thổ 土 + Bộ đại 大"
+        },
+        {
+          "text": "Trả lại tiền thừa",
+          "hz": "找",
+          "py": "zhǎo",
+          "hv": "Trảo",
+          "role": "Động từ",
+          "vn": "Thối tiền, trả lại tiền thừa",
+          "radicals": "找 = Bộ thủ 扌 + Bộ qua 戈"
+        },
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Tân ngữ 1",
+          "vn": "Bạn, quý khách",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Năm",
+          "hz": "五",
+          "py": "wǔ",
+          "hv": "Ngũ",
+          "role": "Số từ",
+          "vn": "Số 5",
+          "radicals": "五 = Bộ nhị 二"
+        },
+        {
+          "text": "Đồng",
+          "hz": "块",
+          "py": "kuài",
+          "hv": "Khoái",
+          "role": "Lượng từ tiền tệ",
+          "vn": "Đồng (Nhân dân tệ)",
+          "radicals": "块 = Bộ thổ 土 + Bộ đại 大"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "两斤苹果", "tag": "Số lượng táo mua thêm" },
-        { "id": "t3", "text": "一共多少钱", "tag": "Hỏi tổng tiền" },
-        { "id": "t1", "text": "我还要买", "tag": "Chủ ngữ + Ý định mua thêm" },
-        { "id": "t4", "text": "二斤苹果", "tag": "Bẫy số từ" },
-        { "id": "t5", "text": "多少钱一共", "tag": "Bẫy phó từ" }
+        { "id": "t4", "text": "找", "tag": "Động từ" },
+        { "id": "t2", "text": "十五", "tag": "Số từ" },
+        { "id": "t7", "text": "块", "tag": "Đơn vị tiền" },
+        { "id": "t1", "text": "一共", "tag": "Phó từ" },
+        { "id": "t8", "text": "给", "tag": "Bẫy" },
+        { "id": "t5", "text": "你", "tag": "Tân ngữ" },
+        { "id": "t3", "text": "块", "tag": "Đơn vị tiền" },
+        { "id": "t6", "text": "五", "tag": "Số từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["我还要买", "两斤苹果", "一共多少钱"],
-      "wordBankPool": ["我还要买", "两斤苹果", "一共多少钱", "二斤苹果", "多少钱一共", "还要买苹果"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["一共", "十五", "块", "找", "你", "五"],
+      "wordBankPool": ["找", "十五", "块", "一共", "给", "你", "块", "五"],
       "traps": [
         {
-          "pattern": "二斤苹果",
-          "msg": "Lỗi số lượng: Số 2 đứng trước lượng từ '斤' bắt buộc là '两' ('两斤苹果'), không dùng '二斤'."
-        },
-        {
-          "pattern": "多少钱一共",
-          "msg": "Lỗi ngữ tự phó từ: '一共' (tổng cộng) luôn đứng trước cụm hỏi số lượng/tiền tệ: '一共多少钱'."
+          "pattern": "给",
+          "msg": "Lỗi động từ: Trong ngữ cảnh mua bán, trả lại tiền thừa cho khách phải dùng '找' (thối tiền), không dùng '给'."
         }
       ],
-      "explanation": "Câu kết hợp mua thêm: 'S + 还要买 + Số lượng' và câu hỏi kết toán chốt bill kinh điển khi mua sắm tại Trung Quốc: '一共多少钱?' (Tổng cộng bao nhiêu tiền?)."
+      "explanation": "Động từ '找' mang 2 tân ngữ: 找 + Người nhận tiền thừa + Số tiền thừa."
+    },
+    {
+      "id": "b08-03",
+      "type": "sentence_parsing",
+      "title": "Đọc số tiền lẻ kết hợp đồng và hào",
+      "vi": "Một cân quýt ba đồng hai hào.",
+      "zh": "一斤橘子三块二",
+      "standardTrans": "一斤橘子三块二",
+      "pinyin": "Yì jīn júzi sān kuài èr.",
+      "grammarPoint": "Cách đọc tiền lẻ: Số + 块 + Số (lược bỏ 毛)",
+      "tokens": [
+        {
+          "text": "Một",
+          "hz": "一",
+          "py": "yì",
+          "hv": "Nhất",
+          "role": "Số từ",
+          "vn": "Số 1",
+          "radicals": "一 = Bộ nhất 一"
+        },
+        {
+          "text": "Cân",
+          "hz": "斤",
+          "py": "jīn",
+          "hv": "Cân",
+          "role": "Lượng từ",
+          "vn": "Cân (0.5 kg)",
+          "radicals": "斤 = Bộ cân 斤"
+        },
+        {
+          "text": "Quýt",
+          "hz": "橘子",
+          "py": "júzi",
+          "hv": "Quất tử",
+          "role": "Danh từ",
+          "vn": "Quả quýt",
+          "radicals": "橘 = Bộ mộc 木 + Bộ khẩu 口; 子 = Bộ tử 子"
+        },
+        {
+          "text": "Ba",
+          "hz": "三",
+          "py": "sān",
+          "hv": "Tam",
+          "role": "Số từ",
+          "vn": "Số 3",
+          "radicals": "三 = Bộ nhất 一"
+        },
+        {
+          "text": "Đồng",
+          "hz": "块",
+          "py": "kuài",
+          "hv": "Khoái",
+          "role": "Đơn vị tiền",
+          "vn": "Đồng (Nhân dân tệ)",
+          "radicals": "块 = Bộ thổ 土 + Bộ đại 大"
+        },
+        {
+          "text": "Hai (hào)",
+          "hz": "二",
+          "py": "èr",
+          "hv": "Nhị",
+          "role": "Số từ",
+          "vn": "2 hào (đơn vị cuối cùng được lược bỏ 毛, đọc là 二)",
+          "radicals": "二 = Bộ nhị 二"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "三", "tag": "Số từ" },
+        { "id": "t1", "text": "一", "tag": "Số từ" },
+        { "id": "t6", "text": "二", "tag": "Số lẻ" },
+        { "id": "t3", "text": "橘子", "tag": "Danh từ" },
+        { "id": "t7", "text": "两", "tag": "Bẫy" },
+        { "id": "t2", "text": "斤", "tag": "Lượng từ" },
+        { "id": "t5", "text": "块", "tag": "Đơn vị tiền" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["一", "斤", "橘子", "三", "块", "二"],
+      "wordBankPool": ["三", "一", "二", "橘子", "两", "斤", "块"],
+      "traps": [
+        {
+          "pattern": "两",
+          "msg": "Lỗi đọc số tiền: Khi lược bỏ đơn vị '毛' ở cuối cụm tiền lẻ (三块二), số 2 phải đọc là '二', không đọc là '两'."
+        }
+      ],
+      "explanation": "Trong văn nói tiếng Trung, đơn vị tiền đứng cuối cùng thường được lược bỏ (三块二毛 $\rightarrow$ 三块二)."
+    },
+    {
+      "id": "b08-08",
+      "type": "sentence_parsing",
+      "title": "Thanh toán tiền cho người bán",
+      "vi": "Đưa bạn hai mươi đồng.",
+      "zh": "给你二十块钱",
+      "standardTrans": "给你二十块钱",
+      "pinyin": "Gěi nǐ èrshí kuài qián.",
+      "grammarPoint": "Động từ hai tân ngữ: 给 + Người + Số tiền",
+      "tokens": [
+        {
+          "text": "Đưa / Cho",
+          "hz": "给",
+          "py": "gěi",
+          "hv": "Cấp",
+          "role": "Động từ",
+          "vn": "Đưa, trao cho",
+          "radicals": "给 = Bộ mịch 纟 + Bộ nhân 人 + Bộ khẩu 口"
+        },
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Tân ngữ 1",
+          "vn": "Bạn, anh/chị",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Hai mươi",
+          "hz": "二十",
+          "py": "èrshí",
+          "hv": "Nhị thập",
+          "role": "Số từ",
+          "vn": "Số 20",
+          "radicals": "二 = Bộ nhị 二; 十 = Bộ thập 十"
+        },
+        {
+          "text": "Đồng",
+          "hz": "块",
+          "py": "kuài",
+          "hv": "Khoái",
+          "role": "Lượng từ tiền tệ",
+          "vn": "Đồng (Nhân dân tệ)",
+          "radicals": "块 = Bộ thổ 土 + Bộ đại 大"
+        },
+        {
+          "text": "Tiền",
+          "hz": "钱",
+          "py": "qián",
+          "hv": "Tiền",
+          "role": "Danh từ",
+          "vn": "Tiền bạc",
+          "radicals": "钱 = Bộ kim 钅 + Bộ qua 戈"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "二十", "tag": "Số từ" },
+        { "id": "t5", "text": "钱", "tag": "Danh từ" },
+        { "id": "t1", "text": "给", "tag": "Động từ" },
+        { "id": "t6", "text": "找", "tag": "Bẫy" },
+        { "id": "t2", "text": "你", "tag": "Tân ngữ" },
+        { "id": "t4", "text": "块", "tag": "Đơn vị tiền" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["给", "你", "二十", "块", "钱"],
+      "wordBankPool": ["二十", "钱", "给", "找", "你", "块"],
+      "traps": [
+        {
+          "pattern": "找",
+          "msg": "Lỗi động từ: Người mua đưa tiền thanh toán cho người bán phải dùng '给', còn người bán trả lại tiền thừa mới dùng '找'."
+        }
+      ],
+      "explanation": "Động từ '给' nhận hai tân ngữ theo trật tự: 给 + Người nhận (你) + Vật/Tiền (二十块钱)."
+    },
+    {
+      "id": "b08-05",
+      "type": "sentence_parsing",
+      "title": "Nhận xét giá cả phải chăng",
+      "vi": "Chuối ở đây rất rẻ.",
+      "zh": "这儿的香蕉很便宜",
+      "standardTrans": "这儿的香蕉很便宜",
+      "pinyin": "Zhèr de xiāngjiāo hěn piányi.",
+      "grammarPoint": "Định ngữ địa điểm + 的 + Danh từ + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Ở đây",
+          "hz": "这儿",
+          "py": "zhèr",
+          "hv": "Giá nhi",
+          "role": "Đại từ chỉ thị",
+          "vn": "Nơi này, ở đây",
+          "radicals": "这 = Bộ sước 辶 + Bộ văn 文; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ kết cấu",
+          "vn": "Nối định ngữ chỉ nơi chốn với danh từ",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Chuối",
+          "hz": "香蕉",
+          "py": "xiāngjiāo",
+          "hv": "Hương tiêu",
+          "role": "Chủ ngữ",
+          "vn": "Quả chuối",
+          "radicals": "香 = Bộ hòa 禾 + Bộ nhật 日; 蕉 = Bộ thảo 艹 + Bộ truy 隹 + Bộ hỏa 灬"
+        },
+        {
+          "text": "Rất",
+          "hz": "很",
+          "py": "hěn",
+          "hv": "Hẩn",
+          "role": "Phó từ mức độ",
+          "vn": "Rất",
+          "radicals": "很 = Bộ xích 彳 + Bộ cấn 艮"
+        },
+        {
+          "text": "Rẻ",
+          "hz": "便宜",
+          "py": "piányi",
+          "hv": "Tiện nghi",
+          "role": "Vị ngữ tính từ",
+          "vn": "Rẻ, giá hợp lý",
+          "radicals": "便 = Bộ nhân đứng 亻 + Bộ nhật 日; 宜 = Bộ miên 宀 + Chữ thả 且"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "很", "tag": "Phó từ" },
+        { "id": "t2", "text": "的", "tag": "Trợ từ" },
+        { "id": "t6", "text": "贵", "tag": "Bẫy" },
+        { "id": "t1", "text": "这儿", "tag": "Địa điểm" },
+        { "id": "t5", "text": "便宜", "tag": "Tính từ" },
+        { "id": "t3", "text": "香蕉", "tag": "Chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["这儿", "的", "香蕉", "很", "便宜"],
+      "wordBankPool": ["很", "的", "贵", "这儿", "便宜", "香蕉"],
+      "traps": [
+        {
+          "pattern": "贵",
+          "msg": "Lỗi từ vựng: Đề bài nhận xét là 'rẻ' phải dùng '便宜', không dùng từ trái nghĩa '贵' (đắt)."
+        }
+      ],
+      "explanation": "Cụm từ chỉ địa điểm đứng trước danh từ để làm định ngữ phải có trợ từ '的' ở giữa (这儿的香蕉)."
     }
   ]
 }

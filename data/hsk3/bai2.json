@@ -1,0 +1,653 @@
+{
+  "lessonId": "b02",
+  "lessonTitle": "第2课: 我们那儿的冬天跟北京一样冷",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "所有 vs 一切",
+        "py": "suǒyǒu vs yíqiè",
+        "note": "所有 nhấn mạnh số lượng, đi kèm danh từ cụ thể hoặc trừu tượng (所有的人); 一切 nhấn mạnh toàn bộ các mặt/chủng loại, không kết hợp với 的 và chỉ tu sức cho sự vật trừu tượng (克服一切困难)"
+      },
+      {
+        "word": "得 (děi) vs 得 (dé) vs 得 (de)",
+        "py": "děi vs dé vs de",
+        "note": "得 /děi/ là động từ năng nguyện mang nghĩa phải/cần phải; 得 /dé/ là động từ đạt được/bị (得满分); 得 /de/ là trợ từ kết cấu nối động từ với bổ ngữ trạng thái, khả năng"
+      }
+    ],
+    "grammarTips": [
+      "So sánh bằng: A + 跟 / 和 + B + 一样 (+ Tính từ / Động từ)",
+      "So sánh khác nhau (phủ định): A + 跟 / 和 + B + 不一样 (+ Tính từ)",
+      "Liên từ tăng tiến 不但...而且...: Chung chủ ngữ thì đặt sau S (S + 不但...而且...); khác chủ ngữ thì đặt trước S1 (不但 + S1...而且 + S2 + 也...)",
+      "Bổ ngữ trạng thái so sánh bằng: S + V + 得 + 跟 + B + 一样 + Tính từ HOẶC S + 跟 + B + 一样 + V + 得 + Tính từ"
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b02-01",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc so sánh bằng danh từ với 跟...一样",
+      "vi": "Giá chiếc áo len này bằng giá chiếc áo len kia.",
+      "zh": "这件毛衣跟那件价钱一样",
+      "standardTrans": "这件毛衣跟那件价钱一样",
+      "pinyin": "Zhè jiàn máoyī gēn nà jiàn jiàqián yíyàng",
+      "grammarPoint": "A + 跟 + B + Thuộc tính (价钱) + 一样",
+      "tokens": [
+        {
+          "text": "áo len",
+          "hz": "毛衣",
+          "py": "máoyī",
+          "hv": "mao y",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "áo len",
+          "radicals": "毛 = Bộ mao 毛; 衣 = Bộ y 衣"
+        },
+        {
+          "text": "giá cả",
+          "hz": "价钱",
+          "py": "jiàqián",
+          "hv": "giới tiền",
+          "role": "Phương diện so sánh",
+          "vn": "giá tiền, giá cả",
+          "radicals": "价 = Bộ nhân đứng 亻; 钱 = Bộ kim 钅"
+        },
+        {
+          "text": "như nhau",
+          "hz": "一样",
+          "py": "yíyàng",
+          "hv": "nhất dạng",
+          "role": "Vị ngữ",
+          "vn": "giống nhau, như nhau",
+          "radicals": "一 = Bộ nhất 一; 样 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "价钱", "tag": "Danh từ" },
+        { "id": "t2", "text": "这件", "tag": "Lượng từ" },
+        { "id": "t3", "text": "一样", "tag": "Tính từ" },
+        { "id": "t4", "text": "跟", "tag": "Giới từ" },
+        { "id": "t5", "text": "毛衣", "tag": "Danh từ" },
+        { "id": "t6", "text": "那件", "tag": "Lượng từ" },
+        { "id": "t7", "text": "比", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t5", "t4", "t6", "t1", "t3"],
+      "requiredKeywordsZh": ["毛衣", "跟", "那件", "价钱一样"],
+      "wordBankPool": ["毛衣", "比", "这件", "一样", "那件", "跟", "价钱"],
+      "traps": [
+        {
+          "pattern": "一样价钱",
+          "msg": "Lỗi đảo trật tự từ: Phương diện so sánh 价钱 bắt buộc phải đứng trước 一样, không dịch bồi theo tiếng Việt thành 一样价钱."
+        },
+        {
+          "pattern": "比那件一样",
+          "msg": "Lỗi dùng từ so sánh: Cấu trúc so sánh bằng 一样 chỉ kết hợp với giới từ 跟 hoặc 和, tuyệt đối không dùng 比."
+        }
+      ],
+      "explanation": "Câu so sánh ngang bằng đối chiếu thuộc tính cụ thể giữa hai thực thể. Phương diện so sánh ở đây là giá tiền (价钱) được đặt ngay trước vị ngữ 一样."
+    },
+    {
+      "id": "b02-02",
+      "type": "anti_word_by_word",
+      "title": "So sánh bằng có tính từ vị ngữ",
+      "vi": "Hôm nay lạnh như hôm qua.",
+      "zh": "今天跟昨天一样冷",
+      "standardTrans": "今天跟昨天一样冷",
+      "pinyin": "Jīntiān gēn zuótiān yíyàng lěng",
+      "grammarPoint": "A + 跟 + B + 一样 + Tính từ (冷)",
+      "tokens": [
+        {
+          "text": "hôm qua",
+          "hz": "昨天",
+          "py": "zuótiān",
+          "hv": "tạc thiên",
+          "role": "Đối tượng so sánh",
+          "vn": "hôm qua",
+          "radicals": "昨 = Bộ nhật 日; 天 = Bộ đại 大"
+        },
+        {
+          "text": "lạnh",
+          "hz": "冷",
+          "py": "lěng",
+          "hv": "lãnh",
+          "role": "Vị ngữ",
+          "vn": "lạnh, rét buốt",
+          "radicals": "冷 = Bộ băng 冫 + chữ lệnh 令"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "昨天", "tag": "Danh từ" },
+        { "id": "t2", "text": "今天", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "冷", "tag": "Tính từ" },
+        { "id": "t4", "text": "跟", "tag": "Giới từ" },
+        { "id": "t5", "text": "一样", "tag": "Phó từ" },
+        { "id": "t6", "text": "也", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t5", "t3"],
+      "requiredKeywordsZh": ["今天", "跟", "昨天", "一样冷"],
+      "wordBankPool": ["也", "冷", "昨天", "今天", "一样", "跟"],
+      "traps": [
+        {
+          "pattern": "冷一样",
+          "msg": "Lỗi vị trí tính từ: Trong câu so sánh bằng, hình dung từ bắt buộc phải đứng sau 一样 (一样冷), không được đảo ra trước."
+        },
+        {
+          "pattern": "也昨天一样",
+          "msg": "Lỗi giới từ: Không dùng phó từ 也 thay thế cho giới từ liên kết so sánh 跟 hoặc 和."
+        }
+      ],
+      "explanation": "Cấu trúc so sánh bằng cơ bản có tính từ làm trung tâm vị ngữ. Giới từ 跟 kết nối hai mốc thời gian, sau đó 一样 đóng vai trò trạng ngữ bổ nghĩa đứng liền trước tính từ 冷."
+    },
+    {
+      "id": "b02-03",
+      "type": "sentence_parsing",
+      "title": "So sánh bằng giữa hai chỉnh thể danh từ",
+      "vi": "Khí hậu ở đất nước chúng tôi giống ở Trung Quốc.",
+      "zh": "我们国家的气候跟中国一样",
+      "standardTrans": "我们国家的气候跟中国一样",
+      "pinyin": "Wǒmen guójiā de qìhòu gēn Zhōngguó yíyàng",
+      "grammarPoint": "A (Chủ ngữ định - trung) + 跟 + B + 一样",
+      "tokens": [
+        {
+          "text": "đất nước",
+          "hz": "国家",
+          "py": "guójiā",
+          "hv": "quốc gia",
+          "role": "Định ngữ",
+          "vn": "quốc gia, đất nước",
+          "radicals": "国 = Bộ vi 囗; 家 = Bộ miên 宀"
+        },
+        {
+          "text": "khí hậu",
+          "hz": "气候",
+          "py": "qìhòu",
+          "hv": "khí hậu",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "khí hậu thời tiết",
+          "radicals": "气 = Bộ khí 气; 候 = Bộ nhân đứng 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "跟", "tag": "Giới từ" },
+        { "id": "t2", "text": "我们", "tag": "Đại từ" },
+        { "id": "t3", "text": "一样", "tag": "Tính từ" },
+        { "id": "t4", "text": "气候", "tag": "Danh từ" },
+        { "id": "t5", "text": "中国", "tag": "Danh từ" },
+        { "id": "t6", "text": "国家", "tag": "Danh từ" },
+        { "id": "t7", "text": "的", "tag": "Trợ từ" },
+        { "id": "t8", "text": "有", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t6", "t7", "t4", "t1", "t5", "t3"],
+      "requiredKeywordsZh": ["气候", "跟", "中国", "一样"],
+      "wordBankPool": ["国家", "中国", "有", "气候", "我们", "一样", "跟", "的"],
+      "traps": [
+        {
+          "pattern": "一样气候",
+          "msg": "Lỗi trật tự từ: 气候 là chủ thể chính được đem ra so sánh nên phải làm trung tâm ngữ chủ ngữ ở đầu câu, không để 一样 đứng trước 气候."
+        },
+        {
+          "pattern": "比中国一样",
+          "msg": "Lỗi dùng từ so sánh: Cấu trúc 一样 chỉ đi cùng giới từ so sánh bằng 跟/和, không dùng giới từ so sánh hơn 比."
+        }
+      ],
+      "explanation": "Câu khẳng định hai thực thể danh từ có tính tương đồng. Cụm định - trung 我们国家的气候 làm chủ ngữ chính, kết nối với đối tượng so sánh 中国 qua giới từ 跟."
+    },
+    {
+      "id": "b02-04",
+      "type": "sentence_parsing",
+      "title": "So sánh bằng kết hợp bổ ngữ trạng thái 得",
+      "vi": "Cậu ấy viết chữ Hán đẹp như cậu viết.",
+      "zh": "他写汉字写得跟你一样好",
+      "standardTrans": "他写汉字写得跟你一样好",
+      "pinyin": "Tā xiě Hànzì xiě de gēn nǐ yíyàng hǎo",
+      "grammarPoint": "Động từ mang tân ngữ + Lặp lại V + 得 + 跟 + B + 一样 + Tính từ",
+      "tokens": [
+        {
+          "text": "chữ Hán",
+          "hz": "汉字",
+          "py": "Hànzì",
+          "hv": "Hán tự",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "chữ Hán",
+          "radicals": "汉 = Bộ thủy 氵; 字 = Bộ miên 宀"
+        },
+        {
+          "text": "viết đạt mức",
+          "hz": "写得",
+          "py": "xiě de",
+          "hv": "tả đắc",
+          "role": "Động từ lặp lại + Trợ từ 得",
+          "vn": "viết được, viết đến mức",
+          "radicals": "写 = Bộ mịch 冖; 得 = Bộ xích 彳"
+        },
+        {
+          "text": "đẹp, tốt",
+          "hz": "好",
+          "py": "hǎo",
+          "hv": "hảo",
+          "role": "Bổ ngữ trạng thái",
+          "vn": "tốt, đẹp, hay",
+          "radicals": "好 = Bộ nữ 女 + bộ tử 子"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "写得", "tag": "Động từ + Trợ từ" },
+        { "id": "t2", "text": "好", "tag": "Tính từ" },
+        { "id": "t3", "text": "他写", "tag": "Chủ vị" },
+        { "id": "t4", "text": "你", "tag": "Đại từ" },
+        { "id": "t5", "text": "汉字", "tag": "Danh từ" },
+        { "id": "t6", "text": "跟", "tag": "Giới từ" },
+        { "id": "t7", "text": "一样", "tag": "Phó từ" },
+        { "id": "t8", "text": "了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t5", "t1", "t6", "t4", "t7", "t2"],
+      "requiredKeywordsZh": ["写汉字", "写得", "跟你一样好"],
+      "wordBankPool": ["写得", "汉字", "了", "好", "跟", "他写", "你", "一样"],
+      "traps": [
+        {
+          "pattern": "写了汉字",
+          "msg": "Lỗi dùng sai trợ từ: Đánh giá trình độ và kết quả hành động bắt buộc dùng trợ từ kết cấu 得 sau động từ lặp lại, không dùng trợ từ động thái 了."
+        },
+        {
+          "pattern": "跟你好一样",
+          "msg": "Lỗi vị trí bổ ngữ: Tính từ 好 bắt buộc phải đặt sau 一样 (一样好), không chèn vào giữa cấu trúc so sánh."
+        }
+      ],
+      "explanation": "Khi động từ mang tân ngữ kết hợp bổ ngữ trạng thái, quy tắc bắt buộc là phải lặp lại động từ 写, thêm trợ từ kết cấu 得, sau đó chèn cụm so sánh bằng 跟你一样 vào trước tính từ 好."
+    },
+    {
+      "id": "b02-05",
+      "type": "sentence_parsing",
+      "title": "Cặp liên từ tăng tiến 不但...而且...",
+      "vi": "Anh ấy không chỉ biết nói tiếng Anh mà còn biết tiếng Pháp.",
+      "zh": "他不但会说英语而且还会法语",
+      "standardTrans": "他不但会说英语而且还会法语",
+      "pinyin": "Tā búdàn huì shuō Yīngyǔ érqiě hái huì Fǎyǔ",
+      "grammarPoint": "Chủ ngữ chung: S + 不但 + V1 + O1, 而且 + 还 + V2 + O2",
+      "tokens": [
+        {
+          "text": "không những",
+          "hz": "不但",
+          "py": "búdàn",
+          "hv": "bất đán",
+          "role": "Liên từ phân câu 1",
+          "vn": "không những, không chỉ",
+          "radicals": "不 = Bộ nhất 一; 但 = Bộ nhân đứng 亻"
+        },
+        {
+          "text": "tiếng Anh",
+          "hz": "英语",
+          "py": "Yīngyǔ",
+          "hv": "Anh ngữ",
+          "role": "Tân ngữ 1",
+          "vn": "tiếng Anh",
+          "radicals": "英 = Bộ thảo 艹; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "mà còn",
+          "hz": "而且",
+          "py": "érqiě",
+          "hv": "nhi thả",
+          "role": "Liên từ phân câu 2",
+          "vn": "mà còn, hơn nữa",
+          "radicals": "而 = Bộ nhi 而; 且 = Bộ nhất 一"
+        },
+        {
+          "text": "tiếng Pháp",
+          "hz": "法语",
+          "py": "Fǎyǔ",
+          "hv": "Pháp ngữ",
+          "role": "Tân ngữ 2",
+          "vn": "tiếng Pháp",
+          "radicals": "法 = Bộ thủy 氵; 语 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "法语", "tag": "Danh từ" },
+        { "id": "t2", "text": "而且", "tag": "Liên từ" },
+        { "id": "t3", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "英语", "tag": "Danh từ" },
+        { "id": "t5", "text": "还会", "tag": "Động từ" },
+        { "id": "t6", "text": "不但", "tag": "Liên từ" },
+        { "id": "t7", "text": "会说", "tag": "Động từ" },
+        { "id": "t8", "text": "但是", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t6", "t7", "t4", "t2", "t5", "t1"],
+      "requiredKeywordsZh": ["不但", "会说英语", "而且还会", "法语"],
+      "wordBankPool": ["还会", "不但", "但是", "法语", "会说", "他", "英语", "而且"],
+      "traps": [
+        {
+          "pattern": "不但他会",
+          "msg": "Lỗi vị trí liên từ: Khi hai phân câu cùng chung một chủ ngữ 他, liên từ 不但 bắt buộc phải đặt sau chủ ngữ, không đứng ở đầu câu."
+        },
+        {
+          "pattern": "而且他还会",
+          "msg": "Lỗi thừa đại từ: Do cùng chủ ngữ, phân câu thứ hai cần lược bỏ đại từ 他 và đi thẳng vào liên từ kết hợp 而且还会."
+        }
+      ],
+      "explanation": "Câu phức tăng tiến biểu thị khả năng ngoại ngữ mở rộng. Do cả hai phân câu cùng chung chủ ngữ 他 nên liên từ 不但 đặt sau chủ ngữ, vế sau dùng 而且 kèm phó từ bổ trợ 还."
+    },
+    {
+      "id": "b02-06",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc 不但...而且还... diễn tả mục đích học tập",
+      "vi": "Cô ấy không những muốn học tiếng Việt mà còn muốn nghiên cứu lịch sử Việt Nam.",
+      "zh": "她不但想学越南语而且还想研究越南历史",
+      "standardTrans": "她不但想学越南语而且还想研究越南历史",
+      "pinyin": "Tā búdàn xiǎng xué Yuènányǔ érqiě hái xiǎng yánjiū Yuènán lìshǐ",
+      "grammarPoint": "S + 不但 + Động từ nguyện vọng 1, 而且 + 还 + Động từ nguyện vọng 2",
+      "tokens": [
+        {
+          "text": "tiếng Việt",
+          "hz": "越南语",
+          "py": "Yuènányǔ",
+          "hv": "Việt Nam ngữ",
+          "role": "Tân ngữ 1",
+          "vn": "tiếng Việt",
+          "radicals": "越 = Bộ tẩu 走; 南 = Bộ thập 十; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "muốn nghiên cứu",
+          "hz": "想研究",
+          "py": "xiǎng yánjiū",
+          "hv": "tưởng nghiên cứu",
+          "role": "Vị ngữ 2",
+          "vn": "muốn nghiên cứu, tìm hiểu",
+          "radicals": "研 = Bộ thạch 石; 究 = Bộ huyệt 穴"
+        },
+        {
+          "text": "lịch sử Việt Nam",
+          "hz": "越南历史",
+          "py": "Yuènán lìshǐ",
+          "hv": "Việt Nam lịch sử",
+          "role": "Tân ngữ 2",
+          "vn": "lịch sử Việt Nam",
+          "radicals": "历 = Bộ hán 厂; 史 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "而且还", "tag": "Liên từ" },
+        { "id": "t2", "text": "想学", "tag": "Động từ" },
+        { "id": "t3", "text": "越南历史", "tag": "Danh từ" },
+        { "id": "t4", "text": "她", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "不但", "tag": "Liên từ" },
+        { "id": "t6", "text": "越南语", "tag": "Danh từ" },
+        { "id": "t7", "text": "想研究", "tag": "Động từ" },
+        { "id": "t8", "text": "只要", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t4", "t5", "t2", "t6", "t1", "t7", "t3"],
+      "requiredKeywordsZh": ["不但", "想学", "越南语", "而且还", "研究", "越南历史"],
+      "wordBankPool": ["越南历史", "只要", "想学", "不但", "想研究", "而且还", "越南语", "她"],
+      "traps": [
+        {
+          "pattern": "想研究越语历史",
+          "msg": "Lỗi kết hợp từ: Lịch sử của một quốc gia dùng tên nước 越南历史, không dùng tên ngôn ngữ 越语历史."
+        },
+        {
+          "pattern": "不只要",
+          "msg": "Lỗi dịch bồi: Trong văn phạm học thuật HSK, cấu trúc chuẩn mực tăng tiến là 不但...而且还..., không dùng từ dịch bồi thô 不只要."
+        }
+      ],
+      "explanation": "Câu phức tăng tiến với hai hành động bổ trợ chiều sâu. Chủ ngữ 她 đứng trước 不但, theo sau là hai cụm động từ 想学 và 想研究 nối tiếp nhau bằng cặp liên từ 而且还."
+    },
+    {
+      "id": "b02-07",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc chuyển ngoặt 虽然...但是... kết hợp 不一样",
+      "vi": "Bọn họ tuy là chị em nhưng mà tính cách hoàn toàn không giống nhau.",
+      "zh": "她们虽然是姐妹但是性格完全不一样",
+      "standardTrans": "她们虽然是姐妹但是性格完全不一样",
+      "pinyin": "Tāmen suīrán shì jiěmèi dànshì xìnggé wánquán bù yíyàng",
+      "grammarPoint": "S + 虽然...但是 + Thuộc tính (性格) + 完全不一样",
+      "tokens": [
+        {
+          "text": "chị em gái",
+          "hz": "姐妹",
+          "py": "jiěmèi",
+          "hv": "tỷ muội",
+          "role": "Tân ngữ 1",
+          "vn": "chị em gái",
+          "radicals": "姐 = Bộ nữ 女; 妹 = Bộ nữ 女"
+        },
+        {
+          "text": "tính cách",
+          "hz": "性格",
+          "py": "xìnggé",
+          "hv": "tính cách",
+          "role": "Chủ ngữ phân câu 2",
+          "vn": "tính nết, tính cách",
+          "radicals": "性 = Bộ tâm đứng 忄; 格 = Bộ mộc 木"
+        },
+        {
+          "text": "hoàn toàn",
+          "hz": "完全",
+          "py": "wánquán",
+          "hv": "hoàn toàn",
+          "role": "Trạng ngữ mức độ",
+          "vn": "hoàn toàn, trọn vẹn",
+          "radicals": "完 = Bộ miên 宀; 全 = Bộ nhập 入"
+        },
+        {
+          "text": "không giống nhau",
+          "hz": "不一样",
+          "py": "bù yíyàng",
+          "hv": "bất nhất dạng",
+          "role": "Vị ngữ 2",
+          "vn": "không giống nhau, khác nhau",
+          "radicals": "不 = Bộ nhất 一; 样 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "完全", "tag": "Phó từ" },
+        { "id": "t2", "text": "姐妹", "tag": "Danh từ" },
+        { "id": "t3", "text": "虽然", "tag": "Liên từ" },
+        { "id": "t4", "text": "但是", "tag": "Liên từ" },
+        { "id": "t5", "text": "她们", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "是", "tag": "Động từ" },
+        { "id": "t7", "text": "不一样", "tag": "Tính từ" },
+        { "id": "t8", "text": "性格", "tag": "Danh từ" },
+        { "id": "t9", "text": "没一样", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t5", "t3", "t6", "t2", "t4", "t8", "t1", "t7"],
+      "requiredKeywordsZh": ["虽然", "姐妹", "但是", "性格", "完全不一样"],
+      "wordBankPool": ["性格", "她们", "完全", "虽然", "不一样", "没一样", "是", "但是", "姐妹"],
+      "traps": [
+        {
+          "pattern": "不完全一样",
+          "msg": "Lỗi sai lệch ngữ nghĩa: 完全不一样 là hoàn toàn khác nhau; còn 不完全一样 mang nghĩa không hoàn toàn giống nhau (vẫn có điểm tương đồng)."
+        },
+        {
+          "pattern": "没一样",
+          "msg": "Lỗi phủ định: Phủ định tính chất của 一样 bắt buộc dùng phó từ 不 thành 不一样, tuyệt đối không dùng 没一样."
+        }
+      ],
+      "explanation": "Câu ghép nhượng bộ chuyển ngoặt. Vế thứ hai dùng phó từ mức độ 完全 đi kèm hình thức phủ định 不一样 để nhấn mạnh sự đối lập triệt để về tính cách."
+    },
+    {
+      "id": "b02-08",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái so sánh bằng 跟中国人一样",
+      "vi": "David nói tiếng Trung lưu loát như người Trung Quốc.",
+      "zh": "大卫汉语说得跟中国人一样流利",
+      "standardTrans": "大卫汉语说得跟中国人一样流利",
+      "pinyin": "Dàwèi Hànyǔ shuō de gēn Zhōngguórén yíyàng liúlì",
+      "grammarPoint": "Chủ ngữ + Tân ngữ + V + 得 + 跟 + B + 一样 + Tính từ",
+      "tokens": [
+        {
+          "text": "nói đạt mức",
+          "hz": "说得",
+          "py": "shuō de",
+          "hv": "thuyết đắc",
+          "role": "Động từ + Trợ từ 得",
+          "vn": "nói được, nói đến mức",
+          "radicals": "说 = Bộ ngôn 讠; 得 = Bộ xích 彳"
+        },
+        {
+          "text": "người Trung Quốc",
+          "hz": "中国人",
+          "py": "Zhōngguórén",
+          "hv": "Trung Quốc nhân",
+          "role": "Đối tượng so sánh",
+          "vn": "người Trung Quốc",
+          "radicals": "中 = Bộ cổn 丨; 国 = Bộ vi 囗; 人 = Bộ nhân 人"
+        },
+        {
+          "text": "lưu loát",
+          "hz": "流利",
+          "py": "liúlì",
+          "hv": "lưu lợi",
+          "role": "Bổ ngữ trạng thái",
+          "vn": "lưu loát, trôi chảy",
+          "radicals": "流 = Bộ thủy 氵; 利 = Bộ đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "说得", "tag": "Động từ + Trợ từ" },
+        { "id": "t2", "text": "流利", "tag": "Tính từ" },
+        { "id": "t3", "text": "大卫", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "一样", "tag": "Phó từ" },
+        { "id": "t5", "text": "跟", "tag": "Giới từ" },
+        { "id": "t6", "text": "中国人", "tag": "Danh từ" },
+        { "id": "t7", "text": "汉语", "tag": "Tân ngữ" },
+        { "id": "t8", "text": "很流利", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t7", "t1", "t5", "t6", "t4", "t2"],
+      "requiredKeywordsZh": ["汉语", "说得", "跟中国人一样", "流利"],
+      "wordBankPool": ["很流利", "一样", "汉语", "大卫", "说得", "跟", "中国人", "流利"],
+      "traps": [
+        {
+          "pattern": "说比中国人",
+          "msg": "Lỗi lẫn cấu trúc: So sánh bằng đạt mức như người Trung Quốc phải dùng 跟...一样, không dùng giới từ so sánh hơn 比."
+        },
+        {
+          "pattern": "很流利",
+          "msg": "Lỗi kết hợp bổ ngữ: Trong kết cấu so sánh bằng 跟...一样 đã mang tính xác định mức độ, không chèn thêm 很 vào trước tính từ 流利."
+        }
+      ],
+      "explanation": "Câu đánh giá năng lực ngôn ngữ đạt mức tương đương người bản xứ. Tân ngữ 汉语 đưa lên làm đề ngữ, theo sau là trợ từ 得 kết hợp cụm so sánh bằng 跟中国人一样 đứng trước tính từ 流利."
+    },
+    {
+      "id": "b02-09",
+      "type": "anti_word_by_word",
+      "title": "So sánh sự khác nhau về phương pháp với 不一样",
+      "vi": "Phương pháp dạy tiếng Trung chỗ chúng tôi không giống ở Trung Quốc.",
+      "zh": "我们那儿教汉语的方法跟中国不一样",
+      "standardTrans": "我们那儿教汉语的方法跟中国不一样",
+      "pinyin": "Wǒmen nàr jiāo Hànyǔ de fāngfǎ gēn Zhōngguó bù yíyàng",
+      "grammarPoint": "Cụm danh từ chủ ngữ + 跟 + Đối tượng B + 不一样",
+      "tokens": [
+        {
+          "text": "chỗ chúng tôi",
+          "hz": "我们那儿",
+          "py": "wǒmen nàr",
+          "hv": "ngã môn na nhi",
+          "role": "Định ngữ nơi chốn",
+          "vn": "chỗ chúng tôi, bên chúng tôi",
+          "radicals": "那 = Bộ ấp 阝; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "dạy tiếng Trung",
+          "hz": "教汉语的",
+          "py": "jiāo Hànyǔ de",
+          "hv": "giáo Hán ngữ đích",
+          "role": "Định ngữ hành động",
+          "vn": "dạy tiếng Trung",
+          "radicals": "教 = Bộ phộc 攵; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "phương pháp",
+          "hz": "方法",
+          "py": "fāngfǎ",
+          "hv": "phương pháp",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "cách thức, phương pháp",
+          "radicals": "方 = Bộ phương 方; 法 = Bộ thủy 氵"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "方法", "tag": "Danh từ" },
+        { "id": "t2", "text": "我们那儿", "tag": "Cụm danh từ" },
+        { "id": "t3", "text": "跟", "tag": "Giới từ" },
+        { "id": "t4", "text": "中国", "tag": "Danh từ" },
+        { "id": "t5", "text": "教汉语的", "tag": "Cụm định ngữ" },
+        { "id": "t6", "text": "不一样", "tag": "Tính từ" },
+        { "id": "t7", "text": "没一样", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t5", "t1", "t3", "t4", "t6"],
+      "requiredKeywordsZh": ["教汉语的方法", "跟中国", "不一样"],
+      "wordBankPool": ["教汉语的", "中国", "我们那儿", "没一样", "不一样", "方法", "跟"],
+      "traps": [
+        {
+          "pattern": "不跟中国一样",
+          "msg": "Lỗi văn phong: Mặc dù 不跟...一样 có thể xuất hiện trong khẩu ngữ, nhưng chuẩn cấu trúc sư phạm tự nhiên nhất của giáo trình là 跟...不一样."
+        },
+        {
+          "pattern": "没跟",
+          "msg": "Lỗi dùng từ phủ định: Phủ định sự khác biệt tính chất dùng phó từ 不 trước 一样, tuyệt đối không đặt 没 trước giới từ 跟."
+        }
+      ],
+      "explanation": "Câu phủ định hoàn toàn sự tương đồng về cách thức giảng dạy. Cụm định - trung phức hợp 我们那儿教汉语的方法 làm chủ ngữ, so sánh với Trung Quốc qua kết cấu 跟 + 中国 + 不一样."
+    },
+    {
+      "id": "b02-10",
+      "type": "sentence_parsing",
+      "title": "So sánh mức độ hứng thú với 对...感兴趣",
+      "vi": "Cô ấy rất có hứng thú với phim Trung Quốc, tớ cũng hứng thú giống như cô ấy.",
+      "zh": "她对中国电影很感兴趣我跟她一样感兴趣",
+      "standardTrans": "她对中国电影很感兴趣我跟她一样感兴趣",
+      "pinyin": "Tā duì Zhōngguó diànyǐng hěn gǎn xìngqù wǒ gēn tā yíyàng gǎn xìngqù",
+      "grammarPoint": "Đối tượng + 对...感兴趣; So sánh bằng: S + 跟 + B + 一样 + 感兴趣",
+      "tokens": [
+        {
+          "text": "phim Trung Quốc",
+          "hz": "中国电影",
+          "py": "Zhōngguó diànyǐng",
+          "hv": "Trung Quốc điện ảnh",
+          "role": "Tân ngữ giới từ 对",
+          "vn": "phim ảnh Trung Quốc",
+          "radicals": "电 = Bộ điền 田; 影 = Bộ sam 彡"
+        },
+        {
+          "text": "rất có hứng thú",
+          "hz": "很感兴趣",
+          "py": "hěn gǎn xìngqù",
+          "hv": "hận cảm hứng thú",
+          "role": "Vị ngữ 1",
+          "vn": "rất có hứng thú, yêu thích",
+          "radicals": "感 = Bộ tâm 心; 趣 = Bộ tẩu 走"
+        },
+        {
+          "text": "giống như cô ấy",
+          "hz": "跟她一样",
+          "py": "gēn tā yíyàng",
+          "hv": "cân tha nhất dạng",
+          "role": "Trạng ngữ so sánh",
+          "vn": "giống như cô ấy",
+          "radicals": "跟 = Bộ túc 足; 样 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "对", "tag": "Giới từ" },
+        { "id": "t2", "text": "她", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "中国电影", "tag": "Danh từ" },
+        { "id": "t4", "text": "感兴趣", "tag": "Động từ tâm lý" },
+        { "id": "t5", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "很感兴趣", "tag": "Vị ngữ" },
+        { "id": "t7", "text": "跟她一样", "tag": "Trạng ngữ" },
+        { "id": "t8", "text": "喜欢", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3", "t6", "t5", "t7", "t4"],
+      "requiredKeywordsZh": ["对中国电影", "很感兴趣", "跟她一样", "感兴趣"],
+      "wordBankPool": ["跟她一样", "对", "喜欢", "中国电影", "她", "很感兴趣", "感兴趣", "我"],
+      "traps": [
+        {
+          "pattern": "感兴趣中国电影",
+          "msg": "Lỗi đảo ngữ giới từ: Cấu trúc bắt buộc là 对 + Đối tượng + 感兴趣, tuyệt đối không đặt tân ngữ ra sau cụm động từ này."
+        },
+        {
+          "pattern": "我跟她也感兴趣",
+          "msg": "Lỗi thiếu từ so sánh: Biểu thị mức độ quan tâm tương đương nhau bắt buộc phải có cụm 跟...一样感兴趣, không dùng 也 đơn độc để thay thế."
+        }
+      ],
+      "explanation": "Câu ghép gồm hai phân câu: Phân câu đầu dùng kết cấu giới từ 对...感兴趣 để biểu thị sự đam mê với phim ảnh Trung Quốc; phân câu sau dùng kết cấu so sánh bằng 跟...一样 đứng trước động từ tâm lý 感兴趣."
+    }
+  ]
+}

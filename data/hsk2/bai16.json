@@ -1,0 +1,526 @@
+{
+  "lessonId": "b31",
+  "lessonTitle": "第三十一课: HSK2综合测试与复习 (Bài kiểm tra tổng hợp HSK 2)",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "有时候... 有时候...",
+        "py": "yǒushíhou... yǒushíhou...",
+        "note": "Biểu thị sự đan xen thói quen, tần suất (có lúc... có lúc...): 有时候去看电影, 有时候在家睡觉."
+      },
+      {
+        "word": "或者 vs 还是",
+        "py": "huòzhě vs háishì",
+        "note": "或者 dùng liệt kê lựa chọn trong câu trần thuật. 还是 dùng trong câu hỏi lựa chọn."
+      },
+      {
+        "word": "跟... 一起",
+        "py": "gēn... yìqǐ",
+        "note": "Cùng ai làm việc gì: S + 跟 + Đối tượng + 一起 + Động từ."
+      },
+      {
+        "word": "查资料",
+        "py": "chá zīliào",
+        "note": "Tra cứu tài liệu, tìm kiếm tư liệu học tập."
+      }
+    ],
+    "grammarTips": [
+      "Trật tự câu trạng ngữ nơi chốn: Chủ ngữ + 在 + Địa điểm + Động từ (在图书馆看书, 在教室学习).",
+      "Phó từ tần suất: 从不 (chưa từng) < 很少 (rất ít khi) < 有时候 (thỉnh thoảng) < 常常 (thường) < 总是 (luôn luôn).",
+      "Chuỗi động từ liên động mục đích: 上网 + 查资料 / 聊天儿 / 看电影 (Lên mạng để làm gì)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b31-01",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc tần suất 有时候 và cụm liên động mục đích",
+      "vi": "Thỉnh thoảng tôi đến đó mua sách tiếng Anh, thỉnh thoảng tôi cũng đến thư viện mượn sách Tiếng Trung.",
+      "zh": "有时候我去那儿买英语书有时候我也去图书馆借中文书",
+      "standardTrans": "有时候我去那儿买英语书有时候我也去图书馆借中文书",
+      "pinyin": "Yǒushíhou wǒ qù nàr mǎi yīngyǔ shū, yǒushíhou wǒ yě qù túshūguǎn jiè zhōngwén shū.",
+      "grammarPoint": "Trạng ngữ tần suất: 有时候... 有时候...; Câu liên động: 去 + Nơi chốn + Động từ",
+      "tokens": [
+        {
+          "text": "Có lúc / thỉnh thoảng",
+          "hz": "有时候",
+          "py": "yǒushíhou",
+          "hv": "Hữu thời hậu",
+          "role": "Trạng ngữ chỉ tần suất",
+          "vn": "Thỉnh thoảng, có khi",
+          "radicals": "有 = Bộ nguyệt; 时 = Bộ nhật; 候 = Bộ nhân"
+        },
+        {
+          "text": "Đến đó mua sách tiếng Anh",
+          "hz": "去那儿买英语书",
+          "py": "qù nàr mǎi yīngyǔ shū",
+          "hv": "Khứ na nhi mãi anh ngữ thư",
+          "role": "Cụm liên động 1",
+          "vn": "Đến chỗ đó mua sách tiếng Anh",
+          "radicals": "去 = Đi; 那 = Chỗ đó; 买 = Mua; 英 = Thảo; 语 = Ngôn"
+        },
+        {
+          "text": "Đến thư viện mượn sách tiếng Trung",
+          "hz": "去图书馆借中文书",
+          "py": "qù túshūguǎn jiè zhōngwén shū",
+          "hv": "Khứ đồ thư quán tá trung văn thư",
+          "role": "Cụm liên động 2",
+          "vn": "Đến thư viện mượn sách tiếng Hán",
+          "radicals": "图 = Vi; 书 = Thư; 馆 = Thực; 借 = Nhân đứng"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "有时候我也去图书馆借中文书", "tag": "Thói quen 2" },
+        { "id": "t1", "text": "有时候我去那儿买英语书", "tag": "Thói quen 1" },
+        { "id": "t3", "text": "买英语书去那儿", "tag": "Bẫy liên động" },
+        { "id": "t4", "text": "借中文书去图书馆", "tag": "Bẫy trật tự nơi chốn" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["有时候我去那儿买英语书", "有时候我也去图书馆借中文书"],
+      "wordBankPool": ["有时候我去那儿买英语书", "有时候我也去图书馆借中文书", "买英语书去那儿", "借中文书去图书馆", "去借书中文图书馆"],
+      "traps": [
+        {
+          "pattern": "买英语书去那儿",
+          "msg": "Lỗi câu liên động: Phải đến địa điểm trước rồi mới thực hiện hành động mua sách ('去那儿买英语书'), không đặt địa điểm ra sau."
+        }
+      ],
+      "explanation": "Cấu trúc đối xứng '有时候... 有时候...' dùng để liệt kê các hoạt động diễn ra không cố định vào các thời điểm khác nhau."
+    },
+    {
+      "id": "b31-02",
+      "type": "sentence_parsing",
+      "title": "Câu liên động mục đích với 上网",
+      "vi": "Tôi thường lên mạng search tài liệu học Tiếng Trung.",
+      "zh": "我常常上网查学汉语资料",
+      "standardTrans": "我常常上网查学汉语资料",
+      "pinyin": "Wǒ chángcháng shàngwǎng chá xué hànyǔ zīliào.",
+      "grammarPoint": "Phó từ tần suất: 常常; Câu liên động: 上网 + 查资料; Định ngữ danh từ: 学汉语资料",
+      "tokens": [
+        {
+          "text": "Thường xuyên lên mạng",
+          "hz": "常常上网",
+          "py": "chángcháng shàngwǎng",
+          "hv": "Thường thường thượng võng",
+          "role": "Phó từ + Động từ 1",
+          "vn": "Thường hay lên mạng",
+          "radicals": "常 = Bộ cân 巾; 上 = Thượng; 网 = Bộ võng ⺲"
+        },
+        {
+          "text": "Tra tài liệu học tiếng Trung",
+          "hz": "查学汉语资料",
+          "py": "chá xué hànyǔ zīliào",
+          "hv": "Tra học Hán ngữ tư liệu",
+          "role": "Động từ 2 + Cụm tân ngữ",
+          "vn": "Tìm kiếm tài liệu học tiếng Hán",
+          "radicals": "查 = Bộ mộc 木; 资 = Bộ bối 贝; 料 = Bộ đẩu 斗"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "上网查学汉语资料", "tag": "Liên động mục đích" },
+        { "id": "t1", "text": "我常常", "tag": "Chủ ngữ + Tần suất" },
+        { "id": "t3", "text": "查学汉语资料上网", "tag": "Bẫy trật tự liên động" },
+        { "id": "t4", "text": "资料学汉语", "tag": "Bẫy định ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我常常", "上网查", "学汉语资料"],
+      "wordBankPool": ["我常常", "上网查学汉语资料", "查学汉语资料上网", "资料学汉语", "常上网查资料汉语"],
+      "traps": [
+        {
+          "pattern": "查学汉语资料上网",
+          "msg": "Lỗi liên động: Phương thức kết nối (上网) phải đi trước mục đích tra cứu (查资料)."
+        }
+      ],
+      "explanation": "Câu liên động chỉ mục đích: S + 上网 + 查资料 (Lên mạng để tra cứu tài liệu)."
+    },
+    {
+      "id": "b31-03",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi thói quen thời gian 晚上你常常做什么",
+      "vi": "Buổi tối bạn thường làm gì?",
+      "zh": "晚上你常常做什么",
+      "standardTrans": "晚上你常常做什么",
+      "pinyin": "Wǎnshang nǐ chángcháng zuò shénme?",
+      "grammarPoint": "Thời gian làm trạng ngữ đầu câu: 晚上; Phó từ tần suất: 常常; Đại từ nghi vấn: 什么",
+      "tokens": [
+        {
+          "text": "Buổi tối",
+          "hz": "晚上",
+          "py": "wǎnshang",
+          "hv": "Vãn thượng",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Buổi tối, ban đêm",
+          "radicals": "晚 = Bộ nhật 日 + chữ miễn 免; 上 = Thượng"
+        },
+        {
+          "text": "Làm gì",
+          "hz": "做什么",
+          "py": "zuò shénme",
+          "hv": "Tác thập ma",
+          "role": "Động từ + Đại từ nghi vấn",
+          "vn": "Làm cái gì",
+          "radicals": "做 = Bộ nhân đứng 亻; 什 = Bộ nhân đứng 亻; 么 = Nét phẩy"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "晚上你常常", "tag": "Thời gian + Chủ ngữ + Tần suất" },
+        { "id": "t2", "text": "做什么", "tag": "Vị ngữ nghi vấn" },
+        { "id": "t3", "text": "什么做", "tag": "Bẫy trật tự tân ngữ" },
+        { "id": "t4", "text": "常常你晚上", "tag": "Bẫy trạng ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["晚上", "你常常", "做什么"],
+      "wordBankPool": ["晚上你常常", "做什么", "什么做", "常常你晚上", "你做什么晚上"],
+      "traps": [
+        {
+          "pattern": "你做什么晚上",
+          "msg": "Lỗi trạng ngữ thời gian: Thời gian '晚上' phải đứng đầu câu hoặc ngay sau chủ ngữ, không đặt cuối câu."
+        }
+      ],
+      "explanation": "Mẫu câu hỏi thói quen sinh hoạt thường ngày căn bản trong tiếng Trung."
+    },
+    {
+      "id": "b31-04",
+      "type": "anti_word_by_word",
+      "title": "Liên từ lựa chọn 或者 trong câu trần thuật",
+      "vi": "Buổi tối tôi thường ôn tập bài học, chuẩn bị trước từ vựng, hoặc làm bài tập.",
+      "zh": "晚上我常常复习课文预习生词或者做练习",
+      "standardTrans": "晚上我常常复习课文预习生词或者做练习",
+      "pinyin": "Wǎnshang wǒ chángcháng fùxí kèwén, yùxí shēngcí, huòzhě zuò liànxí.",
+      "grammarPoint": "Chuỗi động tân: 复习课文, 预习生词; Liên từ lựa chọn trần thuật: 或者",
+      "tokens": [
+        {
+          "text": "Ôn tập bài khóa chuẩn bị từ mới",
+          "hz": "复习课文预习生词",
+          "py": "fùxí kèwén yùxí shēngcí",
+          "hv": "Phục tập khóa văn dự tập sinh từ",
+          "role": "Chuỗi hành động học tập",
+          "vn": "Ôn bài đọc, soạn từ mới",
+          "radicals": "复 = Phộc; 课 = Ngôn; 预 = Hiệt; 词 = Ngôn"
+        },
+        {
+          "text": "Hoặc làm bài tập",
+          "hz": "或者做练习",
+          "py": "huòzhě zuò liànxí",
+          "hv": "Hoặc giả tác luyện tập",
+          "role": "Liên từ + Cụm động tân",
+          "vn": "Hoặc là làm bài tập",
+          "radicals": "或 = Bộ qua; 者 = Bộ lão; 做 = Nhân đứng; 练 = Mịch"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "复习课文预习生词", "tag": "Hoạt động học tập" },
+        { "id": "t1", "text": "晚上我常常", "tag": "Thời gian & tần suất" },
+        { "id": "t3", "text": "或者做练习", "tag": "Hoạt động lựa chọn với 或者" },
+        { "id": "t4", "text": "还是做练习", "tag": "Bẫy liên từ 还是" },
+        { "id": "t5", "text": "做练习或者", "tag": "Bẫy vị trí liên từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["晚上我常常", "复习课文", "预习生词", "或者做练习"],
+      "wordBankPool": ["晚上我常常", "复习课文预习生词", "或者做练习", "还是做练习", "做练习或者", "常常我晚上"],
+      "traps": [
+        {
+          "pattern": "还是做练习",
+          "msg": "Lỗi liên từ lựa chọn: Câu trần thuật kể lại việc học tập bắt buộc dùng '或者', không dùng '还是' (chỉ dùng trong câu hỏi)."
+        }
+      ],
+      "explanation": "Phân biệt then chốt giữa '或者' (dùng trong câu trần thuật) và '还是' (dùng trong câu nghi vấn)."
+    },
+    {
+      "id": "b31-05",
+      "type": "sentence_parsing",
+      "title": "Cụm giới từ đồng hành 跟朋友 và hoạt động trực tuyến",
+      "vi": "Thỉnh thoảng tôi lên mạng chat chit với bạn bè hoặc xem phim HD Việt Nam.",
+      "zh": "有时候我上网跟朋友聊天儿或者看越南高清电影",
+      "standardTrans": "有时候我上网跟朋友聊天儿或者看越南高清电影",
+      "pinyin": "Yǒushíhou wǒ shàngwǎng gēn péngyou liáotiānr huòzhě kàn Yuènán gāoqīng diànyǐng.",
+      "grammarPoint": "Tần suất: 有时候; Trạng ngữ đồng hành: 跟朋友 + 聊天儿; Liên từ: 或者; Thuật ngữ hiện đại: 高清电影 (phim HD)",
+      "tokens": [
+        {
+          "text": "Lên mạng tán gẫu với bạn bè",
+          "hz": "上网跟朋友聊天儿",
+          "py": "shàngwǎng gēn péngyou liáotiānr",
+          "hv": "Thượng võng cân bằng hữu liêu thiên nhi",
+          "role": "Hành động liên động 1",
+          "vn": "Lên mạng buôn chuyện với bạn",
+          "radicals": "网 = Võng; 跟 = Túc; 聊 = Nhĩ"
+        },
+        {
+          "text": "Phim HD Việt Nam",
+          "hz": "越南高清电影",
+          "py": "Yuènán gāoqīng diànyǐng",
+          "hv": "Việt Nam cao thanh điện ảnh",
+          "role": "Cụm danh từ tân ngữ",
+          "vn": "Phim điện ảnh độ nét cao Việt Nam",
+          "radicals": "越 = Tẩu; 高 = Cao; 清 = Thủy; 影 = Sam"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "上网跟朋友聊天儿", "tag": "Hành động 1" },
+        { "id": "t1", "text": "有时候我", "tag": "Tần suất + Chủ ngữ" },
+        { "id": "t3", "text": "或者看越南高清电影", "tag": "Hành động 2 với 或者" },
+        { "id": "t4", "text": "聊天儿跟朋友", "tag": "Bẫy trật tự giới từ 跟" },
+        { "id": "t5", "text": "还是看", "tag": "Bẫy liên từ 还是" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["有时候我", "上网跟朋友聊天儿", "或者看", "越南高清电影"],
+      "wordBankPool": ["有时候我", "上网跟朋友聊天儿", "或者看越南高清电影", "聊天儿跟朋友", "还是看", "跟朋友上网聊天儿"],
+      "traps": [
+        {
+          "pattern": "聊天儿跟朋友",
+          "msg": "Lỗi giới từ đồng hành: Cụm 'với bạn bè' (跟朋友) phải đứng TRƯỚC động từ '聊天儿'."
+        }
+      ],
+      "explanation": "Cấu trúc trạng ngữ đồng hành: 跟 + Người + Động từ (跟朋友聊天儿). '高清' nghĩa là độ phân giải cao (HD)."
+    },
+    {
+      "id": "b31-06",
+      "type": "anti_word_by_word",
+      "title": "Phim truyền hình nhiều tập (电视剧) và phó từ 也常常",
+      "vi": "Tôi cũng thường lên mạng xem phim HD Trung Quốc và phim bộ.",
+      "zh": "我也常常上网看中国高清电影和电视剧",
+      "standardTrans": "我也常常上网看中国高清电影和电视剧",
+      "pinyin": "Wǒ yě chángcháng shàngwǎng kàn Zhōngguó gāoqīng diànyǐng hé diànshìjù.",
+      "grammarPoint": "Phó từ đồng nhất: 也常常; Liên từ đẳng lập nối danh từ: 和; Phim truyền hình dài tập: 电视剧",
+      "tokens": [
+        {
+          "text": "Tôi cũng thường lên mạng",
+          "hz": "我也常常上网",
+          "py": "wǒ yě chángcháng shàngwǎng",
+          "hv": "Ngã dã thường thường thượng võng",
+          "role": "Chủ ngữ + Chuỗi phó từ + Động từ 1",
+          "vn": "Tớ cũng thường xuyên online",
+          "radicals": "也 = Dã; 常 = Cân; 上 = Thượng; 网 = Võng"
+        },
+        {
+          "text": "Phim truyền hình nhiều tập",
+          "hz": "电视剧",
+          "py": "diànshìjù",
+          "hv": "Điện thị kịch",
+          "role": "Danh từ tân ngữ",
+          "vn": "Phim truyền hình, phim bộ",
+          "radicals": "电 = Điền; 视 = Kiến; 剧 = Đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我也常常上网", "tag": "Chủ ngữ & tần suất" },
+        { "id": "t2", "text": "看中国高清电影和电视剧", "tag": "Hành động xem phim" },
+        { "id": "t3", "text": "上网我也常常", "tag": "Bẫy trật tự chủ vị" },
+        { "id": "t4", "text": "电影和电视剧中国", "tag": "Bẫy định ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我也常常上网", "中国高清电影", "和电视剧"],
+      "wordBankPool": ["我也常常上网", "看中国高清电影和电视剧", "上网我也常常", "电影和电视剧中国", "常常我也上网"],
+      "traps": [
+        {
+          "pattern": "常常我也",
+          "msg": "Lỗi vị trí phó từ: Phó từ liên kết '也' đứng ngay sau chủ ngữ, trước phó từ thời gian/tần suất '常常' ('我也常常...')."
+        }
+      ],
+      "explanation": "Liên từ '和' (và) dùng để nối các danh từ cùng cấp: 电影和电视剧 (phim điện ảnh và phim truyền hình)."
+    },
+    {
+      "id": "b31-07",
+      "type": "sentence_parsing",
+      "title": "Phó từ tần suất mức độ thấp 很少 đối lập với 常常",
+      "vi": "Tôi rất ít khi lên mạng xem phim, tôi thường đến lớp học học tiếng Anh và tiếng Trung.",
+      "zh": "我很少上网看电影我常常去教室学习英语和汉语",
+      "standardTrans": "我很少上网看电影我常常去教室学习英语和汉语",
+      "pinyin": "Wǒ hěn shǎo shàngwǎng kàn diànyǐng, wǒ chángcháng qù jiàoshì xuéxí yīngyǔ hé hànyǔ.",
+      "grammarPoint": "Tần suất thấp: 很少 + Động từ; Tần suất cao: 常常 + 去教室; Liên động: 去教室学习",
+      "tokens": [
+        {
+          "text": "Rất ít khi lên mạng xem phim",
+          "hz": "很少上网看电影",
+          "py": "hěn shǎo shàngwǎng kàn diànyǐng",
+          "hv": "Khẩn thiếu thượng võng khán điện ảnh",
+          "role": "Phó từ tần suất + Cụm liên động",
+          "vn": "Hiếm khi lướt mạng xem phim",
+          "radicals": "很 = Xích; 少 = Tiểu; 看 = Mục; 影 = Sam"
+        },
+        {
+          "text": "Thường đến phòng học học tiếng Anh và tiếng Hán",
+          "hz": "我常常去教室学习英语和汉语",
+          "py": "wǒ chángcháng qù jiàoshì xuéxí yīngyǔ hé hànyǔ",
+          "hv": "Ngã thường thường khứ giáo thất học tập anh ngữ hòa Hán ngữ",
+          "role": "Vế hành động đối lập",
+          "vn": "Tôi thường đến lớp học tiếng Anh và tiếng Trung",
+          "radicals": "教 = Phộc; 室 = Miên; 学 = Tử; 英 = Thảo; 汉 = Thủy"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我很少上网看电影", "tag": "Vế tần suất thấp" },
+        { "id": "t2", "text": "我常常去教室学习英语和汉语", "tag": "Vế tần suất cao" },
+        { "id": "t3", "text": "上网看电影很少", "tag": "Bẫy vị trí phó từ 很少" },
+        { "id": "t4", "text": "去学习英语和汉语教室", "tag": "Bẫy trật tự liên động" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["很少上网看电影", "常常去教室", "学习英语和汉语"],
+      "wordBankPool": ["我很少上网看电影", "我常常去教室学习英语和汉语", "上网看电影很少", "去学习英语和汉语教室", "很少我上网"],
+      "traps": [
+        {
+          "pattern": "上网看电影很少",
+          "msg": "Lỗi phó từ tần suất: '很少' (rất ít khi) bổ nghĩa cho hành động nên bắt buộc phải đứng TRƯỚC động từ ('很少上网...'), không đặt sau động từ."
+        }
+      ],
+      "explanation": "Câu ghép đối lập hai thói quen giải trí và học tập. Phó từ tần suất '很少' và '常常' luôn đứng trước động từ chính."
+    },
+    {
+      "id": "b31-08",
+      "type": "anti_word_by_word",
+      "title": "Câu hỏi lựa chọn 还是 và rủ rê đồng thuận 好吧咱们走吧",
+      "vi": "A: Đi ăn cơm nhé? B: Bây giờ tớ đến thư viện, cậu đi cùng tớ đi. A: Được thôi, chúng ta đi nào.",
+      "zh": "我们去饭店吃饭吧我现在去图书馆你跟我一起去吧好吧咱们走吧",
+      "standardTrans": "我们去饭店吃饭吧我现在去图书馆你跟我一起去吧好吧咱们走吧",
+      "pinyin": "A: Wǒmen qù fàndiàn chīfàn ba? B: Wǒ xiànzài qù túshūguǎn, nǐ gēn wǒ yìqǐ qù ba. A: Hǎo ba, zánmen zǒu ba.",
+      "grammarPoint": "Trợ từ rủ rê: 吧; Giới từ đồng hành: 跟我一起去; Đại từ bao gồm người nghe: 咱们; Động từ rời đi: 走",
+      "tokens": [
+        {
+          "text": "Chúng ta đi nhà hàng ăn cơm đi",
+          "hz": "我们去饭店吃饭吧",
+          "py": "wǒmen qù fàndiàn chīfàn ba",
+          "hv": "Ngã môn khứ phạn điếm ngật phạn ba",
+          "role": "Lời rủ rê mở đầu",
+          "vn": "Chúng mình đến tiệm ăn cơm đi",
+          "radicals": "饭 = Thực; 店 = Quảng; 吃 = Khẩu; 吧 = Khẩu"
+        },
+        {
+          "text": "Bây giờ tôi đi thư viện bạn đi cùng tôi đi",
+          "hz": "我现在去图书馆你跟我一起去吧",
+          "py": "wǒ xiànzài qù túshūguǎn, nǐ gēn wǒ yìqǐ qù ba",
+          "hv": "Ngã hiện tại khứ đồ thư quán nhĩ cân ngã nhất khởi khứ ba",
+          "role": "Lời rủ rê chuyển hướng",
+          "vn": "Giờ tớ đi thư viện, cậu đi với tớ nhé",
+          "radicals": "现 = Vương; 馆 = Thực; 跟 = Túc; 起 = Tẩu"
+        },
+        {
+          "text": "Được thôi chúng mình đi thôi",
+          "hz": "好吧咱们走吧",
+          "py": "hǎo ba, zánmen zǒu ba",
+          "hv": "Hảo ba tám môn tẩu ba",
+          "role": "Lời đồng thuận di chuyển",
+          "vn": "Ok, chúng ta xuất phát nào",
+          "radicals": "好 = Nữ; 咱 = Khẩu + Tự; 走 = Tẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我现在去图书馆你跟我一起去吧", "tag": "Đề xuất của B" },
+        { "id": "t1", "text": "我们去饭店吃饭吧", "tag": "Lời rủ của A" },
+        { "id": "t3", "text": "好吧咱们走吧", "tag": "Chốt đi của A" },
+        { "id": "t4", "text": "一起跟我去", "tag": "Bẫy trật tự giới từ 跟" },
+        { "id": "t5", "text": "走咱们吧", "tag": "Bẫy trật tự đại từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["去饭店吃饭吧", "去图书馆", "跟我一起去吧", "咱们走吧"],
+      "wordBankPool": ["我们去饭店吃饭吧", "我现在去图书馆你跟我一起去吧", "好吧咱们走吧", "一起跟我去", "走咱们吧", "去一起吧"],
+      "traps": [
+        {
+          "pattern": "一起跟我去",
+          "msg": "Lỗi cấu trúc đồng hành: Quy tắc là '跟 + Đối tượng + 一起' ('跟我一起去'), không đảo '一起' lên trước '跟'."
+        }
+      ],
+      "explanation": "Đại từ '咱们' bao hàm cả người nói và người nghe. '走' nhấn mạnh việc rời khỏi vị trí hiện tại bằng chân."
+    },
+    {
+      "id": "b31-09",
+      "type": "sentence_parsing",
+      "title": "Mệnh đề nguyên nhân và từ chối khéo léo với 不能",
+      "vi": "Không được, tối mai tớ phải ở nhà ôn tập từ mới tiếng Trung, nên ngày mai tớ không thể đi cùng cậu được, cậu tìm người khác đi.",
+      "zh": "不好明天晚上我要在家复习汉语生词所以明天我不能跟你一起去你找别人吧",
+      "standardTrans": "不好明天晚上我要在家复习汉语生词所以明天我不能跟你一起去你找别人吧",
+      "pinyin": "Bù hǎo, míngtiān wǎnshang wǒ yào zàijiā fùxí hànyǔ shēngcí, suǒyǐ míngtiān wǒ bù néng gēn nǐ yìqǐ qù, nǐ zhǎo biérén ba.",
+      "grammarPoint": "Từ chối: 不好; Bắt buộc: 要在家复习; Nguyên nhân kết quả: 所以... 不能...; Đại từ người khác: 别人",
+      "tokens": [
+        {
+          "text": "Không được tối mai phải ở nhà ôn từ mới",
+          "hz": "不好明天晚上我要在家复习汉语生词",
+          "py": "bù hǎo, míngtiān wǎnshang wǒ yào zàijiā fùxí hànyǔ shēngcí",
+          "hv": "Bất hảo minh thiên vãn thượng ngã yếu tại gia phục tập Hán ngữ sinh từ",
+          "role": "Từ chối và nêu lý do bận",
+          "vn": "Không được, tối mai tớ phải ở nhà ôn từ vựng tiếng Hán",
+          "radicals": "好 = Hảo; 晚 = Muộn; 复 = Phộc; 词 = Ngôn"
+        },
+        {
+          "text": "Nên mai tôi không thể đi cùng bạn được",
+          "hz": "所以明天我不能跟你一起去",
+          "py": "suǒyǐ míngtiān wǒ bù néng gēn nǐ yìqǐ qù",
+          "hv": "Sở dĩ minh thiên ngã bất năng cân nhĩ nhất khởi khứ",
+          "role": "Hệ quả không thể đi",
+          "vn": "Thế nên mai tớ không đi với cậu được đâu",
+          "radicals": "所 = Hộ; 能 = Năng lực; 跟 = Túc; 去 = Khứ"
+        },
+        {
+          "text": "Bạn tìm người khác đi",
+          "hz": "你找别人吧",
+          "py": "nǐ zhǎo biérén ba",
+          "hv": "Nhĩ trảo biệt nhân ba",
+          "role": "Lời đề xuất",
+          "vn": "Cậu rủ người khác đi nhé",
+          "radicals": "找 = Thủ 扌; 别 = Đao 刂; 人 = Nhân; 吧 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "所以明天我不能跟你一起去", "tag": "Hệ quả không thể đi" },
+        { "id": "t1", "text": "不好明天晚上我要在家复习汉语生词", "tag": "Lý do ở nhà ôn bài" },
+        { "id": "t3", "text": "你找别人吧", "tag": "Khuyên tìm người khác" },
+        { "id": "t4", "text": "不能跟你一起去明天", "tag": "Bẫy trật tự thời gian" },
+        { "id": "t5", "text": "找别的吧", "tag": "Bẫy đại từ 别人" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["复习汉语生词", "所以明天我不能", "跟你一起去", "你找别人吧"],
+      "wordBankPool": ["不好明天晚上我要在家复习汉语生词", "所以明天我不能跟你一起去", "你找别人吧", "不能跟你一起去明天", "找别的吧", "不可以在家"],
+      "traps": [
+        {
+          "pattern": "不能跟你一起去明天",
+          "msg": "Lỗi trạng ngữ thời gian: '明天' phải đứng trước cụm vị ngữ ('明天我不能...'), không đặt ở cuối câu."
+        }
+      ],
+      "explanation": "Động từ năng nguyện '不能' biểu thị hoàn cảnh khách quan (phải ôn bài) không cho phép đi chơi. '别人' chỉ đối tượng người khác."
+    },
+    {
+      "id": "b31-10",
+      "type": "sentence_parsing",
+      "title": "Hành động liên tiếp và chào tạm biệt hẹn dịp khác 改天",
+      "vi": "Tôi thường lên mạng đọc tin tức và check mail. Không có việc gì thì để hôm khác tôi lại đến.",
+      "zh": "我常常上网看新闻和收发电子邮件没什么事改天我再来吧",
+      "standardTrans": "我常常上网看新闻和收发电子邮件没什么事改天我再来吧",
+      "pinyin": "Wǒ chángcháng shàngwǎng kàn xīnwén hé shōufā diànzǐ yóujiàn. Méi shénme shì, gǎitiān wǒ zài lái ba.",
+      "grammarPoint": "Hoạt động trực tuyến: 看新闻, 收发电子邮件; An ủi: 没什么事; Hẹn dịp khác: 改天; Lặp lại tương lai: 再来",
+      "tokens": [
+        {
+          "text": "Lên mạng xem tin tức và gửi nhận email",
+          "hz": "我常常上网看新闻和收发电子邮件",
+          "py": "wǒ chángcháng shàngwǎng kàn xīnwén hé shōufā diànzǐ yóujiàn",
+          "hv": "Ngã thường thường thượng võng khán tân văn hòa thu phát điện tử bưu kiện",
+          "role": "Câu kể thói quen trực tuyến",
+          "vn": "Tôi hay lên mạng đọc báo và check thư điện tử",
+          "radicals": "新 = Cân; 闻 = Nhĩ; 收 = Phộc; 发 = Phát; 邮 = Ấp"
+        },
+        {
+          "text": "Không có chuyện gì hôm khác tôi lại đến nhé",
+          "hz": "没什么事改天我再来吧",
+          "py": "méi shénme shì, gǎitiān wǒ zài lái ba",
+          "hv": "Một thập ma sự cải thiên ngã tái lai ba",
+          "role": "Câu chào tạm biệt lịch sự",
+          "vn": "Không có chuyện gì đâu, hôm khác tớ lại ghé qua nhé",
+          "radicals": "没 = Thủy; 事 = Quyết; 改 = Phộc; 再 = Lại; 来 = Lai"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我常常上网看新闻和收发电子邮件", "tag": "Thói quen đọc tin tức & email" },
+        { "id": "t2", "text": "没什么事改天我再来吧", "tag": "Chào hẹn hôm khác ghé lại" },
+        { "id": "t3", "text": "改天我再来没什么事", "tag": "Bẫy đảo vế câu" },
+        { "id": "t4", "text": "又来吧改天", "tag": "Bẫy nhầm lẫn 又/再" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["上网看新闻", "收发电子邮件", "没什么事", "改天我再来吧"],
+      "wordBankPool": ["我常常上网看新闻和收发电子邮件", "没什么事改天我再来吧", "改天我再来没什么事", "又来吧改天", "收发信和新闻"],
+      "traps": [
+        {
+          "pattern": "改天我又来",
+          "msg": "Lỗi phân biệt 又 / 再: Hẹn một ngày khác trong tương lai sẽ đến lại ('改天') bắt buộc dùng '再来', không dùng '又来'."
+        }
+      ],
+      "explanation": "'改天' (gǎitiān) là cách nói khẩu ngữ lịch sự chỉ 'hôm khác / dịp khác'. '再来' biểu thị hành động đến thăm sẽ lặp lại vào một thời điểm trong tương lai."
+    }
+  ]
+}

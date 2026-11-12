@@ -81,10 +81,10 @@ let errorCount = 0;
 let warningCount = 0;
 const reportList = [];
 
-files.forEach(filename => {
+files.forEach(filePath => {
     totalFiles++;
-    const filePath = path.join(DATA_DIR, filename);
-    console.log(`\n📁 Đang kiểm tra file: ${filename}`);
+    const relName = path.relative(DATA_DIR, filePath);
+    console.log(`\n📁 Đang kiểm tra file: ${relName}`);
 
     let rawText = '';
     let parsedData = null;
@@ -96,7 +96,7 @@ files.forEach(filename => {
     } catch (err) {
         errorCount++;
         reportList.push({
-            file: filename,
+            file: relName,
             qId: 'FILE_PARSE',
             issue: `Lỗi cú pháp JSON không hợp lệ: ${err.message}`,
             severity: 'Cao',
@@ -109,16 +109,16 @@ files.forEach(filename => {
     // Chuẩn hóa mảng câu hỏi
     const questions = Array.isArray(parsedData)
         ? parsedData
-        : (parsedData.lessons || []);
+        : (parsedData.sentences || parsedData.lessons || []);
 
     if (!Array.isArray(questions) || questions.length === 0) {
         warningCount++;
         reportList.push({
-            file: filename,
+            file: relName,
             qId: 'EMPTY',
             issue: 'File không có danh sách câu hỏi nào',
             severity: 'Trung bình',
-            fix: 'Bổ sung mảng câu hỏi [ ... ] hoặc lessons: [ ... ]'
+            fix: 'Bổ sung mảng câu hỏi [ ... ] hoặc lessons: [ ... ] hoặc sentences: [ ... ]'
         });
         return;
     }
@@ -134,7 +134,7 @@ files.forEach(filename => {
         if (!q.vi || !q.vi.trim()) {
             errorCount++;
             reportList.push({
-                file: filename,
+                file: relName,
                 qId: qId,
                 issue: 'Thiếu đề bài tiếng Việt (trường "vi" rỗng)',
                 severity: 'Cao',
@@ -145,7 +145,7 @@ files.forEach(filename => {
         if (!cleanTarget) {
             errorCount++;
             reportList.push({
-                file: filename,
+                file: relName,
                 qId: qId,
                 issue: 'Thiếu đáp án tiếng Trung chuẩn (trường "standardTrans" hoặc "zh" rỗng)',
                 severity: 'Cao',
@@ -164,7 +164,7 @@ files.forEach(filename => {
                     errorCount++;
                     missingTile = true;
                     reportList.push({
-                        file: filename,
+                        file: relName,
                         qId: qId,
                         issue: `targetOrder chứa ID "${tid}" không tồn tại trong mảng tiles`,
                         severity: 'Cao',
@@ -181,7 +181,7 @@ files.forEach(filename => {
                 if (!isMatch) {
                     errorCount++;
                     reportList.push({
-                        file: filename,
+                        file: relName,
                         qId: qId,
                         issue: `Ghép targetOrder ra "${cleanAssembled}" KHÔNG KHỚP với standardTrans "${cleanTarget}"`,
                         severity: 'Cao',
@@ -200,7 +200,7 @@ files.forEach(filename => {
                 if (!cleanPat) {
                     errorCount++;
                     reportList.push({
-                        file: filename,
+                        file: relName,
                         qId: qId,
                         issue: `Traps #${tIdx + 1} có pattern rỗng hoặc thiếu`,
                         severity: 'Trung bình',
@@ -212,7 +212,7 @@ files.forEach(filename => {
                 if (!trap.msg || !trap.msg.trim()) {
                     warningCount++;
                     reportList.push({
-                        file: filename,
+                        file: relName,
                         qId: qId,
                         issue: `Traps pattern "${pat}" thiếu thông điệp cảnh báo ("msg")`,
                         severity: 'Thấp',
@@ -225,7 +225,7 @@ files.forEach(filename => {
                     if (validAns.includes(cleanPat)) {
                         errorCount++;
                         reportList.push({
-                            file: filename,
+                            file: relName,
                             qId: qId,
                             issue: `[BẪY NHẦM NGHIÊM TRỌNG] Pattern "${pat}" nằm trong đáp án đúng "${validAns}". Học viên làm đúng sẽ bị báo sai!`,
                             severity: 'Cao',
@@ -244,7 +244,7 @@ files.forEach(filename => {
                 if (cleanOld && validAnswers.includes(cleanOld)) {
                     errorCount++;
                     reportList.push({
-                        file: filename,
+                        file: relName,
                         qId: qId,
                         issue: `[BẪY NHẦM CŨ] trapDetect "${oldTrap}" lại trùng với đáp án đúng!`,
                         severity: 'Cao',

@@ -38,16 +38,23 @@ const LessonDataParser = {
         let tokens = [];
         if (Array.isArray(raw.vocab) && raw.vocab.length > 0) {
             tokens = raw.vocab.map(v => ({
-                text: v.meaning ? `${v.meaning.split(/[,;]/)[0].trim()} (${v.hz})` : v.hz,
+                text: v.hz,
                 hz: v.hz,
                 py: v.py || "",
                 hv: v.hv || "",
                 role: "Từ vựng",
-                vn: v.meaning || v.vn || "",
+                vi: v.vi || v.meaning || v.vn || "",
+                vn: v.vi || v.meaning || v.vn || "",
                 radicals: v.radicals || ""
             }));
         } else if (Array.isArray(raw.tokens)) {
-            tokens = raw.tokens;
+            tokens = raw.tokens.map(t => ({
+                ...t,
+                hz: t.hz || t.text,
+                vi: t.vi || t.vn || t.meaning || t.mean || "",
+                vn: t.vi || t.vn || t.meaning || t.mean || "",
+                text: t.hz || t.text
+            }));
         }
 
         // Tách từ cho các thẻ kéo thả

@@ -1,0 +1,562 @@
+{
+  "lessonId": "b_ontap_hsk2",
+  "lessonTitle": "HSK2综合测试: 购物与日常交际复习 (Bài Test Ôn tập HSK 2: Mua sắm & Giao tiếp)",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "有点儿 vs 一点儿",
+        "py": "yǒudiǎnr vs yìdiǎnr",
+        "note": "有点儿 đứng TRƯỚC tính từ/động từ tâm lý biểu thị sự phàn nàn, không vừa ý (有点儿长, 有点儿贵). 一点儿 đứng SAU tính từ để so sánh hoặc yêu cầu (短一点儿, 便宜一点儿) hoặc đứng sau động từ chỉ số lượng ít."
+      },
+      {
+        "word": "肥 vs 瘦",
+        "py": "féi vs shòu",
+        "note": "Khi dùng cho quần áo: 肥 (rộng, thùng thình), 瘦 (chật, bó sát). Khi dùng cho người/vật: 胖/肥 (béo), 瘦 (gầy)."
+      },
+      {
+        "word": "深 vs 浅",
+        "py": "shēn vs qiǎn",
+        "note": "Dùng cho màu sắc: 深颜色 (màu đậm/thẫm), 浅颜色 (màu nhạt/sáng)."
+      },
+      {
+        "word": "合适 vs 适合",
+        "py": "héshì vs shìhé",
+        "note": "合适 là tính từ (vừa vặn, thích hợp: 正合适). 适合 là động từ (phù hợp với ai: 这件衣服适合你)."
+      }
+    ],
+    "grammarTips": [
+      "Động từ lặp lại (AA / V一下儿): 看看, 试试, 看一下儿 biểu thị hành động diễn ra trong thời gian ngắn, mang tính thử nghiệm, giúp ngữ khí nhẹ nhàng, lịch sự.",
+      "Cấu trúc đồng tồn tại: 又 + Tính từ 1 + 又 + Tính từ 2 (又好又便宜: vừa tốt vừa rẻ).",
+      "Cấu trúc so sánh lựa chọn: A + 还是 + B (要深颜色的还是要浅颜色的).",
+      "Cấu trúc thành ngữ 4 chữ cân xứng: 不...也/不... (不大也不小: không to cũng không nhỏ, 不长不短: không dài cũng không ngắn)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "ontap-01",
+      "type": "anti_word_by_word",
+      "title": "Động từ lặp lại 看看 và xin phép lịch sử 可以...吗",
+      "vi": "Tôi có thể xem chút cái áo lông vũ này không?",
+      "zh": "我可以看看这件羽绒服吗",
+      "standardTrans": "我可以看看这件羽绒服吗",
+      "pinyin": "Wǒ kěyǐ kànkan zhè jiàn yǔróngfú ma?",
+      "grammarPoint": "Động từ năng nguyện xin phép: 可以; Động từ lặp lại: 看看; Lượng từ quần áo: 件",
+      "tokens": [
+        {
+          "text": "Có thể",
+          "hz": "可以",
+          "py": "kěyǐ",
+          "hv": "Khả dĩ",
+          "role": "Động từ năng nguyện",
+          "vn": "Có thể (xin phép)",
+          "radicals": "可 = Bộ khẩu 口; 以 = Bộ nhân ⺅"
+        },
+        {
+          "text": "Xem một chút",
+          "hz": "看看",
+          "py": "kànkan",
+          "hv": "Khán khán",
+          "role": "Động từ lặp lại",
+          "vn": "Xem thử, ngắm qua",
+          "radicals": "看 = Bộ thủ 手 + bộ mục 目"
+        },
+        {
+          "text": "Chiếc áo lông vũ này",
+          "hz": "这件羽绒服",
+          "py": "zhè jiàn yǔróngfú",
+          "hv": "Giá kiện vũ nhung phục",
+          "role": "Cụm danh từ tân ngữ",
+          "vn": "Cái áo khoác lông vũ này",
+          "radicals": "件 = Bộ nhân đứng 亻; 羽 = Bộ vũ 羽; 绒 = Bộ mịch 纟; 服 = Bộ nguyệt 月"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "看看这件羽绒服", "tag": "Hành động xem thử áo" },
+        { "id": "t1", "text": "我可以", "tag": "Chủ ngữ + Năng nguyện" },
+        { "id": "t3", "text": "吗", "tag": "Trợ từ nghi vấn" },
+        { "id": "t4", "text": "看羽绒服这件", "tag": "Bẫy định ngữ đảo" },
+        { "id": "t5", "text": "能看这羽绒服吗", "tag": "Bẫy thiếu lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我可以", "看看", "这件羽绒服", "吗"],
+      "wordBankPool": ["我可以", "看看这件羽绒服", "吗", "看羽绒服这件", "能看这羽绒服吗", "看一看羽绒服这件"],
+      "traps": [
+        {
+          "pattern": "看羽绒服这件",
+          "msg": "Lỗi định ngữ: Cụm từ chỉ định và lượng từ '这件' bắt buộc phải đứng trước danh từ trung tâm '羽绒服' ('这件羽绒服')."
+        },
+        {
+          "pattern": "看一点儿这件",
+          "msg": "Lỗi dùng từ: Để biểu đạt 'xem một chút/thử xem', tiếng Trung lặp lại động từ ('看看') hoặc dùng '看一看', không ghép thô '看一点儿'."
+        }
+      ],
+      "explanation": "Câu xin phép chuẩn mực khi vào cửa hàng mua sắm: '我可以 + Động từ lặp lại + Tân ngữ + 吗?'."
+    },
+    {
+      "id": "ontap-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi ý kiến 怎么样 và cấu trúc song song 又...又...",
+      "vi": "Bạn xem chiếc này thế nào? Vừa tốt vừa rẻ.",
+      "zh": "你看一下儿这件怎么样又好又便宜",
+      "standardTrans": "你看一下儿这件怎么样又好又便宜",
+      "pinyin": "Nǐ kàn yíxiàr zhè jiàn zěnmeyàng? Yòu hǎo yòu piányi.",
+      "grammarPoint": "Động lượng từ: 一下儿; Đại từ nghi vấn hỏi tính chất: 怎么样; Cấu trúc hai tính chất tốt đẹp cùng tồn tại: 又...又...",
+      "tokens": [
+        {
+          "text": "Xem một lát",
+          "hz": "看一下儿",
+          "py": "kàn yíxiàr",
+          "hv": "Khán nhất hạ nhi",
+          "role": "Động từ + Động lượng từ",
+          "vn": "Xem qua một chút",
+          "radicals": "看 = Mục; 一 = Nhất; 下 = Hạ; 儿 = Nhi"
+        },
+        {
+          "text": "Thế nào",
+          "hz": "怎么样",
+          "py": "zěnmeyàng",
+          "hv": "Chẩm ma dạng",
+          "role": "Đại từ nghi vấn",
+          "vn": "Như thế nào, ra sao",
+          "radicals": "怎 = Tâm; 样 = Mộc"
+        },
+        {
+          "text": "Vừa tốt vừa rẻ",
+          "hz": "又好又便宜",
+          "py": "yòu hǎo yòu piányi",
+          "hv": "Hựu hảo hựu tiện nghi",
+          "role": "Vị ngữ liên kết tính chất",
+          "vn": "Vừa chất lượng vừa rẻ tiền",
+          "radicals": "又 = Bộ hựu 又; 好 = Bộ nữ 女; 便 = Bộ nhân đứng 亻; 宜 = Bộ miên 宀"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这件怎么样", "tag": "Đối tượng & từ để hỏi" },
+        { "id": "t1", "text": "你看一下儿", "tag": "Đề nghị xem thử" },
+        { "id": "t3", "text": "又好又便宜", "tag": "Nhận xét vừa tốt vừa rẻ" },
+        { "id": "t4", "text": "好和便宜", "tag": "Bẫy liên từ 和" },
+        { "id": "t5", "text": "一下儿看", "tag": "Bẫy trật tự động lượng từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["看一下儿", "这件怎么样", "又好又便宜"],
+      "wordBankPool": ["你看一下儿", "这件怎么样", "又好又便宜", "好和便宜", "一下儿看", "又便宜又好这件"],
+      "traps": [
+        {
+          "pattern": "好和便宜",
+          "msg": "Lỗi dùng từ nối tính từ: Để biểu thị 'vừa... vừa...' của hai đặc tính, bắt buộc dùng cấu trúc '又...又...', không dùng liên từ '和' (chỉ dùng nối danh từ)."
+        },
+        {
+          "pattern": "一下儿看",
+          "msg": "Lỗi động lượng từ: '一下儿' (một lát/chút) bắt buộc phải đứng SAU động từ ('看一下儿')."
+        }
+      ],
+      "explanation": "'一下儿' làm bổ ngữ động lượng làm giảm nhẹ ngữ khí mệnh lệnh. '又好又便宜' là cụm cố định khen đồ vừa chất lượng vừa rẻ."
+    },
+    {
+      "id": "ontap-03",
+      "type": "anti_word_by_word",
+      "title": "Phân biệt 有点儿 phàn nàn và 一点儿 yêu cầu",
+      "vi": "Tôi cảm thấy cái này hơi dài chút. Bạn không có cái ngắn chút hơn à?",
+      "zh": "我觉得这件有点儿长你没有短一点儿的吗",
+      "standardTrans": "我觉得这件有点儿长你没有短一点儿的吗",
+      "pinyin": "Wǒ juéde zhè jiàn yǒudiǎnr cháng, nǐ méiyǒu duǎn yìdiǎnr de ma?",
+      "grammarPoint": "Chê bai không vừa ý: 有点儿 + Tính từ; Đề xuất đổi: Tính từ + 一点儿 + 的",
+      "tokens": [
+        {
+          "text": "Hơi dài một chút",
+          "hz": "有点儿长",
+          "py": "yǒudiǎnr cháng",
+          "hv": "Hữu điểm nhi trường",
+          "role": "Phó từ + Tính từ vị ngữ",
+          "vn": "Hơi bị dài (ý không vừa lòng)",
+          "radicals": "有 = Nguyệt; 点 = Hỏa; 长 = Trường"
+        },
+        {
+          "text": "Ngắn hơn một chút",
+          "hz": "短一点儿的",
+          "py": "duǎn yìdiǎnr de",
+          "hv": "Đoản nhất điểm nhi đích",
+          "role": "Tính từ + Bổ ngữ số lượng + 的",
+          "vn": "Cái ngắn hơn một tí",
+          "radicals": "短 = Bộ thỉ 矢 + chữ đậu 豆; 的 = Bộ bạch 白"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这件有点儿长", "tag": "Chê hơi dài" },
+        { "id": "t1", "text": "我觉得", "tag": "Nhận định chủ quan" },
+        { "id": "t3", "text": "你没有短一点儿的吗", "tag": "Hỏi cái ngắn hơn" },
+        { "id": "t4", "text": "长一点儿", "tag": "Bẫy dùng từ 一点儿" },
+        { "id": "t5", "text": "短有点儿的", "tag": "Bẫy trật tự 有点儿" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我觉得", "有点儿长", "没有短一点儿的吗"],
+      "wordBankPool": ["我觉得", "这件有点儿长", "你没有短一点儿的吗", "长一点儿", "短有点儿的", "这件一点儿长"],
+      "traps": [
+        {
+          "pattern": "一点儿长",
+          "msg": "Lỗi phân biệt 有点儿 / 一点儿: Khi chê bai món đồ không ưng ý ('hơi dài'), bắt buộc dùng '有点儿 + Tính từ' ('有点儿长'). Dùng '长一点儿' lại mang nghĩa yêu cầu làm dài thêm."
+        },
+        {
+          "pattern": "短有点儿",
+          "msg": "Lỗi vị trí: '一点儿' đứng sau tính từ để chỉ mức độ so sánh mong muốn ('短一点儿'), không dùng '有点儿'."
+        }
+      ],
+      "explanation": "Điểm ngữ pháp then chốt của HSK 2: '有点儿 + Adj' đặt trước tính từ mang sắc thái tiêu cực; 'Adj + 一点儿' đặt sau tính từ mang sắc thái so sánh yêu cầu."
+    },
+    {
+      "id": "ontap-04",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi lựa chọn 还是 giữa màu đậm và màu nhạt",
+      "vi": "Bạn muốn cái mầu đậm hay là cái mầu nhạt?",
+      "zh": "你要深颜色的还是要浅颜色的",
+      "standardTrans": "你要深颜色的还是要浅颜色的",
+      "pinyin": "Nǐ yào shēn yánsè de háishì yào qiǎn yánsè de?",
+      "grammarPoint": "Câu hỏi lựa chọn: A + 还是 + B; Từ đối nghĩa màu sắc: 深 (đậm) vs 浅 (nhạt); Kết cấu chữ 的",
+      "tokens": [
+        {
+          "text": "Màu đậm/thẫm",
+          "hz": "深颜色的",
+          "py": "shēn yánsè de",
+          "hv": "Thâm nhan sắc đích",
+          "role": "Lựa chọn 1",
+          "vn": "Cái màu đậm/tối",
+          "radicals": "深 = Bộ thủy 氵; 颜 = Bộ hiệt 页; 色 = Bộ sắc 色"
+        },
+        {
+          "text": "Hay là",
+          "hz": "还是",
+          "py": "háishì",
+          "hv": "Hoàn thị",
+          "role": "Liên từ nghi vấn",
+          "vn": "Hay là, hoặc là (trong câu hỏi)",
+          "radicals": "还 = Bộ sước 辶; 是 = Bộ nhật 日"
+        },
+        {
+          "text": "Màu nhạt/sáng",
+          "hz": "浅颜色的",
+          "py": "qiǎn yánsè de",
+          "hv": "Thiển nhan sắc đích",
+          "role": "Lựa chọn 2",
+          "vn": "Cái màu nhạt/sáng",
+          "radicals": "浅 = Bộ thủy 氵 + chữ qua 戋"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "还是要浅颜色的", "tag": "Lựa chọn 2 với 还是" },
+        { "id": "t1", "text": "你要深颜色的", "tag": "Chủ ngữ + Lựa chọn 1" },
+        { "id": "t3", "text": "或者要浅颜色的", "tag": "Bẫy liên từ 或者" },
+        { "id": "t4", "text": "颜色的深", "tag": "Bẫy định ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你要深颜色的", "还是要浅颜色的"],
+      "wordBankPool": ["你要深颜色的", "还是要浅颜色的", "或者要浅颜色的", "颜色的深", "深要浅颜色"],
+      "traps": [
+        {
+          "pattern": "或者要浅",
+          "msg": "Lỗi liên từ lựa chọn: Câu hỏi lựa chọn bắt buộc dùng '还是', tuyệt đối không dùng '或者' (chỉ dùng trong câu trần thuật)."
+        }
+      ],
+      "explanation": "Cấu trúc hỏi lựa chọn kinh điển: 'Chủ ngữ + V + Lựa chọn A + 还是 + (V) + Lựa chọn B?'. Cụm '深颜色的' lược bỏ danh từ '衣服'."
+    },
+    {
+      "id": "ontap-05",
+      "type": "anti_word_by_word",
+      "title": "Kết cấu chữ 的 đại từ hóa thay thế danh từ",
+      "vi": "Tôi muốn cái mầu nhạt.",
+      "zh": "我要浅颜色的",
+      "standardTrans": "我要浅颜色的",
+      "pinyin": "Wǒ yào qiǎn yánsè de.",
+      "grammarPoint": "Động từ mong muốn: 要; Cụm tính từ + 的 làm tân ngữ đại từ hóa",
+      "tokens": [
+        {
+          "text": "Tôi muốn",
+          "hz": "我要",
+          "py": "wǒ yào",
+          "hv": "Ngã yếu",
+          "role": "Chủ ngữ + Động từ",
+          "vn": "Tôi lấy, tôi muốn",
+          "radicals": "我 = Bộ qua 戈; 要 = Bộ á 覀 + bộ nữ 女"
+        },
+        {
+          "text": "Cái màu nhạt",
+          "hz": "浅颜色的",
+          "py": "qiǎn yánsè de",
+          "hv": "Thiển nhan sắc đích",
+          "role": "Cụm danh từ tân ngữ",
+          "vn": "Cái có màu sắc nhạt",
+          "radicals": "浅 = Bộ thủy 氵; 色 = Bộ sắc 色; 的 = Bộ bạch 白"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我要", "tag": "Chủ vị" },
+        { "id": "t2", "text": "浅颜色的", "tag": "Tân ngữ kết cấu 的" },
+        { "id": "t3", "text": "颜色的浅", "tag": "Bẫy trật tự tính từ" },
+        { "id": "t4", "text": "要我浅颜色", "tag": "Bẫy trật tự chủ vị" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我要", "浅颜色的"],
+      "wordBankPool": ["我要", "浅颜色的", "颜色的浅", "要我浅颜色", "浅颜色我"],
+      "traps": [
+        {
+          "pattern": "颜色的浅",
+          "msg": "Lỗi định ngữ: Tính từ miêu tả tính chất màu sắc '浅' (nhạt) phải đứng trước danh từ '颜色' ('浅颜色')."
+        }
+      ],
+      "explanation": "Câu trả lời ngắn gọn trong mua bán. Khi đối tượng 'áo lông vũ' đã rõ ràng ở ngữ cảnh trước, người nói chỉ cần thêm trợ từ '的' sau thuộc tính để tạo thành cụm danh từ."
+    },
+    {
+      "id": "ontap-06",
+      "type": "sentence_parsing",
+      "title": "Động từ lặp lại 试试 chỉ sự thử nghiệm",
+      "vi": "Tôi có thể thử chiếc áo lông vũ này không?",
+      "zh": "我可以试试这件羽绒服吗",
+      "standardTrans": "我可以试试这件羽绒服吗",
+      "pinyin": "Wǒ kěyǐ shìshi zhè jiàn yǔróngfú ma?",
+      "grammarPoint": "Động từ năng nguyện: 可以; Động từ đơn âm lặp lại: 试试; Lượng từ: 件",
+      "tokens": [
+        {
+          "text": "Thử một chút",
+          "hz": "试试",
+          "py": "shìshi",
+          "hv": "Thí thí",
+          "role": "Động từ lặp lại",
+          "vn": "Mặc thử, thử xem sao",
+          "radicals": "试 = Bộ ngôn 讠 + chữ thức 式"
+        },
+        {
+          "text": "Áo lông vũ này",
+          "hz": "这件羽绒服",
+          "py": "zhè jiàn yǔróngfú",
+          "hv": "Giá kiện vũ nhung phục",
+          "role": "Tân ngữ",
+          "vn": "Chiếc áo khoác lông vũ này",
+          "radicals": "件 = Nhân; 羽 = Lông; 服 = Áo"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "试试这件羽绒服吗", "tag": "Hành động thử & hỏi" },
+        { "id": "t1", "text": "我可以", "tag": "Lời xin phép" },
+        { "id": "t3", "text": "试这件羽绒服吗", "tag": "Bẫy thiếu lặp động từ" },
+        { "id": "t4", "text": "可以我", "tag": "Bẫy trật tự chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我可以", "试试", "这件羽绒服吗"],
+      "wordBankPool": ["我可以", "试试这件羽绒服吗", "试这件羽绒服吗", "可以我", "羽绒服这件试试"],
+      "traps": [
+        {
+          "pattern": "试一下这件羽绒服吗$",
+          "msg": "Lưu ý văn cảnh: Dù '试一下' đúng ngữ pháp, nhưng câu khẩu ngữ mua sắm chuẩn sách giáo trình ưu tiên dùng hình thức lặp lại '试试' ('试试这件羽绒服')."
+        }
+      ],
+      "explanation": "Động từ '试' lặp lại thành '试试' diễn tả hành động mặc thử đồ trong thời gian ngắn để kiểm tra độ vừa vặn."
+    },
+    {
+      "id": "ontap-07",
+      "type": "anti_word_by_word",
+      "title": "Trợ từ ngữ khí khẳng định 当然可以啊",
+      "vi": "Tất nhiên là được rồi.",
+      "zh": "当然可以啊",
+      "standardTrans": "当然可以啊",
+      "pinyin": "Dāngrán kěyǐ a.",
+      "grammarPoint": "Phó từ khẳng định dứt khoát: 当然; Động từ biểu thị sự cho phép: 可以; Trợ từ ngữ khí thân thiện: 啊",
+      "tokens": [
+        {
+          "text": "Đương nhiên, tất nhiên",
+          "hz": "当然",
+          "py": "dāngrán",
+          "hv": "Đương nhiên",
+          "role": "Phó từ khẳng định",
+          "vn": "Tất nhiên, dĩ nhiên",
+          "radicals": "当 = Bộ tiểu 小; 然 = Bộ hỏa 灬"
+        },
+        {
+          "text": "Được chứ",
+          "hz": "可以啊",
+          "py": "kěyǐ a",
+          "hv": "Khả dĩ a",
+          "role": "Động từ năng nguyện + Trợ từ ngữ khí",
+          "vn": "Được chứ, được mà",
+          "radicals": "可 = Khẩu; 以 = Nhân; 啊 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "当然", "tag": "Phó từ khẳng định" },
+        { "id": "t2", "text": "可以啊", "tag": "Đồng ý + Trợ từ" },
+        { "id": "t3", "text": "会啊", "tag": "Bẫy dùng 会" },
+        { "id": "t4", "text": "不行", "tag": "Bẫy từ trái nghĩa" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["当然", "可以啊"],
+      "wordBankPool": ["当然", "可以啊", "会啊", "不行", "能啊当然"],
+      "traps": [
+        {
+          "pattern": "当然会",
+          "msg": "Lỗi dùng từ năng nguyện: Đáp lại lời xin phép 'có thể... không' (可以...吗) phải dùng '可以' ('当然可以啊'), không dùng '会' (chỉ kỹ năng)."
+        }
+      ],
+      "explanation": "Câu phản hồi thân mật, nhiệt tình của người bán hàng khi đồng ý cho khách hàng thử quần áo."
+    },
+    {
+      "id": "ontap-08",
+      "type": "sentence_parsing",
+      "title": "Từ vựng quần áo rộng 肥 và hỏi chính phản 有没有... 瘦一点儿的",
+      "vi": "Tôi cảm thấy chiếc áo lông vũ này to quá. Bạn có cái nào nhỏ hơn chút không?",
+      "zh": "我觉得这件羽绒服太肥了你有没有瘦一点儿的",
+      "standardTrans": "我觉得这件羽绒服太肥了你有没有瘦一点儿的",
+      "pinyin": "Wǒ juéde zhè jiàn yǔróngfú tài féi le, nǐ yǒu méiyǒu shòu yìdiǎnr de?",
+      "grammarPoint": "Cảm thán chê rộng: 太肥了; Câu hỏi chính phản: 有没有; Yêu cầu cỡ nhỏ hơn: 瘦一点儿的",
+      "tokens": [
+        {
+          "text": "Rộng quá / to quá",
+          "hz": "太肥了",
+          "py": "tài féi le",
+          "hv": "Thái phì liễu",
+          "role": "Cụm vị ngữ cảm thán",
+          "vn": "Rộng thùng thình quá",
+          "radicals": "太 = Đại; 肥 = Bộ nhục 月 + chữ ba 巴; 了 = Trợ từ"
+        },
+        {
+          "text": "Có hay không có",
+          "hz": "有没有",
+          "py": "yǒu méiyǒu",
+          "hv": "Hữu một hữu",
+          "role": "Dạng hỏi chính phản",
+          "vn": "Có... không",
+          "radicals": "有 = Nguyệt; 没 = Thủy"
+        },
+        {
+          "text": "Cái nhỏ/chật hơn một chút",
+          "hz": "瘦一点儿的",
+          "py": "shòu yìdiǎnr de",
+          "hv": "Sấu nhất điểm nhi đích",
+          "role": "Cụm yêu cầu so sánh",
+          "vn": "Cái nhỏ hơn, ôm hơn một chút",
+          "radicals": "瘦 = Bộ nạch 疒 + chữ sưu 叟; 点 = Hỏa; 的 = Bạch"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这件羽绒服太肥了", "tag": "Chê áo quá rộng" },
+        { "id": "t1", "text": "我觉得", "tag": "Nhận định chủ quan" },
+        { "id": "t3", "text": "你有没有瘦一点儿的", "tag": "Hỏi cái nhỏ hơn" },
+        { "id": "t4", "text": "太大了一点儿", "tag": "Bẫy dùng từ" },
+        { "id": "t5", "text": "瘦有点儿的", "tag": "Bẫy trật tự 有点儿" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这件羽绒服", "太肥了", "有没有", "瘦一点儿的"],
+      "wordBankPool": ["我觉得", "这件羽绒服太肥了", "你有没有瘦一点儿的", "太大了一点儿", "瘦有点儿的", "羽绒服这件太肥"],
+      "traps": [
+        {
+          "pattern": "太大了",
+          "msg": "Lỗi từ vựng chuyên ngành trang phục: Trong tiếng Trung, khi miêu tả kích thước quần áo bị rộng, từ ngữ chuẩn mực và chuyên dụng nhất là '肥' ('太肥了'), đối lập với '瘦' (chật/nhỏ hơn: '瘦一点儿')."
+        }
+      ],
+      "explanation": "Trong trang phục tiếng Hán, '肥' chỉ cỡ áo quần quá rộng, '瘦' chỉ cỡ áo quần bó sát/nhỏ. Muốn tìm size nhỏ hơn nói '瘦一点儿的'."
+    },
+    {
+      "id": "ontap-09",
+      "type": "anti_word_by_word",
+      "title": "Phó từ lặp lại hành động tương lai 再 và lời khuyên 吧",
+      "vi": "Bạn thử lại chiếc áo lông vũ này đi.",
+      "zh": "你再试试这件羽绒服吧",
+      "standardTrans": "你再试试这件羽绒服吧",
+      "pinyin": "Nǐ zài shìshi zhè jiàn yǔróngfú ba.",
+      "grammarPoint": "Lặp lại hành động trong tương lai: 再 + Động từ; Động từ lặp lại: 试试; Trợ từ ngữ khí khuyên nhủ: 吧",
+      "tokens": [
+        {
+          "text": "Thử lại / thử tiếp",
+          "hz": "再试试",
+          "py": "zài shìshi",
+          "hv": "Tái thí thí",
+          "role": "Phó từ + Động từ lặp lại",
+          "vn": "Hãy thử lại lần nữa",
+          "radicals": "再 = Bộ quynh 冂; 试 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Chiếc áo lông vũ này đi",
+          "hz": "这件羽绒服吧",
+          "py": "zhè jiàn yǔróngfú ba",
+          "hv": "Giá kiện vũ nhung phục ba",
+          "role": "Tân ngữ + Trợ từ ngữ khí",
+          "vn": "Cái áo lông vũ này đi nhé",
+          "radicals": "这 = Sước; 件 = Nhân; 服 = Nguyệt; 吧 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你再试试", "tag": "Khuyên thử lại (再)" },
+        { "id": "t2", "text": "这件羽绒服吧", "tag": "Tân ngữ món đồ mới" },
+        { "id": "t3", "text": "又试试", "tag": "Bẫy dùng phó từ 又" },
+        { "id": "t4", "text": "试试再", "tag": "Bẫy trật tự phó từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你再试试", "这件羽绒服吧"],
+      "wordBankPool": ["你再试试", "这件羽绒服吧", "又试试", "试试再", "这件羽绒服你再试"],
+      "traps": [
+        {
+          "pattern": "又试试",
+          "msg": "Lỗi phân biệt 又 / 再: Hành động 'thử lại' là việc người bán khuyên khách làm tiếp trong TƯƠNG LAI, bắt buộc dùng '再', tuyệt đối không dùng '又' (chỉ hành động đã lặp lại)."
+        },
+        {
+          "pattern": "试试再",
+          "msg": "Lỗi ngữ tự: Phó từ '再' bắt buộc phải đứng TRƯỚC động từ ('再试试'), không dịch xuôi theo tiếng Việt 'thử lại' thành '试试再'."
+        }
+      ],
+      "explanation": "Phó từ '再' đặt trước động từ '试试' mang ý nghĩa khuyến khích đối phương tiếp tục thử sang một chiếc áo khác."
+    },
+    {
+      "id": "ontap-10",
+      "type": "sentence_parsing",
+      "title": "Thành ngữ đối xứng 不大也不小, phó từ 正合适 và 很好看",
+      "vi": "Tôi cảm thấy chiếc áo lông vũ này không to cũng không nhỏ, vừa vặn, mầu sắc cũng rất đẹp.",
+      "zh": "我觉得这件羽绒服不大也不小正合适颜色也很好看",
+      "standardTrans": "我觉得这件羽绒服不大也不小正合适颜色也很好看",
+      "pinyin": "Wǒ juéde zhè jiàn yǔróngfú bú dà yě bù xiǎo, zhèng héshì, yánsè yě hěn hǎokàn.",
+      "grammarPoint": "Thành ngữ cân xứng: 不大也不小; Phó từ vừa vặn: 正合适; Màu sắc đẹp: 颜色也很好看",
+      "tokens": [
+        {
+          "text": "Không to cũng không nhỏ",
+          "hz": "不大也不小",
+          "py": "bú dà yě bù xiǎo",
+          "hv": "Bất đại dã bất tiểu",
+          "role": "Cụm vị ngữ thành ngữ 4 chữ",
+          "vn": "Không rộng mà cũng chẳng chật",
+          "radicals": "不 = Bất; 大 = Đại; 也 = Dã; 小 = Tiểu"
+        },
+        {
+          "text": "Vừa vặn",
+          "hz": "正合适",
+          "py": "zhèng héshì",
+          "hv": "Chính hợp thích",
+          "role": "Phó từ + Tính từ",
+          "vn": "Rất vừa vặn, chuẩn khít",
+          "radicals": "正 = Bộ nhất 一; 合 = Bộ khẩu 口; 适 = Bộ sước 辶"
+        },
+        {
+          "text": "Màu sắc cũng rất đẹp",
+          "hz": "颜色也很好看",
+          "py": "yánsè yě hěn hǎokàn",
+          "hv": "Nhan sắc dã hẩn hảo khán",
+          "role": "Chủ vị nhỏ bổ sung",
+          "vn": "Màu sắc nhìn cũng rất ưa mắt",
+          "radicals": "颜 = Hiệt; 色 = Sắc; 看 = Mục"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "这件羽绒服不大也不小", "tag": "Đánh giá kích cỡ cân đối" },
+        { "id": "t1", "text": "我觉得", "tag": "Ý kiến bản thân" },
+        { "id": "t3", "text": "正合适颜色也很好看", "tag": "Vừa vặn và màu đẹp" },
+        { "id": "t4", "text": "不小不大", "tag": "Bẫy trật tự thành ngữ" },
+        { "id": "t5", "text": "适合正", "tag": "Bẫy dùng từ 适合" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["这件羽绒服", "不大也不小", "正合适", "颜色也很好看"],
+      "wordBankPool": ["我觉得", "这件羽绒服不大也不小", "正合适颜色也很好看", "不小不大", "适合正", "颜色好看也"],
+      "traps": [
+        {
+          "pattern": "正适合",
+          "msg": "Lỗi phân biệt 合适 / 适合: Đứng độc lập làm tính từ vị ngữ (vừa vặn) phải dùng '正合适'. '适合' là ngoại động từ, phía sau phải có đối tượng tân ngữ."
+        }
+      ],
+      "explanation": "Câu khen ngợi hoàn chỉnh khi chốt mua quần áo: kích cỡ đạt chuẩn '不大也不小' (không to không nhỏ), độ vừa vặn đạt mức '正合适', và thẩm mỹ đạt '很好看'[cite: 743]."
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "lessonId": "b06",
+  "lessonTitle": "第6课: 我是跟旅游团一起来的",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "陪 vs 跟/和",
+        "py": "péi vs gēn/hé",
+        "note": "陪 là động từ mang nghĩa cùng ai, đi theo bầu bạn, chăm sóc hoặc hỗ trợ ai đó (S + 陪 + O + V); 跟/和 là giới từ liên kết biểu thị cùng nhau làm việc gì."
+      },
+      {
+        "word": "呆 vs 住",
+        "py": "dāi vs zhù",
+        "note": "呆 (hoặc 待) nhấn mạnh việc lưu lại, ở lại một nơi nào đó trong khoảng thời gian tạm thời; 住 chỉ sự cư trú, sinh sống ổn định lâu dài hoặc qua đêm tại khách sạn/nhà riêng."
+      },
+      {
+        "word": "当 vs 做",
+        "py": "dāng vs zuò",
+        "note": "当 chỉ việc đảm nhận vai trò, chức vụ, nghề nghiệp mang tính đại diện (当导游, 当老师); 做 dùng rộng rãi cho các hoạt động chế tác, làm việc hoặc làm nghề cụ thể (做饭, 做生意)."
+      }
+    ],
+    "grammarTips": [
+      "Cấu trúc nhấn mạnh 是……的: Dùng để nhấn mạnh thời gian, địa điểm, phương thức, công cụ, đối tượng hoặc chủ thể của hành động ĐÃ XẢY RA trong quá khứ.",
+      "Vị trí của 的 trong câu có tân ngữ: S + 是 + [Thành phần nhấn mạnh] + V + 的 + Tân ngữ HOẶC S + 是 + [Thành phần nhấn mạnh] + V + Tân ngữ + 的.",
+      "Thể phủ định của câu nhấn mạnh: Đặt 不是 trước thành phần cần phủ định (S + 不是 + [Thành phần] + V + 的), tuyệt đối không dùng 没.",
+      "Động tác chưa xảy ra thì KHÔNG dùng cấu trúc 是……的 (hành động trong tương lai chỉ dùng phó từ thời gian thông thường)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b06-01",
+      "type": "sentence_parsing",
+      "title": "Nhấn mạnh phương thức và đối tượng đồng hành với 是……的",
+      "vi": "Tôi đi cùng đoàn du lịch đến đây.",
+      "zh": "我是跟旅游团一起来的",
+      "standardTrans": "我是跟旅游团一起来的",
+      "pinyin": "Wǒ shì gēn lǚyóutuán yìqǐ lái de",
+      "grammarPoint": "Cấu trúc nhấn mạnh phương thức: S + 是 + 跟...一起 + V + 的",
+      "tokens": [
+        {
+          "text": "đoàn du lịch",
+          "hz": "旅游团",
+          "py": "lǚyóutuán",
+          "hv": "lữ du đoàn",
+          "role": "Tân ngữ giới từ",
+          "vn": "đoàn du lịch, tour du lịch",
+          "radicals": "旅 = Bộ phương 方; 游 = Bộ thủy 氵; 团 = Bộ vi 囗"
+        },
+        {
+          "text": "cùng nhau",
+          "hz": "一起来",
+          "py": "yìqǐ lái",
+          "hv": "nhất khởi lai",
+          "role": "Trạng ngữ + Động từ trung tâm",
+          "vn": "cùng nhau đi đến",
+          "radicals": "起 = Bộ tẩu 走; 来 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "旅游团", "tag": "Danh từ" },
+        { "id": "t2", "text": "我是", "tag": "Chủ ngữ + 是" },
+        { "id": "t3", "text": "一起来的", "tag": "Động từ + 的" },
+        { "id": "t4", "text": "跟", "tag": "Giới từ" },
+        { "id": "t5", "text": "和", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t3"],
+      "requiredKeywordsZh": ["我是", "跟旅游团", "一起来的"],
+      "wordBankPool": ["旅游团", "和", "我是", "跟", "一起来的"],
+      "traps": [
+        {
+          "pattern": "来跟旅游团",
+          "msg": "Lỗi trật tự từ: Trong tiếng Hán, cụm giới từ chỉ phương thức '跟 + Tân ngữ + 一起' bắt buộc phải đứng trước động từ '来', không đặt sau động từ như tiếng Việt."
+        },
+        {
+          "pattern": "是来了",
+          "msg": "Lỗi xung đột cấu trúc: Trong câu nhấn mạnh '是……的', cuối câu dùng '的' để kết thúc, tuyệt đối không dùng trợ từ động thái '了'."
+        }
+      ],
+      "explanation": "Cấu trúc 是……的 dùng để nhấn mạnh phương thức hành động đã hoàn tất trong quá khứ. Thành phần nhấn mạnh là cụm giới từ 跟旅游团一起 được đặt giữa 是 và động từ 来."
+    },
+    {
+      "id": "b06-02",
+      "type": "anti_word_by_word",
+      "title": "Phủ định phương tiện di chuyển trong cấu trúc 不是……的",
+      "vi": "Anh ấy đến bằng tàu hỏa, không phải đi bằng máy bay.",
+      "zh": "他是坐火车来的不是坐飞机来的",
+      "standardTrans": "他是坐火车来的不是坐飞机来的",
+      "pinyin": "Tā shì zuò huǒchē lái de, bú shì zuò fēijī lái de",
+      "grammarPoint": "Khẳng định và phủ định phương tiện: 是 + [Phương tiện 1] + 来的, 不是 + [Phương tiện 2] + 来的",
+      "tokens": [
+        {
+          "text": "đi tàu hỏa đến",
+          "hz": "坐火车来",
+          "py": "zuò huǒchē lái",
+          "hv": "tọa hỏa xa lai",
+          "role": "Phương thức + Động từ",
+          "vn": "ngồi tàu hỏa đi đến",
+          "radicals": "坐 = Bộ thổ 土; 火 = Bộ hỏa 火; 车 = Bộ xa 车"
+        },
+        {
+          "text": "đi máy bay đến",
+          "hz": "坐飞机来",
+          "py": "zuò fēijī lái",
+          "hv": "tọa phi cơ lai",
+          "role": "Phương thức + Động từ",
+          "vn": "đi bằng máy bay đến",
+          "radicals": "飞 = Bộ phi 飞; 机 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "坐火车来的", "tag": "Vế khẳng định" },
+        { "id": "t2", "text": "不是", "tag": "Phủ định" },
+        { "id": "t3", "text": "他是", "tag": "Chủ vị" },
+        { "id": "t4", "text": "坐飞机来的", "tag": "Vế phủ định" },
+        { "id": "t5", "text": "没坐", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t1", "t2", "t4"],
+      "requiredKeywordsZh": ["坐火车来的", "不是", "坐飞机来的"],
+      "wordBankPool": ["坐飞机来的", "没坐", "他是", "坐火车来的", "不是"],
+      "traps": [
+        {
+          "pattern": "没是坐飞机",
+          "msg": "Lỗi phủ định: Phủ định của cấu trúc '是……的' bắt buộc dùng '不是', tuyệt đối không được dùng '没' hoặc '没有'."
+        },
+        {
+          "pattern": "坐飞机来不是",
+          "msg": "Lỗi ngữ tự: Từ phủ định '不是' phải đứng trước phương thức muốn phủ định (不是坐飞机来的), không đặt cuối phân câu."
+        }
+      ],
+      "explanation": "Câu đối chiếu phương tiện di chuyển trong quá khứ. Cấu trúc chuẩn kết hợp vế khẳng định 是坐火车来的 với vế phủ định 不是坐飞机来的."
+    },
+    {
+      "id": "b06-03",
+      "type": "sentence_parsing",
+      "title": "Nhấn mạnh địa điểm diễn ra hành động với 是……的",
+      "vi": "Chúng tôi quen nhau ở trường đại học.",
+      "zh": "我们是在大学认识的",
+      "standardTrans": "Chúng tôi quen nhau ở trường đại học",
+      "pinyin": "Wǒmen shì zài dàxué rènshi de",
+      "grammarPoint": "Nhấn mạnh nơi chốn: S + 是 + 在 + Địa điểm + V + 的",
+      "tokens": [
+        {
+          "text": "ở trường đại học",
+          "hz": "在大学",
+          "py": "zài dàxué",
+          "hv": "tại đại học",
+          "role": "Trạng ngữ chỉ địa điểm",
+          "vn": "tại trường đại học",
+          "radicals": "在 = Bộ thổ 土; 大 = Bộ đại 大; 学 = Bộ tử 子"
+        },
+        {
+          "text": "quen biết",
+          "hz": "认识",
+          "py": "rènshi",
+          "hv": "nhận thức",
+          "role": "Động từ chính",
+          "vn": "quen biết, nhận diện",
+          "radicals": "认 = Bộ ngôn 讠; 识 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "认识的", "tag": "Động từ + 的" },
+        { "id": "t2", "text": "是在", "tag": "Trạng ngữ" },
+        { "id": "t3", "text": "大学", "tag": "Địa điểm" },
+        { "id": "t4", "text": "我们", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t4", "t2", "t3", "t1"],
+      "requiredKeywordsZh": ["我们", "是在大学", "认识的"],
+      "wordBankPool": ["是在", "认识的", "了", "我们", "大学"],
+      "traps": [
+        {
+          "pattern": "认识在大学",
+          "msg": "Lỗi dịch bồi: Trong tiếng Hán, trạng ngữ nơi chốn '在大学' luôn phải đứng TRƯỚC động từ '认识', không đặt sau động từ như tiếng Việt."
+        },
+        {
+          "pattern": "认识的了",
+          "msg": "Lỗi thừa trợ từ: Đã dùng kết cấu nhấn mạnh '是……的' thì tuyệt đối không thêm trợ từ '了' vào cuối câu."
+        }
+      ],
+      "explanation": "Câu nhấn mạnh địa điểm xảy ra sự việc làm quen trong quá khứ. Cụm giới từ chỉ địa điểm 在大学 được đặt ngay sau 是 và trước động từ 认识."
+    },
+    {
+      "id": "b06-04",
+      "type": "anti_word_by_word",
+      "title": "Phủ định địa điểm mua sắm với 不是……的",
+      "vi": "Chiếc áo này không phải tôi mua ở cửa hàng đó.",
+      "zh": "这件衣服不是我在那家商店买的",
+      "standardTrans": "这件衣服不是我在那家商店买的",
+      "pinyin": "Zhè jiàn yīfu bú shì wǒ zài nà jiā shāngdiàn mǎi de",
+      "grammarPoint": "Tân ngữ đưa lên làm chủ đề: Tân ngữ + 不是 + S + 在 + Nơi chốn + V + 的",
+      "tokens": [
+        {
+          "text": "chiếc áo này",
+          "hz": "这件衣服",
+          "py": "zhè jiàn yīfu",
+          "hv": "giá kiện y phục",
+          "role": "Chủ đề câu",
+          "vn": "chiếc áo, bộ quần áo này",
+          "radicals": "件 = Bộ nhân đứng 亻; 衣 = Bộ y 衣; 服 = Bộ nguyệt 月"
+        },
+        {
+          "text": "cửa hàng đó",
+          "hz": "那家商店",
+          "py": "nà jiā shāngdiàn",
+          "hv": "na gia thương điếm",
+          "role": "Tân ngữ của giới từ 在",
+          "vn": "cửa tiệm đó, cửa hàng kia",
+          "radicals": "商 = Bộ khẩu 口; 店 = Bộ quảng 广"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "不是", "tag": "Phủ định" },
+        { "id": "t2", "text": "买的", "tag": "Động từ + 的" },
+        { "id": "t3", "text": "我在那家商店", "tag": "Chủ ngữ + Nơi chốn" },
+        { "id": "t4", "text": "这件衣服", "tag": "Chủ đề" },
+        { "id": "t5", "text": "没在", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t4", "t1", "t3", "t2"],
+      "requiredKeywordsZh": ["这件衣服", "不是", "那家商店", "买的"],
+      "wordBankPool": ["我在那家商店", "这件衣服", "没在", "买的", "不是"],
+      "traps": [
+        {
+          "pattern": "没在那家",
+          "msg": "Lỗi dùng từ phủ định: Phủ định thông tin địa điểm trong cấu trúc nhấn mạnh quá khứ dùng '不是', không dùng '没在'."
+        },
+        {
+          "pattern": "买在那家",
+          "msg": "Lỗi trật tự trạng ngữ nơi chốn: Cụm '在那家商店' bắt buộc phải đứng trước động từ '买'."
+        }
+      ],
+      "explanation": "Câu đảo ngữ đưa tân ngữ 这件衣服 lên đầu làm chủ đề. Từ phủ định 不是 đứng trước chủ thể và trạng ngữ nơi chốn để phủ định địa điểm phát sinh hành vi mua sắm."
+    },
+    {
+      "id": "b06-05",
+      "type": "sentence_parsing",
+      "title": "Nhấn mạnh mốc thời gian diễn ra hành động với 什么时候",
+      "vi": "Cậu mua chiếc xe đạp này khi nào vậy?",
+      "zh": "你是什么时候买这辆自行车的",
+      "standardTrans": "你是什么时候买这辆自行车的",
+      "pinyin": "Nǐ shì shénme shíhou mǎi zhè liàng zìxíngchē de",
+      "grammarPoint": "Nhấn mạnh thời gian trong câu hỏi: S + 是 + 什么时候 + V + [Tân ngữ] + 的",
+      "tokens": [
+        {
+          "text": "khi nào",
+          "hz": "什么时候",
+          "py": "shénme shíhou",
+          "hv": "thập ma thời hậu",
+          "role": "Trạng ngữ thời gian nghi vấn",
+          "vn": "lúc nào, khi nào, bao giờ",
+          "radicals": "什 = Bộ nhân đứng 亻; 时 = Bộ nhật 日; 候 = Bộ nhân đứng 亻"
+        },
+        {
+          "text": "chiếc xe đạp này",
+          "hz": "这辆自行车",
+          "py": "zhè liàng zìxíngchē",
+          "hv": "giá lượng tự hành xa",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "chiếc xe đạp này",
+          "radicals": "辆 = Bộ xa 车; 自 = Bộ tự 自; 行 = Bộ hành 行; 车 = Bộ xa 车"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "买这辆", "tag": "Động từ + Lượng từ" },
+        { "id": "t2", "text": "什么时候", "tag": "Thời gian nghi vấn" },
+        { "id": "t3", "text": "你是", "tag": "Chủ vị" },
+        { "id": "t4", "text": "自行车的", "tag": "Tân ngữ + 的" },
+        { "id": "t5", "text": "买了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t2", "t1", "t4"],
+      "requiredKeywordsZh": ["你是", "什么时候", "买这辆", "自行车的"],
+      "wordBankPool": ["什么时候", "买这辆", "买了", "你是", "自行车的"],
+      "traps": [
+        {
+          "pattern": "买什么时候",
+          "msg": "Lỗi trật tự từ nghi vấn: Cụm chỉ thời gian '什么时候' bắt buộc phải đứng trước động từ '买', không đặt sau động từ."
+        },
+        {
+          "pattern": "买了这辆",
+          "msg": "Lỗi dùng sai trợ từ: Khi muốn hỏi rõ thời điểm của hành động đã biết là đã xảy ra, bắt buộc dùng cấu trúc '是……的', không dùng '了'."
+        }
+      ],
+      "explanation": "Câu hỏi dùng cấu trúc 是……的 để tìm hiểu mốc thời gian mua xe trong quá khứ. Trợ từ 的 có thể đặt sau tân ngữ tự nhiên ở cuối câu."
+    },
+    {
+      "id": "b06-06",
+      "type": "sentence_parsing",
+      "title": "Nhấn mạnh chủ thể thực hiện hành động với 是……的",
+      "vi": "Bữa cơm này là mẹ tôi nấu đấy.",
+      "zh": "这顿饭是我妈妈做的",
+      "standardTrans": "这顿饭是我妈妈做的",
+      "pinyin": "Zhè dùn fàn shì wǒ māma zuò de",
+      "grammarPoint": "Nhấn mạnh chủ thể hành vi: Tân ngữ + 是 + Chủ thể + V + 的",
+      "tokens": [
+        {
+          "text": "bữa cơm này",
+          "hz": "这顿饭",
+          "py": "zhè dùn fàn",
+          "hv": "giá đốn phạn",
+          "role": "Chủ đề câu",
+          "vn": "bữa ăn này, bữa cơm này",
+          "radicals": "顿 = Bộ hiệt 页; 饭 = Bộ thực 饣"
+        },
+        {
+          "text": "mẹ tôi nấu",
+          "hz": "我妈妈做",
+          "py": "wǒ māma zuò",
+          "hv": "ngã ma ma tác",
+          "role": "Chủ thể + Động từ",
+          "vn": "mẹ tôi nấu, mẹ tôi làm",
+          "radicals": "妈 = Bộ nữ 女; 做 = Bộ nhân đứng 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "是我妈妈", "tag": "Thành phần nhấn mạnh" },
+        { "id": "t2", "text": "这顿饭", "tag": "Chủ đề" },
+        { "id": "t3", "text": "做的", "tag": "Động từ + 的" },
+        { "id": "t4", "text": "做饭了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["这顿饭", "是我妈妈", "做的"],
+      "wordBankPool": ["是我妈妈", "做饭了", "做的", "这顿饭"],
+      "traps": [
+        {
+          "pattern": "做这顿饭了",
+          "msg": "Lỗi ngữ cảnh: Khi cơm đã nấu xong và người nói muốn nhấn mạnh ai là người nấu, bắt buộc dùng cấu trúc '是……的', không dùng câu trần thuật '了'."
+        },
+        {
+          "pattern": "做的是我妈妈",
+          "msg": "Lỗi trật tự nhấn mạnh: Chủ thể người nấu '我妈妈' phải đặt sau '是' và trước động từ '做' (是我妈妈做的)."
+        }
+      ],
+      "explanation": "Câu nhấn mạnh người thực hiện hành vi (mẹ tôi). Cụm tân ngữ 这顿饭 được đưa lên đầu làm chủ đề, tiếp theo là 是 + Chủ thể + Động từ + 的."
+    },
+    {
+      "id": "b06-07",
+      "type": "sentence_parsing",
+      "title": "Nhấn mạnh chủ thể và mục đích hoạt động tham quan",
+      "vi": "Lần này là thầy giáo đưa chúng tôi đi tham quan bảo tàng.",
+      "zh": "这次是老师带我们去参观博物馆的",
+      "standardTrans": "这次是老师带我们去参观博物馆的",
+      "pinyin": "Zhè cì shì lǎoshī dài wǒmen qù cānguān bówùguǎn de",
+      "grammarPoint": "Nhấn mạnh liên động: Thời gian + 是 + Chủ thể + Động từ kiêm ngữ + 的",
+      "tokens": [
+        {
+          "text": "dẫn chúng tôi đi",
+          "hz": "带我们去",
+          "py": "dài wǒmen qù",
+          "hv": "đới ngã môn khứ",
+          "role": "Động từ kiêm ngữ",
+          "vn": "dẫn dắt, đưa chúng tôi đi",
+          "radicals": "带 = Bộ cân 巾; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "tham quan bảo tàng",
+          "hz": "参观博物馆",
+          "py": "cānguān bówùguǎn",
+          "hv": "tham quan bác vật quán",
+          "role": "Động từ 2 + Tân ngữ",
+          "vn": "thăm quan viện bảo tàng",
+          "radicals": "参 = Bộ khứu 厶; 观 = Bộ kiến 见; 博 = Bộ thập 十; 馆 = Bộ thực 饣"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "去参观", "tag": "Động từ 2" },
+        { "id": "t2", "text": "这次是", "tag": "Thời gian + 是" },
+        { "id": "t3", "text": "博物馆的", "tag": "Tân ngữ + 的" },
+        { "id": "t4", "text": "老师带我们", "tag": "Chủ thể + Kiêm ngữ" },
+        { "id": "t5", "text": "参观了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t3"],
+      "requiredKeywordsZh": ["这次是", "老师带我们", "参观博物馆的"],
+      "wordBankPool": ["去参观", "老师带我们", "参观了", "这次是", "博物馆的"],
+      "traps": [
+        {
+          "pattern": "带我们参观了",
+          "msg": "Lỗi cấu trúc: Câu nhấn mạnh ai là người dẫn đi trong quá khứ phải giữ cặp khung '是……的', không dùng trợ từ '了'."
+        },
+        {
+          "pattern": "博物馆参观",
+          "msg": "Lỗi vị trí tân ngữ: Động từ '参观' phải đứng trước danh từ nơi chốn '博物馆'."
+        }
+      ],
+      "explanation": "Câu kết hợp kết cấu kiêm ngữ 带我们去参观 với cấu trúc nhấn mạnh 是……的 để làm nổi bật vai trò tổ chức của người thầy giáo trong chuyến đi bảo tàng."
+    },
+    {
+      "id": "b06-08",
+      "type": "anti_word_by_word",
+      "title": "Nhấn mạnh trạng thái số lượng người thực hiện hành vi",
+      "vi": "Tôi một mình đến Trung Quốc du lịch.",
+      "zh": "我是一个人来中国旅游的",
+      "standardTrans": "Tôi một mình đến Trung Quốc du lịch",
+      "pinyin": "Wǒ shì yí gè rén lái Zhōngguó lǚyóu de",
+      "grammarPoint": "Nhấn mạnh số lượng người: S + 是 + 一个人 + V + Tân ngữ + 的",
+      "tokens": [
+        {
+          "text": "một mình",
+          "hz": "一个人",
+          "py": "yí gè rén",
+          "hv": "nhất cá nhân",
+          "role": "Thành phần nhấn mạnh",
+          "vn": "đơn độc, một mình",
+          "radicals": "一 = Bộ nhất 一; 个 = Bộ nhân 人; 人 = Bộ nhân 人"
+        },
+        {
+          "text": "đến du lịch",
+          "hz": "来旅游",
+          "py": "lái lǚyóu",
+          "hv": "lai lữ du",
+          "role": "Động từ liên động",
+          "vn": "đến để đi du lịch",
+          "radicals": "来 = Bộ mộc 木; 旅 = Bộ phương 方; 游 = Bộ thủy 氵"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "来中国", "tag": "Động tân 1" },
+        { "id": "t2", "text": "我是一个人", "tag": "Chủ ngữ + 是 + Số lượng" },
+        { "id": "t3", "text": "旅游的", "tag": "Động từ 2 + 的" },
+        { "id": "t4", "text": "旅游了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["我是", "一个人", "来中国", "旅游的"],
+      "wordBankPool": ["我是一个人", "旅游了", "来中国", "旅游的"],
+      "traps": [
+        {
+          "pattern": "来中国一个人",
+          "msg": "Lỗi vị trí trạng ngữ: Trạng thái '一个人' (một mình) bắt buộc phải đứng trước động từ '来中国', không xếp ở đuôi câu như tiếng Việt."
+        },
+        {
+          "pattern": "是旅游了",
+          "msg": "Lỗi trợ từ: Cuối câu nhấn mạnh '是……的' dùng '的', không dùng '了'."
+        }
+      ],
+      "explanation": "Thành phần 一个人 đóng vai trò nhấn mạnh việc thực hiện chuyến đi một thân một mình, được đặt giữa 是 và chuỗi động từ liên động 来中国旅游."
+    },
+    {
+      "id": "b06-09",
+      "type": "sentence_parsing",
+      "title": "Cách dùng động từ 陪 chỉ sự đồng hành chăm sóc",
+      "vi": "Ngày mai tớ phải đi cùng mẹ đến bệnh viện khám sức khỏe.",
+      "zh": "明天我要陪妈妈去医院检查身体",
+      "standardTrans": "明天我要陪妈妈去医院检查身体",
+      "pinyin": "Míngtiān wǒ yào péi māma qù yīyuàn jiǎnchá shēntǐ",
+      "grammarPoint": "S + 陪 + Người + Đi đâu làm gì (biểu thị đi cùng để chăm sóc/hỗ trợ)",
+      "tokens": [
+        {
+          "text": "đi cùng mẹ",
+          "hz": "陪妈妈",
+          "py": "péi māma",
+          "hv": "bồi ma ma",
+          "role": "Động từ + Tân ngữ",
+          "vn": "đi theo chăm sóc, đồng hành cùng mẹ",
+          "radicals": "陪 = Bộ phụ 阝; 妈 = Bộ nữ 女"
+        },
+        {
+          "text": "khám sức khỏe",
+          "hz": "检查身体",
+          "py": "jiǎnchá shēntǐ",
+          "hv": "kiểm tra thân thể",
+          "role": "Động từ 2 + Tân ngữ 2",
+          "vn": "khám sức khỏe định kỳ",
+          "radicals": "检 = Bộ mộc 木; 查 = Bộ mộc 木; 身 = Bộ thân 身; 体 = Bộ nhân đứng 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "去医院", "tag": "Nơi chốn" },
+        { "id": "t2", "text": "我要陪妈妈", "tag": "Chủ vị + Động từ" },
+        { "id": "t3", "text": "明天", "tag": "Thời gian" },
+        { "id": "t4", "text": "检查身体", "tag": "Mục đích" },
+        { "id": "t5", "text": "跟妈妈去", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t2", "t1", "t4"],
+      "requiredKeywordsZh": ["明天", "陪妈妈", "去医院", "检查身体"],
+      "wordBankPool": ["我要陪妈妈", "跟妈妈去", "明天", "去医院", "检查身体"],
+      "traps": [
+        {
+          "pattern": "去医院陪妈妈",
+          "msg": "Lỗi trật tự liên động: Cụm '陪妈妈' mang động từ chính diễn đạt ý cùng đi chăm sóc, phải đặt trước địa điểm '去医院'."
+        },
+        {
+          "pattern": "检查身体陪",
+          "msg": "Lỗi đảo ngữ mục đích: Động tác khám sức khỏe là mục đích sau cùng, luôn đặt ở cuối chuỗi liên động."
+        }
+      ],
+      "explanation": "Động từ 陪 biểu thị việc đi theo bầu bạn, hỗ trợ người thân. Chuỗi liên động sắp xếp theo trình tự thời gian logic: Thời gian (明天) + 陪妈妈 + 去医院 + 检查身体."
+    },
+    {
+      "id": "b06-10",
+      "type": "anti_word_by_word",
+      "title": "Động từ 呆 kết hợp bổ ngữ thời lượng và tính từ 习惯",
+      "vi": "Cậu một mình ở Bắc Kinh một tháng có thấy quen không?",
+      "zh": "你一个人在北京呆一个月习惯吗",
+      "standardTrans": "你一个人在北京呆一个月习惯吗",
+      "pinyin": "Nǐ yí gè rén zài Běijīng dāi yí gè yuè xíguàn ma",
+      "grammarPoint": "S + Trạng ngữ nơi chốn + 呆 + Bổ ngữ thời lượng (一个月) + Vị ngữ nhận xét (习惯吗)",
+      "tokens": [
+        {
+          "text": "lưu lại một tháng",
+          "hz": "呆一个月",
+          "py": "dāi yí gè yuè",
+          "hv": "ngốc nhất cá nguyệt",
+          "role": "Động từ + Bổ ngữ thời lượng",
+          "vn": "ở lại tạm thời trong một tháng",
+          "radicals": "呆 = Bộ khẩu 口 + bộ mộc 木; 月 = Bộ nguyệt 月"
+        },
+        {
+          "text": "quen thuộc, thích nghi",
+          "hz": "习惯",
+          "py": "xíguàn",
+          "hv": "tập quán",
+          "role": "Vị ngữ nhận xét",
+          "vn": "thói quen, thích nghi quen thuộc",
+          "radicals": "习 = Bộ phiệt 丿; 惯 = Bộ tâm đứng 忄"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "在北京", "tag": "Nơi chốn" },
+        { "id": "t2", "text": "习惯吗", "tag": "Vị ngữ hỏi" },
+        { "id": "t3", "text": "你一个人", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "呆一个月", "tag": "Động bổ thời lượng" },
+        { "id": "t5", "text": "住了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t1", "t4", "t2"],
+      "requiredKeywordsZh": ["一个人", "在北京", "呆一个月", "习惯吗"],
+      "wordBankPool": ["呆一个月", "你一个人", "住了", "习惯吗", "在北京"],
+      "traps": [
+        {
+          "pattern": "住一个月习惯",
+          "msg": "Lỗi sắc thái từ vựng: Khi nói đến việc lưu lại tạm thời một khoảng thời gian trải nghiệm, khẩu ngữ tiếng Hán ưu tiên dùng '呆' (呆一个月) hơn '住'."
+        },
+        {
+          "pattern": "一个月呆",
+          "msg": "Lỗi trật tự bổ ngữ thời lượng: Khoảng thời gian '一个月' bổ nghĩa cho thời lượng hành động nên bắt buộc phải đứng SAU động từ '呆'."
+        }
+      ],
+      "explanation": "Động từ 呆 dùng chỉ khoảng thời gian lưu trú tạm thời tại Bắc Kinh. Bổ ngữ thời lượng 一个月 đặt ngay sau động từ 呆, tiếp theo là vị ngữ hỏi thăm 习惯吗."
+    }
+  ]
+}

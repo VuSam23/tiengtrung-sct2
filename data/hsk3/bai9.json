@@ -1,0 +1,917 @@
+{
+  "lessonId": "b09",
+  "lessonTitle": "第9课: 钥匙忘拔下来了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "拔 vs 拿 / 抽",
+        "py": "bá vs ná / chōu",
+        "note": "拔 là động tác dùng sức rút hoặc nhổ một vật đang cắm chặt ra ngoài (拔钥匙, 拔草, 拔牙); 拿 là cầm nắm đồ vật nói chung; 抽 là rút vật mỏng dẹt từ khe hẹp hoặc rút bớt thời gian (抽出一本书, 抽时间)."
+      },
+      {
+        "word": "每 vs 各",
+        "py": "měi vs gè",
+        "note": "每 nhấn mạnh từng cá thể riêng biệt trong toàn thể, khi đứng trước danh từ thường phải kèm lượng từ (trừ từ có tính lượng từ như 人, 天, 年, 星期) và vế sau thường đi với 都; 各 chỉ chung chung tất cả các cá thể trong một phạm vi, đứng trực tiếp trước danh từ không cần lượng từ (各国, 各学校, 各医院)."
+      },
+      {
+        "word": "于是 vs 所以",
+        "py": "yúshì vs suǒyǐ",
+        "note": "于是 là liên từ nối tiếp hai hành động theo trình tự thời gian tự nhiên trong quá khứ mang nghĩa 'thế là, liền ngay sau đó' (chỉ dùng cho việc đã xảy ra); 所以 nhấn mạnh kết quả tất yếu của quan hệ nhân quả (vì... nên...)."
+      },
+      {
+        "word": "忽然 vs 突然",
+        "py": "hūrán vs tūrán",
+        "note": "忽然 là phó từ, chỉ làm trạng ngữ trước động từ biểu thị sự việc xảy ra bất ngờ (忽然下起大雨来); 突然 vừa là phó từ vừa là tính từ, có thể đứng sau phó từ mức độ (很突然) hoặc làm vị ngữ, bổ ngữ."
+      }
+    ],
+    "grammarTips": [
+      "Bổ ngữ xu hướng kép: Động từ + 上来/下去/出来/进去/回来/回去/过来/过去/起来 biểu thị phương hướng động tác theo góc nhìn người nói.",
+      "Vị trí tân ngữ nơi chốn trong bổ ngữ xu hướng kép: BẮT BUỘC đặt giữa động từ xu hướng và 来/去 (V + Nơi chốn + 来/去, ví dụ: 走进图书馆去, 飞回日本去).",
+      "Vị trí tân ngữ sự vật trong bổ ngữ xu hướng kép: Có thể đặt trước hoặc sau 来/去 (Ví dụ: 买回来一本书 HOẶC 买回一本书来).",
+      "Cấu trúc biểu thị phạm vi loại trừ 除了……以外: 除了 A 以外，S + 都 + V (ngoại trừ A ra, những thứ khác đều...).",
+      "Bổ ngữ xu hướng kép 起来 biểu thị động tác bắt đầu và tiếp diễn: V + 起 + Tân ngữ + 来 (Ví dụ: 下起大雨来, 讨论起来)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b09-01",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc biểu thị phạm vi loại trừ 除了……以外",
+      "vi": "Ngoài chữ Hán này ra, chữ Hán khác tôi đều biết.",
+      "zh": "除了这个汉字以外别的汉字我都认识",
+      "standardTrans": "除了这个汉字以外别的汉字我都认识",
+      "pinyin": "Chúle zhè ge Hànzì yǐwài, bié de Hànzì wǒ dōu rènshi",
+      "grammarPoint": "Cấu trúc loại trừ tuyệt đối: 除了 + A + 以外，S + 都 + V",
+      "tokens": [
+        {
+          "text": "ngoại trừ chữ Hán này",
+          "hz": "除了这个汉字以外",
+          "py": "chúle zhè ge Hànzì yǐwài",
+          "hv": "trừ liễu giá cá Hán tự dĩ ngoại",
+          "role": "Trạng ngữ chỉ phạm vi loại trừ",
+          "vn": "ngoại trừ chữ Hán này ra",
+          "radicals": "除 = Bộ phụ 阝 + chữ dư 余; 汉 = Bộ thủy 氵; 字 = Bộ miên 宀"
+        },
+        {
+          "text": "chữ Hán khác",
+          "hz": "别的汉字",
+          "py": "bié de Hànzì",
+          "hv": "biệt đích Hán tự",
+          "role": "Tân ngữ đưa lên làm đề ngữ",
+          "vn": "các chữ Hán còn lại khác",
+          "radicals": "别 = Bộ đao 刂 + chữ khẩu 口"
+        },
+        {
+          "text": "đều nhận biết",
+          "hz": "都认识",
+          "py": "dōu rènshi",
+          "hv": "đô nhận thức",
+          "role": "Phó từ + Động từ vị ngữ",
+          "vn": "đều biết mặt chữ, nhận diện được",
+          "radicals": "都 = Bộ ấp 阝; 认 = Bộ ngôn 讠; 识 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "别的汉字", "tag": "Đề ngữ" },
+        { "id": "t2", "text": "除了这个汉字以外", "tag": "Cụm loại trừ" },
+        { "id": "t3", "text": "我都认识", "tag": "Chủ vị" },
+        { "id": "t4", "text": "其他汉字也", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["除了", "这个汉字以外", "别的汉字", "都认识"],
+      "wordBankPool": ["我都认识", "其他汉字也", "除了这个汉字以外", "别的汉字"],
+      "traps": [
+        {
+          "pattern": "除了这个汉字也",
+          "msg": "Lỗi phối hợp cặp liên từ: Khi biểu thị ý nghĩa loại trừ chỉ một đối tượng ngoại lệ và các đối tượng khác đều như nhau, vế sau bắt buộc đi với phó từ 都, không dùng 也."
+        },
+        {
+          "pattern": "认识都",
+          "msg": "Lỗi trật tự phó từ: Phó từ chỉ phạm vi 都 bắt buộc phải đứng trước động từ vị ngữ 认识."
+        }
+      ],
+      "explanation": "Cặp liên từ 除了……以外 kết hợp với phó từ 都 ở phân câu sau nhằm nhấn mạnh sự loại trừ duy nhất một cá thể (chữ Hán này), khẳng định toàn bộ phần còn lại người nói đều nắm rõ."
+    },
+    {
+      "id": "b09-02",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ trạng thái 得 kết hợp liên từ chuyển ngoặt 却 và 但",
+      "vi": "Có người ăn rất nhiều nhưng rất gầy, có người ăn rất ít nhưng lại không gầy.",
+      "zh": "有的人吃得很多却很瘦有的人吃得很少但不瘦",
+      "standardTrans": "有的人吃得很多却很瘦有的人吃得很少但不瘦",
+      "pinyin": "Yǒu de rén chī de hěn duō, què hěn shòu; yǒu de rén chī de hěn shǎo, dàn bú shòu",
+      "grammarPoint": "Bổ ngữ trạng thái: V + 得 + 很 + Tính từ; Phó từ chuyển ngoặt: 却 / 但",
+      "tokens": [
+        {
+          "text": "ăn rất nhiều nhưng gầy",
+          "hz": "吃得很多却很瘦",
+          "py": "chī de hěn duō què hěn shòu",
+          "hv": "ngật đắc hận đa khước hận sấu",
+          "role": "Vị ngữ + Bổ ngữ trạng thái + Vế tương phản",
+          "vn": "ăn rất nhiều nhưng lại rất ốm gầy",
+          "radicals": "吃 = Bộ khẩu 口; 得 = Bộ xích 彳; 却 = Bộ tiết 卩; 瘦 = Bộ nạch 疒"
+        },
+        {
+          "text": "ăn rất ít nhưng không gầy",
+          "hz": "吃得很少但不瘦",
+          "py": "chī de hěn shǎo dàn bú shòu",
+          "hv": "ngật đắc hận thiểu đán bất sấu",
+          "role": "Vị ngữ + Bổ ngữ trạng thái + Vế đối lập",
+          "vn": "ăn lượng rất ít nhưng không hề gầy",
+          "radicals": "少 = Bộ tiểu 小; 但 = Bộ nhân đứng 亻; 不 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "有的人吃得很多", "tag": "Vế 1" },
+        { "id": "t2", "text": "却很瘦", "tag": "Tương phản 1" },
+        { "id": "t3", "text": "有的人吃得很少", "tag": "Vế 2" },
+        { "id": "t4", "text": "但不瘦", "tag": "Tương phản 2" },
+        { "id": "t5", "text": "也不瘦", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["吃得很多", "却很瘦", "吃得很少", "但不瘦"],
+      "wordBankPool": ["但不瘦", "有的人吃得很多", "也不瘦", "却很瘦", "有的人吃得很少"],
+      "traps": [
+        {
+          "pattern": "吃的很多",
+          "msg": "Lỗi trợ từ kết cấu: Đánh giá lượng ăn sau động từ 吃 làm bổ ngữ trạng thái bắt buộc dùng trợ từ 得 (吃得很多), không dùng 的."
+        },
+        {
+          "pattern": "却不瘦",
+          "msg": "Lỗi nhịp điệu chuyển ngoặt: Ở vế sau dùng liên từ 但 (但不瘦) tạo nhịp đối xứng tương phản với phó từ 却 ở vế trước."
+        }
+      ],
+      "explanation": "Câu ghép song song biểu thị sự tương phản sinh học. Cả hai vế đều dùng bổ ngữ trạng thái 吃得很多 và 吃得很少, kết hợp linh hoạt phó từ 却 và liên từ 但 để diễn đạt ý chuyển ngoặt."
+    },
+    {
+      "id": "b09-03",
+      "type": "sentence_parsing",
+      "title": "Liên từ chỉ trình tự nối tiếp 于是 và động từ 讨论",
+      "vi": "Mọi người đều đồng ý nghỉ hè đi du lịch, thế là chúng tôi bắt đầu thảo luận vấn đề đi đâu du lịch.",
+      "zh": "大家都同意暑假去旅行于是我们开始讨论去哪里旅行的问题",
+      "standardTrans": "大家都同意暑假去旅行于是我们开始讨论去哪里旅行的问题",
+      "pinyin": "Dàjiā dōu tóngyì shǔjià qù lǚxíng, yúshì wǒmen kāishǐ tǎolùn qù nǎli lǚxíng de wèntí",
+      "grammarPoint": "Liên từ nối tiếp hành động quá khứ: 于是; Cụm định - trung: [Mệnh đề] + 的问题",
+      "tokens": [
+        {
+          "text": "nghỉ hè đi du lịch",
+          "hz": "暑假去旅行",
+          "py": "shǔjià qù lǚxíng",
+          "hv": "thử giả khứ lữ hành",
+          "role": "Trạng ngữ thời gian + Động tân",
+          "vn": "kỳ nghỉ hè đi du lịch tham quan",
+          "radicals": "暑 = Bộ nhật 日; 假 = Bộ nhân đứng 亻; 旅 = Bộ phương 方; 行 = Bộ hành 行"
+        },
+        {
+          "text": "thế là, liền ngay sau đó",
+          "hz": "于是",
+          "py": "yúshì",
+          "hv": "vu thị",
+          "role": "Liên từ nối tiếp",
+          "vn": "thế là, nhân đó",
+          "radicals": "于 = Bộ nhị 二; 是 = Bộ nhật 日"
+        },
+        {
+          "text": "thảo luận vấn đề",
+          "hz": "讨论问题",
+          "py": "tǎolùn wèntí",
+          "hv": "thảo luận vấn đề",
+          "role": "Động từ + Tân ngữ trung tâm",
+          "vn": "bàn bạc, thảo luận về vấn đề",
+          "radicals": "讨 = Bộ ngôn 讠; 论 = Bộ ngôn 讠; 问 = Bộ môn 门; 题 = Bộ hiệt 页"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "于是我们开始讨论", "tag": "Liên từ + Vị ngữ" },
+        { "id": "t2", "text": "大家都同意暑假去旅行", "tag": "Tiền đề" },
+        { "id": "t3", "text": "去哪里旅行的问题", "tag": "Định ngữ + Tân ngữ" },
+        { "id": "t4", "text": "所以我们", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["同意暑假去旅行", "于是", "开始讨论", "旅行的问题"],
+      "wordBankPool": ["去哪里旅行的问题", "所以我们", "大家都同意暑假去旅行", "于是我们开始讨论"],
+      "traps": [
+        {
+          "pattern": "所以我们开始",
+          "msg": "Lỗi phân biệt 于是 và 所以: Ở đây phân câu sau là một chuỗi hành vi nối tiếp tức thì dựa trên sự đồng thuận trước đó chứ không phải mối quan hệ giải thích hệ quả chặt chẽ, chuẩn văn phong giáo trình dùng 于是."
+        },
+        {
+          "pattern": "讨论的问题去哪里",
+          "msg": "Lỗi đảo ngữ định ngữ: Mệnh đề 去哪里旅行 bổ nghĩa cho danh từ 问题 nên bắt buộc phải đứng trước trợ từ 的 (去哪里旅行的问题)."
+        }
+      ],
+      "explanation": "Liên từ 于是 dùng nối phân câu thứ hai biểu thị việc bắt đầu bàn bạc diễn ra tiếp nối ngay sau khi có sự đồng ý của mọi người. Cụm danh từ 去哪里旅行的问题 làm tân ngữ của động từ 讨论."
+    },
+    {
+      "id": "b09-04",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ xu hướng kép 坐下去 chỉ hành động ngồi xuống cố định",
+      "vi": "Mệt quá, chúng ta tìm chỗ nào ngồi xuống nghỉ ngơi một lát đi.",
+      "zh": "太累了我们找个地方坐下去休息一会儿吧",
+      "standardTrans": "太累了我们找个地方坐下去休息一会儿吧",
+      "pinyin": "Tài lèi le, wǒmen zhǎo ge dìfang zuò xiàqu xiūxi yíhuìr ba",
+      "grammarPoint": "Bổ ngữ xu hướng kép: 坐下去 (ngồi xuống); Động từ + Bổ ngữ thời lượng: 休息一会儿",
+      "tokens": [
+        {
+          "text": "tìm một nơi",
+          "hz": "找个地方",
+          "py": "zhǎo ge dìfang",
+          "hv": "hảo cá địa phương",
+          "role": "Động từ + Tân ngữ nơi chốn",
+          "vn": "tìm một chỗ, kiếm một địa điểm",
+          "radicals": "找 = Bộ thủ 扌; 地 = Bộ thổ 土; 方 = Bộ phương 方"
+        },
+        {
+          "text": "ngồi xuống",
+          "hz": "坐下去",
+          "py": "zuò xiàqu",
+          "hv": "tọa hạ khứ",
+          "role": "Động từ + Bổ ngữ xu hướng kép",
+          "vn": "ngồi thụp xuống, ngồi xuống nghỉ",
+          "radicals": "坐 = Bộ thổ 土; 下 = Bộ nhất 一; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "nghỉ ngơi một lát",
+          "hz": "休息一会儿",
+          "py": "xiūxi yíhuìr",
+          "hv": "hưu tức nhất hội nhi",
+          "role": "Động từ + Bổ ngữ thời lượng",
+          "vn": "nghỉ một lúc, chợp mắt chốc lát",
+          "radicals": "休 = Bộ nhân đứng 亻; 息 = Bộ tâm 心; 会 = Bộ nhân 人"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我们找个地方", "tag": "Chủ vị" },
+        { "id": "t2", "text": "太累了", "tag": "Cảm thán" },
+        { "id": "t3", "text": "坐下去休息一会儿吧", "tag": "Liên động mục đích" },
+        { "id": "t4", "text": "坐下来", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["太累了", "找个地方", "坐下去", "休息一会儿"],
+      "wordBankPool": ["坐下来", "太累了", "我们找个地方", "坐下去休息一会儿吧"],
+      "traps": [
+        {
+          "pattern": "休息一会儿坐",
+          "msg": "Lỗi liên động: Hành động tìm chỗ ngồi xuống (坐下去) phải diễn ra trước mục đích nghỉ ngơi (休息一会儿)."
+        },
+        {
+          "pattern": "一会儿休息",
+          "msg": "Lỗi trật tự bổ ngữ thời lượng: Khoảng thời gian 一会儿 đóng vai trò bổ ngữ thời lượng bắt buộc phải đứng sau động từ 休息."
+        }
+      ],
+      "explanation": "Câu liên động diễn tả trình tự hành vi liên tiếp: Tìm chỗ (找个地方) -> Ngồi xuống (坐下去) -> Nghỉ ngơi trong chốc lát (休息一会儿吧)."
+    },
+    {
+      "id": "b09-05",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 爬上去 và động từ lặp lại 比一比",
+      "vi": "Đến Trường Thành, mọi người bắt đầu leo núi, còn so xem ai lên trên núi trước.",
+      "zh": "到了长城大家开始爬山了还比一比看看谁先爬上去",
+      "standardTrans": "到了长城大家开始爬山了还比一比看看谁先爬上去",
+      "pinyin": "Dào le Chángchéng, dàjiā kāishǐ páshān le, hái bǐ yì bǐ kànkan shéi xiān pá shangqu",
+      "grammarPoint": "Động từ lặp lại thử nghiệm: 比一比, 看看; Bổ ngữ xu hướng kép: 爬上去",
+      "tokens": [
+        {
+          "text": "Trường Thành",
+          "hz": "长城",
+          "py": "Chángchéng",
+          "hv": "Trường Thành",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "Vạn Lý Trường Thành",
+          "radicals": "长 = Bộ trường 长; 城 = Bộ thổ 土"
+        },
+        {
+          "text": "thi thố xem thử",
+          "hz": "比一比看看",
+          "py": "bǐ yì bǐ kànkan",
+          "hv": "tỉ nhất tỉ khán khán",
+          "role": "Trùng điệp động từ",
+          "vn": "đua nhau đo đạc xem thử",
+          "radicals": "比 = Bộ tỉ 比; 看 = Bộ mục 目"
+        },
+        {
+          "text": "leo lên trước",
+          "hz": "先爬上去",
+          "py": "xiān pá shangqu",
+          "hv": "tiên ba thượng khứ",
+          "role": "Trạng từ + Động từ + Bổ ngữ xu hướng kép",
+          "vn": "bò lên trên, trèo lên đỉnh núi trước",
+          "radicals": "先 = Bộ nhi 儿; 爬 = Bộ trảo 爪; 上 = Bộ nhất 一; 去 = Bộ khứ 去"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "还比一比", "tag": "Động từ lặp" },
+        { "id": "t2", "text": "到了长城", "tag": "Địa điểm đến" },
+        { "id": "t3", "text": "看看谁先爬上去", "tag": "Mục tiêu thi đua" },
+        { "id": "t4", "text": "大家开始爬山了", "tag": "Hành động chính" },
+        { "id": "t5", "text": "爬上来", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t3"],
+      "requiredKeywordsZh": ["到了长城", "开始爬山了", "比一比", "谁先爬上去"],
+      "wordBankPool": ["爬上来", "还比一比", "大家开始爬山了", "看看谁先爬上去", "到了长城"],
+      "traps": [
+        {
+          "pattern": "爬上来",
+          "msg": "Lỗi góc nhìn bổ ngữ xu hướng: Người leo đang từ chân núi hướng lên đỉnh núi (rời xa vị trí xuất phát ban đầu) nên phải dùng 爬上去, không dùng 爬上来."
+        },
+        {
+          "pattern": "先爬山上",
+          "msg": "Lỗi cấu trúc: Động tác hướng lên đỉnh núi dùng bổ ngữ xu hướng kép 爬上去, không ghép lẫn danh từ núi vào đuôi bổ ngữ."
+        }
+      ],
+      "explanation": "Động tác lặp lại 比一比 và 看看 biểu thị tinh thần thử thách thi đua vui vẻ. Vì đích đến đỉnh núi ở xa phía trên nên bổ ngữ xu hướng kép rời xa người nói là 上去 (爬上去)."
+    },
+    {
+      "id": "b09-06",
+      "type": "sentence_parsing",
+      "title": "Phó từ chỉ sự tiếp diễn 正在 và trợ từ năng nguyện 不能",
+      "vi": "Xin lỗi, thang máy đang sửa chữa, bây giờ không thể dùng được.",
+      "zh": "不好意思电梯正在维修现在不能用",
+      "standardTrans": "不好意思电梯正在维修现在不能用",
+      "pinyin": "Bù hǎoyìsi, diàntī zhèngzài wéixiū, xiànzài bù néng yòng",
+      "grammarPoint": "Tiến hành hành động: 正在 + Động từ; Khả năng phủ định: 不能 + Động từ",
+      "tokens": [
+        {
+          "text": "ngại quá, xin lỗi",
+          "hz": "不好意思",
+          "py": "bù hǎoyìsi",
+          "hv": "bất hảo ý tư",
+          "role": "Thán từ mở đầu",
+          "vn": "thật ngại quá, xin thứ lỗi",
+          "radicals": "意 = Bộ tâm 心; 思 = Bộ tâm 心"
+        },
+        {
+          "text": "thang máy đang bảo trì",
+          "hz": "电梯正在维修",
+          "py": "diàntī zhèngzài wéixiū",
+          "hv": "điện thê chính tại duy tu",
+          "role": "Chủ ngữ + Trạng ngữ + Động từ",
+          "vn": "thang máy đang trong quá trình bảo dưỡng",
+          "radicals": "梯 = Bộ mộc 木; 维 = Bộ mịch 纟; 修 = Bộ nhân đứng 亻"
+        },
+        {
+          "text": "không thể sử dụng",
+          "hz": "不能用",
+          "py": "bù néng yòng",
+          "hv": "bất năng dụng",
+          "role": "Động từ năng nguyện phủ định + Vị ngữ",
+          "vn": "không được phép hoặc không thể dùng",
+          "radicals": "能 = Bộ nguyệt 月; 用 = Bộ dụng 用"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "现在不能用", "tag": "Kết quả cấm kỵ" },
+        { "id": "t2", "text": "不好意思", "tag": "Khẩu ngữ lịch sự" },
+        { "id": "t3", "text": "电梯正在维修", "tag": "Nguyên nhân tiếp diễn" },
+        { "id": "t4", "text": "正在修理", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1"],
+      "requiredKeywordsZh": ["不好意思", "电梯", "正在维修", "不能用"],
+      "wordBankPool": ["现在不能用", "正在修理", "不好意思", "电梯正在维修"],
+      "traps": [
+        {
+          "pattern": "不会用",
+          "msg": "Lỗi chọn động từ năng nguyện: 不会用 là không biết cách vận hành kỹ thuật; ở đây thang máy bảo trì gây cản trở khách quan bắt buộc dùng 不能用."
+        },
+        {
+          "pattern": "维修着呢",
+          "msg": "Lỗi sắc thái: Đang trong quá trình bảo trì kỹ thuật công trình chuẩn văn phong là dùng phó từ 正在维修."
+        }
+      ],
+      "explanation": "Câu thông báo lý do kèm kết luận. Phó từ 正在 diễn tả thang máy đang trong quá trình bảo dưỡng kỹ thuật (维修), dẫn đến phân câu sau dùng 不能用 biểu thị điều kiện khách quan không cho phép."
+    },
+    {
+      "id": "b09-07",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 带回去 và động từ lặp lại 尝尝",
+      "vi": "Đồ ăn vặt của cửa hàng đồ ăn nhẹ này không tồi, tớ muốn mua một ít đem về cho bạn bè nếm thử.",
+      "zh": "这家小吃店的小吃不错我想买一点儿带回去给朋友尝尝",
+      "standardTrans": "这家小吃店的小吃不错我想买一点儿带回去给朋友尝尝",
+      "pinyin": "Zhè jiā xiǎochīdiàn de xiǎochī búcuò, wǒ xiǎng mǎi yìdiǎnr dài huíqu gěi péngyou chángchang",
+      "grammarPoint": "Bổ ngữ xu hướng kép: 带回去 (mang trở về); Động từ lặp lại: 尝尝",
+      "tokens": [
+        {
+          "text": "đồ ăn vặt, món ăn nhẹ",
+          "hz": "小吃",
+          "py": "xiǎochī",
+          "hv": "tiểu ngật",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "món ăn vặt đặc sản, quà vặt",
+          "radicals": "小 = Bộ tiểu 小; 吃 = Bộ khẩu 口"
+        },
+        {
+          "text": "đem mang về lại",
+          "hz": "带回去",
+          "py": "dài huíqu",
+          "hv": "đới hồi khứ",
+          "role": "Động từ + Bổ ngữ xu hướng kép",
+          "vn": "mang về, xách trở về chỗ cũ",
+          "radicals": "带 = Bộ cân 巾; 回 = Bộ vi 囗; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "nếm thử mùi vị",
+          "hz": "尝尝",
+          "py": "chángchang",
+          "hv": "thường thường",
+          "role": "Động từ trùng điệp",
+          "vn": "thưởng thức, nếm qua mùi vị",
+          "radicals": "尝 = Bộ tiểu 小"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "带回去给朋友尝尝", "tag": "Mục đích" },
+        { "id": "t2", "text": "这家小吃店的小吃不错", "tag": "Đánh giá" },
+        { "id": "t3", "text": "我想买一点儿", "tag": "Nguyện vọng" },
+        { "id": "t4", "text": "带过来", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1"],
+      "requiredKeywordsZh": ["小吃不错", "我想买一点儿", "带回去", "朋友尝尝"],
+      "wordBankPool": ["这家小吃店的小吃不错", "带过来", "带回去给朋友尝尝", "我想买一点儿"],
+      "traps": [
+        {
+          "pattern": "带过来",
+          "msg": "Lỗi góc nhìn bổ ngữ xu hướng: Người nói đang ở tiệm ăn và muốn đem thức ăn về lại nơi ở ban đầu cho bạn bè nên phải dùng 带回去, không dùng 带过来."
+        },
+        {
+          "pattern": "给朋友吃吃",
+          "msg": "Lỗi ngữ dụng: Mang món ăn ngon cho người khác ăn thử trải nghiệm hương vị dùng động từ 尝尝, không dùng 吃吃."
+        }
+      ],
+      "explanation": "Động từ 带 đi kèm bổ ngữ xu hướng kép 回去 diễn tả hành động mang đồ đạc rời khỏi tiệm ăn quay về nhà. Động từ 尝 lặp lại thành 尝尝 mang ngữ khí thử nghiệm nhẹ nhàng."
+    },
+    {
+      "id": "b09-08",
+      "type": "anti_word_by_word",
+      "title": "Tân ngữ nơi chốn trong bổ ngữ xu hướng kép 飞回日本去",
+      "vi": "Tôi đã mua vé máy bay rồi, chuẩn bị nghỉ cái là liền bay về Nhật Bản.",
+      "zh": "他已经买好了飞机票准备一放假就飞回日本去",
+      "standardTrans": "他已经买好了飞机票准备一放假就飞回日本去",
+      "pinyin": "Tā yǐjīng mǎi hǎo le fēijīpiào, zhǔnbèi yí fàngjià jiù fēi huí Rìběn qu",
+      "grammarPoint": "Tân ngữ nơi chốn đặt giữa 回 và 去: 飞 + 回 + Nơi chốn (日本) + 去; Cấu trúc: 一……就……",
+      "tokens": [
+        {
+          "text": "đã mua xong vé máy bay",
+          "hz": "买好了飞机票",
+          "py": "mǎi hǎo le fēijīpiào",
+          "hv": "mãi hảo liễu phi cơ phiếu",
+          "role": "Động bổ kết quả + Tân ngữ",
+          "vn": "đã mua xong vé máy bay chu đáo",
+          "radicals": "买 = Bộ đao 刀; 票 = Bộ thị 示"
+        },
+        {
+          "text": "vừa nghỉ liền",
+          "hz": "一放假就",
+          "py": "yí fàngjià jiù",
+          "hv": "nhất phóng giả tựu",
+          "role": "Cấu trúc liên kết thời gian",
+          "vn": "hễ vừa được nghỉ phép là ngay lập tức",
+          "radicals": "放 = Bộ phộc 攵; 假 = Bộ nhân đứng 亻; 就 = Bộ uông 尢"
+        },
+        {
+          "text": "bay về Nhật Bản",
+          "hz": "飞回日本去",
+          "py": "fēi huí Rìběn qu",
+          "hv": "phi hồi Nhật Bản khứ",
+          "role": "Động từ + Bổ ngữ xu hướng kép có tân ngữ nơi chốn",
+          "vn": "ngồi máy bay bay trở về nước Nhật",
+          "radicals": "飞 = Bộ phi 飞; 回 = Bộ vi 囗; 日 = Bộ nhật 日; 本 = Bộ mộc 木; 去 = Bộ khứ 去"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "准备一放假", "tag": "Điều kiện" },
+        { "id": "t2", "text": "他已经买好了飞机票", "tag": "Tiền đề" },
+        { "id": "t3", "text": "就飞回日本去", "tag": "Hành động kết quả" },
+        { "id": "t4", "text": "飞回去日本", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["买好了飞机票", "一放假", "就飞回", "日本去"],
+      "wordBankPool": ["准备一放假", "飞回去日本", "他已经买好了飞机票", "就飞回日本去"],
+      "traps": [
+        {
+          "pattern": "飞回去日本",
+          "msg": "Lỗi cấm kỵ cốt lõi: Khi bổ ngữ xu hướng kép mang tân ngữ chỉ địa điểm (日本), tân ngữ BẮT BUỘC phải đặt giữa 回 và 去 thành 飞回日本去, tuyệt đối không được nói 飞回去日本."
+        },
+        {
+          "pattern": "买完了飞机票",
+          "msg": "Lỗi sắc thái bổ ngữ kết quả: Chuẩn bị vé thỏa đáng cho chuyến đi người bản xứ dùng 买好, không dùng 买完."
+        }
+      ],
+      "explanation": "Quy tắc vàng của bổ ngữ xu hướng kép: Tân ngữ chỉ địa điểm danh từ riêng 日本 bắt buộc kẹp vào giữa 回 và 去 (飞回日本去). Kết hợp cấu trúc 一放假就 diễn đạt tính liền mạch tức thì."
+    },
+    {
+      "id": "b09-09",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 挑出来 kết hợp cụm định ngữ",
+      "vi": "Cô ấy đã chọn ra được từ trong tủ quần áo một chiếc váy bản thân vô cùng yêu thích.",
+      "zh": "她从衣柜里挑出了一件自己特别喜欢的裙子",
+      "standardTrans": "她从衣柜里挑出了一件自己特别喜欢的裙子",
+      "pinyin": "Tā cóng yīguì lǐ tiāo chū le yí jiàn zìjǐ tèbié xǐhuan de qúnzi",
+      "grammarPoint": "Từ đâu làm gì: 从 + Nơi chốn; Bổ ngữ xu hướng kép: 挑 + 出 + 了 + Số lượng + Tân ngữ",
+      "tokens": [
+        {
+          "text": "từ trong tủ quần áo",
+          "hz": "从衣柜里",
+          "py": "cóng yīguì lǐ",
+          "hv": "tùng y quỹ lý",
+          "role": "Trạng ngữ nơi chốn xuất phát",
+          "vn": "từ bên trong tủ chứa áo quần",
+          "radicals": "从 = Bộ nhân 人; 柜 = Bộ mộc 木; 里 = Bộ lý 里"
+        },
+        {
+          "text": "chọn ra một chiếc",
+          "hz": "挑出了一件",
+          "py": "tiāo chū le yí jiàn",
+          "hv": "khiêu xuất liễu nhất kiện",
+          "role": "Động từ + Bổ ngữ xu hướng + 了 + Lượng từ",
+          "vn": "lựa ra được một cái",
+          "radicals": "挑 = Bộ thủ 扌; 出 = Bộ khảm 凵; 件 = Bộ nhân đứng 亻"
+        },
+        {
+          "text": "chiếc váy yêu thích",
+          "hz": "自己特别喜欢的裙子",
+          "py": "zìjǐ tèbié xǐhuan de qúnzi",
+          "hv": "tự kỷ đặc biệt hỉ hoan đích quần tử",
+          "role": "Định ngữ + Trung tâm ngữ tân ngữ",
+          "vn": "chiếc váy đầm mà bản thân vô cùng yêu chuộng",
+          "radicals": "自 = Bộ tự 自; 裙 = Bộ y 衤"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "自己特别喜欢的裙子", "tag": "Định tân" },
+        { "id": "t2", "text": "她从衣柜里", "tag": "Chủ ngữ + Nơi chốn" },
+        { "id": "t3", "text": "挑出了一件", "tag": "Động bổ lượng từ" },
+        { "id": "t4", "text": "挑出来一件", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1"],
+      "requiredKeywordsZh": ["从衣柜里", "挑出了一件", "特别喜欢的裙子"],
+      "wordBankPool": ["挑出了一件", "自己特别喜欢的裙子", "挑出来一件", "她从衣柜里"],
+      "traps": [
+        {
+          "pattern": "挑在衣柜里",
+          "msg": "Lỗi giới từ: Hành động lấy đồ ra từ không gian bên trong phải dùng giới từ điểm xuất phát 从 (从衣柜里), không dùng 在."
+        },
+        {
+          "pattern": "挑出来了一件",
+          "msg": "Lỗi vị trí trợ từ 了: Khi tân ngữ có số lượng từ 一件 đứng trước, trợ từ 了 thường chen ngay giữa cụm bổ ngữ xu hướng thành 挑出了一件."
+        }
+      ],
+      "explanation": "Giới từ 从 chỉ vị trí xuất phát 衣柜里. Động từ 挑 mang bổ ngữ xu hướng 出 và trợ từ 了 đặt trước cụm định - trung dài 一件自己特别喜欢的裙子."
+    },
+    {
+      "id": "b09-10",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ xu hướng kép 下起来 và phó từ 才",
+      "vi": "Vốn dĩ tớ muốn xuất phát sớm hơn chút nhưng mà ngoài trời đột nhiên đổ mưa to, tôi chỉ đành ở nhà đợi tạnh mưa mới ra ngoài.",
+      "zh": "我本来想早点儿出发可是外面忽然下起大雨来我只好在家等雨停了才出去",
+      "standardTrans": "我本来想早点儿出发可是外面忽然下起大雨来我只好在家等雨停了才出去",
+      "pinyin": "Wǒ běnlái xiǎng zǎodiǎnr chūfā, kěshì wàimiàn hūrán xià qǐ dàyǔ lai, wǒ zhǐhǎo zài jiā děng yǔ tíng le cái chūqu",
+      "grammarPoint": "Bổ ngữ xu hướng kép chen tân ngữ: 下 + 起 + 大雨 + 来; Điều kiện thời gian muộn: 才 + Động từ xu hướng (出去)",
+      "tokens": [
+        {
+          "text": "vốn dĩ muốn xuất phát sớm",
+          "hz": "本来想早点儿出发",
+          "py": "běnlái xiǎng zǎodiǎnr chūfā",
+          "hv": "bản lai tưởng tảo điểm nhi xuất phát",
+          "role": "Trạng từ + Động từ nguyện vọng",
+          "vn": "ban đầu dự định khởi hành sớm hơn",
+          "radicals": "本 = Bộ mộc 木; 发 = Bộ bát 癶"
+        },
+        {
+          "text": "đột nhiên đổ mưa to",
+          "hz": "忽然下起大雨来",
+          "py": "hūrán xià qǐ dàyǔ lai",
+          "hv": "hốt nhiên hạ khởi đại vũ lai",
+          "role": "Phó từ + Động từ + Bổ ngữ xu hướng kép kèm tân ngữ",
+          "vn": "thình lình bắt đầu trút cơn mưa lớn",
+          "radicals": "忽 = Bộ tâm 心; 雨 = Bộ vũ 雨; 起 = Bộ tẩu 走; 来 = Bộ mộc 木"
+        },
+        {
+          "text": "đợi tạnh mưa mới ra",
+          "hz": "等雨停了才出去",
+          "py": "děng yǔ tíng le cái chūqu",
+          "hv": "đẳng vũ đình liễu tài xuất khứ",
+          "role": "Mệnh đề điều kiện + 才 + Động từ xu hướng",
+          "vn": "chờ lúc ngớt mưa mới bước chân đi ra ngoài",
+          "radicals": "等 = Bộ trúc 竹; 停 = Bộ nhân đứng 亻; 才 = Bộ nhất 一; 出 = Bộ khảm 凵; 去 = Bộ khứ 去"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我本来想早点儿出发", "tag": "Ý định ban đầu" },
+        { "id": "t2", "text": "我只好在家", "tag": "Biện pháp cưỡng bách" },
+        { "id": "t3", "text": "可是外面忽然下起大雨来", "tag": "Biến cố thời tiết" },
+        { "id": "t4", "text": "等雨停了才出去", "tag": "Thời điểm hành động" },
+        { "id": "t5", "text": "下大雨起来", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t2", "t4"],
+      "requiredKeywordsZh": ["本来想", "忽然下起大雨来", "只好在家", "雨停了才出去"],
+      "wordBankPool": ["我本来想早点儿出发", "下大雨起来", "可是外面忽然下起大雨来", "等雨停了才出去", "我只好在家"],
+      "traps": [
+        {
+          "pattern": "下大雨起来",
+          "msg": "Lỗi tân ngữ trong bổ ngữ xu hướng kép: Khi động từ mang tân ngữ danh từ 大雨, tân ngữ bắt buộc phải chen vào giữa 起 và 来 thành 下起大雨来, không được nói 下起来大雨."
+        },
+        {
+          "pattern": "雨停了就出去",
+          "msg": "Lỗi chọn phó từ: 就 diễn tả việc diễn ra nhanh chóng thuận lợi; trong hoàn cảnh phải chờ đợi mưa tạnh đầy sốt ruột và muộn màng, bắt buộc dùng 才 (才出去)."
+        }
+      ],
+      "explanation": "Câu phức nhiều phân câu diễn đạt sự việc biến cố. Khi dùng bổ ngữ xu hướng kép 起来 với tân ngữ 大雨, tân ngữ bắt buộc chèn vào giữa thành 下起大雨来. Phân câu cuối dùng phó từ 才 nhấn mạnh việc phải đợi tạnh mưa mới có thể đi ra ngoài."
+    },
+    {
+      "id": "b09-11",
+      "type": "sentence_parsing",
+      "title": "Câu tồn hiện chỉ trạng thái với trợ từ động thái 着",
+      "vi": "A: Trên bàn để cái gì vậy? B: Trên bàn để một hộp điểm tâm, cậu ăn đi.",
+      "zh": "桌子上放着什么桌子上放着一盒点心你吃吧",
+      "standardTrans": "桌子上放着什么桌子上放着一盒点心你吃吧",
+      "pinyin": "Zhuōzi shang fàng zhe shénme? Zhuōzi shang fàng zhe yì hé diǎnxin, nǐ chī ba",
+      "grammarPoint": "Câu tồn hiện chỉ trạng thái tĩnh: Từ chỉ nơi chốn (桌子上) + V + 着 + Lượng từ + Danh từ",
+      "tokens": [
+        {
+          "text": "trên bàn",
+          "hz": "桌子上",
+          "py": "zhuōzi shang",
+          "hv": "trác tử thượng",
+          "role": "Từ chỉ nơi chốn làm chủ ngữ",
+          "vn": "ở trên mặt bàn",
+          "radicals": "桌 = Bộ mộc 木; 上 = Bộ nhất 一"
+        },
+        {
+          "text": "đang để, đang đặt",
+          "hz": "放着",
+          "py": "fàng zhe",
+          "hv": "phóng trước",
+          "role": "Động từ + Trợ từ động thái 着",
+          "vn": "đang đặt để cố định",
+          "radicals": "放 = Bộ phộc 攵; 着 = Bộ mục 目"
+        },
+        {
+          "text": "một hộp điểm tâm",
+          "hz": "一盒点心",
+          "py": "yì hé diǎnxin",
+          "hv": "nhất hạp điểm tâm",
+          "role": "Số lượng từ + Tân ngữ",
+          "vn": "một hộp bánh ngọt, đồ ăn nhẹ",
+          "radicals": "盒 = Bộ mãnh 皿; 点 = Bộ hỏa 灬; 心 = Bộ tâm 心"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "桌子上放着什么", "tag": "Câu hỏi tồn hiện" },
+        { "id": "t2", "text": "桌子上放着", "tag": "Vị ngữ tồn hiện" },
+        { "id": "t3", "text": "一盒点心", "tag": "Số lượng tân ngữ" },
+        { "id": "t4", "text": "你吃吧", "tag": "Lời mời" },
+        { "id": "t5", "text": "放了一盒", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["桌子上", "放着什么", "放着一盒点心", "你吃吧"],
+      "wordBankPool": ["一盒点心", "桌子上放着什么", "你吃吧", "放了一盒", "桌子上放着"],
+      "traps": [
+        {
+          "pattern": "放了一盒点心",
+          "msg": "Lỗi phân biệt trợ từ: '放了' nhấn mạnh động tác đặt xuống đã xảy ra; miêu tả trạng thái tĩnh đang hiện hữu trên bàn bắt buộc dùng '放着'."
+        },
+        {
+          "pattern": "在桌子上放着",
+          "msg": "Lỗi chủ ngữ câu tồn hiện: Trong câu tồn hiện, cụm từ chỉ nơi chốn '桌子上' đứng trực tiếp làm chủ ngữ, tuyệt đối không thêm giới từ '在' ở đầu câu."
+        }
+      ],
+      "explanation": "Câu tồn hiện miêu tả sự vật đang tồn tại ở một địa điểm. Cấu trúc chuẩn là Nơi chốn + Động từ + 着 + Tân ngữ không xác định (桌子上放着一盒点心)."
+    },
+    {
+      "id": "b09-12",
+      "type": "sentence_parsing",
+      "title": "Cặp liên từ 虽然……但是…… kết hợp cụm 抽时间",
+      "vi": "Tuy công việc rất bận rộn nhưng mà sáng nào cậu ấy cũng dành thời gian rèn luyện sức khỏe.",
+      "zh": "虽然工作很忙但是每天早上他都抽时间锻炼身体",
+      "standardTrans": "虽然工作很忙但是每天早上他都抽时间锻炼身体",
+      "pinyin": "Suīrán gōngzuò hěn máng, dànshì měitiān zǎoshang tā dōu chōu shíjiān duànliàn shēntǐ",
+      "grammarPoint": "Cặp liên từ nhượng bộ: 虽然……但是……; Động từ rút bớt thời gian: 抽时间",
+      "tokens": [
+        {
+          "text": "mỗi sáng",
+          "hz": "每天早上",
+          "py": "měitiān zǎoshang",
+          "hv": "mỗi thiên tảo thượng",
+          "role": "Trạng ngữ thời gian lặp lại",
+          "vn": "hằng ngày vào buổi sáng",
+          "radicals": "每 = Bộ mẫu 毋; 天 = Bộ đại 大; 早 = Bộ nhật 日"
+        },
+        {
+          "text": "dành ra thời gian",
+          "hz": "抽时间",
+          "py": "chōu shíjiān",
+          "hv": "trừu thời gian",
+          "role": "Động từ + Tân ngữ",
+          "vn": "tranh thủ, rút thời gian bận rộn ra",
+          "radicals": "抽 = Bộ thủ 扌; 时 = Bộ nhật 日; 间 = Bộ môn 门"
+        },
+        {
+          "text": "rèn luyện sức khỏe",
+          "hz": "锻炼身体",
+          "py": "duànliàn shēntǐ",
+          "hv": "đoán luyện thân thể",
+          "role": "Động từ + Tân ngữ mục đích",
+          "vn": "tập thể dục thể thao nâng cao sức khỏe",
+          "radicals": "锻 = Bộ kim 钅; 炼 = Bộ hỏa 火; 身 = Bộ thân 身; 体 = Bộ nhân đứng 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "但是每天早上", "tag": "Chuyển ngoặt + Thời gian" },
+        { "id": "t2", "text": "虽然工作很忙", "tag": "Nhượng bộ" },
+        { "id": "t3", "text": "他都抽时间", "tag": "Chủ ngữ + Động từ" },
+        { "id": "t4", "text": "锻炼身体", "tag": "Mục đích" },
+        { "id": "t5", "text": "花时间", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3", "t4"],
+      "requiredKeywordsZh": ["虽然工作很忙", "但是每天早上", "抽时间", "锻炼身体"],
+      "wordBankPool": ["锻炼身体", "但是每天早上", "花时间", "他都抽时间", "虽然工作很忙"],
+      "traps": [
+        {
+          "pattern": "花时间锻炼",
+          "msg": "Lỗi chọn động từ: '花时间' là tiêu tốn thời gian; trong hoàn cảnh cực kỳ bận rộn mà vẫn tranh thủ bớt chút thời gian quý báu ra để làm việc khác, người bản xứ chuẩn mực dùng '抽时间'."
+        },
+        {
+          "pattern": "每天早上都他",
+          "msg": "Lỗi vị trí phó từ: Phó từ '都' bắt buộc phải đứng sau chủ ngữ '他' và đứng trước động từ (他都抽时间)."
+        }
+      ],
+      "explanation": "Câu ghép nhượng bộ dùng cặp liên từ 虽然……但是…… Điểm từ vựng then chốt là động từ 抽 đi cùng 时间 mang nghĩa tranh thủ, dành ra một khoảng thời gian trong lịch trình bận rộn."
+    },
+    {
+      "id": "b09-13",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 拿出来 kết hợp giới từ điểm xuất phát 从",
+      "vi": "Cậu ấy lấy từ trong cặp sách ra một cuốn tiểu thuyết của Lỗ Tấn.",
+      "zh": "他从书包里拿出来一本鲁迅的小说",
+      "standardTrans": "他从书包里拿出来一本鲁迅的小说",
+      "pinyin": "Tā cóng shūbāo lǐ ná chūlai yì běn Lǔ Xùn de xiǎoshuō",
+      "grammarPoint": "Từ đâu lấy ra cái gì: S + 从 + Nơi chốn + 拿出来 + [Số lượng] + Tân ngữ",
+      "tokens": [
+        {
+          "text": "từ trong cặp sách",
+          "hz": "从书包里",
+          "py": "cóng shūbāo lǐ",
+          "hv": "tùng thư bao lý",
+          "role": "Trạng ngữ nơi chốn xuất phát",
+          "vn": "từ bên trong ba lô, cặp sách",
+          "radicals": "从 = Bộ nhân 人; 书 = Bộ dật 乛; 包 = Bộ bao 勹; 里 = Bộ lý 里"
+        },
+        {
+          "text": "lấy ra",
+          "hz": "拿出来",
+          "py": "ná chūlai",
+          "hv": "nã xuất lai",
+          "role": "Động từ + Bổ ngữ xu hướng kép",
+          "vn": "rút ra, lấy ra ngoài",
+          "radicals": "拿 = Bộ thủ 手; 出 = Bộ khảm 凵; 来 = Bộ mộc 木"
+        },
+        {
+          "text": "tiểu thuyết của Lỗ Tấn",
+          "hz": "鲁迅的小说",
+          "py": "Lǔ Xùn de xiǎoshuō",
+          "hv": "Lỗ Tấn đích tiểu thuyết",
+          "role": "Định ngữ + Trung tâm ngữ tân ngữ",
+          "vn": "tác phẩm tiểu thuyết do Lỗ Tấn sáng tác",
+          "radicals": "鲁 = Bộ ngư 鱼; 迅 = Bộ quai xước 辶; 说 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "他从书包里", "tag": "Chủ ngữ + Nơi chốn" },
+        { "id": "t2", "text": "拿出来一本", "tag": "Động bổ + Lượng từ" },
+        { "id": "t3", "text": "鲁迅的小说", "tag": "Tân ngữ tác phẩm" },
+        { "id": "t4", "text": "拿出了一本", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["从书包里", "拿出来", "一本", "鲁迅的小说"],
+      "wordBankPool": ["拿出来一本", "拿出了一本", "鲁迅的小说", "他从书包里"],
+      "traps": [
+        {
+          "pattern": "拿在书包里",
+          "msg": "Lỗi giới từ: Động tác lấy đồ ra từ bên trong không gian chứa phải dùng giới từ chỉ xuất phát điểm '从' (从书包里), không dùng '在'."
+        },
+        {
+          "pattern": "书包里拿鲁迅",
+          "msg": "Lỗi thiếu bổ ngữ xu hướng: Hành động đưa đồ vật từ trong ra ngoài hướng về phía người nói bắt buộc có bổ ngữ xu hướng kép '拿出来'."
+        }
+      ],
+      "explanation": "Cấu trúc lấy vật ra khỏi vật chứa: Chủ ngữ + 从 + Địa điểm + 拿出来 + Tân ngữ. Bổ ngữ xu hướng kép 出来 diễn tả vật từ bên trong cặp sách xuất hiện ra ngoài."
+    },
+    {
+      "id": "b09-14",
+      "type": "sentence_parsing",
+      "title": "Giới từ căn cứ 根据 và cấu trúc động lượng 改一下",
+      "vi": "Căn cứ vào ý kiến của mọi người, kế hoạch ngày mai của chúng ta phải thay đổi một chút.",
+      "zh": "根据大家的意见我们明天的计划要改一下",
+      "standardTrans": "根据大家的意见我们明天的计划要改一下",
+      "pinyin": "Gēnjù dàjiā de yìjiàn, wǒmen míngtiān de jìhuà yào gǎi yíxià",
+      "grammarPoint": "Giới từ chỉ căn cứ: 根据 + Ý kiến/Tình hình; Động từ + 一下 (thực hiện một chút)",
+      "tokens": [
+        {
+          "text": "căn cứ vào ý kiến",
+          "hz": "根据大家的意见",
+          "py": "gēnjù dàjiā de yìjiàn",
+          "hv": "căn cứ đại gia đích ý kiến",
+          "role": "Trạng ngữ chỉ căn cứ",
+          "vn": "dựa theo quan điểm của mọi người",
+          "radicals": "根 = Bộ mộc 木; 据 = Bộ thủ 扌; 意 = Bộ tâm 心; 见 = Bộ kiến 见"
+        },
+        {
+          "text": "kế hoạch ngày mai",
+          "hz": "明天的计划",
+          "py": "míngtiān de jìhuà",
+          "hv": "minh thiên đích kế hoạch",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "kế hoạch dự định cho ngày mai",
+          "radicals": "明 = Bộ nhật 日; 计 = Bộ ngôn 讠; 划 = Bộ đao 刂"
+        },
+        {
+          "text": "sửa một chút",
+          "hz": "改一下",
+          "py": "gǎi yíxià",
+          "hv": "cải nhất hạ",
+          "role": "Động từ + Bổ ngữ động lượng",
+          "vn": "thay đổi, chỉnh sửa một chút",
+          "radicals": "改 = Bộ phộc 攵; 下 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我们明天的计划", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "根据大家的意见", "tag": "Trạng ngữ căn cứ" },
+        { "id": "t3", "text": "要改一下", "tag": "Vị ngữ" },
+        { "id": "t4", "text": "按照", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["根据", "大家的意见", "计划", "改一下"],
+      "wordBankPool": ["根据大家的意见", "我们明天的计划", "按照", "要改一下"],
+      "traps": [
+        {
+          "pattern": "按照大家的意见",
+          "msg": "Lỗi ngữ dụng: Dựa trên ý kiến để làm cơ sở chỉnh sửa kế hoạch, văn phong chuẩn mực của bài học dùng giới từ '根据'."
+        },
+        {
+          "pattern": "改一点儿",
+          "msg": "Lỗi phân biệt 一下 và 一点儿: Bổ nghĩa làm giảm nhẹ động tác của động từ '改' dùng bổ ngữ động lượng '一下' (改一下), không dùng '一点儿' (vốn bổ nghĩa cho tính từ hoặc danh từ)."
+        }
+      ],
+      "explanation": "Giới từ 根据 đứng đầu câu dẫn ra cơ sở định hướng hành động (大家的意见). Động từ 改 đi kèm bổ ngữ động lượng 一下 biểu thị hành động diễn ra nhanh gọn và nhẹ nhàng."
+    },
+    {
+      "id": "b09-15",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 走上去 trong không gian cầu thang",
+      "vi": "Trong thang máy nhiều người quá, chúng ta đi bộ lên đi.",
+      "zh": "电梯里人太多了我们走上去吧",
+      "standardTrans": "电梯里人太多了我们走上去吧",
+      "pinyin": "Diàntī lǐ rén tài duō le, wǒmen zǒu shangqu ba",
+      "grammarPoint": "Chủ ngữ nơi chốn: 电梯里 + Vị ngữ tính từ: 人太多了; Bổ ngữ xu hướng kép: 走上去",
+      "tokens": [
+        {
+          "text": "trong thang máy",
+          "hz": "电梯里",
+          "py": "diàntī lǐ",
+          "hv": "điện thê lý",
+          "role": "Từ chỉ nơi chốn làm chủ ngữ 1",
+          "vn": "bên trong buồng thang máy",
+          "radicals": "电 = Bộ điền 田; 梯 = Bộ mộc 木; 里 = Bộ lý 里"
+        },
+        {
+          "text": "người quá đông",
+          "hz": "人太多了",
+          "py": "rén tài duō le",
+          "hv": "nhân thái đa liễu",
+          "role": "Cụm vị ngữ cảm thán",
+          "vn": "số lượng người quá nhiều",
+          "radicals": "人 = Bộ nhân 人; 太 = Bộ đại 大; 多 = Bộ tịch 夕"
+        },
+        {
+          "text": "đi bộ lên trên",
+          "hz": "走上去吧",
+          "py": "zǒu shangqu ba",
+          "hv": "tẩu thượng khứ ba",
+          "role": "Động từ + Bổ ngữ xu hướng kép + Trợ từ",
+          "vn": "đi bộ cầu thang lên tầng trên",
+          "radicals": "走 = Bộ tẩu 走; 上 = Bộ nhất 一; 去 = Bộ khứ 去"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我们走上去吧", "tag": "Đề xuất hành động" },
+        { "id": "t2", "text": "电梯里人太多了", "tag": "Nguyên nhân nơi chốn" },
+        { "id": "t3", "text": "走上来吧", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1"],
+      "requiredKeywordsZh": ["电梯里", "人太多了", "走上去吧"],
+      "wordBankPool": ["我们走上去吧", "走上来吧", "电梯里人太多了"],
+      "traps": [
+        {
+          "pattern": "走上来吧",
+          "msg": "Lỗi phương hướng bổ ngữ xu hướng: Hai người đang đứng ở tầng dưới cùng nhau đi bộ lên tầng cao hơn (rời xa vị trí nói hiện tại) nên bắt buộc dùng '走上去', không dùng '走上来'."
+        },
+        {
+          "pattern": "在电梯里人",
+          "msg": "Lỗi câu miêu tả nơi chốn: Từ chỉ nơi chốn '电梯里' trực tiếp làm chủ ngữ, không cần thêm giới từ '在' ở đầu câu."
+        }
+      ],
+      "explanation": "Câu đưa cụm danh từ nơi chốn 电梯里 lên đầu làm chủ ngữ chỉ hoàn cảnh đông đúc. Vì người nói cùng đối phương đang ở tầng dưới chuẩn bị di chuyển lên trên (ngược hướng người nói) nên bổ ngữ xu hướng kép chuẩn mực là 走上去."
+    }
+  ]
+}

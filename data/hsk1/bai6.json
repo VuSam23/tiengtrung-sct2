@@ -1,100 +1,465 @@
 {
-  "lessonId": "hsk1-b06",
-  "lessonTitle": "第六课: 我学习汉语",
+  "lessonId": "b06",
+  "lessonTitle": "Bài 6: Hỏi tên, Quốc tịch và Sở hữu",
   "quickNotes": {
     "vocabTips": [
       {
-        "word": "什么",
-        "py": "shénme",
-        "note": "Đại từ nghi vấn 'Cái gì'. Đứng độc lập làm tân ngữ (这是什么？) hoặc đứng trước danh từ làm định ngữ (什么杂志, 什么书)."
+        "word": "叫什么名字",
+        "py": "jiào shénme míngzi",
+        "note": "Mẫu câu hỏi tên thông dụng. '叫' là gọi, '名字' là tên. Có thể lược bỏ '名字' thành '你叫什么？' (Bạn tên gì?)."
       },
       {
-        "word": "哪 vs 那",
-        "py": "nǎ vs nà",
-        "note": "哪 (có bộ Khẩu 口) dùng để hỏi: 哪本 (cuốn nào), 哪个 (cái nào). 那 (không có bộ Khẩu) dùng để chỉ định: 那本 (cuốn kia), 那个 (cái kia)."
+        "word": "贵姓",
+        "py": "guìxìng",
+        "note": "Cách hỏi họ lịch sự (Quý danh/Ngài họ gì?). Thường dùng với '您' cho người lớn tuổi hoặc mới gặp."
       },
       {
-        "word": "谁",
-        "py": "shéi / shuí",
-        "note": "Đại từ hỏi người 'Ai'. Có thể làm chủ ngữ (谁是王老师？), tân ngữ (他是谁？) hoặc kết hợp với 的 làm định ngữ sở hữu (谁的书？)."
+        "word": "哪国人",
+        "py": "nǎ guó rén",
+        "note": "Hỏi quốc tịch. '哪' (nào) + '国' (nước) + '人' (người). Trả lời: 我是越南人 (Tôi là người Việt Nam)."
       }
     ],
     "grammarTips": [
-      "Trật tự cụm danh từ có định ngữ (的): [Định ngữ / Sở hữu] + 的 + [Trung tâm ngữ]. Đặt phần bổ nghĩa lên TRƯỚC chữ '的'.",
-      "Câu hỏi chính phản 是不是: Đặt trước cụm danh từ hoặc đầu vị ngữ để hỏi xác nhận ('có phải là... không?'), cuối câu TUYỆT ĐỐI không thêm 吗.",
-      "Vị ngữ tính từ: S + 很 / 不太 + Tính từ. Tuyệt đối không dùng '是' trước tính từ (nói 汉字很难, không nói 汉字是很难)."
+      "Câu hỏi tên: Chủ ngữ + 叫 + 什么 + 名字?",
+      "Hỏi họ lịch sự: 请问 + 您 + 贵姓?",
+      "Trợ từ sở hữu 的: Đại từ/Danh từ + 的 + Danh từ (我的书 - Sách của tôi)."
     ]
   },
   "sentences": [
     {
-      "id": "hsk1-b06-01",
-      "type": "anti_word_by_word",
-      "title": "Câu hỏi chính phản 是不是 và định ngữ sở hữu",
-      "vi": "Kia có phải là tạp chí tiếng Anh của cậu không?",
-      "zh": "那是不是你的英文杂志",
-      "standardTrans": "那是不是你的英文杂志？",
-      "pinyin": "Nà shì bú shì nǐ de yīngwén zázhì?",
-      "grammarPoint": "Câu hỏi chính phản 是不是; Cấu trúc định ngữ: [Chủ sở hữu] + 的 + [Ngôn ngữ] + [Danh từ]",
+      "id": "b06-01",
+      "type": "sentence_parsing",
+      "title": "Hỏi tên người khác",
+      "vi": "Anh ấy tên là gì?",
+      "zh": "他叫什么名字",
+      "standardTrans": "他叫什么名字",
+      "pinyin": "Tā jiào shénme míngzi?",
+      "grammarPoint": "Hỏi tên: S + 叫什么名字",
       "tokens": [
         {
-          "text": "Kia",
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Anh ấy, ông ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
+        },
+        {
+          "text": "Gọi",
+          "hz": "叫",
+          "py": "jiào",
+          "hv": "Khiếu",
+          "role": "Động từ",
+          "vn": "Gọi, tên là",
+          "radicals": "叫 = Bộ khẩu 口 + Bộ củ 丩"
+        },
+        {
+          "text": "Cái gì",
+          "hz": "什么",
+          "py": "shénme",
+          "hv": "Thập ma",
+          "role": "Đại từ nghi vấn",
+          "vn": "Cái gì",
+          "radicals": "什 = Bộ nhân đứng 亻 + Bộ thập 十; 么 = Bộ phiệt 丿 + Bộ khư 厶"
+        },
+        {
+          "text": "Tên",
+          "hz": "名字",
+          "py": "míngzi",
+          "hv": "Danh tự",
+          "role": "Danh từ",
+          "vn": "Tên",
+          "radicals": "名 = Bộ tịch 夕 + Bộ khẩu 口; 字 = Bộ miên 宀 + Bộ tử 子"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "谁", "tag": "Bẫy nghi vấn" },
+        { "id": "t3", "text": "什么", "tag": "Nghi vấn" },
+        { "id": "t2", "text": "叫", "tag": "Động từ" },
+        { "id": "t4", "text": "名字", "tag": "Danh từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["他", "叫", "什么", "名字"],
+      "wordBankPool": ["他", "叫", "什么", "名字", "谁"],
+      "traps": [
+        {
+          "pattern": "谁",
+          "msg": "Lỗi nghi vấn: '谁' dùng để hỏi 'ai'. Để hỏi tên (cái gì), phải dùng '什么名字'."
+        }
+      ],
+      "explanation": "Cấu trúc hỏi tên: Chủ ngữ + 叫 + 什么 + 名字."
+    },
+    {
+      "id": "b06-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi quốc tịch",
+      "vi": "Bạn là người nước nào?",
+      "zh": "你是哪国人",
+      "standardTrans": "你是哪国人",
+      "pinyin": "Nǐ shì nǎ guó rén?",
+      "grammarPoint": "Hỏi quốc tịch: S + 是 + 哪国人",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Bạn, cậu",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ liên kết",
+          "vn": "Là, phải là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Nước nào",
+          "hz": "哪国",
+          "py": "nǎ guó",
+          "hv": "Na quốc",
+          "role": "Cụm nghi vấn",
+          "vn": "Nước nào",
+          "radicals": "哪 = Bộ khẩu 口 + Bộ ấp 邑; 国 = Bộ vi 囗 + Bộ ngọc 玉"
+        },
+        {
+          "text": "Người",
+          "hz": "人",
+          "py": "rén",
+          "hv": "Nhân",
+          "role": "Danh từ",
+          "vn": "Người",
+          "radicals": "人 = Bộ nhân 人"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "人", "tag": "Danh từ" },
+        { "id": "t2", "text": "是", "tag": "Động từ" },
+        { "id": "t5", "text": "什么", "tag": "Bẫy nghi vấn" },
+        { "id": "t3", "text": "哪国", "tag": "Nghi vấn" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你", "是", "哪国", "人"],
+      "wordBankPool": ["你", "是", "哪国", "人", "什么"],
+      "traps": [
+        {
+          "pattern": "什么",
+          "msg": "Lỗi nghi vấn: Hỏi quốc tịch phải dùng '哪国', không dùng '什么国'."
+        }
+      ],
+      "explanation": "Cấu trúc hỏi quốc tịch: Chủ ngữ + 是 + 哪国人."
+    },
+    {
+      "id": "b06-03",
+      "type": "sentence_parsing",
+      "title": "Hỏi chủ sở hữu đồ vật",
+      "vi": "Đó là từ điển của ai?",
+      "zh": "那是谁的词典",
+      "standardTrans": "那是谁的词典",
+      "pinyin": "Nà shì shéi de cídiǎn?",
+      "grammarPoint": "Hỏi sở hữu: 那 + 是 + 谁 + 的 + N",
+      "tokens": [
+        {
+          "text": "Đó",
           "hz": "那",
           "py": "nà",
           "hv": "Na",
           "role": "Đại từ chỉ thị",
           "vn": "Kia, đó",
-          "radicals": "Chữ mãnh 𠃎 + bộ ấp 阝"
+          "radicals": "那 = Bộ ấp 邑 + Bộ nhiễm 冉"
         },
         {
-          "text": "Có phải là... không",
-          "hz": "是不是",
-          "py": "shì bú shì",
-          "hv": "Thị bất thị",
-          "role": "Cụm vị ngữ chính phản",
-          "vn": "Có phải là... không",
-          "radicals": "是 = Bộ nhật 日 + chữ hạ 疋; 不 = Bộ nhất 一"
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ liên kết",
+          "vn": "Là, phải là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
         },
         {
-          "text": "Tạp chí tiếng Anh của cậu",
-          "hz": "你的英文杂志",
-          "py": "nǐ de yīngwén zázhì",
-          "hv": "Nhĩ đích Anh văn tạp chí",
-          "role": "Cụm danh từ tân ngữ",
-          "vn": "Tạp chí tiếng Anh của bạn",
-          "radicals": "英 = Bộ thảo 艹 + chữ ương 央; 文 = Bộ văn 文; 杂 = Bộ cửu 九 + bộ mộc 木; 志 = Bộ sĩ 士 + bộ tâm 心"
+          "text": "Ai",
+          "hz": "谁",
+          "py": "shéi",
+          "hv": "Thùy",
+          "role": "Đại từ nghi vấn",
+          "vn": "Ai",
+          "radicals": "谁 = Bộ ngôn 讠 + Bộ truy 隹"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Từ điển",
+          "hz": "词典",
+          "py": "cídiǎn",
+          "hv": "Từ điển",
+          "role": "Danh từ",
+          "vn": "Từ điển",
+          "radicals": "词 = Bộ ngôn 讠 + Bộ ty 司; 典 = Bộ bát 八 + Bộ khúc 曲"
         }
       ],
       "tiles": [
-        { "id": "t1", "text": "那是不是", "tag": "Chỉ thị + Chính phản" },
-        { "id": "t2", "text": "你的", "tag": "Sở hữu" },
-        { "id": "t3", "text": "英文杂志", "tag": "Ngôn ngữ + Vật thể" },
-        { "id": "t4", "text": "英文杂志的你", "tag": "Bẫy định ngữ" },
-        { "id": "t5", "text": "是不是吗", "tag": "Bẫy trùng lặp nghi vấn" }
+        { "id": "t5", "text": "词典", "tag": "Danh từ" },
+        { "id": "t2", "text": "是", "tag": "Động từ" },
+        { "id": "t1", "text": "那", "tag": "Đại từ" },
+        { "id": "t4", "text": "的", "tag": "Sở hữu" },
+        { "id": "t6", "text": "书", "tag": "Bẫy danh từ" },
+        { "id": "t3", "text": "谁", "tag": "Nghi vấn" }
       ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["那是不是", "你的", "英文杂志"],
-      "wordBankPool": ["那是不是", "你的", "英文杂志", "英文杂志的你", "是不是吗", "那是有"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["那", "是", "谁", "的", "词典"],
+      "wordBankPool": ["那", "是", "谁", "的", "词典", "书"],
       "traps": [
         {
-          "pattern": "英文杂志的你",
-          "msg": "Lỗi định ngữ: Tiếng Việt nói 'tạp chí của cậu', nhưng tiếng Trung bắt buộc phải đưa chủ sở hữu lên trước chữ 的 ('你的英文杂志')."
-        },
-        {
-          "pattern": "是不是吗",
-          "msg": "Lỗi cấu trúc câu hỏi: Đã dùng dạng câu hỏi chính phản '是不是' thì cuối câu TUYỆT ĐỐI không thêm trợ từ '吗'."
+          "pattern": "书",
+          "msg": "Lỗi ngữ cảnh: Đề bài hỏi về 'từ điển' (词典), không phải 'sách' (书)."
         }
       ],
-      "explanation": "Câu dùng dạng chính phản '那是不是...'. Cụm danh từ gồm 2 tầng định ngữ: '你的' (sở hữu) đứng trước '英文杂志' (phân loại)."
+      "explanation": "Cấu trúc sở hữu: Chủ ngữ + 是 + 谁 + 的 + Danh từ."
     },
     {
-      "id": "hsk1-b06-02",
+      "id": "b06-04",
       "type": "sentence_parsing",
-      "title": "Cụm danh từ sở hữu với chức danh",
-      "vi": "Đây là tạp chí tiếng Anh của thầy giáo Vương.",
-      "zh": "这是王老师的英文杂志",
-      "standardTrans": "这是王老师的英文杂志。",
-      "pinyin": "Zhè shì Wáng lǎoshī de yīngwén zázhì.",
-      "grammarPoint": "Câu phán đoán: 这是 + Cụm danh từ; Định ngữ nhân thân: [Họ + Chức danh] + 的 + Danh từ",
+      "title": "Diễn tả hành động học tập",
+      "vi": "Anh ấy học tiếng Anh.",
+      "zh": "他学习英语",
+      "standardTrans": "他学习英语",
+      "pinyin": "Tā xuéxí yīngyǔ.",
+      "grammarPoint": "S + V + O",
+      "tokens": [
+        {
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Anh ấy, ông ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
+        },
+        {
+          "text": "Học tập",
+          "hz": "学习",
+          "py": "xuéxí",
+          "hv": "Học tập",
+          "role": "Động từ",
+          "vn": "Học, học tập",
+          "radicals": "学 = Bộ miên 宀 + Bộ tử 子; 习 = Bộ ất 乙 + Bộ nhị 二"
+        },
+        {
+          "text": "Tiếng Anh",
+          "hz": "英语",
+          "py": "yīngyǔ",
+          "hv": "Anh ngữ",
+          "role": "Tân ngữ",
+          "vn": "Tiếng Anh",
+          "radicals": "英 = Bộ thảo 艹 + Bộ ương 央; 语 = Bộ ngôn 讠 + Bộ ngũ 五 + Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "汉语", "tag": "Bẫy môn học" },
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "英语", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "学习", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["他", "学习", "英语"],
+      "wordBankPool": ["他", "学习", "英语", "汉语"],
+      "traps": [
+        {
+          "pattern": "汉语",
+          "msg": "Lỗi ngữ cảnh: Đề bài nói học 'tiếng Anh' (英语), không phải 'tiếng Trung' (汉语)."
+        }
+      ],
+      "explanation": "Cấu trúc câu cơ bản: Chủ ngữ + Động từ + Tân ngữ."
+    },
+    {
+      "id": "b06-05",
+      "type": "sentence_parsing",
+      "title": "Hỏi họ lịch sự",
+      "vi": "Xin hỏi ngài họ gì?",
+      "zh": "请问您贵姓",
+      "standardTrans": "请问您贵姓",
+      "pinyin": "Qǐngwèn nín guìxìng?",
+      "grammarPoint": "Mẫu câu hỏi họ lịch sự",
+      "tokens": [
+        {
+          "text": "Xin hỏi",
+          "hz": "请问",
+          "py": "qǐngwèn",
+          "hv": "Thỉnh vấn",
+          "role": "Cụm từ mở đầu",
+          "vn": "Xin hỏi, cho hỏi",
+          "radicals": "请 = Bộ ngôn 讠 + Bộ thanh 青; 问 = Bộ môn 门 + Bộ khẩu 口"
+        },
+        {
+          "text": "Ngài",
+          "hz": "您",
+          "py": "nín",
+          "hv": "Nâm",
+          "role": "Đại từ nhân xưng",
+          "vn": "Ngài, ông (kính ngữ)",
+          "radicals": "您 = Bộ nhân đứng 亻 + Bộ nhĩ 尔 + Bộ tâm 心"
+        },
+        {
+          "text": "Họ gì",
+          "hz": "贵姓",
+          "py": "guìxìng",
+          "hv": "Quý tính",
+          "role": "Cụm nghi vấn",
+          "vn": "Họ gì (lịch sự)",
+          "radicals": "贵 = Bộ trung 中 + Bộ nhất 一 + Bộ bối 贝; 姓 = Bộ nữ 女 + Bộ sinh 生"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "贵姓", "tag": "Hỏi họ" },
+        { "id": "t1", "text": "请问", "tag": "Mở đầu" },
+        { "id": "t4", "text": "什么", "tag": "Bẫy nghi vấn" },
+        { "id": "t2", "text": "您", "tag": "Đại từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["请问", "您", "贵姓"],
+      "wordBankPool": ["请问", "您", "贵姓", "什么"],
+      "traps": [
+        {
+          "pattern": "什么",
+          "msg": "Lỗi nghi vấn: Hỏi họ lịch sự phải dùng '贵姓', không dùng '什么' (cái gì)."
+        }
+      ],
+      "explanation": "Đây là mẫu câu hỏi họ trang trọng, thường dùng khi gặp gỡ đối tác hoặc người lớn tuổi."
+    },
+    {
+      "id": "b06-06",
+      "type": "sentence_parsing",
+      "title": "Miêu tả tính chất",
+      "vi": "Chữ Hán rất khó.",
+      "zh": "汉字很难",
+      "standardTrans": "汉字很难",
+      "pinyin": "Hànzì hěn nán.",
+      "grammarPoint": "S + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Chữ Hán",
+          "hz": "汉字",
+          "py": "hànzì",
+          "hv": "Hán tự",
+          "role": "Chủ ngữ",
+          "vn": "Chữ Hán",
+          "radicals": "汉 = Bộ chấm thủy 氵 + Bộ hựu 又; 字 = Bộ miên 宀 + Bộ tử 子"
+        },
+        {
+          "text": "Rất",
+          "hz": "很",
+          "py": "hěn",
+          "hv": "Hẩn",
+          "role": "Phó từ mức độ",
+          "vn": "Rất",
+          "radicals": "很 = Bộ xích 彳 + Bộ cấn 艮"
+        },
+        {
+          "text": "Khó",
+          "hz": "难",
+          "py": "nán",
+          "hv": "Nan",
+          "role": "Vị ngữ tính từ",
+          "vn": "Khó",
+          "radicals": "难 = Bộ hựu 又 + Bộ truy 隹"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "难", "tag": "Tính từ" },
+        { "id": "t1", "text": "汉字", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "发音", "tag": "Bẫy danh từ" },
+        { "id": "t2", "text": "很", "tag": "Phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["汉字", "很", "难"],
+      "wordBankPool": ["汉字", "很", "难", "发音"],
+      "traps": [
+        {
+          "pattern": "发音",
+          "msg": "Lỗi ngữ cảnh: Đề bài nói về 'chữ Hán' (汉字), không phải 'phát âm' (发音)."
+        }
+      ],
+      "explanation": "Câu vị ngữ tính từ: Chủ ngữ + 很 + Tính từ."
+    },
+    {
+      "id": "b06-07",
+      "type": "sentence_parsing",
+      "title": "Hỏi người",
+      "vi": "Đó là ai?",
+      "zh": "那是谁",
+      "standardTrans": "那是谁",
+      "pinyin": "Nà shì shéi?",
+      "grammarPoint": "Hỏi người: 那 + 是 + 谁",
+      "tokens": [
+        {
+          "text": "Đó",
+          "hz": "那",
+          "py": "nà",
+          "hv": "Na",
+          "role": "Đại từ chỉ thị",
+          "vn": "Kia, đó",
+          "radicals": "那 = Bộ ấp 邑 + Bộ nhiễm 冉"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ liên kết",
+          "vn": "Là, phải là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Ai",
+          "hz": "谁",
+          "py": "shéi",
+          "hv": "Thùy",
+          "role": "Đại từ nghi vấn",
+          "vn": "Ai",
+          "radicals": "谁 = Bộ ngôn 讠 + Bộ truy 隹"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "谁", "tag": "Nghi vấn" },
+        { "id": "t1", "text": "那", "tag": "Đại từ" },
+        { "id": "t4", "text": "什么", "tag": "Bẫy nghi vấn" },
+        { "id": "t2", "text": "是", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["那", "是", "谁"],
+      "wordBankPool": ["那", "是", "谁", "什么"],
+      "traps": [
+        {
+          "pattern": "什么",
+          "msg": "Lỗi nghi vấn: Hỏi người phải dùng '谁' (ai), không dùng '什么' (cái gì)."
+        }
+      ],
+      "explanation": "Cấu trúc: Chủ ngữ + 是 + Đại từ nghi vấn."
+    },
+    {
+      "id": "b06-08",
+      "type": "sentence_parsing",
+      "title": "Giới thiệu đồ vật sở hữu",
+      "vi": "Đây là tạp chí của tôi.",
+      "zh": "这是我的杂志",
+      "standardTrans": "这是我的杂志",
+      "pinyin": "Zhè shì wǒ de zázhì.",
+      "grammarPoint": "Câu khẳng định sở hữu",
       "tokens": [
         {
           "text": "Đây",
@@ -103,583 +468,183 @@
           "hv": "Giá",
           "role": "Đại từ chỉ thị",
           "vn": "Đây, này",
-          "radicals": "Bộ sước 辶 + chữ văn 文"
+          "radicals": "这 = Bộ sước 辶 + Bộ văn 文"
         },
         {
-          "text": "Thầy giáo Vương",
-          "hz": "王老师",
-          "py": "Wáng lǎoshī",
-          "hv": "Vương lão sư",
-          "role": "Định ngữ sở hữu",
-          "vn": "Thầy giáo họ Vương",
-          "radicals": "王 = Bộ ngọc/vương 王; 老 = Bộ lão 老; 师 = Bộ cân 巾"
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ liên kết",
+          "vn": "Là, phải là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
         },
         {
-          "text": "Tạp chí tiếng Anh",
-          "hz": "英文杂志",
-          "py": "yīngwén zázhì",
-          "hv": "Anh văn tạp chí",
-          "role": "Trung tâm ngữ",
-          "vn": "Tạp chí tiếng Anh",
-          "radicals": "英 = Anh; 文 = Văn; 杂 = Tạp; 志 = Chí"
+          "text": "Của tôi",
+          "hz": "我的",
+          "py": "wǒ de",
+          "hv": "Ngã đích",
+          "role": "Đại từ sở hữu",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ qua 戈 + Bộ thủ 手; 的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Tạp chí",
+          "hz": "杂志",
+          "py": "zázhì",
+          "hv": "Tạp chí",
+          "role": "Danh từ",
+          "vn": "Tạp chí",
+          "radicals": "杂 = Bộ cửu 九 + Bộ mộc 木; 志 = Bộ sĩ 士 + Bộ tâm 心"
         }
       ],
       "tiles": [
-        { "id": "t1", "text": "这是", "tag": "Chủ ngữ + Phán đoán" },
-        { "id": "t2", "text": "王老师的", "tag": "Định ngữ sở hữu" },
-        { "id": "t3", "text": "英文杂志", "tag": "Trung tâm ngữ" },
-        { "id": "t4", "text": "老师王", "tag": "Bẫy gọi tên chức danh" },
-        { "id": "t5", "text": "杂志英文", "tag": "Bẫy trật tự ngôn ngữ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这是", "王老师的", "英文杂志"],
-      "wordBankPool": ["这是", "王老师的", "英文杂志", "老师王", "杂志英文", "英文的杂志"],
-      "traps": [
-        {
-          "pattern": "老师王",
-          "msg": "Lỗi xưng hô: Trong tiếng Trung, Họ luôn phải đứng TRƯỚC chức danh ('王老师'), không dịch xuôi là '老师王'."
-        },
-        {
-          "pattern": "杂志英文",
-          "msg": "Lỗi trật tự định ngữ: 'Tiếng Anh' bổ nghĩa cho 'tạp chí' nên phải đặt trước: '英文杂志'."
-        }
-      ],
-      "explanation": "Mô hình phán đoán chuẩn: 这 + 是 + [Định ngữ sở hữu (王老师) + 的 + Danh từ (英文杂志)]."
-    },
-    {
-      "id": "hsk1-b06-03",
-      "type": "sentence_parsing",
-      "title": "Hội thoại rủ rê và từ chối kèm trợ từ ngữ khí 吧",
-      "vi": "A: Mai tớ đi công viên, cậu có đi không? B: Tớ bận lắm, cậu đi đi.",
-      "zh": "明天我去公园你去吗我很忙你去吧",
-      "standardTrans": "A: 明天我去公园，你去吗？\nB: 我很忙，你去吧。",
-      "pinyin": "A: Míngtiān wǒ qù gōngyuán, nǐ qù ma?\nB: Wǒ hěn máng, nǐ qù ba.",
-      "grammarPoint": "Thời gian (明天) + 去 + Địa điểm + Câu hỏi 吗; Trợ từ ngữ khí 吧; Vị ngữ tính từ (很忙)",
-      "tokens": [
-        {
-          "text": "Đi công viên",
-          "hz": "去公园",
-          "py": "qù gōngyuán",
-          "hv": "Khứ công viên",
-          "role": "Cụm động tân",
-          "vn": "Đi công viên",
-          "radicals": "去 = Đi; 公 = Công; 园 = Viên"
-        },
-        {
-          "text": "Rất bận",
-          "hz": "很忙",
-          "py": "hěn máng",
-          "hv": "Hẩn mang",
-          "role": "Cụm vị ngữ tính từ",
-          "vn": "Rất bận",
-          "radicals": "很 = Bộ xích 彳 + chữ cấn 艮; 忙 = Bộ tâm đứng 忄 + chữ vong 亡"
-        },
-        {
-          "text": "Cậu đi đi",
-          "hz": "你去吧",
-          "py": "nǐ qù ba",
-          "hv": "Nhĩ khứ ba",
-          "role": "Câu cầu khiến/khuyên nhủ",
-          "vn": "Bạn đi đi",
-          "radicals": "吧 = Bộ khẩu 口 + chữ ba 巴"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "明天我去公园", "tag": "Vế A1" },
-        { "id": "t2", "text": "你去吗", "tag": "Vế A2" },
-        { "id": "t3", "text": "我很忙", "tag": "Vế B1" },
-        { "id": "t4", "text": "你去吧", "tag": "Vế B2" },
-        { "id": "t5", "text": "我是很忙", "tag": "Bẫy thừa 是" },
-        { "id": "t6", "text": "公园去", "tag": "Bẫy động tân" }
+        { "id": "t5", "text": "书", "tag": "Bẫy danh từ" },
+        { "id": "t3", "text": "我的", "tag": "Sở hữu" },
+        { "id": "t1", "text": "这", "tag": "Đại từ" },
+        { "id": "t4", "text": "杂志", "tag": "Danh từ" },
+        { "id": "t2", "text": "是", "tag": "Động từ" }
       ],
       "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["明天我去公园", "你去吗", "我很忙", "你去吧"],
-      "wordBankPool": ["明天我去公园", "你去吗", "我很忙", "你去吧", "我是很忙", "公园去", "你去吗明天"],
+      "requiredKeywordsZh": ["这", "是", "我的", "杂志"],
+      "wordBankPool": ["这", "是", "我的", "杂志", "书"],
       "traps": [
         {
-          "pattern": "我是很忙",
-          "msg": "Lỗi vị ngữ tính từ: Miêu tả trạng thái bận chỉ cần nói '我很忙', không thêm '是'."
-        },
-        {
-          "pattern": "你去吗明天",
-          "msg": "Lỗi vị trí thời gian: '明天' phải đứng trước cụm động từ, không vứt ra sau cùng."
+          "pattern": "书",
+          "msg": "Lỗi ngữ cảnh: Đề bài nói về 'tạp chí' (杂志), không phải 'sách' (书)."
         }
       ],
-      "explanation": "Trợ từ ngữ khí '吧' ở cuối câu mang ý đề nghị, giục giã hoặc nhượng bộ ('cậu đi đi')."
+      "explanation": "Cấu trúc: 这 + 是 + Đại từ sở hữu + Danh từ."
     },
     {
-      "id": "hsk1-b06-04",
-      "type": "anti_word_by_word",
-      "title": "Chỉ thị kết hợp lượng từ và rút gọn danh từ sau 的",
-      "vi": "Tạp chí tiếng Đức kia là của bố cậu hả?",
-      "zh": "那本德文杂志是你爸爸的吗",
-      "standardTrans": "那本德文杂志是你爸爸的吗？",
-      "pinyin": "Nà běn déwén zázhì shì nǐ bàba de ma?",
-      "grammarPoint": "Cụm danh từ: 那 + Lượng từ (本) + Danh từ; Kết cấu chữ 的 tỉnh lược trung tâm ngữ: 是...的",
+      "id": "b06-09",
+      "type": "sentence_parsing",
+      "title": "Hỏi tên trực tiếp",
+      "vi": "Bạn tên là gì?",
+      "zh": "你叫什么名字",
+      "standardTrans": "你叫什么名字",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "grammarPoint": "Hỏi tên: S + 叫什么名字",
       "tokens": [
         {
-          "text": "Cuốn kia",
-          "hz": "那本",
-          "py": "nà běn",
-          "hv": "Na bản",
-          "role": "Chỉ thị + Lượng từ",
-          "vn": "Quyển kia, cuốn đó",
-          "radicals": "那 = Kia; 本 = Bộ mộc 木 + nét ngang chỉ gốc"
-        },
-        {
-          "text": "Tạp chí tiếng Đức",
-          "hz": "德文杂志",
-          "py": "déwén zázhì",
-          "hv": "Đức văn tạp chí",
-          "role": "Trung tâm ngữ",
-          "vn": "Tạp chí tiếng Đức",
-          "radicals": "德 = Bộ xích 彳 + chữ thập 十 + tứ 四 + nhất 一 + tâm 心; 文 = Văn"
-        },
-        {
-          "text": "Của bố cậu",
-          "hz": "你爸爸的",
-          "py": "nǐ bàba de",
-          "hv": "Nhĩ bá bá đích",
-          "role": "Cụm chữ 的 biểu thị sở hữu",
-          "vn": "Của bố bạn (lược bỏ tạp chí)",
-          "radicals": "爸 = Bộ phụ 父 + chữ ba 巴"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "那本德文杂志", "tag": "Chủ ngữ (Chỉ thị + Lượng + Danh)" },
-        { "id": "t2", "text": "是你爸爸的", "tag": "Vị ngữ sở hữu" },
-        { "id": "t3", "text": "吗", "tag": "Trợ từ nghi vấn" },
-        { "id": "t4", "text": "那德文杂志", "tag": "Bẫy thiếu lượng từ" },
-        { "id": "t5", "text": "是你爸爸", "tag": "Bẫy thiếu chữ 的" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["那本德文杂志", "是你爸爸的", "吗"],
-      "wordBankPool": ["那本德文杂志", "是你爸爸的", "吗", "那德文杂志", "是你爸爸", "爸爸你的"],
-      "traps": [
-        {
-          "pattern": "那德文杂志",
-          "msg": "Lỗi thiếu lượng từ: Khi chỉ định một cuốn cụ thể ('kia/này'), bắt buộc phải chèn lượng từ '本' vào giữa ('那本德文杂志')."
-        },
-        {
-          "pattern": "是你爸爸吗",
-          "msg": "Lỗi dịch nghĩa nghiêm trọng: Thiếu chữ '的' sẽ biến câu thành 'Tạp chí kia là bố cậu hả?'. Bắt buộc phải có chữ 的 ('你爸爸的') để mang nghĩa 'của bố cậu'."
-        }
-      ],
-      "explanation": "Kết cấu chữ 的 đứng sau danh từ nhân thân '你爸爸的' giúp thay thế cho việc lặp lại cả cụm '你爸爸的德文杂志'."
-    },
-    {
-      "id": "hsk1-b06-05",
-      "type": "anti_word_by_word",
-      "title": "Hỏi thể loại bằng cấu trúc 是什么 + Danh từ",
-      "vi": "Tạp chí của cậu là tạp chí gì vậy?",
-      "zh": "你的杂志是什么杂志",
-      "standardTrans": "你的杂志是什么杂志？",
-      "pinyin": "Nǐ de zázhì shì shénme zázhì?",
-      "grammarPoint": "Định ngữ nghi vấn: 是 + 什么 + Danh từ? (Theo gợi ý trong ngoặc đơn đề bài trang 94).",
-      "tokens": [
-        {
-          "text": "Tạp chí của cậu",
-          "hz": "你的杂志",
-          "py": "nǐ de zázhì",
-          "hv": "Nhĩ đích tạp chí",
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
           "role": "Chủ ngữ",
-          "vn": "Tạp chí của bạn",
-          "radicals": "你 = Bạn; 的 = Của; 杂志 = Tạp chí"
+          "vn": "Bạn, cậu",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Là cái gì",
-          "hz": "是什么",
-          "py": "shì shénme",
-          "hv": "Thị thập ma",
-          "role": "Hệ từ + Đại từ hỏi",
-          "vn": "Là cái gì",
-          "radicals": "是 = Là; 什 = Bộ nhân đứng 亻; 么 = Bộ phẩy 丿"
+          "text": "Gọi",
+          "hz": "叫",
+          "py": "jiào",
+          "hv": "Khiếu",
+          "role": "Động từ",
+          "vn": "Gọi, tên là",
+          "radicals": "叫 = Bộ khẩu 口 + Bộ củ 丩"
         },
         {
-          "text": "Tạp chí gì",
-          "hz": "什么杂志",
-          "py": "shénme zázhì",
-          "hv": "Thập ma tạp chí",
-          "role": "Tân ngữ nghi vấn",
-          "vn": "Tạp chí gì",
-          "radicals": "什么 = Gì; 杂志 = Tạp chí"
+          "text": "Cái gì",
+          "hz": "什么",
+          "py": "shénme",
+          "hv": "Thập ma",
+          "role": "Đại từ nghi vấn",
+          "vn": "Cái gì",
+          "radicals": "什 = Bộ nhân đứng 亻 + Bộ thập 十; 么 = Bộ phiệt 丿 + Bộ khư 厶"
+        },
+        {
+          "text": "Tên",
+          "hz": "名字",
+          "py": "míngzi",
+          "hv": "Danh tự",
+          "role": "Danh từ",
+          "vn": "Tên",
+          "radicals": "名 = Bộ tịch 夕 + Bộ khẩu 口; 字 = Bộ miên 宀 + Bộ tử 子"
         }
       ],
       "tiles": [
-        { "id": "t1", "text": "你的杂志", "tag": "Chủ ngữ" },
-        { "id": "t2", "text": "是什么杂志", "tag": "Vị ngữ hỏi thể loại" },
-        { "id": "t3", "text": "杂志什么", "tag": "Bẫy trật tự từ hỏi" },
-        { "id": "t4", "text": "是什么杂志吗", "tag": "Bẫy thừa 吗" }
+        { "id": "t2", "text": "叫", "tag": "Động từ" },
+        { "id": "t4", "text": "名字", "tag": "Danh từ" },
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "谁", "tag": "Bẫy nghi vấn" },
+        { "id": "t3", "text": "什么", "tag": "Nghi vấn" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["你的杂志", "是什么杂志"],
-      "wordBankPool": ["你的杂志", "是什么杂志", "杂志什么", "是什么杂志吗", "你的什么杂志"],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你", "叫", "什么", "名字"],
+      "wordBankPool": ["你", "叫", "什么", "名字", "谁"],
       "traps": [
         {
-          "pattern": "杂志什么",
-          "msg": "Lỗi trật tự từ để hỏi: Tiếng Việt nói 'tạp chí gì', nhưng tiếng Trung bắt buộc đặt đại từ nghi vấn lên trước danh từ ('什么杂志')."
-        },
-        {
-          "pattern": "什么杂志吗",
-          "msg": "Lỗi thừa trợ từ: Đã có đại từ nghi vấn '什么' thì không được dùng '吗' ở cuối câu."
+          "pattern": "谁",
+          "msg": "Lỗi nghi vấn: '谁' dùng để hỏi 'ai'. Để hỏi tên, phải dùng '什么名字'."
         }
       ],
-      "explanation": "Đề bài có gợi ý đóng mở ngoặc rõ ràng: (是什么 + Danh từ) -> Cấu trúc bắt buộc là '你的杂志是什么杂志?'."
+      "explanation": "Cấu trúc hỏi tên cơ bản nhất: Chủ ngữ + 叫 + 什么 + 名字."
     },
     {
-      "id": "hsk1-b06-06",
+      "id": "b06-10",
       "type": "sentence_parsing",
-      "title": "Ghép câu phán đoán và câu miêu tả tính chất 很 + Tính từ",
-      "vi": "Đây là trường học của chúng tôi, trường học của chúng tôi rất lớn.",
-      "zh": "这是我们的学校我们的学校很大",
-      "standardTrans": "这是我们的学校，我们的学校很大。",
-      "pinyin": "Zhè shì wǒmen de xuéxiào, wǒmen de xuéxiào hěn dà.",
-      "grammarPoint": "Vế 1: Phán đoán (这是 + Danh từ); Vế 2: Vị ngữ tính từ (Chủ ngữ + 很大).",
+      "title": "Phủ định hành động học tập",
+      "vi": "Anh ấy không học tiếng Anh.",
+      "zh": "他不学习英语",
+      "standardTrans": "他不学习英语",
+      "pinyin": "Tā bù xuéxí yīngyǔ.",
+      "grammarPoint": "Phủ định: S + 不 + V + O",
       "tokens": [
         {
-          "text": "Trường học của chúng tôi",
-          "hz": "我们的学校",
-          "py": "wǒmen de xuéxiào",
-          "hv": "Ngã môn đích học hiệu",
-          "role": "Cụm danh từ định ngữ",
-          "vn": "Trường học của chúng tôi",
-          "radicals": "我 = Tôi; 们 = Số nhiều; 学 = Học; 校 = Hiệu/trường"
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Anh ấy, ông ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
         },
         {
-          "text": "Rất lớn",
-          "hz": "很大",
-          "py": "hěn dà",
-          "hv": "Hẩn đại",
-          "role": "Vị ngữ tính từ",
-          "vn": "Rất to lớn",
-          "radicals": "很 = Rất; 大 = To, lớn"
+          "text": "Không",
+          "hz": "不",
+          "py": "bù",
+          "hv": "Bất",
+          "role": "Phó từ phủ định",
+          "vn": "Không",
+          "radicals": "不 = Bộ nhất 一 + Bộ phiệt 丿 + Bộ cổn 丨 + Bộ chủ 丶"
+        },
+        {
+          "text": "Học tập",
+          "hz": "学习",
+          "py": "xuéxí",
+          "hv": "Học tập",
+          "role": "Động từ",
+          "vn": "Học, học tập",
+          "radicals": "学 = Bộ miên 宀 + Bộ tử 子; 习 = Bộ ất 乙 + Bộ nhị 二"
+        },
+        {
+          "text": "Tiếng Anh",
+          "hz": "英语",
+          "py": "yīngyǔ",
+          "hv": "Anh ngữ",
+          "role": "Tân ngữ",
+          "vn": "Tiếng Anh",
+          "radicals": "英 = Bộ thảo 艹 + Bộ ương 央; 语 = Bộ ngôn 讠 + Bộ ngũ 五 + Bộ khẩu 口"
         }
       ],
       "tiles": [
-        { "id": "t1", "text": "这是我们的学校", "tag": "Vế 1 (Phán đoán)" },
-        { "id": "t2", "text": "我们的学校很大", "tag": "Vế 2 (Miêu tả)" },
-        { "id": "t3", "text": "学校的我们", "tag": "Bẫy định ngữ" },
-        { "id": "t4", "text": "学校是很大", "tag": "Bẫy thừa 是" }
+        { "id": "t5", "text": "汉语", "tag": "Bẫy môn học" },
+        { "id": "t2", "text": "不", "tag": "Phủ định" },
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "英语", "tag": "Tân ngữ" },
+        { "id": "t3", "text": "学习", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["这是我们的学校", "我们的学校很大"],
-      "wordBankPool": ["这是我们的学校", "我们的学校很大", "学校的我们", "学校是很大", "这是学校我们"],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["他", "不", "学习", "英语"],
+      "wordBankPool": ["他", "不", "学习", "英语", "汉语"],
       "traps": [
         {
-          "pattern": "学校是很大",
-          "msg": "Lỗi ngữ pháp vị ngữ tính từ: Trước '大' chỉ cần phó từ mức độ '很', tuyệt đối không thêm '是' theo thói quen dịch từ 'là' trong tiếng Việt."
+          "pattern": "汉语",
+          "msg": "Lỗi ngữ cảnh: Đề bài nói không học 'tiếng Anh' (英语), không phải 'tiếng Trung' (汉语)."
         }
       ],
-      "explanation": "Câu ghép song song: Vế đầu giới thiệu sự vật (这是...), vế sau miêu tả đặc điểm kích thước (很大)."
-    },
-    {
-      "id": "hsk1-b06-07",
-      "type": "anti_word_by_word",
-      "title": "Đối sánh độ khó giữa phát âm và chữ Hán",
-      "vi": "Phát âm tiếng Trung không khó lắm, chữ Hán rất khó.",
-      "zh": "汉语的发音不太难汉字很难",
-      "standardTrans": "汉语的发音不太难，汉字很难。",
-      "pinyin": "Hànyǔ de fāyīn bú tài nán, hànzì hěn nán.",
-      "grammarPoint": "Định ngữ quan hệ thuộc tính: 汉语的发音; Đối chiếu phủ định 不太难 với khẳng định 很难.",
-      "tokens": [
-        {
-          "text": "Phát âm tiếng Trung",
-          "hz": "汉语的发音",
-          "py": "hànyǔ de fāyīn",
-          "hv": "Hán ngữ đích phát âm",
-          "role": "Chủ ngữ vế 1",
-          "vn": "Phát âm của tiếng Hán",
-          "radicals": "发 = Bộ bát 癶/nét phẩy; 音 = Bộ âm 音"
-        },
-        {
-          "text": "Không khó lắm",
-          "hz": "不太难",
-          "py": "bú tài nán",
-          "hv": "Bất thái nan",
-          "role": "Vị ngữ 1",
-          "vn": "Không khó lắm",
-          "radicals": "不 = Bất; 太 = Thái; 难 = Nan (khó)"
-        },
-        {
-          "text": "Chữ Hán",
-          "hz": "汉字",
-          "py": "hànzì",
-          "hv": "Hán tự",
-          "role": "Chủ ngữ vế 2",
-          "vn": "Chữ Hán",
-          "radicals": "汉 = Bộ chấm thủy 氵; 字 = Bộ miên 宀 + bộ tử 子"
-        },
-        {
-          "text": "Rất khó",
-          "hz": "很难",
-          "py": "hěn nán",
-          "hv": "Hẩn nan",
-          "role": "Vị ngữ 2",
-          "vn": "Rất khó",
-          "radicals": "很 = Rất; 难 = Khó"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "汉语的发音", "tag": "Chủ ngữ 1" },
-        { "id": "t2", "text": "不太难", "tag": "Vị ngữ 1" },
-        { "id": "t3", "text": "汉字很难", "tag": "Vế đối lập 2" },
-        { "id": "t4", "text": "发音汉语", "tag": "Bẫy trật tự định ngữ" },
-        { "id": "t5", "text": "不难太", "tag": "Bẫy phó từ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["汉语的发音", "不太难", "汉字很难"],
-      "wordBankPool": ["汉语的发音", "不太难", "汉字很难", "发音汉语", "不难太", "汉字是不太难"],
-      "traps": [
-        {
-          "pattern": "发音汉语",
-          "msg": "Lỗi định ngữ: 'Phát âm tiếng Trung' thì tiếng Trung là phạm vi quy định, phải đứng trước: '汉语的发音'."
-        },
-        {
-          "pattern": "不难太",
-          "msg": "Lỗi vị trí phó từ: Phó từ mức độ '不太' (không... lắm) phải đứng TRƯỚC tính từ '难'."
-        }
-      ],
-      "explanation": "Hai vế câu đối lập tính chất rất điển hình: S1 + 不太 + Adj, S2 + 很 + Adj."
-    },
-    {
-      "id": "hsk1-b06-08",
-      "type": "sentence_parsing",
-      "title": "Tạp chí tiếng Hàn của thầy giáo Vương",
-      "vi": "Đây là tạp chí tiếng Hàn của thầy giáo Vương.",
-      "zh": "这是王老师的韩文杂志",
-      "standardTrans": "这是王老师的韩文杂志。",
-      "pinyin": "Zhè shì Wáng lǎoshī de hánwén zázhì.",
-      "grammarPoint": "Cụm danh từ định ngữ: 王老师的 (sở hữu) + 韩文杂志 (thể loại).",
-      "tokens": [
-        {
-          "text": "Tiếng Hàn / Hàn văn",
-          "hz": "韩文",
-          "py": "hánwén",
-          "hv": "Hàn văn",
-          "role": "Định ngữ phân loại",
-          "vn": "Tiếng Hàn Quốc (văn viết)",
-          "radicals": "韩 = Bộ vi 韦; 文 = Bộ văn 文"
-        },
-        {
-          "text": "Tạp chí tiếng Hàn",
-          "hz": "韩文杂志",
-          "py": "hánwén zázhì",
-          "hv": "Hàn văn tạp chí",
-          "role": "Trung tâm ngữ",
-          "vn": "Tạp chí tiếng Hàn",
-          "radicals": "韩 = Hàn; 文 = Văn; 杂 = Tạp; 志 = Chí"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "这是", "tag": "Chủ vị phán đoán" },
-        { "id": "t2", "text": "王老师的", "tag": "Sở hữu" },
-        { "id": "t3", "text": "韩文杂志", "tag": "Trung tâm ngữ" },
-        { "id": "t4", "text": "中文杂志", "tag": "Bẫy nhầm ngôn ngữ" },
-        { "id": "t5", "text": "韩文杂志的王老师", "tag": "Bẫy đảo ngữ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这是", "王老师的", "韩文杂志"],
-      "wordBankPool": ["这是", "王老师的", "韩文杂志", "中文杂志", "韩文杂志的王老师", "老师王"],
-      "traps": [
-        {
-          "pattern": "韩文杂志的王老师",
-          "msg": "Lỗi trật tự định ngữ: Phải đặt người sở hữu lên trước vật sở hữu: '王老师的韩文杂志'."
-        }
-      ],
-      "explanation": "Cấu trúc tương đồng câu 2, thay thế ngôn ngữ tiếng Anh (英文) bằng tiếng Hàn (韩文)."
-    },
-    {
-      "id": "hsk1-b06-09",
-      "type": "anti_word_by_word",
-      "title": "Hội thoại hỏi danh tính đại từ 谁 và giới thiệu bạn bè",
-      "vi": "A: Mary, cậu ấy là ai vậy? B: Cậu ấy là Trương Đông, là bạn của tớ.",
-      "zh": "玛丽他是谁他是张东是我的朋友",
-      "standardTrans": "A: 玛丽，他是谁？\nB: 他是张东，是我的朋友。",
-      "pinyin": "A: Mǎlì, tā shì shéi?\nB: Tā shì Zhāng Dōng, shì wǒ de péngyou.",
-      "grammarPoint": "Câu hỏi danh tính: 他是谁; Liệt kê phán đoán đồng vị: 是 [Tên riêng], 是 [Mối quan hệ].",
-      "tokens": [
-        {
-          "text": "Mary",
-          "hz": "玛丽",
-          "py": "Mǎlì",
-          "hv": "Mã lệ",
-          "role": "Hô ngữ",
-          "vn": "Tên riêng Mary",
-          "radicals": "玛 = Bộ ngọc 王 + chữ mã 马; 丽 = Bộ nhất 一"
-        },
-        {
-          "text": "Là ai",
-          "hz": "是谁",
-          "py": "shì shéi",
-          "hv": "Thị thùy",
-          "role": "Vị ngữ nghi vấn",
-          "vn": "Là ai",
-          "radicals": "谁 = Bộ ngôn 讠 + chữ truy 隹"
-        },
-        {
-          "text": "Trương Đông",
-          "hz": "张东",
-          "py": "Zhāng Dōng",
-          "hv": "Trương Đông",
-          "role": "Tên riêng",
-          "vn": "Trương Đông",
-          "radicals": "张 = Bộ cung 弓 + chữ trường 长; 东 = Bộ nhất 一 + bộ tiểu 小"
-        },
-        {
-          "text": "Bạn của tớ",
-          "hz": "我的朋友",
-          "py": "wǒ de péngyou",
-          "hv": "Ngã đích bằng hữu",
-          "role": "Cụm danh từ quan hệ",
-          "vn": "Bạn của tôi",
-          "radicals": "朋 = Hai bộ nguyệt 月; 友 = Bộ hựu 又"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "玛丽他是谁", "tag": "Vế hỏi A" },
-        { "id": "t2", "text": "他是张东", "tag": "Vế đáp B1 (Tên)" },
-        { "id": "t3", "text": "是我的朋友", "tag": "Vế đáp B2 (Quan hệ)" },
-        { "id": "t4", "text": "谁是他", "tag": "Bẫy trật tự hỏi 谁" },
-        { "id": "t5", "text": "朋友的我", "tag": "Bẫy sở hữu" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["玛丽", "他是谁", "他是张东", "是我的朋友"],
-      "wordBankPool": ["玛丽他是谁", "他是张东", "是我的朋友", "谁是他", "朋友的我", "玛丽谁是他"],
-      "traps": [
-        {
-          "pattern": "谁是他",
-          "msg": "Lỗi cấu trúc câu hỏi: Cấu trúc hỏi 'Cậu ấy là ai' trong tiếng Trung giữ nguyên vị ngữ phía sau: '他是谁' (Ai = Tân ngữ), không nói '谁是他'."
-        }
-      ],
-      "explanation": "Đại từ '谁' có 2 cách đọc phiên âm chuẩn: 'shéi' (khẩu ngữ phổ biến) và 'shuí' (văn đọc/văn viết)."
-    },
-    {
-      "id": "hsk1-b06-10",
-      "type": "sentence_parsing",
-      "title": "Nói về quốc tịch của bố mẹ với từ 人",
-      "vi": "Bố tớ là người Mỹ, mẹ tớ là người Việt Nam.",
-      "zh": "我爸爸是美国人我妈妈是越南人",
-      "standardTrans": "我爸爸是美国人，我妈妈是越南人。",
-      "pinyin": "Wǒ bàba shì Měiguó rén, wǒ māma shì Yuènán rén.",
-      "grammarPoint": "Quốc tịch = Tên quốc gia + 人; Lược bỏ 的 sau quan hệ ruột thịt thân cận.",
-      "tokens": [
-        {
-          "text": "Bố tớ",
-          "hz": "我爸爸",
-          "py": "wǒ bàba",
-          "hv": "Ngã bá bá",
-          "role": "Chủ ngữ vế 1",
-          "vn": "Bố tôi",
-          "radicals": "爸 = Bộ phụ 父 + chữ ba 巴"
-        },
-        {
-          "text": "Người Mỹ",
-          "hz": "美国人",
-          "py": "Měiguó rén",
-          "hv": "Mỹ quốc nhân",
-          "role": "Tân ngữ quốc tịch 1",
-          "vn": "Người nước Mỹ",
-          "radicals": "美 = Bộ dương 羊 + bộ đại 大; 国 = Bộ vi 囗 + chữ ngọc 玉; 人 = Người"
-        },
-        {
-          "text": "Mẹ tớ",
-          "hz": "我妈妈",
-          "py": "wǒ māma",
-          "hv": "Ngã ma ma",
-          "role": "Chủ ngữ vế 2",
-          "vn": "Mẹ tôi",
-          "radicals": "妈 = Bộ nữ 女 + chữ mã 马"
-        },
-        {
-          "text": "Người Việt Nam",
-          "hz": "越南人",
-          "py": "Yuènán rén",
-          "hv": "Việt Nam nhân",
-          "role": "Tân ngữ quốc tịch 2",
-          "vn": "Người Việt Nam",
-          "radicals": "越 = Bộ tẩu 走 + chữ việt 戉; 南 = Bộ thập 十; 人 = Người"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "我爸爸是美国人", "tag": "Vế bố" },
-        { "id": "t2", "text": "我妈妈是越南人", "tag": "Vế mẹ" },
-        { "id": "t3", "text": "美国的人", "tag": "Bẫy thừa chữ 的" },
-        { "id": "t4", "text": "人美国", "tag": "Bẫy trật tự quốc tịch" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["我爸爸是美国人", "我妈妈是越南人"],
-      "wordBankPool": ["我爸爸是美国人", "我妈妈是越南人", "美国的人", "人美国", "我的爸爸", "我的妈妈"],
-      "traps": [
-        {
-          "pattern": "美国的人",
-          "msg": "Lỗi biểu đạt quốc tịch: Tên quốc tịch trong tiếng Trung đi liền với chữ '人' ('美国人', '越南人'), không chèn '的' vào giữa."
-        },
-        {
-          "pattern": "人美国",
-          "msg": "Lỗi dịch xuôi: 'Người Mỹ' phải đưa tên quốc gia lên trước chữ người ('美国人')."
-        }
-      ],
-      "explanation": "Cấu trúc quốc tịch: [Quốc gia] + 人. Quan hệ ruột thịt thân thiết trong nhà thường lược bỏ chữ '的' (我爸爸, 我妈妈)."
-    },
-    {
-      "id": "hsk1-b06-11",
-      "type": "anti_word_by_word",
-      "title": "Hỏi chủ sở hữu với kết cấu chữ 的 (谁的)",
-      "vi": "A: Cuốn sách tiếng Trung này là của ai vậy? B: Là của tớ.",
-      "zh": "这本中文书是谁的是我的",
-      "standardTrans": "A: 这本中文书是谁的？\nB: 是我的。",
-      "pinyin": "A: Zhè běn zhōngwén shū shì shéi de?\nB: Shì wǒ de.",
-      "grammarPoint": "Chỉ thị + Lượng từ + Danh từ (这本中文书); Cụm chữ 的 hỏi sở hữu (是谁的) và đáp ngắn gọn (是我的).",
-      "tokens": [
-        {
-          "text": "Cuốn sách tiếng Trung này",
-          "hz": "这本中文书",
-          "py": "zhè běn zhōngwén shū",
-          "hv": "Giá bản Trung văn thư",
-          "role": "Chủ ngữ đầy đủ",
-          "vn": "Quyển sách tiếng Trung này",
-          "radicals": "这 = Này; 本 = Cuốn/quyển; 中 = Bộ khôn 丨 + khẩu 口; 文 = Văn; 书 = Thư (sách)"
-        },
-        {
-          "text": "Là của ai",
-          "hz": "是谁的",
-          "py": "shì shéi de",
-          "hv": "Thị thùy đích",
-          "role": "Vị ngữ nghi vấn sở hữu",
-          "vn": "Là của ai (đã lược bỏ trung tâm ngữ 'thư')",
-          "radicals": "是 = Là; 谁 = Ai; 的 = Của"
-        },
-        {
-          "text": "Là của tớ",
-          "hz": "是我的",
-          "py": "shì wǒ de",
-          "hv": "Thị ngã đích",
-          "role": "Vị ngữ đáp",
-          "vn": "Là của tôi",
-          "radicals": "是 = Là; 我 = Tôi; 的 = Của"
-        }
-      ],
-      "tiles": [
-        { "id": "t1", "text": "这本中文书", "tag": "Chủ ngữ (Chỉ + Lượng + Danh)" },
-        { "id": "t2", "text": "是谁的", "tag": "Hỏi sở hữu A" },
-        { "id": "t3", "text": "是我的", "tag": "Trả lời sở hữu B" },
-        { "id": "t4", "text": "这中文书", "tag": "Bẫy thiếu lượng từ" },
-        { "id": "t5", "text": "是谁", "tag": "Bẫy thiếu chữ 的" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这本中文书", "是谁的", "是我的"],
-      "wordBankPool": ["这本中文书", "是谁的", "是我的", "这中文书", "是谁", "中文书这本", "是我"],
-      "traps": [
-        {
-          "pattern": "这中文书",
-          "msg": "Lỗi thiếu lượng từ: Khi chỉ định cụ thể một quyển sách ('cuốn sách này'), bắt buộc phải có lượng từ '本' ('这本中文书')."
-        },
-        {
-          "pattern": "是谁是",
-          "msg": "Lỗi thiếu kết cấu chữ 的: 'Cuốn sách này là của ai' bắt buộc phải có chữ '的' ('是谁的'). Nếu chỉ nói '是谁' câu sẽ biến thành nghĩa vô lý 'Cuốn sách này là ai?'."
-        }
-      ],
-      "explanation": "Kết cấu chữ 的 độc lập: '谁的' = '谁的书', '我的' = '我的书'. Trong giao tiếp thực tế, khi đối tượng đã rõ ràng ở câu hỏi, câu trả lời chỉ cần nói '是我的'[cite: 92]."
+      "explanation": "Cấu trúc phủ định: Chủ ngữ + 不 + Động từ + Tân ngữ."
     }
   ]
 }

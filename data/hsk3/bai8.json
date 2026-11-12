@@ -1,0 +1,597 @@
+{
+  "lessonId": "b08",
+  "lessonTitle": "第8课: 我的眼镜摔坏了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "摔 vs 掉",
+        "py": "shuāi vs diào",
+        "note": "摔 là động tác rơi mạnh, ngã quỵ hoặc ném mạnh xuống gây đổ vỡ (摔坏, 摔破, 摔倒); 掉 là rơi rớt tự nhiên từ trên xuống dưới hoặc đánh rơi, rụng mất (掉在地上, 掉眼泪)."
+      },
+      {
+        "word": "发生 vs 造成",
+        "py": "fāshēng vs zàochéng",
+        "note": "发生 là tự phát sinh, xảy ra sự việc (thường là chuyện bất ngờ, tiêu cực: 发生事故, 发生变化); 造成 là động từ mang nghĩa gây ra, dẫn đến kết cục tiêu cực nào đó (造成交通拥挤, 造成困难)."
+      },
+      {
+        "word": "原来 vs 本来",
+        "py": "yuánlái vs běnlái",
+        "note": "原来 chỉ sự phát hiện ra chân tướng sự thật mà trước đó chưa biết (hóa ra là...: 原来是你); 本来 nhấn mạnh tình trạng ban đầu vốn dĩ theo lẽ thường (vốn dĩ: 本来应该)."
+      }
+    ],
+    "grammarTips": [
+      "Bổ ngữ kết quả biểu thị trạng thái hư tổn/kết thúc: V + 破 / 坏 / 走 / 掉 / 完 / 好 (Ví dụ: 摔破, 摔坏, 开走, 关上).",
+      "Bổ ngữ xu hướng kép: V + 上来 / 上去 / 出来 / 出去 (Ví dụ: 闭上, 认出来, 拿出来).",
+      "Cấu trúc so sánh tiến triển thời gian: 一年比一年... / 一天比一天... (Mỗi năm một..., ngày càng...).",
+      "Cấu trúc suýt nữa xảy ra việc ngoài ý muốn: 差点儿 + (没) + V (Cả hai dạng khẳng định và phủ định đều chỉ việc suýt nữa xảy ra nhưng thực tế may mắn chưa xảy ra)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b08-01",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ kết quả nơi chốn 在 và bổ ngữ kết quả 破",
+      "vi": "Kính của cậu ấy rơi xuống đất vỡ rồi.",
+      "zh": "他的眼镜掉在地上摔破了",
+      "standardTrans": "他的眼镜掉在地上摔破了",
+      "pinyin": "Tā de yǎnjìng diào zài dìshang shuāi pò le",
+      "grammarPoint": "Chuỗi hành động liên tiếp kết hợp bổ ngữ kết quả: 掉在地上 + 摔破了",
+      "tokens": [
+        {
+          "text": "rơi xuống đất",
+          "hz": "掉在地上",
+          "py": "diào zài dìshang",
+          "hv": "điệu tại địa thượng",
+          "role": "Động từ + Bổ ngữ kết quả nơi chốn",
+          "vn": "rơi rớt xuống mặt đất",
+          "radicals": "掉 = Bộ thủ 扌 + chữ trác 卓; 地 = Bộ thổ 土"
+        },
+        {
+          "text": "rơi vỡ rồi",
+          "hz": "摔破了",
+          "py": "shuāi pò le",
+          "hv": "suất phá liễu",
+          "role": "Động từ + Bổ ngữ kết quả 破",
+          "vn": "rơi nát, vỡ tan",
+          "radicals": "摔 = Bộ thủ 扌 + chữ suất 率; 破 = Bộ thạch 石 + chữ bì 皮"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "摔破了", "tag": "Động bổ" },
+        { "id": "t2", "text": "他的眼镜", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "掉在地上", "tag": "Động bổ nơi chốn" },
+        { "id": "t4", "text": "掉地上摔", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1"],
+      "requiredKeywordsZh": ["他的眼镜", "掉在地上", "摔破了"],
+      "wordBankPool": ["摔破了", "他的眼镜", "掉地上摔", "掉在地上"],
+      "traps": [
+        {
+          "pattern": "掉地上摔",
+          "msg": "Lỗi thiếu giới từ bổ ngữ kết quả: Hành động rơi xuống vị trí bề mặt đất bắt buộc dùng bổ ngữ kết quả '掉在地上', không được bỏ chữ '在'."
+        },
+        {
+          "pattern": "摔破掉在",
+          "msg": "Lỗi trật tự logic: Kính phải rơi xuống đất trước (掉在地上) rồi mới vỡ (摔破了), không đảo ngược thứ tự thời gian."
+        }
+      ],
+      "explanation": "Câu trần thuật chuỗi hành động nguyên nhân - kết quả. Kính rơi chạm đất (掉在地上) dẫn đến kết quả vỡ nát (摔破了)."
+    },
+    {
+      "id": "b08-02",
+      "type": "sentence_parsing",
+      "title": "Chủ ngữ cụm từ song song và động từ 造成",
+      "vi": "Người đông xe nhiều là một nguyên nhân dẫn đến giao thông chen chúc.",
+      "zh": "人多车多是造成交通拥挤的一个原因",
+      "standardTrans": "人多车多是造成交通拥挤的一个原因",
+      "pinyin": "Rén duō chē duō shì zàochéng jiāotōng yōngjǐ de yí gè yuányīn",
+      "grammarPoint": "Cụm chủ vị làm chủ ngữ: 人多车多 + 是 + Cụm định ngữ + 原因",
+      "tokens": [
+        {
+          "text": "gây ra, dẫn đến",
+          "hz": "造成",
+          "py": "zàochéng",
+          "hv": "tạo thành",
+          "role": "Động từ vị ngữ trong định ngữ",
+          "vn": "gây nên, dẫn đến hậu quả",
+          "radicals": "造 = Bộ quai xước 辶 + chữ cáo 告; 成 = Bộ qua 戈"
+        },
+        {
+          "text": "giao thông chen chúc",
+          "hz": "交通拥挤",
+          "py": "jiāotōng yōngjǐ",
+          "hv": "giao thông ủng tê",
+          "role": "Tân ngữ của 造成",
+          "vn": "giao thông ùn tắc, chen chúc",
+          "radicals": "交 = Bộ đầu 亠; 通 = Bộ quai xước 辶; 拥 = Bộ thủ 扌; 挤 = Bộ thủ 扌"
+        },
+        {
+          "text": "nguyên nhân",
+          "hz": "原因",
+          "py": "yuányīn",
+          "hv": "nguyên nhân",
+          "role": "Trung tâm ngữ tân ngữ",
+          "vn": "lý do, nguyên cớ",
+          "radicals": "原 = Bộ hán 厂; 因 = Bộ vi 囗"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "一个原因", "tag": "Trung tâm ngữ" },
+        { "id": "t2", "text": "人多车多", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "是造成", "tag": "Hệ từ + Động từ" },
+        { "id": "t4", "text": "交通拥挤的", "tag": "Định ngữ" },
+        { "id": "t5", "text": "发生", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t4", "t1"],
+      "requiredKeywordsZh": ["人多车多", "是造成", "交通拥挤", "原因"],
+      "wordBankPool": ["交通拥挤的", "人多车多", "发生", "是造成", "一个原因"],
+      "traps": [
+        {
+          "pattern": "发生交通拥挤",
+          "msg": "Lỗi kết hợp từ: Gây ra tình trạng ùn tắc giao thông dùng động từ '造成' (造成交通拥挤), không dùng '发生' (chỉ dùng cho 发生事故)."
+        },
+        {
+          "pattern": "造成的一个原因",
+          "msg": "Lỗi ngắt cụm định ngữ: Cụm '交通拥挤' là tân ngữ của '造成', toàn bộ cụm '造成交通拥挤的' bổ nghĩa cho '一个原因'."
+        }
+      ],
+      "explanation": "Cụm tính từ song song 人多车多 làm chủ ngữ phán đoán. Vế vị ngữ dùng cấu trúc 是……的一个原因, bên trong định ngữ chứa cụm động tân 造成交通拥挤."
+    },
+    {
+      "id": "b08-03",
+      "type": "sentence_parsing",
+      "title": "Phó từ tần suất 常常 và động từ 发生",
+      "vi": "Nơi đó thường xuyên xảy ra tai nạn giao thông.",
+      "zh": "那个地方常常发生交通事故",
+      "standardTrans": "那个地方常常发生交通事故",
+      "pinyin": "Nà ge dìfang chángcháng fāshēng jiāotōng shìgù",
+      "grammarPoint": "Chủ ngữ nơi chốn + 常常 + 发生 + Tân ngữ sự kiện",
+      "tokens": [
+        {
+          "text": "xảy ra",
+          "hz": "发生",
+          "py": "fāshēng",
+          "hv": "phát sinh",
+          "role": "Động từ vị ngữ",
+          "vn": "xảy ra, xuất hiện sự việc",
+          "radicals": "发 = Bộ bát 癶; 生 = Bộ sinh 生"
+        },
+        {
+          "text": "tai nạn giao thông",
+          "hz": "交通事故",
+          "py": "jiāotōng shìgù",
+          "hv": "giao thông sự cố",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "tai nạn, sự cố giao thông",
+          "radicals": "事 = Bộ quyết 亅; 故 = Bộ phộc 攵"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "交通事故", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "那个地方", "tag": "Chủ ngữ nơi chốn" },
+        { "id": "t3", "text": "常常发生", "tag": "Trạng ngữ + Động từ" },
+        { "id": "t4", "text": "造成", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1"],
+      "requiredKeywordsZh": ["那个地方", "常常发生", "交通事故"],
+      "wordBankPool": ["造成", "那个地方", "交通事故", "常常发生"],
+      "traps": [
+        {
+          "pattern": "造成交通事故",
+          "msg": "Lỗi dùng sai động từ: Câu trần thuật tai nạn tự xảy ra ở một địa điểm dùng động từ '发生' (发生交通事故), không dùng '造成' (gây ra)."
+        },
+        {
+          "pattern": "常常在那个地方",
+          "msg": "Lỗi trật tự từ: '那个地方' đóng vai trò chủ ngữ nơi chốn đứng đầu câu, không đưa giới từ '在' xen vào giữa."
+        }
+      ],
+      "explanation": "Câu vị ngữ động từ với chủ ngữ là từ chỉ nơi chốn 那个地方. Phó từ tần suất 常常 đứng trước động từ 发生 để nói về việc tai nạn giao thông xảy ra liên tục."
+    },
+    {
+      "id": "b08-04",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 上 biểu thị sự khép lại đóng kín",
+      "vi": "Sao mắt cậu trong mấy tấm ảnh này đều nhắm hết vào vậy?",
+      "zh": "这几张照片上你的眼睛怎么都闭上的",
+      "standardTrans": "这几张照片上你的眼睛怎么都闭上的",
+      "pinyin": "Zhè jǐ zhāng zhàopiàn shang nǐ de yǎnjing zěnme dōu bì shang de",
+      "grammarPoint": "Bổ ngữ kết quả: 闭上 (nhắm mắt lại); Cấu trúc nhấn mạnh trạng thái: 怎么都……的",
+      "tokens": [
+        {
+          "text": "trên mấy tấm ảnh này",
+          "hz": "这几张照片上",
+          "py": "zhè jǐ zhāng zhàopiàn shang",
+          "hv": "giá kỷ trương chiếu phiến thượng",
+          "role": "Trạng ngữ phạm vi nơi chốn",
+          "vn": "trong mấy bức hình này",
+          "radicals": "张 = Bộ cung 弓; 照 = Bộ hỏa 灬; 片 = Bộ phiến 片"
+        },
+        {
+          "text": "nhắm lại",
+          "hz": "闭上",
+          "py": "bì shang",
+          "hv": "bế thượng",
+          "role": "Động từ + Bổ ngữ kết quả 上",
+          "vn": "nhắm nghiền lại, khép chặt vào",
+          "radicals": "闭 = Bộ môn 门 + chữ tài 才; 上 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "这几张照片上", "tag": "Trạng ngữ" },
+        { "id": "t2", "text": "闭上的", "tag": "Động bổ + 的" },
+        { "id": "t3", "text": "你的眼睛", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "怎么都", "tag": "Trạng từ nghi vấn" },
+        { "id": "t5", "text": "关上的", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t4", "t2"],
+      "requiredKeywordsZh": ["照片上", "眼睛", "怎么都", "闭上的"],
+      "wordBankPool": ["闭上的", "你的眼睛", "这几张照片上", "关上的", "怎么都"],
+      "traps": [
+        {
+          "pattern": "关上眼睛",
+          "msg": "Lỗi kết hợp từ ngữ: Động tác nhắm mắt tiếng Hán dùng '闭上眼睛', không dùng '关上' (chỉ dùng cho đóng cửa, tắt đèn)."
+        },
+        {
+          "pattern": "都闭在",
+          "msg": "Lỗi bổ ngữ: Khép kín hai mí mắt lại với nhau dùng bổ ngữ kết quả '上' (闭上), không dùng '在'."
+        }
+      ],
+      "explanation": "Bổ ngữ kết quả 上 đứng sau động từ 闭 biểu thị hai bộ phận tiếp xúc khép kín lại với nhau (闭上: nhắm mắt). Kết hợp cấu trúc nhấn mạnh 怎么都……的 thể hiện sự ngạc nhiên."
+    },
+    {
+      "id": "b08-05",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng 走 kết hợp phó từ 刚",
+      "vi": "Thật đen đủi, lúc chúng tôi đến bến xe thì xe vừa chạy.",
+      "zh": "真倒霉我们到车站时车刚开走",
+      "standardTrans": "真倒霉我们到车站时车刚开走",
+      "pinyin": "Zhēn dǎoméi, wǒmen dào chēzhàn shí, chē gāng kāi zǒu",
+      "grammarPoint": "Cảm thán: 真倒霉; Mốc thời gian: ……时; Bổ ngữ xu hướng: 开走 (chạy đi mất)",
+      "tokens": [
+        {
+          "text": "thật xui xẻo",
+          "hz": "真倒霉",
+          "py": "zhēn dǎoméi",
+          "hv": "chân đảo mốc",
+          "role": "Thán từ cảm thán",
+          "vn": "thật đen đủi, xui xẻo",
+          "radicals": "真 = Bộ mục 目; 倒 = Bộ nhân đứng 亻; 霉 = Bộ vũ 雨"
+        },
+        {
+          "text": "lúc đến bến xe",
+          "hz": "到车站时",
+          "py": "dào chēzhàn shí",
+          "hv": "đáo xa trạm thời",
+          "role": "Trạng ngữ chỉ thời gian",
+          "vn": "khi tới trạm xe",
+          "radicals": "车 = Bộ xa 车; 站 = Bộ lập 立; 时 = Bộ nhật 日"
+        },
+        {
+          "text": "vừa chạy đi mất",
+          "hz": "刚开走",
+          "py": "gāng kāi zǒu",
+          "hv": "cương khai tẩu",
+          "role": "Phó từ + Động từ + Bổ ngữ xu hướng 走",
+          "vn": "vừa mới lăn bánh rời đi",
+          "radicals": "刚 = Bộ đao 刂; 开 = Bộ củng 廾; 走 = Bộ tẩu 走"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "车刚开走", "tag": "Vị ngữ" },
+        { "id": "t2", "text": "我们到车站时", "tag": "Thời gian" },
+        { "id": "t3", "text": "真倒霉", "tag": "Cảm thán" },
+        { "id": "t4", "text": "走了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t2", "t1"],
+      "requiredKeywordsZh": ["真倒霉", "到车站时", "车刚开走"],
+      "wordBankPool": ["我们到车站时", "车刚开走", "走了", "真倒霉"],
+      "traps": [
+        {
+          "pattern": "刚才开走",
+          "msg": "Lỗi phân biệt 刚 và 刚才: '刚' là phó từ đứng liền trước động từ (刚开走); '刚才' là danh từ chỉ thời gian không đứng sát vị ngữ biểu thị thời điểm xe vừa rời bánh."
+        },
+        {
+          "pattern": "开走了车",
+          "msg": "Lỗi trật tự chủ vị: '车' là chủ ngữ của phân câu sau nên phải đứng trước cụm '刚开走' (车刚开走)."
+        }
+      ],
+      "explanation": "Động từ 开 kết hợp bổ ngữ xu hướng 走 biểu thị hành động rời xa khỏi vị trí người nói (xe chạy đi mất). Phó từ 刚 đứng trước 开走 diễn tả việc vừa mới xảy ra tích tắc."
+    },
+    {
+      "id": "b08-06",
+      "type": "sentence_parsing",
+      "title": "Phó từ 才 chỉ số lượng ít và bội số 两倍",
+      "vi": "Tôi nhớ hôm qua mới là 30000 đồng một cân, giá cả hôm nay là gấp đôi hôm qua.",
+      "zh": "我记得昨天才三万越南盾一公斤今天的价格是昨天的两倍",
+      "standardTrans": "我记得昨天才三万越南盾一公斤今天的价格是昨天的两倍",
+      "pinyin": "Wǒ jìde zuótiān cái sān wàn Yuènándùn yì gōngjīn, jīntiān de jiàgé shì zuótiān de liǎng bèi",
+      "grammarPoint": "Phó từ 才 nhấn mạnh số lượng ít/giá thấp; Biểu thị bội số: A + 是 + B + 的 + 两倍",
+      "tokens": [
+        {
+          "text": "mới có 30000 đồng",
+          "hz": "才三万越南盾",
+          "py": "cái sān wàn Yuènándùn",
+          "hv": "tài tam vạn Việt Nam thuẫn",
+          "role": "Phó từ + Số lượng tiền tệ",
+          "vn": "chỉ mới có ba mươi nghìn đồng",
+          "radicals": "才 = Bộ nhất 一; 越 = Bộ tẩu 走; 南 = Bộ thập 十; 盾 = Bộ mục 目"
+        },
+        {
+          "text": "giá cả",
+          "hz": "价格",
+          "py": "jiàgé",
+          "hv": "giới cách",
+          "role": "Trung tâm ngữ chủ ngữ 2",
+          "vn": "giá cả, mức giá",
+          "radicals": "价 = Bộ nhân đứng 亻; 格 = Bộ mộc 木"
+        },
+        {
+          "text": "gấp hai lần, gấp đôi",
+          "hz": "两倍",
+          "py": "liǎng bèi",
+          "hv": "lưỡng bội",
+          "role": "Bổ ngữ chỉ bội số",
+          "vn": "gấp đôi, hai lần",
+          "radicals": "两 = Bộ nhất 一; 倍 = Bộ nhân đứng 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天的价格", "tag": "Chủ ngữ 2" },
+        { "id": "t2", "text": "我记得昨天才", "tag": "Vế 1 mở đầu" },
+        { "id": "t3", "text": "是昨天的两倍", "tag": "Vị ngữ bội số" },
+        { "id": "t4", "text": "三万越南盾一公斤", "tag": "Định lượng" },
+        { "id": "t5", "text": "二倍", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t3"],
+      "requiredKeywordsZh": ["才三万", "一公斤", "价格", "两倍"],
+      "wordBankPool": ["三万越南盾一公斤", "二倍", "今天的价格", "我记得昨天才", "是昨天的两倍"],
+      "traps": [
+        {
+          "pattern": "二倍",
+          "msg": "Lỗi dùng số từ: Chỉ số lần gấp bội trong tiếng Hán bắt buộc dùng '两倍', tuyệt đối không nói '二倍'."
+        },
+        {
+          "pattern": "昨天的双倍",
+          "msg": "Lỗi khẩu ngữ: Trong cấu trúc toán học HSK so sánh bội số chuẩn mực là 'A是B的两倍'."
+        }
+      ],
+      "explanation": "Phó từ 才 đứng trước số lượng 三万 biểu thị giá hôm qua còn rất rẻ. Cấu trúc so sánh bội số A + 是 + B + 的 + 两倍 khẳng định giá hôm nay gấp 2 lần giá hôm qua."
+    },
+    {
+      "id": "b08-07",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ kết quả 好 kết hợp động từ 保证",
+      "vi": "A: Sáng mai nộp bản báo cáo này, cậu đã viết xong chưa? B: Còn thiếu một chút nữa, anh yên tâm, tôi đảm bảo nộp cho anh trước 9 giờ sáng mai.",
+      "zh": "这份报告明天上午交你写好了吗还差一点儿您放心我保证明天九点前给你",
+      "standardTrans": "这份报告明天上午交你写好了吗还差一点儿您放心我保证明天九点前给你",
+      "pinyin": "Zhè fèn bàogào míngtiān shàngwǔ jiāo, nǐ xiě hǎo le ma? Hái chà yìdiǎnr, nín fàngxīn, wǒ bǎozhèng míngtiān jiǔ diǎn qián gěi nǐ",
+      "grammarPoint": "Bổ ngữ kết quả: 写好 (hoàn tất thỏa đáng); Mốc giới hạn thời gian: ...前; Động từ cam kết: 保证",
+      "tokens": [
+        {
+          "text": "bản báo cáo này",
+          "hz": "这份报告",
+          "py": "zhè fèn bàogào",
+          "hv": "giá phần báo cáo",
+          "role": "Chủ đề câu",
+          "vn": "bản báo cáo, tập báo cáo này",
+          "radicals": "份 = Bộ nhân đứng 亻; 报 = Bộ thủ 扌; 告 = Bộ khẩu 口"
+        },
+        {
+          "text": "viết xong chưa",
+          "hz": "写好了吗",
+          "py": "xiě hǎo le ma",
+          "hv": "tả hảo liễu ma",
+          "role": "Động từ + Bổ ngữ kết quả 好 + 吗",
+          "vn": "đã soạn thảo hoàn chỉnh xong xuôi chưa",
+          "radicals": "写 = Bộ mịch 冖; 好 = Bộ nữ 女"
+        },
+        {
+          "text": "tôi đảm bảo",
+          "hz": "我保证",
+          "py": "wǒ bǎozhèng",
+          "hv": "ngã bảo chứng",
+          "role": "Chủ ngữ + Động từ cam đoan",
+          "vn": "tôi xin bảo đảm, chắc chắn",
+          "radicals": "保 = Bộ nhân đứng 亻; 证 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你写好了吗", "tag": "Câu hỏi hoàn tất" },
+        { "id": "t2", "text": "这份报告明天上午交", "tag": "Chủ đề hội thoại" },
+        { "id": "t3", "text": "还差一点儿您放心", "tag": "Vế an ủi" },
+        { "id": "t4", "text": "我保证明天九点前给你", "tag": "Lời cam kết" },
+        { "id": "t5", "text": "写完了吗", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3", "t4"],
+      "requiredKeywordsZh": ["这份报告", "写好了吗", "还差一点儿", "我保证", "前给你"],
+      "wordBankPool": ["这份报告明天上午交", "我保证明天九点前给你", "你写好了吗", "写完了吗", "还差一点儿您放心"],
+      "traps": [
+        {
+          "pattern": "写完了吗",
+          "msg": "Lỗi sắc thái bổ ngữ kết quả: '写完' chỉ là viết xong về lượng; văn cảnh công việc cần hoàn thành chu đáo chỉn chu ưu tiên dùng '写好' (写好了吗)."
+        },
+        {
+          "pattern": "保护明天",
+          "msg": "Lỗi nhầm từ vựng: Cam đoan, cam kết với người khác dùng '保证' (bảo chứng), không dùng nhầm sang '保护' (bảo vệ)."
+        }
+      ],
+      "explanation": "Bổ ngữ kết quả 好 nhấn mạnh hành vi viết báo cáo đạt chuẩn yêu cầu. Từ ngữ chỉ giới hạn thời gian 明天九点前 (trước 9 giờ ngày mai) đứng trước cụm vị ngữ 给你."
+    },
+    {
+      "id": "b08-08",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc 差点儿 kết hợp bổ ngữ xu hướng kép 出来",
+      "vi": "Hóa ra là cậu à, tớ suýt chút nữa không nhận ra.",
+      "zh": "原来是你啊我差点儿没认出来",
+      "standardTrans": "原来是你啊我差点儿没认出来",
+      "pinyin": "Yuánlái shì nǐ a, wǒ chàdiǎnr méi rèn chūlai",
+      "grammarPoint": "Phó từ phát hiện chân tướng: 原来; Cấu trúc suýt nữa: 差点儿 + 没 + V + 出来",
+      "tokens": [
+        {
+          "text": "hóa ra là cậu",
+          "hz": "原来是你",
+          "py": "yuánlái shì nǐ",
+          "hv": "nguyên lai thị nhĩ",
+          "role": "Phân câu cảm thán",
+          "vn": "hóa ra chính là cậu",
+          "radicals": "原 = Bộ hán 厂; 来 = Bộ mộc 木; 是 = Bộ nhật 日"
+        },
+        {
+          "text": "suýt chút nữa",
+          "hz": "差点儿",
+          "py": "chàdiǎnr",
+          "hv": "sai điểm nhi",
+          "role": "Trạng ngữ mức độ",
+          "vn": "suýt nữa, suýt xoa",
+          "radicals": "差 = Bộ dương 羊; 点 = Bộ hỏa 灬"
+        },
+        {
+          "text": "không nhận ra",
+          "hz": "没认出来",
+          "py": "méi rèn chūlai",
+          "hv": "một nhận xuất lai",
+          "role": "Phủ định + Động từ + Bổ ngữ xu hướng kép",
+          "vn": "không nhận diện, nhận ra được",
+          "radicals": "认 = Bộ ngôn 讠; 出 = Bộ khảm 凵; 来 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我差点儿", "tag": "Chủ ngữ + Trạng ngữ" },
+        { "id": "t2", "text": "原来是你啊", "tag": "Cảm thán" },
+        { "id": "t3", "text": "没认出来", "tag": "Động bổ phủ định" },
+        { "id": "t4", "text": "认不出来", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["原来是你", "差点儿", "没认出来"],
+      "wordBankPool": ["原来是你啊", "没认出来", "认不出来", "我差点儿"],
+      "traps": [
+        {
+          "pattern": "差点儿认不出来",
+          "msg": "Lỗi cấu trúc: Sau phó từ '差点儿' khi muốn nói suýt nữa không làm được việc gì, quy tắc chuẩn dùng dạng '差点儿没 + V' (差点儿没认出来)."
+        },
+        {
+          "pattern": "没认出来差点儿",
+          "msg": "Lỗi vị trí phó từ: '差点儿' là phó từ tu sức đứng trước cụm động từ vị ngữ, không đặt ở cuối câu như tiếng Việt."
+        }
+      ],
+      "explanation": "原来 biểu thị sự bừng hiểu nhận ra người quen. Cấu trúc 差点儿没认出来 mang nghĩa thực tế là đã nhận ra người đó (hành động nhận ra suýt nữa thì không xảy ra)."
+    },
+    {
+      "id": "b08-09",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái kết hợp trợ từ mức độ cực hạn 极了",
+      "vi": "Cậu xem, bức ảnh này chụp đẹp cực.",
+      "zh": "你看这张照片照得好极了",
+      "standardTrans": "你看这张照片照得好极了",
+      "pinyin": "Nǐ kàn, zhè zhāng zhàopiàn zhào de hǎojíle",
+      "grammarPoint": "V + 得 + Tính từ + 极了 (Đánh giá mức độ cao nhất)",
+      "tokens": [
+        {
+          "text": "bức ảnh này",
+          "hz": "这张照片",
+          "py": "zhè zhāng zhàopiàn",
+          "hv": "giá trương chiếu phiến",
+          "role": "Chủ ngữ 2",
+          "vn": "bức hình, tấm ảnh này",
+          "radicals": "张 = Bộ cung 弓; 照 = Bộ hỏa 灬; 片 = Bộ phiến 片"
+        },
+        {
+          "text": "chụp đạt mức",
+          "hz": "照得",
+          "py": "zhào de",
+          "hv": "chiếu đắc",
+          "role": "Động từ + Trợ từ kết cấu 得",
+          "vn": "chụp hình đến mức",
+          "radicals": "照 = Bộ hỏa 灬; 得 = Bộ xích 彳"
+        },
+        {
+          "text": "đẹp cực kỳ",
+          "hz": "好极了",
+          "py": "hǎojíle",
+          "hv": "hảo cực liễu",
+          "role": "Bổ ngữ mức độ",
+          "vn": "tuyệt vời, đẹp vô cùng",
+          "radicals": "好 = Bộ nữ 女; 极 = Bộ mộc 木; 了 = Bộ liễu 了"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "照得好极了", "tag": "Động bổ trạng thái" },
+        { "id": "t2", "text": "你看", "tag": "Khẩu ngữ hô ứng" },
+        { "id": "t3", "text": "这张照片", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "照的好极了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1"],
+      "requiredKeywordsZh": ["你看", "这张照片", "照得", "好极了"],
+      "wordBankPool": ["照得好极了", "照的好极了", "你看", "这张照片"],
+      "traps": [
+        {
+          "pattern": "照的好极了",
+          "msg": "Lỗi dùng sai trợ từ kết cấu: Đứng sau động từ '照' để nối với bổ ngữ trạng thái '好极了' bắt buộc dùng '得', không dùng '的'."
+        },
+        {
+          "pattern": "好极了照",
+          "msg": "Lỗi trật tự bổ ngữ: Bổ ngữ trạng thái '好极了' luôn luôn đứng sau động từ và trợ từ '得' (照得好极了)."
+        }
+      ],
+      "explanation": "Động từ 照 (chụp hình) kết hợp trợ từ kết cấu 得 và cụm bổ ngữ mức độ 好极了 để khen ngợi chất lượng bức ảnh một cách tự nhiên và sinh động."
+    },
+    {
+      "id": "b08-10",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc tăng tiến so sánh 一年比一年",
+      "vi": "Người mua xe hơi mỗi năm một nhiều.",
+      "zh": "买汽车的人一年比一年多",
+      "standardTrans": "买汽车的人一年比一年多",
+      "pinyin": "Mǎi qìchē de rén yì nián bǐ yì nián duō",
+      "grammarPoint": "Cụm định - trung làm chủ ngữ: 买汽车的人 + Trạng ngữ tăng tiến: 一年比一年 + Tính từ (多)",
+      "tokens": [
+        {
+          "text": "người mua xe hơi",
+          "hz": "买汽车的人",
+          "py": "mǎi qìchē de rén",
+          "hv": "mãi khí xa đích nhân",
+          "role": "Cụm định - trung làm chủ ngữ",
+          "vn": "những người mua xe ô tô",
+          "radicals": "买 = Bộ đao 刀; 汽 = Bộ thủy 氵; 车 = Bộ xa 车; 人 = Bộ nhân 人"
+        },
+        {
+          "text": "mỗi năm một",
+          "hz": "一年比一年",
+          "py": "yì nián bǐ yì nián",
+          "hv": "nhất niên tỉ nhất niên",
+          "role": "Trạng ngữ so sánh tăng tiến",
+          "vn": "năm sau nhiều hơn năm trước, qua từng năm",
+          "radicals": "年 = Bộ can 干; 比 = Bộ tỉ 比"
+        },
+        {
+          "text": "nhiều",
+          "hz": "多",
+          "py": "duō",
+          "hv": "đa",
+          "role": "Vị ngữ",
+          "vn": "đông đảo, nhiều",
+          "radicals": "多 = Bộ tịch 夕"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "一年比一年多", "tag": "Trạng ngữ + Vị ngữ" },
+        { "id": "t2", "text": "买汽车的人", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "年年都多", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1"],
+      "requiredKeywordsZh": ["买汽车的人", "一年比一年", "多"],
+      "wordBankPool": ["年年都多", "买汽车的人", "一年比一年多"],
+      "traps": [
+        {
+          "pattern": "年年都多",
+          "msg": "Lỗi văn phong cấu trúc: Diễn đạt ý nghĩa 'mỗi năm một nhiều hơn' (có sự so sánh tăng dần theo thời gian) trong giáo trình chuẩn là '一年比一年多', không dùng '年年都多'."
+        },
+        {
+          "pattern": "多一年比一年",
+          "msg": "Lỗi trật tự từ: Cụm so sánh '一年比一年' đóng vai trò trạng ngữ bắt buộc phải đứng trước tính từ '多'."
+        }
+      ],
+      "explanation": "Cấu trúc 一年比一年 + Tính từ biểu thị tính chất hoặc mức độ của sự vật tăng dần theo từng chu kỳ năm tháng."
+    }
+  ]
+}

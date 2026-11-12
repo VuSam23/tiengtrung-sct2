@@ -1,0 +1,616 @@
+{
+  "lessonId": "b07",
+  "lessonTitle": "第7课: 我的护照你找到了没有",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "交 vs 还",
+        "py": "jiāo vs huán",
+        "note": "交 là giao nộp, nộp bài tập hoặc bàn giao công việc cho cấp trên/người phụ trách (交作业, 交给老师); 还 là trả lại đồ vật hoặc tiền bạc đã mượn cho chủ sở hữu (还钱, 还书)."
+      },
+      {
+        "word": "丢 vs 忘",
+        "py": "diū vs wàng",
+        "note": "丢 là làm mất, đánh rơi đồ vật ra ngoài (丢护照, 丢三落四); 忘 là quên, quên mang theo đồ hoặc quên thực hiện việc gì đó (忘了带笔)."
+      },
+      {
+        "word": "合适 vs 适合",
+        "py": "héshì vs shìhé",
+        "note": "合适 là tính từ mang nghĩa phù hợp, vừa vặn (这件衣服很合适); 适合 là động từ ngoại mang nghĩa phù hợp với ai/cái gì (这项工作适合你, 不适合这份工作)."
+      }
+    ],
+    "grammarTips": [
+      "Bổ ngữ kết quả: V + 到 / 在 / 给 + Tân ngữ (Đặt đồ vật ở đâu dùng 放在; nộp hoặc giao cho ai dùng 交给; tìm thấy dùng 找到).",
+      "Câu hỏi chính phản với bổ ngữ kết quả: S + V + Bổ ngữ kết quả + (Tân ngữ) + 了没有 (Ví dụ: 你找到了没有, 你交了没有).",
+      "Cấu trúc 一……就……: Biểu thị hai hành động liên tiếp hoặc quan hệ điều kiện - kết quả (hễ... là... / vừa... liền...).",
+      "Bổ ngữ khả năng: V + 得 / 不 + 到 / 完 / 懂 (Ví dụ: 买不到, 翻译不成, 睡不着)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b07-01",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc 一……就…… biểu thị phản ứng điều kiện kết quả",
+      "vi": "Chân của tớ không biết bị làm sao, vừa động vào liền đau rất dữ dội.",
+      "zh": "我的腿不知怎么了一动就疼得很厉害",
+      "standardTrans": "我的腿不知怎么了一动就疼得很厉害",
+      "pinyin": "Wǒ de tuǐ bù zhī zěnme le, yí dòng jiù téng de hěn lìhai",
+      "grammarPoint": "一 + Động từ + 就 + Động từ/Tính từ (Hễ/vừa... liền...); Bổ ngữ trạng thái: 疼得很厉害",
+      "tokens": [
+        {
+          "text": "chân của tôi",
+          "hz": "我的腿",
+          "py": "wǒ de tuǐ",
+          "hv": "ngã đích thoái",
+          "role": "Chủ đề câu",
+          "vn": "đôi chân, cái chân của tôi",
+          "radicals": "腿 = Bộ nhục 月 + chữ thoái 退"
+        },
+        {
+          "text": "vừa cử động liền đau",
+          "hz": "一动就疼",
+          "py": "yí dòng jiù téng",
+          "hv": "nhất động tựu đông",
+          "role": "Vị ngữ kết cấu 一...就...",
+          "vn": "hễ cử động là đau nhức",
+          "radicals": "动 = Bộ lực 力; 疼 = Bộ nạch 疒"
+        },
+        {
+          "text": "rất dữ dội",
+          "hz": "很厉害",
+          "py": "hěn lìhai",
+          "hv": "hận lợi hại",
+          "role": "Bổ ngữ trạng thái sau 得",
+          "vn": "vô cùng dữ dội, nghiêm trọng",
+          "radicals": "厉 = Bộ hán 厂; 害 = Bộ miên 宀"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "一动就疼", "tag": "Kết cấu 一...就..." },
+        { "id": "t2", "text": "我的腿", "tag": "Chủ đề" },
+        { "id": "t3", "text": "不知怎么了", "tag": "Trạng ngữ" },
+        { "id": "t4", "text": "得很厉害", "tag": "Bổ ngữ trạng thái" },
+        { "id": "t5", "text": "很疼", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1", "t4"],
+      "requiredKeywordsZh": ["不知怎么了", "一动就疼", "得很厉害"],
+      "wordBankPool": ["一动就疼", "得很厉害", "很疼", "我的腿", "不知怎么了"],
+      "traps": [
+        {
+          "pattern": "疼很厉害",
+          "msg": "Lỗi thiếu trợ từ kết cấu: Đứng trước cụm bổ ngữ trạng thái '很厉害' bắt buộc phải có trợ từ '得' (疼得很厉害), không được bỏ '得'."
+        },
+        {
+          "pattern": "就动一疼",
+          "msg": "Lỗi ngữ tự cặp liên từ: Cấu trúc cố định là '一 + Hành động 1 + 就 + Kết quả 2' (一动就疼)."
+        }
+      ],
+      "explanation": "Câu kết hợp cấu trúc 一……就…… chỉ phản ứng xảy ra ngay lập tức sau hành động và bổ ngữ trạng thái 得很厉害 sau tính từ 疼 để miêu tả mức độ đau đớn."
+    },
+    {
+      "id": "b07-02",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ động lượng 好几次 và câu liên động 带……去看病",
+      "vi": "Buổi chiều tớ đã gọi điện thoại cho cậu mấy lần, sao cậu đều không nghe máy? Xin lỗi, mẹ tớ bị ốm, tớ phải đưa bà ấy đến bệnh viện khám bệnh.",
+      "zh": "下午我给你打了好几次电话你怎么都不接呢对不起我妈妈生病了我带她去医院看病",
+      "standardTrans": "下午我给你打了好几次电话你怎么都不接呢对不起我妈妈生病了我带她去医院看病",
+      "pinyin": "Xiàwǔ wǒ gěi nǐ dǎ le hǎojǐ cì diànhuà, nǐ zěnme dōu bù jiē ne? Duìbuqǐ, wǒ māma shēngbìng le, wǒ yào dài tā qù yīyuàn kànbìng",
+      "grammarPoint": "Bổ ngữ động lượng đứng trước tân ngữ: 打了好几次电话; Câu liên động: 带 + Người + 去 + Nơi chốn + Làm gì",
+      "tokens": [
+        {
+          "text": "gọi mấy lần điện thoại",
+          "hz": "打了好几次电话",
+          "py": "dǎ le hǎojǐ cì diànhuà",
+          "hv": "đả liễu hảo kỷ thứ điện thoại",
+          "role": "Động từ + Động lượng + Tân ngữ",
+          "vn": "đã gọi vài ba cuộc điện thoại",
+          "radicals": "打 = Bộ thủ 扌; 次 = Bộ khiếm 欠; 电 = Bộ điền 田"
+        },
+        {
+          "text": "không bắt máy",
+          "hz": "不接",
+          "py": "bù jiē",
+          "hv": "bất tiếp",
+          "role": "Trạng từ + Động từ",
+          "vn": "không nghe máy, không tiếp nhận",
+          "radicals": "接 = Bộ thủ 扌"
+        },
+        {
+          "text": "đưa bà ấy đi khám",
+          "hz": "带她去医院看病",
+          "py": "dài tā qù yīyuàn kànbìng",
+          "hv": "đới tha khứ y viện khán bệnh",
+          "role": "Chuỗi liên động",
+          "vn": "dẫn mẹ đi viện khám bệnh",
+          "radicals": "带 = Bộ cân 巾; 院 = Bộ phụ 阝; 病 = Bộ nạch 疒"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "下午我给你", "tag": "Trạng ngữ + Giới tân" },
+        { "id": "t2", "text": "打了好几次电话", "tag": "Động bổ tân" },
+        { "id": "t3", "text": "你怎么都不接呢", "tag": "Phân câu hỏi" },
+        { "id": "t4", "text": "对不起我妈妈生病了", "tag": "Nguyên nhân" },
+        { "id": "t5", "text": "我带她去医院看病", "tag": "Liên động" },
+        { "id": "t6", "text": "打电话好几次", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["好几次电话", "不接呢", "带她去医院看病"],
+      "wordBankPool": ["对不起我妈妈生病了", "打电话好几次", "下午我给你", "我带她去医院看病", "打了好几次电话", "你怎么都不接呢"],
+      "traps": [
+        {
+          "pattern": "打电话好几次",
+          "msg": "Lỗi vị trí bổ ngữ động lượng: Bổ ngữ động lượng chỉ số lần '好几次' bắt buộc đặt trước danh từ tân ngữ thường '电话' (打了好几次电话)."
+        },
+        {
+          "pattern": "去医院带她",
+          "msg": "Lỗi liên động: Hành động đưa người đi '带她' phải diễn ra trước điểm đến '去医院'."
+        }
+      ],
+      "explanation": "Bổ ngữ động lượng 好几次 xen vào giữa động từ 打 và tân ngữ 电话. Vế thứ hai là câu liên động chỉ mục đích theo thứ tự: 带 cô ấy -> 去 bệnh viện -> 看 bệnh."
+    },
+    {
+      "id": "b07-03",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 在 và câu chữ 让",
+      "vi": "Hộ chiếu của tớ cậu để ở đâu rồi? Cậu làm sao vậy? Vừa rồi cậu bảo tớ để trong túi xách của cậu mà.",
+      "zh": "我的护照你放在什么地方了你怎么了刚才你让我放在你的手提包里",
+      "standardTrans": "我的护照你放在什么地方了你怎么了刚才你让我放在你的手提包里",
+      "pinyin": "Wǒ de hùzhào nǐ fàng zài shénme dìfang le? Nǐ zěnme le? Gāngcái nǐ ràng wǒ fàng zài nǐ de shǒutíbāo lǐ",
+      "grammarPoint": "Bổ ngữ kết quả nơi chốn: 放 + 在 + Nơi chốn; Câu kiêm ngữ với 让: 让 + Người + Động từ",
+      "tokens": [
+        {
+          "text": "để ở đâu",
+          "hz": "放在什么地方",
+          "py": "fàng zài shénme dìfang",
+          "hv": "phóng tại thập ma địa phương",
+          "role": "Động từ + Bổ ngữ kết quả 在",
+          "vn": "đặt để ở chỗ nào",
+          "radicals": "放 = Bộ phộc 攵; 在 = Bộ thổ 土; 地 = Bộ thổ 土"
+        },
+        {
+          "text": "bảo tôi để",
+          "hz": "让我放",
+          "py": "ràng wǒ fàng",
+          "hv": "nhượng ngã phóng",
+          "role": "Động từ kiêm ngữ",
+          "vn": "bảo tôi cất, để tôi đặt",
+          "radicals": "让 = Bộ ngôn 讠; 放 = Bộ phộc 攵"
+        },
+        {
+          "text": "túi xách tay",
+          "hz": "手提包里",
+          "py": "shǒutíbāo lǐ",
+          "hv": "thủ đề bao lý",
+          "role": "Phương vị từ chỉ nơi chốn",
+          "vn": "bên trong túi xách tay",
+          "radicals": "提 = Bộ thủ 扌; 包 = Bộ bao 勹; 里 = Bộ lý 里"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我的护照你", "tag": "Chủ đề" },
+        { "id": "t2", "text": "放在什么地方了", "tag": "Động bổ nơi chốn" },
+        { "id": "t3", "text": "你怎么了", "tag": "Hỏi thăm" },
+        { "id": "t4", "text": "刚才你让我", "tag": "Kiêm ngữ" },
+        { "id": "t5", "text": "放在你的手提包里", "tag": "Bổ ngữ nơi chốn" },
+        { "id": "t6", "text": "在手提包放", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["放在什么地方了", "你怎么了", "放在你的手提包里"],
+      "wordBankPool": ["在手提包放", "放在你的手提包里", "我的护照你", "刚才你让我", "放在什么地方了", "你怎么了"],
+      "traps": [
+        {
+          "pattern": "放什么地方在",
+          "msg": "Lỗi cấu trúc bổ ngữ kết quả: Kết cấu bắt buộc là 'Động từ + 在 + Nơi chốn' (放在什么地方), không tách '在' ra sau."
+        },
+        {
+          "pattern": "在手提包放",
+          "msg": "Lỗi sắc thái: Khi hành động đặt để khiến đồ vật nằm lại cố định ở một nơi, bắt buộc dùng bổ ngữ kết quả '放在 + Địa điểm', không dùng trạng ngữ '在...放'."
+        }
+      ],
+      "explanation": "Động từ 放 kết hợp bổ ngữ kết quả 在 dẫn ra vị trí lưu lại của đồ vật (放在什么地方 / 放在手提包里). Vế sau dùng câu kiêm ngữ 让 biểu thị sự sai bảo, nhờ cậy."
+    },
+    {
+      "id": "b07-04",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ kết quả 到 kết hợp phó từ 竟然",
+      "vi": "Cậu ấy là bạn thời đại học của tớ, sau khi tốt nghiệp chúng tớ cũng không liên lạc, không ngờ trưa nay lúc tớ đi lấy hộ chiếu lại gặp cậu ấy.",
+      "zh": "他是我大学时的同学毕业后我们也没联系过没想到中午我去取护照时竟然遇到他了",
+      "standardTrans": "他是我大学时的同学毕业后我们也没联系过没想到中午我去取护照时竟然遇到他了",
+      "pinyin": "Tā shì wǒ dàxué shí de tóngxué, bìyè hòu wǒmen yě méi liánxì guo, méi xiǎngdào zhōngwǔ wǒ qù qǔ hùzhào shí jìngrán yù dào tā le",
+      "grammarPoint": "Bổ ngữ kết quả 到: 没想到, 遇到; Phó từ biểu thị bất ngờ: 竟然",
+      "tokens": [
+        {
+          "text": "chưa từng liên lạc",
+          "hz": "没联系过",
+          "py": "méi liánxì guo",
+          "hv": "một liên hệ quá",
+          "role": "Phủ định + V + Trợ từ 过",
+          "vn": "chưa từng liên hệ với nhau",
+          "radicals": "联 = Bộ nhĩ 耳; 系 = Bộ mịch 糸"
+        },
+        {
+          "text": "lấy hộ chiếu",
+          "hz": "取护照",
+          "py": "qǔ hùzhào",
+          "hv": "thủ hộ chiếu",
+          "role": "Động từ + Tân ngữ",
+          "vn": "nhận lấy, rút hộ chiếu",
+          "radicals": "取 = Bộ nhĩ 耳 + bộ hữu 又; 护 = Bộ thủ 扌; 照 = Bộ hỏa 灬"
+        },
+        {
+          "text": "lại tình cờ gặp",
+          "hz": "竟然遇到",
+          "py": "jìngrán yù dào",
+          "hv": "cánh nhiên ngộ đáo",
+          "role": "Phó từ + Động từ + Bổ ngữ 到",
+          "vn": "thế mà lại bắt gặp, tình cờ gặp gỡ",
+          "radicals": "竟 = Bộ lập 立; 遇 = Bộ quai xước 辶; 到 = Bộ đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "他是我大学时的同学", "tag": "Giới thiệu" },
+        { "id": "t2", "text": "毕业后我们也没联系过", "tag": "Tiền đề" },
+        { "id": "t3", "text": "没想到中午", "tag": "Bất ngờ" },
+        { "id": "t4", "text": "我去取护照时", "tag": "Thời điểm" },
+        { "id": "t5", "text": "竟然遇到他了", "tag": "Kết quả" },
+        { "id": "t6", "text": "见到了他", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["毕业后", "没联系过", "没想到", "取护照", "竟然遇到他了"],
+      "wordBankPool": ["没想到中午", "他是我大学时的同学", "见到了他", "竟然遇到他了", "我去取护照时", "毕业后我们也没联系过"],
+      "traps": [
+        {
+          "pattern": "遇他到",
+          "msg": "Lỗi tách bổ ngữ kết quả: Bổ ngữ kết quả '到' phải dính liền ngay sau động từ '遇' (遇到他), không kẹp tân ngữ vào giữa."
+        },
+        {
+          "pattern": "想没到",
+          "msg": "Lỗi phủ định bổ ngữ kết quả: Phủ định của '想到' bắt buộc dùng '没' đặt trước động từ (没想到), không chèn vào giữa."
+        }
+      ],
+      "explanation": "Bổ ngữ kết quả 到 biểu thị đạt được mục đích trong 没想到 (không ngờ tới) và 遇到 (gặp phải). Phó từ 竟然 nhấn mạnh sự bất ngờ, ngoài dự liệu."
+    },
+    {
+      "id": "b07-05",
+      "type": "anti_word_by_word",
+      "title": "Phân biệt động từ 适合 và tính từ 合适",
+      "vi": "Cậu làm sao mà lại không vui vậy? Tớ phát hiện tớ không phù hợp với công việc này, vì vậy tớ định thôi việc.",
+      "zh": "你怎么不高兴我发现我不适合这份工作所以我打算辞职",
+      "standardTrans": "你怎么不高兴我发现我不适合这份工作所以我打算辞职",
+      "pinyin": "Nǐ zěnme bù gāoxìng? Wǒ fāxiàn wǒ bù shìhé zhè fèn gōngzuò, suǒyǐ wǒ dǎsuàn cízhí",
+      "grammarPoint": "Động từ mang tân ngữ: 适合 + Tân ngữ danh từ; Liên từ chỉ kết quả: 所以 + Dự định",
+      "tokens": [
+        {
+          "text": "không phù hợp với",
+          "hz": "不适合",
+          "py": "bù shìhé",
+          "hv": "bất thích hợp",
+          "role": "Phủ định + Động từ",
+          "vn": "không hợp với, không thích ứng",
+          "radicals": "适 = Bộ quai xước 辶; 合 = Bộ khẩu 口"
+        },
+        {
+          "text": "công việc này",
+          "hz": "这份工作",
+          "py": "zhè fèn gōngzuò",
+          "hv": "giá phần công tác",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "công việc này, phần việc này",
+          "radicals": "份 = Bộ nhân đứng 亻; 工 = Bộ công 工"
+        },
+        {
+          "text": "từ chức, thôi việc",
+          "hz": "打算辞职",
+          "py": "dǎsuàn cízhí",
+          "hv": "đả toán từ chức",
+          "role": "Động từ năng nguyện + Động từ",
+          "vn": "dự tính xin nghỉ việc",
+          "radicals": "辞 = Bộ thiệt 舌 + bộ tân 辛; 职 = Bộ nhĩ 耳"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我不适合", "tag": "Chủ vị phủ định" },
+        { "id": "t2", "text": "你怎么不高兴", "tag": "Câu hỏi" },
+        { "id": "t3", "text": "我发现", "tag": "Động từ nhận thức" },
+        { "id": "t4", "text": "这份工作", "tag": "Tân ngữ" },
+        { "id": "t5", "text": "所以我打算辞职", "tag": "Kết quả" },
+        { "id": "t6", "text": "不合适这份", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t1", "t4", "t5"],
+      "requiredKeywordsZh": ["怎么不高兴", "我发现", "不适合", "这份工作", "打算辞职"],
+      "wordBankPool": ["不合适这份", "你怎么不高兴", "这份工作", "我发现", "所以我打算辞职", "我不适合"],
+      "traps": [
+        {
+          "pattern": "不合适这份工作",
+          "msg": "Lỗi lẫn lộn từ loại: '合适' là tính từ không được mang tân ngữ phía sau; mang tân ngữ '这份工作' bắt buộc phải dùng động từ '适合' (不适合这份工作)."
+        },
+        {
+          "pattern": "辞职工作",
+          "msg": "Lỗi động từ li hợp: '辞职' đã mang sẵn nghĩa từ bỏ chức vụ, không ghép thành '辞职工作'."
+        }
+      ],
+      "explanation": "Điểm ngữ pháp then chốt là phân biệt 适合 (động từ mang tân ngữ) và 合适 (tính từ độc lập). Vì có tân ngữ 这份工作 đứng sau nên bắt buộc phải dùng 不适合."
+    },
+    {
+      "id": "b07-06",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc thông báo kiêm ngữ với 通知",
+      "vi": "Cậu thông báo với mọi người 8 giờ sáng mai đến văn phòng của tôi để họp nhé.",
+      "zh": "你通知大家明天上午八点来我办公室开会吧",
+      "standardTrans": "你通知大家明天上午八点来我办公室开会吧",
+      "pinyin": "Nǐ tōngzhī dàjiā míngtiān shàngwǔ bā diǎn lái wǒ bàngōngshì kāihuì ba",
+      "grammarPoint": "Câu kiêm ngữ: S + 通知 + Mọi người + Thời gian + Đi đâu + Làm gì",
+      "tokens": [
+        {
+          "text": "thông báo mọi người",
+          "hz": "通知大家",
+          "py": "tōngzhī dàjiā",
+          "hv": "thông tri đại gia",
+          "role": "Động từ + Kiêm ngữ",
+          "vn": "báo cho mọi người biết",
+          "radicals": "通 = Bộ quai xước 辶; 知 = Bộ khẩu 口; 大 = Bộ đại 大; 家 = Bộ miên 宀"
+        },
+        {
+          "text": "văn phòng của tôi",
+          "hz": "我办公室",
+          "py": "wǒ bàngōngshì",
+          "hv": "ngã biện công thất",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "phòng làm việc của tôi",
+          "radicals": "办 = Bộ lực 力; 公 = Bộ bát 八; 室 = Bộ miên 宀"
+        },
+        {
+          "text": "họp hành",
+          "hz": "开会吧",
+          "py": "kāihuì ba",
+          "hv": "khai hội ba",
+          "role": "Động từ mục đích + Trợ từ ngữ khí",
+          "vn": "tổ chức cuộc họp nhé",
+          "radicals": "开 = Bộ củng 廾; 会 = Bộ nhân 人"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你通知大家", "tag": "Chủ vị kiêm ngữ" },
+        { "id": "t2", "text": "明天上午八点", "tag": "Thời gian" },
+        { "id": "t3", "text": "来我办公室", "tag": "Phương hướng nơi chốn" },
+        { "id": "t4", "text": "开会吧", "tag": "Mục đích" },
+        { "id": "t5", "text": "开会来", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["通知大家", "明天上午八点", "办公室", "开会吧"],
+      "wordBankPool": ["开会来", "来我办公室", "开会吧", "你通知大家", "明天上午八点"],
+      "traps": [
+        {
+          "pattern": "跟我通知",
+          "msg": "Lỗi dùng giới từ thừa: '通知' là động từ ngoại trực tiếp mang tân ngữ người (通知大家), không dịch bồi thành '跟...通知'."
+        },
+        {
+          "pattern": "开会办公室",
+          "msg": "Lỗi trật tự nơi chốn: Hành động di chuyển đến địa điểm '来我办公室' phải đặt trước mục đích '开会'."
+        }
+      ],
+      "explanation": "Động từ 通知 mang tân ngữ kiêm ngữ 大家. Trật tự liên động chuẩn theo dòng thời gian: Thời gian (明天上午八点) -> Nơi chốn (来我办公室) -> Hành động mục đích (开会)."
+    },
+    {
+      "id": "b07-07",
+      "type": "anti_word_by_word",
+      "title": "Phó từ chỉ mức độ 这么 kết hợp động từ 生气",
+      "vi": "Tớ thừa nhận đây là sai sót của tớ, nhưng mà cậu không cần tức giận như vậy, được không?",
+      "zh": "我承认这是我的错误可是你不用这么生气好吗",
+      "standardTrans": "我承认这是我的错误可是你不用这么生气好吗",
+      "pinyin": "Wǒ chéngrèn zhè shì wǒ de cuòwù, kěshì nǐ bú yòng zhème shēngqì, hǎo ma",
+      "grammarPoint": "Liên từ chuyển ngoặt: 可是; Phó từ chỉ mức độ trước động từ tâm lý: 不用 + 这么 + 生气",
+      "tokens": [
+        {
+          "text": "thừa nhận sai lầm",
+          "hz": "承认错误",
+          "py": "chéngrèn cuòwù",
+          "hv": "thừa nhận thác ngộ",
+          "role": "Động từ + Tân ngữ",
+          "vn": "thừa nhận khuyết điểm, sai sót",
+          "radicals": "承 = Bộ thủ 手; 认 = Bộ ngôn 讠; 错 = Bộ kim 钅; 误 = Bộ ngôn 讠"
+        },
+        {
+          "text": "không cần giận như thế",
+          "hz": "不用这么生气",
+          "py": "bú yòng zhème shēngqì",
+          "hv": "bất dụng giá ma sinh khí",
+          "role": "Trạng ngữ + Động từ tâm lý",
+          "vn": "không cần phải nổi giận mức này",
+          "radicals": "用 = Bộ dụng 用; 这 = Bộ quai xước 辶; 生 = Bộ sinh 生; 气 = Bộ khí 气"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我承认", "tag": "Chủ vị" },
+        { "id": "t2", "text": "这是我的错误", "tag": "Tân ngữ phán đoán" },
+        { "id": "t3", "text": "可是你不用", "tag": "Chuyển ngoặt" },
+        { "id": "t4", "text": "这么生气好吗", "tag": "Vị ngữ hỏi" },
+        { "id": "t5", "text": "那么生气了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["我承认", "我的错误", "不用这么生气", "好吗"],
+      "wordBankPool": ["这么生气好吗", "我承认", "那么生气了", "这是我的错误", "可是你不用"],
+      "traps": [
+        {
+          "pattern": "不生气这么",
+          "msg": "Lỗi trật tự từ chỉ mức độ: '这么' bắt buộc phải đứng trước tính từ/động từ tâm lý (这么生气), không đặt sau."
+        },
+        {
+          "pattern": "不必要生气",
+          "msg": "Lỗi văn phong: Khẩu ngữ nhẹ nhàng khuyên nhủ dùng '不用' (không cần), dùng '不必要' sẽ mang sắc thái cứng nhắc tranh cãi."
+        }
+      ],
+      "explanation": "Vế đầu dùng động từ 承认 kết hợp danh từ 错误. Vế sau dùng liên từ chuyển ngoặt 可是 nối với cụm khuyên nhủ 不用这么生气 và kết thúc bằng câu hỏi ý kiến 好吗."
+    },
+    {
+      "id": "b07-08",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ khả năng dạng phủ định 睡不着 và cụm 没有精神",
+      "vi": "Hôm qua không ngủ được vì vậy bây giờ tớ rất buồn ngủ, làm việc gì cũng không có tinh thần.",
+      "zh": "昨天睡不着所以现在我很困做什么事情都没有精神",
+      "standardTrans": "昨天睡不着所以现在我很困做什么事情都没有精神",
+      "pinyin": "Zuótiān shuì bu zháo, suǒyǐ xiànzài wǒ hěn kùn, zuò shénme shìqing dōu méiyǒu jīngshén",
+      "grammarPoint": "Bổ ngữ khả năng phủ định: 睡不着 (mất ngủ); Đại từ nghi vấn chỉ toàn bộ: 什么...都...",
+      "tokens": [
+        {
+          "text": "không ngủ được",
+          "hz": "睡不着",
+          "py": "shuì bu zháo",
+          "hv": "thụy bất trước",
+          "role": "Bổ ngữ khả năng phủ định",
+          "vn": "không tài nào chợp mắt ngủ được",
+          "radicals": "睡 = Bộ mục 目; 着 = Bộ mục 目"
+        },
+        {
+          "text": "rất buồn ngủ",
+          "hz": "很困",
+          "py": "hěn kùn",
+          "hv": "hận khốn",
+          "role": "Phó từ + Tính từ",
+          "vn": "rất buồn ngủ, mệt mỏi",
+          "radicals": "困 = Bộ vi 囗 + bộ mộc 木"
+        },
+        {
+          "text": "không có tinh thần",
+          "hz": "没有精神",
+          "py": "méiyǒu jīngshén",
+          "hv": "một hữu tinh thần",
+          "role": "Phủ định + Tân ngữ danh từ",
+          "vn": "uể oải, mất hết sinh khí, không có sức lực",
+          "radicals": "精 = Bộ mễ 米; 神 = Bộ thị 礻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "昨天睡不着", "tag": "Nguyên nhân" },
+        { "id": "t2", "text": "所以现在我很困", "tag": "Kết quả 1" },
+        { "id": "t3", "text": "做什么事情", "tag": "Hành vi phiếm chỉ" },
+        { "id": "t4", "text": "都没有精神", "tag": "Kết quả 2" },
+        { "id": "t5", "text": "不睡了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["睡不着", "很困", "做什么事情", "没有精神"],
+      "wordBankPool": ["做什么事情", "都没有精神", "不睡了", "所以现在我很困", "昨天睡不着"],
+      "traps": [
+        {
+          "pattern": "没睡着",
+          "msg": "Lỗi phân biệt bổ ngữ: '没睡着' là chưa ngủ được (bổ ngữ kết quả phủ định); '睡不着' là không thể nào chợp mắt được do khách quan/chủ quan (bổ ngữ khả năng)."
+        },
+        {
+          "pattern": "不困",
+          "msg": "Lỗi sai lệch ngữ nghĩa: Đề bài yêu cầu 'rất buồn ngủ' tương ứng với '很困', không dùng nhầm sang '不困'."
+        }
+      ],
+      "explanation": "睡不着 là bổ ngữ khả năng chỉ trạng thái mất ngủ. Cấu trúc phiếm chỉ đại từ 什么……都…… nhấn mạnh tính toàn thể: bất kể làm việc gì cũng rơi vào trạng thái thiếu năng lượng (没有精神)."
+    },
+    {
+      "id": "b07-09",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ kết quả 好 kết hợp phó từ 算是",
+      "vi": "Trải qua một tháng trị liệu, bệnh của bà nội cũng coi như đã trị khỏi rồi.",
+      "zh": "经过一个月的治疗奶奶的病算是治好了",
+      "standardTrans": "经过一个月的治疗奶奶的病算是治好了",
+      "pinyin": "Jīngguò yí gè yuè de zhìliáo, nǎinai de bìng suànshì zhì hǎo le",
+      "grammarPoint": "Giới từ chỉ quá trình: 经过 + Khoảng thời gian; Bổ ngữ kết quả: 治好 (chữa khỏi hoàn toàn)",
+      "tokens": [
+        {
+          "text": "trải qua trị liệu",
+          "hz": "经过治疗",
+          "py": "jīngguò zhìliáo",
+          "hv": "kinh quá trị liệu",
+          "role": "Giới từ + Danh từ",
+          "vn": "thông qua quá trình chữa trị",
+          "radicals": "经 = Bộ mịch 纟; 治 = Bộ thủy 氵; 疗 = Bộ nạch 疒"
+        },
+        {
+          "text": "coi như là",
+          "hz": "算是",
+          "py": "suànshì",
+          "hv": "toán thị",
+          "role": "Phó từ nhận định",
+          "vn": "xem như là, coi như đã",
+          "radicals": "算 = Bộ trúc 竹; 是 = Bộ nhật 日"
+        },
+        {
+          "text": "chữa khỏi hẳn",
+          "hz": "治好了",
+          "py": "zhì hǎo le",
+          "hv": "trị hảo liễu",
+          "role": "Động từ + Bổ ngữ kết quả 好",
+          "vn": "chữa trị dứt điểm, đã lành bệnh",
+          "radicals": "治 = Bộ thủy 氵; 好 = Bộ nữ 女"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "经过一个月的治疗", "tag": "Trạng ngữ quá trình" },
+        { "id": "t2", "text": "奶奶的病", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "算是", "tag": "Phó từ" },
+        { "id": "t4", "text": "治好了", "tag": "Động bổ kết quả" },
+        { "id": "t5", "text": "通过一个月的", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["经过", "治疗", "奶奶的病", "算是", "治好了"],
+      "wordBankPool": ["奶奶的病", "通过一个月的", "算是", "治好了", "经过一个月的治疗"],
+      "traps": [
+        {
+          "pattern": "通过一个月的治疗",
+          "msg": "Lỗi phân biệt 通过 và 经过: Chỉ quá trình diễn biến thời gian và trải nghiệm chữa trị trong y tế bắt buộc dùng giới từ '经过', không dùng '通过'."
+        },
+        {
+          "pattern": "治完了",
+          "msg": "Lỗi bổ ngữ kết quả: '治完' chỉ là làm xong quy trình chữa; bệnh được phục hồi, khỏi bệnh hoàn toàn bắt buộc dùng '治好'."
+        }
+      ],
+      "explanation": "Giới từ 经过 dẫn ra quá trình trải nghiệm điều trị kéo dài 1 tháng. Bổ ngữ kết quả 好 biểu thị hành động chữa bệnh 治 đã đạt đến trạng thái tốt đẹp, hoàn chỉnh (khỏi bệnh)."
+    },
+    {
+      "id": "b07-10",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ kết quả 给 và câu hỏi chính phản 了没有",
+      "vi": "A: Bài tập hôm nay cậu đã nộp cho thầy giáo chưa? B: Tớ đã nộp cho thầy giáo rồi.",
+      "zh": "今天的作业你交给老师了没有我交给老师了",
+      "standardTrans": "今天的作业你交给老师了没有我交给老师了",
+      "pinyin": "Jīntiān de zuòyè nǐ jiāo gěi lǎoshī le méiyǒu? Wǒ jiāo gěi lǎoshī le",
+      "grammarPoint": "Bổ ngữ kết quả chỉ đối tượng tiếp nhận: 交 + 给 + Người; Nghi vấn chính phản: ...了没有",
+      "tokens": [
+        {
+          "text": "bài tập hôm nay",
+          "hz": "今天的作业",
+          "py": "jīntiān de zuòyè",
+          "hv": "kim thiên đích tác nghiệp",
+          "role": "Chủ đề câu",
+          "vn": "bài làm, bài tập về nhà hôm nay",
+          "radicals": "作 = Bộ nhân đứng 亻; 业 = Bộ nhất 一"
+        },
+        {
+          "text": "nộp cho thầy giáo",
+          "hz": "交给老师",
+          "py": "jiāo gěi lǎoshī",
+          "hv": "giao cấp lão sư",
+          "role": "Động từ + Bổ ngữ kết quả 给 + Tân ngữ",
+          "vn": "chuyển giao tận tay cho giáo viên",
+          "radicals": "交 = Bộ đầu 亠; 给 = Bộ mịch 纟; 师 = Bộ cân 巾"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "今天的作业你", "tag": "Chủ đề" },
+        { "id": "t2", "text": "交给老师了没有", "tag": "Động bổ + Nghi vấn" },
+        { "id": "t3", "text": "我交给老师了", "tag": "Trả lời hoàn tất" },
+        { "id": "t4", "text": "还给老师", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["作业", "交给老师了没有", "交给老师了"],
+      "wordBankPool": ["还给老师", "我交给老师了", "交给老师了没有", "今天的作业你"],
+      "traps": [
+        {
+          "pattern": "还给老师",
+          "msg": "Lỗi dùng sai động từ: Nộp bài tập hoặc giao nộp giấy tờ dùng '交给', không dùng '还给' (chỉ dùng khi hoàn trả lại đồ đã vay mượn)."
+        },
+        {
+          "pattern": "交老师了",
+          "msg": "Lỗi thiếu bổ ngữ: Động từ '交' khi có đối tượng tiếp nhận là người ở phía sau bắt buộc phải có bổ ngữ '给' (交给老师)."
+        }
+      ],
+      "explanation": "Động từ 交 kết hợp bổ ngữ kết quả 给 để dẫn ra người tiếp nhận bài tập là 老师. Câu hỏi dùng dạng chính phản 了没有 đặt ở cuối câu để xác nhận tình trạng đã nộp bài hay chưa."
+    }
+  ]
+}

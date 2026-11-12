@@ -1,634 +1,820 @@
 {
   "lessonId": "b09",
-  "lessonTitle": "第九课: 我换人民币",
+  "lessonTitle": "Bài 9: Giao dịch ngân hàng & Đổi ngoại tệ",
   "quickNotes": {
     "vocabTips": [
       {
-        "word": "换 (huàn) vs 找 (zhǎo)",
-        "py": "huàn vs zhǎo",
-        "note": "换: đổi (换钱: đổi tiền, 换人民币). 找: ngoài nghĩa tìm kiếm còn mang nghĩa thối lại tiền lẻ (他找我一万: anh ấy thối lại tôi 10.000)."
+        "word": "百 / 千 / 万",
+        "py": "bǎi / qiān / wàn",
+        "note": "Đơn vị số lớn: 百 (trăm - 100), 千 (nghìn - 1.000), 万 (vạn - 10.000). Tiếng Trung tách nhóm 4 chữ số theo đơn vị 'vạn' (VD: 20.000 = 两万)."
       },
       {
-        "word": "一会儿 (yíhuìr)",
-        "py": "yíhuìr",
-        "note": "Bổ ngữ thời lượng diễn tả hành động diễn ra trong thời gian ngắn: Động từ + 一会儿 (等一会儿: đợi một lát, 看一会儿: xem một lúc)."
+        "word": "人民币 / 美元 / 日元 / 欧元",
+        "py": "Rénmínbì / Měiyuán / Rìyuán / Ōuyuán",
+        "note": "Tên các loại tiền tệ thông dụng: 人民币 (Nhân dân tệ), 美元 (Đô la Mỹ), 日元 (Yên Nhật), 欧元 (Đồng Euro), 港币 (Đô la Hồng Kông)."
       },
       {
-        "word": "数 (shǔ vs shù)",
-        "py": "shǔ / shù",
-        "note": "Đọc thanh 3 'shǔ' là động từ 'đếm' (数钱: đếm tiền, 你数吧). Đọc thanh 4 'shù' là danh từ 'con số / toán' (数学)."
-      },
-      {
-        "word": "一百万 (yìbǎi wàn)",
-        "py": "yìbǎi wàn",
-        "note": "Quy tắc đếm số lớn của Trung Quốc phân nhóm 4 chữ số (vạn = 万). 1.000.000 (1 triệu) = 100 vạn -> '一百万', không nói '一千千'."
+        "word": "等一会儿 / 数一数",
+        "py": "děng yíhuìr / shǔ yi shǔ",
+        "note": "Cụm giao tiếp lịch sự tại quầy giao dịch: 等一会儿 (đợi một lát), 数一数 (đếm thử/kiểm đếm lại tiền)."
       }
     ],
     "grammarTips": [
-      "Động từ mang 2 tân ngữ (找/给): S + 找 / 给 + Người (Tân ngữ 1) + Tiền/Vật (Tân ngữ 2). Ví dụ: 他找我一万越南盾.",
-      "Câu liên động chỉ mục đích: 去 + Nơi chốn + Động từ (去银行换钱: đi ngân hàng đổi tiền; 去叫他: đi gọi cậu ấy).",
-      "Trợ từ ngữ khí 吧: Đặt ở cuối câu biểu thị sự thúc giục, đề nghị nhẹ nhàng hoặc nhượng bộ (你去吧: cậu đi đi; 你数吧: cậu đếm đi).",
-      "Câu hỏi chính phản 是不是: Chủ ngữ + 是不是 + Danh từ? (那是不是你们学校的图书馆?). Đã dùng 是不是 thì cuối câu tuyệt đối KHÔNG thêm 吗."
+      "Nhờ vả / Mời lịch sự: 请 + Đối tượng (先生/小姐) + Động từ (等一会儿 / 数一数).",
+      "Đổi ngoại tệ tại ngân hàng: Chủ ngữ + 去 + 银行 + 换 + Ngoại tệ.",
+      "Đọc số tròn trăm/nghìn/vạn với số 2: Dùng 两 (两百, 两千, 两万); riêng hàng trăm có thể dùng 二百."
     ]
   },
   "sentences": [
     {
-      "id": "b09-01",
+      "id": "b09-05",
       "type": "sentence_parsing",
-      "title": "Hội thoại gián tiếp và câu hỏi số lượng với 多少",
-      "vi": "Nhân viên giao dịch của ngân hàng hỏi tôi muốn đổi bao nhiêu tiền.",
-      "zh": "银行的营业员问我要换多少钱",
-      "standardTrans": "银行的营业员问我要换多少钱",
-      "pinyin": "Yínháng de yíngyèyuán wèn wǒ yào huàn duōshao qián.",
-      "grammarPoint": "Định ngữ sở hữu: Cơ quan + 的 + Chức danh; Động từ 问 mang mệnh đề tân ngữ; Đổi tiền: 换 + 多少钱",
+      "title": "Đề nghị chờ đợi lịch sự",
+      "vi": "Xin ngài vui lòng đợi một lát.",
+      "zh": "请先生等一会儿",
+      "standardTrans": "请先生等一会儿",
+      "pinyin": "Qǐng xiānsheng děng yíhuìr.",
+      "grammarPoint": "Câu cầu khiến lịch sự: 请 + Danh xưng + 等一会儿",
       "tokens": [
         {
-          "text": "Nhân viên giao dịch ngân hàng",
-          "hz": "银行的营业员",
-          "py": "yínháng de yíngyèyuán",
-          "hv": "Ngân hàng đích doanh nghiệp viên",
-          "role": "Cụm danh từ chủ ngữ",
-          "vn": "Giao dịch viên của ngân hàng",
-          "radicals": "银行 = Ngân hàng (bộ kim 钅, bộ xích 彳, bộ xúc 亍); 营业员 = Nhân viên nghiệp vụ (bộ thảo 艹, chữ nghiệp 业, bộ bối 贝)"
+          "text": "Xin mời",
+          "hz": "请",
+          "py": "qǐng",
+          "hv": "Thỉnh",
+          "role": "Động từ",
+          "vn": "Xin, mời (biểu thị sự lễ phép)",
+          "radicals": "请 = Bộ ngôn 讠 + Bộ thanh 青"
         },
         {
-          "text": "Đổi tiền",
-          "hz": "换钱",
-          "py": "huàn qián",
-          "hv": "Hoán tiền",
-          "role": "Động tân",
-          "vn": "Đổi tiền, quy đổi tiền tệ",
-          "radicals": "换 = Bộ thủ (tài gảy) 扌 + chữ hoán 奂; 钱 = Bộ kim 钅 + chữ qua 戈"
+          "text": "Ngài / Ông",
+          "hz": "先生",
+          "py": "xiānsheng",
+          "hv": "Tiên sinh",
+          "role": "Danh từ",
+          "vn": "Ông, ngài (xưng hô lịch sự với nam giới)",
+          "radicals": "先 = Nét phẩy 丿 + Bộ thổ 土 + Bộ nhi 儿; 生 = Bộ sinh 生"
+        },
+        {
+          "text": "Đợi",
+          "hz": "等",
+          "py": "děng",
+          "hv": "Đẳng",
+          "role": "Động từ",
+          "vn": "Đợi, chờ",
+          "radicals": "等 = Bộ trúc 竹 + Bộ thổ 土 + Bộ thốn 寸"
+        },
+        {
+          "text": "Một lát",
+          "hz": "一会儿",
+          "py": "yíhuìr",
+          "hv": "Nhất hội nhi",
+          "role": "Bổ ngữ thời lượng",
+          "vn": "Một lát, một chốc (khoảng thời gian ngắn)",
+          "radicals": "一 = Bộ nhất 一; 会 = Bộ nhân 人 + Bộ khư 厶; 儿 = Bộ nhi 儿"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "等", "tag": "Động từ" },
+        { "id": "t1", "text": "请", "tag": "Mời" },
+        { "id": "t5", "text": "小姐", "tag": "Bẫy" },
+        { "id": "t4", "text": "一会儿", "tag": "Thời lượng" },
+        { "id": "t2", "text": "先生", "tag": "Danh xưng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["请", "先生", "等", "一会儿"],
+      "wordBankPool": ["等", "请", "小姐", "一会儿", "先生"],
+      "traps": [
+        {
+          "pattern": "小姐",
+          "msg": "Lỗi xưng hô: Đề bài xưng hô với nam giới ('ngài') phải dùng '先生', không dùng '小姐' (cô/tiểu thư)."
+        }
+      ],
+      "explanation": "Bổ ngữ thời lượng '一会儿' đặt ngay sau động từ '等' để diễn đạt hành động chờ đợi trong chốc lát."
+    },
+    {
+      "id": "b09-01",
+      "type": "sentence_parsing",
+      "title": "Nhu cầu đi ngân hàng đổi tiền",
+      "vi": "Buổi chiều tôi muốn đi ngân hàng đổi Nhân dân tệ.",
+      "zh": "下午我要去银行换人民币",
+      "standardTrans": "下午我要去银行换人民币",
+      "pinyin": "Xiàwǔ wǒ yào qù yínháng huàn Rénmínbì.",
+      "grammarPoint": "Thời gian + S + 要 + 去 + Địa điểm + 换 + Tân ngữ",
+      "tokens": [
+        {
+          "text": "Buổi chiều",
+          "hz": "下午",
+          "py": "xiàwǔ",
+          "hv": "Hạ ngọ",
+          "role": "Danh từ thời gian",
+          "vn": "Buổi chiều",
+          "radicals": "下 = Bộ nhất 一 + Bộ bốc 卜; 午 = Bộ thập 十 + Bộ nhân 人"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Muốn",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ năng nguyện",
+          "vn": "Muốn, cần, dự định",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
+        },
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Ngân hàng",
+          "hz": "银行",
+          "py": "yínháng",
+          "hv": "Ngân hàng",
+          "role": "Danh từ",
+          "vn": "Ngân hàng",
+          "radicals": "银 = Bộ kim 钅 + Bộ cấn 艮; 行 = Bộ xích 彳 + Bộ hành 行"
+        },
+        {
+          "text": "Đổi",
+          "hz": "换",
+          "py": "huàn",
+          "hv": "Hoán",
+          "role": "Động từ",
+          "vn": "Đổi, quy đổi tiền tệ",
+          "radicals": "换 = Bộ thủ 扌 + Bộ đại 大"
+        },
+        {
+          "text": "Nhân dân tệ",
+          "hz": "人民币",
+          "py": "Rénmínbì",
+          "hv": "Nhân dân tệ",
+          "role": "Tân ngữ",
+          "vn": "Đơn vị tiền tệ của Trung Quốc",
+          "radicals": "人 = Bộ nhân 人; 民 = Bộ thị 氏; 币 = Nét phẩy 丿 + Bộ cân 巾"
+        }
+      ],
+      "tiles": [
+        { "id": "t5", "text": "银行", "tag": "Địa điểm" },
+        { "id": "t2", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "人民币", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "下午", "tag": "Thời gian" },
+        { "id": "t8", "text": "买", "tag": "Bẫy" },
+        { "id": "t4", "text": "去", "tag": "Động từ" },
+        { "id": "t6", "text": "换", "tag": "Động từ" },
+        { "id": "t3", "text": "要", "tag": "Năng nguyện" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["下午", "我", "要", "去", "银行", "换", "人民币"],
+      "wordBankPool": ["银行", "我", "人民币", "下午", "买", "去", "换", "要"],
+      "traps": [
+        {
+          "pattern": "买",
+          "msg": "Lỗi động từ: Quy đổi tiền tệ tại ngân hàng phải dùng động từ '换' (đổi), không dùng '买' (mua)."
+        }
+      ],
+      "explanation": "Câu liên động diễn tả đi đến một địa điểm để thực hiện mục đích: 去 + Địa điểm (银行) + Hành động (换人民币)."
+    },
+    {
+      "id": "b09-08",
+      "type": "sentence_parsing",
+      "title": "Nhân viên giao dịch hỏi số tiền cần đổi",
+      "vi": "Thưa cô cô muốn đổi bao nhiêu tiền?",
+      "zh": "小姐您要换多少钱",
+      "standardTrans": "小姐您要换多少钱",
+      "pinyin": "Xiǎojiě nín yào huàn duōshao qián?",
+      "grammarPoint": "Xưng hô + 您 + 要换 + 多少钱",
+      "tokens": [
+        {
+          "text": "Cô / Tiểu thư",
+          "hz": "小姐",
+          "py": "xiǎojiě",
+          "hv": "Tiểu thư",
+          "role": "Danh từ",
+          "vn": "Cô, chị (cách gọi lịch sự phụ nữ trẻ)",
+          "radicals": "小 = Bộ tiểu 小; 姐 = Bộ nữ 女 + Chữ thả 且"
+        },
+        {
+          "text": "Ngài / Cô",
+          "hz": "您",
+          "py": "nín",
+          "hv": "Nâm",
+          "role": "Chủ ngữ",
+          "vn": "Đại từ ngôi thứ hai số ít thể hiện sự tôn trọng",
+          "radicals": "您 = Bộ nhân đứng 亻 + Bộ nhĩ 尔 + Bộ tâm 心"
+        },
+        {
+          "text": "Muốn",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ năng nguyện",
+          "vn": "Muốn, cần",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
+        },
+        {
+          "text": "Đổi",
+          "hz": "换",
+          "py": "huàn",
+          "hv": "Hoán",
+          "role": "Động từ",
+          "vn": "Đổi tiền",
+          "radicals": "换 = Bộ thủ 扌 + Bộ đại 大"
         },
         {
           "text": "Bao nhiêu tiền",
           "hz": "多少钱",
           "py": "duōshao qián",
-          "hv": "Đa thiếu tiền",
-          "role": "Cụm từ nghi vấn hỏi số lượng",
+          "hv": "Đa thiểu tiền",
+          "role": "Cụm nghi vấn",
           "vn": "Bao nhiêu tiền",
-          "radicals": "多 = Hai bộ tịch 夕; 少 = Bộ tiểu 小 + nét phẩy; 钱 = Tiền"
+          "radicals": "多 = Bộ tịch 夕; 少 = Bộ tiểu 小 + Nét phẩy 丿; 钱 = Bộ kim 钅 + Bộ qua 戈"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "问我要换多少钱", "tag": "Vị ngữ hỏi gián tiếp" },
-        { "id": "t1", "text": "银行的营业员", "tag": "Chủ ngữ" },
-        { "id": "t3", "text": "营业员的银行", "tag": "Bẫy định ngữ" },
-        { "id": "t4", "text": "多少钱要换", "tag": "Bẫy ngữ tự" }
+        { "id": "t3", "text": "要", "tag": "Năng nguyện" },
+        { "id": "t1", "text": "小姐", "tag": "Danh xưng" },
+        { "id": "t5", "text": "多少钱", "tag": "Nghi vấn" },
+        { "id": "t6", "text": "几钱", "tag": "Bẫy" },
+        { "id": "t2", "text": "您", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "换", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["银行的营业员", "问我要换", "多少钱"],
-      "wordBankPool": ["银行的营业员", "问我要换多少钱", "营业员的银行", "多少钱要换", "换钱多少", "问我换"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["小姐", "您", "要", "换", "多少钱"],
+      "wordBankPool": ["要", "小姐", "多少钱", "几钱", "您", "换"],
       "traps": [
         {
-          "pattern": "营业员的银行",
-          "msg": "Lỗi định ngữ: Cơ quan sở hữu (银行) phải đứng trước trợ từ '的', người làm việc (营业员) đứng sau: '银行的营业员'."
-        },
-        {
-          "pattern": "多少钱要换",
-          "msg": "Lỗi vị trí tân ngữ: '多少钱' là đối tượng của hành động đổi, bắt buộc đứng sau động từ: '要换多少钱'."
+          "pattern": "几钱",
+          "msg": "Lỗi từ nghi vấn: Hỏi số lượng tiền lớn/không xác định phải dùng '多少钱', không dùng '几钱'."
         }
       ],
-      "explanation": "Câu có tân ngữ là một mệnh đề nghi vấn (问 + 我要换多少钱). Danh xưng cơ quan sở hữu đứng trước danh xưng người làm: 银行的营业员."
-    },
-    {
-      "id": "b09-02",
-      "type": "anti_word_by_word",
-      "title": "Động từ hai tân ngữ 给 và 找 thối lại tiền thừa",
-      "vi": "Tôi đưa cho anh ấy 50000 Việt Nam đồng, anh ấy trả lại tôi 10000 đồng.",
-      "zh": "我给他五万越南盾他找我一万越南盾",
-      "standardTrans": "我给他五万越南盾他找我一万越南盾",
-      "pinyin": "Wǒ gěi tā wǔ wàn yuènándùn, tā zhǎo wǒ yí wàn yuènándùn.",
-      "grammarPoint": "Động từ 2 tân ngữ 给 và 找: S + 给/找 + Người (Tân ngữ 1) + Tiền (Tân ngữ 2); Đơn vị vạn (万)",
-      "tokens": [
-        {
-          "text": "Đưa cho anh ấy",
-          "hz": "给他",
-          "py": "gěi tā",
-          "hv": "Cấp tha",
-          "role": "Động từ + Tân ngữ 1",
-          "vn": "Đưa cho anh ta",
-          "radicals": "给 = Bộ mịch 纟 + chữ hợp 合; 他 = Bộ nhân đứng 亻 + chữ dã 也"
-        },
-        {
-          "text": "Năm vạn (50.000)",
-          "hz": "五万",
-          "py": "wǔ wàn",
-          "hv": "Ngũ vạn",
-          "role": "Số từ",
-          "vn": "50.000 (5 vạn)",
-          "radicals": "五 = Số 5; 万 = Bộ nhất 一 + nét ngang gập móc"
-        },
-        {
-          "text": "Thối lại tôi (trả lại tôi)",
-          "hz": "找我",
-          "py": "zhǎo wǒ",
-          "hv": "Trảo ngã",
-          "role": "Động từ + Tân ngữ 1",
-          "vn": "Thối lại tiền lẻ cho tôi",
-          "radicals": "找 = Bộ thủ 扌 + chữ qua 戈; 我 = Chữ ngã 我"
-        },
-        {
-          "text": "Việt Nam đồng",
-          "hz": "越南盾",
-          "py": "yuènándùn",
-          "hv": "Việt Nam thuẫn",
-          "role": "Đơn vị tiền tệ",
-          "vn": "Tiền đồng Việt Nam",
-          "radicals": "越 = Bộ tẩu 走; 南 = Bộ thập 十; 盾 = Bộ mục 目 + chữ thuẫn"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "他找我一万越南盾", "tag": "Vế thối tiền" },
-        { "id": "t1", "text": "我给他五万越南盾", "tag": "Vế đưa tiền" },
-        { "id": "t3", "text": "找五万我", "tag": "Bẫy trật tự tân ngữ" },
-        { "id": "t4", "text": "五十千", "tag": "Bẫy đếm số" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["我给他", "五万越南盾", "他找我", "一万越南盾"],
-      "wordBankPool": ["我给他五万越南盾", "他找我一万越南盾", "找五万我", "五十千", "还给我", "给五万他"],
-      "traps": [
-        {
-          "pattern": "五十千",
-          "msg": "Lỗi quy đổi số tiền: Tiếng Trung đếm theo đơn vị 4 chữ số (vạn), 50.000 phải nói là '五万' (5 vạn), không dùng '五十千'."
-        },
-        {
-          "pattern": "找五万我",
-          "msg": "Lỗi trật tự 2 tân ngữ: Động từ '找' (thối tiền) nhận NGƯỜI trước rồi mới đến TIỀN ('找我一万'), không nói '找一万我'."
-        }
-      ],
-      "explanation": "Hai động từ kinh điển nhận 2 tân ngữ liên tiếp trong thanh toán: 给 + Người + Tiền (đưa tiền cho ai) và 找 + Người + Tiền (thối lại tiền cho ai)."
+      "explanation": "Trong giao dịch dịch vụ, nhân viên thường dùng '小姐' kết hợp đại từ kính ngữ '您' để bày tỏ sự lịch sự."
     },
     {
       "id": "b09-03",
       "type": "sentence_parsing",
-      "title": "Hội thoại hỏi thể loại tạp chí và tên ngôn ngữ",
-      "vi": "A: Cậu muốn mua tạp chí gì? B: Tôi muốn mua tạp chí tiếng Anh.",
-      "zh": "你要买什么杂志我要买英文杂志",
-      "standardTrans": "你要买什么杂志我要买英文杂志",
-      "pinyin": "Nǐ yào mǎi shénme zázhì? Wǒ yào mǎi yīngwén zázhì.",
-      "grammarPoint": "Đại từ nghi vấn 什么 đứng trước danh từ (什么杂志); Danh từ ngôn ngữ làm định ngữ: 英文杂志",
+      "title": "Đọc số tiền hàng nghìn",
+      "vi": "Tôi đổi ba nghìn Đô la Mỹ.",
+      "zh": "我换三千美元",
+      "standardTrans": "我换三千美元",
+      "pinyin": "Wǒ huàn sānqiān Měiyuán.",
+      "grammarPoint": "Số lượng hàng nghìn: Số từ + 千 + Đơn vị tiền tệ",
       "tokens": [
         {
-          "text": "Tạp chí gì",
-          "hz": "什么杂志",
-          "py": "shénme zázhì",
-          "hv": "Thập ma tạp chí",
-          "role": "Cụm danh từ nghi vấn",
-          "vn": "Loại tạp chí nào, tạp chí gì",
-          "radicals": "什么 = Cái gì; 杂 = Bộ cửu 九 + bộ mộc 木; 志 = Bộ sĩ 士 + bộ tâm 心"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Tạp chí tiếng Anh",
-          "hz": "英文杂志",
-          "py": "yīngwén zázhì",
-          "hv": "Anh văn tạp chí",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Tạp chí bằng tiếng Anh",
-          "radicals": "英 = Bộ thảo 艹 + chữ ương 央; 文 = Bộ văn 文; 杂志 = Tạp chí"
+          "text": "Đổi",
+          "hz": "换",
+          "py": "huàn",
+          "hv": "Hoán",
+          "role": "Động từ",
+          "vn": "Đổi tiền",
+          "radicals": "换 = Bộ thủ 扌 + Bộ đại 大"
+        },
+        {
+          "text": "Ba nghìn",
+          "hz": "三千",
+          "py": "sānqiān",
+          "hv": "Tam thiên",
+          "role": "Số từ",
+          "vn": "Số 3.000",
+          "radicals": "三 = Bộ nhất 一; 千 = Bộ thập 十 + Nét phẩy 丿"
+        },
+        {
+          "text": "Đô la Mỹ",
+          "hz": "美元",
+          "py": "Měiyuán",
+          "hv": "Mỹ nguyên",
+          "role": "Tân ngữ",
+          "vn": "Đồng Đô la Mỹ (USD)",
+          "radicals": "美 = Bộ dương 羊 + Bộ đại 大; 元 = Bộ nhị 二 + Bộ nhi 儿"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "我要买英文杂志", "tag": "Lời đáp B" },
-        { "id": "t1", "text": "你要买什么杂志", "tag": "Câu hỏi A" },
-        { "id": "t3", "text": "杂志什么", "tag": "Bẫy đại từ" },
-        { "id": "t4", "text": "杂志英文", "tag": "Bẫy định ngữ" }
+        { "id": "t3", "text": "三千", "tag": "Số từ" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "三百", "tag": "Bẫy" },
+        { "id": "t4", "text": "美元", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "换", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["你要买什么杂志", "我要买英文杂志"],
-      "wordBankPool": ["你要买什么杂志", "我要买英文杂志", "杂志什么", "杂志英文", "买英语杂志", "什么买"],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["我", "换", "三千", "美元"],
+      "wordBankPool": ["三千", "我", "三百", "美元", "换"],
       "traps": [
         {
-          "pattern": "杂志什么",
-          "msg": "Lỗi trật tự từ: Đại từ '什么' đóng vai trò định ngữ hỏi tính chất, phải đứng TRƯỚC danh từ ('什么杂志'), không nói ngược '杂志什么'."
-        },
-        {
-          "pattern": "杂志英文",
-          "msg": "Lỗi định ngữ tiếng nước ngoài: Thể loại ngôn ngữ phải đứng trước danh từ: '英文杂志', không dịch xuôi theo tiếng Việt."
+          "pattern": "三百",
+          "msg": "Lỗi đơn vị số: '三百' là ba trăm (300); đề bài yêu cầu 'ba nghìn' (3.000) phải dùng '三千'."
         }
       ],
-      "explanation": "Cấu trúc hỏi thể loại đồ vật: [什么 + Danh từ] (什么书, 什么杂志). Tạp chí bằng chữ viết của ngôn ngữ nào thì dùng tên văn bản đó: 英文杂志, 中文杂志."
+      "explanation": "Đơn vị hàng nghìn trong tiếng Trung là '千' (qiān), đứng trực tiếp sau số đếm và trước tên loại tiền tệ."
     },
     {
-      "id": "b09-04",
-      "type": "anti_word_by_word",
-      "title": "Từ chối lời mời và trợ từ ngữ khí 吧 khuyên nhủ",
-      "vi": "Tớ không đi đâu, tớ bận lắm, cậu đi đi.",
-      "zh": "我不去我很忙你去吧",
-      "standardTrans": "我不去我很忙你去吧",
-      "pinyin": "Wǒ bú qù, wǒ hěn máng, nǐ qù ba.",
-      "grammarPoint": "Phủ định hành động 不去; Vị ngữ tính từ 很忙; Trợ từ ngữ khí 吧 biểu thị giục/đề nghị",
-      "tokens": [
-        {
-          "text": "Không đi",
-          "hz": "不去",
-          "py": "bú qù",
-          "hv": "Bất khứ",
-          "role": "Vị ngữ phủ định",
-          "vn": "Không đi đâu, không đi",
-          "radicals": "不 = Bộ nhất 一; 去 = Bộ thổ 土 + bộ khư 厶"
-        },
-        {
-          "text": "Rất bận",
-          "hz": "很忙",
-          "py": "hěn máng",
-          "hv": "Khẩn mang",
-          "role": "Cụm vị ngữ tính từ",
-          "vn": "Rất bận rộn",
-          "radicals": "很 = Bộ xích 彳 + chữ cấn 艮; 忙 = Bộ tâm đứng 忄 + chữ vong 亡"
-        },
-        {
-          "text": "Cậu đi đi",
-          "hz": "你去吧",
-          "py": "nǐ qù ba",
-          "hv": "Nhĩ khứ ba",
-          "role": "Câu cầu khiến/khuyên",
-          "vn": "Cậu cứ đi đi",
-          "radicals": "你 = Đại từ; 去 = Đi; 吧 = Bộ khẩu 口 + chữ ba 巴"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "我很忙", "tag": "Lý do bận" },
-        { "id": "t1", "text": "我不去", "tag": "Từ chối" },
-        { "id": "t3", "text": "你去吧", "tag": "Khuyên đối phương đi" },
-        { "id": "t4", "text": "你去去", "tag": "Bẫy lặp từ" },
-        { "id": "t5", "text": "忙我很", "tag": "Bẫy vị trí" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["我不去", "我很忙", "你去吧"],
-      "wordBankPool": ["我不去", "我很忙", "你去吧", "你去去", "忙我很", "不去看"],
-      "traps": [
-        {
-          "pattern": "忙我很",
-          "msg": "Lỗi cấu trúc vị ngữ tính từ: Phó từ chỉ mức độ '很' phải đứng trước tính từ: '我很忙', không đảo ngược."
-        },
-        {
-          "pattern": "你去去",
-          "msg": "Lỗi trợ từ ngữ khí: Để giục hoặc khuyên ai làm gì ('cậu đi đi'), dùng trợ từ '吧' ('你去吧'), không lặp lại động từ '去去'."
-        }
-      ],
-      "explanation": "Câu khẩu ngữ ngắn biểu thị từ chối khéo: đưa ra câu trả lời phủ định (我不去) -> nêu lý do ngắn (我很忙) -> khuyên người kia cứ thực hiện hành động một mình kèm trợ từ '吧' (你去吧)."
-    },
-    {
-      "id": "b09-05",
+      "id": "b09-10",
       "type": "sentence_parsing",
-      "title": "Trạng ngữ thời gian và hai câu liên động đối lập",
-      "vi": "A: Chiều mai tớ đi thư viện, cậu đi không? B: Tớ không đi, tớ đến ngân hàng đổi tiền.",
-      "zh": "明天下午我去图书馆你去吗我不去我去银行换钱",
-      "standardTrans": "明天下午我去图书馆你去吗我不去我去银行换钱",
-      "pinyin": "Míngtiān xiàwǔ wǒ qù túshūguǎn, nǐ qù ma? Wǒ bú qù, wǒ qù yínháng huàn qián.",
-      "grammarPoint": "Trạng ngữ thời gian kết hợp: 明天下午; Câu liên động mục đích: 去 + Nơi chốn + Động từ (去银行换钱)",
+      "title": "Yêu cầu kiểm đếm tiền mặt",
+      "vi": "Gửi ngài tiền xin ngài hãy đếm lại.",
+      "zh": "给您钱请您数一数",
+      "standardTrans": "给您钱请您数一数",
+      "pinyin": "Gěi nín qián qǐng nín shǔ yi shǔ.",
+      "grammarPoint": "Động từ lặp lại: 数一数 (đếm thử/đếm lại)",
       "tokens": [
         {
-          "text": "Chiều mai",
-          "hz": "明天下午",
-          "py": "míngtiān xiàwǔ",
-          "hv": "Minh thiên hạ ngọ",
-          "role": "Trạng ngữ thời gian",
-          "vn": "Buổi chiều ngày mai",
-          "radicals": "明天 = Ngày mai (bộ nhật 日, bộ nguyệt 月, chữ thiên 天); 下午 = Buổi chiều (bộ nhất 一, bộ bốc 卜, chữ ngọ 午)"
+          "text": "Đưa / Gửi",
+          "hz": "给",
+          "py": "gěi",
+          "hv": "Cấp",
+          "role": "Động từ",
+          "vn": "Đưa, trao cho",
+          "radicals": "给 = Bộ mịch 纟 + Bộ nhân 人 + Bộ khẩu 口"
+        },
+        {
+          "text": "Ngài",
+          "hz": "您",
+          "py": "nín",
+          "hv": "Nâm",
+          "role": "Tân ngữ 1",
+          "vn": "Ngài, ông/bà",
+          "radicals": "您 = Bộ nhân đứng 亻 + Bộ nhĩ 尔 + Bộ tâm 心"
+        },
+        {
+          "text": "Tiền",
+          "hz": "钱",
+          "py": "qián",
+          "hv": "Tiền",
+          "role": "Tân ngữ 2",
+          "vn": "Tiền mặt",
+          "radicals": "钱 = Bộ kim 钅 + Bộ qua 戈"
+        },
+        {
+          "text": "Xin mời",
+          "hz": "请",
+          "py": "qǐng",
+          "hv": "Thỉnh",
+          "role": "Động từ",
+          "vn": "Xin mời, vui lòng",
+          "radicals": "请 = Bộ ngôn 讠 + Bộ thanh 青"
+        },
+        {
+          "text": "Ngài",
+          "hz": "您",
+          "py": "nín",
+          "hv": "Nâm",
+          "role": "Tân ngữ kiêm chủ ngữ",
+          "vn": "Ngài, ông/bà",
+          "radicals": "您 = Bộ nhân đứng 亻 + Bộ nhĩ 尔 + Bộ tâm 心"
+        },
+        {
+          "text": "Đếm lại",
+          "hz": "数一数",
+          "py": "shǔ yi shǔ",
+          "hv": "Sổ nhất sổ",
+          "role": "Động từ lặp lại",
+          "vn": "Đếm thử, kiểm đếm lại (ngữ khí nhẹ nhàng)",
+          "radicals": "数 = Bộ mễ 米 + Bộ nữ 女 + Bộ phộc 攵; 一 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "请", "tag": "Mời" },
+        { "id": "t2", "text": "您", "tag": "Tân ngữ" },
+        { "id": "t6", "text": "数一数", "tag": "Động từ" },
+        { "id": "t7", "text": "找", "tag": "Bẫy" },
+        { "id": "t1", "text": "给", "tag": "Động từ" },
+        { "id": "t5", "text": "您", "tag": "Đại từ" },
+        { "id": "t3", "text": "钱", "tag": "Tân ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["给", "您", "钱", "请", "数一数"],
+      "wordBankPool": ["请", "您", "数一数", "找", "给", "您", "钱"],
+      "traps": [
+        {
+          "pattern": "找",
+          "msg": "Lỗi từ vựng: Giao tiền đã quy đổi cho khách dùng '给您钱', còn '找' chỉ dùng khi thối lại tiền thừa mua hàng."
+        }
+      ],
+      "explanation": "Động từ lặp lại dạng 'A一A' (数一数) giúp câu đề nghị trở nên nhẹ nhàng, lịch sự hơn."
+    },
+    {
+      "id": "b09-06",
+      "type": "sentence_parsing",
+      "title": "Đọc số tiền hàng vạn (mười nghìn)",
+      "vi": "Anh trai tôi đổi hai vạn Yên Nhật.",
+      "zh": "我哥哥换两万日元",
+      "standardTrans": "我哥哥换两万日元",
+      "pinyin": "Wǒ gēge huàn liǎngwàn Rìyuán.",
+      "grammarPoint": "Đơn vị vạn: 两万 (20.000) + Ngoại tệ",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Anh trai",
+          "hz": "哥哥",
+          "py": "gēge",
+          "hv": "Ca ca",
+          "role": "Chủ ngữ",
+          "vn": "Anh trai ruột",
+          "radicals": "哥 = Bộ khẩu 口 + Bộ nhất 一 + Bộ quyết 亅"
+        },
+        {
+          "text": "Đổi",
+          "hz": "换",
+          "py": "huàn",
+          "hv": "Hoán",
+          "role": "Động từ",
+          "vn": "Đổi tiền",
+          "radicals": "换 = Bộ thủ 扌 + Bộ đại 大"
+        },
+        {
+          "text": "Hai vạn",
+          "hz": "两万",
+          "py": "liǎngwàn",
+          "hv": "Lưỡng vạn",
+          "role": "Số từ",
+          "vn": "2 vạn (tức 20.000)",
+          "radicals": "两 = Bộ nhất 一 + Bộ nhân 人; 万 = Bộ nhất 一 + Bộ lực 力"
+        },
+        {
+          "text": "Yên Nhật",
+          "hz": "日元",
+          "py": "Rìyuán",
+          "hv": "Nhật nguyên",
+          "role": "Tân ngữ",
+          "vn": "Đồng Yên của Nhật Bản (JPY)",
+          "radicals": "日 = Bộ nhật 日; 元 = Bộ nhị 二 + Bộ nhi 儿"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "换", "tag": "Động từ" },
+        { "id": "t1", "text": "我", "tag": "Định ngữ" },
+        { "id": "t5", "text": "日元", "tag": "Tân ngữ" },
+        { "id": "t6", "text": "二万", "tag": "Bẫy" },
+        { "id": "t2", "text": "哥哥", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "两万", "tag": "Số từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["我", "哥哥", "换", "两万", "日元"],
+      "wordBankPool": ["换", "我", "日元", "二万", "哥哥", "两万"],
+      "traps": [
+        {
+          "pattern": "二万",
+          "msg": "Lỗi số từ: Trước đơn vị hàng vạn (万) và hàng nghìn (千) phải dùng '两' (两万, 两千), không dùng '二'."
+        }
+      ],
+      "explanation": "1 vạn (一万) bằng 10.000; khi đứng trước đơn vị '万' để chỉ số 2, tiếng Trung dùng '两万'."
+    },
+    {
+      "id": "b09-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi vị trí thư viện lịch sự",
+      "vi": "Xin hỏi thư viện ở đâu?",
+      "zh": "请问图书馆在哪儿",
+      "standardTrans": "请问图书馆在哪儿",
+      "pinyin": "Qǐngwèn túshūguǎn zài nǎr?",
+      "grammarPoint": "请问 + Địa điểm + 在哪儿",
+      "tokens": [
+        {
+          "text": "Xin hỏi",
+          "hz": "请问",
+          "py": "qǐngwèn",
+          "hv": "Thỉnh vấn",
+          "role": "Cụm từ mở đầu",
+          "vn": "Xin hỏi (dùng khi mở lời hỏi đường/thông tin)",
+          "radicals": "请 = Bộ ngôn 讠 + Bộ thanh 青; 问 = Bộ môn 门 + Bộ khẩu 口"
         },
         {
           "text": "Thư viện",
           "hz": "图书馆",
           "py": "túshūguǎn",
           "hv": "Đồ thư quán",
-          "role": "Tân ngữ địa điểm",
-          "vn": "Nhà thư viện",
-          "radicals": "图 = Bộ vi 囗; 书 = Chữ thư 书; 馆 = Bộ thực 饣 + chữ quan 官"
+          "role": "Chủ ngữ",
+          "vn": "Thư viện",
+          "radicals": "图 = Bộ vi 囗 + Bộ truy 夂; 书 = Bộ ất 乙 + Bộ nhất 一; 馆 = Bộ thực 饣 + Bộ miên 宀 + Bộ khẩu 口"
         },
         {
-          "text": "Đi ngân hàng đổi tiền",
-          "hz": "去银行换钱",
-          "py": "qù yínháng huàn qián",
-          "hv": "Khứ ngân hàng hoán tiền",
-          "role": "Cụm liên động mục đích",
-          "vn": "Đến ngân hàng để đổi tiền",
-          "radicals": "去 = Đi; 银行 = Ngân hàng; 换钱 = Đổi tiền"
+          "text": "Ở",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Động từ",
+          "vn": "Ở tại",
+          "radicals": "在 = Bộ thổ 土 + Bộ nhất 一"
+        },
+        {
+          "text": "Ở đâu",
+          "hz": "哪儿",
+          "py": "nǎr",
+          "hv": "Na nhi",
+          "role": "Đại từ nghi vấn",
+          "vn": "Ở đâu, chỗ nào",
+          "radicals": "哪 = Bộ khẩu 口 + Bộ ấp 邑; 儿 = Bộ nhi 儿"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "你去吗", "tag": "Lời rủ rê" },
-        { "id": "t4", "text": "我去银行换钱", "tag": "Kế hoạch của B" },
-        { "id": "t1", "text": "明天下午我去图书馆", "tag": "Kế hoạch của A" },
-        { "id": "t3", "text": "我不去", "tag": "Từ chối" },
-        { "id": "t5", "text": "换钱去银行", "tag": "Bẫy liên động" },
-        { "id": "t6", "text": "下午明天", "tag": "Bẫy thời gian" }
+        { "id": "t3", "text": "在", "tag": "Động từ" },
+        { "id": "t1", "text": "请问", "tag": "Mở đầu" },
+        { "id": "t5", "text": "那儿", "tag": "Bẫy" },
+        { "id": "t4", "text": "哪儿", "tag": "Nghi vấn" },
+        { "id": "t2", "text": "图书馆", "tag": "Chủ ngữ" }
       ],
       "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["明天下午", "去图书馆", "你去吗", "我不去", "去银行换钱"],
-      "wordBankPool": ["明天下午我去图书馆", "你去吗", "我不去", "我去银行换钱", "换钱去银行", "下午明天", "去换钱银行"],
+      "requiredKeywordsZh": ["请问", "图书馆", "在", "哪儿"],
+      "wordBankPool": ["在", "请问", "那儿", "哪儿", "图书馆"],
       "traps": [
         {
-          "pattern": "换钱去银行",
-          "msg": "Lỗi câu liên động: Quy tắc trật tự logic tiếng Trung là phải ĐẾN ĐỊA ĐIỂM trước rồi mới LÀM GÌ: '去银行换钱', không nói '换钱去银行'."
-        },
-        {
-          "pattern": "下午明天",
-          "msg": "Lỗi sắp xếp thời gian: Phải xếp từ đơn vị thời gian LỚN đến BÉ: '明天' (ngày mai) rồi mới đến '下午' (buổi chiều)."
+          "pattern": "那儿",
+          "msg": "Lỗi đại từ: '那儿' là 'ở kia/ở đó', dùng để hỏi vị trí bắt buộc dùng '哪儿' (có bộ Khẩu)."
         }
       ],
-      "explanation": "Câu liên động mục đích kinh điển: [S + 去 + Địa điểm + Động từ + Tân ngữ]. Trạng ngữ thời gian '明天下午' đứng trước hoặc sau chủ ngữ đều được nhưng luôn trước động từ."
-    },
-    {
-      "id": "b09-06",
-      "type": "anti_word_by_word",
-      "title": "Câu hỏi chính phản 是不是 xác nhận sở hữu trường học",
-      "vi": "Kia có phải là thư viện của trường các cậu không?",
-      "zh": "那是不是你们学校的图书馆",
-      "standardTrans": "那是不是你们学校的图书馆",
-      "pinyin": "Nà shì bú shì nǐmen xuéxiào de túshūguǎn?",
-      "grammarPoint": "Câu hỏi chính phản 是不是 (có phải là...); Định ngữ sở hữu nhiều tầng: 你们学校的图书馆",
-      "tokens": [
-        {
-          "text": "Có phải là",
-          "hz": "是不是",
-          "py": "shì bú shì",
-          "hv": "Thị bất thị",
-          "role": "Cụm vị ngữ hỏi chính phản",
-          "vn": "Có phải là, phải chăng",
-          "radicals": "是 = Bộ nhật 日 + bộ sơ 疋; 不 = Bộ nhất 一"
-        },
-        {
-          "text": "Trường của các cậu",
-          "hz": "你们学校",
-          "py": "nǐmen xuéxiào",
-          "hv": "Nhĩ môn học hiệu",
-          "role": "Định ngữ sở hữu",
-          "vn": "Trường học của các bạn",
-          "radicals": "你们 = Các bạn; 学校 = Trường học (bộ miên 宀, bộ mộc 木, bộ phụ 父)"
-        },
-        {
-          "text": "Thư viện của trường",
-          "hz": "学校的图书馆",
-          "py": "xuéxiào de túshūguǎn",
-          "hv": "Học hiệu đích đồ thư quán",
-          "role": "Cụm danh từ trung tâm",
-          "vn": "Thư viện của trường học",
-          "radicals": "学校 = Trường học; 的 = Trợ từ; 图书馆 = Thư viện"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "你们学校的图书馆", "tag": "Cụm danh ngữ tân ngữ" },
-        { "id": "t1", "text": "那是不是", "tag": "Chủ ngữ + Hỏi chính phản" },
-        { "id": "t3", "text": "是不是吗", "tag": "Bẫy thừa 吗" },
-        { "id": "t4", "text": "图书馆的学校", "tag": "Bẫy định ngữ" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["那是不是", "你们学校的图书馆"],
-      "wordBankPool": ["那是不是", "你们学校的图书馆", "是不是吗", "图书馆的学校", "那是你们学校", "学校图书馆"],
-      "traps": [
-        {
-          "pattern": "是不是吗",
-          "msg": "Thừa trợ từ: Đã dùng cấu trúc hỏi chính phản '是不是' (có phải là) thì cuối câu tuyệt đối KHÔNG thêm trợ từ '吗'."
-        },
-        {
-          "pattern": "图书馆的学校",
-          "msg": "Lỗi định ngữ: 'Thư viện của trường' thì trường học (sở hữu) phải đứng trước trợ từ 的: '学校的图书馆'."
-        }
-      ],
-      "explanation": "Câu hỏi chính phản dùng '是不是' để thay thế cho câu hỏi đuôi '...吗?'. Cụm định ngữ sở hữu: [Cơ quan sở hữu + 的 + Nơi chốn] (你们学校的图书馆)."
-    },
-    {
-      "id": "b09-07",
-      "type": "sentence_parsing",
-      "title": "Phủ định và khẳng định quan hệ thầy trò với 不是 và 是",
-      "vi": "Thầy giáo Vương không phải là thầy giáo của tớ, thầy ấy là thầy giáo của chị gái tớ.",
-      "zh": "王老师不是我的老师他是我姐姐的老师",
-      "standardTrans": "王老师不是我的老师他是我姐姐的老师",
-      "pinyin": "Wáng lǎoshī bú shì wǒ de lǎoshī, tā shì wǒ jiějie de lǎoshī.",
-      "grammarPoint": "Phán đoán phủ định: 不是; Phán đoán khẳng định: 是; Cụm định ngữ: 我姐姐的老师",
-      "tokens": [
-        {
-          "text": "Thầy giáo Vương",
-          "hz": "王老师",
-          "py": "Wáng lǎoshī",
-          "hv": "Vương lão sư",
-          "role": "Chủ ngữ 1",
-          "vn": "Thầy giáo họ Vương",
-          "radicals": "王 = Bộ vương 王; 老师 = Thầy cô giáo (bộ thổ 土, bộ tỷ 匕, bộ cân 巾)"
-        },
-        {
-          "text": "Không phải",
-          "hz": "不是",
-          "py": "bú shì",
-          "hv": "Bất thị",
-          "role": "Động từ hệ từ phủ định",
-          "vn": "Không phải là",
-          "radicals": "不 = Bộ nhất 一; 是 = Bộ nhật 日"
-        },
-        {
-          "text": "Thầy giáo của chị gái tôi",
-          "hz": "我姐姐的老师",
-          "py": "wǒ jiějie de lǎoshī",
-          "hv": "Ngã tỷ tỷ đích lão sư",
-          "role": "Cụm danh từ tân ngữ",
-          "vn": "Thầy giáo dạy chị gái tôi",
-          "radicals": "我 = Tôi; 姐姐 = Chị gái (bộ nữ 女 + chữ thả 且); 老师 = Giáo viên"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "他是我姐姐的老师", "tag": "Vế khẳng định 2" },
-        { "id": "t1", "text": "王老师不是我的老师", "tag": "Vế phủ định 1" },
-        { "id": "t3", "text": "老师王", "tag": "Bẫy xưng hô" },
-        { "id": "t4", "text": "老师的姐姐", "tag": "Bẫy định ngữ" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["王老师不是我的老师", "他是我姐姐的老师"],
-      "wordBankPool": ["王老师不是我的老师", "他是我姐姐的老师", "老师王", "老师的姐姐", "不是王老师", "姐姐老师的"],
-      "traps": [
-        {
-          "pattern": "老师王",
-          "msg": "Lỗi xưng hô: Trong tiếng Trung, họ luôn đặt TRƯỚC danh xưng '老师' ('王老师: Thầy Vương'), không nói '老师王'."
-        },
-        {
-          "pattern": "老师的姐姐",
-          "msg": "Lỗi định ngữ: 'Thầy giáo của chị gái' thì chị gái là thành phần hạn định phải đứng trước: '姐姐的老师'."
-        }
-      ],
-      "explanation": "Câu ghép đối chiếu quan hệ: [Chủ ngữ + 不是 + Tân ngữ 1, 是 + Tân ngữ 2]. Định ngữ chỉ thân nhân ruột thịt (我姐姐) đứng trước trung tâm ngữ (老师)."
-    },
-    {
-      "id": "b09-08",
-      "type": "anti_word_by_word",
-      "title": "Bổ ngữ thời lượng 一会儿 và hỏi ý kiến bằng 好吗",
-      "vi": "A: Cậu đợi tớ một lát được không? B: Cậu cứ đi đi, tớ đợi cậu.",
-      "zh": "你等我一会儿好吗你去吧我等你",
-      "standardTrans": "你等我一会儿好吗你去吧我等你",
-      "pinyin": "Nǐ děng wǒ yíhuìr, hǎo ma? Nǐ qù ba, wǒ děng nǐ.",
-      "grammarPoint": "Bổ ngữ thời lượng: Động từ + Tân ngữ + 一会儿; Câu hỏi thương lượng: 好吗; Trợ từ ngữ khí: 吧",
-      "tokens": [
-        {
-          "text": "Đợi tôi một lát",
-          "hz": "等我一会儿",
-          "py": "děng wǒ yíhuìr",
-          "hv": "Đẳng ngã nhất hội nhi",
-          "role": "Động từ + Tân ngữ + Bổ ngữ thời lượng",
-          "vn": "Đợi tôi một lúc, chờ tôi một lát",
-          "radicals": "等 = Bộ trúc 竹 + chữ tự 寺; 我 = Tôi; 一会儿 = Một lát (bộ nhất, bộ nhân, chữ vân, bộ nhi)"
-        },
-        {
-          "text": "Được không",
-          "hz": "好吗",
-          "py": "hǎo ma",
-          "hv": "Hảo ma",
-          "role": "Trợ từ hỏi ý kiến",
-          "vn": "Được không, có được không",
-          "radicals": "好 = Bộ nữ 女 + bộ tử 子; 吗 = Bộ khẩu 口 + bộ mã 马"
-        },
-        {
-          "text": "Tôi đợi cậu",
-          "hz": "我等你",
-          "py": "wǒ děng nǐ",
-          "hv": "Ngã đẳng nhĩ",
-          "role": "Chủ vị tân",
-          "vn": "Tôi chờ bạn",
-          "radicals": "等 = Chờ đợi"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "好吗", "tag": "Hỏi ý kiến" },
-        { "id": "t4", "text": "我等你", "tag": "Cam kết đợi" },
-        { "id": "t1", "text": "你等我一会儿", "tag": "Nhờ đợi" },
-        { "id": "t3", "text": "你去吧", "tag": "Bảo đối phương đi" },
-        { "id": "t5", "text": "一会儿等我", "tag": "Bẫy thời lượng" },
-        { "id": "t6", "text": "等你在", "tag": "Bẫy ngữ tự" }
-      ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["你等我一会儿", "好吗", "你去吧", "我等你"],
-      "wordBankPool": ["你等我一会儿", "好吗", "你去吧", "我等你", "一会儿等我", "等你在", "等我一下儿"],
-      "traps": [
-        {
-          "pattern": "一会儿等",
-          "msg": "Lỗi bổ ngữ thời lượng: '一会儿' (một lát) biểu thị thời gian kéo dài của hành động, bắt buộc đứng SAU động từ: '等我一会儿'."
-        },
-        {
-          "pattern": "等你在",
-          "msg": "Lỗi trật tự câu: 'Tôi đợi cậu' là câu trần thuật động tân bình thường: '我等你', không thêm chữ '在' vào sau."
-        }
-      ],
-      "explanation": "Quy tắc bổ ngữ thời lượng: Khi động từ mang tân ngữ chỉ người, bổ ngữ thời lượng đứng sau tân ngữ: [Động từ + Đại từ người + 一会儿] (等我一会儿)."
+      "explanation": "Đặt '请问' ở đầu câu hỏi để thể hiện sự lịch sự khi nhờ người lạ chỉ đường."
     },
     {
       "id": "b09-09",
       "type": "sentence_parsing",
-      "title": "Hội thoại xưng danh, tìm người và câu liên động đi gọi",
-      "vi": "A: Xin chào! Tớ tên là Mike, tớ là bạn của Trương Đông. Tớ muốn tìm cậu ấy. B: Cậu đợi một lát, tớ đi gọi cậu ấy nhé.",
-      "zh": "你好我叫麦克我是张东的朋友我要找他你等一会儿我去叫他吧",
-      "standardTrans": "你好我叫麦克我是张东的朋友我要找他你等一会儿我去叫他吧",
-      "pinyin": "Nǐ hǎo! Wǒ jiào Màikè, wǒ shì Zhāng Dōng de péngyou. Wǒ yào zhǎo tā. Nǐ děng yíhuìr, wǒ qù jiào tā ba.",
-      "grammarPoint": "Tự giới thiệu: 我叫...; Định ngữ sở hữu: 张东的朋友; Câu liên động mục đích: 去 + 叫他 (đi gọi cậu ấy)",
+      "title": "Đọc số tiền hàng trăm kết hợp hàng chục",
+      "vi": "Mẹ tôi đổi tám trăm năm mươi Euro.",
+      "zh": "我妈妈换八百五十欧元",
+      "standardTrans": "我妈妈换八百五十欧元",
+      "pinyin": "Wǒ māma huàn bābǎi wǔshí Ōuyuán.",
+      "grammarPoint": "Đọc số ghép: Số + 百 + Số + 十 + Ngoại tệ",
       "tokens": [
         {
-          "text": "Tớ tên là Mike",
-          "hz": "我叫麦克",
-          "py": "wǒ jiào Màikè",
-          "hv": "Ngã khiếu Mạch Khắc",
-          "role": "Chủ vị tân xưng danh",
-          "vn": "Tôi tên là Mike",
-          "radicals": "叫 = Bộ khẩu 口 + bộ khiếu 丩; 麦 = Bộ mạch 麦; 克 = Bộ thập 十 + bộ khẩu 口 + bộ nhi 儿"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Bạn của Trương Đông",
-          "hz": "张东的朋友",
-          "py": "Zhāng Dōng de péngyou",
-          "hv": "Trương Đông đích bằng hữu",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Bạn bè của Trương Đông",
-          "radicals": "张东 = Trương Đông; 朋友 = Bạn bè (hai bộ nguyệt 月, bộ hựu 又)"
+          "text": "Mẹ",
+          "hz": "妈妈",
+          "py": "māma",
+          "hv": "Ma ma",
+          "role": "Chủ ngữ",
+          "vn": "Mẹ, má",
+          "radicals": "妈 = Bộ nữ 女 + Bộ mã 马"
         },
         {
-          "text": "Đi gọi cậu ấy",
-          "hz": "去叫他",
-          "py": "qù jiào tā",
-          "hv": "Khứ khiếu tha",
-          "role": "Cụm liên động mục đích",
-          "vn": "Đi gọi anh ấy",
-          "radicals": "去 = Đi; 叫 = Gọi; 他 = Cậu ấy"
+          "text": "Đổi",
+          "hz": "换",
+          "py": "huàn",
+          "hv": "Hoán",
+          "role": "Động từ",
+          "vn": "Đổi tiền",
+          "radicals": "换 = Bộ thủ 扌 + Bộ đại 大"
+        },
+        {
+          "text": "Tám trăm",
+          "hz": "八百",
+          "py": "bābǎi",
+          "hv": "Bát bách",
+          "role": "Số từ",
+          "vn": "Số 800",
+          "radicals": "八 = Bộ bát 八; 百 = Bộ nhất 一 + Bộ bạch 白"
+        },
+        {
+          "text": "Năm mươi",
+          "hz": "五十",
+          "py": "wǔshí",
+          "hv": "Ngũ thập",
+          "role": "Số từ",
+          "vn": "Số 50",
+          "radicals": "五 = Bộ nhị 二; 十 = Bộ thập 十"
+        },
+        {
+          "text": "Đồng Euro",
+          "hz": "欧元",
+          "py": "Ōuyuán",
+          "hv": "Âu nguyên",
+          "role": "Tân ngữ",
+          "vn": "Đồng tiền chung châu Âu (EUR)",
+          "radicals": "欧 = Bộ khu 匚 + Bộ khiếm 欠; 元 = Bộ nhị 二 + Bộ nhi 儿"
         }
       ],
       "tiles": [
-        { "id": "t3", "text": "我是张东的朋友", "tag": "Giới thiệu thân phận" },
-        { "id": "t1", "text": "你好", "tag": "Chào hỏi" },
-        { "id": "t5", "text": "你等一会儿", "tag": "Bảo khách đợi" },
-        { "id": "t2", "text": "我叫麦克", "tag": "Giới thiệu tên" },
-        { "id": "t4", "text": "我要找他", "tag": "Mục đích tìm người" },
-        { "id": "t6", "text": "我去叫他吧", "tag": "Hành động đi gọi" },
-        { "id": "t7", "text": "找他我要", "tag": "Bẫy ngữ tự" }
+        { "id": "t4", "text": "八百", "tag": "Số từ" },
+        { "id": "t2", "text": "妈妈", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "欧元", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "我", "tag": "Định ngữ" },
+        { "id": "t7", "text": "八千", "tag": "Bẫy" },
+        { "id": "t5", "text": "五十", "tag": "Số từ" },
+        { "id": "t3", "text": "换", "tag": "Động từ" }
       ],
       "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
-      "requiredKeywordsZh": ["我叫麦克", "张东的朋友", "我要找他", "等一会儿", "去叫他吧"],
-      "wordBankPool": ["你好", "我叫麦克", "我是张东的朋友", "我要找他", "你等一会儿", "我去叫他吧", "找他我要", "叫他去"],
+      "requiredKeywordsZh": ["我", "妈妈", "换", "八百", "五十", "欧元"],
+      "wordBankPool": ["八百", "妈妈", "欧元", "我", "八千", "五十", "换"],
       "traps": [
         {
-          "pattern": "找他我要",
-          "msg": "Lỗi trợ động từ: Động từ năng nguyện '要' (muốn) bắt buộc đứng TRƯỚC động từ hành động ('我要找他'), không đảo ngược."
-        },
-        {
-          "pattern": "叫他去",
-          "msg": "Lỗi câu liên động: 'Đi gọi cậu ấy' thì hành động di chuyển '去' xảy ra trước để thực hiện mục đích '叫他', phải là '去叫他'."
+          "pattern": "八千",
+          "msg": "Lỗi đơn vị số: '八千' là tám nghìn (8.000); đề bài yêu cầu 'tám trăm' (800) phải dùng '八百'."
         }
       ],
-      "explanation": "Đoạn hội thoại giao tiếp hoàn chỉnh: Chào hỏi -> Giới thiệu họ tên (我叫...) -> Xác lập quan hệ (我是...的朋友) -> Nêu mục đích (我要找他) -> Đáp ứng và đề nghị đợi (你等一会儿, 我去叫他吧)."
+      "explanation": "Số có hàng trăm và hàng chục đọc lần lượt từ trái sang phải: 八百 (800) + 五十 (50) = 850."
     },
     {
-      "id": "b09-10",
-      "type": "anti_word_by_word",
-      "title": "Chỉ định số lượng lớn với 一百万 và động từ đếm tiền 数",
-      "vi": "Đây là 1 triệu Việt Nam đồng, cậu đếm đi.",
-      "zh": "这是一百万越南盾你数吧",
-      "standardTrans": "这是一百万越南盾你数吧",
-      "pinyin": "Zhè shì yìbǎi wàn yuènándùn, nǐ shǔ ba.",
-      "grammarPoint": "Đại từ chỉ định 这; Số đếm 1 triệu = 100 vạn (一百万); Động từ đếm: 数 (shǔ); Trợ từ thúc giục: 吧",
+      "id": "b09-04",
+      "type": "sentence_parsing",
+      "title": "Lịch trình buổi sáng và buổi chiều",
+      "vi": "Buổi sáng tôi đi thư viện buổi chiều tôi đi ngân hàng.",
+      "zh": "上午我去图书馆下午我去银行",
+      "standardTrans": "上午我去图书馆下午我去银行",
+      "pinyin": "Shàngwǔ wǒ qù túshūguǎn xiàwǔ wǒ qù yínháng.",
+      "grammarPoint": "Đối chiếu thời gian: 上午 (buổi sáng) & 下午 (buổi chiều)",
       "tokens": [
         {
-          "text": "Một triệu (100 vạn)",
-          "hz": "一百万",
-          "py": "yìbǎi wàn",
-          "hv": "Nhất bách vạn",
-          "role": "Số từ số lượng lớn",
-          "vn": "1.000.000 (1 triệu)",
-          "radicals": "一 = Số 1; 百 = Bộ bạch 白 + bộ nhất 一; 万 = Vạn (10.000)"
+          "text": "Buổi sáng",
+          "hz": "上午",
+          "py": "shàngwǔ",
+          "hv": "Thượng ngọ",
+          "role": "Danh từ thời gian",
+          "vn": "Buổi sáng (trước 12h trưa)",
+          "radicals": "上 = Bộ nhất 一 + Bộ bốc 卜; 午 = Bộ thập 十 + Bộ nhân 人"
         },
         {
-          "text": "Việt Nam đồng",
-          "hz": "越南盾",
-          "py": "yuènándùn",
-          "hv": "Việt Nam thuẫn",
-          "role": "Đơn vị tiền tệ",
-          "vn": "Tiền đồng Việt Nam",
-          "radicals": "越南 = Nước Việt Nam; 盾 = Tiền đồng (bộ mục 目, chữ thuẫn)"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ 1",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Cậu đếm đi",
-          "hz": "你数吧",
-          "py": "nǐ shǔ ba",
-          "hv": "Nhĩ sổ ba",
-          "role": "Cụm câu thúc giục",
-          "vn": "Bạn đếm lại đi",
-          "radicals": "你 = Bạn; 数 = Bộ mễ 米 + bộ nữ 女 + bộ phộc 攵; 吧 = Trợ từ"
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ 1",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Thư viện",
+          "hz": "图书馆",
+          "py": "túshūguǎn",
+          "hv": "Đồ thư quán",
+          "role": "Địa điểm 1",
+          "vn": "Thư viện",
+          "radicals": "图 = Bộ vi 囗 + Bộ truy 夂; 书 = Bộ ất 乙 + Bộ nhất 一; 馆 = Bộ thực 饣 + Bộ miên 宀 + Bộ khẩu 口"
+        },
+        {
+          "text": "Buổi chiều",
+          "hz": "下午",
+          "py": "xiàwǔ",
+          "hv": "Hạ ngọ",
+          "role": "Danh từ thời gian",
+          "vn": "Buổi chiều (sau 12h trưa)",
+          "radicals": "下 = Bộ nhất 一 + Bộ bốc 卜; 午 = Bộ thập 十 + Bộ nhân 人"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ 2",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ 2",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Ngân hàng",
+          "hz": "银行",
+          "py": "yínháng",
+          "hv": "Ngân hàng",
+          "role": "Địa điểm 2",
+          "vn": "Ngân hàng",
+          "radicals": "银 = Bộ kim 钅 + Bộ cấn 艮; 行 = Bộ xích 彳 + Bộ hành 行"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "你数吧", "tag": "Bảo đếm tiền" },
-        { "id": "t1", "text": "这是一百万越南盾", "tag": "Đưa tiền" },
-        { "id": "t3", "text": "一千千", "tag": "Bẫy đếm số" },
-        { "id": "t4", "text": "数你去", "tag": "Bẫy trợ từ" }
+        { "id": "t4", "text": "图书馆", "tag": "Địa điểm" },
+        { "id": "t2", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "去", "tag": "Động từ" },
+        { "id": "t1", "text": "上午", "tag": "Thời gian" },
+        { "id": "t9", "text": "在", "tag": "Bẫy" },
+        { "id": "t5", "text": "下午", "tag": "Thời gian" },
+        { "id": "t8", "text": "银行", "tag": "Địa điểm" },
+        { "id": "t3", "text": "去", "tag": "Động từ" },
+        { "id": "t6", "text": "我", "tag": "Chủ ngữ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["这是一百万", "越南盾", "你数吧"],
-      "wordBankPool": ["这是一百万越南盾", "你数吧", "一千千", "数你去", "一百千越南盾", "你数一下"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "requiredKeywordsZh": ["上午", "去", "图书馆", "下午", "银行"],
+      "wordBankPool": ["图书馆", "我", "去", "上午", "在", "下午", "银行", "去", "我"],
       "traps": [
         {
-          "pattern": "一千千",
-          "msg": "Lỗi số đếm: 1.000.000 trong tiếng Trung phân nhóm theo đơn vị '万' (4 chữ số 0), do đó 1 triệu = 100 vạn ('一百万'), tuyệt đối không dịch bồi '一千千'."
-        },
-        {
-          "pattern": "一百千",
-          "msg": "Lỗi tách số: 100.000 là 十万, còn 1.000.000 là 一百万, không dùng cách ghép 'nghìn' (千) của tiếng Việt."
+          "pattern": "在",
+          "msg": "Lỗi động từ: Diễn tả sự di chuyển đến địa điểm ('đi thư viện', 'đi ngân hàng') phải dùng '去', không dùng '在'."
         }
       ],
-      "explanation": "Quy tắc cốt tử khi đếm số tiền lớn: Tiếng Việt tách 3 chữ số 0 (nghìn/triệu), tiếng Trung tách 4 chữ số 0 (vạn - 万). 1.000.000 = 100 x 10.000 -> '一百万'. Động từ đếm đọc thanh 3 là '数' (shǔ)."
+      "explanation": "Trạng ngữ thời gian (上午, 下午) đặt đầu mỗi vế câu để nhấn mạnh trình tự thời gian trong ngày."
+    },
+    {
+      "id": "b09-07",
+      "type": "sentence_parsing",
+      "title": "Phủ định việc đổi ngoại tệ",
+      "vi": "Hôm nay cô ấy không đổi Đô la Hồng Kông.",
+      "zh": "今天她不换港币",
+      "standardTrans": "今天她不换港币",
+      "pinyin": "Jīntiān tā bú huàn Gǎngbì.",
+      "grammarPoint": "Phủ định: Thời gian + S + 不 + 换 + Ngoại tệ",
+      "tokens": [
+        {
+          "text": "Hôm nay",
+          "hz": "今天",
+          "py": "jīntiān",
+          "hv": "Kim thiên",
+          "role": "Danh từ thời gian",
+          "vn": "Ngày hôm nay",
+          "radicals": "今 = Bộ nhân 人 + Bộ nhất 一; 天 = Bộ nhất 一 + Bộ đại 大"
+        },
+        {
+          "text": "Cô ấy",
+          "hz": "她",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Cô ấy, chị ấy",
+          "radicals": "她 = Bộ nữ 女 + Bộ dã 也"
+        },
+        {
+          "text": "Không",
+          "hz": "不",
+          "py": "bú",
+          "hv": "Bất",
+          "role": "Phó từ phủ định",
+          "vn": "Không (biến điệu thành bú trước thanh 4)",
+          "radicals": "不 = Bộ nhất 一 + Nét phẩy 丿"
+        },
+        {
+          "text": "Đổi",
+          "hz": "换",
+          "py": "huàn",
+          "hv": "Hoán",
+          "role": "Động từ",
+          "vn": "Đổi tiền",
+          "radicals": "换 = Bộ thủ 扌 + Bộ đại 大"
+        },
+        {
+          "text": "Đô la Hồng Kông",
+          "hz": "港币",
+          "py": "Gǎngbì",
+          "hv": "Cảng tệ",
+          "role": "Tân ngữ",
+          "vn": "Đơn vị tiền tệ của Hồng Kông (HKD)",
+          "radicals": "港 = Bộ chấm thủy 氵 + Bộ cộng 共 + Bộ kỷ 己; 币 = Nét phẩy 丿 + Bộ cân 巾"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "换", "tag": "Động từ" },
+        { "id": "t2", "text": "她", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "美元", "tag": "Bẫy" },
+        { "id": "t1", "text": "今天", "tag": "Thời gian" },
+        { "id": "t5", "text": "港币", "tag": "Tân ngữ" },
+        { "id": "t3", "text": "不", "tag": "Phủ định" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["今天", "她", "不", "换", "港币"],
+      "wordBankPool": ["换", "她", "美元", "今天", "港币", "不"],
+      "traps": [
+        {
+          "pattern": "美元",
+          "msg": "Lỗi từ vựng: Đề bài nhắc đến 'Đô la Hồng Kông' phải dùng '港币', không dùng '美元' (Đô la Mỹ)."
+        }
+      ],
+      "explanation": "Phó từ '不' đứng trước động từ thanh 4 '换' sẽ biến điệu đọc thành thanh 2 ('bú huàn')."
     }
   ]
 }

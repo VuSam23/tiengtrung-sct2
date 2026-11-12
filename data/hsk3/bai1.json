@@ -1,237 +1,657 @@
-[
-  {
-    "id": "hsk3-b1-01",
-    "type": "sentence_parsing",
-    "title": "Cuối tuần bạn có dự định gì",
-    "vi": "Cuối tuần cậu có kế hoạch gì chưa?",
-    "zh": "{周末|你}有什么打算",
-    "pinyin": "zhōumò nǐ yǒu shénme dǎsuàn",
-    "grammarPoint": "Đại từ phiếm chỉ: 什么 dùng trong câu khẳng định/nghi vấn nhẹ nhàng biểu thị 'có việc/kế hoạch gì đó'",
-    "tokens": [
+{
+  "lessonId": "b01",
+  "lessonTitle": "第1课: 我比你更喜欢音乐",
+  "quickNotes": {
+    "vocabTips": [
       {
-        "text": "Cuối tuần",
-        "hz": "周末",
-        "py": "zhōumò",
-        "hv": "Chu mạt",
-        "role": "Trạng ngữ thời gian",
-        "vn": "Cuối tuần",
-        "radicals": "Chữ 周 (bộ khẩu 口) + chữ 末 (bộ mộc 木)"
+        "word": "变 vs 变化 vs 变成",
+        "py": "biàn vs biànhuà vs biànchéng",
+        "note": "变 là động từ diễn tả sự biến đổi trạng thái hoặc tính chất (变冷, 变短); 变化 vừa là danh từ vừa là động từ nhấn mạnh sự tiến triển hoặc thay đổi về số lượng/tình trạng (变化很大); 变成 chỉ sự biến hóa chuyển hóa thành sự vật khác (变成了白发)."
       },
       {
-        "text": "Bạn",
-        "hz": "你",
-        "py": "nǐ",
-        "hv": "Nhĩ",
-        "role": "Chủ ngữ",
-        "vn": "Bạn, cậu",
-        "radicals": "Bộ nhân 亻 + chữ 尔"
+        "word": "光 vs 只",
+        "py": "guāng vs zhǐ",
+        "note": "光 dùng giới hạn phạm vi, nhấn mạnh một cá thể nổi bật trong tổng thể (chỉ riêng cái đó đã...); 只 dùng để hạn định số lượng hoặc hành động duy nhất (chỉ có)."
       },
       {
-        "text": "Có",
-        "hz": "有",
-        "py": "yǒu",
-        "hv": "Hữu",
-        "role": "Động từ",
-        "vn": "Có",
-        "radicals": "Bộ nguyệt 月 + nét ngang phẩy"
-      },
-      {
-        "text": "Gì đó / Nào đó",
-        "hz": "什么",
-        "py": "shénme",
-        "hv": "Thập ma",
-        "role": "Đại từ phiếm chỉ",
-        "vn": "Gì, nào",
-        "radicals": "Chữ 什 + chữ 么"
-      },
-      {
-        "text": "Dự định",
-        "hz": "打算",
-        "py": "dǎsuàn",
-        "hv": "Đả toán",
-        "role": "Tân ngữ",
-        "vn": "Kế hoạch, dự định",
-        "radicals": "Chữ 打 (bộ thủ 扌) + chữ 算 (bộ trúc ⺮ + bộ mục 目 + chữ củng 廾)"
+        "word": "也许 vs 大概",
+        "py": "yěxǔ vs dàgài",
+        "note": "也许 biểu thị suy đoán không chắc chắn mức 50/50, dùng chỉ dự định chưa chắc tương lai; 大概 biểu thị phán đoán mạnh hơn, có thể dùng làm tính từ (khái quát) và phỏng đoán số lượng (khoảng chừng), 也许 không dùng cho số lượng."
       }
     ],
-    "targetOrder": [
-      "t-h3-b1-01-zhoumo",
-      "t-h3-b1-01-ni",
-      "t-h3-b1-01-you",
-      "t-h3-b1-01-shenme",
-      "t-h3-b1-01-dasuan"
-    ],
-    "tiles": [
-      { "id": "t-h3-b1-01-zhoumo", "text": "周末", "tag": "Thời gian" },
-      { "id": "t-h3-b1-01-ni", "text": "你", "tag": "Chủ ngữ" },
-      { "id": "t-h3-b1-01-you", "text": "有", "tag": "Động từ" },
-      { "id": "t-h3-b1-01-shenme", "text": "什么", "tag": "Đại từ" },
-      { "id": "t-h3-b1-01-dasuan", "text": "打算", "tag": "Tân ngữ" },
-      { "id": "t-h3-b1-01-le", "text": "了", "tag": "Bẫy (Chưa/Rồi)" }
-    ],
-    "standardTrans": "周末你有什么打算",
-    "trapDetect": [
-      "周末你有什么打算了吗",
-      "周末你有打算什么"
-    ],
-    "trapMsg": "Lỗi dịch thô: Đừng dịch chữ 'chưa' thành '了吗' một cách rập khuôn; đại từ '什么' đứng trước danh từ '打算' đóng vai trò định ngữ chỉ điều chưa xác định.",
-    "explanation": "Câu hỏi dự định thông dụng trong giao tiếp HSK 3: 有什么打算."
+    "grammarTips": [
+      "So sánh hơn chữ 比: A + 比 + B + Tính từ (Tuyệt đối KHÔNG dùng các phó từ mức độ 很, 非常, 太, 真 trước tính từ).",
+      "Bổ ngữ số lượng/mức độ chênh lệch: A + 比 + B + Tính từ + 一点/一些/得多/多了/Bổ ngữ số lượng (Phần chênh lệch luôn đặt ở CUỐI CÂU sau tính từ).",
+      "So sánh không bằng (Phủ định): A + 没有 + B + (这么/那么) + Tính từ (Chỉ dùng 不比 khi phản bác lại ý kiến tranh luận).",
+      "So sánh có bổ ngữ trạng thái: A + Động từ + 得 + 比 + B + Tính từ HOẶC A + 比 + B + Động từ + 得 + Tính từ."
+    ]
   },
-  {
-    "id": "hsk3-b1-02",
-    "type": "sentence_parsing",
-    "title": "Mời ai đó làm gì 请 + Tân ngữ + Động từ",
-    "vi": "Tớ đã hẹn mời Tiểu Cương đi ăn cơm, xem phim.",
-    "zh": "我早就请小刚吃饭看电影了",
-    "pinyin": "wǒ zǎojiù qǐng Xiǎogāng chīfàn kàn diànyǐng le",
-    "grammarPoint": "Câu kiêm ngữ với động từ 请 và phó từ 早就 (đã từ lâu)",
-    "tokens": [
-      {
-        "text": "Tôi",
-        "hz": "我",
-        "py": "wǒ",
-        "hv": "Ngã",
-        "role": "Chủ ngữ",
-        "vn": "Tôi",
-        "radicals": "Bộ qua 戈 + chữ thủ 手"
-      },
-      {
-        "text": "Đã từ lâu / Sớm đã",
-        "hz": "早就",
-        "py": "zǎojiù",
-        "hv": "Tảo tựu",
-        "role": "Phó từ chỉ thời điểm sớm",
-        "vn": "Đã sớm, từ lâu",
-        "radicals": "Chữ 早 (bộ nhật 日 + bộ thập 十) + chữ 就"
-      },
-      {
-        "text": "Mời",
-        "hz": "请",
-        "py": "qǐng",
-        "hv": "Thỉnh",
-        "role": "Động từ kiêm ngữ",
-        "vn": "Mời",
-        "radicals": "Bộ ngôn 讠 + chữ thanh 青"
-      },
-      {
-        "text": "Tiểu Cương",
-        "hz": "小刚",
-        "py": "Xiǎogāng",
-        "hv": "Tiểu Cương",
-        "role": "Kiêm ngữ (Tân ngữ 1 & Chủ ngữ 2)",
-        "vn": "Tên riêng",
-        "radicals": "Chữ 小 + chữ 刚"
-      },
-      {
-        "text": "Ăn cơm xem phim",
-        "hz": "吃饭看电影了",
-        "py": "chīfàn kàn diànyǐng le",
-        "hv": "Ngật phạn khán điện ảnh liễu",
-        "role": "Cụm vị ngữ thứ hai",
-        "vn": "Ăn cơm và xem phim",
-        "radicals": "Chữ 吃 + 饭 + 看 + 电影"
-      }
-    ],
-    "targetOrder": [
-      "t-h3-b1-02-wo",
-      "t-h3-b1-02-zaojiu",
-      "t-h3-b1-02-qing",
-      "t-h3-b1-02-xiaogang",
-      "t-h3-b1-02-chifankan"
-    ],
-    "tiles": [
-      { "id": "t-h3-b1-02-wo", "text": "我", "tag": "Chủ ngữ" },
-      { "id": "t-h3-b1-02-zaojiu", "text": "早就", "tag": "Phó từ" },
-      { "id": "t-h3-b1-02-qing", "text": "请", "tag": "Động từ" },
-      { "id": "t-h3-b1-02-xiaogang", "text": "小刚", "tag": "Kiêm ngữ" },
-      { "id": "t-h3-b1-02-chifankan", "text": "吃饭看电影了", "tag": "Vị ngữ" },
-      { "id": "t-h3-b1-02-he", "text": "和", "tag": "Bẫy (Và)" }
-    ],
-    "standardTrans": "我早就请小刚吃饭看电影了",
-    "trapDetect": [
-      "我早就请小刚吃饭和看电影了",
-      "早就我请小刚吃饭看电影了"
-    ],
-    "trapMsg": "Lỗi dịch thô: Hai hành động liên tiếp 'ăn cơm', 'xem phim' đặt cạnh nhau trong câu kiêm ngữ không cần liên từ '和' để nối.",
-    "explanation": "Câu kiêm ngữ biểu thị quan hệ sai khiến/mời mọc: Chủ ngữ + 请/叫/让 + Tân ngữ (đồng thời là chủ ngữ hành động sau) + Hành động."
-  },
-  {
-    "id": "hsk3-b1-03",
-    "type": "sentence_parsing",
-    "title": "Liên từ biểu thị ý bổ sung 而且",
-    "vi": "Tớ đã chuẩn bị xong tất cả đồ đạc rồi, hơn nữa còn mua cả vé xem phim rồi.",
-    "zh": "我都准备好了而且电影票也买好了",
-    "pinyin": "wǒ dōu zhǔnbèi hǎo le érqiě diànyǐng piào yě mǎihǎo le",
-    "grammarPoint": "Liên từ bổ sung cấp tiến 而且 (hơn nữa, vả lại) và bổ ngữ kết quả 好 (xong, hoàn tất)",
-    "tokens": [
-      {
-        "text": "Tôi đều",
-        "hz": "我都",
-        "py": "wǒ dōu",
-        "hv": "Ngã đô",
-        "role": "Chủ ngữ + Phó từ",
-        "vn": "Tôi đều",
-        "radicals": "Chữ 我 + chữ 都"
-      },
-      {
-        "text": "Chuẩn bị xong rồi",
-        "hz": "准备好了",
-        "py": "zhǔnbèi hǎo le",
-        "hv": "Chuẩn bị hảo liễu",
-        "role": "Động từ + Bổ ngữ kết quả",
-        "vn": "Chuẩn bị xong xuôi rồi",
-        "radicals": "Chữ 准 + 备 + 好 + 了"
-      },
-      {
-        "text": "Hơn nữa",
-        "hz": "而且",
-        "py": "érqiě",
-        "hv": "Nhi thả",
-        "role": "Liên từ bổ sung",
-        "vn": "Hơn nữa, vả lại",
-        "radicals": "Chữ 而 (bộ nhi 而) + chữ 且 (bộ nhất 一)"
-      },
-      {
-        "text": "Vé xem phim",
-        "hz": "电影票",
-        "py": "diànyǐng piào",
-        "hv": "Điện ảnh phiếu",
-        "role": "Chủ ngữ vế 2",
-        "vn": "Vé phim",
-        "radicals": "Chữ 电影 + chữ 票 (bộ phiêu 覀 + bộ thị 示)"
-      },
-      {
-        "text": "Cũng mua xong rồi",
-        "hz": "也买好了",
-        "py": "yě mǎihǎo le",
-        "hv": "Dã mãi hảo liễu",
-        "role": "Vị ngữ vế 2",
-        "vn": "Cũng mua xong rồi",
-        "radicals": "Chữ 也 + 买 + 好 + 了"
-      }
-    ],
-    "targetOrder": [
-      "t-h3-b1-03-wodou",
-      "t-h3-b1-03-zhunbeihaole",
-      "t-h3-b1-03-erqie",
-      "t-h3-b1-03-dianyingpiao",
-      "t-h3-b1-03-yemaihaole"
-    ],
-    "tiles": [
-      { "id": "t-h3-b1-03-wodou", "text": "我都", "tag": "Chủ ngữ" },
-      { "id": "t-h3-b1-03-zhunbeihaole", "text": "准备好了", "tag": "Vị ngữ 1" },
-      { "id": "t-h3-b1-03-erqie", "text": "而且", "tag": "Liên từ" },
-      { "id": "t-h3-b1-03-dianyingpiao", "text": "电影票", "tag": "Chủ ngữ 2" },
-      { "id": "t-h3-b1-03-yemaihaole", "text": "也买好了", "tag": "Vị ngữ 2" },
-      { "id": "t-h3-b1-03-dan", "text": "但是", "tag": "Bẫy (Nhưng)" }
-    ],
-    "standardTrans": "我都准备好了而且电影票也买好了",
-    "trapDetect": [
-      "我都准备好了但是电影票也买好了",
-      "我都准备而且电影票也买好了"
-    ],
-    "trapMsg": "Lỗi dịch thô: Quan hệ giữa hai vế là bổ sung tăng tiến, dùng '而且', không dùng liên từ chuyển ngoặt '但是' (nhưng); bổ ngữ kết quả '好' biểu đạt hành động đã hoàn tất mỹ mãn.",
-    "explanation": "Cấu trúc bổ sung: Vế 1, 而且 + Vế 2 (thường có 也 hoặc 还 đi kèm)."
-  }
-]
-
+  "sentences": [
+    {
+      "id": "b01-01",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ số lượng cụ thể trong câu so sánh chữ 比",
+      "vi": "Hộp đen nặng hơn hộp đỏ năm gram.",
+      "zh": "黑箱子比红的重五公斤",
+      "standardTrans": "黑箱子比红的重五公斤",
+      "pinyin": "Hēi xiāngzi bǐ hóng de zhòng wǔ gōngjīn",
+      "grammarPoint": "A + 比 + B + Tính từ + Bổ ngữ số lượng cụ thể (五公斤 đặt ở cuối câu)",
+      "tokens": [
+        {
+          "text": "va li, hộp",
+          "hz": "箱子",
+          "py": "xiāngzi",
+          "hv": "tương tử",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "hộp, va li, rương",
+          "radicals": "箱 = Bộ trúc 竹 + chữ tương 相; 子 = Bộ tử 子"
+        },
+        {
+          "text": "so với",
+          "hz": "比",
+          "py": "bǐ",
+          "hv": "tỉ",
+          "role": "Giới từ so sánh",
+          "vn": "so với, hơn",
+          "radicals": "比 = Bộ tỉ 比"
+        },
+        {
+          "text": "cân, kilôgam",
+          "hz": "公斤",
+          "py": "gōngjīn",
+          "hv": "công cân",
+          "role": "Bổ ngữ số lượng",
+          "vn": "kilôgam, cân tây",
+          "radicals": "公 = Bộ bát 八; 斤 = Bộ cân 斤"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "比", "tag": "Giới từ" },
+        { "id": "t2", "text": "五", "tag": "Số từ" },
+        { "id": "t3", "text": "黑", "tag": "Tính từ" },
+        { "id": "t4", "text": "红的", "tag": "Đại từ" },
+        { "id": "t5", "text": "公斤", "tag": "Lượng từ" },
+        { "id": "t6", "text": "箱子", "tag": "Danh từ" },
+        { "id": "t7", "text": "重", "tag": "Tính từ" },
+        { "id": "t8", "text": "很", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t6", "t1", "t4", "t7", "t2", "t5"],
+      "requiredKeywordsZh": ["黑箱子", "比红的", "重五公斤"],
+      "wordBankPool": ["比", "很", "黑", "五", "红的", "箱子", "公斤", "重"],
+      "traps": [
+        {
+          "pattern": "重比",
+          "msg": "Lỗi đảo trật tự từ: Cụm giới từ so sánh '比 + Đối tượng' luôn phải đứng trước hình dung từ '重', không đặt sau như tiếng Việt."
+        },
+        {
+          "pattern": "很重",
+          "msg": "Lỗi cấm kỵ: Khi đã có lượng chênh lệch (五公斤) hoặc câu dùng chữ 比, tuyệt đối không chèn '很' trước tính từ."
+        }
+      ],
+      "explanation": "Câu so sánh hơn có bổ ngữ số lượng đo lường cụ thể chênh lệch. Cấu trúc chuẩn là A + 比 + B + Tính từ + Số lượng từ, số lượng chênh lệch 五公斤 bắt buộc đặt ở cuối câu sau tính từ 重."
+    },
+    {
+      "id": "b01-02",
+      "type": "sentence_parsing",
+      "title": "Câu nghi vấn với kết cấu so sánh chữ 比",
+      "vi": "Cái áo khoác này đắt hơn cái đó không?",
+      "zh": "这件大衣比那件贵吗",
+      "standardTrans": "这件大衣比那件贵吗",
+      "pinyin": "Zhè jiàn dàyī bǐ nà jiàn guì ma",
+      "grammarPoint": "Câu nghi vấn dạng: A + 比 + B + Tính từ + 吗",
+      "tokens": [
+        {
+          "text": "áo khoác",
+          "hz": "大衣",
+          "py": "dàyī",
+          "hv": "đại y",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "áo khoác, áo choàng lớn",
+          "radicals": "大 = Bộ đại 大; 衣 = Bộ y 衣"
+        },
+        {
+          "text": "đắt, quý",
+          "hz": "贵",
+          "py": "guì",
+          "hv": "quý",
+          "role": "Vị ngữ",
+          "vn": "đắt, quý báu",
+          "radicals": "贵 = Bộ bối 贝"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "比", "tag": "Giới từ" },
+        { "id": "t2", "text": "这件", "tag": "Lượng từ" },
+        { "id": "t3", "text": "贵", "tag": "Tính từ" },
+        { "id": "t4", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t5", "text": "大衣", "tag": "Danh từ" },
+        { "id": "t6", "text": "那件", "tag": "Lượng từ" },
+        { "id": "t7", "text": "非常", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t5", "t1", "t6", "t3", "t4"],
+      "requiredKeywordsZh": ["这件大衣", "比那件", "贵吗"],
+      "wordBankPool": ["大衣", "比", "非常", "这件", "贵", "吗", "那件"],
+      "traps": [
+        {
+          "pattern": "贵比",
+          "msg": "Lỗi dịch bồi word-by-word: Cụm giới từ so sánh '比那件' phải đặt trước vị ngữ hình dung từ '贵'."
+        },
+        {
+          "pattern": "非常贵吗",
+          "msg": "Lỗi kết hợp: Trong câu so sánh chữ 比 không chèn phó từ chỉ mức độ (非常, 很) vào trước tính từ."
+        }
+      ],
+      "explanation": "Câu hỏi nghi vấn so sánh hơn đơn giản dùng trợ từ nghi vấn 吗 đặt ở cuối câu. Cấu trúc ngữ pháp chuẩn là A + 比 + B + Tính từ + 吗."
+    },
+    {
+      "id": "b01-03",
+      "type": "sentence_parsing",
+      "title": "So sánh thông số thời tiết có độ chênh lệch",
+      "vi": "Nhiệt độ hôm nay cao hơn ba độ so với hôm qua.",
+      "zh": "今天的气温比昨天高三度",
+      "standardTrans": "今天的气温比昨天高三度",
+      "pinyin": "Jīntiān de qìwēn bǐ zuótiān gāo sān dù",
+      "grammarPoint": "Chủ ngữ (今天的气温) + 比 + Đối tượng + Tính từ + Bổ ngữ số lượng (三度)",
+      "tokens": [
+        {
+          "text": "nhiệt độ",
+          "hz": "气温",
+          "py": "qìwēn",
+          "hv": "khí ôn",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "nhiệt độ không khí",
+          "radicals": "气 = Bộ khí 气; 温 = Bộ thủy 氵"
+        },
+        {
+          "text": "cao",
+          "hz": "高",
+          "py": "gāo",
+          "hv": "cao",
+          "role": "Vị ngữ",
+          "vn": "cao",
+          "radicals": "高 = Bộ cao 高"
+        },
+        {
+          "text": "ba độ",
+          "hz": "三度",
+          "py": "sān dù",
+          "hv": "tam độ",
+          "role": "Bổ ngữ số lượng",
+          "vn": "ba độ",
+          "radicals": "三 = Bộ nhất 一; 度 = Bộ quảng 广"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "高", "tag": "Tính từ" },
+        { "id": "t2", "text": "今天", "tag": "Danh từ" },
+        { "id": "t3", "text": "的", "tag": "Trợ từ" },
+        { "id": "t4", "text": "比", "tag": "Giới từ" },
+        { "id": "t5", "text": "三度", "tag": "Số lượng từ" },
+        { "id": "t6", "text": "气温", "tag": "Danh từ" },
+        { "id": "t7", "text": "昨天", "tag": "Danh từ" },
+        { "id": "t8", "text": "很", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t3", "t6", "t4", "t7", "t1", "t5"],
+      "requiredKeywordsZh": ["今天的气温", "比昨天", "高三度"],
+      "wordBankPool": ["气温", "今天", "三度", "比", "昨天", "很", "高", "的"],
+      "traps": [
+        {
+          "pattern": "高比",
+          "msg": "Lỗi trật tự từ: Kết cấu so sánh '比 + 昨天' bắt buộc phải đứng trước tính từ '高'."
+        },
+        {
+          "pattern": "很高三度",
+          "msg": "Lỗi thừa phó từ: Không bao giờ dùng '很' khi đã có số đo chênh lệch cụ thể ở phía sau (三度)."
+        }
+      ],
+      "explanation": "Câu so sánh thuộc tính thời tiết giữa hai mốc thời gian. Mức độ chênh lệch cụ thể 三度 làm bổ ngữ số lượng đặt ở cuối câu sau tính từ vị ngữ 高."
+    },
+    {
+      "id": "b01-04",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc so sánh kém/không bằng chữ 没有",
+      "vi": "Dân số thành phố này không nhiều bằng Bắc Kinh.",
+      "zh": "这个城市的人口没有北京多",
+      "standardTrans": "这个城市的人口没有北京多",
+      "pinyin": "Zhè ge chéngshì de rénkǒu méiyǒu Běijīng duō",
+      "grammarPoint": "So sánh kém/không bằng: A + 没有 + B + Tính từ (多)",
+      "tokens": [
+        {
+          "text": "thành phố",
+          "hz": "城市",
+          "py": "chéngshì",
+          "hv": "thành thị",
+          "role": "Định ngữ",
+          "vn": "thành phố, đô thị",
+          "radicals": "城 = Bộ thổ 土; 市 = Bộ cân 巾"
+        },
+        {
+          "text": "dân số",
+          "hz": "人口",
+          "py": "rénkǒu",
+          "hv": "nhân khẩu",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "dân số, nhân khẩu",
+          "radicals": "人 = Bộ nhân 人; 口 = Bộ khẩu 口"
+        },
+        {
+          "text": "không bằng",
+          "hz": "没有",
+          "py": "méiyǒu",
+          "hv": "một hữu",
+          "role": "Động từ so sánh phủ định",
+          "vn": "không bằng, chưa bằng",
+          "radicals": "没 = Bộ thủy 氵; 有 = Bộ nguyệt 月"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "北京", "tag": "Danh từ" },
+        { "id": "t2", "text": "这个", "tag": "Lượng từ" },
+        { "id": "t3", "text": "没有", "tag": "Phủ định" },
+        { "id": "t4", "text": "城市", "tag": "Danh từ" },
+        { "id": "t5", "text": "多", "tag": "Tính từ" },
+        { "id": "t6", "text": "的", "tag": "Trợ từ" },
+        { "id": "t7", "text": "人口", "tag": "Danh từ" },
+        { "id": "t8", "text": "比", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t6", "t7", "t3", "t1", "t5"],
+      "requiredKeywordsZh": ["这个城市的人口", "没有北京", "多"],
+      "wordBankPool": ["人口", "没有", "这个", "比", "北京", "城市", "多", "的"],
+      "traps": [
+        {
+          "pattern": "不比北京多",
+          "msg": "Lỗi sắc thái ngữ khí: '不比' mang ngữ khí phản bác ('chưa chắc nhiều hơn'); so sánh kém thông thường bắt buộc dùng '没有'."
+        },
+        {
+          "pattern": "不多",
+          "msg": "Lỗi vị trí phủ định: '没有' đóng vai trò liên kết so sánh đứng trước '北京', không ghép '不' đứng sát tính từ '多'."
+        }
+      ],
+      "explanation": "Câu diễn đạt so sánh kém (không bằng nhau). Dạng phủ định thông dụng của câu so sánh hơn là A + 没有 + B + Tính từ."
+    },
+    {
+      "id": "b01-05",
+      "type": "sentence_parsing",
+      "title": "So sánh bằng trong câu nghi vấn chữ 有",
+      "vi": "Công viên này có đẹp hơn cái kia không?",
+      "zh": "这个公园有那个漂亮吗",
+      "standardTrans": "这个公园有那个漂亮吗",
+      "pinyin": "Zhè ge gōngyuán yǒu nà ge piàoliang ma",
+      "grammarPoint": "Câu nghi vấn đạt tới mức độ: A + 有 + B + Tính từ + 吗",
+      "tokens": [
+        {
+          "text": "công viên",
+          "hz": "公园",
+          "py": "gōngyuán",
+          "hv": "công viên",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "công viên",
+          "radicals": "公 = Bộ bát 八; 园 = Bộ vi 囗"
+        },
+        {
+          "text": "có bằng, đạt tới",
+          "hz": "有",
+          "py": "yǒu",
+          "hv": "hữu",
+          "role": "Động từ so sánh bằng",
+          "vn": "có bằng, đạt tới mức",
+          "radicals": "有 = Bộ nguyệt 月"
+        },
+        {
+          "text": "xinh đẹp",
+          "hz": "漂亮",
+          "py": "piàoliang",
+          "hv": "phiêu lượng",
+          "role": "Vị ngữ",
+          "vn": "xinh đẹp, đẹp đẽ",
+          "radicals": "漂 = Bộ thủy 氵; 亮 = Bộ đầu 亠"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "那个", "tag": "Đại từ" },
+        { "id": "t2", "text": "公园", "tag": "Danh từ" },
+        { "id": "t3", "text": "漂亮", "tag": "Tính từ" },
+        { "id": "t4", "text": "这个", "tag": "Lượng từ" },
+        { "id": "t5", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t6", "text": "有", "tag": "Động từ" },
+        { "id": "t7", "text": "跟", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t4", "t2", "t6", "t1", "t3", "t5"],
+      "requiredKeywordsZh": ["这个公园", "有那个", "漂亮吗"],
+      "wordBankPool": ["漂亮", "公园", "跟", "有", "这个", "吗", "那个"],
+      "traps": [
+        {
+          "pattern": "漂亮有",
+          "msg": "Lỗi trật tự từ: Kết cấu '有 + Đối tượng B' bắt buộc đứng trước hình dung từ '漂亮'."
+        },
+        {
+          "pattern": "跟那个漂亮",
+          "msg": "Lỗi cấu trúc: Dùng '跟' phải đi kèm '一样' (跟...一样漂亮); dùng '有' thì đi trực tiếp với tính từ (有...漂亮)."
+        }
+      ],
+      "explanation": "Động từ 有 biểu thị sự đạt tới hoặc ước lượng trong câu so sánh bằng. Hình thức khẳng định 有 thường dùng trong câu nghi vấn hoặc phản vấn (A + 有 + B + Tính từ + 吗)."
+    },
+    {
+      "id": "b01-06",
+      "type": "sentence_parsing",
+      "title": "Câu so sánh kết hợp bổ ngữ trạng thái 得",
+      "vi": "Anh ấy nói tiếng Trung lưu loát hơn tôi.",
+      "zh": "他说汉语说得比我流利",
+      "standardTrans": "他说汉语说得比我流利",
+      "pinyin": "Tā shuō Hànyǔ shuō de bǐ wǒ liúlì",
+      "grammarPoint": "S + V + Tân ngữ + Lặp lại V + 得 + 比 + B + Tính từ",
+      "tokens": [
+        {
+          "text": "tiếng Trung",
+          "hz": "汉语",
+          "py": "Hànyǔ",
+          "hv": "Hán ngữ",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "tiếng Trung, tiếng Hán",
+          "radicals": "汉 = Bộ thủy 氵; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "nói đạt mức",
+          "hz": "说得",
+          "py": "shuō de",
+          "hv": "thuyết đắc",
+          "role": "Động từ lặp lại + Trợ từ 得",
+          "vn": "nói đạt đến mức",
+          "radicals": "说 = Bộ ngôn 讠; 得 = Bộ xích 彳"
+        },
+        {
+          "text": "lưu loát",
+          "hz": "流利",
+          "py": "liúlì",
+          "hv": "lưu lợi",
+          "role": "Bổ ngữ trạng thái",
+          "vn": "trôi chảy, lưu loát",
+          "radicals": "流 = Bộ thủy 氵; 利 = Bộ đao 刂"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "流利", "tag": "Tính từ" },
+        { "id": "t2", "text": "他说", "tag": "Chủ vị" },
+        { "id": "t3", "text": "比", "tag": "Giới từ" },
+        { "id": "t4", "text": "汉语", "tag": "Danh từ" },
+        { "id": "t5", "text": "我", "tag": "Đại từ" },
+        { "id": "t6", "text": "说得", "tag": "Động từ + Trợ từ" },
+        { "id": "t7", "text": "得很", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t6", "t3", "t5", "t1"],
+      "requiredKeywordsZh": ["汉语", "说得", "比我流利"],
+      "wordBankPool": ["比", "他说", "说得", "得很", "汉语", "我", "流利"],
+      "traps": [
+        {
+          "pattern": "说比我流利",
+          "msg": "Lỗi thiếu trợ từ: Đánh giá cách thức và trình độ hành động sau động từ bắt buộc phải có trợ từ '得' (说得比我流利)."
+        },
+        {
+          "pattern": "很流利",
+          "msg": "Lỗi cấm kỵ: Tuyệt đối không thêm '很' sau '比我' trong bổ ngữ trạng thái so sánh."
+        }
+      ],
+      "explanation": "Khi động từ mang tân ngữ kết hợp bổ ngữ so sánh hơn, quy tắc chuẩn là lặp lại động từ thêm 得 rồi đặt cụm 比 + Đối tượng trước tính từ nhận xét."
+    },
+    {
+      "id": "b01-07",
+      "type": "sentence_parsing",
+      "title": "So sánh độ tuổi bằng bổ ngữ số lượng",
+      "vi": "Tôi lớn hơn em gái hai tuổi.",
+      "zh": "我比妹妹大两岁",
+      "standardTrans": "我比妹妹大两岁",
+      "pinyin": "Wǒ bǐ mèimei dà liǎng suì",
+      "grammarPoint": "A + 比 + B + 大/小 + Bổ ngữ số lượng (两岁)",
+      "tokens": [
+        {
+          "text": "em gái",
+          "hz": "妹妹",
+          "py": "mèimei",
+          "hv": "muội muội",
+          "role": "Đối tượng so sánh",
+          "vn": "em gái",
+          "radicals": "妹 = Bộ nữ 女 + chữ mùi 未"
+        },
+        {
+          "text": "lớn, to",
+          "hz": "大",
+          "py": "dà",
+          "hv": "đại",
+          "role": "Vị ngữ",
+          "vn": "lớn hơn (tuổi tác)",
+          "radicals": "大 = Bộ đại 大"
+        },
+        {
+          "text": "hai tuổi",
+          "hz": "两岁",
+          "py": "liǎng suì",
+          "hv": "lưỡng tuế",
+          "role": "Bổ ngữ số lượng",
+          "vn": "hai tuổi",
+          "radicals": "两 = Bộ nhất 一; 岁 = Bộ sơn 山"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "两岁", "tag": "Số lượng từ" },
+        { "id": "t2", "text": "妹妹", "tag": "Danh từ" },
+        { "id": "t3", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "大", "tag": "Tính từ" },
+        { "id": "t5", "text": "比", "tag": "Giới từ" },
+        { "id": "t6", "text": "二岁", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t5", "t2", "t4", "t1"],
+      "requiredKeywordsZh": ["我比妹妹", "大两岁"],
+      "wordBankPool": ["比", "妹妹", "大", "二岁", "两岁", "我"],
+      "traps": [
+        {
+          "pattern": "两岁比",
+          "msg": "Lỗi dịch bồi: Số tuổi chênh lệch bắt buộc phải đặt ở CUỐI CÂU, ngay sau tính từ '大'."
+        },
+        {
+          "pattern": "二岁",
+          "msg": "Lỗi dùng số từ: Khi nói số lượng tuổi tác chênh lệch phải dùng '两岁', không dùng '二岁'."
+        }
+      ],
+      "explanation": "Dùng bổ ngữ số lượng 两岁 đặt sau hình dung từ 大 để nói rõ sự chênh lệch tuổi tác cụ thể giữa hai chủ thể."
+    },
+    {
+      "id": "b01-08",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc so sánh chênh lệch lớn với 得多",
+      "vi": "Bài thi lần này khó hơn bài thi lần trước nhiều. Tớ làm bài không tốt.",
+      "zh": "这次考试比上次考试难得多我考得不好",
+      "standardTrans": "这次考试比上次考试难得多我考得不好",
+      "pinyin": "Zhè cì kǎoshì bǐ shàng cì kǎoshì nán de duō, wǒ kǎo de bù hǎo",
+      "grammarPoint": "So sánh mức độ chênh lệch lớn: Tính từ + 得多; Đánh giá kết quả: V + 得 + Bổ ngữ",
+      "tokens": [
+        {
+          "text": "kỳ thi, bài thi",
+          "hz": "考试",
+          "py": "kǎoshì",
+          "hv": "khảo thí",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "kỳ thi, bài thi, thi cử",
+          "radicals": "考 = Bộ lão 耂; 试 = Bộ ngôn 讠"
+        },
+        {
+          "text": "khó hơn nhiều",
+          "hz": "难得多",
+          "py": "nán de duō",
+          "hv": "nan đắc đa",
+          "role": "Vị ngữ + Bổ ngữ mức độ",
+          "vn": "khó hơn nhiều",
+          "radicals": "难 = Bộ hựu 又; 得 = Bộ xích 彳; 多 = Bộ tịch 夕"
+        },
+        {
+          "text": "thi đạt mức",
+          "hz": "考得",
+          "py": "kǎo de",
+          "hv": "khảo đắc",
+          "role": "Động từ + Trợ từ 得",
+          "vn": "thi được, làm bài đến mức",
+          "radicals": "考 = Bộ lão 耂; 得 = Bộ xích 彳"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "比", "tag": "Giới từ" },
+        { "id": "t2", "text": "难得多", "tag": "Bổ ngữ mức độ" },
+        { "id": "t3", "text": "上次考试", "tag": "Đối tượng" },
+        { "id": "t4", "text": "考得", "tag": "Động từ + Trợ từ" },
+        { "id": "t5", "text": "这次考试", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "我", "tag": "Chủ ngữ 2" },
+        { "id": "t7", "text": "不好", "tag": "Tính từ" },
+        { "id": "t8", "text": "很", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t5", "t1", "t3", "t2", "t6", "t4", "t7"],
+      "requiredKeywordsZh": ["这次考试", "比上次考试", "难得多", "考得不好"],
+      "wordBankPool": ["难得多", "这次考试", "比", "很", "考得", "上次考试", "不好", "我"],
+      "traps": [
+        {
+          "pattern": "很更难",
+          "msg": "Lỗi cấm kỵ: Không dùng phó từ chỉ mức độ '很' trước tính từ trong câu so sánh chữ 比."
+        },
+        {
+          "pattern": "难很多",
+          "msg": "Lỗi biểu đạt chênh lệch lớn: Chuẩn ngữ pháp giáo trình biểu thị độ chênh lệch rất lớn là dùng '得多' hoặc '多了' sau tính từ (难得多)."
+        }
+      ],
+      "explanation": "Để nhấn mạnh sự chênh lệch cực lớn giữa hai sự vật trong câu chữ 比, ta dùng bổ ngữ 得多 đặt sau hình dung từ 难. Vế sau dùng kết cấu động từ kèm bổ ngữ trạng thái 考得不好."
+    },
+    {
+      "id": "b01-09",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc chênh lệch với 多了 và phó từ 还是",
+      "vi": "Toán khó hơn lịch sử nhiều, tớ vẫn thích học lịch sử hơn.",
+      "zh": "数学比历史难多了我还是喜欢历史",
+      "standardTrans": "数学比历史难多了我还是喜欢历史",
+      "pinyin": "Shùxué bǐ lìshǐ nán duō le, wǒ háishì xǐhuan lìshǐ",
+      "grammarPoint": "A + 比 + B + Tính từ + 多了; dùng phó từ 还是 biểu thị sự lựa chọn nghiêng về",
+      "tokens": [
+        {
+          "text": "môn toán",
+          "hz": "数学",
+          "py": "shùxué",
+          "hv": "số học",
+          "role": "Chủ ngữ 1",
+          "vn": "môn toán, toán học",
+          "radicals": "数 = Bộ phộc 攵; 学 = Bộ tử 子"
+        },
+        {
+          "text": "lịch sử",
+          "hz": "历史",
+          "py": "lìshǐ",
+          "hv": "lịch sử",
+          "role": "Đối tượng so sánh",
+          "vn": "lịch sử",
+          "radicals": "历 = Bộ hán 厂; 史 = Bộ khẩu 口"
+        },
+        {
+          "text": "khó hơn nhiều",
+          "hz": "难多了",
+          "py": "nán duō le",
+          "hv": "nan đa liễu",
+          "role": "Vị ngữ + Bổ ngữ mức độ",
+          "vn": "khó hơn nhiều",
+          "radicals": "难 = Bộ hựu 又; 多 = Bộ tịch 夕"
+        },
+        {
+          "text": "vẫn, vẫn cứ",
+          "hz": "还是",
+          "py": "háishì",
+          "hv": "hoàn thị",
+          "role": "Trạng ngữ",
+          "vn": "vẫn cứ, vẫn là",
+          "radicals": "还 = Bộ quai xước 辶; 是 = Bộ nhật 日"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "难多了", "tag": "Bổ ngữ mức độ" },
+        { "id": "t2", "text": "比", "tag": "Giới từ" },
+        { "id": "t3", "text": "数学", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "喜欢", "tag": "Động từ" },
+        { "id": "t5", "text": "历史", "tag": "Danh từ" },
+        { "id": "t6", "text": "我", "tag": "Chủ ngữ 2" },
+        { "id": "t7", "text": "还是", "tag": "Phó từ" },
+        { "id": "t8", "text": "历史", "tag": "Tân ngữ" },
+        { "id": "t9", "text": "更难多了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t3", "t2", "t5", "t1", "t6", "t7", "t4", "t8"],
+      "requiredKeywordsZh": ["数学", "比历史", "难多了", "还是喜欢历史"],
+      "wordBankPool": ["数学", "还是", "更难多了", "历史", "难多了", "我", "比", "喜欢", "历史"],
+      "traps": [
+        {
+          "pattern": "更难多了",
+          "msg": "Lỗi thừa phó từ: '更' và '多了' không dùng đồng thời trong cùng một phân câu so sánh (chọn dùng 难多了 hoặc 更难)."
+        },
+        {
+          "pattern": "多难",
+          "msg": "Lỗi vị trí bổ ngữ: Cụm chỉ mức chênh lệch '多了' phải đặt sau tính từ (难多了), không đảo lên trước."
+        }
+      ],
+      "explanation": "Bổ ngữ 多了 đặt sau tính từ 难 diễn tả mức độ chênh lệch rất lớn. Phân câu thứ hai dùng phó từ 还是 đứng trước động từ 喜欢 để chỉ sự lựa chọn ưu tiên sau khi đã cân nhắc."
+    },
+    {
+      "id": "b01-10",
+      "type": "sentence_parsing",
+      "title": "So sánh thuộc tính của cụm danh từ sở hữu",
+      "vi": "Đồ ở cửa hàng này rẻ hơn đồ ở cửa hàng kia.",
+      "zh": "这家商店的东西比那家商店的便宜",
+      "standardTrans": "这家商店的东西比那家商店的便宜",
+      "pinyin": "Zhè jiā shāngdiàn de dōngxi bǐ nà jiā shāngdiàn de piányi",
+      "grammarPoint": "Cụm danh từ A + 比 + Cụm danh từ B (lược bỏ trung tâm ngữ) + Tính từ",
+      "tokens": [
+        {
+          "text": "cửa hàng",
+          "hz": "商店",
+          "py": "shāngdiàn",
+          "hv": "thương điếm",
+          "role": "Định ngữ",
+          "vn": "cửa hàng, tiệm buôn",
+          "radicals": "商 = Bộ khẩu 口; 店 = Bộ quảng 广"
+        },
+        {
+          "text": "đồ đạc",
+          "hz": "东西",
+          "py": "dōngxi",
+          "hv": "đông tây",
+          "role": "Trung tâm ngữ chủ ngữ",
+          "vn": "đồ vật, hàng hóa",
+          "radicals": "东 = Bộ nhất 一; 西 = Bộ á 覀"
+        },
+        {
+          "text": "rẻ",
+          "hz": "便宜",
+          "py": "piányi",
+          "hv": "tiện nghi",
+          "role": "Vị ngữ",
+          "vn": "rẻ, tiện lợi",
+          "radicals": "便 = Bộ nhân đứng 亻; 宜 = Bộ miên 宀"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "东西", "tag": "Danh từ" },
+        { "id": "t2", "text": "这家", "tag": "Lượng từ" },
+        { "id": "t3", "text": "便宜", "tag": "Tính từ" },
+        { "id": "t4", "text": "商店的", "tag": "Định ngữ" },
+        { "id": "t5", "text": "比", "tag": "Giới từ" },
+        { "id": "t6", "text": "那家", "tag": "Lượng từ" },
+        { "id": "t7", "text": "商店的", "tag": "Định ngữ" },
+        { "id": "t8", "text": "太", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t5", "t6", "t7", "t3"],
+      "requiredKeywordsZh": ["这家商店的东西", "比那家商店的", "便宜"],
+      "wordBankPool": ["商店的", "便宜", "太", "东西", "这家", "比", "商店的", "那家"],
+      "traps": [
+        {
+          "pattern": "便宜比",
+          "msg": "Lỗi dịch bồi: Giới từ so sánh '比 + Đối tượng' luôn phải đứng trước tính từ '便宜'."
+        },
+        {
+          "pattern": "太便宜",
+          "msg": "Lỗi dùng từ mức độ: Trong câu so sánh chữ 比, tuyệt đối không chèn phó từ cảm thán '太' hay '很' trước tính từ."
+        }
+      ],
+      "explanation": "Câu so sánh đối chiếu giá cả hàng hóa giữa hai cửa hàng. Vế so sánh sau 比那家商店的 được lược bỏ danh từ 东西 để tránh lặp từ."
+    }
+  ]
+}

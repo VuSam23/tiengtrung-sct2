@@ -17,8 +17,43 @@ const NavigationHub = {
 
     init() {
         this.loadProgress();
+        // Khôi phục trạng thái Dev Tester Mode từ localStorage hoặc URL param (?debug=1)
+        const savedDev = localStorage.getItem('sct2_dev_mode');
+        if (savedDev !== null) {
+            this.testerMode = savedDev === '1';
+        } else if (_isDebugMode) {
+            this.testerMode = true;
+        }
         this.bindEvents();
+        this.updateDevUI();
         this._bindDebugTap(); // 7-tap logo để bật debug
+    },
+
+    updateDevUI() {
+        const quickDev = document.getElementById('btn-quick-dev');
+        const quickDevText = document.getElementById('quick-dev-text');
+        if (quickDev) {
+            if (this.testerMode) {
+                quickDev.className = "h-[34px] px-2 sm:px-2.5 rounded-xl text-xs font-black transition active:scale-95 flex items-center gap-1 border shrink-0 bg-amber-500 hover:bg-amber-600 text-white border-amber-600 shadow-sm ring-2 ring-amber-400/30 cursor-pointer";
+                quickDev.title = "Chế độ Dev: ĐANG BẬT (Đã mở khóa toàn bộ bài) - Bấm để tắt";
+                if (quickDevText) quickDevText.textContent = "Dev: Bật";
+            } else {
+                quickDev.className = "h-[34px] px-2 sm:px-2.5 rounded-xl text-xs font-black transition active:scale-95 flex items-center gap-1 border shrink-0 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 cursor-pointer shadow-xs";
+                quickDev.title = "Bật Chế độ Dev (Mở khóa toàn bộ bài)";
+                if (quickDevText) quickDevText.textContent = "Dev";
+            }
+        }
+        const label = document.getElementById('tester-unlock-label');
+        if (label) {
+            label.textContent = this.testerMode ? "Tester: Đã Mở Khóa Tất Cả" : "Tester: Chế Độ Thường";
+        }
+        const testerBtn = document.getElementById('btn-toggle-tester-unlock');
+        if (testerBtn) {
+            testerBtn.className = "text-[11px] font-black px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border cursor-pointer backdrop-blur-xs " +
+                (this.testerMode ? "bg-white/25 hover:bg-white/35 text-white border-white/30" : "bg-black/30 hover:bg-black/40 text-slate-300 border-white/10");
+        }
+        const settingTester = document.getElementById('setting-tester-mode');
+        if (settingTester) settingTester.checked = this.testerMode;
     },
 
     // 7-tap vào logo để bật testerMode (easter egg cho admin)
@@ -33,17 +68,21 @@ const NavigationHub = {
             if (tapCount >= 7) {
                 tapCount = 0;
                 this.testerMode = !this.testerMode;
-                const msg = this.testerMode
-                    ? '🔓 Debug mode ON – Đã mở khóa toàn bộ bài'
-                    : '🔒 Debug mode OFF – Chế độ bình thường';
-                // Cập nhật UI nếu nút tester đang hiển thị
-                const label = document.getElementById('tester-unlock-label');
-                if (label) label.textContent = this.testerMode ? 'Tester: Đã Mở Khóa Tất Cả' : 'Tester: Chế Độ Thường';
-                const settingTester = document.getElementById('setting-tester-mode');
-                if (settingTester) settingTester.checked = this.testerMode;
+                try { localStorage.setItem('sct2_dev_mode', this.testerMode ? '1' : '0'); } catch (e) {}
+                this.updateDevUI();
                 this.renderDashboardCards();
-                if (window.App && App.showToast) App.showToast(msg, this.testerMode ? 'success' : 'info');
-                else alert(msg);
+                const msg = this.testerMode
+                    ? '🛠️ Dev Mode ON – Đã mở khóa toàn bộ bài'
+                    : '🔒 Dev Mode OFF – Chế độ bình thường';
+                if (window.showToast) {
+                    showToast({
+                        title: this.testerMode ? 'Chế độ Dev' : 'Chế độ Thường',
+                        message: msg,
+                        icon: this.testerMode ? '🛠️' : '🔒',
+                        type: this.testerMode ? 'success' : 'info',
+                        duration: 3000
+                    });
+                }
             }
         });
     },
@@ -139,20 +178,37 @@ const NavigationHub = {
             vDashBtn.onclick = () => this.showDashboard();
         }
 
-        // Nút bật/tắt chế độ tester mở khóa toàn bộ bài
+        // NÚT BẬT/TẮT CHẾ ĐỘ DEV TRỰC TIẾP TRÊN HEADER
+        const quickDevBtn = document.getElementById('btn-quick-dev');
+        if (quickDevBtn) {
+            quickDevBtn.onclick = () => {
+                this.testerMode = !this.testerMode;
+                try { localStorage.setItem('sct2_dev_mode', this.testerMode ? '1' : '0'); } catch (e) {}
+                this.updateDevUI();
+                this.renderDashboardCards();
+                const msg = this.testerMode
+                    ? '🛠️ Đã bật Chế độ Dev (Mở khóa toàn bộ bài học)'
+                    : '🔒 Đã tắt Chế độ Dev (Khóa theo tiến độ)';
+                if (window.App && App.showToast) {
+                    App.showToast(msg, this.testerMode ? 'success' : 'info');
+                }
+            };
+        }
+
+        // Nút bật/tắt chế độ tester mở khóa toàn bộ bài trên banner Dashboard
         const testerBtn = document.getElementById('btn-toggle-tester-unlock');
         if (testerBtn) {
             testerBtn.onclick = () => {
                 this.testerMode = !this.testerMode;
-                const label = document.getElementById('tester-unlock-label');
-                if (label) {
-                    label.textContent = this.testerMode ? "Tester: Đã Mở Khóa Tất Cả" : "Tester: Chế Độ Thường";
-                }
-                const settingTester = document.getElementById('setting-tester-mode');
-                if (settingTester) settingTester.checked = this.testerMode;
-                testerBtn.className = "text-[11px] font-black px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border cursor-pointer backdrop-blur-xs " +
-                    (this.testerMode ? "bg-white/25 hover:bg-white/35 text-white border-white/30" : "bg-black/30 hover:bg-black/40 text-slate-300 border-white/10");
+                try { localStorage.setItem('sct2_dev_mode', this.testerMode ? '1' : '0'); } catch (e) {}
+                this.updateDevUI();
                 this.renderDashboardCards();
+                const msg = this.testerMode
+                    ? '🛠️ Đã bật Chế độ Dev (Mở khóa toàn bộ bài học)'
+                    : '🔒 Đã tắt Chế độ Dev (Khóa theo tiến độ)';
+                if (window.App && App.showToast) {
+                    App.showToast(msg, this.testerMode ? 'success' : 'info');
+                }
             };
         }
     },
@@ -165,14 +221,35 @@ const NavigationHub = {
         document.getElementById('session-progress-header')?.classList.add('hidden');
         document.getElementById('btn-back-dashboard')?.classList.add('hidden');
 
+        // Header trạng thái Dashboard: hiện logo đầy đủ, ẩn nút bài học hoàn toàn để tránh đè lấn
+        const lessonModalBtn = document.getElementById('btn-open-lesson-modal');
+        if (lessonModalBtn) {
+            lessonModalBtn.classList.add('hidden');
+            lessonModalBtn.classList.remove('flex', 'md:flex');
+        }
+        const brandBadge = document.getElementById('brand-badge');
+        if (brandBadge) {
+            brandBadge.classList.remove('hidden');
+            brandBadge.classList.add('flex');
+        }
+        document.getElementById('brand-text-container')?.classList.remove('hidden');
+
         this.renderDashboardCards();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: 'instant' });
     },
 
     // Chuyển sang Phòng Luyện Tập (Tầng 2)
     showPractice(lessonKey) {
         if (!this.isLessonUnlocked(lessonKey)) {
-            alert('Bài học này đang bị khóa. Hãy hoàn thành các bài học trước để mở khóa nhé!');
+            if (window.showToast) {
+                showToast({
+                    title: 'Bài học chưa mở khóa',
+                    message: 'Bài học này đang bị khóa. Hãy hoàn thành các bài học trước để mở khóa nhé!',
+                    icon: '🔒',
+                    type: 'warning',
+                    duration: 3500
+                });
+            }
             return;
         }
 
@@ -182,6 +259,19 @@ const NavigationHub = {
         document.getElementById('session-progress-header')?.classList.remove('hidden');
         document.getElementById('btn-back-dashboard')?.classList.remove('hidden');
 
+        // Header trạng thái Luyện tập: ẩn logo trên mobile để nhường toàn bộ chỗ cho tiêu đề bài học trung tâm
+        const lessonModalBtn = document.getElementById('btn-open-lesson-modal');
+        if (lessonModalBtn) {
+            lessonModalBtn.classList.remove('hidden', 'md:flex');
+            lessonModalBtn.classList.add('flex');
+        }
+        const brandBadge = document.getElementById('brand-badge');
+        if (brandBadge) {
+            brandBadge.classList.remove('flex');
+            brandBadge.classList.add('hidden', 'sm:flex');
+        }
+        document.getElementById('brand-text-container')?.classList.add('hidden');
+
         // Cập nhật tên bài trên Header
         const manifest = window.LESSON_MANIFEST || [];
         const item = manifest.find(m => m.id === lessonKey) || (App.data ? App.data[lessonKey] : null);
@@ -189,6 +279,7 @@ const NavigationHub = {
         const titleEl = document.getElementById('header-lesson-title');
         if (titleEl) titleEl.textContent = title;
 
+        window.scrollTo({ top: 0, behavior: 'instant' });
         App.start(lessonKey);
     },
 
@@ -621,7 +712,15 @@ const LevelManager = {
             btn.onclick = async () => {
                 const level = btn.dataset.level;
                 if (level === 'hsk4' || level === 'hsk5' || level === 'hsk6') {
-                    alert(`Cấp độ ${level.toUpperCase()} đang được biên soạn nội dung, vui lòng chọn HSK 1, 2 hoặc 3!`);
+                    if (window.showToast) {
+                        showToast({
+                            title: 'Đang biên soạn',
+                            message: `Cấp độ ${level.toUpperCase()} đang được biên soạn nội dung, vui lòng chọn HSK 1, 2 hoặc 3!`,
+                            icon: '📚',
+                            type: 'info',
+                            duration: 3500
+                        });
+                    }
                     return;
                 }
                 if (this.currentLevel === level) return;
@@ -657,17 +756,17 @@ const LevelManager = {
         // 1. Cập nhật Icon thương hiệu & Subtitle trên Header
         const brandIcon = document.getElementById('brand-badge-icon');
         if (brandIcon) {
-            brandIcon.className = `w-9 h-9 rounded-xl ${theme.brandIcon} text-white font-black flex items-center justify-center text-lg shadow-sm transition-colors duration-300`;
+            brandIcon.className = `w-[34px] h-[34px] rounded-xl ${theme.brandIcon} text-white font-black flex items-center justify-center text-base shadow-sm transition-colors duration-300 shrink-0`;
         }
 
         const brandSubtitle = document.getElementById('brand-subtitle');
         if (brandSubtitle) {
-            brandSubtitle.className = `text-[10px] ${theme.brandSubtitle} transition-colors duration-300`;
+            brandSubtitle.className = `hidden sm:block text-[10px] ${theme.brandSubtitle} transition-colors duration-300 truncate`;
         }
 
         const brandTitle = document.getElementById('brand-header-title');
         if (brandTitle) {
-            brandTitle.textContent = `Luyện Dịch ${theme.title} · SCT2`;
+            brandTitle.innerHTML = `<span class="hidden sm:inline">Luyện Dịch ${theme.title} · </span>SCT2`;
         }
 
         // Cập nhật chấm chỉ báo trên nút chọn bài header

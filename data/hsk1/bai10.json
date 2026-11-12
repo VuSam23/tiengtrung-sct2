@@ -1,607 +1,840 @@
 {
   "lessonId": "b10",
-  "lessonTitle": "第十课: 他住哪儿?",
+  "lessonTitle": "Bài 10: Nơi ở, Văn phòng & Số điện thoại",
   "quickNotes": {
     "vocabTips": [
       {
-        "word": "住 (zhù) vs 在 (zài)",
-        "py": "zhù vs zài",
-        "note": "住: cư trú, sống, ở cố định lâu dài (你住哪儿: cậu sống ở đâu). 在: ở, có mặt (tại thời điểm nói, không nhất thiết là nơi ở cố định: 他在办公室: thầy ấy đang ở văn phòng, 他在家: cậu ấy ở nhà)."
+        "word": "住 / 在",
+        "py": "zhù / zài",
+        "note": "住 (zhù) dùng cho nơi cư trú cố định dài hạn (sống ở đâu); 在 (zài) dùng cho vị trí hiện tại đang có mặt (đang ở nhà, ở văn phòng)."
       },
       {
-        "word": "哪儿 (nǎr) vs 那儿 (nàr)",
-        "py": "nǎr vs nàr",
-        "note": "哪儿 (có bộ khẩu 口): đại từ nghi vấn 'ở đâu, chỗ nào'. 那儿 (không có bộ khẩu): đại từ chỉ định nơi chốn ở xa 'ở đằng kia, chỗ kia'."
+        "word": "一 (yāo) / 零 (líng)",
+        "py": "yāo / líng",
+        "note": "Khi đọc dãy số điện thoại, số phòng, số nhà: số 1 (一) đọc là 'yāo' để tránh nhầm với số 7 (qī); số 0 đọc là 'líng'."
       },
       {
-        "word": "号 (hào) & 楼 (lóu)",
-        "py": "hào & lóu",
-        "note": "Trật tự địa chỉ phòng ốc trong tiếng Trung đi từ LỚN đến BÉ: Tòa/Tầng (楼) -> Cổng/Cửa (门) -> Số phòng (号). Ví dụ: 18楼1门601号."
-      },
-      {
-        "word": "电话号码 (diànhuà hàomǎ)",
-        "py": "diànhuà hàomǎ",
-        "note": "Hỏi số điện thoại: 你的电话号码是多少? (không dùng 几). Đọc số điện thoại từng số một, số 1 đọc là 'yāo'."
+        "word": "呢",
+        "py": "ne",
+        "note": "Trợ từ ngữ khí đặt cuối danh từ/đại từ (A + 呢？) để hỏi vị trí của người hoặc vật trong ngữ cảnh giao tiếp (VD: 我的手机呢？)."
       }
     ],
     "grammarTips": [
-      "Hỏi nơi cư trú/địa điểm: S + 住哪儿? (cư trú ở đâu) hoặc S + 在哪儿? (ở đâu/chỗ nào).",
-      "Hỏi sự có mặt: S + 在吗? (Có nhà/có mặt không? Ví dụ: 玛丽在家吗? 张东在吗?). Phủ định là 不在 (búzài).",
-      "Trợ từ ngữ khí 呢 ở cuối câu trần thuật: Biểu thị sự việc/trạng thái đang tiếp diễn hoặc giải thích sự thật nhẹ nhàng (他在家呢: thầy ấy ở nhà cơ mà/đang ở nhà đấy).",
-      "Trợ từ ngữ khí 了 ở cuối câu: Biểu thị động tác đã hoàn thành hoặc trạng thái mới phát sinh (她去图书馆了: cô ấy đã đến thư viện rồi)."
+      "Hỏi vị trí tỉnh lược: Danh từ / Đại từ + 呢？ (VD: 你的手机呢？ - Điện thoại của bạn đâu rồi?).",
+      "Hỏi dãy số (điện thoại, số phòng): ...号码 + 是 + 多少？",
+      "Nói nơi cư trú & số phòng: Chủ ngữ + 住 + Số tòa (楼) + Số phòng (号)."
     ]
   },
   "sentences": [
     {
-      "id": "b10-01",
+      "id": "b10-04",
       "type": "sentence_parsing",
-      "title": "Hỏi nhận biết nơi cư trú với 知道 và 住哪儿",
-      "vi": "Bạn có biết thầy giáo Vương sống ở đâu không?",
-      "zh": "你知道王老师住哪儿吗",
-      "standardTrans": "你知道王老师住哪儿吗",
-      "pinyin": "Nǐ zhīdào Wáng lǎoshī zhù nǎr ma?",
-      "grammarPoint": "Động từ nhận thức 知道 mang mệnh đề tân ngữ nghi vấn; Động từ cư trú 住 + 哪儿",
+      "title": "Hỏi nơi sinh sống",
+      "vi": "Chị gái bạn sống ở đâu?",
+      "zh": "你姐姐住哪儿",
+      "standardTrans": "你姐姐住哪儿",
+      "pinyin": "Nǐ jiějie zhù nǎr?",
+      "grammarPoint": "S + 住 + 哪儿",
       "tokens": [
         {
-          "text": "Biết",
-          "hz": "知道",
-          "py": "zhīdào",
-          "hv": "Tri đạo",
-          "role": "Động từ vị ngữ chính",
-          "vn": "Biết, nắm rõ thông tin",
-          "radicals": "知 = Chữ thỉ 矢 + bộ khẩu 口; 道 = Chữ thủ 首 + bộ sước 辶"
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Định ngữ",
+          "vn": "Của bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Thầy giáo Vương",
-          "hz": "王老师",
-          "py": "Wáng lǎoshī",
-          "hv": "Vương lão sư",
-          "role": "Chủ ngữ mệnh đề con",
-          "vn": "Thầy Vương, thầy giáo họ Vương",
-          "radicals": "王 = Bộ vương 王; 老师 = Giáo viên (bộ thổ 土, bộ tỷ 匕, bộ đao 刂, bộ cân 巾)"
+          "text": "Chị gái",
+          "hz": "姐姐",
+          "py": "jiějie",
+          "hv": "Tỷ tỷ",
+          "role": "Chủ ngữ",
+          "vn": "Chị gái ruột",
+          "radicals": "姐 = Bộ nữ 女 + Chữ thả 且"
         },
         {
-          "text": "Sống ở đâu",
-          "hz": "住哪儿",
-          "py": "zhù nǎr",
-          "hv": "Trụ na nhi",
-          "role": "Động từ + Đại từ nghi vấn nơi chốn",
-          "vn": "Sống ở đâu, cư trú ở chỗ nào",
-          "radicals": "住 = Bộ nhân đứng 亻 + chữ chủ 主; 哪儿 = Đại từ nghi vấn nơi chốn"
+          "text": "Sống / Ở",
+          "hz": "住",
+          "py": "zhù",
+          "hv": "Trú",
+          "role": "Động từ",
+          "vn": "Cư trú, sinh sống tại một nơi",
+          "radicals": "住 = Bộ nhân đứng 亻 + Bộ chủ 主"
+        },
+        {
+          "text": "Ở đâu",
+          "hz": "哪儿",
+          "py": "nǎr",
+          "hv": "Na nhi",
+          "role": "Đại từ nghi vấn",
+          "vn": "Ở đâu, nơi nào",
+          "radicals": "哪 = Bộ khẩu 口 + Bộ ấp 邑; 儿 = Bộ nhi 儿"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "王老师住哪儿吗", "tag": "Mệnh đề hỏi vị trí" },
-        { "id": "t1", "text": "你知道", "tag": "Chủ ngữ + Động từ nhận thức" },
-        { "id": "t3", "text": "哪儿住", "tag": "Bẫy trật tự" },
-        { "id": "t4", "text": "老师王", "tag": "Bẫy xưng danh" }
+        { "id": "t3", "text": "住", "tag": "Động từ" },
+        { "id": "t1", "text": "你", "tag": "Định ngữ" },
+        { "id": "t5", "text": "那儿", "tag": "Bẫy" },
+        { "id": "t4", "text": "哪儿", "tag": "Nghi vấn" },
+        { "id": "t2", "text": "姐姐", "tag": "Chủ ngữ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["你知道", "王老师", "住哪儿吗"],
-      "wordBankPool": ["你知道", "王老师住哪儿吗", "哪儿住", "老师王", "你知道住哪儿", "王老师住那儿吗"],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你", "姐姐", "住", "哪儿"],
+      "wordBankPool": ["住", "你", "那儿", "哪儿", "姐姐"],
       "traps": [
         {
-          "pattern": "哪儿住",
-          "msg": "Lỗi ngữ tự: Động từ '住' (sống/cư trú) nhận từ chỉ nơi chốn ở sau: '住哪儿', không đảo '哪儿' lên trước động từ."
-        },
-        {
-          "pattern": "老师王",
-          "msg": "Lỗi xưng hô: Trong tiếng Hán, họ của giáo viên luôn đặt TRƯỚC danh xưng ('王老师'), không nói '老师王'."
+          "pattern": "那儿",
+          "msg": "Lỗi đại từ: '那儿' là 'ở kia/ở đó', dùng để hỏi địa điểm phải dùng '哪儿' (có bộ Khẩu)."
         }
       ],
-      "explanation": "Câu hỏi nhận thức phức: [S + 知道 + (Người + 住哪儿) + 吗?]. '住哪儿' hỏi về nơi cư trú lâu dài."
+      "explanation": "Động từ '住' mang trực tiếp đại từ nghi vấn '哪儿' phía sau để hỏi nơi cư trú."
     },
     {
-      "id": "b10-02",
-      "type": "anti_word_by_word",
-      "title": "Hỏi chính phản số điện thoại và phân biệt nơi chốn với 在",
-      "vi": "A: Xin hỏi, đây có phải là số điện thoại của cô giáo Trương không? B: Phải, cô Trương không có nhà, cô ấy ở văn phòng cơ.",
-      "zh": "请问这是不是张老师的电话号码是张老师不在家他在办公室呢",
-      "standardTrans": "请问这是不是张老师的电话号码是张老师不在家他在办公室呢",
-      "pinyin": "Qǐngwèn, zhè shì bú shì Zhāng lǎoshī de diànhuà hàomǎ? Shì, Zhāng lǎoshī bú zài jiā, tā zài bàngōngshì ne.",
-      "grammarPoint": "Câu hỏi chính phản 是不是; Phủ định nơi chốn 不在家; Trợ từ ngữ khí 呢 biểu thị khẳng định sự thật",
+      "id": "b10-01",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi vị trí rút gọn với 呢",
+      "vi": "Điện thoại di động của bạn đâu rồi?",
+      "zh": "你的手机呢",
+      "standardTrans": "你的手机呢",
+      "pinyin": "Nǐ de shǒujī ne?",
+      "grammarPoint": "Danh từ + 呢 (Hỏi vị trí rút gọn)",
       "tokens": [
         {
-          "text": "Số điện thoại",
-          "hz": "电话号码",
-          "py": "diànhuà hàomǎ",
-          "hv": "Điện thoại hiệu mã",
-          "role": "Trung tâm ngữ tân ngữ",
-          "vn": "Số điện thoại liên lạc",
-          "radicals": "电话 = Điện thoại (bộ điền 田, bộ ngôn 讠, bộ thiệt 舌); 号码 = Số hiệu (bộ khẩu 口, bộ thạch 石, bộ mã 马)"
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Định ngữ",
+          "vn": "Bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Không có nhà",
-          "hz": "不在家",
-          "py": "bú zài jiā",
-          "hv": "Bất tại gia",
-          "role": "Cụm vị ngữ phủ định nơi chốn",
-          "vn": "Không ở nhà",
-          "radicals": "不 = Phủ định; 在 = Ở; 家 = Bộ miên 宀 + bộ thi 豕"
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của (biểu thị quan hệ sở hữu)",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Điện thoại di động",
+          "hz": "手机",
+          "py": "shǒujī",
+          "hv": "Thủ cơ",
+          "role": "Danh từ",
+          "vn": "Điện thoại di động",
+          "radicals": "手 = Bộ thủ 手; 机 = Bộ mộc 木 + Bộ kỷ 几"
+        },
+        {
+          "text": "Đâu rồi / Thế",
+          "hz": "呢",
+          "py": "ne",
+          "hv": "Ni",
+          "role": "Trợ từ ngữ khí",
+          "vn": "Dùng cuối danh từ để hỏi người hoặc vật đang ở đâu",
+          "radicals": "呢 = Bộ khẩu 口 + Bộ thi 尸 + Bộ tỷ 匕"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "手机", "tag": "Danh từ" },
+        { "id": "t1", "text": "你", "tag": "Định ngữ" },
+        { "id": "t5", "text": "吗", "tag": "Bẫy" },
+        { "id": "t4", "text": "呢", "tag": "Trợ từ" },
+        { "id": "t2", "text": "的", "tag": "Sở hữu" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["你", "的", "手机", "呢"],
+      "wordBankPool": ["手机", "你", "吗", "呢", "的"],
+      "traps": [
+        {
+          "pattern": "吗",
+          "msg": "Lỗi trợ từ: '吗' dùng để hỏi Có/Không; để hỏi rút gọn '...đâu rồi?' phải dùng '呢'."
+        }
+      ],
+      "explanation": "Cấu trúc 'Danh từ + 呢？' tương đương với 'Danh từ + 在哪儿？' khi người nói đang tìm kiếm vật đó."
+    },
+    {
+      "id": "b10-08",
+      "type": "sentence_parsing",
+      "title": "Nói số tòa nhà và số phòng",
+      "vi": "Tôi sống ở phòng 502 tòa nhà số 8.",
+      "zh": "我住八楼五零二号",
+      "standardTrans": "我住八楼五零二号",
+      "pinyin": "Wǒ zhù bā lóu wǔ líng èr hào.",
+      "grammarPoint": "Trật tự địa chỉ: Tòa nhà (楼) + Số phòng (号)",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Sống / Ở",
+          "hz": "住",
+          "py": "zhù",
+          "hv": "Trú",
+          "role": "Động từ",
+          "vn": "Sống, cư trú",
+          "radicals": "住 = Bộ nhân đứng 亻 + Bộ chủ 主"
+        },
+        {
+          "text": "Tám",
+          "hz": "八",
+          "py": "bā",
+          "hv": "Bát",
+          "role": "Số từ",
+          "vn": "Số 8",
+          "radicals": "八 = Bộ bát 八"
+        },
+        {
+          "text": "Tòa nhà / Tầng",
+          "hz": "楼",
+          "py": "lóu",
+          "hv": "Lâu",
+          "role": "Danh từ",
+          "vn": "Tòa nhà, lầu, tầng",
+          "radicals": "楼 = Bộ mộc 木 + Bộ mễ 米 + Bộ nữ 女"
+        },
+        {
+          "text": "502",
+          "hz": "五零二",
+          "py": "wǔ líng èr",
+          "hv": "Ngũ linh nhị",
+          "role": "Số từ",
+          "vn": "Số 502 (đọc rời từng chữ số)",
+          "radicals": "五 = Bộ nhị 二; 零 = Bộ vũ 雨 + Chữ lệnh 令; 二 = Bộ nhị 二"
+        },
+        {
+          "text": "Số",
+          "hz": "号",
+          "py": "hào",
+          "hv": "Hiệu",
+          "role": "Danh từ",
+          "vn": "Số nhà, số phòng",
+          "radicals": "号 = Bộ khẩu 口 + Bộ cái 丐"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "楼", "tag": "Danh từ" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "五零二", "tag": "Số phòng" },
+        { "id": "t7", "text": "在", "tag": "Bẫy" },
+        { "id": "t2", "text": "住", "tag": "Động từ" },
+        { "id": "t6", "text": "号", "tag": "Danh từ" },
+        { "id": "t3", "text": "八", "tag": "Số từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["我", "住", "八", "楼", "五零二", "号"],
+      "wordBankPool": ["楼", "我", "五零二", "在", "住", "号", "八"],
+      "traps": [
+        {
+          "pattern": "在",
+          "msg": "Lỗi động từ: Diễn tả nơi cư trú lâu dài ('sống ở...') phải dùng '住', không dùng '在'."
+        }
+      ],
+      "explanation": "Tiếng Trung xếp đơn vị lớn trước, đơn vị nhỏ sau: Tòa nhà số 8 (八楼) đứng trước phòng số 502 (五零二号)."
+    },
+    {
+      "id": "b10-03",
+      "type": "sentence_parsing",
+      "title": "Hỏi số điện thoại",
+      "vi": "Số điện thoại của anh trai bạn là bao nhiêu?",
+      "zh": "你哥哥的电话号码是多少",
+      "standardTrans": "你哥哥的电话号码是多少",
+      "pinyin": "Nǐ gēge de diànhuà hàomǎ shì duōshao?",
+      "grammarPoint": "...电话号码 + 是 + 多少",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Định ngữ",
+          "vn": "Bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Anh trai",
+          "hz": "哥哥",
+          "py": "gēge",
+          "hv": "Ca ca",
+          "role": "Định ngữ",
+          "vn": "Anh trai",
+          "radicals": "哥 = Bộ khẩu 口 + Bộ nhất 一 + Bộ quyết 亅"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Điện thoại",
+          "hz": "电话",
+          "py": "diànhuà",
+          "hv": "Điện thoại",
+          "role": "Danh từ",
+          "vn": "Điện thoại",
+          "radicals": "电 = Bộ điền 田 + Bộ ất 乙; 话 = Bộ ngôn 讠 + Bộ thiệt 舌"
+        },
+        {
+          "text": "Mã số",
+          "hz": "号码",
+          "py": "hàomǎ",
+          "hv": "Hiệu mã",
+          "role": "Danh từ",
+          "vn": "Số (điện thoại, tài khoản, phòng)",
+          "radicals": "号 = Bộ khẩu 口 + Bộ cái 丐; 码 = Bộ thạch 石 + Bộ mã 马"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Bao nhiêu",
+          "hz": "多少",
+          "py": "duōshao",
+          "hv": "Đa thiểu",
+          "role": "Đại từ nghi vấn",
+          "vn": "Bao nhiêu (dùng để hỏi dãy số)",
+          "radicals": "多 = Bộ tịch 夕; 少 = Bộ tiểu 小 + Nét phẩy 丿"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "电话", "tag": "Danh từ" },
+        { "id": "t2", "text": "哥哥", "tag": "Định ngữ" },
+        { "id": "t7", "text": "多少", "tag": "Nghi vấn" },
+        { "id": "t1", "text": "你", "tag": "Định ngữ" },
+        { "id": "t8", "text": "几", "tag": "Bẫy" },
+        { "id": "t5", "text": "号码", "tag": "Danh từ" },
+        { "id": "t3", "text": "的", "tag": "Sở hữu" },
+        { "id": "t6", "text": "是", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["哥哥", "的", "电话", "号码", "是", "多少"],
+      "wordBankPool": ["电话", "哥哥", "多少", "你", "几", "号码", "的", "是"],
+      "traps": [
+        {
+          "pattern": "几",
+          "msg": "Lỗi từ nghi vấn: Hỏi dãy số điện thoại gồm nhiều chữ số bắt buộc dùng '多少', không dùng '几'."
+        }
+      ],
+      "explanation": "Để hỏi số điện thoại hoặc mã số dài, tiếng Trung dùng đại từ nghi vấn '多少' ở cuối câu."
+    },
+    {
+      "id": "b10-06",
+      "type": "sentence_parsing",
+      "title": "Đi đến địa điểm tìm người",
+      "vi": "Tôi đi văn phòng tìm thầy Lý.",
+      "zh": "我去办公室找李老师",
+      "standardTrans": "我去办公室找李老师",
+      "pinyin": "Wǒ qù bàngōngshì zhǎo Lǐ lǎoshī.",
+      "grammarPoint": "Câu liên động: S + 去 + Địa điểm + 找 + Người",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
         },
         {
           "text": "Văn phòng",
           "hz": "办公室",
           "py": "bàngōngshì",
           "hv": "Biện công thất",
-          "role": "Tân ngữ nơi chốn",
-          "vn": "Phòng làm việc, văn phòng",
-          "radicals": "办 = Bộ lực 力 + hai nét chấm; 公 = Bộ bát 八 + bộ khư 厶; 室 = Bộ miên 宀 + chữ chí 至"
+          "role": "Danh từ",
+          "vn": "Văn phòng làm việc",
+          "radicals": "办 = Bộ lực 力 + Nét chấm 丶; 公 = Bộ bát 八 + Bộ khư 厶; 室 = Bộ miên 宀 + Bộ chí 至"
+        },
+        {
+          "text": "Tìm",
+          "hz": "找",
+          "py": "zhǎo",
+          "hv": "Trảo",
+          "role": "Động từ",
+          "vn": "Tìm, tìm kiếm, gặp ai đó",
+          "radicals": "找 = Bộ thủ 扌 + Bộ qua 戈"
+        },
+        {
+          "text": "Thầy Lý",
+          "hz": "李老师",
+          "py": "Lǐ lǎoshī",
+          "hv": "Lý lão sư",
+          "role": "Tân ngữ",
+          "vn": "Thầy giáo họ Lý",
+          "radicals": "李 = Bộ mộc 木 + Bộ tử 子; 老 = Bộ lão 老; 师 = Bộ cân 巾 + Bộ nhất 一"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "张老师的电话号码", "tag": "Định ngữ + Trung tâm ngữ A" },
-        { "id": "t1", "text": "请问这是不是", "tag": "Mở đầu + Hỏi chính phản" },
-        { "id": "t4", "text": "他在办公室呢", "tag": "Vị trí thực tế B" },
-        { "id": "t3", "text": "是张老师不在家", "tag": "Khẳng định + Vắng mặt B" },
-        { "id": "t5", "text": "是不是吗", "tag": "Bẫy thừa 吗" },
-        { "id": "t6", "text": "在办公室他", "tag": "Bẫy trật tự chủ vị" }
+        { "id": "t3", "text": "办公室", "tag": "Địa điểm" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "李老师", "tag": "Tân ngữ" },
+        { "id": "t6", "text": "在", "tag": "Bẫy" },
+        { "id": "t2", "text": "去", "tag": "Động từ" },
+        { "id": "t4", "text": "找", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["请问", "是不是", "张老师的电话号码", "不在家", "在办公室呢"],
-      "wordBankPool": ["请问这是不是", "张老师的电话号码", "是张老师不在家", "他在办公室呢", "是不是吗", "在办公室他", "电话号码是多少"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["我", "去", "办公室", "找", "李老师"],
+      "wordBankPool": ["办公室", "我", "李老师", "在", "去", "找"],
       "traps": [
         {
-          "pattern": "是不是吗",
-          "msg": "Thừa trợ từ: Đã dùng dạng hỏi chính phản '是不是' (có phải là) thì cuối câu tuyệt đối KHÔNG gắn thêm '吗'."
-        },
-        {
-          "pattern": "在办公室他",
-          "msg": "Lỗi ngữ tự: Chủ ngữ '他' phải đứng trước vị ngữ giới từ chỉ nơi chốn: '他在办公室呢'."
+          "pattern": "在",
+          "msg": "Lỗi động từ: Diễn đạt hành động di chuyển 'đi đến văn phòng để tìm...' phải dùng động từ '去', không dùng '在'."
         }
       ],
-      "explanation": "Cấu trúc hỏi chính phản: [这 + 是不是 + Danh từ?]. Ở vế B, trợ từ ngữ khí '呢' ở cuối câu biểu thị sự thật hiển nhiên (thầy/cô ấy ở văn phòng cơ mà)."
-    },
-    {
-      "id": "b10-03",
-      "type": "sentence_parsing",
-      "title": "Hỏi vị trí của trường học bằng 在哪儿",
-      "vi": "Trường các bạn ở đâu?",
-      "zh": "你们的学校在哪儿",
-      "standardTrans": "你们的学校在哪儿",
-      "pinyin": "Nǐmen de xuéxiào zài nǎr?",
-      "grammarPoint": "Định ngữ sở hữu: 你们的学校; Hỏi nơi chốn: S + 在哪儿",
-      "tokens": [
-        {
-          "text": "Trường của các bạn",
-          "hz": "你们的学校",
-          "py": "nǐmen de xuéxiào",
-          "hv": "Nhĩ môn đích học hiệu",
-          "role": "Chủ ngữ",
-          "vn": "Trường học của các bạn",
-          "radicals": "你们 = Các bạn; 的 = Trợ từ; 学校 = Trường học (bộ miên 宀, bộ mộc 木, bộ phụ 父)"
-        },
-        {
-          "text": "Ở đâu",
-          "hz": "在哪儿",
-          "py": "zài nǎr",
-          "hv": "Tại na nhi",
-          "role": "Vị ngữ nghi vấn nơi chốn",
-          "vn": "Ở đâu, ở chỗ nào",
-          "radicals": "在 = Bộ thổ 土; 哪 = Bộ khẩu 口 + chữ na 那; 儿 = Bộ nhi 儿"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "在哪儿", "tag": "Vị ngữ hỏi nơi chốn" },
-        { "id": "t1", "text": "你们的学校", "tag": "Chủ ngữ" },
-        { "id": "t3", "text": "在哪儿吗", "tag": "Bẫy thừa 吗" },
-        { "id": "t4", "text": "学校你们的", "tag": "Bẫy định ngữ" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["你们的学校", "在哪儿"],
-      "wordBankPool": ["你们的学校", "在哪儿", "在哪儿吗", "学校你们的", "在学校哪儿"],
-      "traps": [
-        {
-          "pattern": "在哪儿吗",
-          "msg": "Thừa trợ từ nghi vấn: '哪儿' đã là đại từ nghi vấn chỉ nơi chốn, tuyệt đối không thêm '吗' ở cuối câu."
-        },
-        {
-          "pattern": "学校你们的",
-          "msg": "Lỗi định ngữ: Thành phần sở hữu phải đứng trước danh từ trung tâm: '你们的学校', không nói ngược."
-        }
-      ],
-      "explanation": "Mẫu câu hỏi vị trí cơ bản trong Hán ngữ: [Chủ ngữ + 在哪儿?]. Tránh nhầm lẫn giữa '哪儿' (nǎr - ở đâu) và '那儿' (nàr - ở đằng kia)."
-    },
-    {
-      "id": "b10-04",
-      "type": "anti_word_by_word",
-      "title": "Hội thoại hỏi địa điểm mua đồ với 去哪儿 và bổ ngữ thời lượng 一会儿",
-      "vi": "A: Cậu ấy đi đâu mua hoa quả vậy? B: Tớ không biết, chúng ta đợi cậu ấy một lát nhé.",
-      "zh": "你去哪儿买水果呢我不知道我们等他一会儿吧",
-      "standardTrans": "你去哪儿买水果呢我不知道我们等他一会儿吧",
-      "pinyin": "Nǐ qù nǎr mǎi shuǐguǒ ne? Wǒ bù zhīdào, wǒmen děng tā yíhuìr ba.",
-      "grammarPoint": "Câu liên động hỏi địa điểm: 去哪儿 + Động từ; Bổ ngữ thời lượng: 等 + Người + 一会儿; Trợ từ 吧",
-      "tokens": [
-        {
-          "text": "Đi đâu mua hoa quả",
-          "hz": "去哪儿买水果",
-          "py": "qù nǎr mǎi shuǐguǒ",
-          "hv": "Khứ na nhi mãi thủy quả",
-          "role": "Cụm liên động nghi vấn",
-          "vn": "Đi chỗ nào mua trái cây",
-          "radicals": "去 = Đi; 哪儿 = Ở đâu; 买 = Mua; 水果 = Hoa quả"
-        },
-        {
-          "text": "Không biết",
-          "hz": "不知道",
-          "py": "bù zhīdào",
-          "hv": "Bất tri đạo",
-          "role": "Cụm vị ngữ phủ định",
-          "vn": "Không biết, không rõ",
-          "radicals": "不 = Phủ định; 知道 = Biết"
-        },
-        {
-          "text": "Đợi cậu ấy một lát",
-          "hz": "等他一会儿",
-          "py": "děng tā yíhuìr",
-          "hv": "Đẳng tha nhất hội nhi",
-          "role": "Động từ + Tân ngữ + Bổ ngữ thời lượng",
-          "vn": "Chờ anh ấy một lát",
-          "radicals": "等 = Chờ đợi (bộ trúc 竹 + chữ tự 寺); 他 = Cậu ấy; 一会儿 = Một lát"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "我不知道", "tag": "Lời đáp phủ định B" },
-        { "id": "t1", "text": "你去哪儿买水果呢", "tag": "Câu hỏi liên động A" },
-        { "id": "t3", "text": "我们等他一会儿吧", "tag": "Đề nghị đợi B" },
-        { "id": "t4", "text": "买水果去哪儿", "tag": "Bẫy liên động" },
-        { "id": "t5", "text": "一会儿等他", "tag": "Bẫy bổ ngữ thời lượng" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["买水果呢", "我不知道", "等他一会儿吧"],
-      "wordBankPool": ["你去哪儿买水果呢", "我不知道", "我们等他一会儿吧", "买水果去哪儿", "一会儿等他", "等他吧一会儿"],
-      "traps": [
-        {
-          "pattern": "买水果去哪儿",
-          "msg": "Lỗi câu liên động: Quy tắc mục đích di chuyển là phải đi đâu rồi mới làm gì: '去哪儿买水果', không nói '买水果去哪儿'."
-        },
-        {
-          "pattern": "一会儿等他",
-          "msg": "Lỗi bổ ngữ thời lượng: '一会儿' (một lát) biểu thị thời gian kéo dài của hành động, bắt buộc đứng SAU động từ và tân ngữ: '等他一会儿'."
-        }
-      ],
-      "explanation": "Nguyên bản giáo trình in câu hỏi là '你去哪儿买水果呢?' (dùng trợ từ ngữ khí 呢 tạo sắc thái tò mò nhẹ nhàng). Cụm bổ ngữ thời lượng: 等 + Người + 一会儿."
-    },
-    {
-      "id": "b10-05",
-      "type": "sentence_parsing",
-      "title": "Phán đoán chỉ định phòng ốc và số thứ tự tầng 3 với 三楼",
-      "vi": "Đây là phòng của tớ, kia là phòng của cậu, phòng của Mike ở tầng 3.",
-      "zh": "这是我的房间那是你的房间麦克的房间在三楼",
-      "standardTrans": "这是我的房间那是你的房间麦克的房间在三楼",
-      "pinyin": "Zhè shì wǒ de fángjiān, nà shì nǐ de fángjiān, Màikè de fángjiān zài sān lóu.",
-      "grammarPoint": "Đại từ chỉ thị 这 / 那; Cụm sở hữu: [Người] + 的房间; Vị trí tầng lầu: 在 + Số từ + 楼",
-      "tokens": [
-        {
-          "text": "Phòng của tớ",
-          "hz": "我的房间",
-          "py": "wǒ de fángjiān",
-          "hv": "Ngã đích phòng gian",
-          "role": "Cụm danh từ tân ngữ",
-          "vn": "Căn phòng của tôi",
-          "radicals": "我 = Tôi; 的 = Trợ từ; 房 = Bộ hộ 户 + chữ phương 方; 间 = Bộ môn 门 + bộ nhật 日"
-        },
-        {
-          "text": "Phòng của Mike",
-          "hz": "麦克的房间",
-          "py": "Màikè de fángjiān",
-          "hv": "Mạch Khắc đích phòng gian",
-          "role": "Chủ ngữ phân câu 3",
-          "vn": "Căn phòng của Mike",
-          "radicals": "麦克 = Tên riêng Mike; 房间 = Phòng"
-        },
-        {
-          "text": "Ở tầng 3",
-          "hz": "在三楼",
-          "py": "zài sān lóu",
-          "hv": "Tại tam lâu",
-          "role": "Cụm vị ngữ nơi chốn",
-          "vn": "Ở tầng ba, lầu ba",
-          "radicals": "在 = Ở; 三 = Số 3; 楼 = Bộ mộc 木 + chữ lâu 娄"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "那是你的房间", "tag": "Vế chỉ định 2" },
-        { "id": "t1", "text": "这是我的房间", "tag": "Vế chỉ định 1" },
-        { "id": "t3", "text": "麦克的房间在三楼", "tag": "Vế vị trí tầng 3" },
-        { "id": "t4", "text": "在楼三", "tag": "Bẫy trật tự số tầng" },
-        { "id": "t5", "text": "房间的我的", "tag": "Bẫy định ngữ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这是我的房间", "那是你的房间", "在三楼"],
-      "wordBankPool": ["这是我的房间", "那是你的房间", "麦克的房间在三楼", "在楼三", "房间的我的", "三楼在"],
-      "traps": [
-        {
-          "pattern": "在楼三",
-          "msg": "Lỗi số tầng: Số thứ tự tầng nhà trong tiếng Hán đặt trước danh từ '楼' ('三楼: tầng 3'), không nói '楼三'."
-        },
-        {
-          "pattern": "房间我的",
-          "msg": "Lỗi định ngữ: Sở hữu 'phòng của tớ' phải đưa đại từ lên trước: '我的房间'."
-        }
-      ],
-      "explanation": "Câu ghép đối chiếu 3 phân câu: [这/那是 + Sở hữu + 的房间], phân câu cuối chỉ vị trí bằng kết cấu: [Chủ ngữ + 在 + Số từ + 楼] (在三楼)."
-    },
-    {
-      "id": "b10-06",
-      "type": "anti_word_by_word",
-      "title": "Hỏi sự có mặt với 在家吗 và trợ từ biến hóa 了",
-      "vi": "A: Xin hỏi Mary có nhà không? B: Cậu ấy đến thư viện rồi.",
-      "zh": "请问玛丽在家吗她去图书馆了",
-      "standardTrans": "请问玛丽在家吗她去图书馆了",
-      "pinyin": "Qǐngwèn, Mǎlì zài jiā ma? Tā qù túshūguǎn le.",
-      "grammarPoint": "Hỏi có ở nhà không: 在家吗; Trợ từ ngữ khí 了 biểu thị hành động đã thực hiện / thay đổi trạng thái",
-      "tokens": [
-        {
-          "text": "Có ở nhà không",
-          "hz": "在家吗",
-          "py": "zài jiā ma",
-          "hv": "Tại gia ma",
-          "role": "Cụm vị ngữ nghi vấn",
-          "vn": "Có ở nhà không, có mặt không",
-          "radicals": "在 = Ở; 家 = Bộ miên 宀 + bộ thi 豕; 吗 = Trợ từ nghi vấn"
-        },
-        {
-          "text": "Đi thư viện rồi",
-          "hz": "去图书馆了",
-          "py": "qù túshūguǎn le",
-          "hv": "Khứ đồ thư quán liễu",
-          "role": "Cụm động tân + Trợ từ",
-          "vn": "Đã đi tới thư viện rồi",
-          "radicals": "去 = Đi; 图书馆 = Thư viện; 了 = Trợ từ hoàn thành"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "她去图书馆了", "tag": "Lời đáp B" },
-        { "id": "t1", "text": "请问玛丽在家吗", "tag": "Lời hỏi A" },
-        { "id": "t3", "text": "家在吗", "tag": "Bẫy trật tự" },
-        { "id": "t4", "text": "去图书馆了她", "tag": "Bẫy chủ ngữ" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["请问", "玛丽在家吗", "去图书馆了"],
-      "wordBankPool": ["请问玛丽在家吗", "她去图书馆了", "家在吗", "去图书馆了她", "玛丽在吗", "图书馆去了"],
-      "traps": [
-        {
-          "pattern": "家在吗",
-          "msg": "Lỗi giới từ nơi chốn: 'Ở nhà' bắt buộc giới từ '在' phải đứng trước danh từ '家' ('在家'), không nói '家在'."
-        },
-        {
-          "pattern": "图书馆去了",
-          "msg": "Lỗi động tân: Động từ '去' đứng trước địa điểm đến '图书馆' ('去图书馆了')."
-        }
-      ],
-      "explanation": "Công thức hỏi thăm một người có mặt tại nhà hay không: [Tên người + 在家吗?]. Đáp lại hành động đã đi đâu: [去 + Địa điểm + 了]."
-    },
-    {
-      "id": "b10-07",
-      "type": "sentence_parsing",
-      "title": "Mệnh đề danh ngữ hỏi quốc tịch với 哪国人",
-      "vi": "Tớ không biết cậu ấy là người nước nào.",
-      "zh": "我不知道他是哪国人",
-      "standardTrans": "我不知道他是哪国人",
-      "pinyin": "Wǒ bù zhīdào tā shì nǎ guórén.",
-      "grammarPoint": "Động từ nhận thức mang tân ngữ là câu hỏi gián tiếp: 不知道 + 它是哪国人",
-      "tokens": [
-        {
-          "text": "Không biết",
-          "hz": "不知道",
-          "py": "bù zhīdào",
-          "hv": "Bất tri đạo",
-          "role": "Vị ngữ phủ định chính",
-          "vn": "Không biết",
-          "radicals": "不 = Phủ định; 知 = Chữ thỉ 矢 + bộ khẩu 口; 道 = Chữ thủ 首 + bộ sước 辶"
-        },
-        {
-          "text": "Người nước nào",
-          "hz": "哪国人",
-          "py": "nǎ guórén",
-          "hv": "Na quốc nhân",
-          "role": "Cụm danh ngữ nghi vấn",
-          "vn": "Người mang quốc tịch nước nào",
-          "radicals": "哪 = Đại từ nghi vấn; 国 = Bộ vi 囗; 人 = Bộ nhân 人"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "他是哪国人", "tag": "Mệnh đề hỏi quốc tịch" },
-        { "id": "t1", "text": "我不知道", "tag": "Chủ vị chính" },
-        { "id": "t3", "text": "国人哪", "tag": "Bẫy đại từ nghi vấn" },
-        { "id": "t4", "text": "哪国人吗", "tag": "Bẫy thừa 吗" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["我不知道", "他是哪国人"],
-      "wordBankPool": ["我不知道", "他是哪国人", "国人哪", "哪国人吗", "不认识他是哪国人", "是哪国人他"],
-      "traps": [
-        {
-          "pattern": "国人哪",
-          "msg": "Lỗi trật tự từ: Đại từ '哪' (nào) phải đứng trước danh từ '国人' ('哪国人'), không dịch xuôi theo tiếng Việt."
-        },
-        {
-          "pattern": "哪国人吗",
-          "msg": "Thừa trợ từ: Câu hỏi gián tiếp chứa đại từ nghi vấn '哪' thì tuyệt đối KHÔNG thêm trợ từ '吗' ở cuối."
-        }
-      ],
-      "explanation": "Cấu trúc hỏi quốc tịch lồng trong mệnh đề gián tiếp: S + 不知道 + [Ai + 是哪国人]."
-    },
-    {
-      "id": "b10-08",
-      "type": "anti_word_by_word",
-      "title": "Hỏi và đọc số điện thoại gia đình bằng 多少",
-      "vi": "A: Số điện thoại của nhà cậu là bao nhiêu? B: Số điện thoại của nhà tớ là 12345678.",
-      "zh": "你家的电话号码是多少我家的电话号码是12345678",
-      "standardTrans": "你家的电话号码是多少我家的电话号码是12345678",
-      "pinyin": "Nǐ jiā de diànhuà hàomǎ shì duōshao? Wǒ jiā de diànhuà hàomǎ shì yāo èr sān sì wǔ liù qī bā.",
-      "grammarPoint": "Hỏi số điện thoại dùng đại từ 多少; Định ngữ: 你家的电话号码; Số 1 trong dãy số đọc là yāo",
-      "tokens": [
-        {
-          "text": "Số điện thoại nhà bạn",
-          "hz": "你家的电话号码",
-          "py": "nǐ jiā de diànhuà hàomǎ",
-          "hv": "Nhĩ gia đích điện thoại hiệu mã",
-          "role": "Chủ ngữ A",
-          "vn": "Số điện thoại cố định nhà bạn",
-          "radicals": "你家 = Nhà bạn; 电话号码 = Số điện thoại"
-        },
-        {
-          "text": "Là bao nhiêu",
-          "hz": "是多少",
-          "py": "shì duōshao",
-          "hv": "Thị đa thiếu",
-          "role": "Vị ngữ nghi vấn",
-          "vn": "Là bao nhiêu",
-          "radicals": "是 = Là; 多少 = Bao nhiêu"
-        },
-        {
-          "text": "12345678",
-          "hz": "12345678",
-          "py": "yāo èr sān sì wǔ liù qī bā",
-          "hv": "Nhất nhị tam tứ ngũ lục thất bát",
-          "role": "Dãy số điện thoại",
-          "vn": "Dãy số đếm từng số",
-          "radicals": "Số Ả Rập chuẩn giáo trình"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "是多少", "tag": "Hỏi số lượng" },
-        { "id": "t1", "text": "你家的电话号码", "tag": "Chủ đề câu hỏi" },
-        { "id": "t3", "text": "我家的电话号码是12345678", "tag": "Lời đáp dãy số" },
-        { "id": "t4", "text": "是几", "tag": "Bẫy từ để hỏi" },
-        { "id": "t5", "text": "电话号码的我家", "tag": "Bẫy định ngữ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["你家的电话号码", "是多少", "我家的电话号码是12345678"],
-      "wordBankPool": ["你家的电话号码", "是多少", "我家的电话号码是12345678", "是几", "电话号码的我家", "是多少电话号码"],
-      "traps": [
-        {
-          "pattern": "是几",
-          "msg": "Lỗi dùng từ để hỏi: Hỏi số điện thoại, số phòng dài bắt buộc dùng '是多少', không dùng '几' ('几' chỉ hỏi số nhỏ dưới 10)."
-        },
-        {
-          "pattern": "电话号码的我家",
-          "msg": "Lỗi định ngữ: Sở hữu 'nhà tôi' (我家) phải đứng trước trợ từ 的 và danh từ trung tâm: '我家的电话号码'."
-        }
-      ],
-      "explanation": "Mẫu câu hỏi số điện thoại cố định hoặc di động: [...电话号码是多少?]. Khi đọc dãy số điện thoại tiếng Trung, số 1 thường phát âm thành 'yāo' để tránh nhầm với số 7 (qī)."
+      "explanation": "Động từ '找' ngoài nghĩa là 'trả lại tiền thừa' (Bài 8) còn mang nghĩa phổ biến là 'tìm kiếm / tìm gặp ai đó'."
     },
     {
       "id": "b10-09",
       "type": "sentence_parsing",
-      "title": "Hỏi thăm sự có mặt của bạn học và câu liên động với 去",
-      "vi": "A: Xin hỏi Trương Đông có nhà không? B: Cậu ấy không ở nhà, cậu ấy đến trường rồi.",
-      "zh": "请问张东在家吗他不在他去学校了",
-      "standardTrans": "请问张东在家吗他不在他去学校了",
-      "pinyin": "Qǐngwèn, Zhāng Dōng zài jiā ma? Tā bú zài, tā qù xuéxiào le.",
-      "grammarPoint": "Kính ngữ 请问; Hỏi sự có mặt 在家吗; Phủ định rút gọn 他不在; Biến hóa với 了",
+      "title": "Phủ định việc biết thông tin",
+      "vi": "Xin lỗi tôi không biết phòng của cô ấy.",
+      "zh": "对不起我不知道她的房间",
+      "standardTrans": "对不起我不知道她的房间",
+      "pinyin": "Duìbuqǐ wǒ bù zhīdào tā de fángjiān.",
+      "grammarPoint": "Phủ định: S + 不 + 知道 + Tân ngữ",
       "tokens": [
         {
-          "text": "Trương Đông có nhà không",
-          "hz": "张东在家吗",
-          "py": "Zhāng Dōng zài jiā ma",
-          "hv": "Trương Đông tại gia ma",
-          "role": "Cụm câu hỏi có mặt",
-          "vn": "Trương Đông có ở nhà không",
-          "radicals": "张东 = Trương Đông; 在家 = Ở nhà; 吗 = Trợ từ nghi vấn"
+          "text": "Xin lỗi",
+          "hz": "对不起",
+          "py": "duìbuqǐ",
+          "hv": "Đối bất khởi",
+          "role": "Cụm từ lễ nghi",
+          "vn": "Xin lỗi",
+          "radicals": "对 = Bộ hựu 又 + Bộ thốn 寸; 不 = Bộ nhất 一; 起 = Bộ tẩu 走 + Bộ kỷ 己"
         },
         {
-          "text": "Cậu ấy không ở đây (vắng mặt)",
-          "hz": "他不在",
-          "py": "tā bú zài",
-          "hv": "Tha bất tại",
-          "role": "Vị ngữ phủ định ngắn",
-          "vn": "Anh ấy không có ở đây",
-          "radicals": "他 = Cậu ấy; 不在 = Không có mặt"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Cậu ấy đến trường rồi",
-          "hz": "他去学校了",
-          "py": "tā qù xuéxiào le",
-          "hv": "Tha khứ học hiệu liễu",
-          "role": "Cụm chủ vị hoàn thành",
-          "vn": "Anh ấy đã đi đến trường rồi",
-          "radicals": "去 = Đi; 学校 = Trường học; 了 = Trợ từ hoàn thành"
+          "text": "Không",
+          "hz": "不",
+          "py": "bù",
+          "hv": "Bất",
+          "role": "Phó từ phủ định",
+          "vn": "Không",
+          "radicals": "不 = Bộ nhất 一 + Nét phẩy 丿"
+        },
+        {
+          "text": "Biết",
+          "hz": "知道",
+          "py": "zhīdào",
+          "hv": "Tri đạo",
+          "role": "Động từ",
+          "vn": "Biết, nắm được thông tin",
+          "radicals": "知 = Bộ thỉ 矢 + Bộ khẩu 口; 道 = Bộ sước 辶 + Bộ thủ 首"
+        },
+        {
+          "text": "Cô ấy",
+          "hz": "她",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Định ngữ",
+          "vn": "Cô ấy",
+          "radicals": "她 = Bộ nữ 女 + Bộ dã 也"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Căn phòng",
+          "hz": "房间",
+          "py": "fángjiān",
+          "hv": "Phòng gian",
+          "role": "Tân ngữ",
+          "vn": "Phòng ở, căn phòng",
+          "radicals": "房 = Bộ hộ 户 + Bộ phương 方; 间 = Bộ môn 门 + Bộ nhật 日"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "张东在家吗", "tag": "Hỏi người" },
-        { "id": "t1", "text": "请问", "tag": "Kính ngữ mở đầu" },
-        { "id": "t3", "text": "他不在", "tag": "Báo vắng mặt" },
-        { "id": "t4", "text": "他去学校了", "tag": "Nơi đã đi" },
-        { "id": "t5", "text": "东张", "tag": "Bẫy tên riêng" },
-        { "id": "t6", "text": "没在他", "tag": "Bẫy phủ định" }
+        { "id": "t4", "text": "知道", "tag": "Động từ" },
+        { "id": "t2", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "的", "tag": "Sở hữu" },
+        { "id": "t1", "text": "对不起", "tag": "Lễ nghi" },
+        { "id": "t8", "text": "认识", "tag": "Bẫy" },
+        { "id": "t3", "text": "不", "tag": "Phủ định" },
+        { "id": "t7", "text": "房间", "tag": "Tân ngữ" },
+        { "id": "t5", "text": "她", "tag": "Định ngữ" }
       ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["请问", "张东在家吗", "他不在", "他去学校了"],
-      "wordBankPool": ["请问", "张东在家吗", "他不在", "他去学校了", "东张", "没在他", "去学校他了"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["对不起", "我", "不", "知道", "她", "的", "房间"],
+      "wordBankPool": ["知道", "我", "的", "对不起", "认识", "不", "房间", "她"],
       "traps": [
         {
-          "pattern": "没在",
-          "msg": "Lỗi phủ định hiện tại: Diễn tả ai đó hiện tại không có mặt ở địa điểm, dùng '不在' ('他不在'), không dùng '没在'."
-        },
-        {
-          "pattern": "去学校他了",
-          "msg": "Lỗi vị trí chủ ngữ: Chủ ngữ '他' phải đứng trước động từ: '他去学校了'."
+          "pattern": "认识",
+          "msg": "Lỗi từ vựng: '认识' dùng cho quen biết con người; biết một thông tin/địa điểm phải dùng '知道'."
         }
       ],
-      "explanation": "Mẫu đối thoại tìm người thông dụng: [请问 + Tên người + 在家吗?]. Đáp lại vắng mặt: [他不在, 他去 + Nơi chốn + 了]."
+      "explanation": "Động từ '知道' biểu thị việc biết một sự việc hoặc thông tin, phủ định bằng '不知道'."
+    },
+    {
+      "id": "b10-02",
+      "type": "sentence_parsing",
+      "title": "Giới thiệu nghề nghiệp nhân viên",
+      "vi": "Bố anh ấy là nhân viên ngân hàng.",
+      "zh": "他爸爸是银行职员",
+      "standardTrans": "他爸爸是银行职员",
+      "pinyin": "Tā bàba shì yínháng zhíyuán.",
+      "grammarPoint": "S + 是 + Danh từ nghề nghiệp",
+      "tokens": [
+        {
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Định ngữ",
+          "vn": "Của anh ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
+        },
+        {
+          "text": "Bố",
+          "hz": "爸爸",
+          "py": "bàba",
+          "hv": "Ba ba",
+          "role": "Chủ ngữ",
+          "vn": "Bố, cha",
+          "radicals": "爸 = Bộ phụ 父 + Chữ ba 巴"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Ngân hàng",
+          "hz": "银行",
+          "py": "yínháng",
+          "hv": "Ngân hàng",
+          "role": "Định ngữ",
+          "vn": "Ngân hàng",
+          "radicals": "银 = Bộ kim 钅 + Bộ cấn 艮; 行 = Bộ xích 彳 + Bộ hành 行"
+        },
+        {
+          "text": "Nhân viên",
+          "hz": "职员",
+          "py": "zhíyuán",
+          "hv": "Chức viên",
+          "role": "Tân ngữ",
+          "vn": "Nhân viên, cán bộ công chức",
+          "radicals": "职 = Bộ nhĩ 耳 + Bộ chỉ 只; 员 = Bộ khẩu 口 + Bộ bối 贝"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "是", "tag": "Động từ" },
+        { "id": "t1", "text": "他", "tag": "Định ngữ" },
+        { "id": "t5", "text": "职员", "tag": "Tân ngữ" },
+        { "id": "t6", "text": "老师", "tag": "Bẫy" },
+        { "id": "t2", "text": "爸爸", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "银行", "tag": "Định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["他", "爸爸", "是", "银行", "职员"],
+      "wordBankPool": ["是", "他", "职员", "老师", "爸爸", "银行"],
+      "traps": [
+        {
+          "pattern": "老师",
+          "msg": "Lỗi từ vựng: Đề bài nhắc đến 'nhân viên' phải dùng '职员', không dùng '老师' (giáo viên)."
+        }
+      ],
+      "explanation": "Danh từ chỉ cơ quan/đơn vị (银行) đứng trực tiếp trước danh từ nghề nghiệp (职员) để bổ nghĩa."
+    },
+    {
+      "id": "b10-07",
+      "type": "sentence_parsing",
+      "title": "Hỏi xác nhận có ở nhà không",
+      "vi": "Hôm nay mẹ bạn có ở nhà không?",
+      "zh": "今天你妈妈在家吗",
+      "standardTrans": "今天你妈妈在家吗",
+      "pinyin": "Jīntiān nǐ māma zài jiā ma?",
+      "grammarPoint": "Thời gian + S + 在 + 家 + 吗",
+      "tokens": [
+        {
+          "text": "Hôm nay",
+          "hz": "今天",
+          "py": "jīntiān",
+          "hv": "Kim thiên",
+          "role": "Danh từ thời gian",
+          "vn": "Ngày hôm nay",
+          "radicals": "今 = Bộ nhân 人 + Bộ nhất 一; 天 = Bộ nhất 一 + Bộ đại 大"
+        },
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Định ngữ",
+          "vn": "Của bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Mẹ",
+          "hz": "妈妈",
+          "py": "māma",
+          "hv": "Ma ma",
+          "role": "Chủ ngữ",
+          "vn": "Mẹ, má",
+          "radicals": "妈 = Bộ nữ 女 + Bộ mã 马"
+        },
+        {
+          "text": "Ở",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Động từ",
+          "vn": "Có mặt tại",
+          "radicals": "在 = Bộ thổ 土 + Bộ nhất 一"
+        },
+        {
+          "text": "Nhà",
+          "hz": "家",
+          "py": "jiā",
+          "hv": "Gia",
+          "role": "Danh từ",
+          "vn": "Nhà, gia đình",
+          "radicals": "家 = Bộ miên 宀 + Bộ thỉ 豕"
+        },
+        {
+          "text": "Không",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Trợ từ đặt cuối câu hỏi Có/Không",
+          "radicals": "吗 = Bộ khẩu 口 + Bộ mã 马"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "在", "tag": "Động từ" },
+        { "id": "t2", "text": "你", "tag": "Định ngữ" },
+        { "id": "t6", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t1", "text": "今天", "tag": "Thời gian" },
+        { "id": "t7", "text": "住", "tag": "Bẫy" },
+        { "id": "t5", "text": "家", "tag": "Danh từ" },
+        { "id": "t3", "text": "妈妈", "tag": "Chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["今天", "你", "妈妈", "在", "家", "吗"],
+      "wordBankPool": ["在", "你", "吗", "今天", "住", "家", "妈妈"],
+      "traps": [
+        {
+          "pattern": "住",
+          "msg": "Lỗi động từ: Hỏi trạng thái hiện tại 'có ở nhà không' phải dùng '在家', không dùng '住家'."
+        }
+      ],
+      "explanation": "Cụm '在家' (ở nhà) là tổ hợp cố định dùng để hỏi hoặc báo trạng thái đang có mặt tại nhà."
+    },
+    {
+      "id": "b10-05",
+      "type": "sentence_parsing",
+      "title": "Đọc dãy số điện thoại có số 0 và số 1",
+      "vi": "Số di động của anh ấy là 801.",
+      "zh": "他的手机号码是八零一",
+      "standardTrans": "他的手机号码是八零一",
+      "pinyin": "Tā de shǒujī hàomǎ shì bā líng yāo.",
+      "grammarPoint": "Cách đọc mã số: 零 (líng) và 一 (yāo)",
+      "tokens": [
+        {
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Định ngữ",
+          "vn": "Anh ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Điện thoại di động",
+          "hz": "手机",
+          "py": "shǒujī",
+          "hv": "Thủ cơ",
+          "role": "Danh từ",
+          "vn": "Điện thoại di động",
+          "radicals": "手 = Bộ thủ 手; 机 = Bộ mộc 木 + Bộ kỷ 几"
+        },
+        {
+          "text": "Mã số",
+          "hz": "号码",
+          "py": "hàomǎ",
+          "hv": "Hiệu mã",
+          "role": "Danh từ",
+          "vn": "Số (điện thoại)",
+          "radicals": "号 = Bộ khẩu 口 + Bộ cái 丐; 码 = Bộ thạch 石 + Bộ mã 马"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "801",
+          "hz": "八零一",
+          "py": "bā líng yāo",
+          "hv": "Bát linh nhất",
+          "role": "Số từ",
+          "vn": "Dãy số 8-0-1 (số 1 đọc là yāo trong dãy mã số)",
+          "radicals": "八 = Bộ bát 八; 零 = Bộ vũ 雨 + Chữ lệnh 令; 一 = Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "手机", "tag": "Danh từ" },
+        { "id": "t1", "text": "他", "tag": "Định ngữ" },
+        { "id": "t5", "text": "是", "tag": "Động từ" },
+        { "id": "t7", "text": "多少", "tag": "Bẫy" },
+        { "id": "t2", "text": "的", "tag": "Sở hữu" },
+        { "id": "t6", "text": "八零一", "tag": "Số từ" },
+        { "id": "t4", "text": "号码", "tag": "Danh từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["他", "的", "手机", "号码", "是", "八零一"],
+      "wordBankPool": ["手机", "他", "是", "多少", "的", "八零一", "号码"],
+      "traps": [
+        {
+          "pattern": "多少",
+          "msg": "Lỗi ngữ cảnh: Đây là câu trả lời cung cấp số cụ thể ('801'), không dùng từ để hỏi '多少'."
+        }
+      ],
+      "explanation": "Trong dãy số điện thoại hoặc số phòng, chữ '一' được phát âm là 'yāo' để phân biệt rõ với '七' (qī)."
     },
     {
       "id": "b10-10",
-      "type": "anti_word_by_word",
-      "title": "Chỉ định khuôn viên trường học: Thư viện, Nhà ăn và Văn phòng giáo viên",
-      "vi": "Đây là thư viện của trường, đây là nhà ăn của trường, kia là văn phòng của giáo viên.",
-      "zh": "这是学校的图书馆这是学校的食堂那是老师的办公室",
-      "standardTrans": "这是学校的图书馆这是学校的食堂那是老师的办公室",
-      "pinyin": "Zhè shì xuéxiào de túshūguǎn, zhè shì xuéxiào de shítáng, nà shì lǎoshī de bàngōngshì.",
-      "grammarPoint": "Đại từ chỉ thị 这 / 那; Liệt kê các cơ sở vật chất; Định ngữ sở hữu với 的: 学校的..., 老师的...",
+      "type": "sentence_parsing",
+      "title": "Hỏi số tầng của văn phòng",
+      "vi": "Văn phòng của thầy Vương ở tầng mấy?",
+      "zh": "王老师的办公室在几楼",
+      "standardTrans": "王老师的办公室在几楼",
+      "pinyin": "Wáng lǎoshī de bàngōngshì zài jǐ lóu?",
+      "grammarPoint": "Địa điểm + 在 + 几楼",
       "tokens": [
         {
-          "text": "Thư viện của trường",
-          "hz": "学校的图书馆",
-          "py": "xuéxiào de túshūguǎn",
-          "hv": "Học hiệu đích đồ thư quán",
-          "role": "Cụm danh ngữ tân ngữ 1",
-          "vn": "Thư viện trường học",
-          "radicals": "学校 = Trường học; 图书馆 = Thư viện"
+          "text": "Thầy Vương",
+          "hz": "王老师",
+          "py": "Wáng lǎoshī",
+          "hv": "Vương lão sư",
+          "role": "Định ngữ",
+          "vn": "Thầy giáo họ Vương",
+          "radicals": "王 = Bộ ngọc 玉; 老 = Bộ lão 老; 师 = Bộ cân 巾 + Bộ nhất 一"
         },
         {
-          "text": "Nhà ăn của trường",
-          "hz": "学校的食堂",
-          "py": "xuéxiào de shítáng",
-          "hv": "Học hiệu đích thực đường",
-          "role": "Cụm danh ngữ tân ngữ 2",
-          "vn": "Nhà ăn, căng tin của trường",
-          "radicals": "食 = Bộ thực 饣; 堂 = Bộ tiểu 小 + bộ mịch 冖 + bộ khẩu 口 + bộ thổ 土"
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
         },
         {
-          "text": "Văn phòng của giáo viên",
-          "hz": "老师的办公室",
-          "py": "lǎoshī de bàngōngshì",
-          "hv": "Lão sư đích biện công thất",
-          "role": "Cụm danh ngữ tân ngữ 3",
-          "vn": "Phòng làm việc của thầy cô",
-          "radicals": "老师 = Giáo viên; 办公室 = Văn phòng"
+          "text": "Văn phòng",
+          "hz": "办公室",
+          "py": "bàngōngshì",
+          "hv": "Biện công thất",
+          "role": "Chủ ngữ",
+          "vn": "Văn phòng",
+          "radicals": "办 = Bộ lực 力 + Nét chấm 丶; 公 = Bộ bát 八 + Bộ khư 厶; 室 = Bộ miên 宀 + Bộ chí 至"
+        },
+        {
+          "text": "Ở",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Động từ",
+          "vn": "Ở tại",
+          "radicals": "在 = Bộ thổ 土 + Bộ nhất 一"
+        },
+        {
+          "text": "Mấy",
+          "hz": "几",
+          "py": "jǐ",
+          "hv": "Kỷ",
+          "role": "Đại từ nghi vấn",
+          "vn": "Mấy (hỏi số tầng nhỏ hơn 10)",
+          "radicals": "几 = Bộ kỷ 几"
+        },
+        {
+          "text": "Tầng",
+          "hz": "楼",
+          "py": "lóu",
+          "hv": "Lâu",
+          "role": "Danh từ",
+          "vn": "Tầng lầu",
+          "radicals": "楼 = Bộ mộc 木 + Bộ mễ 米 + Bộ nữ 女"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "这是学校的食堂", "tag": "Cơ sở 2 - Nhà ăn" },
-        { "id": "t1", "text": "这是学校的图书馆", "tag": "Cơ sở 1 - Thư viện" },
-        { "id": "t3", "text": "那是老师的办公室", "tag": "Cơ sở 3 - Văn phòng" },
-        { "id": "t4", "text": "食堂的学校", "tag": "Bẫy định ngữ" },
-        { "id": "t5", "text": "办公室的老师", "tag": "Bẫy sở hữu" }
+        { "id": "t3", "text": "办公室", "tag": "Chủ ngữ" },
+        { "id": "t1", "text": "王老师", "tag": "Định ngữ" },
+        { "id": "t5", "text": "几", "tag": "Nghi vấn" },
+        { "id": "t7", "text": "多少", "tag": "Bẫy" },
+        { "id": "t2", "text": "的", "tag": "Sở hữu" },
+        { "id": "t6", "text": "楼", "tag": "Danh từ" },
+        { "id": "t4", "text": "在", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["学校的图书馆", "学校的食堂", "老师的办公室"],
-      "wordBankPool": ["这是学校的图书馆", "这是学校的食堂", "那是老师的办公室", "食堂的学校", "办公室的老师", "那是学校办公室"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["王老师", "的", "办公室", "在", "几", "楼"],
+      "wordBankPool": ["办公室", "王老师", "几", "多少", "的", "楼", "在"],
       "traps": [
         {
-          "pattern": "食堂的学校",
-          "msg": "Lỗi định ngữ: 'Nhà ăn của trường' thì trường học (sở hữu) phải đứng trước: '学校的食堂', không đảo ngược."
-        },
-        {
-          "pattern": "办公室的老师",
-          "msg": "Lỗi định ngữ: 'Văn phòng của giáo viên' phải là '老师的办公室', danh từ sở hữu đứng trước."
+          "pattern": "多少",
+          "msg": "Lỗi từ nghi vấn: Hỏi số tầng thông thường (dưới 10 tầng) phải dùng '几楼', không dùng '多少楼'."
         }
       ],
-      "explanation": "Mẫu câu giới thiệu môi trường khuôn viên trường học: kết hợp cấu trúc song song [这是 + Cơ sở 1], [这是 + Cơ sở 2], và [那是 + Cơ sở 3]."
+      "explanation": "Đặt đại từ nghi vấn '几' trực tiếp trước '楼' (几楼) để hỏi ở tầng mấy hoặc tòa nhà số mấy."
     }
   ]
 }

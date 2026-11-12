@@ -1,0 +1,777 @@
+{
+  "lessonId": "b30",
+  "lessonTitle": "第三十课: 我来了两个多月了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "时量补语 (Bổ ngữ thời lượng)",
+        "py": "shíliàng bǔyǔ",
+        "note": "Biểu thị thời gian kéo dài của một động tác hoặc trạng thái: 睡了两个小时, 学了三年, 等了半个多小时."
+      },
+      {
+        "word": "多 (Ước lượng số lượng)",
+        "py": "duō",
+        "note": "Biểu thị số lượng hơn: 1. Đứng sau lượng từ khi số từ nhỏ hơn 10 (两个多月, 半个多小时, 三个多星期). 2. Đứng sau danh từ/số từ khi số tròn chục trở lên (二十多年, 三十多块)."
+      },
+      {
+        "word": "从来不 vs 从来没",
+        "py": "cónglái bù vs cónglái méi",
+        "note": "从来不: Từ trước đến nay không bao giờ (thói quen, nguyên tắc: 我从来不喝酒). 从来没...过: Từ trước tới giờ chưa từng làm gì (kinh nghiệm: 从来没见过他迟到)."
+      },
+      {
+        "word": "本来以为",
+        "py": "běnlái yǐwéi",
+        "note": "Vốn tưởng rằng, ban đầu ngỡ là (thực tế diễn ra không như suy nghĩ ban đầu: 我本来以为这事会很顺利, 没想到遇到这么多困难)."
+      }
+    ],
+    "grammarTips": [
+      "Bổ ngữ thời lượng khi động tác vẫn đang tiếp diễn: S + V + 了 + Thời lượng + 了 (我来了两个多月了: Tôi đã đến được hơn hai tháng rồi và hiện vẫn đang ở đây).",
+      "Bổ ngữ thời lượng khi động tác đã kết thúc: S + V + 了 + Thời lượng (我一共只睡了两个小时觉).",
+      "Bổ ngữ thời lượng khi mang tân ngữ danh từ thường: S + V + 了 + Thời lượng + 的 + Tân ngữ (学了两个半月的汉语) HOẶC lặp lại động từ (学汉语学了两个半月).",
+      "Cấu trúc càng ngày càng: 越来越 + Tính từ / Động từ tâm lý (眼睛越来越不好, 越来越喜欢)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b30-01",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ thời lượng 半个多小时 và phó từ 才",
+      "vi": "Sao bây giờ các cậu mới đến? Vương Minh đã ở đây đợi các cậu hơn nửa tiếng rồi.",
+      "zh": "你们怎么现在才回来王明已经在这儿等了你们半个多小时了",
+      "standardTrans": "你们怎么现在才回来王明已经在这儿等了你们半个多小时了",
+      "pinyin": "Nǐmen zěnme xiànzài cái huílái? Wáng Míng yǐjīng zài zhèr děng le nǐmen bàn ge duō xiǎoshí le.",
+      "grammarPoint": "Hỏi đến muộn: 怎么现在才...; Bổ ngữ thời lượng tiếp diễn: 等了 + Tân ngữ chỉ người + 半个多小时 + 了",
+      "tokens": [
+        {
+          "text": "Sao bây giờ mới về",
+          "hz": "怎么现在才回来",
+          "py": "zěnme xiànzài cái huílái",
+          "hv": "Chẩm ma hiện tại tài hồi lai",
+          "role": "Câu hỏi trách cứ nhẹ",
+          "vn": "Sao lúc này mới về",
+          "radicals": "怎 = Tâm; 才 = Mới (muộn); 回 = Vi; 来 = Đến"
+        },
+        {
+          "text": "Đã ở đây đợi các cậu",
+          "hz": "已经在这儿等了你们",
+          "py": "yǐjīng zài zhèr děng le nǐmen",
+          "hv": "Dĩ kinh tại giá nhi đẳng liễu nhĩ môn",
+          "role": "Trạng ngữ + Động từ + Tân ngữ chỉ người",
+          "vn": "Đã ở chỗ này chờ các bạn",
+          "radicals": "已 = Dĩ; 在 = Tại; 等 = Trúc; 们 = Môn"
+        },
+        {
+          "text": "Hơn nửa tiếng đồng hồ rồi",
+          "hz": "半个多小时了",
+          "py": "bàn ge duō xiǎoshí le",
+          "hv": "Bán cá đa tiểu thời liễu",
+          "role": "Bổ ngữ thời lượng",
+          "vn": "Hơn nửa giờ đồng hồ rồi",
+          "radicals": "半 = Bán; 多 = Tịch; 小 = Tiểu; 时 = Nhật; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "王明已经在这儿等了你们", "tag": "Hành động đợi ở địa điểm" },
+        { "id": "t1", "text": "你们怎么现在才回来", "tag": "Câu hỏi sao giờ mới về" },
+        { "id": "t3", "text": "半个多小时了", "tag": "Bổ ngữ thời lượng hơn" },
+        { "id": "t4", "text": "半多个小时", "tag": "Bẫy vị trí chữ 多" },
+        { "id": "t5", "text": "现在就回来", "tag": "Bẫy nhầm lẫn 就/才" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["怎么现在才回来", "王明已经在这儿", "等了你们", "半个多小时了"],
+      "wordBankPool": ["你们怎么现在才回来", "王明已经在这儿等了你们", "半个多小时了", "半多个小时", "现在就回来", "等了半个多小时你们"],
+      "traps": [
+        {
+          "pattern": "半多个小时",
+          "msg": "Lỗi ước lượng với '多': Với số từ nhỏ hơn 10 kèm lượng từ, từ '多' bắt buộc phải đứng SAU lượng từ: '半个多小时' (hoặc 两个多月), không nói '半多个小时'."
+        },
+        {
+          "pattern": "等了半个多小时你们",
+          "msg": "Lỗi vị trí tân ngữ chỉ người: Khi tân ngữ là đại từ nhân xưng chỉ người ('你们'), tân ngữ bắt buộc phải đứng TRƯỚC bổ ngữ thời lượng ('等了你们半个多小时')."
+        }
+      ],
+      "explanation": "Câu hỏi trách móc dùng '现在才'. Khi động từ mang tân ngữ là đại từ nhân xưng chỉ người (你们), trật tự chuẩn là: Động từ + 了 + Đại từ nhân xưng + Bổ ngữ thời lượng + 了."
+    },
+    {
+      "id": "b30-02",
+      "type": "sentence_parsing",
+      "title": "Mốc thời gian 以前, bổ ngữ thời lượng 两个半月 và bổ ngữ kết quả 听不懂",
+      "vi": "Trước khi đến Trung Quốc, tớ chỉ ở trong nước học tiếng Trung hai tháng rưỡi, vì vậy khi đến nơi này tôi nghe không hiểu gì cả.",
+      "zh": "到中国以前我只在国内学习了两个半月汉语所以到这里时我什么都听不懂",
+      "standardTrans": "到中国以前我只在国内学习了两个半月汉语所以到这里时我什么都听不懂",
+      "pinyin": "Dào Zhōngguó yǐqián, wǒ zhǐ zài guónèi xuéxí le liǎng ge bàn yuè hànyǔ, suǒyǐ dào zhèlǐ shí wǒ shénme dōu tīng bù dǒng.",
+      "grammarPoint": "Mệnh đề thời gian: [Sự kiện] + 以前; Bổ ngữ thời lượng có tân ngữ: 学习了 + 两个半月 + 汉语; Bổ ngữ khả năng/kết quả phủ định: 什么都听不懂",
+      "tokens": [
+        {
+          "text": "Trước khi đến Trung Quốc",
+          "hz": "到中国以前",
+          "py": "dào Zhōngguó yǐqián",
+          "hv": "Đáo Trung Quốc dĩ tiền",
+          "role": "Trạng ngữ thời gian",
+          "vn": "Trước lúc sang Trung Quốc",
+          "radicals": "到 = Đao; 前 = Đao"
+        },
+        {
+          "text": "Học hai tháng rưỡi tiếng Hán ở trong nước",
+          "hz": "我只在国内学习了两个半月汉语",
+          "py": "wǒ zhǐ zài guónèi xuéxí le liǎng ge bàn yuè hànyǔ",
+          "hv": "Ngã chỉ tại quốc nội học tập liễu lưỡng cá bán nguyệt Hán ngữ",
+          "role": "Chủ ngữ + Nơi chốn + Động từ + Bổ ngữ thời lượng + Tân ngữ",
+          "vn": "Chỉ học tiếng Trung 2 tháng rưỡi ở trong nước",
+          "radicals": "只 = Khẩu; 国 = Vi; 内 = Quynh; 两个半月 = Hai tháng rưỡi"
+        },
+        {
+          "text": "Đến đây tôi nghe không hiểu gì cả",
+          "hz": "所以到这里时我什么都听不懂",
+          "py": "suǒyǐ dào zhèlǐ shí wǒ shénme dōu tīng bù dǒng",
+          "hv": "Sở dĩ đáo giá lý thời ngã thập ma đô thính bất hiểu",
+          "role": "Vế kết quả phủ định hoàn toàn",
+          "vn": "Cho nên lúc đến đây tôi nghe gì cũng không hiểu",
+          "radicals": "所 = Hộ; 时 = Nhật; 都 = Ấp; 懂 = Tâm"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我只在国内学习了两个半月汉语", "tag": "Học 2 tháng rưỡi ở trong nước" },
+        { "id": "t1", "text": "到中国以前", "tag": "Trước khi sang TQ" },
+        { "id": "t3", "text": "所以到这里时我什么都听不懂", "tag": "Kết quả nghe không hiểu" },
+        { "id": "t4", "text": "以前到中国", "tag": "Bẫy trật tự 以前" },
+        { "id": "t5", "text": "两半个月", "tag": "Bẫy diễn đạt 2 tháng rưỡi" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["到中国以前", "国内学习了", "两个半月汉语", "什么都听不懂"],
+      "wordBankPool": ["到中国以前", "我只在国内学习了两个半月汉语", "所以到这里时我什么都听不懂", "以前到中国", "两半个月", "听不懂什么都"],
+      "traps": [
+        {
+          "pattern": "两半个月",
+          "msg": "Lỗi cách nói số lượng thời gian: 'Hai tháng rưỡi' phải nói là '两个半月' (Số + Lượng + 半 + Danh từ), không nói '两半个月'."
+        },
+        {
+          "pattern": "以前到中国",
+          "msg": "Lỗi cấu trúc thời gian: Từ '以前' phải đứng SAU sự kiện ('到中国以前')."
+        }
+      ],
+      "explanation": "Cấu trúc bổ ngữ thời lượng chèn trước tân ngữ: 'V + 了 + Thời lượng + Tân ngữ' (学习了两个半月汉语). Cấu trúc '什么都 + Phủ định' (什么都听不懂) biểu thị sự phủ định toàn bộ."
+    },
+    {
+      "id": "b30-03",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ trạng thái 来得太晚 và bổ ngữ thời lượng với động từ ly hợp 睡觉",
+      "vi": "Tôi hôm qua về nhà muộn quá, tớ tổng cộng chỉ ngủ hai tiếng đồng hồ.",
+      "zh": "昨天晚上回来得太晚了我一共只睡了两个小时觉",
+      "standardTrans": "昨天晚上回来得太晚了我一共只睡了两个小时觉",
+      "pinyin": "Zuótiān wǎnshang huílái de tài wǎn le, wǒ yígòng zhǐ shuì le liǎng ge xiǎoshí jiào.",
+      "grammarPoint": "Bổ ngữ trạng thái: 回来得太晚了; Tổng cộng chỉ: 一共只; Bổ ngữ thời lượng tách động từ ly hợp: 睡了 + Thời lượng + 觉",
+      "tokens": [
+        {
+          "text": "Tối hôm qua về muộn quá",
+          "hz": "昨天晚上回来得太晚了",
+          "py": "zuótiān wǎnshang huílái de tài wǎn le",
+          "hv": "Tác thiên vãn thượng hồi lai đắc thái vãn liễu",
+          "role": "Thời gian + Bổ ngữ trạng thái",
+          "vn": "Tối qua trở về quá muộn",
+          "radicals": "昨 = Nhật; 晚 = Nhật; 来 = Lai; 得 = Đắc; 晚 = Muộn"
+        },
+        {
+          "text": "Tổng cộng chỉ ngủ hai tiếng",
+          "hz": "我一共只睡了两个小时觉",
+          "py": "wǒ yígòng zhǐ shuì le liǎng ge xiǎoshí jiào",
+          "hv": "Ngã nhất cộng chỉ thụy liễu lưỡng cá tiểu thời giác",
+          "role": "Phó từ + Động từ ly hợp kẹp bổ ngữ thời lượng",
+          "vn": "Tớ tổng cộng chỉ ngủ được 2 tiếng",
+          "radicals": "共 = Bát; 只 = Khẩu; 睡 = Mục; 觉 = Kiến"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我一共只睡了两个小时觉", "tag": "Ngủ 2 tiếng với động từ ly hợp" },
+        { "id": "t1", "text": "昨天晚上回来得太晚了", "tag": "Về nhà quá muộn" },
+        { "id": "t3", "text": "睡了觉两个小时", "tag": "Bẫy trật tự động từ ly hợp" },
+        { "id": "t4", "text": "睡觉了两个小时", "tag": "Bẫy động từ ly hợp 2" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["昨天晚上回来得太晚了", "一共只", "睡了两个小时觉"],
+      "wordBankPool": ["昨天晚上回来得太晚了", "我一共只睡了两个小时觉", "睡了觉两个小时", "睡觉了两个小时", "太晚了回来得"],
+      "traps": [
+        {
+          "pattern": "睡了觉两个小时",
+          "msg": "Lỗi động từ ly hợp: '睡觉' là động từ ly hợp. Bổ ngữ thời lượng phải đặt xen vào giữa động từ '睡' và danh từ '觉' ('睡了两个小时觉'), không đặt sau '睡觉'."
+        }
+      ],
+      "explanation": "Quy tắc ngữ pháp cốt lõi cho động từ ly hợp: Khi có bổ ngữ thời lượng, phải chèn thời lượng vào giữa: V + 了 + Thời lượng + Tân ngữ (睡了两个小时觉, 游了半个小时泳)."
+    },
+    {
+      "id": "b30-04",
+      "type": "sentence_parsing",
+      "title": "Hỏi thời lượng bằng 要多长时间 và cách nói Hai tiếng rưỡi",
+      "vi": "A: Từ Bắc Kinh đến Thượng Hải ngồi máy bay mất bao lâu? B: Hai tiếng rưỡi.",
+      "zh": "从北京到上海坐飞机要多长时间两个半钟头",
+      "standardTrans": "从北京到上海坐飞机要多长时间两个半钟头",
+      "pinyin": "A: Cóng Běijīng dào Shànghǎi zuò fēijī yào duō cháng shíjiān? B: Liǎng ge bàn zhōngtóu.",
+      "grammarPoint": "Từ đâu đến đâu: 从...到...; Phương tiện: 坐飞机; Tiêu tốn thời gian: 要多长时间; Khẩu ngữ thời lượng: 钟头 (tiếng đồng hồ)",
+      "tokens": [
+        {
+          "text": "Từ Bắc Kinh đến Thượng Hải đi máy bay mất bao lâu",
+          "hz": "从北京到上海坐飞机要多长时间",
+          "py": "cóng Běijīng dào Shànghǎi zuò fēijī yào duō cháng shíjiān",
+          "hv": "Tòng Bắc Kinh đáo Thượng Hải tọa phi cơ yếu đa trường thời gian",
+          "role": "Câu hỏi thời lượng của A",
+          "vn": "Từ Bắc Kinh đến Thượng Hải ngồi máy bay cần bao nhiêu thời gian",
+          "radicals": "从 = Nhân; 北 = Tỷ; 海 = Thủy; 飞 = Phi; 长 = Trường"
+        },
+        {
+          "text": "Hai tiếng rưỡi",
+          "hz": "两个半钟头",
+          "py": "liǎng ge bàn zhōngtóu",
+          "hv": "Lưỡng cá bán chung đầu",
+          "role": "Câu trả lời thời lượng của B",
+          "vn": "2 tiếng rưỡi đồng hồ",
+          "radicals": "两 = Lưỡng; 个 = Nhân; 半 = Bán; 钟 = Kim 钅; 头 = Đại"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "两个半钟头", "tag": "Đáp thời lượng" },
+        { "id": "t1", "text": "从北京到上海坐飞机要多长时间", "tag": "Câu hỏi thời lượng của A" },
+        { "id": "t3", "text": "两半个钟头", "tag": "Bẫy trật tự 半" },
+        { "id": "t4", "text": "要长时间多少", "tag": "Bẫy từ để hỏi" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["从北京到上海", "坐飞机要多长时间", "两个半钟头"],
+      "wordBankPool": ["从北京到上海坐飞机要多长时间", "两个半钟头", "两半个钟头", "要长时间多少", "坐飞机从北京到上海"],
+      "traps": [
+        {
+          "pattern": "两半个钟头",
+          "msg": "Lỗi cấu trúc số lượng: 'Hai tiếng rưỡi' phải là '两个半钟头' (hoặc 两个半小时), không nói '两半个钟头'."
+        },
+        {
+          "pattern": "长时间多少",
+          "msg": "Lỗi đại từ nghi vấn: Hỏi 'bao lâu' dùng cố định cụm '多长时间', không đảo ngược."
+        }
+      ],
+      "explanation": "Trong khẩu ngữ, '钟头' (zhōngtóu) đồng nghĩa với '小时' (xiǎoshí). '两个半钟头' biểu thị 2 giờ 30 phút."
+    },
+    {
+      "id": "b30-05",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc có ích đối với 对...很有好处 và đại từ thay thế 这样的",
+      "vi": "Tớ cảm thấy cuốn sách này rất có ích đối với du học sinh nhưng mà sách như thế này ít quá.",
+      "zh": "我觉得这本书对留学生很有好处但是这样的书太少了",
+      "standardTrans": "我觉得这本书对留学生很有好处但是这样的书太少了",
+      "pinyin": "Wǒ juéde zhè běn shū duì liúxuéshēng hěn yǒu hǎochu, dànshì zhèyàng de shū tài shǎo le.",
+      "grammarPoint": "Nhận định: 我觉得; Có lợi/có ích cho: 对 + Đối tượng + 很有好处; Như thế này: 这样的 + Danh từ; Quá ít: 太少了",
+      "tokens": [
+        {
+          "text": "Quyển sách này có ích cho du học sinh",
+          "hz": "我觉得这本书对留学生很有好处",
+          "py": "wǒ juéde zhè běn shū duì liúxuéshēng hěn yǒu hǎochu",
+          "hv": "Ngã giác đắc giá bản thư đối lưu học sinh hẩn hữu hảo xứ",
+          "role": "Mệnh đề nhận xét tích cực",
+          "vn": "Tớ thấy cuốn sách này rất bổ ích cho du học sinh",
+          "radicals": "觉 = Kiến; 本 = Mộc; 对 = Thốn; 留 = Điền; 处 = Xử"
+        },
+        {
+          "text": "Nhưng sách như thế này quá ít",
+          "hz": "但是这样的书太少了",
+          "py": "dànshì zhèyàng de shū tài shǎo le",
+          "hv": "Đãn thị giá dạng đích thư thái thiếu liễu",
+          "role": "Vế chuyển ngoặt tiếc nuối",
+          "vn": "Nhưng sách như vầy ít quá",
+          "radicals": "但 = Nhân đứng; 样 = Mộc; 少 = Thiếu; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "但是这样的书太少了", "tag": "Vế chuyển ngoặt ít sách" },
+        { "id": "t1", "text": "我觉得这本书对留学生很有好处", "tag": "Vế nhận định có ích" },
+        { "id": "t3", "text": "很有好处对留学生", "tag": "Bẫy trật tự giới từ 对" },
+        { "id": "t4", "text": "太少书这样", "tag": "Bẫy trật tự định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["这本书对留学生", "很有好处", "但是这样的书太少了"],
+      "wordBankPool": ["我觉得这本书对留学生很有好处", "但是这样的书太少了", "很有好处对留学生", "太少书这样", "好处很有对留学生"],
+      "traps": [
+        {
+          "pattern": "很有好处对",
+          "msg": "Lỗi giới từ: Cụm giới từ chỉ đối tượng hưởng lợi (对留学生) bắt buộc phải đứng TRƯỚC vị ngữ '很有好处'."
+        }
+      ],
+      "explanation": "Cấu trúc '对 + Đối tượng + 有好处' nghĩa là có lợi/có ích cho ai/cái gì. '这样的书' dùng đại từ chỉ thị '这样的' làm định ngữ."
+    },
+    {
+      "id": "b30-06",
+      "type": "anti_word_by_word",
+      "title": "Phó từ tuyệt đối 从来不 và lời khuyên nhủ 你们喝吧",
+      "vi": "Xin lỗi, từ trước đến nay tôi không uống rượu, các cậu uống đi.",
+      "zh": "对不起我从来不喝酒你们喝吧",
+      "standardTrans": "对不起我从来不喝酒你们喝吧",
+      "pinyin": "Duìbuqǐ, wǒ cónglái bù hē jiǔ, nǐmen hē ba.",
+      "grammarPoint": "Xin lỗi: 对不起; Thói quen từ trước tới nay không làm gì: 从来不 + Động từ; Lời giục/nhường: 你们喝吧",
+      "tokens": [
+        {
+          "text": "Từ trước tới nay không uống rượu",
+          "hz": "我从来不喝酒",
+          "py": "wǒ cónglái bù hē jiǔ",
+          "hv": "Ngã tòng lai bất háu tửu",
+          "role": "Chủ ngữ + Phó từ + Vị ngữ",
+          "vn": "Tớ từ xưa tới giờ không hề uống rượu",
+          "radicals": "从 = Nhân; 来 = Lai; 不 = Bất; 喝 = Khẩu; 酒 = Bộ dậu 酉 + bộ thủy 氵"
+        },
+        {
+          "text": "Các cậu uống đi",
+          "hz": "你们喝吧",
+          "py": "nǐmen hē ba",
+          "hv": "Nhĩ môn háu ba",
+          "role": "Lời mời / nhường",
+          "vn": "Các bạn cứ uống đi nhé",
+          "radicals": "你 = Nhân; 喝 = Khẩu; 吧 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我从来不喝酒", "tag": "Nguyên tắc không uống rượu" },
+        { "id": "t1", "text": "对不起", "tag": "Lời xin lỗi" },
+        { "id": "t3", "text": "你们喝吧", "tag": "Lời mời các bạn" },
+        { "id": "t4", "text": "我从来没喝酒", "tag": "Bẫy nhầm lẫn 从来不/从来没" },
+        { "id": "t5", "text": "不从来喝酒", "tag": "Bẫy trật tự phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["对不起", "我从来不喝酒", "你们喝吧"],
+      "wordBankPool": ["对不起", "我从来不喝酒", "你们喝吧", "我从来没喝酒", "不从来喝酒", "喝酒从来不"],
+      "traps": [
+        {
+          "pattern": "从来没喝酒",
+          "msg": "Lỗi thói quen/nguyên tắc: Biểu thị một thói quen hoặc quy tắc bản thân 'từ trước tới nay không bao giờ làm gì' phải dùng '从来不' ('从来不喝酒'); '从来没' chỉ dùng cho trải nghiệm quá khứ chưa từng xảy ra ('从来没喝过')."
+        }
+      ],
+      "explanation": "'从来不' kết hợp với động từ biểu thị thói quen hoặc thái độ kiên định từ xưa đến nay không bao giờ làm điều đó."
+    },
+    {
+      "id": "b30-07",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc vốn tưởng rằng 本来以为 và không ngờ 没想到",
+      "vi": "Tớ vốn nghĩ rằng chuyện này sẽ rất thuận lợi, nhưng mà không ngờ lại gặp nhiều khó khăn như vậy.",
+      "zh": "我本来以为这件事会很顺利没想到遇到这么多困难",
+      "standardTrans": "我本来以为这件事会很顺利没想到遇到这么多困难",
+      "pinyin": "Wǒ běnlái yǐwéi zhè jiàn shì huì hěn shùnlì, méi xiǎngdào yùdào zhème duō kùnnan.",
+      "grammarPoint": "Vốn dĩ ngỡ là: 本来以为; Sẽ thuận lợi: 会很顺利; Không ngờ tới: 没想到; Gặp phải: 遇到 + Danh từ",
+      "tokens": [
+        {
+          "text": "Vốn dĩ tôi ngỡ việc này sẽ rất suôn sẻ",
+          "hz": "我本来以为这件事会很顺利",
+          "py": "wǒ běnlái yǐwéi zhè jiàn shì huì hěn shùnlì",
+          "hv": "Ngã bản lai dĩ vi giá kiện sự hội hẩn thuận lợi",
+          "role": "Vế nhận định ban đầu",
+          "vn": "Tớ vốn tưởng việc này sẽ rất thuận lợi",
+          "radicals": "本 = Mộc; 来 = Lai; 以 = Dĩ; 为 = Vi; 顺 = Xuyên + Hiệt; 利 = Hòa + Đao"
+        },
+        {
+          "text": "Không ngờ gặp nhiều khó khăn như vậy",
+          "hz": "没想到遇到这么多困难",
+          "py": "méi xiǎngdào yùdào zhème duō kùnnan",
+          "hv": "Một tưởng đáo ngộ đáo giá ma đa khốn nan",
+          "role": "Vế bất ngờ gặp trắc trở",
+          "vn": "Chẳng ngờ lại đụng phải nhiều trắc trở đến thế",
+          "radicals": "没 = Thủy; 想 = Tâm; 遇 = Sước; 困 = Vi; 难 = Hựu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我本来以为这件事会很顺利", "tag": "Vốn ngỡ thuận lợi" },
+        { "id": "t2", "text": "没想到遇到这么多困难", "tag": "Không ngờ gặp khó khăn" },
+        { "id": "t3", "text": "以为我本来", "tag": "Bẫy trật tự chủ ngữ" },
+        { "id": "t4", "text": "想不到遇到", "tag": "Bẫy từ vựng" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["我本来以为", "这件事会很顺利", "没想到", "遇到这么多困难"],
+      "wordBankPool": ["我本来以为这件事会很顺利", "没想到遇到这么多困难", "以为我本来", "想不到遇到", "顺利会很"],
+      "traps": [
+        {
+          "pattern": "以为我本来",
+          "msg": "Lỗi trật tự phó từ: '本来' (vốn dĩ) đứng sau chủ ngữ '我' và trước động từ phán đoán sai lầm '以为' ('我本来以为...')."
+        }
+      ],
+      "explanation": "Cặp biểu đạt tâm lý kinh điển: '本来以为... 没想到...' (vốn tưởng rằng thế này, ai ngờ thực tế lại ngược lại). '遇到' là bổ ngữ kết quả chỉ sự va chạm, gặp phải."
+    },
+    {
+      "id": "b30-08",
+      "type": "anti_word_by_word",
+      "title": "Nhận xét 太无聊 rồi khuyên nhủ chuỗi động từ lặp lại 逛逛街, 看看电影",
+      "vi": "Cuối tuần cứ ở nhà một mình nhàm chán quá, cậu nên tìm bạn bè ra ngoài dạo phố, xem phim, ăn cơm.",
+      "zh": "周末总是一个人在家太无聊了你应该找朋友出去逛逛街看看电影吃吃饭",
+      "standardTrans": "周末总是一个人在家太无聊了你应该找朋友出去逛逛街看看电影吃吃饭",
+      "pinyin": "Zhōumò zǒngshì yí ge rén zàijiā tài wúliáo le, nǐ yīnggāi zhǎo péngyou chūqù guàngguang jiē, kànkan diànyǐng, chīchī fàn.",
+      "grammarPoint": "Luôn luôn một mình: 总是一个人; Quá buồn chán: 太无聊了; Khuyên bảo: 应该; Chuỗi động từ lặp lại thư giãn: 逛逛街, 看看电影, 吃吃饭",
+      "tokens": [
+        {
+          "text": "Cuối tuần luôn ở nhà một mình chán quá",
+          "hz": "周末总是一个人在家太无聊了",
+          "py": "zhōumò zǒngshì yí ge rén zàijiā tài wúliáo le",
+          "hv": "Chu mạt tổng thị nhất cá nhân tại gia thái vô liêu liễu",
+          "role": "Vế tiền đề tình trạng",
+          "vn": "Cuối tuần lúc nào cũng lủi thủi ở nhà chán ngắt",
+          "radicals": "总 = Tâm; 无 = Vô; 聊 = Nhĩ"
+        },
+        {
+          "text": "Bạn nên tìm bạn rủ ra ngoài dạo phố xem phim ăn cơm",
+          "hz": "你应该找朋友出去逛逛街看看电影吃吃饭",
+          "py": "nǐ yīnggāi zhǎo péngyou chūqù guàngguang jiē, kànkan diànyǐng, chīchī fàn",
+          "hv": "Nhĩ ưng cai trảo bằng hữu xuất khứ cuống cuống nhai, khán khán điện ảnh, ngật ngật phạn",
+          "role": "Vế khuyên nhủ thư giãn",
+          "vn": "Cậu nên hẹn bạn bè ra ngoài đi dạo phố, coi phim, ăn uống",
+          "radicals": "找 = Thủ; 逛 = Sước; 街 = Hành; 看 = Mục; 吃 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "周末总是一个人在家太无聊了", "tag": "Bối cảnh buồn chán" },
+        { "id": "t2", "text": "你应该找朋友出去逛逛街看看电影吃吃饭", "tag": "Lời khuyên rủ bạn đi chơi" },
+        { "id": "t3", "text": "逛街逛", "tag": "Bẫy lặp động từ ly hợp" },
+        { "id": "t4", "text": "无聊太了", "tag": "Bẫy cấu trúc 太...了" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["总是一个人在家", "太无聊了", "找朋友出去", "逛逛街看看电影吃吃饭"],
+      "wordBankPool": ["周末总是一个人在家太无聊了", "你应该找朋友出去逛逛街看看电影吃吃饭", "逛街逛", "无聊太了", "在家一个人总是"],
+      "traps": [
+        {
+          "pattern": "逛街逛",
+          "msg": "Lỗi lặp lại động từ ly hợp: '逛街' là động từ ly hợp (Động từ 逛 + Tân ngữ 街), dạng lặp lại biểu thị sự thư thả phải là AAB ('逛逛街'), không lặp thành '逛街逛'."
+        }
+      ],
+      "explanation": "Các động từ chỉ hoạt động giải trí lặp lại (逛逛街, 看看电影, 吃吃饭) tạo cảm giác nhẹ nhàng, thảnh thơi, đúng chất rủ nhau đi chơi giải khuây cuối tuần."
+    },
+    {
+      "id": "b30-09",
+      "type": "sentence_parsing",
+      "title": "Khen ngợi 特别准时的人 và kinh nghiệm chưa từng 从来没...过",
+      "vi": "A: Thầy giáo Vương thật là một người vô cùng đúng giờ. B: Đúng vậy, từ trước đến nay tớ chưa từng thấy thầy ấy đến muộn.",
+      "zh": "王老师真是一个特别准时的人对我从来没见他迟到过呢",
+      "standardTrans": "王老师真是一个特别准时的人对我从来没见他迟到过呢",
+      "pinyin": "A: Wáng lǎoshī zhēn shì yí ge tèbié zhǔnshí de rén. B: Duì, wǒ cónglái méi jiàn tā chídào guò ne.",
+      "grammarPoint": "Khen ngợi: 真是一个特别...的人; Xác nhận: 对; Chưa từng làm gì trong đời: 从来没 + V + 过",
+      "tokens": [
+        {
+          "text": "Thầy Vương đúng là một người cực kỳ đúng giờ",
+          "hz": "王老师真是一个特别准时的人",
+          "py": "Wáng lǎoshī zhēn shì yí ge tèbié zhǔnshí de rén",
+          "hv": "Vương lão sư chân thị nhất cá đặc biệt chuẩn thời đích nhân",
+          "role": "Câu nhận xét khen ngợi của A",
+          "vn": "Thầy giáo Vương quả là người rất đúng giờ",
+          "radicals": "真 = Mục; 特 = Ngưu; 准 = Băng; 时 = Nhật; 人 = Nhân"
+        },
+        {
+          "text": "Từ trước đến nay chưa từng thấy thầy đến muộn",
+          "hz": "对我从来没见他迟到过呢",
+          "py": "duì wǒ cónglái méi jiàn tā chídào guò ne",
+          "hv": "Đối ngã tòng lai một kiến tha trì đáo quá ni",
+          "role": "Câu đồng tình khẳng định kinh nghiệm của B",
+          "vn": "Đúng thế, tớ chưa bao giờ thấy thầy đi trễ cả",
+          "radicals": "对 = Đúng; 见 = Kiến; 迟 = Sước; 过 = Qua; 呢 = Khẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "王老师真是一个特别准时的人", "tag": "Khen ngợi thầy đúng giờ" },
+        { "id": "t2", "text": "对我从来没见他迟到过呢", "tag": "Khẳng định chưa từng thấy trễ" },
+        { "id": "t3", "text": "从来不迟到过", "tag": "Bẫy nhầm lẫn 从来不/从来没" },
+        { "id": "t4", "text": "见他迟到从来没", "tag": "Bẫy trật tự phó từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["特别准时的人", "对", "从来没见他迟到过呢"],
+      "wordBankPool": ["王老师真是一个特别准时的人", "对我从来没见他迟到过呢", "从来不迟到过", "见他迟到从来没", "准时特别的人"],
+      "traps": [
+        {
+          "pattern": "从来不迟到过",
+          "msg": "Lỗi trợ từ kinh nghiệm: Trợ từ '过' (từng) chỉ đi với dạng phủ định kinh nghiệm '从来没...过', không kết hợp với '从来不'."
+        }
+      ],
+      "explanation": "Cấu trúc '从来没 + V + 过' dùng để nhấn mạnh trải nghiệm từ quá khứ cho tới hiện tại chưa từng xảy ra một lần nào."
+    },
+    {
+      "id": "b30-10",
+      "type": "anti_word_by_word",
+      "title": "So sánh không giống 不像 và phủ định toàn bộ 一个...都没有",
+      "vi": "Tôi rất thích nơi ở hiện tại, rất thuận tiện, không giống như nơi ở trước đây, xung quanh không có một cái siêu thị nào.",
+      "zh": "我很喜欢现在住的地方很方便不像以前住的地方周围一个超市都没有",
+      "standardTrans": "我很喜欢现在住的地方很方便不像以前住的地方周围一个超市都没有",
+      "pinyin": "Wǒ hěn xǐhuan xiànzài zhù de dìfang, hěn fāngbiàn, bú xiàng yǐqián zhù de dìfang, zhōuwéi yí ge chāoshì dōu méiyǒu.",
+      "grammarPoint": "Định ngữ nơi ở: 现在住的地方; So sánh đối lập: 不像...; Phủ định sạch trơn: 一个 + Lượng từ + Danh từ + 都 + 没有",
+      "tokens": [
+        {
+          "text": "Nơi ở bây giờ rất thuận tiện",
+          "hz": "我很喜欢现在住的地方很方便",
+          "py": "wǒ hěn xǐhuan xiànzài zhù de dìfang hěn fāngbiàn",
+          "hv": "Ngã hẩn hỉ hoan hiện tại trú đích địa phương hẩn phương tiện",
+          "role": "Vế khen ngợi nơi ở hiện tại",
+          "vn": "Tôi rất thích chỗ ở hiện nay, rất tiện lợi",
+          "radicals": "住 = Nhân; 方 = Phương; 便 = Nhân"
+        },
+        {
+          "text": "Không như chỗ ở trước kia xung quanh một siêu thị cũng không có",
+          "hz": "不像以前住的地方周围一个超市都没有",
+          "py": "bú xiàng yǐqián zhù de dìfang zhōuwéi yí ge chāoshì dōu méiyǒu",
+          "hv": "Bất tượng dĩ tiền trú đích địa phương chu vi nhất cá siêu thị đô một hữu",
+          "role": "Vế chê nơi ở cũ",
+          "vn": "Không giống chỗ ở hồi trước, quanh đấy chẳng có nổi một cái siêu thị",
+          "radicals": "像 = Nhân; 周 = Khẩu; 围 = Vi; 超 = Tẩu; 市 = Cân; 都 = Ấp"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我很喜欢现在住的地方很方便", "tag": "Thích nơi ở hiện tại" },
+        { "id": "t2", "text": "不像以前住的地方周围一个超市都没有", "tag": "Không giống nơi cũ không có siêu thị" },
+        { "id": "t3", "text": "没有一个超市", "tag": "Bẫy phủ định hoàn toàn" },
+        { "id": "t4", "text": "以前住地方的不像", "tag": "Bẫy trật tự 不像" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["现在住的地方", "很方便", "不像以前住的地方", "一个超市都没有"],
+      "wordBankPool": ["我很喜欢现在住的地方很方便", "不像以前住的地方周围一个超市都没有", "没有一个超市", "以前住地方的不像", "住的地方现在"],
+      "traps": [
+        {
+          "pattern": "没有一个超市$",
+          "msg": "Lỗi cấu trúc nhấn mạnh 'không một cái nào': Để nhấn mạnh tuyệt đối 'không có một cái siêu thị nào', người Trung Quốc đưa số lượng lên trước: '一个超市都没有', không dịch xuôi '没有一个超市'."
+        }
+      ],
+      "explanation": "Cấu trúc nhấn mạnh phủ định sạch trơn: '一 + Lượng từ + Danh từ + 都/也 + 没有' (một chút/một cái cũng không có)."
+    },
+    {
+      "id": "b30-11",
+      "type": "sentence_parsing",
+      "title": "Phó từ mức độ 挺...的 và động từ liên kết 就...吧",
+      "vi": "A: Tớ rất thích chiếc áo len đỏ này. B: Chiếc áo len đỏ này rất đẹp, cậu thích thì mua đi.",
+      "zh": "我很喜欢这件红毛衣这件红毛衣挺漂亮的你喜欢就买吧",
+      "standardTrans": "我很喜欢这件红毛衣这件红毛衣挺漂亮的你喜欢就买吧",
+      "pinyin": "A: Wǒ hěn xǐhuan zhè jiàn hóng máoyī. B: Zhè jiàn hóng máoyī tǐng piàoliang de, nǐ xǐhuan jiù mǎi ba.",
+      "grammarPoint": "Lượng từ quần áo: 件; Phó từ mức độ khẩu ngữ: 挺 + Tính từ + 的; Liên từ điều kiện rút gọn: ...就...吧",
+      "tokens": [
+        {
+          "text": "Tôi rất thích chiếc áo len đỏ này",
+          "hz": "我很喜欢这件红毛衣",
+          "py": "wǒ hěn xǐhuan zhè jiàn hóng máoyī",
+          "hv": "Ngã hẩn hỉ hoan giá kiện hồng mao y",
+          "role": "Bày tỏ sở thích của A",
+          "vn": "Tớ rất ưng chiếc áo len màu đỏ này",
+          "radicals": "件 = Nhân; 红 = Mịch; 毛 = Mao; 衣 = Y"
+        },
+        {
+          "text": "Áo len đỏ này khá là đẹp thích thì mua đi",
+          "hz": "这件红毛衣挺漂亮的你喜欢就买吧",
+          "py": "zhè jiàn hóng máoyī tǐng piàoliang de, nǐ xǐhuan jiù mǎi ba",
+          "hv": "Giá kiện hồng mao y đĩnh phiêu lượng đích nhĩ hỉ hoan tựu mãi ba",
+          "role": "Lời khen ngợi và khuyên mua của B",
+          "vn": "Cái áo len đỏ này xinh xắn lắm, cậu ưng thì mua luôn đi",
+          "radicals": "挺 = Thủ 扌; 漂 = Thủy; 亮 = Đầu; 就 = Liền; 买 = Mua"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我很喜欢这件红毛衣", "tag": "Sở thích của A" },
+        { "id": "t2", "text": "这件红毛衣挺漂亮的你喜欢就买吧", "tag": "Khen đẹp & khuyên mua của B" },
+        { "id": "t3", "text": "挺漂亮", "tag": "Bẫy thiếu chữ 的" },
+        { "id": "t4", "text": "就买你喜欢吧", "tag": "Bẫy trật tự 就" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["很喜欢这件红毛衣", "挺漂亮的", "喜欢就买吧"],
+      "wordBankPool": ["我很喜欢这件红毛衣", "这件红毛衣挺漂亮的你喜欢就买吧", "挺漂亮", "就买你喜欢吧", "红毛衣这件"],
+      "traps": [
+        {
+          "pattern": "挺漂亮你",
+          "msg": "Lỗi cấu trúc '挺...的': Trong khẩu ngữ, phó từ '挺' đi kèm tính từ thường bắt buộc phải có trợ từ '的' ở cuối cụm ('挺漂亮的')."
+        }
+      ],
+      "explanation": "Cụm '挺...的' diễn đạt mức độ tương đối cao một cách tự nhiên trong khẩu ngữ. Vế '你喜欢就买吧' dùng '就' nối tiếp điều kiện sở thích với quyết định mua."
+    },
+    {
+      "id": "b30-12",
+      "type": "sentence_parsing",
+      "title": "Hỏi thăm mệt mỏi 看你这么累 và phó từ lặp lại 又失眠了",
+      "vi": "A: Trông cậu mệt mỏi như vậy, hôm qua cậu lại mất ngủ à? B: Ừ, vì vậy bây giờ tớ cảm thấy rất buồn ngủ.",
+      "zh": "看你这么累昨天你又失眠了吗嗯所以现在我觉得很困",
+      "standardTrans": "看你这么累昨天你又失眠了吗嗯所以现在我觉得很困",
+      "pinyin": "A: Kàn nǐ zhème lèi, zuótiān nǐ yòu shīmián le ma? B: Èn, suǒyǐ xiànzài wǒ juéde hěn kùn.",
+      "grammarPoint": "Nhận định quan sát: 看你这么累; Hành động lặp lại quá khứ: 又失眠了; Từ cảm thán đồng tình: 嗯; Cảm giác buồn ngủ: 很困",
+      "tokens": [
+        {
+          "text": "Trông cậu mệt thế này hôm qua lại mất ngủ à",
+          "hz": "看你这么累昨天你又失眠了吗",
+          "py": "kàn nǐ zhème lèi, zuótiān nǐ yòu shīmián le ma",
+          "hv": "Khán nhĩ giá ma luy tác thiên nhĩ hựu thất miên liễu ma",
+          "role": "Câu hỏi thăm dò của A",
+          "vn": "Trông cậu mệt thế, hôm qua lại bị mất ngủ đấy à",
+          "radicals": "累 = Điền; 昨 = Nhật; 又 = Hựu; 失 = Thất; 眠 = Mục"
+        },
+        {
+          "text": "Ừ cho nên giờ tớ thấy rất buồn ngủ",
+          "hz": "嗯所以现在我觉得很困",
+          "py": "èn, suǒyǐ xiànzài wǒ juéde hěn kùn",
+          "hv": "Ân sở dĩ hiện tại ngã giác đắc hẩn khốn",
+          "role": "Lời xác nhận của B",
+          "vn": "Ừ, thế nên giờ tớ thấy buồn ngủ díp mắt",
+          "radicals": "嗯 = Khẩu; 所 = Hộ; 困 = Vi 囗 + mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "看你这么累昨天你又失眠了吗", "tag": "Hỏi thăm mất ngủ" },
+        { "id": "t2", "text": "嗯所以现在我觉得很困", "tag": "Xác nhận buồn ngủ" },
+        { "id": "t3", "text": "再失眠了吗", "tag": "Bẫy nhầm lẫn 又/再" },
+        { "id": "t4", "text": "很困觉得", "tag": "Bẫy trật tự động từ" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["看你这么累", "又失眠了吗", "所以现在我觉得很困"],
+      "wordBankPool": ["看你这么累昨天你又失眠了吗", "嗯所以现在我觉得很困", "再失眠了吗", "很困觉得", "昨天你失眠又了吗"],
+      "traps": [
+        {
+          "pattern": "再失眠了",
+          "msg": "Lỗi phân biệt 又 / 再: Mất ngủ đã xảy ra vào đêm qua (hành động đã lặp lại trong quá khứ), bắt buộc dùng '又失眠了', không dùng '再'."
+        }
+      ],
+      "explanation": "Động từ '失眠' (mất ngủ) kết hợp phó từ '又' và trợ từ '了' chỉ việc mất ngủ lại tái diễn vào đêm qua. '困' (kùn) chỉ trạng thái buồn ngủ."
+    },
+    {
+      "id": "b30-13",
+      "type": "anti_word_by_word",
+      "title": "Từ chối lời mời và cấu trúc đồng thời tính chất 又辣又油腻",
+      "vi": "A: Cậu cùng chúng tớ đi ăn món ăn Trung Quốc không? B: Tớ không đi. Tớ không thích ăn đồ ăn Trung Quốc, bởi vì đồ ăn Trung Quốc vừa cay vừa ngấy.",
+      "zh": "你跟我们一起去吃中国菜吗我不去我不喜欢吃中国菜因为中国菜又辣又油腻",
+      "standardTrans": "你跟我们一起去吃中国菜吗我不去我不喜欢吃中国菜因为中国菜又辣又油腻",
+      "pinyin": "A: Nǐ gēn wǒmen yìqǐ qù chī Zhōngguó cài ma? B: Wǒ bú qù. Wǒ bù xǐhuan chī Zhōngguó cài, yīnwèi Zhōngguó cài yòu là yòu yóunì.",
+      "grammarPoint": "Rủ rê: 跟...一起去; Từ chối: 我不去; Cấu trúc hai tính chất tiêu cực cùng tồn tại: 又辣又油腻",
+      "tokens": [
+        {
+          "text": "Đi ăn đồ ăn Trung Quốc cùng chúng tôi không",
+          "hz": "你跟我们一起去吃中国菜吗",
+          "py": "nǐ gēn wǒmen yìqǐ qù chī Zhōngguó cài ma",
+          "hv": "Nhĩ cân ngã môn nhất khởi khứ ngật Trung Quốc thái ma",
+          "role": "Lời rủ rê của A",
+          "vn": "Cậu đi ăn món Trung với bọn tớ không",
+          "radicals": "跟 = Túc; 起 = Tẩu; 菜 = Thảo"
+        },
+        {
+          "text": "Tôi không đi tôi không thích ăn đồ Trung Quốc",
+          "hz": "我不去我不喜欢吃中国菜",
+          "py": "wǒ bú qù, wǒ bù xǐhuan chī Zhōngguó cài",
+          "hv": "Ngã bất khứ ngã bất hỉ hoan ngật Trung Quốc thái",
+          "role": "Lời từ chối dứt khoát",
+          "vn": "Tớ không đi đâu, tớ không khoái đồ ăn Trung",
+          "radicals": "不 = Bất; 去 = Khứ; 欢 = Khiếm"
+        },
+        {
+          "text": "Bởi vì món ăn Trung Quốc vừa cay vừa ngấy mỡ",
+          "hz": "因为中国菜又辣又油腻",
+          "py": "yīnwèi Zhōngguó cài yòu là yòu yóunì",
+          "hv": "Nhân vi Trung Quốc thái hựu lạt hựu du nị",
+          "role": "Lý do đồ ăn nhiều dầu mỡ cay",
+          "vn": "Vì đồ ăn Trung Quốc vừa cay lại vừa ngấy",
+          "radicals": "因 = Vi; 辣 = Bộ tân 辛; 油 = Bộ thủy 氵; 腻 = Bộ nhục 月"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我不去我不喜欢吃中国菜", "tag": "Từ chối thẳng thắn" },
+        { "id": "t1", "text": "你跟我们一起去吃中国菜吗", "tag": "Lời mời của A" },
+        { "id": "t3", "text": "因为中国菜又辣又油腻", "tag": "Lý do vừa cay vừa ngấy" },
+        { "id": "t4", "text": "油腻和辣", "tag": "Bẫy liên từ 和" },
+        { "id": "t5", "text": "吃去中国菜", "tag": "Bẫy liên động" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["跟我们一起去吃中国菜吗", "我不去", "不喜欢吃中国菜", "又辣又油腻"],
+      "wordBankPool": ["你跟我们一起去吃中国菜吗", "我不去我不喜欢吃中国菜", "因为中国菜又辣又油腻", "油腻和辣", "吃去中国菜", "又辣和又油腻"],
+      "traps": [
+        {
+          "pattern": "油腻和辣",
+          "msg": "Lỗi miêu tả tính chất: Diễn đạt 'vừa... vừa...' của hai đặc điểm vị giác dùng cấu trúc '又...又...' ('又辣又油腻'), không dùng '和' để nối trực tiếp hai tính từ vị ngữ."
+        }
+      ],
+      "explanation": "'油腻' (yóunì) chỉ đồ ăn béo ngậy, nhiều dầu mỡ. '又...又...' kết hợp hai tính từ tiêu cực '辣' và '油腻' làm rõ lý do từ chối."
+    },
+    {
+      "id": "b30-14",
+      "type": "sentence_parsing",
+      "title": "Chuỗi hành động liên tiếp 下了班就去 và mục đích 跟朋友见面",
+      "vi": "A: Mary tan làm liền đi đâu rồi? B: Cô ấy tan làm liền đến đại sứ quán gặp bạn bè rồi.",
+      "zh": "玛丽下了班就去哪儿了她下了班就去大使馆跟朋友见面了",
+      "standardTrans": "玛丽下了班就去哪儿了她下了班就去大使馆跟朋友见面了",
+      "pinyin": "A: Mǎlì xià le bān jiù qù nǎr le? B: Tā xià le bān jiù qù dàshǐguǎn gēn péngyou jiànmiàn le.",
+      "grammarPoint": "Cấu trúc liên hoàn: 下了班就去...; Đến địa điểm gặp bạn: 去大使馆 + 跟朋友见面 + 了",
+      "tokens": [
+        {
+          "text": "Mary tan ca xong liền đi đâu rồi",
+          "hz": "玛丽下了班就去哪儿了",
+          "py": "Mǎlì xià le bān jiù qù nǎr le",
+          "hv": "Mã Lệ hạ liễu ban tựu khứ na nhi liễu",
+          "role": "Câu hỏi của A",
+          "vn": "Mary vừa tan ca là đi đâu rồi thế",
+          "radicals": "下 = Hạ; 班 = Ban; 就 = Liền; 哪 = Khẩu"
+        },
+        {
+          "text": "Cô ấy tan ca xong liền đến đại sứ quán gặp bạn rồi",
+          "hz": "她下了班就去大使馆跟朋友见面了",
+          "py": "tā xià le bān jiù qù dàshǐguǎn gēn péngyou jiànmiàn le",
+          "hv": "Tha hạ liễu ban tựu khứ đại sứ quán cân bằng hữu kiến diện liễu",
+          "role": "Câu trả lời của B",
+          "vn": "Cô ấy tan làm là đi sứ quán gặp bạn ngay rồi",
+          "radicals": "使 = Nhân; 馆 = Thực; 见 = Kiến; 面 = Diện; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "她下了班就去大使馆跟朋友见面了", "tag": "Đáp án của B" },
+        { "id": "t1", "text": "玛丽下了班就去哪儿了", "tag": "Câu hỏi của A" },
+        { "id": "t3", "text": "下班了就", "tag": "Bẫy vị trí trợ từ 了" },
+        { "id": "t4", "text": "见面跟朋友", "tag": "Bẫy trật tự giới từ 跟" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["下了班就去哪儿了", "下了班就去大使馆", "跟朋友见面了"],
+      "wordBankPool": ["玛丽下了班就去哪儿了", "她下了班就去大使馆跟朋友见面了", "下班了就", "见面跟朋友", "去哪儿了下了班"],
+      "traps": [
+        {
+          "pattern": "下班了就",
+          "msg": "Lỗi trợ từ động thái: Với động từ ly hợp '下班' trong kết cấu 'V1 + 了... 就 + V2', trợ từ '了' phải chèn vào giữa: '下了班就...', không nói '下班了就'."
+        },
+        {
+          "pattern": "见面跟朋友",
+          "msg": "Lỗi giới từ: Cụm 'với bạn bè' (跟朋友) phải đứng TRƯỚC động từ '见面' ('跟朋友见面')."
+        }
+      ],
+      "explanation": "Động từ ly hợp '下班' chèn trợ từ '了' thành '下了班就去'. Hành động gặp bạn tại sứ quán tuân theo cấu trúc: 去 + Nơi chốn + 跟 + Người + 见面."
+    },
+    {
+      "id": "b30-15",
+      "type": "anti_word_by_word",
+      "title": "Mệnh đề 小时候, tư thế 躺在床上看书 và cấu trúc 越来越不好",
+      "vi": "Lúc nhỏ tôi luôn thích nằm ở trên giường đọc sách, kết quả mắt càng ngày càng không tốt.",
+      "zh": "小时候我总喜欢躺在床上看书结果眼睛越来越不好",
+      "standardTrans": "小时候我总喜欢躺在床上看书结果眼睛越来越不好",
+      "pinyin": "Xiǎoshíhou wǒ zǒng xǐhuan tǎng zài chuáng shang kàn shū, jiéguǒ yǎnjing yuèláiyuè bù hǎo.",
+      "grammarPoint": "Thời thơ ấu: 小时候; Tư thế nơi chốn: 躺在床上; Kết quả: 结果; Càng ngày càng: 越来越不好",
+      "tokens": [
+        {
+          "text": "Lúc bé tôi luôn thích nằm trên giường đọc sách",
+          "hz": "小时候我总喜欢躺在床上看书",
+          "py": "xiǎoshíhou wǒ zǒng xǐhuan tǎng zài chuáng shang kàn shū",
+          "hv": "Tiểu thời hậu ngã tổng hỉ hoan thảng tại sàng thượng khán thư",
+          "role": "Thói quen xấu thời thơ ấu",
+          "vn": "Hồi nhỏ tớ lúc nào cũng thích nằm trên giường xem sách",
+          "radicals": "小 = Tiểu; 总 = Tâm; 躺 = Bộ thân 身 + chữ thượng 尚; 床 = Quảng; 看 = Mục"
+        },
+        {
+          "text": "Kết quả mắt càng ngày càng kém",
+          "hz": "结果眼睛越来越不好",
+          "py": "jiéguǒ yǎnjing yuèláiyuè bù hǎo",
+          "hv": "Kết quả nhãn tình việt lai việt bất hảo",
+          "role": "Hậu quả suy giảm thị lực",
+          "vn": "Thành ra mắt mũi ngày càng kém đi",
+          "radicals": "结 = Mịch; 果 = Mộc; 眼 = Bộ mục 目; 睛 = Bộ mục 目; 越 = Tẩu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "小时候我总喜欢躺在床上看书", "tag": "Thói quen nằm đọc sách" },
+        { "id": "t2", "text": "结果眼睛越来越不好", "tag": "Hậu quả mắt kém dần" },
+        { "id": "t3", "text": "看书躺在床上", "tag": "Bẫy trật tự trạng thái" },
+        { "id": "t4", "text": "越来不好越", "tag": "Bẫy cấu trúc 越来越" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["小时候我总喜欢", "躺在床上看书", "结果眼睛", "越来越不好"],
+      "wordBankPool": ["小时候我总喜欢躺在床上看书", "结果眼睛越来越不好", "看书躺在床上", "越来不好越", "床在躺上看书"],
+      "traps": [
+        {
+          "pattern": "看书躺在床上",
+          "msg": "Lỗi ngữ tự trạng thái/nơi chốn: Trạng thái nằm trên giường ('躺在床上') bổ nghĩa cho hành động đọc sách nên phải đứng TRƯỚC động từ '看书'."
+        },
+        {
+          "pattern": "越来越不很好",
+          "msg": "Lỗi phó từ: Sau '越来越' không dùng thêm phó từ chỉ mức độ '很', chỉ kết hợp trực tiếp với tính từ phủ định '越来越不好'."
+        }
+      ],
+      "explanation": "Cụm '躺在床上' đóng vai trò trạng ngữ phương thức tư thế cho hành động '看书'. Cấu trúc '越来越 + Tính từ' (越来越不好) chỉ mức độ thị lực suy giảm tăng dần theo thời gian."
+    }
+  ]
+}

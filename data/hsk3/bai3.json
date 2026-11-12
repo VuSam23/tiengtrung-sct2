@@ -1,0 +1,609 @@
+{
+  "lessonId": "b03",
+  "lessonTitle": "第三课: 冬天快要到了",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "尤其 vs 特别",
+        "py": "yóuqí vs tèbié",
+        "note": "尤其 là phó từ dùng để so sánh ngầm nhấn mạnh một cá thể nổi bật trong tổng thể (kết cấu: Vế 1 + 尤其(是) + Vế 2); 特别 ngoài trạng ngữ còn có thể làm tính từ độc lập (đặc biệt) hoặc phó từ chỉ mức độ cao tương đương 很/非常."
+      },
+      {
+        "word": "将来 vs 未来",
+        "py": "jiānglái vs wèilái",
+        "note": "将来 vừa làm danh từ vừa làm trạng ngữ chỉ mốc thời gian sau này (dùng cả trong văn nói và viết); 未来 chỉ làm danh từ (không đứng trước động từ làm trạng ngữ), chủ yếu dùng trong văn viết trang trọng chỉ tương lai xa và kỳ vọng tốt đẹp."
+      },
+      {
+        "word": "着呢 vs 着+呢",
+        "py": "zhe ne vs zhe + ne",
+        "note": "着呢 là trợ từ ngữ khí đứng sau tính từ biểu thị mức độ cực cao và khoa trương (tương đương 很/极了), không thể chèn từ vào giữa; còn 着+呢 là trợ từ động thái 着 kết hợp trợ từ ngữ khí 呢 đứng sau động từ biểu thị sự tiếp diễn."
+      }
+    ],
+    "grammarTips": [
+      "Biểu thị hành động sắp xảy ra: 要...了, 就要...了, 快要...了, 快...了.",
+      "Quy tắc mốc thời gian: Khi trong câu có từ ngữ chỉ thời gian cụ thể (下个月, 明天, 八点...) làm trạng ngữ, TUYỆT ĐỐI KHÔNG dùng 快要...了 mà bắt buộc dùng 就要...了.",
+      "Trợ từ kết cấu 地 (de): Trạng ngữ (Tính từ) + 地 + Động từ trung tâm ngữ.",
+      "Cấu trúc 都...了: Dùng để nhấn mạnh thời gian đã muộn, số lượng nhiều hoặc tuổi tác lớn (tương đương 已经)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b03-01",
+      "type": "sentence_parsing",
+      "title": "Trạng ngữ kết hợp trợ từ kết cấu 地 và bổ ngữ xu hướng kép",
+      "vi": "Mùa thu đến rồi, lá vàng trên cây dần dần rơi xuống.",
+      "zh": "秋天到了树上的黄叶慢慢地落了下来",
+      "standardTrans": "秋天到了树上的黄叶慢慢地落了下来",
+      "pinyin": "Qiūtiān dào le, shù shàng de huángyè mànmàn de luò le xiàlái.",
+      "grammarPoint": "Trạng ngữ tính từ láy + 地 + Động từ + Bổ ngữ xu hướng kép (慢慢地落了下来)",
+      "tokens": [
+        {
+          "text": "Lá vàng trên cây",
+          "hz": "树上的黄叶",
+          "py": "shù shàng de huángyè",
+          "hv": "Thụ thượng đích hoàng diệp",
+          "role": "Chủ ngữ 2",
+          "vn": "Lá vàng ở trên cây",
+          "radicals": "树 = Bộ mộc 木; 叶 = Bộ khẩu 口 + bộ thập 十"
+        },
+        {
+          "text": "Dần dần / chầm chậm",
+          "hz": "慢慢地",
+          "py": "mànmàn de",
+          "hv": "Mạn mạn địa",
+          "role": "Trạng ngữ cách thức",
+          "vn": "Một cách từ từ, chầm chậm",
+          "radicals": "慢 = Bộ tâm đứng 忄; 地 = Bộ thổ 土"
+        },
+        {
+          "text": "Rơi rụng xuống",
+          "hz": "落了下来",
+          "py": "luò le xiàlái",
+          "hv": "Lạc liễu hạ lai",
+          "role": "Vị ngữ + Bổ ngữ xu hướng kép",
+          "vn": "Rơi xuống dưới (hướng lại gần)",
+          "radicals": "落 = Bộ thảo 艹; 下 = Bộ nhất 一; 来 = Bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "黄叶", "tag": "Trung tâm ngữ" },
+        { "id": "t2", "text": "树上的", "tag": "Định ngữ nơi chốn" },
+        { "id": "t3", "text": "到了", "tag": "Vị ngữ 1" },
+        { "id": "t4", "text": "慢慢地", "tag": "Trạng ngữ cách thức" },
+        { "id": "t5", "text": "秋天", "tag": "Chủ ngữ 1" },
+        { "id": "t6", "text": "落了下来", "tag": "Vị ngữ + Bổ ngữ" },
+        { "id": "t7", "text": "慢慢得", "tag": "Bẫy trợ từ 得" }
+      ],
+      "targetOrder": ["t5", "t3", "t2", "t1", "t4", "t6"],
+      "requiredKeywordsZh": ["秋天到了", "树上的黄叶", "慢慢地", "落了下来"],
+      "wordBankPool": ["秋天", "到了", "树上的", "黄叶", "慢慢地", "落了下来", "慢慢得", "慢慢的"],
+      "traps": [
+        {
+          "pattern": "慢慢的落",
+          "msg": "Lỗi trợ từ kết cấu: Bổ nghĩa cho động từ '落' làm trạng ngữ cách thức bắt buộc dùng trợ từ '地', không dùng '的' hay '得'."
+        },
+        {
+          "pattern": "落下了慢慢",
+          "msg": "Lỗi vị trí trạng ngữ: Trạng ngữ cách thức '慢慢地' phải đứng TRƯỚC động từ chính, không đặt ở cuối câu."
+        }
+      ],
+      "explanation": "Tính từ lặp lại làm trạng ngữ bổ nghĩa cho động từ phải dùng trợ từ kết cấu '地'. Động từ '落' kết hợp bổ ngữ xu hướng kép '下来' chỉ hướng chuyển động rơi từ trên xuống dưới về phía người nói."
+    },
+    {
+      "id": "b03-02",
+      "type": "anti_word_by_word",
+      "title": "Hành động sắp xảy ra trong tương lai gần với 快要...了",
+      "vi": "Xe sắp chạy rồi, mau xuống đi.",
+      "zh": "快要开车了快下来吧",
+      "standardTrans": "快要开车了快下来吧",
+      "pinyin": "Kuàiyào kāichē le, kuài xiàlai ba.",
+      "grammarPoint": "Cấu trúc hành động sắp xảy ra: 快要...了; Động từ xu hướng: 下来",
+      "tokens": [
+        {
+          "text": "Sắp... rồi",
+          "hz": "快要...了",
+          "py": "kuàiyào... le",
+          "hv": "Khoái yếu... liễu",
+          "role": "Cấu trúc thời thái",
+          "vn": "Sắp sửa xảy ra trong chốc lát",
+          "radicals": "快 = Bộ tâm đứng 忄; 要 = Bộ á 覀 + bộ nữ 女"
+        },
+        {
+          "text": "Chạy xe / khởi hành",
+          "hz": "开车",
+          "py": "kāichē",
+          "hv": "Khai xa",
+          "role": "Động từ chính",
+          "vn": "Lái xe, xe chạy",
+          "radicals": "开 = Bộ củng 廾; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Mau xuống đi",
+          "hz": "快下来吧",
+          "py": "kuài xiàlai ba",
+          "hv": "Khoái hạ lai ba",
+          "role": "Cụm vị ngữ đôn đốc",
+          "vn": "Mau xuống đây đi",
+          "radicals": "下 = Bộ nhất 一; 来 = Bộ mộc 木; 吧 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "快", "tag": "Phó từ đôn đốc" },
+        { "id": "t2", "text": "开车了", "tag": "Hành động + 了" },
+        { "id": "t3", "text": "下来吧", "tag": "Động từ xu hướng" },
+        { "id": "t4", "text": "快要", "tag": "Phó từ sắp sửa" },
+        { "id": "t5", "text": "下去吧", "tag": "Bẫy xu hướng 下去" }
+      ],
+      "targetOrder": ["t4", "t2", "t1", "t3"],
+      "requiredKeywordsZh": ["快要开车了", "快下来吧"],
+      "wordBankPool": ["快要", "开车了", "快", "下来吧", "下去吧", "正在开车"],
+      "traps": [
+        {
+          "pattern": "下去吧",
+          "msg": "Lỗi động từ xu hướng: Người nói đang ở dưới xe gọi người trên xe xuống (hướng lại gần người nói) bắt buộc dùng '下来', không dùng '下去'."
+        },
+        {
+          "pattern": "开车快下来",
+          "msg": "Lỗi thiếu trợ từ: Cấu trúc biểu thị sự biến đổi sắp diễn ra bắt buộc phải có trợ từ '了' ở cuối phân câu ('快要...了')."
+        }
+      ],
+      "explanation": "Cấu trúc '快要 + Động từ + 了' biểu thị hành động sắp xảy ra trong tương lai gần khi câu không có mốc thời gian cụ thể."
+    },
+    {
+      "id": "b03-03",
+      "type": "sentence_parsing",
+      "title": "Trạng ngữ cách thức bổ nghĩa cho động từ với trợ từ 地",
+      "vi": "Cuốn tiểu thuyết này miêu tả một cách sinh động cuộc sống nông thôn.",
+      "zh": "这本小说生动地描写了农村的生活",
+      "standardTrans": "这本小说生动地描写了农村的生活",
+      "pinyin": "Zhè běn xiǎoshuō shēngdòng de miáoxiě le nóngcūn de shēnghuó.",
+      "grammarPoint": "Hình dung từ hai âm tiết + 地 + Động từ (生动地描写)",
+      "tokens": [
+        {
+          "text": "Cuốn tiểu thuyết này",
+          "hz": "这本小说",
+          "py": "zhè běn xiǎoshuō",
+          "hv": "Giá bản tiểu thuyết",
+          "role": "Chủ ngữ",
+          "vn": "Quyển tiểu thuyết này",
+          "radicals": "本 = Bộ mộc 木; 说 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Một cách sinh động",
+          "hz": "生动地",
+          "py": "shēngdòng de",
+          "hv": "Sinh động địa",
+          "role": "Trạng ngữ cách thức",
+          "vn": "Sinh động, sống động",
+          "radicals": "生 = Bộ sinh 生; 动 = Bộ lực 力; 地 = Bộ thổ 土"
+        },
+        {
+          "text": "Miêu tả",
+          "hz": "描写了",
+          "py": "miáoxiě le",
+          "hv": "Miêu tả liễu",
+          "role": "Vị ngữ + Trợ từ động thái",
+          "vn": "Đã khắc họa, miêu tả",
+          "radicals": "描 = Bộ thủ 扌; 写 = Bộ mịch 冖"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "描写了", "tag": "Vị ngữ" },
+        { "id": "t2", "text": "这本", "tag": "Chỉ định" },
+        { "id": "t3", "text": "生活", "tag": "Trung tâm ngữ tân ngữ" },
+        { "id": "t4", "text": "生动地", "tag": "Trạng ngữ" },
+        { "id": "t5", "text": "农村的", "tag": "Định ngữ" },
+        { "id": "t6", "text": "小说", "tag": "Trung tâm ngữ chủ ngữ" },
+        { "id": "t7", "text": "生动的", "tag": "Bẫy trợ từ 的" }
+      ],
+      "targetOrder": ["t2", "t6", "t4", "t1", "t5", "t3"],
+      "requiredKeywordsZh": ["这本小说", "生动地", "描写了", "农村的生活"],
+      "wordBankPool": ["这本", "小说", "生动地", "描写了", "农村的", "生活", "生动的", "描写得"],
+      "traps": [
+        {
+          "pattern": "生动的描写",
+          "msg": "Lỗi phân biệt 的/地/得: Đứng trước động từ '描写' làm trạng ngữ cách thức bắt buộc dùng '地', không dùng '的'."
+        }
+      ],
+      "explanation": "Cấu trúc trạng ngữ: Tính từ đa âm tiết (生动) + 地 + Động từ (描写). Trợ từ '的' dùng nối định ngữ với danh từ (农村的生活)."
+    },
+    {
+      "id": "b03-04",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc nhấn mạnh phủ định hoàn toàn 一点儿也不",
+      "vi": "Sắp muộn rồi mà sao cậu không lo lắng chút nào vậy?",
+      "zh": "快迟到了你怎么一点儿也不着急",
+      "standardTrans": "快迟到了你怎么一点儿也不着急",
+      "pinyin": "Kuài chídào le, nǐ zěnme yìdiǎnr yě bù zháojí?",
+      "grammarPoint": "Cấu trúc 快...了 + Phủ định hoàn toàn: 一点儿也 + 不 + Tính từ",
+      "tokens": [
+        {
+          "text": "Sắp trễ rồi",
+          "hz": "快迟到了",
+          "py": "kuài chídào le",
+          "hv": "Khoái trì đáo liễu",
+          "role": "Trạng thái sắp xảy ra",
+          "vn": "Sắp sửa đến muộn rồi",
+          "radicals": "迟 = Bộ quai xước 辶; 到 = Bộ đao 刂"
+        },
+        {
+          "text": "Sao lại / làm sao",
+          "hz": "怎么",
+          "py": "zěnme",
+          "hv": "Chẩm ma",
+          "role": "Trạng ngữ nghi vấn",
+          "vn": "Sao lại, thế nào",
+          "radicals": "怎 = Bộ tâm 心; 么 = Nét phẩy"
+        },
+        {
+          "text": "Không lo lắng chút nào",
+          "hz": "一点儿也不着急",
+          "py": "yìdiǎnr yě bù zháojí",
+          "hv": "Nhất điểm nhi dã bất trước cấp",
+          "role": "Cụm vị ngữ phủ định tuyệt đối",
+          "vn": "Một chút cũng không sốt ruột",
+          "radicals": "着 = Bộ mục 目; 急 = Bộ tâm 心"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "怎么", "tag": "Nghi vấn" },
+        { "id": "t2", "text": "着急", "tag": "Tính từ vị ngữ" },
+        { "id": "t3", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "快迟到了", "tag": "Trạng thái sắp xảy ra" },
+        { "id": "t5", "text": "一点儿", "tag": "Số lượng nhỏ" },
+        { "id": "t6", "text": "也不", "tag": "Phủ định nhấn mạnh" },
+        { "id": "t7", "text": "不着急一点儿", "tag": "Bẫy trật tự dịch bồi" }
+      ],
+      "targetOrder": ["t4", "t3", "t1", "t5", "t6", "t2"],
+      "requiredKeywordsZh": ["快迟到了", "你怎么", "一点儿也不着急"],
+      "wordBankPool": ["快迟到了", "你", "怎么", "一点儿", "也不", "着急", "不着急一点儿", "一点也不"],
+      "traps": [
+        {
+          "pattern": "不着急一点儿",
+          "msg": "Lỗi dịch bồi tiếng Việt: 'Không lo lắng chút nào' trong tiếng Trung phải đưa cụm '一点儿也/都' lên TRƯỚC phó từ phủ định và tính từ ('一点儿也不着急')."
+        }
+      ],
+      "explanation": "Mẫu câu phủ định tuyệt đối: '一点儿 + 也/都 + 不/没 + Tính từ/Động từ'. Vế đầu dùng '快 + Động từ + 了' chỉ nguy cơ sắp xảy ra."
+    },
+    {
+      "id": "b03-05",
+      "type": "sentence_parsing",
+      "title": "Phó từ 尤其 biểu thị sự nhấn mạnh cá biệt trong tổng thể",
+      "vi": "Tôi vô cùng thích thể thao, đặc biệt là trượt băng, trượt tuyết.",
+      "zh": "我特别喜欢运动尤其是滑冰滑雪",
+      "standardTrans": "我特别喜欢运动尤其是滑冰滑雪",
+      "pinyin": "Wǒ tèbié xǐhuan yùndòng, yóuqí shì huábīng huáxuě.",
+      "grammarPoint": "Vế tổng thể + 尤其(是) + Cá thể nổi bật (Đặc biệt là...)",
+      "tokens": [
+        {
+          "text": "Rất thích thể thao",
+          "hz": "特别喜欢运动",
+          "py": "tèbié xǐhuan yùndòng",
+          "hv": "Đặc biệt hỉ hoan vận động",
+          "role": "Vị ngữ tổng thể",
+          "vn": "Vô cùng yêu thích thể dục thể thao",
+          "radicals": "特 = Bộ ngưu 牛; 别 = Bộ đao 刂; 运 = Bộ quai xước 辶"
+        },
+        {
+          "text": "Đặc biệt là",
+          "hz": "尤其是",
+          "py": "yóuqí shì",
+          "hv": "Ưu kỳ thị",
+          "role": "Liên từ nhấn mạnh",
+          "vn": "Nhất là, đặc biệt là",
+          "radicals": "尤 = Bộ uông 尢; 其 = Bộ bát 八"
+        },
+        {
+          "text": "Trượt băng trượt tuyết",
+          "hz": "滑冰滑雪",
+          "py": "huábīng huáxuě",
+          "hv": "Hoạt băng hoạt tuyết",
+          "role": "Tân ngữ cá thể",
+          "vn": "Trượt băng và trượt tuyết",
+          "radicals": "滑 = Bộ thủy 氵; 冰 = Bộ băng 冫; 雪 = Bộ vũ 雨"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "尤其是", "tag": "Nhấn mạnh cá thể" },
+        { "id": "t2", "text": "喜欢", "tag": "Động từ" },
+        { "id": "t3", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "滑冰", "tag": "Môn 1" },
+        { "id": "t5", "text": "运动", "tag": "Tân ngữ tổng thể" },
+        { "id": "t6", "text": "滑雪", "tag": "Môn 2" },
+        { "id": "t7", "text": "特别", "tag": "Phó từ mức độ" },
+        { "id": "t8", "text": "尤其喜欢", "tag": "Bẫy lặp động từ" }
+      ],
+      "targetOrder": ["t3", "t7", "t2", "t5", "t1", "t4", "t6"],
+      "requiredKeywordsZh": ["特别喜欢运动", "尤其是", "滑冰滑雪"],
+      "wordBankPool": ["我", "特别", "喜欢", "运动", "尤其是", "滑冰", "滑雪", "尤其喜欢", "特别是"],
+      "traps": [
+        {
+          "pattern": "尤其是喜欢",
+          "msg": "Lỗi thừa từ: Sau '尤其是' liệt kê trực tiếp đối tượng cá thể (滑冰, 滑雪), không lặp lại động từ '喜欢'."
+        }
+      ],
+      "explanation": "'特别' làm phó từ chỉ mức độ trước '喜欢'. '尤其是' đứng đầu phân câu sau nhằm chỉ rõ cá thể tiêu biểu nhất trong phạm vi '运动'."
+    },
+    {
+      "id": "b03-06",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc nhấn mạnh thời gian muộn 都...了 và động từ năng nguyện 该",
+      "vi": "Đã 8 giờ rồi, nên thức dậy rồi đấy.",
+      "zh": "都八点了该起床了",
+      "standardTrans": "都八点了该起床了",
+      "pinyin": "Dōu bā diǎn le, gāi qǐchuáng le.",
+      "grammarPoint": "都 + Mốc thời gian + 了 (Nhấn mạnh đã muộn) + 该...了 (Đến lúc nên làm gì)",
+      "tokens": [
+        {
+          "text": "Đã 8 giờ rồi",
+          "hz": "都八点了",
+          "py": "dōu bā diǎn le",
+          "hv": "Đô bát điểm liễu",
+          "role": "Vế thời gian nhấn mạnh",
+          "vn": "Đã tám giờ rồi (nhấn mạnh muộn)",
+          "radicals": "都 = Bộ ấp 阝; 八 = Bộ bát 八; 点 = Bộ hỏa 灬"
+        },
+        {
+          "text": "Nên thức dậy rồi",
+          "hz": "该起床了",
+          "py": "gāi qǐchuáng le",
+          "hv": "Cai khởi sàng liễu",
+          "role": "Vế hành động đôn đốc",
+          "vn": "Đến lúc phải thức dậy rồi",
+          "radicals": "该 = Bộ ngôn 讠; 起 = Bộ tẩu 走; 床 = Bộ quảng 广 + bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "起床了", "tag": "Hành động ly hợp" },
+        { "id": "t2", "text": "八点了", "tag": "Thời gian" },
+        { "id": "t3", "text": "该", "tag": "Năng nguyện" },
+        { "id": "t4", "text": "都", "tag": "Phó từ nhấn mạnh" },
+        { "id": "t5", "text": "已经", "tag": "Bẫy thay thế 已经" }
+      ],
+      "targetOrder": ["t4", "t2", "t3", "t1"],
+      "requiredKeywordsZh": ["都八点了", "该起床了"],
+      "wordBankPool": ["都", "八点了", "该", "起床了", "已经", "该起"],
+      "traps": [
+        {
+          "pattern": "已经八点该",
+          "msg": "Lỗi sắc thái khẩu ngữ: Khi muốn giục giã hoặc nhấn mạnh sự muộn màng, tiếng Trung dùng kết cấu '都...了' sinh động và tự nhiên hơn '已经'."
+        }
+      ],
+      "explanation": "Cấu trúc '都 + Thời gian + 了' mang hàm ý việc gì đó diễn ra quá trễ. Cụm '该...了' biểu thị đã đến lúc phải thực hiện hành động."
+    },
+    {
+      "id": "b03-07",
+      "type": "sentence_parsing",
+      "title": "Trợ từ ngữ khí 着呢 biểu thị mức độ cao trong khẩu ngữ",
+      "vi": "Thời gian vẫn còn sớm mà, cậu không cần lo lắng như vậy.",
+      "zh": "时间还早着呢你不用这么着急",
+      "standardTrans": "时间还早着呢你不用这么着急",
+      "pinyin": "Shíjiān hái zǎo zhe ne, nǐ bú yòng zhème zháojí.",
+      "grammarPoint": "Tính từ + 着呢 (Mức độ cực cao trong khẩu ngữ); Khuyên ngăn: 不用 + 这么 + Tính từ",
+      "tokens": [
+        {
+          "text": "Thời gian",
+          "hz": "时间",
+          "py": "shíjiān",
+          "hv": "Thời gian",
+          "role": "Chủ ngữ 1",
+          "vn": "Thời gian, giờ giấc",
+          "radicals": "时 = Bộ nhật 日; 间 = Bộ môn 门"
+        },
+        {
+          "text": "Vẫn còn sớm lắm",
+          "hz": "还早着呢",
+          "py": "hái zǎo zhe ne",
+          "hv": "Hoàn tảo trước ni",
+          "role": "Vị ngữ khẩu ngữ mức độ cao",
+          "vn": "Còn sớm chán, sớm lắm",
+          "radicals": "还 = Bộ quai xước 辶; 早 = Bộ nhật 日; 着 = Bộ mục 目; 呢 = Bộ khẩu 口"
+        },
+        {
+          "text": "Không cần lo lắng như vậy",
+          "hz": "不用这么着急",
+          "py": "bú yòng zhème zháojí",
+          "hv": "Bất dụng giá ma trước cấp",
+          "role": "Vị ngữ khuyên bảo",
+          "vn": "Không cần phải sốt ruột như thế",
+          "radicals": "用 = Bộ dụng 用; 这 = Bộ quai xước 辶; 急 = Bộ tâm 心"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ 2" },
+        { "id": "t2", "text": "不用", "tag": "Phủ định khuyên ngăn" },
+        { "id": "t3", "text": "时间", "tag": "Chủ ngữ 1" },
+        { "id": "t4", "text": "这么", "tag": "Mức độ" },
+        { "id": "t5", "text": "着急", "tag": "Tính từ vị ngữ 2" },
+        { "id": "t6", "text": "还早着呢", "tag": "Vị ngữ 1" },
+        { "id": "t7", "text": "还很早着呢", "tag": "Bẫy thừa phó từ 很" }
+      ],
+      "targetOrder": ["t3", "t6", "t1", "t2", "t4", "t5"],
+      "requiredKeywordsZh": ["时间还早着呢", "不用这么着急"],
+      "wordBankPool": ["时间", "还早着呢", "你", "不用", "这么", "着急", "还很早着呢", "早着呢"],
+      "traps": [
+        {
+          "pattern": "还很早着呢",
+          "msg": "Lỗi thừa phó từ: '着呢' bản thân đã biểu thị mức độ cực cao tương đương '很/非常', tuyệt đối không chèn thêm '很' vào trước tính từ."
+        }
+      ],
+      "explanation": "Kết cấu 'Tính từ + 着呢' là đặc trưng khẩu ngữ miền Bắc Trung Quốc để phóng đại tính chất. '不用' mang nghĩa không cần thiết."
+    },
+    {
+      "id": "b03-08",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc 就要...了 khi có trạng ngữ thời gian xác định",
+      "vi": "Chị gái tôi tháng sau sẽ kết hôn.",
+      "zh": "我姐姐下个月就要结婚了",
+      "standardTrans": "我姐姐下个月就要结婚了",
+      "pinyin": "Wǒ jiějie xià gè yuè jiù yào jiéhūn le.",
+      "grammarPoint": "Thời gian cụ thể (下个月) + 就要...了 (CẤM dùng 快要...了)",
+      "tokens": [
+        {
+          "text": "Chị gái tôi",
+          "hz": "我姐姐",
+          "py": "wǒ jiějie",
+          "hv": "Ngã tỷ tỷ",
+          "role": "Chủ ngữ",
+          "vn": "Chị gái của tôi",
+          "radicals": "姐 = Bộ nữ 女 + chữ thả 且"
+        },
+        {
+          "text": "Tháng sau",
+          "hz": "下个月",
+          "py": "xià gè yuè",
+          "hv": "Hạ cá nguyệt",
+          "role": "Trạng ngữ thời gian cụ thể",
+          "vn": "Tháng tới, tháng sau",
+          "radicals": "下 = Bộ nhất 一; 月 = Bộ nguyệt 月"
+        },
+        {
+          "text": "Sắp kết hôn rồi",
+          "hz": "就要结婚了",
+          "py": "jiù yào jiéhūn le",
+          "hv": "Tựu yếu kết hôn liễu",
+          "role": "Vị ngữ thời thái sắp xảy ra",
+          "vn": "Sắp cưới, sẽ lấy chồng",
+          "radicals": "结 = Bộ mịch 纟; 婚 = Bộ nữ 女 + chữ hôn 昏; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "就要", "tag": "Cấu trúc sắp xảy ra" },
+        { "id": "t2", "text": "我姐姐", "tag": "Chủ ngữ" },
+        { "id": "t3", "text": "结婚了", "tag": "Động từ + 了" },
+        { "id": "t4", "text": "下个月", "tag": "Thời gian cụ thể" },
+        { "id": "t5", "text": "快要", "tag": "Bẫy 快要 với thời gian cụ thể" }
+      ],
+      "targetOrder": ["t2", "t4", "t1", "t3"],
+      "requiredKeywordsZh": ["我姐姐", "下个月", "就要结婚了"],
+      "wordBankPool": ["我姐姐", "下个月", "就要", "结婚了", "快要", "快要结婚了"],
+      "traps": [
+        {
+          "pattern": "下个月快要",
+          "msg": "Lỗi ngữ pháp cấm kỵ: Khi trong câu có mốc thời gian cụ thể ('下个月'), TUYỆT ĐỐI KHÔNG dùng '快要...了', bắt buộc phải dùng '就要...了'."
+        }
+      ],
+      "explanation": "Quy tắc cốt lõi: '快要...了' không thể đi cùng trạng ngữ thời gian cụ thể, trong khi '就要...了' có thể kết hợp với mốc thời gian rõ ràng."
+    },
+    {
+      "id": "b03-09",
+      "type": "sentence_parsing",
+      "title": "Phó từ 又 diễn tả sự việc không mong muốn tái diễn",
+      "vi": "Bây giờ mấy giờ rồi? Đồng hồ của tớ lại hỏng rồi.",
+      "zh": "现在几点了我的手表又坏了",
+      "standardTrans": "现在几点了我的手表又坏了",
+      "pinyin": "Xiànzài jǐ diǎn le, wǒ de shǒubiǎo yòu huài le.",
+      "grammarPoint": "Hỏi giờ: 几点了; Phó từ 又 chỉ sự việc tiêu cực đã lặp lại trong thực tế",
+      "tokens": [
+        {
+          "text": "Bây giờ mấy giờ rồi",
+          "hz": "现在几点了",
+          "py": "xiànzài jǐ diǎn le",
+          "hv": "Hiện tại kỷ điểm liễu",
+          "role": "Phân câu nghi vấn 1",
+          "vn": "Bây giờ là mấy giờ rồi",
+          "radicals": "现 = Bộ vương 王; 几 = Bộ kỷ 几; 点 = Bộ hỏa 灬"
+        },
+        {
+          "text": "Đồng hồ của tôi",
+          "hz": "我的手表",
+          "py": "wǒ de shǒubiǎo",
+          "hv": "Ngã đích thủ biểu",
+          "role": "Chủ ngữ 2",
+          "vn": "Đồng hồ đeo tay của tớ",
+          "radicals": "手 = Bộ thủ 手; 表 = Bộ y 衣"
+        },
+        {
+          "text": "Lại hỏng rồi",
+          "hz": "又坏了",
+          "py": "yòu huài le",
+          "hv": "Hựu hoại liễu",
+          "role": "Vị ngữ lặp lại quá khứ",
+          "vn": "Lại bị hư hỏng rồi",
+          "radicals": "又 = Bộ hựu 又; 坏 = Bộ thổ 土; 了 = Trợ từ"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我的", "tag": "Định ngữ" },
+        { "id": "t2", "text": "坏了", "tag": "Tính từ vị ngữ" },
+        { "id": "t3", "text": "现在", "tag": "Thời gian" },
+        { "id": "t4", "text": "又", "tag": "Phó từ lặp lại" },
+        { "id": "t5", "text": "几点了", "tag": "Nghi vấn giờ" },
+        { "id": "t6", "text": "手表", "tag": "Trung tâm ngữ" },
+        { "id": "t7", "text": "再", "tag": "Bẫy phó từ 再" }
+      ],
+      "targetOrder": ["t3", "t5", "t1", "t6", "t4", "t2"],
+      "requiredKeywordsZh": ["现在几点了", "我的手表", "又坏了"],
+      "wordBankPool": ["现在", "几点了", "我的", "手表", "又", "坏了", "再", "再坏了"],
+      "traps": [
+        {
+          "pattern": "再坏了",
+          "msg": "Lỗi phân biệt 又 và 再: '又' biểu thị sự việc không mong muốn ĐÃ lặp lại trong thực tế; '再' dùng cho hành động SẼ lặp lại trong tương lai."
+        }
+      ],
+      "explanation": "'又' đứng trước vị ngữ biểu thị một sự việc tiêu cực, phiền toái đã tiếp tục tái diễn."
+    },
+    {
+      "id": "b03-10",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc 都...了 kết hợp bổ ngữ trạng thái 得",
+      "vi": "Đã học hai năm rồi mà tiếng Trung vẫn nói chưa tốt lắm.",
+      "zh": "都学了两年了汉语还是说得不太好",
+      "standardTrans": "都学了两年了汉语还是说得不太好",
+      "pinyin": "Dōu xué le liǎng nián le, Hànyǔ háishì shuō de bú tài hǎo.",
+      "grammarPoint": "都 + V + 了 + Thời lượng + 了 (nhấn mạnh kéo dài) + Đưa tân ngữ lên trước + V + 得 + Bổ ngữ trạng thái",
+      "tokens": [
+        {
+          "text": "Đã học hai năm rồi",
+          "hz": "都学了两年了",
+          "py": "dōu xué le liǎng nián le",
+          "hv": "Đô học liễu lưỡng niên liễu",
+          "role": "Vế thời lượng nhấn mạnh",
+          "vn": "Đã học suốt 2 năm trời rồi (và vẫn đang học)",
+          "radicals": "都 = Bộ ấp 阝; 学 = Bộ tử 子; 两 = Bộ nhất 一; 年 = Bộ can 干"
+        },
+        {
+          "text": "Tiếng Trung",
+          "hz": "汉语",
+          "py": "Hànyǔ",
+          "hv": "Hán ngữ",
+          "role": "Tân ngữ đưa lên trước",
+          "vn": "Tiếng Hán",
+          "radicals": "汉 = Bộ thủy 氵; 语 = Bộ ngôn 讠"
+        },
+        {
+          "text": "Vẫn nói chưa tốt lắm",
+          "hz": "还是说得不太好",
+          "py": "háishì shuō de bú tài hǎo",
+          "hv": "Hoàn thị thuyết đắc bất thái hảo",
+          "role": "Phó từ + Động từ + Bổ ngữ trạng thái phủ định",
+          "vn": "Vẫn nói chưa được hay lắm",
+          "radicals": "还 = Sước; 说 = Ngôn; 得 = Trợ từ kết cấu; 好 = Nữ + Tử"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "汉语", "tag": "Tân ngữ đưa lên trước" },
+        { "id": "t2", "text": "都学了", "tag": "Động từ nhấn mạnh" },
+        { "id": "t3", "text": "说得", "tag": "Động từ + 得" },
+        { "id": "t4", "text": "还是", "tag": "Phó từ vẫn" },
+        { "id": "t5", "text": "两年了", "tag": "Bổ ngữ thời lượng" },
+        { "id": "t6", "text": "不太好", "tag": "Bổ ngữ phủ định" },
+        { "id": "t7", "text": "说地", "tag": "Bẫy trợ từ kết cấu 地" }
+      ],
+      "targetOrder": ["t2", "t5", "t1", "t4", "t3", "t6"],
+      "requiredKeywordsZh": ["都学了两年了", "汉语还是", "说得不太好"],
+      "wordBankPool": ["汉语", "都学了", "说得", "还是", "两年了", "不太好", "说地", "二岁年"],
+      "traps": [
+        {
+          "pattern": "说地不太好",
+          "msg": "Lỗi trợ từ kết cấu: Đánh giá trình độ kết quả sau động từ '说' bắt buộc dùng trợ từ kết cấu '得', không dùng '地'."
+        },
+        {
+          "pattern": "二岁年",
+          "msg": "Lỗi dùng số từ: Chỉ khoảng thời lượng 2 năm phải dùng '两年', không dùng '二年' hay '二岁'."
+        }
+      ],
+      "explanation": "Cấu trúc '都 + V + 了 + Thời lượng + 了' biểu thị hành động đã kéo dài một khoảng thời gian đáng kể và hiện tại vẫn đang tiếp diễn. Tân ngữ '汉语' được đảo lên trước động từ '说' để câu gọn gàng."
+    }
+  ]
+}

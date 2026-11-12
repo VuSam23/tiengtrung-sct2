@@ -1,0 +1,627 @@
+{
+  "lessonId": "b_ontap_p2",
+  "lessonTitle": "HSK2综合测试: 庆生聚会与日程表达 (Bài Test Ôn tập HSK 2: Tiệc sinh nhật & Lịch trình)",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "过生日",
+        "py": "guò shēngrì",
+        "note": "Đón sinh nhật, tổ chức ngày sinh nhật. Động từ 过 còn dùng cho các dịp lễ tết: 过节, 过年."
+      },
+      {
+        "word": "送 (Động từ 2 tân ngữ)",
+        "py": "sòng",
+        "note": "Tặng (ai món quà gì): 送 + Người (Tân ngữ 1) + Quà (Tân ngữ 2): 送我很多好看的礼物. Nếu muốn dùng 给: 给我送生日礼物."
+      },
+      {
+        "word": "玩儿得很高兴",
+        "py": "wánr de hěn gāoxìng",
+        "note": "Chơi đùa rất vui. Bổ ngữ trạng thái 得 dẫn ra tính từ miêu tả cảm xúc sau cuộc vui."
+      },
+      {
+        "word": "时量与时刻 (Thời điểm vs Thời lượng)",
+        "py": "shíkè & shíliàng",
+        "note": "Thời điểm (lúc mấy giờ): 八点, 六点半. Thời lượng (trong bao lâu): 两个小时, 半个小时."
+      }
+    ],
+    "grammarTips": [
+      "Trật tự câu nơi chốn: Chủ ngữ + 在 + Địa điểm + Động từ (在我的房间举行, 在中国过生日). Tuyệt đối không dịch xuôi sau động từ.",
+      "Cụm định ngữ mang mệnh đề: [Mệnh đề / Cụm chủ vị] + 的 + Danh từ trung tâm (你给我送的生日礼物: món quà sinh nhật mà bạn tặng tôi).",
+      "Chuỗi hành động lịch trình thời gian: Mốc thời gian lớn đến bé + Hành động (每天早上六点起床, 六点半吃早饭).",
+      "Mệnh đề thời gian với 后 / 以后: [Hành động] + 后 (下课后: sau khi tan học, 毕业后: sau khi tốt nghiệp)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "ontap-25",
+      "type": "sentence_parsing",
+      "title": "Hỏi vị trí tổ chức sự kiện với 在哪儿举行",
+      "vi": "Tiệc sinh nhật của bạn được tổ chức ở đâu?",
+      "zh": "你的生日晚会在哪儿举行",
+      "standardTrans": "你的生日晚会在哪儿举行",
+      "pinyin": "Nǐ de shēngrì wǎnhuì zài nǎr jǔxíng?",
+      "grammarPoint": "Trạng ngữ nơi chốn đứng trước động từ: 在哪儿 + 举行; Cụm danh từ: 生日晚会",
+      "tokens": [
+        {
+          "text": "Tiệc sinh nhật của bạn",
+          "hz": "你的生日晚会",
+          "py": "nǐ de shēngrì wǎnhuì",
+          "hv": "Nhĩ đích sinh nhật vãn hội",
+          "role": "Cụm danh từ chủ ngữ",
+          "vn": "Buổi dạ tiệc sinh nhật của cậu",
+          "radicals": "生 = Sinh; 日 = Nhật; 晚 = Bộ nhật 日 + chữ miễn 免; 会 = Bộ nhân 人 + chữ vân 云"
+        },
+        {
+          "text": "Ở đâu",
+          "hz": "在哪儿",
+          "py": "zài nǎr",
+          "hv": "Tại na nhi",
+          "role": "Trạng ngữ nghi vấn nơi chốn",
+          "vn": "Ở chỗ nào, tại đâu",
+          "radicals": "在 = Bộ thổ 土; 哪 = Bộ khẩu 口; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Tổ chức",
+          "hz": "举行",
+          "py": "jǔxíng",
+          "hv": "Cử hành",
+          "role": "Động từ vị ngữ",
+          "vn": "Tổ chức, cử hành sự kiện",
+          "radicals": "举 = Bộ thủ 扌 (biến thể); 行 = Bộ xích 彳 + bộ súc 亍"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "在哪儿举行", "tag": "Nơi chốn + Động từ" },
+        { "id": "t1", "text": "你的生日晚会", "tag": "Chủ ngữ sự kiện" },
+        { "id": "t3", "text": "举行在哪儿", "tag": "Bẫy trật tự nơi chốn" },
+        { "id": "t4", "text": "晚会生日的你", "tag": "Bẫy định ngữ đảo" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["你的生日晚会", "在哪儿举行"],
+      "wordBankPool": ["你的生日晚会", "在哪儿举行", "举行在哪儿", "晚会生日的你", "在哪儿你的生日"],
+      "traps": [
+        {
+          "pattern": "举行在哪儿",
+          "msg": "Lỗi vị trí nơi chốn: Trong tiếng Trung, việc tổ chức diễn ra ở đâu thì cụm '在 + Nơi chốn / 哪儿' bắt buộc phải đứng TRƯỚC động từ ('在哪儿举行'), không dịch xuôi theo tiếng Việt."
+        }
+      ],
+      "explanation": "Quy tắc ngữ pháp cố định: S + 在哪儿 + Động từ? (Ở đâu làm gì)[cite: 743, 749]."
+    },
+    {
+      "id": "ontap-26",
+      "type": "anti_word_by_word",
+      "title": "Câu hỏi chủ ngữ 谁 kết hợp cụm liên động 来参加",
+      "vi": "Ai tới tham gia tiệc sinh nhật của bạn?",
+      "zh": "谁来参加你的生日晚会",
+      "standardTrans": "谁来参加你的生日晚会",
+      "pinyin": "Shéi lái cānjiā nǐ de shēngrì wǎnhuì?",
+      "grammarPoint": "Đại từ nghi vấn làm chủ ngữ: 谁; Cụm liên động: 来 + 参加; Tân ngữ: 你的生日晚会",
+      "tokens": [
+        {
+          "text": "Ai",
+          "hz": "谁",
+          "py": "shéi",
+          "hv": "Thùy",
+          "role": "Đại từ nghi vấn chủ ngữ",
+          "vn": "Ai, người nào",
+          "radicals": "Bộ ngôn 讠 + chữ truy 隹"
+        },
+        {
+          "text": "Đến tham gia",
+          "hz": "来参加",
+          "py": "lái cānjiā",
+          "hv": "Lai tham gia",
+          "role": "Cụm liên động vị ngữ",
+          "vn": "Đến dự, tới tham gia",
+          "radicals": "来 = Lai; 参 = Bộ tư 厶; 加 = Bộ lực 力 + bộ khẩu 口"
+        },
+        {
+          "text": "Tiệc sinh nhật của bạn",
+          "hz": "你的生日晚会",
+          "py": "nǐ de shēngrì wǎnhuì",
+          "hv": "Nhĩ đích sinh nhật vãn hội",
+          "role": "Tân ngữ sự kiện",
+          "vn": "Buổi tiệc sinh nhật của cậu",
+          "radicals": "你 = Nhĩ; 生日 = Sinh nhật; 晚会 = Dạ tiệc"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "来参加", "tag": "Động từ liên động" },
+        { "id": "t1", "text": "谁", "tag": "Chủ ngữ nghi vấn" },
+        { "id": "t3", "text": "你的生日晚会", "tag": "Tân ngữ" },
+        { "id": "t4", "text": "参加来", "tag": "Bẫy trật tự liên động" },
+        { "id": "t5", "text": "谁你的生日晚会", "tag": "Bẫy thiếu động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["谁", "来参加", "你的生日晚会"],
+      "wordBankPool": ["谁", "来参加", "你的生日晚会", "参加来", "谁你的生日晚会", "来参加谁"],
+      "traps": [
+        {
+          "pattern": "参加来",
+          "msg": "Lỗi câu liên động: Hành động di chuyển đến (来) phải diễn ra trước hành động tham dự (参加), trật tự chuẩn là '来参加'."
+        }
+      ],
+      "explanation": "Đại từ nghi vấn '谁' đứng đầu câu làm chủ ngữ trực tiếp, theo sau là chuỗi liên động '来参加 + Tân ngữ'[cite: 743, 749]."
+    },
+    {
+      "id": "ontap-27",
+      "type": "sentence_parsing",
+      "title": "Mệnh đề định ngữ dài với 的 và tính từ 好看",
+      "vi": "Món quà sinh nhật bạn tặng tôi rất đẹp.",
+      "zh": "你给我送的生日礼物很好看",
+      "standardTrans": "你给我送的生日礼物很好看",
+      "pinyin": "Nǐ gěi wǒ sòng de shēngrì lǐwù hěn hǎokàn.",
+      "grammarPoint": "Định ngữ mệnh đề: [Chủ vị + Giới từ] + 的 + Danh từ trung tâm; Vị ngữ tính từ: 很好看",
+      "tokens": [
+        {
+          "text": "Bạn tặng cho tôi",
+          "hz": "你给我送的",
+          "py": "nǐ gěi wǒ sòng de",
+          "hv": "Nhĩ cấp ngã tống đích",
+          "role": "Mệnh đề định ngữ",
+          "vn": "Cậu tặng cho tớ",
+          "radicals": "给 = Bộ mịch 纟; 送 = Bộ sước 辶; 的 = Trợ từ định ngữ"
+        },
+        {
+          "text": "Quà sinh nhật",
+          "hz": "生日礼物",
+          "py": "shēngrì lǐwù",
+          "hv": "Sinh nhật lễ vật",
+          "role": "Danh từ trung tâm ngữ",
+          "vn": "Món quà sinh nhật",
+          "radicals": "礼 = Bộ thị 礻; 物 = Bộ ngưu 牛 + chữ vật 勿"
+        },
+        {
+          "text": "Rất đẹp",
+          "hz": "很好看",
+          "py": "hěn hǎokàn",
+          "hv": "Hẩn hảo khán",
+          "role": "Cụm vị ngữ tính từ",
+          "vn": "Rất đẹp, ưa nhìn",
+          "radicals": "很 = Rất; 好 = Tốt; 看 = Xem/nhìn"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "生日礼物", "tag": "Trung tâm ngữ chủ ngữ" },
+        { "id": "t1", "text": "你给我送的", "tag": "Mệnh đề định ngữ" },
+        { "id": "t3", "text": "很好看", "tag": "Vị ngữ khen ngợi" },
+        { "id": "t4", "text": "生日礼物你给我送", "tag": "Bẫy định ngữ đảo" },
+        { "id": "t5", "text": "送给我你的", "tag": "Bẫy trật tự giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你给我送的", "生日礼物", "很好看"],
+      "wordBankPool": ["你给我送的", "生日礼物", "很好看", "生日礼物你给我送", "送给我你的", "好看得很"],
+      "traps": [
+        {
+          "pattern": "生日礼物你给我送",
+          "msg": "Lỗi định ngữ mệnh đề: Thành phần miêu tả 'bạn tặng tôi' bắt buộc phải đứng TRƯỚC trợ từ 的 và danh từ trung tâm '生日礼物' ('你给我送的生日礼物')."
+        }
+      ],
+      "explanation": "Cấu trúc định ngữ phức tạp: [Mệnh đề: 你给我送] + 的 + [Danh từ: 生日礼物]. Vị ngữ tính từ kết hợp với phó từ '很'[cite: 743, 749]."
+    },
+    {
+      "id": "ontap-28",
+      "type": "anti_word_by_word",
+      "title": "Trạng ngữ nơi chốn 在我的房间 đứng trước động từ 举行",
+      "vi": "Hôm nay tôi tổ chức tiệc sinh nhật ở phòng tôi.",
+      "zh": "今天我在我的房间举行生日晚会",
+      "standardTrans": "今天我在我的房间举行生日晚会",
+      "pinyin": "Jīntiān wǒ zài wǒ de fángjiān jǔxíng shēngrì wǎnhuì.",
+      "grammarPoint": "Thời gian: 今天; Nơi chốn đứng trước động từ: 在我的房间 + 举行; Tân ngữ: 生日晚会",
+      "tokens": [
+        {
+          "text": "Ở phòng của tôi",
+          "hz": "在我的房间",
+          "py": "zài wǒ de fángjiān",
+          "hv": "Tại ngã đích phòng gian",
+          "role": "Trạng ngữ nơi chốn",
+          "vn": "Tại căn phòng của tớ",
+          "radicals": "在 = Bộ thổ 土; 房 = Bộ hộ 户; 间 = Bộ môn 门"
+        },
+        {
+          "text": "Tổ chức tiệc sinh nhật",
+          "hz": "举行生日晚会",
+          "py": "jǔxíng shēngrì wǎnhuì",
+          "hv": "Cử hành sinh nhật vãn hội",
+          "role": "Động từ + Cụm danh từ tân ngữ",
+          "vn": "Tổ chức buổi dạ tiệc sinh nhật",
+          "radicals": "举 = Cử; 行 = Hành; 晚 = Vãn; 会 = Hội"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "在我的房间", "tag": "Trạng ngữ nơi chốn" },
+        { "id": "t1", "text": "今天我", "tag": "Thời gian & chủ ngữ" },
+        { "id": "t3", "text": "举行生日晚会", "tag": "Động từ + Tân ngữ" },
+        { "id": "t4", "text": "举行在我的房间", "tag": "Bẫy nơi chốn sau động từ" },
+        { "id": "t5", "text": "生日晚会举行", "tag": "Bẫy đảo tân ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["今天我", "在我的房间", "举行生日晚会"],
+      "wordBankPool": ["今天我", "在我的房间", "举行生日晚会", "举行在我的房间", "生日晚会举行", "我的房间在今天"],
+      "traps": [
+        {
+          "pattern": "举行在我的房间",
+          "msg": "Lỗi nơi chốn: Trong tiếng Trung, việc tổ chức diễn ra ở đâu thì cụm '在 + Địa điểm' bắt buộc phải đứng TRƯỚC động từ ('在我的房间举行')."
+        }
+      ],
+      "explanation": "Quy tắc bất biến: Thời gian (今天) + Chủ ngữ (我) + Nơi chốn (在我的房间) + Động từ (举行) + Tân ngữ (生日晚会)[cite: 743, 749]."
+    },
+    {
+      "id": "ontap-29",
+      "type": "sentence_parsing",
+      "title": "Chủ ngữ liên kết đẳng lập 和, phó từ bao quát 都 và cụm liên động",
+      "vi": "Bạn học của lớp tôi và mấy người bạn Nước ngoài đều tới tham gia tiệc sinh nhật của tôi.",
+      "zh": "我们班的同学和几个外国朋友都来参加我的生日晚会",
+      "standardTrans": "我们班的同学和几个外国朋友都来参加我的生日晚会",
+      "pinyin": "Wǒmen bān de tóngxué hé jǐ gè wàiguó péngyou dōu lái cānjiā wǒ de shēngrì wǎnhuì.",
+      "grammarPoint": "Chủ ngữ ghép với liên từ 和; Phó từ bao quát: 都; Cụm liên động: 来参加; Tân ngữ sở hữu: 我的生日晚会",
+      "tokens": [
+        {
+          "text": "Bạn cùng lớp chúng tôi",
+          "hz": "我们班的同学",
+          "py": "wǒmen bān de tóngxué",
+          "hv": "Ngã môn ban đích đồng học",
+          "role": "Chủ ngữ thành phần 1",
+          "vn": "Các bạn học trong lớp của tôi",
+          "radicals": "班 = Bộ vương 王 + bộ đao 刂; 同 = Bộ khẩu 口; 学 = Bộ tử 子"
+        },
+        {
+          "text": "Mấy người bạn nước ngoài",
+          "hz": "几个外国朋友",
+          "py": "jǐ gè wàiguó péngyou",
+          "hv": "Kỷ cá ngoại quốc bằng hữu",
+          "role": "Chủ ngữ thành phần 2",
+          "vn": "Vài người bạn ngoại quốc",
+          "radicals": "几 = Kỷ; 个 = Nhân; 外 = Tịch; 国 = Vi; 朋 = Nguyệt; 友 = Hựu"
+        },
+        {
+          "text": "Đều đến tham gia tiệc sinh nhật của tôi",
+          "hz": "都来参加我的生日晚会",
+          "py": "dōu lái cānjiā wǒ de shēngrì wǎnhuì",
+          "hv": "Đô lai tham gia ngã đích sinh nhật vãn hội",
+          "role": "Phó từ + Liên động + Tân ngữ",
+          "vn": "Đều tới dự tiệc sinh nhật của tớ",
+          "radicals": "都 = Bộ ấp 阝; 来 = Lai; 参 = Tư; 加 = Lực; 晚会 = Dạ tiệc"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "几个外国朋友", "tag": "Chủ ngữ 2" },
+        { "id": "t1", "text": "我们班的同学和", "tag": "Chủ ngữ 1 + Liên từ 和" },
+        { "id": "t3", "text": "都来参加我的生日晚会", "tag": "Vị ngữ với 都" },
+        { "id": "t4", "text": "都参加来", "tag": "Bẫy trật tự liên động" },
+        { "id": "t5", "text": "外国几个朋友", "tag": "Bẫy trật tự số lượng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["我们班的同学和", "几个外国朋友", "都来参加我的生日晚会"],
+      "wordBankPool": ["我们班的同学和", "几个外国朋友", "都来参加我的生日晚会", "都参加来", "外国几个朋友", "同学和我们班"],
+      "traps": [
+        {
+          "pattern": "外国几个朋友",
+          "msg": "Lỗi định ngữ số lượng: Số lượng từ '几个' (mấy người) phải đứng trước danh từ quốc tịch '外国' để bổ nghĩa cho '朋友' ('几个外国朋友')."
+        }
+      ],
+      "explanation": "Liên từ '和' liên kết hai nhóm đối tượng làm chủ ngữ số nhiều. Theo sau bắt buộc có phó từ bao quát '都' bổ nghĩa cho hành động '来参加'[cite: 743, 749]."
+    },
+    {
+      "id": "ontap-30",
+      "type": "anti_word_by_word",
+      "title": "Động từ 2 tân ngữ 送 và cụm định ngữ 好看的礼物",
+      "vi": "Họ tặng tôi rất nhiều món quà đẹp.",
+      "zh": "他们送我很多好看的礼物",
+      "standardTrans": "他们送我很多好看的礼物",
+      "pinyin": "Tāmen sòng wǒ hěn duō hǎokàn de lǐwù.",
+      "grammarPoint": "Động từ 2 tân ngữ: 送 + Người (Tân ngữ 1) + Đồ vật (Tân ngữ 2); Cụm định ngữ: 很多好看的礼物",
+      "tokens": [
+        {
+          "text": "Bọn họ tặng tôi",
+          "hz": "他们送我",
+          "py": "tāmen sòng wǒ",
+          "hv": "Tha môn tống ngã",
+          "role": "Chủ ngữ + Động từ + Tân ngữ gián tiếp",
+          "vn": "Họ tặng cho tôi",
+          "radicals": "他 = Nhân; 们 = Môn; 送 = Bộ sước 辶; 我 = Qua"
+        },
+        {
+          "text": "Rất nhiều món quà đẹp",
+          "hz": "很多好看的礼物",
+          "py": "hěn duō hǎokàn de lǐwù",
+          "hv": "Hẩn đa hảo khán đích lễ vật",
+          "role": "Tân ngữ trực tiếp",
+          "vn": "Nhiều quà tặng đẹp đẽ",
+          "radicals": "很 = Xích; 多 = Tịch; 好 = Nữ; 看 = Mục; 礼 = Thị 礻; 物 = Ngưu"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "他们送我", "tag": "Chủ ngữ + Động từ 2 tân ngữ" },
+        { "id": "t2", "text": "很多好看的礼物", "tag": "Tân ngữ trực tiếp" },
+        { "id": "t3", "text": "送很多好看的礼物我", "tag": "Bẫy trật tự 2 tân ngữ" },
+        { "id": "t4", "text": "送我给", "tag": "Bẫy thừa 给" }
+      ],
+      "targetOrder": ["t1", "t2"],
+      "requiredKeywordsZh": ["他们送我", "很多好看的礼物"],
+      "wordBankPool": ["他们送我", "很多好看的礼物", "送很多好看的礼物我", "送我给", "礼物很多好看的"],
+      "traps": [
+        {
+          "pattern": "送很多好看的礼物我",
+          "msg": "Lỗi 2 tân ngữ: Động từ '送' nhận tân ngữ chỉ NGƯỜI trước rồi mới đến tân ngữ chỉ VẬT ('送 + 我 + 礼物')."
+        }
+      ],
+      "explanation": "Động từ '送' trực tiếp nhận 2 tân ngữ liền nhau: S + 送 + Người (我) + Vật (很多好看的礼物)[cite: 743, 749]."
+    },
+    {
+      "id": "ontap-31",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái cảm xúc 玩儿得很高兴 và chuỗi hoạt động tiệc tùng",
+      "vi": "Trong buổi tiệc, chúng tôi cùng nhau hát, uống rượu, chơi đùa rất vui.",
+      "zh": "晚会上我们一起唱歌喝酒吃蛋糕玩儿得很高兴",
+      "standardTrans": "晚会上我们一起唱歌喝酒吃蛋糕玩儿得很高兴",
+      "pinyin": "Wǎnhuì shàng, wǒmen yìqǐ chàng gē, hē jiǔ, chī dàngāo, wánr de hěn gāoxìng.",
+      "grammarPoint": "Trạng ngữ bối cảnh: 晚会上; Phó từ cùng nhau: 一起; Liệt kê hoạt động; Bổ ngữ trạng thái: 玩儿得 + 很高兴",
+      "tokens": [
+        {
+          "text": "Trong bữa tiệc tối",
+          "hz": "晚会上",
+          "py": "wǎnhuì shàng",
+          "hv": "Vãn hội thượng",
+          "role": "Trạng ngữ nơi chốn/bối cảnh",
+          "vn": "Ở tại bữa tiệc",
+          "radicals": "晚 = Nhật; 会 = Nhân; 上 = Thượng"
+        },
+        {
+          "text": "Chúng tôi cùng nhau hát uống rượu ăn bánh ngọt",
+          "hz": "我们一起唱歌喝酒吃蛋糕",
+          "py": "wǒmen yìqǐ chàng gē, hē jiǔ, chī dàngāo",
+          "hv": "Ngã môn nhất khởi xướng ca, háu tửu, ngật đán cao",
+          "role": "Chuỗi hành động liên hoàn",
+          "vn": "Bọn tớ cùng nhau ca hát, uống rượu, ăn bánh kem",
+          "radicals": "唱 = Khẩu; 歌 = Khiếm; 喝 = Khẩu; 酒 = Dậu; 蛋 = Trùng; 糕 = Mễ"
+        },
+        {
+          "text": "Chơi đùa rất vui vẻ",
+          "hz": "玩儿得很高兴",
+          "py": "wánr de hěn gāoxìng",
+          "hv": "Ngoạn nhi đắc hẩn cao hứng",
+          "role": "Động từ + Bổ ngữ trạng thái",
+          "vn": "Chơi rất là vui",
+          "radicals": "玩 = Bộ ngọc 王; 得 = Trợ từ; 高 = Cao; 兴 = Bát"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我们一起唱歌喝酒吃蛋糕", "tag": "Chuỗi hoạt động cùng nhau" },
+        { "id": "t1", "text": "晚会上", "tag": "Bối cảnh bữa tiệc" },
+        { "id": "t3", "text": "玩儿得很高兴", "tag": "Bổ ngữ trạng thái vui vẻ" },
+        { "id": "t4", "text": "高兴玩儿得", "tag": "Bẫy trật tự bổ ngữ" },
+        { "id": "t5", "text": "一起我们", "tag": "Bẫy vị trí phó từ 一起" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["晚会上", "一起唱歌喝酒吃蛋糕", "玩儿得很高兴"],
+      "wordBankPool": ["晚会上", "我们一起唱歌喝酒吃蛋糕", "玩儿得很高兴", "高兴玩儿得", "一起我们", "在晚会玩儿"],
+      "traps": [
+        {
+          "pattern": "高兴玩儿得",
+          "msg": "Lỗi bổ ngữ trạng thái: Động từ hành động (玩儿) đứng trước trợ từ '得', tính từ miêu tả (很高兴) đứng sau: '玩儿得很高兴'."
+        }
+      ],
+      "explanation": "Từ '晚会上' đóng vai trò trạng ngữ thời gian/không gian. Động từ '玩儿' mang bổ ngữ trạng thái '得很高兴' tổng kết bầu không khí sôi nổi[cite: 742]."
+    },
+    {
+      "id": "ontap-32",
+      "type": "anti_word_by_word",
+      "title": "Động từ năng nguyện 能, cụm giới từ đồng hành và cụm cảm nhận 觉得很快乐",
+      "vi": "Được trải nghiệm sinh nhật cùng bạn bè của tôi ở Trung Quốc, tôi cảm thấy rất vui vẻ.",
+      "zh": "能在中国跟我的朋友一起过生日我觉得很快乐",
+      "standardTrans": "能在中国跟我的朋友一起过生日我觉得很快乐",
+      "pinyin": "Néng zài Zhōngguó gēn wǒ de péngyou yìqǐ guò shēngrì, wǒ juéde hěn kuàilè.",
+      "grammarPoint": "Động từ năng nguyện: 能 (có thể/được); Trạng ngữ nơi chốn & đồng hành; Cụm động tân: 过生日; Động từ cảm xúc: 觉得 + 很快乐",
+      "tokens": [
+        {
+          "text": "Có thể đón sinh nhật ở Trung Quốc cùng bạn bè",
+          "hz": "能在中国跟我的朋友一起过生日",
+          "py": "néng zài Zhōngguó gēn wǒ de péngyou yìqǐ guò shēngrì",
+          "hv": "Năng tại Trung Quốc cân ngã đích bằng hữu nhất khởi quá sinh nhật",
+          "role": "Phân câu tiền đề điều kiện may mắn",
+          "vn": "Được ở Trung Quốc cùng bạn bè đón ngày sinh",
+          "radicals": "能 = Năng lực; 在 = Tại; 跟 = Túc; 过 = Sước; 生日 = Sinh nhật"
+        },
+        {
+          "text": "Tôi cảm thấy rất vui vẻ hạnh phúc",
+          "hz": "我觉得很快乐",
+          "py": "wǒ juéde hěn kuàilè",
+          "hv": "Ngã giác đắc hẩn khoái lạc",
+          "role": "Phân câu đánh giá cảm xúc",
+          "vn": "Tớ cảm thấy vô cùng vui sướng",
+          "radicals": "觉 = Kiến; 得 = Trợ từ; 快 = Tâm; 乐 = Bộ phiệt 丿 + bộ mộc 木"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "能在中国", "tag": "Năng nguyện + Nơi chốn" },
+        { "id": "t2", "text": "跟我的朋友一起过生日", "tag": "Đồng hành + Đón sinh nhật" },
+        { "id": "t3", "text": "我觉得很快乐", "tag": "Cảm nhận vui vẻ" },
+        { "id": "t4", "text": "过生日在中国", "tag": "Bẫy nơi chốn sau động từ" },
+        { "id": "t5", "text": "一起跟朋友", "tag": "Bẫy trật tự giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["能在中国", "跟我的朋友一起过生日", "我觉得很快乐"],
+      "wordBankPool": ["能在中国", "跟我的朋友一起过生日", "我觉得很快乐", "过生日在中国", "一起跟朋友", "在中国过生日能"],
+      "traps": [
+        {
+          "pattern": "过生日在中国",
+          "msg": "Lỗi nơi chốn: Nơi chốn (在中国) bắt buộc phải đứng trước cụm động từ hành động ('在中国...过生日')."
+        }
+      ],
+      "explanation": "'能' đặt ở đầu câu thể hiện sự may mắn, có cơ hội được trải nghiệm. '过生日' nghĩa là đón/trải qua ngày sinh nhật[cite: 742]."
+    },
+    {
+      "id": "ontap-33",
+      "type": "sentence_parsing",
+      "title": "Chuỗi hành động lịch trình thời gian liên hoàn từ sáng đến giờ vào lớp",
+      "vi": "Hàng ngày buổi sáng 6h tôi thức dậy, 6:30 ăn sáng, 7h đọc bài khóa, học từ vựng, ôn tập ngữ pháp, 7:44 phút đến lớp học, 8h vào học.",
+      "zh": "我每天早上六点起床六点半吃早饭七点读课文记生词复习语法七点四十四分去教室八点上课",
+      "standardTrans": "我每天早上六点起床六点半吃早饭七点读课文记生词复习语法七点四十四分去教室八点上课",
+      "pinyin": "Wǒ měitiān zǎoshang liù diǎn qǐchuáng, liù diǎn bàn chī zǎofàn, qī diǎn dú kèwén, jì shēngcí, fùxí yǔfǎ, qī diǎn sìshísì fēn qù jiàoshì, bā diǎn shàngkè.",
+      "grammarPoint": "Chuỗi thời gian liên tiếp: Giờ + Hành động; Động từ học tập: 读, 记, 复习; Động từ ly hợp: 起床, 上课",
+      "tokens": [
+        {
+          "text": "Mỗi sáng 6h thức dậy, 6:30 ăn sáng",
+          "hz": "我每天早上六点起床六点半吃早饭",
+          "py": "wǒ měitiān zǎoshang liù diǎn qǐchuáng liù diǎn bàn chī zǎofàn",
+          "hv": "Ngã mỗi thiên tảo thượng lục điểm khởi sàng lục điểm bán ngật tảo phạn",
+          "role": "Lịch trình sáng sớm",
+          "vn": "Sáng 6h dậy, 6 rưỡi ăn sáng",
+          "radicals": "每 = Mẫu; 起 = Tẩu; 床 = Quảng; 半 = Thập; 饭 = Thực"
+        },
+        {
+          "text": "7h đọc bài khóa nhớ từ mới ôn ngữ pháp",
+          "hz": "七点读课文记生词复习语法",
+          "py": "qī diǎn dú kèwén jì shēngcí fùxí yǔfǎ",
+          "hv": "Thất điểm độc khóa văn ký sinh từ phục tập ngữ pháp",
+          "role": "Lịch trình học tập",
+          "vn": "7 giờ đọc bài, học từ, ôn ngữ pháp",
+          "radicals": "读 = Ngôn; 记 = Ngôn; 词 = Ngôn; 复 = Phộc; 法 = Thủy"
+        },
+        {
+          "text": "7:44 đến lớp 8h vào học",
+          "hz": "七点四十四分去教室八点上课",
+          "py": "qī diǎn sìshísì fēn qù jiàoshì bā diǎn shàngkè",
+          "hv": "Thất điểm tứ thập tứ phân khứ giáo thất bát điểm thượng khóa",
+          "role": "Lịch trình đến trường",
+          "vn": "7 giờ 44 phút đến giảng đường, 8 giờ vào lớp",
+          "radicals": "分 = Đao; 教 = Phộc; 室 = Miên; 上 = Thượng; 课 = Ngôn"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "七点读课文记生词复习语法", "tag": "Lịch trình lúc 7h" },
+        { "id": "t1", "text": "我每天早上六点起床六点半吃早饭", "tag": "Lịch trình 6h - 6h30" },
+        { "id": "t3", "text": "七点四十四分去教室八点上课", "tag": "Lịch trình 7h44 - 8h" },
+        { "id": "t4", "text": "起床六点", "tag": "Bẫy trật tự giờ giấc" },
+        { "id": "t5", "text": "上课八点", "tag": "Bẫy giờ giấc sau động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["每天早上六点起床", "六点半吃早饭", "读课文记生词复习语法", "去教室", "八点上课"],
+      "wordBankPool": ["我每天早上六点起床六点半吃早饭", "七点读课文记生词复习语法", "七点四十四分去教室八点上课", "起床六点", "上课八点", "吃早饭六点半"],
+      "traps": [
+        {
+          "pattern": "早上起床六点",
+          "msg": "Lỗi trật tự thời gian: Mốc giờ giấc cụ thể bắt buộc phải đứng TRƯỚC động từ ('六点起床'), không đặt sau động từ như tiếng Việt ('thức dậy lúc 6h')."
+        }
+      ],
+      "explanation": "Câu luyện tập toàn diện về trật tự thời gian biểu trong tiếng Hán: luôn tuân thủ nguyên tắc [Thời gian trước + Động từ sau] cho từng chặng sinh hoạt[cite: 742]."
+    },
+    {
+      "id": "ontap-34",
+      "type": "anti_word_by_word",
+      "title": "Mệnh đề 休息的时候, lượng từ 一杯 và số lượng ít 一点儿",
+      "vi": "Lúc nghỉ ngơi tôi thường uống một tách café hoặc ăn một ít đồ.",
+      "zh": "休息的时候我常常喝一杯咖啡吃一点儿东西",
+      "standardTrans": "休息的时候我常常喝一杯咖啡吃一点儿东西",
+      "pinyin": "Xiūxi de shíhou, wǒ chángcháng hē yì bēi kāfēi, chī yìdiǎnr dōngxi.",
+      "grammarPoint": "Mệnh đề thời gian: 休息的时候; Lượng từ đồ uống: 一杯; Cụm số lượng mờ: 吃一点儿东西",
+      "tokens": [
+        {
+          "text": "Lúc nghỉ ngơi",
+          "hz": "休息的时候",
+          "py": "xiūxi de shíhou",
+          "hv": "Hưu tức đích thời hậu",
+          "role": "Trạng ngữ mệnh đề thời gian",
+          "vn": "Khi nghỉ ngơi, giờ giải lao",
+          "radicals": "休 = Bộ nhân đứng 亻 + bộ mộc 木; 息 = Bộ tự 自 + bộ tâm 心"
+        },
+        {
+          "text": "Tôi thường uống một cốc cà phê",
+          "hz": "我常常喝一杯咖啡",
+          "py": "wǒ chángcháng hē yì bēi kāfēi",
+          "hv": "Ngã thường thường háu nhất bôi ca phê",
+          "role": "Hành động 1",
+          "vn": "Tớ hay uống một tách cà phê",
+          "radicals": "喝 = Khẩu; 杯 = Bộ mộc 木; 咖 = Khẩu; 啡 = Khẩu"
+        },
+        {
+          "text": "Ăn một chút đồ",
+          "hz": "吃一点儿东西",
+          "py": "chī yìdiǎnr dōngxi",
+          "hv": "Ngật nhất điểm nhi đông tây",
+          "role": "Hành động 2",
+          "vn": "Ăn một ít đồ ăn vặt",
+          "radicals": "吃 = Khẩu; 点 = Hỏa; 东 = Nhất; 西 = Á"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "我常常喝一杯咖啡", "tag": "Uống 1 cốc cà phê" },
+        { "id": "t1", "text": "休息的时候", "tag": "Mệnh đề lúc nghỉ ngơi" },
+        { "id": "t3", "text": "吃一点儿东西", "tag": "Ăn chút đồ" },
+        { "id": "t4", "text": "的时候休息", "tag": "Bẫy trật tự 的时候" },
+        { "id": "t5", "text": "吃有点儿东西", "tag": "Bẫy nhầm lẫn 有点儿" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["休息的时候", "常常喝一杯咖啡", "吃一点儿东西"],
+      "wordBankPool": ["休息的时候", "我常常喝一杯咖啡", "吃一点儿东西", "的时候休息", "吃有点儿东西", "一杯咖啡常常喝"],
+      "traps": [
+        {
+          "pattern": "吃有点儿东西",
+          "msg": "Lỗi phân biệt 有点儿 / 一点儿: 'Một chút/một ít đồ vật' là tân ngữ số lượng đứng sau động từ, bắt buộc dùng '一点儿' ('吃一点儿东西'), không dùng '有点儿'."
+        }
+      ],
+      "explanation": "'的时候' đứng sau động từ '休息' tạo thành trạng ngữ thời gian. '一点儿' đứng sau động từ '吃' biểu thị số lượng ít của thức ăn[cite: 742]."
+    },
+    {
+      "id": "ontap-35",
+      "type": "sentence_parsing",
+      "title": "Mốc thời gian 下课后, phủ định thói quen 不睡觉 và liên từ trần thuật 或者",
+      "vi": "Sau khi tan học tôi thường đến nhà ăn ăn cơm trưa. Buổi trưa tôi không ngủ, tôi thường đến thư viện xem sách hoặc nói chuyện với bạn bè.",
+      "zh": "下课后我常常去食堂吃午饭中午我不睡觉我常常去图书馆看书或者跟朋友聊天儿",
+      "standardTrans": "下课后我常常去食堂吃午饭中午我不睡觉我常常去图书馆看书或者跟朋友聊天儿",
+      "pinyin": "Xiàkè hòu wǒ chángcháng qù shítáng chī wǔfàn. Zhōngwǔ wǒ bù shuìjiào, wǒ chángcháng qù túshūguǎn kànshū huòzhě gēn péngyou liáotiānr.",
+      "grammarPoint": "Thời điểm sau sự kiện: 下课后; Liên động: 去食堂吃午饭; Phủ định thói quen: 不睡觉; Liên từ trần thuật: 或者; Đồng hành: 跟朋友聊天儿",
+      "tokens": [
+        {
+          "text": "Sau khi tan học thường đến nhà ăn ăn cơm trưa",
+          "hz": "下课后我常常去食堂吃午饭",
+          "py": "xiàkè hòu wǒ chángcháng qù shítáng chī wǔfàn",
+          "hv": "Hạ khóa hậu ngã thường thường khứ thực đường ngật ngọ phạn",
+          "role": "Lịch trình sau khi tan lớp",
+          "vn": "Tan học xong tớ hay tới căng tin ăn trưa",
+          "radicals": "下 = Hạ; 课 = Ngôn; 后 = Hậu; 食 = Thực; 堂 = Thổ; 午 = Ngọ"
+        },
+        {
+          "text": "Buổi trưa tôi không ngủ",
+          "hz": "中午我不睡觉",
+          "py": "zhōngwǔ wǒ bù shuìjiào",
+          "hv": "Trung ngọ ngã bất thụy giác",
+          "role": "Thói quen buổi trưa",
+          "vn": "Trưa tôi không có thói quen ngủ trưa",
+          "radicals": "中 = Trung; 睡 = Mục; 觉 = Kiến"
+        },
+        {
+          "text": "Thường đến thư viện đọc sách hoặc trò chuyện với bạn",
+          "hz": "我常常去图书馆看书或者跟朋友聊天儿",
+          "py": "wǒ chángcháng qù túshūguǎn kànshū huòzhě gēn péngyou liáotiānr",
+          "hv": "Ngã thường thường khứ đồ thư quán khán thư hoặc giả cân bằng hữu liêu thiên nhi",
+          "role": "Hoạt động buổi trưa (kèm liên từ 或者)",
+          "vn": "Tớ thường đến thư viện đọc sách hoặc tán gẫu với bạn",
+          "radicals": "图 = Vi; 或 = Qua; 跟 = Túc; 聊 = Nhĩ"
+        }
+      ],
+      "tiles": [
+        { "id": "t2", "text": "中午我不睡觉", "tag": "Thói quen không ngủ trưa" },
+        { "id": "t1", "text": "下课后我常常去食堂吃午饭", "tag": "Lịch trình sau tan học" },
+        { "id": "t3", "text": "我常常去图书馆看书或者跟朋友聊天儿", "tag": "Hoạt động thư viện" },
+        { "id": "t4", "text": "后下课", "tag": "Bẫy trật tự 后" },
+        { "id": "t5", "text": "还是跟朋友聊天儿", "tag": "Bẫy liên từ 还是" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["下课后", "去食堂吃午饭", "中午我不睡觉", "去图书馆看书或者跟朋友聊天儿"],
+      "wordBankPool": ["下课后我常常去食堂吃午饭", "中午我不睡觉", "我常常去图书馆看书或者跟朋友聊天儿", "后下课", "还是跟朋友聊天儿", "去吃午饭食堂"],
+      "traps": [
+        {
+          "pattern": "后下课",
+          "msg": "Lỗi cấu trúc thời gian: Từ '后 / 以后' (sau khi) bắt buộc phải đứng SAU sự việc: '下课后' (tan học xong), không đặt trước."
+        },
+        {
+          "pattern": "还是跟朋友",
+          "msg": "Lỗi liên từ: Lựa chọn trong câu kể trần thuật bắt buộc dùng '或者', không dùng '还是'."
+        }
+      ],
+      "explanation": "Câu dài tổng hợp khép lại toàn bộ bài kiểm tra HSK 2: vận dụng mốc thời gian '下课后', câu liên động nơi chốn, thói quen phủ định '不睡觉', và liên từ lựa chọn '或者' kết hợp giới từ đồng hành '跟... 聊天儿'[cite: 742]."
+    }
+  ]
+}

@@ -1,0 +1,598 @@
+{
+  "lessonId": "b05",
+  "lessonTitle": "第5课: 我听了钢琴协奏曲《黄河》",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "经历 vs 经验",
+        "py": "jīnglì vs jīngyàn",
+        "note": "经历 vừa là động từ vừa là danh từ, nhấn mạnh quá trình bản thân đã từng đích thân trải qua hoặc việc từng trải; 经验 chỉ là danh từ, nhấn mạnh tri thức, kỹ năng hoặc vốn hiểu biết tích lũy được sau khi làm việc."
+      },
+      {
+        "word": "过去 vs 经过",
+        "py": "guòqù vs jīngguò",
+        "note": "过去 chỉ thời gian trong quá khứ hoặc động tác rời xa vị trí người nói; 经过 chỉ quá trình diễn biến của sự việc hoặc động tác đi ngang qua một địa điểm cụ thể."
+      },
+      {
+        "word": "中药 vs 中成药",
+        "py": "zhōngyào vs zhōngchéngyào",
+        "note": "中药 chỉ chung thuốc Đông y nói chung (thường là thang thuốc bắc cần sắc uống); 中成药 là thuốc Đông y đã được điều chế thành phẩm tiện dùng (dạng viên hoàn, cao, nước)."
+      }
+    ],
+    "grammarTips": [
+      "Trợ từ động thái 了 biểu thị động tác hoàn thành: S + V + 了 + Số lượng/Định ngữ + Tân ngữ (Ví dụ: 我买了一本书).",
+      "Câu liên động biểu thị hai hành động liên tiếp: S + V1 + 了 + O1 + 就 + V2 + O2 (Làm xong việc 1 thì làm ngay việc 2).",
+      "Trợ từ động thái 过 biểu thị trải nghiệm trong quá khứ: S + V + 过 + (Tân ngữ), mang ý nghĩa 'đã từng' làm gì trong đời.",
+      "Phủ định của động tác hoàn thành hoặc trải nghiệm: Dùng 没 / 没有 trước động từ, tuyệt đối bỏ 了 hoặc giữ nguyên 过 (没买 / 没去过)."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b05-01",
+      "type": "sentence_parsing",
+      "title": "Trợ từ động thái 了 biểu thị động tác đã hoàn thành kèm định ngữ số lượng",
+      "vi": "Hôm qua tôi đã nghe bản hòa tấu piano Hoàng Hà.",
+      "zh": "昨天我听了钢琴协奏曲黄河",
+      "standardTrans": "昨天我听了钢琴协奏曲黄河",
+      "pinyin": "Zuótiān wǒ tīng le gāngqín xiézòuqǔ Huánghé",
+      "grammarPoint": "S + V + 了 + Định ngữ + Tân ngữ (biểu thị động tác nghe đã hoàn tất)",
+      "tokens": [
+        {
+          "text": "đã nghe",
+          "hz": "听了",
+          "py": "tīng le",
+          "hv": "thính liễu",
+          "role": "Động từ + Trợ từ động thái",
+          "vn": "đã lắng nghe xong",
+          "radicals": "听 = Bộ khẩu 口 + chữ cân 斤; 了 = Bộ liễu 了"
+        },
+        {
+          "text": "đàn piano",
+          "hz": "钢琴",
+          "py": "gāngqín",
+          "hv": "cương cầm",
+          "role": "Định ngữ",
+          "vn": "đàn dương cầm, đàn piano",
+          "radicals": "钢 = Bộ kim 钅; 琴 = Bộ ngọc 王"
+        },
+        {
+          "text": "bản hòa tấu",
+          "hz": "协奏曲",
+          "py": "xiézòuqǔ",
+          "hv": "hiệp tấu khúc",
+          "role": "Trung tâm ngữ tân ngữ",
+          "vn": "khúc hòa tấu, bản hiệp tấu",
+          "radicals": "协 = Bộ thập 十; 奏 = Bộ đại 大; 曲 = Bộ viết 曰"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "昨天我", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "黄河", "tag": "Danh từ riêng" },
+        { "id": "t3", "text": "听了", "tag": "Động từ" },
+        { "id": "t4", "text": "钢琴协奏曲", "tag": "Tân ngữ" },
+        { "id": "t5", "text": "过", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t4", "t2"],
+      "requiredKeywordsZh": ["昨天", "听了", "钢琴协奏曲", "黄河"],
+      "wordBankPool": ["过", "昨天我", "黄河", "钢琴协奏曲", "听了"],
+      "traps": [
+        {
+          "pattern": "听过钢琴",
+          "msg": "Lỗi phân biệt 了 và 过: Câu xác định rõ mốc thời gian hôm qua (昨天) tường thuật một hành động cụ thể đã thực hiện xong nên dùng 了, không dùng 过."
+        },
+        {
+          "pattern": "听钢琴了",
+          "msg": "Lỗi vị trí trợ từ động thái: Trợ từ động thái 了 biểu thị động tác hoàn thành bắt buộc phải đứng ngay sau động từ 听, không đặt ở cuối câu khi tân ngữ có định ngữ dài."
+        }
+      ],
+      "explanation": "Khi tân ngữ có định ngữ phức tạp (như tên tác phẩm 钢琴协奏曲《黄河》), trợ từ động thái 了 bắt buộc đặt ngay sau động từ 听 để chỉ hành động đã xảy ra trong quá khứ."
+    },
+    {
+      "id": "b05-02",
+      "type": "anti_word_by_word",
+      "title": "Phủ định của động tác hoàn thành trong quá khứ với 没",
+      "vi": "Hôm qua tôi không đi xem phim.",
+      "zh": "昨天我没去看电影",
+      "standardTrans": "昨天我没去看电影",
+      "pinyin": "Zuótiān wǒ méi qù kàn diànyǐng",
+      "grammarPoint": "Phủ định động tác đã hoàn thành: S + 没 / 没有 + V (Tuyệt đối KHÔNG có 了)",
+      "tokens": [
+        {
+          "text": "không đi",
+          "hz": "没去",
+          "py": "méi qù",
+          "hv": "một khứ",
+          "role": "Trạng từ phủ định + Động từ 1",
+          "vn": "chưa đi, không đi",
+          "radicals": "没 = Bộ thủy 氵; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "xem phim",
+          "hz": "看电影",
+          "py": "kàn diànyǐng",
+          "hv": "khán điện ảnh",
+          "role": "Động từ 2 + Tân ngữ",
+          "vn": "xem phim điện ảnh",
+          "radicals": "看 = Bộ mục 目; 电 = Bộ điền 田; 影 = Bộ sam 彡"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "昨天", "tag": "Thời gian" },
+        { "id": "t2", "text": "看电影", "tag": "Động tân" },
+        { "id": "t3", "text": "我没去", "tag": "Chủ vị phủ định" },
+        { "id": "t4", "text": "了", "tag": "Bẫy ngữ pháp" },
+        { "id": "t5", "text": "不去", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t2"],
+      "requiredKeywordsZh": ["昨天", "没去", "看电影"],
+      "wordBankPool": ["看电影", "不去", "昨天", "了", "我没去"],
+      "traps": [
+        {
+          "pattern": "没去看了电影",
+          "msg": "Lỗi cấm kỵ cốt lõi: Trong câu phủ định hành động bằng 没 hoặc 没有, tuyệt đối KHÔNG được dùng trợ từ 了."
+        },
+        {
+          "pattern": "不去看电影",
+          "msg": "Lỗi phân biệt 不 và 没: Phủ định hành động đã xảy ra trong quá khứ (昨天) bắt buộc dùng 没, không dùng 不."
+        }
+      ],
+      "explanation": "Để phủ định hành vi trong quá khứ, tiếng Hán dùng phó từ 没 hoặc 没有 đặt trước động từ, đồng thời lược bỏ hoàn toàn trợ từ động thái 了."
+    },
+    {
+      "id": "b05-03",
+      "type": "sentence_parsing",
+      "title": "Trợ từ động thái 过 biểu thị kinh nghiệm đã từng trải qua",
+      "vi": "Trước đây bạn đã từng đến Trung Quốc chưa?",
+      "zh": "你以前去过中国吗",
+      "standardTrans": "你以前去过中国吗",
+      "pinyin": "Nǐ yǐqián qù guo Zhōngguó ma",
+      "grammarPoint": "S + Trạng ngữ thời gian (以前) + V + 过 + Tân ngữ + 吗",
+      "tokens": [
+        {
+          "text": "trước đây",
+          "hz": "以前",
+          "py": "yǐqián",
+          "hv": "dĩ tiền",
+          "role": "Trạng ngữ thời gian",
+          "vn": "ngày trước, trước kia",
+          "radicals": "以 = Bộ nhân 人; 前 = Bộ đao 刂"
+        },
+        {
+          "text": "đã từng đi",
+          "hz": "去过",
+          "py": "qù guo",
+          "hv": "khứ quá",
+          "role": "Động từ + Trợ từ động thái 过",
+          "vn": "từng đi tới nơi nào đó",
+          "radicals": "去 = Bộ khứ 去; 过 = Bộ quai xước 辶"
+        },
+        {
+          "text": "Trung Quốc",
+          "hz": "中国",
+          "py": "Zhōngguó",
+          "hv": "Trung Quốc",
+          "role": "Tân ngữ nơi chốn",
+          "vn": "nước Trung Quốc",
+          "radicals": "中 = Bộ cổn 丨; 国 = Bộ vi 囗"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你以前", "tag": "Chủ ngữ + Thời gian" },
+        { "id": "t2", "text": "中国吗", "tag": "Tân ngữ + Nghi vấn" },
+        { "id": "t3", "text": "去过", "tag": "Động từ" },
+        { "id": "t4", "text": "去了", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t2"],
+      "requiredKeywordsZh": ["以前", "去过", "中国吗"],
+      "wordBankPool": ["去过", "中国吗", "去了", "你以前"],
+      "traps": [
+        {
+          "pattern": "去中国了吗",
+          "msg": "Lỗi sai sắc thái nghĩa: 去了...吗 hỏi về hành động vừa mới thực hiện gần đây; hỏi về trải nghiệm từng có trong đời bắt buộc dùng động thái 去过...吗."
+        },
+        {
+          "pattern": "去过吗中国",
+          "msg": "Lỗi đảo trật tự từ: Tân ngữ chỉ địa điểm 中国 bắt buộc phải đặt sau cụm 去过 và đứng trước trợ từ nghi vấn 吗."
+        }
+      ],
+      "explanation": "Trợ từ động thái 过 đặt ngay sau động từ 去 để nhấn mạnh trải nghiệm từng xảy ra trong quá khứ và không còn tiếp diễn ở hiện tại."
+    },
+    {
+      "id": "b05-04",
+      "type": "sentence_parsing",
+      "title": "Câu liên động biểu thị hai hành động liên tiếp với 了...就...",
+      "vi": "Ăn cơm tối xong tôi sẽ đến tìm bạn ngay.",
+      "zh": "吃了晚饭我就去找你",
+      "standardTrans": "吃了晚饭我就去找你",
+      "pinyin": "Chī le wǎnfàn wǒ jiù qù zhǎo nǐ",
+      "grammarPoint": "V1 + 了 + O1 + 就 + V2 + O2 (Hoàn thành hành động 1 thì thực hiện ngay hành động 2)",
+      "tokens": [
+        {
+          "text": "ăn cơm tối xong",
+          "hz": "吃了晚饭",
+          "py": "chī le wǎnfàn",
+          "hv": "ngật liễu vãn phạn",
+          "role": "V1 + 了 + Tân ngữ 1",
+          "vn": "ăn xong bữa cơm tối",
+          "radicals": "吃 = Bộ khẩu 口; 晚 = Bộ nhật 日; 饭 = Bộ thực 饣"
+        },
+        {
+          "text": "sẽ đi tìm bạn",
+          "hz": "我就去找你",
+          "py": "wǒ jiù qù zhǎo nǐ",
+          "hv": "ngã tựu khứ hảo nhĩ",
+          "role": "Chủ ngữ + Phó từ + V2 + Tân ngữ 2",
+          "vn": "tôi liền đi tìm bạn",
+          "radicals": "就 = Bộ uông 尢; 找 = Bộ thủ 扌; 你 = Bộ nhân đứng 亻"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "晚饭", "tag": "Danh từ" },
+        { "id": "t2", "text": "吃了", "tag": "Động từ + 了" },
+        { "id": "t3", "text": "去找你", "tag": "Vị ngữ 2" },
+        { "id": "t4", "text": "我就", "tag": "Chủ ngữ + Phó từ" },
+        { "id": "t5", "text": "再", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t4", "t3"],
+      "requiredKeywordsZh": ["吃了晚饭", "我就", "去找你"],
+      "wordBankPool": ["去找你", "再", "吃了", "我就", "晚饭"],
+      "traps": [
+        {
+          "pattern": "吃完饭再去",
+          "msg": "Lỗi chọn phó từ liên kết: Kết cấu hai hành vi nối tiếp liên tục trong thời gian ngắn chuẩn của bài là V1 + 了 + 就 + V2, không dùng 再."
+        },
+        {
+          "pattern": "吃晚饭了",
+          "msg": "Lỗi vị trí của 了: Trong phân câu điều kiện trước của chuỗi hành động liên tiếp, 了 phải đứng liền sau động từ 吃了晚饭, không đặt ở cuối phân câu."
+        }
+      ],
+      "explanation": "Cấu trúc V1 + 了 + 就 + V2 dùng để biểu đạt hai hành vi xảy ra nối tiếp nhau một cách chặt chẽ. Sau khi việc ăn cơm tối xong xuôi thì lập tức chuyển sang việc đi tìm bạn."
+    },
+    {
+      "id": "b05-05",
+      "type": "anti_word_by_word",
+      "title": "Bổ ngữ động lượng 次 kết hợp trợ từ động thái 过",
+      "vi": "Tôi đã uống thuốc Đông y hai lần rồi.",
+      "zh": "我吃过两次中药",
+      "standardTrans": "我吃过两次中药",
+      "pinyin": "Wǒ chī guo liǎng cì zhōngyào",
+      "grammarPoint": "V + 过 + Bổ ngữ động lượng (两次) + Tân ngữ sự vật (中药)",
+      "tokens": [
+        {
+          "text": "đã từng uống/ăn",
+          "hz": "吃过",
+          "py": "chī guo",
+          "hv": "ngật quá",
+          "role": "Động từ + Trợ từ động thái",
+          "vn": "đã từng dùng, từng uống thuốc",
+          "radicals": "吃 = Bộ khẩu 口; 过 = Bộ quai xước 辶"
+        },
+        {
+          "text": "hai lần",
+          "hz": "两次",
+          "py": "liǎng cì",
+          "hv": "lưỡng thứ",
+          "role": "Bổ ngữ động lượng",
+          "vn": "hai lượt, hai lần",
+          "radicals": "两 = Bộ nhất 一; 次 = Bộ khiếm 欠"
+        },
+        {
+          "text": "thuốc Đông y",
+          "hz": "中药",
+          "py": "zhōngyào",
+          "hv": "Trung dược",
+          "role": "Tân ngữ",
+          "vn": "thuốc y học cổ truyền phương Đông",
+          "radicals": "中 = Bộ cổn 丨; 药 = Bộ thảo 艹"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "中药", "tag": "Danh từ" },
+        { "id": "t3", "text": "吃过", "tag": "Động từ" },
+        { "id": "t4", "text": "两次", "tag": "Động lượng" },
+        { "id": "t5", "text": "喝了", "tag": "Bẫy ngữ pháp" },
+        { "id": "t6", "text": "二次", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t4", "t2"],
+      "requiredKeywordsZh": ["吃过", "两次", "中药"],
+      "wordBankPool": ["两次", "喝了", "吃过", "二次", "我", "中药"],
+      "traps": [
+        {
+          "pattern": "喝中药两次",
+          "msg": "Lỗi dùng từ và trật tự: Tiếng Hán dùng 吃药 (uống thuốc) thay vì 喝药; ngoài ra bổ ngữ động lượng chỉ tần suất 两次 bắt buộc đứng TRƯỚC tân ngữ sự vật 中药."
+        },
+        {
+          "pattern": "二次",
+          "msg": "Lỗi dùng số từ: Chỉ số lần diễn ra hành động phải dùng 两 (两次), không nói 二次."
+        }
+      ],
+      "explanation": "Trong tiếng Trung, hành động uống thuốc quy ước dùng động từ 吃 (ăn thuốc). Bổ ngữ động lượng 两次 đứng xen giữa cụm động thái 吃过 và danh từ tân ngữ 中药."
+    },
+    {
+      "id": "b05-06",
+      "type": "sentence_parsing",
+      "title": "Phó từ chỉ thời gian 已经 kết hợp động tác hoàn thành",
+      "vi": "Anh ấy đã nằm viện một tuần rồi.",
+      "zh": "他已经住了一个星期院了",
+      "standardTrans": "他已经住了一个星期院了",
+      "pinyin": "Tā yǐjīng zhù le yí gè xīngqī yuàn le",
+      "grammarPoint": "Động từ li hợp mang bổ ngữ thời lượng: 住 + 了 + Thời lượng + 院 + 了",
+      "tokens": [
+        {
+          "text": "đã",
+          "hz": "已经",
+          "py": "yǐjīng",
+          "hv": "dĩ kinh",
+          "role": "Trạng ngữ thời gian",
+          "vn": "đã rồi",
+          "radicals": "已 = Bộ kỷ 己; 经 = Bộ mịch 纟"
+        },
+        {
+          "text": "ở, nằm viện",
+          "hz": "住",
+          "py": "zhù",
+          "hv": "trú",
+          "role": "Động từ chính",
+          "vn": "cư trú, nằm viện điều trị",
+          "radicals": "住 = Bộ nhân đứng 亻 + chữ chủ 主"
+        },
+        {
+          "text": "một tuần",
+          "hz": "一个星期",
+          "py": "yí gè xīngqī",
+          "hv": "nhất cá tinh kỳ",
+          "role": "Bổ ngữ thời lượng",
+          "vn": "khoảng thời gian một tuần lễ",
+          "radicals": "星 = Bộ nhật 日; 期 = Bộ nguyệt 月"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "他已经", "tag": "Chủ vị" },
+        { "id": "t2", "text": "一个星期", "tag": "Thời lượng" },
+        { "id": "t3", "text": "住了", "tag": "Động từ" },
+        { "id": "t4", "text": "院了", "tag": "Tân ngữ + 了" },
+        { "id": "t5", "text": "住院了一个星期", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t3", "t2", "t4"],
+      "requiredKeywordsZh": ["已经", "住了", "一个星期", "院了"],
+      "wordBankPool": ["住了", "院了", "他已经", "住院了一个星期", "一个星期"],
+      "traps": [
+        {
+          "pattern": "住院了一个星期",
+          "msg": "Lỗi động từ li hợp: 住院 là động từ li hợp, bổ ngữ thời lượng 一个星期 bắt buộc phải chèn vào giữa động từ và danh từ (住了一个星期院), không đặt sau chữ 院."
+        }
+      ],
+      "explanation": "住院 là động từ li hợp nên các thành phần bổ ngữ thời lượng và trợ từ động thái 了 phải được tách ra chèn vào giữa: 住 + 了 + 一个星期 + 院. Chữ 了 ở cuối câu biểu thị hành động vẫn đang tiếp tục."
+    },
+    {
+      "id": "b05-07",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc câu hỏi chính phản với trợ từ động thái 没有",
+      "vi": "Hôm nay bạn đã uống thuốc chưa?",
+      "zh": "你今天吃药了没有",
+      "standardTrans": "你今天吃药了没有",
+      "pinyin": "Nǐ jīntiān chī yào le méiyǒu",
+      "grammarPoint": "Câu hỏi chính phản của động thái hoàn thành: S + V + Tân ngữ + 了 + 没有",
+      "tokens": [
+        {
+          "text": "uống thuốc",
+          "hz": "吃药",
+          "py": "chī yào",
+          "hv": "ngật dược",
+          "role": "Động từ + Tân ngữ",
+          "vn": "uống thuốc, dùng thuốc",
+          "radicals": "吃 = Bộ khẩu 口; 药 = Bộ thảo 艹"
+        },
+        {
+          "text": "chưa",
+          "hz": "没有",
+          "py": "méiyǒu",
+          "hv": "một hữu",
+          "role": "Thành phần nghi vấn chính phản",
+          "vn": "chưa, hay chưa",
+          "radicals": "没 = Bộ thủy 氵; 有 = Bộ nguyệt 月"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "吃药了", "tag": "Động tân + 了" },
+        { "id": "t2", "text": "你今天", "tag": "Chủ ngữ + Thời gian" },
+        { "id": "t3", "text": "没有", "tag": "Nghi vấn" },
+        { "id": "t4", "text": "吗没有", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t2", "t1", "t3"],
+      "requiredKeywordsZh": ["今天", "吃药了", "没有"],
+      "wordBankPool": ["吃药了", "吗没有", "你今天", "没有"],
+      "traps": [
+        {
+          "pattern": "吃药了吗没有",
+          "msg": "Lỗi thừa từ nghi vấn: Đã dùng 没有 ở cuối câu thì tuyệt đối không được thêm trợ từ 吗."
+        },
+        {
+          "pattern": "喝药了",
+          "msg": "Lỗi dùng sai động từ: Thói quen diễn đạt chuẩn của tiếng Hán đối với việc uống thuốc là 吃药, không dùng 喝药."
+        }
+      ],
+      "explanation": "Mẫu câu hỏi chính phản để kiểm tra xem một động tác đã hoàn tất hay chưa có dạng V + O + 了 + 没有. Cuối câu không được dùng thêm trợ từ 吗."
+    },
+    {
+      "id": "b05-08",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc giả định 只要...就... diễn đạt phương pháp chữa trị",
+      "vi": "Tôi không cần châm cứu, chỉ cần mát-xa là được rồi.",
+      "zh": "我不要针灸只要按摩就行了",
+      "standardTrans": "我不要针灸只要按摩就行了",
+      "pinyin": "Wǒ bú yào zhēnjiǔ, zhǐyào ànmó jiù xíng le",
+      "grammarPoint": "Cặp liên từ điều kiện đủ: 只要...就... (Chỉ cần... là được...)",
+      "tokens": [
+        {
+          "text": "châm cứu",
+          "hz": "针灸",
+          "py": "zhēnjiǔ",
+          "hv": "châm cứu",
+          "role": "Tân ngữ 1",
+          "vn": "phương pháp châm cứu Đông y",
+          "radicals": "针 = Bộ kim 钅; 灸 = Bộ hỏa 火"
+        },
+        {
+          "text": "chỉ cần mát-xa",
+          "hz": "只要按摩",
+          "py": "zhǐyào ànmó",
+          "hv": "chỉ yếu án ma",
+          "role": "Liên từ + Vị ngữ 2",
+          "vn": "chỉ cần xoa bóp bấm huyệt",
+          "radicals": "只 = Bộ khẩu 口; 按 = Bộ thủ 扌; 摩 = Bộ ma 手"
+        },
+        {
+          "text": "là được rồi",
+          "hz": "就行了",
+          "py": "jiù xíng le",
+          "hv": "tựu hành liễu",
+          "role": "Phó từ + Động từ + Trợ từ",
+          "vn": "thì được rồi, là ổn rồi",
+          "radicals": "就 = Bộ uông 尢; 行 = Bộ hành 行"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "我不要", "tag": "Chủ vị phủ định" },
+        { "id": "t2", "text": "针灸", "tag": "Danh từ" },
+        { "id": "t3", "text": "只要按摩", "tag": "Liên từ + Động từ" },
+        { "id": "t4", "text": "就行了", "tag": "Kết quả" },
+        { "id": "t5", "text": "才行", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["不要针灸", "只要按摩", "就行了"],
+      "wordBankPool": ["只要按摩", "针灸", "才行", "我不要", "就行了"],
+      "traps": [
+        {
+          "pattern": "只要按摩才行",
+          "msg": "Lỗi lẫn lộn cặp liên từ: 只要 đi đôi với 就 biểu thị điều kiện đủ; 只有 mới đi đôi với 才 biểu thị điều kiện cần duy nhất."
+        },
+        {
+          "pattern": "不行针灸",
+          "msg": "Lỗi dùng từ biểu đạt: Để từ chối tiếp nhận trị liệu dùng 不要针灸, không dùng 不行."
+        }
+      ],
+      "explanation": "Cặp liên từ 只要...就... biểu thị điều kiện đầy đủ: chỉ cần đáp ứng điều kiện xoa bóp (按摩) là đã đạt được kết quả mong muốn (行了)."
+    },
+    {
+      "id": "b05-09",
+      "type": "sentence_parsing",
+      "title": "Bắt mạch và kê đơn trong khám chữa bệnh Đông y",
+      "vi": "Bác sĩ Đông y bắt mạch cho tôi, sau đó kê cho tôi một đơn thuốc.",
+      "zh": "中医给我摸了脉然后给我开了一个药方",
+      "standardTrans": "中医给我摸了脉然后给我开了一个药方",
+      "pinyin": "Zhōngyī gěi wǒ mō le mài, ránhòu gěi wǒ kāi le yí gè yàofāng",
+      "grammarPoint": "Kết cấu giới từ: 给 + Người + Động từ; 連 từ chỉ trình tự: 然后",
+      "tokens": [
+        {
+          "text": "bác sĩ Đông y",
+          "hz": "中医",
+          "py": "zhōngyī",
+          "hv": "Trung y",
+          "role": "Chủ ngữ",
+          "vn": "thầy thuốc Đông y",
+          "radicals": "中 = Bộ cổn 丨; 医 = Bộ phương 匚"
+        },
+        {
+          "text": "bắt mạch",
+          "hz": "摸了脉",
+          "py": "mō le mài",
+          "hv": "mạc liễu mạch",
+          "role": "Động từ + 了 + Tân ngữ",
+          "vn": "bắt mạch, sờ mạch đập",
+          "radicals": "摸 = Bộ thủ 扌; 脉 = Bộ nguyệt 月"
+        },
+        {
+          "text": "kê một đơn thuốc",
+          "hz": "开了一个药方",
+          "py": "kāi le yí gè yàofāng",
+          "hv": "khai liễu nhất cá dược phương",
+          "role": "Động từ + 了 + Cụm tân ngữ",
+          "vn": "viết ra một toa thuốc",
+          "radicals": "开 = Bộ củng 廾; 药 = Bộ thảo 艹; 方 = Bộ phương 方"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "中医给我", "tag": "Chủ ngữ + Giới tân" },
+        { "id": "t2", "text": "摸了脉", "tag": "Động tân" },
+        { "id": "t3", "text": "然后给我", "tag": "Liên từ + Giới tân" },
+        { "id": "t4", "text": "开了一个药方", "tag": "Vị ngữ 2" },
+        { "id": "t5", "text": "写了一个药方", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4"],
+      "requiredKeywordsZh": ["中医", "摸了脉", "然后", "开了一个药方"],
+      "wordBankPool": ["开了一个药方", "然后给我", "写了一个药方", "摸了脉", "中医给我"],
+      "traps": [
+        {
+          "pattern": "写了一个药方",
+          "msg": "Lỗi kết hợp từ ngữ y học: Kê đơn thuốc trong tiếng Hán dùng động từ 开 (开药方), không nói 写药方."
+        },
+        {
+          "pattern": "摸脉我",
+          "msg": "Lỗi ngữ tự giới từ: Hành động thực hiện cho đối tượng nào phải dùng cụm 给 + Người đặt trước động từ (给我摸脉)."
+        }
+      ],
+      "explanation": "Câu trần thuật hai hành động diễn ra theo trình tự thời gian qua liên từ 然后. Cả hai động từ 摸 và 开 đều đi kèm trợ từ 了 để thể hiện hành động đã hoàn tất trọn vẹn."
+    },
+    {
+      "id": "b05-10",
+      "type": "anti_word_by_word",
+      "title": "Cấu trúc bổ ngữ khả năng và kết quả với 好",
+      "vi": "Bệnh của bạn uống thuốc Đông y sẽ có tác dụng hơn.",
+      "zh": "你的病吃中药更有用",
+      "standardTrans": "你的病吃中药更有用",
+      "pinyin": "Nǐ de bìng chī zhōngyào gèng yǒuyòng",
+      "grammarPoint": "Chủ đề câu: 你的病 + Phương thức hành động: 吃中药 + Phó từ so sánh hơn: 更有用",
+      "tokens": [
+        {
+          "text": "bệnh của bạn",
+          "hz": "你的病",
+          "py": "nǐ de bìng",
+          "hv": "nhĩ đích bệnh",
+          "role": "Chủ đề câu",
+          "vn": "căn bệnh, chứng bệnh của cậu",
+          "radicals": "病 = Bộ nạch 疒"
+        },
+        {
+          "text": "uống thuốc Đông y",
+          "hz": "吃中药",
+          "py": "chī zhōngyào",
+          "hv": "ngật Trung dược",
+          "role": "Vị ngữ hành động",
+          "vn": "dùng thuốc thảo dược Đông y",
+          "radicals": "吃 = Bộ khẩu 口; 药 = Bộ thảo 艹"
+        },
+        {
+          "text": "hiệu quả hơn",
+          "hz": "更有用",
+          "py": "gèng yǒuyòng",
+          "hv": "canh hữu dụng",
+          "role": "Phó từ + Tính từ",
+          "vn": "có tác dụng tốt hơn, hiệu quả hơn",
+          "radicals": "更 = Bộ viết 曰; 用 = Bộ dụng 用"
+        }
+      ],
+      "tiles": [
+        { "id": "t1", "text": "你的病", "tag": "Chủ đề" },
+        { "id": "t2", "text": "吃中药", "tag": "Động tân" },
+        { "id": "t3", "text": "更有用", "tag": "Vị ngữ" },
+        { "id": "t4", "text": "喝中药", "tag": "Bẫy ngữ pháp" }
+      ],
+      "targetOrder": ["t1", "t2", "t3"],
+      "requiredKeywordsZh": ["你的病", "吃中药", "更有用"],
+      "wordBankPool": ["喝中药", "吃中药", "更有用", "你的病"],
+      "traps": [
+        {
+          "pattern": "喝中药",
+          "msg": "Lỗi dùng từ theo thói quen tiếng Việt: Uống thuốc nói chung trong tiếng Hán bắt buộc dùng động từ 吃 (吃中药), không dịch bồi thành 喝中药."
+        },
+        {
+          "pattern": "很更有效",
+          "msg": "Lỗi thừa phó từ: Đã dùng 更 để so sánh hơn thì tuyệt đối không kết hợp với 很 đứng trước."
+        }
+      ],
+      "explanation": "Câu đưa đối tượng bệnh tình 你的病 lên làm chủ đề ở đầu câu. Vị ngữ dùng 吃中药 kết hợp cụm tính từ 更有用 để biểu thị mức độ chuyển biến khả quan hơn."
+    }
+  ]
+}

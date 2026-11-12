@@ -1,0 +1,1374 @@
+{
+  "lessonId": "b10",
+  "lessonTitle": "第10课: 会议厅的门开着呢",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "倒 (dào) vs 倒 (dǎo)",
+        "py": "dào vs dǎo",
+        "note": "倒 /dào/ là động từ mang nghĩa rót nước, đổ rác (倒水, 倒垃圾) hoặc phó từ chỉ ý nhượng bộ, trái ngược (他倒是自己来了); 倒 /dǎo/ là động từ ngã, đổ sập (摔倒, 刮倒大树)."
+      },
+      {
+        "word": "左右 vs 大概 / 大约",
+        "py": "zuǒyòu vs dàgài / dàyuē",
+        "note": "左右 là từ ước lượng đứng SAU số từ hoặc cụm thời lượng (三十分钟左右, 二十岁左右); 大概/大约 là phó từ ước lượng đứng TRƯỚC số từ (大约有两千人, 大概三点)."
+      },
+      {
+        "word": "不停 vs 不断",
+        "py": "bùtíng vs búduàn",
+        "note": "不停 là phó từ thường kết hợp với trợ từ 地 đứng trước động từ (不停地哭, 不停地下着) hoặc sau động từ kết hợp 个 (笑个不停); 不断 nhấn mạnh hành động hoặc quá trình phát triển diễn ra liên tục không gián đoạn."
+      }
+    ],
+    "grammarTips": [
+      "Động từ + 着 biểu thị sự tiếp diễn của động tác hoặc trạng thái tĩnh: S + V + 着 (+ Tân ngữ) + 呢 (Ví dụ: 门开着呢, 戴着眼镜, 挂着大红灯笼).",
+      "Câu tồn hiện trạng thái: Từ chỉ nơi chốn (làm chủ ngữ) + V + 着 + Lượng từ + Danh từ (Ví dụ: 桌子上放着一条新领带, 旅馆门口停着许多汽车).",
+      "V1 + 着 + V2: Động tác 1 làm phương thức hoặc trạng thái tư thế khi thực hiện động tác 2 (Ví dụ: 戴着耳机听音乐, 坐着谈话, 躺着看书).",
+      "Hình thức phủ định của động tác tiếp diễn: S + 没(有) + V + 着 (Tuyệt đối không dùng 不).",
+      "Hình thức nghi vấn chính phản của động tác tiếp diễn: S + V + 着 + (Tân ngữ) + 没有?"
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b10-01",
+      "type": "sentence_parsing",
+      "title": "Trợ từ động thái 着 biểu thị trạng thái đang tiếp diễn với 正在",
+      "vi": "A: Chiếc máy tính kia đâu? B: Trương Đông đang dùng đấy, cậu dùng chiếc này đi.",
+      "zh": "那台电脑呢张东正在用着呢你用这台吧",
+      "standardTrans": "那台电脑呢张东正在用着呢你用这台吧",
+      "pinyin": "Nà tái diànnǎo ne? Zhāng Dōng zhèngzài yòng zhe ne, nǐ yòng zhè tái ba",
+      "grammarPoint": "正在 + V + 着 + 呢 (đang trong quá trình sử dụng tiếp diễn)",
+      "tokens": [
+        {
+          "text": "chiếc máy tính kia",
+          "hz": "那台电脑",
+          "py": "nà tái diànnǎo",
+          "hv": "na đài điện não",
+          "role": "Chủ đề câu hỏi",
+          "vn": "chiếc máy vi tính đằng kia",
+          "radicals": "台 = Bộ khẩu 口; 电 = Bộ điền 田; 脑 = Bộ nhục 月"
+        },
+        {
+          "text": "đang dùng đấy",
+          "hz": "正在用着呢",
+          "py": "zhèngzài yòng zhe ne",
+          "hv": "chính tại dụng trước ni",
+          "role": "Trạng ngữ + Động từ + Trợ từ",
+          "vn": "đang trong trạng thái sử dụng",
+          "radicals": "正 = Bộ chỉ 止; 用 = Bộ dụng 用; 着 = Bộ mục 目; 呢 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "张东正在用着呢",
+          "tag": "Vị ngữ tiếp diễn"
+        },
+        {
+          "id": "t2",
+          "text": "那台电脑呢",
+          "tag": "Chủ đề nghi vấn"
+        },
+        {
+          "id": "t3",
+          "text": "你用这台吧",
+          "tag": "Lời đề xuất"
+        },
+        {
+          "id": "t4",
+          "text": "用了呢",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "那台电脑呢",
+        "正在用着呢",
+        "你用这台吧"
+      ],
+      "wordBankPool": [
+        "那台电脑呢",
+        "用了呢",
+        "你用这台吧",
+        "张东正在用着呢"
+      ],
+      "traps": [
+        {
+          "pattern": "正在用了呢",
+          "msg": "Lỗi trợ từ động thái: Biểu thị trạng thái đang tiếp tục duy trì dùng 着 (正在用着呢), không dùng trợ từ hoàn thành 了."
+        },
+        {
+          "pattern": "那台用电脑",
+          "msg": "Lỗi định ngữ lượng từ: Cụm chỉ thị lượng từ 那台 bổ nghĩa cho danh từ 电脑 (那台电脑), không đặt động từ chen vào."
+        }
+      ],
+      "explanation": "Cấu trúc 正在 + V + 着 + 呢 nhấn mạnh hành động hoặc trạng thái đang duy trì tiếp diễn ở hiện tại. Phân câu cuối dùng trợ từ ngữ khí 吧 để đưa ra lời gợi ý nhẹ nhàng."
+    },
+    {
+      "id": "b10-02",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái 得 kết hợp danh từ 气氛",
+      "vi": "Hôm nay là chủ nhật, khách đến đông như vậy, vì vậy không khí của nhà hàng vô cùng náo nhiệt.",
+      "zh": "今天星期日客人来得这么多所以饭店的气氛非常热闹",
+      "standardTrans": "今天星期日客人来得这么多所以饭店的气氛非常热闹",
+      "pinyin": "Jīntiān xīngqīrì, kèrén lái de zhème duō, suǒyǐ fàndiàn de qìfēn fēicháng rènào",
+      "grammarPoint": "V + 得 + 这么多 (Bổ ngữ trạng thái); Cặp liên từ nhân quả: (因为)...所以...",
+      "tokens": [
+        {
+          "text": "khách đến đông",
+          "hz": "客人来得这么多",
+          "py": "kèrén lái de zhème duō",
+          "hv": "khách nhân lai đắc giá ma đa",
+          "role": "Chủ vị mang bổ ngữ trạng thái",
+          "vn": "lượng khách khứa tới đông đúc mức này",
+          "radicals": "客 = Bộ miên 宀; 来 = Bộ mộc 木; 得 = Bộ xích 彳"
+        },
+        {
+          "text": "không khí của nhà hàng",
+          "hz": "饭店的气氛",
+          "py": "fàndiàn de qìfēn",
+          "hv": "phạn điếm đích khí phân",
+          "role": "Trung tâm ngữ chủ ngữ 2",
+          "vn": "bầu không khí trong quán ăn",
+          "radicals": "饭 = Bộ thực 饣; 气 = Bộ khí 气; 氛 = Bộ khí 气"
+        },
+        {
+          "text": "vô cùng náo nhiệt",
+          "hz": "非常热闹",
+          "py": "fēicháng rènào",
+          "hv": "phi thường nhiệt náo",
+          "role": "Phó từ + Tính từ vị ngữ",
+          "vn": "rất tấp nập, sôi động vui vẻ",
+          "radicals": "非 = Bộ phi 非; 热 = Bộ hỏa 灬; 闹 = Bộ môn 门"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "客人来得这么多",
+          "tag": "Nguyên nhân"
+        },
+        {
+          "id": "t2",
+          "text": "今天星期日",
+          "tag": "Thời gian"
+        },
+        {
+          "id": "t3",
+          "text": "所以饭店的气氛",
+          "tag": "Liên từ + Chủ ngữ 2"
+        },
+        {
+          "id": "t4",
+          "text": "非常热闹",
+          "tag": "Vị ngữ tính từ"
+        },
+        {
+          "id": "t5",
+          "text": "来得很许多",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1",
+        "t3",
+        "t4"
+      ],
+      "requiredKeywordsZh": [
+        "星期日",
+        "来得这么多",
+        "气氛",
+        "非常热闹"
+      ],
+      "wordBankPool": [
+        "今天星期日",
+        "非常热闹",
+        "来得很许多",
+        "所以饭店的气氛",
+        "客人来得这么多"
+      ],
+      "traps": [
+        {
+          "pattern": "来的这么多",
+          "msg": "Lỗi trợ từ kết cấu: Đứng sau động từ 来 để nối với bổ ngữ trạng thái 这么多 bắt buộc dùng 得, không dùng 的."
+        },
+        {
+          "pattern": "来得很许多",
+          "msg": "Lỗi lặp phó từ: Đã dùng đại từ chỉ mức độ 这么 thì đi trực tiếp với 多 (来得这么多), không ghép thừa chữ 很."
+        }
+      ],
+      "explanation": "Câu nguyên nhân - kết quả. Vế trước dùng bổ ngữ trạng thái 来得这么多 để giải thích căn nguyên khiến bầu không khí nhà hàng (饭店的气氛) trở nên vô cùng náo nhiệt (非常热闹)."
+    },
+    {
+      "id": "b10-03",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc V1 + 着 + V2 biểu thị phương thức hành động",
+      "vi": "A: Cô ấy đang làm gì vậy? B: Cô ấy đang đeo tai nghe nhạc.",
+      "zh": "她在干什么呢她正戴着耳机听音乐呢",
+      "standardTrans": "她在干什么呢她正戴着耳机听音乐呢",
+      "pinyin": "Tā zài gàn shénme ne? Tā zhèng dài zhe ěrjī tīng yīnyuè ne",
+      "grammarPoint": "V1 + 着 + Tân ngữ 1 + V2: 戴着耳机听音乐 (Hành động 1 làm phương thức/trạng thái cho hành động 2)",
+      "tokens": [
+        {
+          "text": "làm cái gì",
+          "hz": "干什么",
+          "py": "gàn shénme",
+          "hv": "cán thập ma",
+          "role": "Động từ + Đại từ nghi vấn",
+          "vn": "đang làm chuyện gì",
+          "radicals": "干 = Bộ can 干; 什 = Bộ nhân đứng 亻; 么 = Bộ phiệt 丿"
+        },
+        {
+          "text": "đeo tai nghe",
+          "hz": "戴着耳机",
+          "py": "dài zhe ěrjī",
+          "hv": "đới trước nhĩ cơ",
+          "role": "V1 + 着 + Tân ngữ phương thức",
+          "vn": "đang mang, gài tai nghe vào tai",
+          "radicals": "戴 = Bộ qua 戈; 耳 = Bộ nhĩ 耳; 机 = Bộ mộc 木"
+        },
+        {
+          "text": "nghe nhạc",
+          "hz": "听音乐",
+          "py": "tīng yīnyuè",
+          "hv": "thính âm nhạc",
+          "role": "Động từ chính V2 + Tân ngữ",
+          "vn": "thưởng thức âm nhạc",
+          "radicals": "听 = Bộ khẩu 口; 音 = Bộ âm 音; 乐 = Bộ phiệt 丿"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "她在干什么呢",
+          "tag": "Câu hỏi"
+        },
+        {
+          "id": "t2",
+          "text": "她正戴着耳机",
+          "tag": "Phương thức V1"
+        },
+        {
+          "id": "t3",
+          "text": "听音乐呢",
+          "tag": "Hành động chính V2"
+        },
+        {
+          "id": "t4",
+          "text": "戴了耳机",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "干什么呢",
+        "戴着耳机",
+        "听音乐呢"
+      ],
+      "wordBankPool": [
+        "她在干什么呢",
+        "戴了耳机",
+        "听音乐呢",
+        "她正戴着耳机"
+      ],
+      "traps": [
+        {
+          "pattern": "戴耳机听着",
+          "msg": "Lỗi vị trí trợ từ 着: 着 phải đứng sau động từ thứ nhất 戴 (戴着耳机) để biến hành động đeo tai nghe thành trạng thái đồng hành cho hành động nghe nhạc 听音乐."
+        },
+        {
+          "pattern": "听音乐戴着耳机",
+          "msg": "Lỗi trật tự từ: Trạng thái hoặc công cụ đi kèm (戴着耳机) luôn phải đứng TRƯỚC hành động mục đích chính (听音乐)."
+        }
+      ],
+      "explanation": "Mẫu câu liên động kinh điển V1 + 着 + V2: Động từ 1 đi kèm 着 diễn tả trạng thái hoặc tư thế đang duy trì (戴着耳机) khi thực hiện hành động chính 2 (听音乐)."
+    },
+    {
+      "id": "b10-04",
+      "type": "sentence_parsing",
+      "title": "Trạng ngữ nơi chốn kết hợp V1 + 着 + V2",
+      "vi": "A: Xin hỏi, Lý Minh và Trương Quân có nhà không? B: Bọn họ đang ngồi nói chuyện ở trong phòng.",
+      "zh": "请问李明和张军在家吗他们在房间里坐着谈话呢",
+      "standardTrans": "请问李明和张军在家吗他们在房间里坐着谈话呢",
+      "pinyin": "Qǐngwèn, Lǐ Míng hé Zhāng Jūn zài jiā ma? Tāmen zài fángjiān lǐ zuò zhe tánhuà ne",
+      "grammarPoint": "Ở đâu làm gì: 在 + Nơi chốn + V1 + 着 + V2 (坐着谈话: ngồi nói chuyện)",
+      "tokens": [
+        {
+          "text": "ở nhà không",
+          "hz": "在家吗",
+          "py": "zài jiā ma",
+          "hv": "tại gia ma",
+          "role": "Động từ nơi chốn + Trợ từ nghi vấn",
+          "vn": "có ở nhà hay không",
+          "radicals": "在 = Bộ thổ 土; 家 = Bộ miên 宀"
+        },
+        {
+          "text": "ở trong phòng",
+          "hz": "在房间里",
+          "py": "zài fángjiān lǐ",
+          "hv": "tại phòng gian lý",
+          "role": "Trạng ngữ chỉ địa điểm",
+          "vn": "ở bên trong căn phòng",
+          "radicals": "房 = Bộ hộ 户; 间 = Bộ môn 门; 里 = Bộ lý 里"
+        },
+        {
+          "text": "ngồi nói chuyện",
+          "hz": "坐着谈话呢",
+          "py": "zuò zhe tánhuà ne",
+          "hv": "tọa trước đàm thoại ni",
+          "role": "V1 + 着 + V2 + 呢",
+          "vn": "đang ngồi trò chuyện, đàm đạo",
+          "radicals": "坐 = Bộ thổ 土; 谈 = Bộ ngôn 讠; 话 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "他们在房间里",
+          "tag": "Chủ ngữ + Nơi chốn"
+        },
+        {
+          "id": "t2",
+          "text": "请问李明和张军在家吗",
+          "tag": "Câu hỏi"
+        },
+        {
+          "id": "t3",
+          "text": "坐着谈话呢",
+          "tag": "Vị ngữ liên động"
+        },
+        {
+          "id": "t4",
+          "text": "谈话在房间里",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "在家吗",
+        "房间里",
+        "坐着谈话呢"
+      ],
+      "wordBankPool": [
+        "请问李明和张军在家吗",
+        "谈话在房间里",
+        "他们在房间里",
+        "坐着谈话呢"
+      ],
+      "traps": [
+        {
+          "pattern": "谈话在房间里",
+          "msg": "Lỗi trật tự nơi chốn: Trạng ngữ nơi chốn 在房间里 bắt buộc phải đứng TRƯỚC cụm động từ 坐着谈话, không đặt sau đuôi câu như tiếng Việt."
+        },
+        {
+          "pattern": "坐了谈话",
+          "msg": "Lỗi trợ từ: Tư thế ngồi được duy trì liên tục khi nói chuyện phải dùng 坐着, không dùng 坐了."
+        }
+      ],
+      "explanation": "Trạng ngữ chỉ nơi chốn 在房间里 đứng trước cụm vị ngữ liên động 坐着谈话. Tư thế ngồi 坐着 đóng vai trò bổ trợ trạng thái cho hành vi đàm thoại 谈话."
+    },
+    {
+      "id": "b10-05",
+      "type": "sentence_parsing",
+      "title": "Câu tồn hiện chỉ trạng thái tĩnh với 放着",
+      "vi": "Trên bàn có để một chiếc ca vát mới, không biết là của ai?",
+      "zh": "桌子上放着一条新领带不知道是谁的",
+      "standardTrans": "桌子上放着一条新领带不知道是谁的",
+      "pinyin": "Zhuōzi shang fàng zhe yì tiáo xīn lǐngdài, bù zhīdào shì shéi de",
+      "grammarPoint": "Câu tồn hiện trạng thái: Nơi chốn (桌子上) + V + 着 + Lượng từ + Danh từ",
+      "tokens": [
+        {
+          "text": "đang để một chiếc",
+          "hz": "放着一条",
+          "py": "fàng zhe yì tiáo",
+          "hv": "phóng trước nhất điều",
+          "role": "Động từ + 着 + Lượng từ",
+          "vn": "đang đặt để một sợi/chiếc",
+          "radicals": "放 = Bộ phộc 攵; 条 = Bộ mộc 木"
+        },
+        {
+          "text": "cà vạt mới",
+          "hz": "新领带",
+          "py": "xīn lǐngdài",
+          "hv": "tân lãnh đới",
+          "role": "Tân ngữ sự vật tồn hiện",
+          "vn": "chiếc cà vạt mới toanh",
+          "radicals": "新 = Bộ cân 斤; 领 = Bộ hiệt 页; 带 = Bộ cân 巾"
+        },
+        {
+          "text": "không biết của ai",
+          "hz": "不知道是谁的",
+          "py": "bù zhīdào shì shéi de",
+          "hv": "bất tri đạo thị thùy đích",
+          "role": "Vị ngữ phán đoán nghi vấn",
+          "vn": "chẳng rõ là đồ của người nào",
+          "radicals": "知 = Bộ khẩu 口; 谁 = Bộ ngôn 讠"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "桌子上放着",
+          "tag": "Nơi chốn + Động từ"
+        },
+        {
+          "id": "t2",
+          "text": "一条新领带",
+          "tag": "Tân ngữ tồn hiện"
+        },
+        {
+          "id": "t3",
+          "text": "不知道是谁的",
+          "tag": "Vế nghi vấn"
+        },
+        {
+          "id": "t4",
+          "text": "放了一条",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "桌子上",
+        "放着一条",
+        "新领带",
+        "谁的"
+      ],
+      "wordBankPool": [
+        "不知道是谁的",
+        "一条新领带",
+        "放了一条",
+        "桌子上放着"
+      ],
+      "traps": [
+        {
+          "pattern": "放了一条",
+          "msg": "Lỗi câu tồn hiện: Miêu tả trạng thái đồ vật đang nằm cố định trên bàn dùng trợ từ 着 (放着), dùng 放了 sẽ nhấn mạnh động tác của người đặt xuống."
+        },
+        {
+          "pattern": "新领带一条",
+          "msg": "Lỗi ngữ tự lượng từ: Lượng từ và số từ bắt buộc đứng trước danh từ: 一条新领带, không nói 新领带一条."
+        }
+      ],
+      "explanation": "Câu tồn hiện miêu tả sự vật tồn tại khách quan. Nơi chốn 桌子上 làm chủ ngữ, theo sau là động từ 放 kết hợp trợ từ động thái 着 và tân ngữ không xác định 一条新领带."
+    },
+    {
+      "id": "b10-06",
+      "type": "sentence_parsing",
+      "title": "Phó từ chỉ hành động tiếp diễn 不停地 kết hợp 下着",
+      "vi": "Bên ngoài mưa vẫn không ngừng rơi, hay là chúng ta ở nhà xem tivi nhé.",
+      "zh": "外面雨还在不停地下着我们还是在家看电视吧",
+      "standardTrans": "外面雨还在不停地下着我们还是在家看电视吧",
+      "pinyin": "Wàimiàn yǔ hái zài bùtíng de xià zhe, wǒmen háishì zài jiā kàn diànshì ba",
+      "grammarPoint": "Trạng ngữ liên tục: 不停地 + V + 着; Lựa chọn phương án tốt hơn: 还是",
+      "tokens": [
+        {
+          "text": "không ngừng rơi",
+          "hz": "不停地下着",
+          "py": "bùtíng de xià zhe",
+          "hv": "bất đình địa hạ trước",
+          "role": "Trạng ngữ + Động từ + 着",
+          "vn": "rơi liên tục không dứt",
+          "radicals": "停 = Bộ nhân đứng 亻; 地 = Bộ thổ 土; 雨 = Bộ vũ 雨"
+        },
+        {
+          "text": "vẫn nên ở nhà",
+          "hz": "还是在家",
+          "py": "háishì zài jiā",
+          "hv": "hoàn thị tại gia",
+          "role": "Phó từ lựa chọn + Trạng ngữ nơi chốn",
+          "vn": "hay là cứ ở nhà",
+          "radicals": "还 = Bộ quai xước 辶; 家 = Bộ miên 宀"
+        },
+        {
+          "text": "xem tivi nhé",
+          "hz": "看电视吧",
+          "py": "kàn diànshì ba",
+          "hv": "khán điện thị ba",
+          "role": "Động từ + Tân ngữ + Trợ từ",
+          "vn": "xem truyền hình đi nhé",
+          "radicals": "看 = Bộ mục 目; 视 = Bộ kiến 见; 吧 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "我们还是在家",
+          "tag": "Chủ ngữ 2 + Đề xuất"
+        },
+        {
+          "id": "t2",
+          "text": "外面雨还在",
+          "tag": "Chủ ngữ 1 + Thời thái"
+        },
+        {
+          "id": "t3",
+          "text": "不停地下着",
+          "tag": "Vị ngữ liên tục"
+        },
+        {
+          "id": "t4",
+          "text": "看电视吧",
+          "tag": "Hành động mục đích"
+        },
+        {
+          "id": "t5",
+          "text": "不停下着",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t3",
+        "t1",
+        "t4"
+      ],
+      "requiredKeywordsZh": [
+        "外面雨",
+        "不停地下着",
+        "还是在家",
+        "看电视吧"
+      ],
+      "wordBankPool": [
+        "我们还是在家",
+        "不停下着",
+        "外面雨还在",
+        "看电视吧",
+        "不停地下着"
+      ],
+      "traps": [
+        {
+          "pattern": "不停下着",
+          "msg": "Lỗi thiếu trợ từ kết cấu: 不停 làm trạng ngữ bổ nghĩa trước động từ 下 bắt buộc phải có trợ từ 地 (不停地下着)."
+        },
+        {
+          "pattern": "在家还是",
+          "msg": "Lỗi vị trí phó từ: Phó từ lựa chọn 还是 bắt buộc đứng trước cụm giới từ nơi chốn 在家 (还是在家看电视)."
+        }
+      ],
+      "explanation": "Cụm 不停地下着 dùng trợ từ kết cấu 地 và trợ từ động thái 着 diễn tả cơn mưa tiếp diễn không ngớt. Phân câu sau dùng phó từ 还是 biểu thị phương án lựa chọn tối ưu trong hoàn cảnh đó."
+    },
+    {
+      "id": "b10-07",
+      "type": "sentence_parsing",
+      "title": "Cấu trúc hành động tiếp diễn trên đường 正在路上走着呢",
+      "vi": "A: Sao Mary vẫn chưa đến? B: Tớ vừa gọi điện thoại cho cậu ấy, cậu ấy đã ra khỏi nhà rồi, bây giờ có lẽ đang đi ở trên đường.",
+      "zh": "玛丽怎么没来我刚给她打过电话她已经出门了现在可能正在路上走着呢",
+      "standardTrans": "玛丽怎么没来我刚给她打过电话她已经出门了现在可能正在路上走着呢",
+      "pinyin": "Mǎlì zěnme méi lái? Wǒ gāng gěi tā dǎ guo diànhuà, tā yǐjīng chūmén le, xiànzài kěnéng zhèngzài lùshang zǒu zhe ne",
+      "grammarPoint": "Trải nghiệm vừa qua: 打过电话; Trạng thái hành động tiếp diễn: 正在 + Nơi chốn + V + 着 + 呢",
+      "tokens": [
+        {
+          "text": "vừa gọi điện thoại",
+          "hz": "刚打过电话",
+          "py": "gāng dǎ guo diànhuà",
+          "hv": "cương đả quá điện thoại",
+          "role": "Phó từ + Động từ + 过 + Tân ngữ",
+          "vn": "vừa mới gọi điện xong",
+          "radicals": "刚 = Bộ đao 刂; 打 = Bộ thủ 扌; 过 = Bộ quai xước 辶"
+        },
+        {
+          "text": "đã ra khỏi nhà",
+          "hz": "已经出门了",
+          "py": "yǐjīng chūmén le",
+          "hv": "dĩ kinh xuất môn liễu",
+          "role": "Trạng ngữ + Động tân + 了",
+          "vn": "đã rời nhà ra ngoài rồi",
+          "radicals": "已 = Bộ kỷ 己; 出 = Bộ khảm 凵; 门 = Bộ môn 门"
+        },
+        {
+          "text": "đang đi trên đường",
+          "hz": "正在路上走着呢",
+          "py": "zhèngzài lùshang zǒu zhe ne",
+          "hv": "chính tại lộ thượng tẩu trước ni",
+          "role": "Trạng ngữ nơi chốn + V + 着 + 呢",
+          "vn": "đang rảo bước đi trên đường",
+          "radicals": "路 = Bộ túc 足; 走 = Bộ tẩu 走; 着 = Bộ mục 目; 呢 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "我刚给她打过电话",
+          "tag": "Hành động 1"
+        },
+        {
+          "id": "t2",
+          "text": "玛丽怎么没来",
+          "tag": "Câu hỏi"
+        },
+        {
+          "id": "t3",
+          "text": "她已经出门了",
+          "tag": "Hành động 2"
+        },
+        {
+          "id": "t4",
+          "text": "现在可能正在路上走着呢",
+          "tag": "Suy đoán tiếp diễn"
+        },
+        {
+          "id": "t5",
+          "text": "走在路上",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1",
+        "t3",
+        "t4"
+      ],
+      "requiredKeywordsZh": [
+        "玛丽怎么没来",
+        "打过电话",
+        "已经出门了",
+        "正在路上走着呢"
+      ],
+      "wordBankPool": [
+        "现在可能正在路上走着呢",
+        "走在路上",
+        "玛丽怎么没来",
+        "我刚给她打过电话",
+        "她已经出门了"
+      ],
+      "traps": [
+        {
+          "pattern": "走在路上呢",
+          "msg": "Lỗi diễn đạt tiếp diễn: Diễn đạt trạng thái đang đi dở trên đường phố, cấu trúc tự nhiên nhất là 在路上走着呢, không đảo 走在路上."
+        },
+        {
+          "pattern": "不来",
+          "msg": "Lỗi hỏi trạng thái chưa xảy ra: Chưa thấy người đến hỏi 怎么没来 (sao chưa đến), không hỏi 怎么不来 (sao không đến - chỉ ý chí)."
+        }
+      ],
+      "explanation": "Câu phức liên hoàn giải thích lý do vắng mặt. Cụm 打过电话 biểu thị hành động đã kiểm tra qua, 已经出门了 khẳng định đã rời khỏi cửa, và 正在路上走着呢 diễn tả trạng thái đang di chuyển."
+    },
+    {
+      "id": "b10-08",
+      "type": "sentence_parsing",
+      "title": "Trạng thái xách đồ 提着 và trạng ngữ phương thức 一步一步地",
+      "vi": "Tôi xách một thùng giấy chứa sách và đĩa CD từng bước từng bước leo lên tầng.",
+      "zh": "我提着一个纸箱子书和光盘一步一步地往楼上爬",
+      "standardTrans": "我提着一个纸箱子书和光盘一步一步地往楼上爬",
+      "pinyin": "Wǒ tí zhe yí gè zhǐxiāngzi shū hé guāngpán, yíbù yíbù de wǎng lóushang pá",
+      "grammarPoint": "V1 + 着 (tư thế/trạng thái mang xách) + Trạng ngữ láy phương thức (一步一步地) + 往 + Hướng + Động từ (爬)",
+      "tokens": [
+        {
+          "text": "đang xách một thùng giấy",
+          "hz": "提着一个纸箱子",
+          "py": "tí zhe yí gè zhǐxiāngzi",
+          "hv": "đề trước nhất cá chỉ tương tử",
+          "role": "V1 + 着 + Cụm tân ngữ 1",
+          "vn": "tay xách theo một thùng bìa các tông",
+          "radicals": "提 = Bộ thủ 扌; 纸 = Bộ mịch 纟; 箱 = Bộ trúc 竹"
+        },
+        {
+          "text": "từng bước từng bước",
+          "hz": "一步一步地",
+          "py": "yíbù yíbù de",
+          "hv": "nhất bộ nhất bộ địa",
+          "role": "Trạng ngữ láy cách thức",
+          "vn": "chầm chậm từng bước chân một",
+          "radicals": "步 = Bộ chỉ 止; 地 = Bộ thổ 土"
+        },
+        {
+          "text": "leo lên lầu",
+          "hz": "往楼上爬",
+          "py": "wǎng lóushang pá",
+          "hv": "vãng lâu thượng ba",
+          "role": "Giới từ hướng + Động từ V2",
+          "vn": "bò, trèo lên trên tầng gác",
+          "radicals": "往 = Bộ xích 彳; 楼 = Bộ mộc 木; 爬 = Bộ trảo 爪"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "我提着一个纸箱子",
+          "tag": "Chủ vị + V1着"
+        },
+        {
+          "id": "t2",
+          "text": "书和光盘",
+          "tag": "Tân ngữ chi tiết"
+        },
+        {
+          "id": "t3",
+          "text": "一步一步地",
+          "tag": "Trạng ngữ phương thức"
+        },
+        {
+          "id": "t4",
+          "text": "往楼上爬",
+          "tag": "Giới tân + V2"
+        },
+        {
+          "id": "t5",
+          "text": "一步一步的",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t1",
+        "t2",
+        "t3",
+        "t4"
+      ],
+      "requiredKeywordsZh": [
+        "提着",
+        "纸箱子",
+        "一步一步地",
+        "往楼上爬"
+      ],
+      "wordBankPool": [
+        "往楼上爬",
+        "一步一步的",
+        "我提着一个纸箱子",
+        "一步一步地",
+        "书和光盘"
+      ],
+      "traps": [
+        {
+          "pattern": "一步一步的",
+          "msg": "Lỗi trợ từ kết cấu: Cụm từ láy số lượng 一步一步 đứng trước động từ 爬 làm trạng ngữ cách thức bắt buộc dùng 地, không dùng 的."
+        },
+        {
+          "pattern": "爬往楼上",
+          "msg": "Lỗi ngữ tự giới từ: Cụm giới từ chỉ hướng 往楼上 bắt buộc phải đứng TRƯỚC động từ chính 爬 (往楼上爬)."
+        }
+      ],
+      "explanation": "Động từ 提 kết hợp trợ từ 着 biểu thị trạng thái tay xách thùng nặng khi leo cầu thang. Cụm từ láy 一步一步地 làm trạng ngữ cách thức đi liền trước kết cấu chỉ hướng 往楼上爬."
+    },
+    {
+      "id": "b10-09",
+      "type": "sentence_parsing",
+      "title": "Tư thế nằm đọc 躺着看书 và bổ ngữ xu hướng 下去",
+      "vi": "Cậu đừng nằm đọc sách, tiếp tục như vậy thì không tốt cho mắt chút nào.",
+      "zh": "你别躺着看书这样下去对眼睛一点儿也不好",
+      "standardTrans": "你别躺着看书这样下去对眼睛一点儿也不好",
+      "pinyin": "Nǐ bié tǎng zhe kànshū, zhèyàng xiàqu duì yǎnjing yìdiǎnr yě bù hǎo",
+      "grammarPoint": "V1 + 着 + V2 (tư thế nằm xem); Động từ + 下去 (tiếp diễn trạng thái tiêu cực); 对...一点儿也不好",
+      "tokens": [
+        {
+          "text": "đừng nằm đọc sách",
+          "hz": "别躺着看书",
+          "py": "bié tǎng zhe kànshū",
+          "hv": "biệt thảng trước khán thư",
+          "role": "Phó từ cấm đoán + V1着V2",
+          "vn": "chớ có nằm dài ra mà đọc sách",
+          "radicals": "躺 = Bộ thân 身; 看 = Bộ mục 目; 书 = Bộ dật 乛"
+        },
+        {
+          "text": "cứ tiếp tục như vậy",
+          "hz": "这样下去",
+          "py": "zhèyàng xiàqu",
+          "hv": "giá dạng hạ khứ",
+          "role": "Chủ đề điều kiện",
+          "vn": "nếu cứ tiếp diễn tình trạng thế này",
+          "radicals": "这 = Bộ quai xước 辶; 下 = Bộ nhất 一; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "không tốt cho mắt",
+          "hz": "对眼睛不好",
+          "py": "duì yǎnjing bù hǎo",
+          "hv": "đối nhãn tình bất hảo",
+          "role": "Giới tân + Vị ngữ",
+          "vn": "gây tổn hại đối với thị lực đôi mắt",
+          "radicals": "对 = Bộ thốn 寸; 眼 = Bộ mục 目; 睛 = Bộ mục 目"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "这样下去",
+          "tag": "Điều kiện tiếp diễn"
+        },
+        {
+          "id": "t2",
+          "text": "你别躺着看书",
+          "tag": "Khuyên ngăn"
+        },
+        {
+          "id": "t3",
+          "text": "对眼睛一点儿也不好",
+          "tag": "Kết quả cảnh báo"
+        },
+        {
+          "id": "t4",
+          "text": "躺看书",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "别躺着看书",
+        "这样下去",
+        "对眼睛",
+        "一点儿也不好"
+      ],
+      "wordBankPool": [
+        "这样下去",
+        "躺看书",
+        "对眼睛一点儿也不好",
+        "你别躺着看书"
+      ],
+      "traps": [
+        {
+          "pattern": "躺看书",
+          "msg": "Lỗi thiếu trợ từ: Động tác 'nằm' làm trạng thái tư thế cho động tác 'đọc sách' bắt buộc phải có trợ từ 着 (躺着看书)."
+        },
+        {
+          "pattern": "不好一点儿",
+          "msg": "Lỗi trật tự phủ định: Cấu trúc nhấn mạnh phủ định hoàn toàn bắt buộc đặt 一点儿也不 trước tính từ (一点儿也不好)."
+        }
+      ],
+      "explanation": "Cụm 躺着看书 dùng trợ từ 着 biểu thị tư thế cơ thể khi đọc sách. Bổ ngữ xu hướng 下去 đứng sau 这样 biểu thị trạng thái xấu nếu tiếp tục duy trì sẽ gây hại cho mắt."
+    },
+    {
+      "id": "b10-10",
+      "type": "sentence_parsing",
+      "title": "Câu tồn hiện nơi chốn với 停着许多汽车",
+      "vi": "Rất nhiều xe hơi đang đậu trước cửa khách sạn.",
+      "zh": "旅馆门口停着许多汽车",
+      "standardTrans": "旅馆门口停着许多汽车",
+      "pinyin": "Lǚguǎn ménkǒu tíng zhe xǔduō qìchē",
+      "grammarPoint": "Câu tồn hiện nơi chốn: Nơi chốn (旅馆门口) + 停 + 着 + Lượng từ/Số từ + Danh từ (许多汽车)",
+      "tokens": [
+        {
+          "text": "trước cửa khách sạn",
+          "hz": "旅馆门口",
+          "py": "lǚguǎn ménkǒu",
+          "hv": "lữ quán môn khẩu",
+          "role": "Chủ ngữ từ chỉ nơi chốn",
+          "vn": "cổng phía trước của khách sạn",
+          "radicals": "旅 = Bộ phương 方; 馆 = Bộ thực 饣; 门 = Bộ môn 门; 口 = Bộ khẩu 口"
+        },
+        {
+          "text": "đang đỗ, đang đậu",
+          "hz": "停着",
+          "py": "tíng zhe",
+          "hv": "đình trước",
+          "role": "Động từ + Trợ từ động thái",
+          "vn": "đang đỗ xe cố định",
+          "radicals": "停 = Bộ nhân đứng 亻 + chữ đình 亭; 着 = Bộ mục 目"
+        },
+        {
+          "text": "nhiều xe hơi",
+          "hz": "许多汽车",
+          "py": "xǔduō qìchē",
+          "hv": "hứa đa khí xa",
+          "role": "Tân ngữ thực thể tồn hiện",
+          "vn": "rất nhiều chiếc xe ô tô",
+          "radicals": "许 = Bộ ngôn 讠; 多 = Bộ tịch 夕; 汽 = Bộ thủy 氵; 车 = Bộ xa 车"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "停着许多汽车",
+          "tag": "Động bổ + Tân ngữ"
+        },
+        {
+          "id": "t2",
+          "text": "旅馆门口",
+          "tag": "Chủ ngữ nơi chốn"
+        },
+        {
+          "id": "t3",
+          "text": "停了许多汽车",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1"
+      ],
+      "requiredKeywordsZh": [
+        "旅馆门口",
+        "停着",
+        "许多汽车"
+      ],
+      "wordBankPool": [
+        "停了许多汽车",
+        "旅馆门口",
+        "停着许多汽车"
+      ],
+      "traps": [
+        {
+          "pattern": "停了许多汽车",
+          "msg": "Lỗi câu tồn hiện: Miêu tả trạng thái tĩnh của các phương tiện đang đỗ ngay tại chỗ bắt buộc dùng trợ từ 着 (停着), không dùng 了."
+        },
+        {
+          "pattern": "在旅馆门口停着",
+          "msg": "Lỗi câu tồn hiện: Từ chỉ nơi chốn trong câu tồn hiện trực tiếp đóng vai trò chủ ngữ (旅馆门口), không thêm giới từ 在 ở đầu câu."
+        }
+      ],
+      "explanation": "Câu tồn hiện miêu tả sự xuất hiện hoặc trạng thái tĩnh của vật thể. Vị trí địa điểm 旅馆门口 làm chủ ngữ, kết hợp động từ 停 đi kèm trợ từ 着 và tân ngữ 许多汽车."
+    },
+    {
+      "id": "b10-11",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 向……跑过去 và tư thế 坐着",
+      "vi": "Chúng tôi đang ngồi nói chuyện, đột nhiên cậu ấy đứng dậy chạy sang chỗ cậu bé phía đối diện.",
+      "zh": "我们正坐着聊天儿他突然站起来向对面的那个孩子跑过去",
+      "standardTrans": "Chúng tôi đang ngồi nói chuyện, đột nhiên cậu ấy đứng dậy chạy sang chỗ cậu bé phía đối diện",
+      "pinyin": "Wǒmen zhèng zuò zhe liáotiānr, tā tūrán zhàn qǐlai xiàng duìmiàn de nà ge háizi pǎo guòqu",
+      "grammarPoint": "V1 + 着 + V2 (坐着聊天儿); Động từ + Bổ ngữ xu hướng kép: 站起来, 跑过去; Giới từ hướng: 向",
+      "tokens": [
+        {
+          "text": "đang ngồi nói chuyện",
+          "hz": "正坐着聊天儿",
+          "py": "zhèng zuò zhe liáotiānr",
+          "hv": "chính tọa trước liêu thiên nhi",
+          "role": "Thời thái + V1着 + V2",
+          "vn": "đang ngồi trò chuyện tán gẫu",
+          "radicals": "正 = Bộ chỉ 止; 坐 = Bộ thổ 土; 聊 = Bộ nhĩ 耳; 天 = Bộ đại 大"
+        },
+        {
+          "text": "đột nhiên đứng dậy",
+          "hz": "突然站起来",
+          "py": "tūrán zhàn qǐlai",
+          "hv": "đột nhiên trạm khởi lai",
+          "role": "Phó từ + Động từ + Bổ ngữ xu hướng kép",
+          "vn": "bất ngờ đứng bật dậy",
+          "radicals": "突 = Bộ huyệt 穴; 站 = Bộ lập 立; 起 = Bộ tẩu 走; 来 = Bộ mộc 木"
+        },
+        {
+          "text": "chạy sang đứa bé",
+          "hz": "向孩子跑过去",
+          "py": "xiàng háizi pǎo guòqu",
+          "hv": "hướng hài tử bào quá khứ",
+          "role": "Giới tân + Động từ + Bổ ngữ xu hướng kép",
+          "vn": "rảo bước chạy sang hướng đứa trẻ",
+          "radicals": "向 = Bộ khẩu 口; 孩 = Bộ tử 子; 跑 = Bộ túc 足; 过 = Bộ quai xước 辶; 去 = Bộ khứ 去"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "他突然站起来",
+          "tag": "Biến cố hành động"
+        },
+        {
+          "id": "t2",
+          "text": "我们正坐着聊天儿",
+          "tag": "Bối cảnh đang diễn ra"
+        },
+        {
+          "id": "t3",
+          "text": "向对面的那个孩子跑过去",
+          "tag": "Hành động chỉ hướng"
+        },
+        {
+          "id": "t4",
+          "text": "跑过来",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "坐着聊天儿",
+        "突然站起来",
+        "对面的那个孩子",
+        "跑过去"
+      ],
+      "wordBankPool": [
+        "他突然站起来",
+        "跑过来",
+        "我们正坐着聊天儿",
+        "向对面的那个孩子跑过去"
+      ],
+      "traps": [
+        {
+          "pattern": "跑过来",
+          "msg": "Lỗi phương hướng bổ ngữ xu hướng: Cậu ấy chạy rời xa vị trí đang ngồi với nhóm người nói hướng sang phía đứa bé đối diện nên phải dùng 跑过去, không dùng 跑过来."
+        },
+        {
+          "pattern": "跑向对面",
+          "msg": "Lỗi cấu trúc: Cụm giới từ chỉ hướng '向 + Đối tượng' phải đặt trước động từ (向对面的那个孩子跑过去)."
+        }
+      ],
+      "explanation": "Câu phức miêu tả bối cảnh đang tiếp diễn (正坐着聊天儿) bị cắt ngang bởi hành động đột ngột 站起来 và bổ ngữ xu hướng kép rời xa người nói 跑过去."
+    },
+    {
+      "id": "b10-12",
+      "type": "sentence_parsing",
+      "title": "Câu tồn hiện treo đồ vật với 挂着大红灯笼",
+      "vi": "A: Trong phòng đang treo gì vậy? B: Trong phòng đang treo đèn lồng đỏ lớn.",
+      "zh": "屋子里挂着什么屋子里挂着大红灯笼",
+      "standardTrans": "屋子里挂着什么屋子里挂着大红灯笼",
+      "pinyin": "Wūzi lǐ guà zhe shénme? Wūzi lǐ guà zhe dàhóng dēnglong",
+      "grammarPoint": "Câu tồn hiện trạng thái treo: Nơi chốn (屋子里) + 挂 + 着 + Tân ngữ (大红灯笼)",
+      "tokens": [
+        {
+          "text": "trong phòng",
+          "hz": "屋子里",
+          "py": "wūzi lǐ",
+          "hv": "ốc tử lý",
+          "role": "Từ chỉ nơi chốn làm chủ ngữ",
+          "vn": "bên trong gian phòng",
+          "radicals": "屋 = Bộ thi 尸; 里 = Bộ lý 里"
+        },
+        {
+          "text": "đang treo",
+          "hz": "挂着",
+          "py": "guà zhe",
+          "hv": "quải trước",
+          "role": "Động từ + Trợ từ động thái",
+          "vn": "đang treo lơ lửng, móc cố định",
+          "radicals": "挂 = Bộ thủ 扌 + chữ quái 圭; 着 = Bộ mục 目"
+        },
+        {
+          "text": "đèn lồng đỏ lớn",
+          "hz": "大红灯笼",
+          "py": "dàhóng dēnglong",
+          "hv": "đại hồng đăng lung",
+          "role": "Tân ngữ thực thể tồn hiện",
+          "vn": "chiếc lồng đèn màu đỏ cỡ lớn",
+          "radicals": "红 = Bộ mịch 纟; 灯 = Bộ hỏa 火; 笼 = Bộ trúc 竹"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "屋子里挂着什么",
+          "tag": "Câu hỏi tồn hiện"
+        },
+        {
+          "id": "t2",
+          "text": "屋子里挂着",
+          "tag": "Chủ ngữ nơi chốn + Động từ"
+        },
+        {
+          "id": "t3",
+          "text": "大红灯笼",
+          "tag": "Tân ngữ thực thể"
+        },
+        {
+          "id": "t4",
+          "text": "挂了大红灯笼",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "屋子里",
+        "挂着什么",
+        "大红灯笼"
+      ],
+      "wordBankPool": [
+        "大红灯笼",
+        "屋子里挂着什么",
+        "挂了大红灯笼",
+        "屋子里挂着"
+      ],
+      "traps": [
+        {
+          "pattern": "挂了大红灯笼",
+          "msg": "Lỗi trợ từ trong câu tồn hiện: Trạng thái chiếc đèn lồng đang được treo lơ lửng trên tường/trần nhà dùng 挂着, không dùng 挂了."
+        },
+        {
+          "pattern": "灯笼大红",
+          "msg": "Lỗi trật tự định ngữ: Tính từ miêu tả màu sắc và kích cỡ 大红 phải đứng trước danh từ 灯笼 (大红灯笼)."
+        }
+      ],
+      "explanation": "Câu hỏi và đáp dạng tồn hiện miêu tả trạng thái tĩnh của đồ vật trong phòng. Động từ 挂 kết hợp trợ từ 着 biểu thị trạng thái treo lơ lửng đang duy trì."
+    },
+    {
+      "id": "b10-13",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ trạng thái 得这么厉害 và động từ 倒杯水",
+      "vi": "Sao cậu lại ho dữ dội như thế? Tớ rót cho cậu cốc nước nhé.",
+      "zh": "你怎么咳嗽得这么厉害我给你倒杯水吧",
+      "standardTrans": "你怎么咳嗽得这么厉害我给你倒杯水吧",
+      "pinyin": "Nǐ zěnme késou de zhème lìhai? Wǒ gěi nǐ dào bēi shuǐ ba",
+      "grammarPoint": "V + 得 + 这么厉害 (Bổ ngữ trạng thái); 给 + Người + 倒水 (rót nước)",
+      "tokens": [
+        {
+          "text": "ho dữ dội",
+          "hz": "咳嗽得这么厉害",
+          "py": "késou de zhème lìhai",
+          "hv": "khái thấu đắc giá ma lợi hại",
+          "role": "Động từ + Bổ ngữ trạng thái",
+          "vn": "ho khan đến mức nghiêm trọng thế này",
+          "radicals": "咳 = Bộ khẩu 口; 嗽 = Bộ khẩu 口; 得 = Bộ xích 彳; 厉 = Bộ hán 厂; 害 = Bộ miên 宀"
+        },
+        {
+          "text": "rót cho cậu cốc nước",
+          "hz": "给你倒杯水",
+          "py": "gěi nǐ dào bēi shuǐ",
+          "hv": "cấp nhĩ đáo bôi thủy",
+          "role": "Giới tân + Động từ + Tân ngữ",
+          "vn": "rót một ly nước đưa cho cậu",
+          "radicals": "倒 = Bộ nhân đứng 亻; 杯 = Bộ mộc 木; 水 = Bộ thủy 水"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "我给你倒杯水吧",
+          "tag": "Lời giúp đỡ"
+        },
+        {
+          "id": "t2",
+          "text": "你怎么咳嗽得这么厉害",
+          "tag": "Câu hỏi quan tâm"
+        },
+        {
+          "id": "t3",
+          "text": "咳嗽的这么厉害",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t2",
+        "t1"
+      ],
+      "requiredKeywordsZh": [
+        "怎么咳嗽",
+        "得这么厉害",
+        "倒杯水吧"
+      ],
+      "wordBankPool": [
+        "我给你倒杯水吧",
+        "咳嗽的这么厉害",
+        "你怎么咳嗽得这么厉害"
+      ],
+      "traps": [
+        {
+          "pattern": "咳嗽的这么厉害",
+          "msg": "Lỗi dùng sai trợ từ kết cấu: Đứng sau động từ 咳嗽 nối với bổ ngữ trạng thái 这么厉害 bắt buộc dùng 得, không dùng 的."
+        },
+        {
+          "pattern": "倒水一杯",
+          "msg": "Lỗi ngữ tự: Lượng từ 杯 làm định ngữ trực tiếp đứng trước danh từ: 倒杯水 hoặc 倒一杯水, không đặt sau danh từ."
+        }
+      ],
+      "explanation": "Động từ 咳嗽 kết hợp trợ từ 得 và cụm tính từ 这么厉害 làm bổ ngữ trạng thái. Động từ 倒 mang thanh 4 /dào/ nghĩa là rót, châm chất lỏng vào ly tách."
+    },
+    {
+      "id": "b10-14",
+      "type": "sentence_parsing",
+      "title": "Phó từ ước lượng 左右 và điều kiện 才 kết hợp 还是",
+      "vi": "Đi bằng xe buýt mất khoảng 30 phút mới có thể đến được, hay là chúng ta đi bằng tàu điện ngầm nhé.",
+      "zh": "坐公车要三十分钟左右才能到我们还是坐地铁去吧",
+      "standardTrans": "坐公车要三十分钟左右才能到我们还是坐地铁去吧",
+      "pinyin": "Zuò gōngchē yào sānshí fēnzhōng zuǒyòu cái néng dào, wǒmen háishì zuò dìtiě qù ba",
+      "grammarPoint": "Số lượng + 左右 (khoảng chừng); Mất bao lâu mới: ...才能到; Lựa chọn phương án: 还是",
+      "tokens": [
+        {
+          "text": "khoảng 30 phút",
+          "hz": "三十分钟左右",
+          "py": "sānshí fēnzhōng zuǒyòu",
+          "hv": "tam thập phân chung tả hữu",
+          "role": "Thời lượng + Phó từ ước lượng",
+          "vn": "khoảng chừng nửa tiếng đồng hồ",
+          "radicals": "钟 = Bộ kim 钅; 左 = Bộ công 工; 右 = Bộ khẩu 口"
+        },
+        {
+          "text": "mới có thể tới",
+          "hz": "才能到",
+          "py": "cái néng dào",
+          "hv": "tài năng đáo",
+          "role": "Phó từ + Năng nguyện + Động từ",
+          "vn": "mới có khả năng đến nơi",
+          "radicals": "才 = Bộ nhất 一; 能 = Bộ nguyệt 月; 到 = Bộ đao 刂"
+        },
+        {
+          "text": "đi tàu điện ngầm",
+          "hz": "坐地铁去",
+          "py": "zuò dìtiě qù",
+          "hv": "tọa địa thiết khứ",
+          "role": "Phương thức + Động từ xu hướng",
+          "vn": "đi bằng xe điện ngầm ngầm",
+          "radicals": "坐 = Bộ thổ 土; 地 = Bộ thổ 土; 铁 = Bộ kim 钅; 去 = Bộ khứ 去"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "坐公车要",
+          "tag": "Phương thức 1"
+        },
+        {
+          "id": "t2",
+          "text": "三十分钟左右才能到",
+          "tag": "Thời lượng ước lượng + 才"
+        },
+        {
+          "id": "t3",
+          "text": "我们还是坐地铁去吧",
+          "tag": "Lựa chọn phương án 2"
+        },
+        {
+          "id": "t4",
+          "text": "左右三十分钟",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "requiredKeywordsZh": [
+        "坐公车",
+        "三十分钟左右",
+        "才能到",
+        "坐地铁去吧"
+      ],
+      "wordBankPool": [
+        "我们还是坐地铁去吧",
+        "三十分钟左右才能到",
+        "左右三十分钟",
+        "坐公车要"
+      ],
+      "traps": [
+        {
+          "pattern": "左右三十分钟",
+          "msg": "Lỗi vị trí của 左右: Từ chỉ ước lượng 左右 bắt buộc phải đứng SAU số lượng từ (三十分钟左右), không đứng trước."
+        },
+        {
+          "pattern": "就到",
+          "msg": "Lỗi chọn phó từ: Mất tới 30 phút là thời gian dài và chậm trễ, bắt buộc dùng 才 (才能到), không dùng 就."
+        }
+      ],
+      "explanation": "Từ ước lượng 左右 đặt sau cụm số lượng 三十分钟. Phó từ 才 nhấn mạnh thời gian cần thiết khá lâu, vế sau dùng 还是 để đề xuất giải pháp thay thế nhanh hơn là đi tàu điện ngầm."
+    },
+    {
+      "id": "b10-15",
+      "type": "sentence_parsing",
+      "title": "Bổ ngữ xu hướng kép 走进去, 坐下去, 走过来",
+      "vi": "Chúng tôi đi vào nhà hàng đó, vừa tìm được một chỗ ngồi xuống, một nhân viên phục vụ liền đi đến hỏi chúng tôi: Xin hỏi, các cậu muốn dùng gì?",
+      "zh": "我们走进那家饭店里去刚找一个座位坐下去一个服务员就走过来问我们请问你们要什么",
+      "standardTrans": "Chúng tôi đi vào nhà hàng đó, vừa tìm được một chỗ ngồi xuống, một nhân viên phục vụ liền đi đến hỏi chúng tôi: Xin hỏi, các cậu muốn dùng gì?",
+      "pinyin": "Wǒmen zǒu jìn nà jiā fàndiàn lǐ qu, gāng zhǎo yí gè zuòwèi zuò xiàqu, yí gè fúwùyuán jiù zǒu guòlai wèn wǒmen: Qǐngwèn, nǐmen yào shénme",
+      "grammarPoint": "Tân ngữ nơi chốn kẹp giữa bổ ngữ xu hướng kép: 走进...去; Bổ ngữ xu hướng: 坐下去, 走过来; Liên từ nối tiếp: 刚...就...",
+      "tokens": [
+        {
+          "text": "đi vào nhà hàng đó",
+          "hz": "走进饭店去",
+          "py": "zǒu jìn fàndiàn qu",
+          "hv": "tẩu tiến phạn điếm khứ",
+          "role": "Động từ + Nơi chốn kẹp giữa 进...去",
+          "vn": "bước chân đi vào trong quán ăn",
+          "radicals": "走 = Bộ tẩu 走; 进 = Bộ quai xước 辶; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "ngồi xuống chỗ",
+          "hz": "坐下去",
+          "py": "zuò xiàqu",
+          "hv": "tọa hạ khứ",
+          "role": "Động từ + Bổ ngữ xu hướng kép",
+          "vn": "ngồi thụp xuống ghế",
+          "radicals": "坐 = Bộ thổ 土; 下 = Bộ nhất 一; 去 = Bộ khứ 去"
+        },
+        {
+          "text": "nhân viên phục vụ",
+          "hz": "服务员",
+          "py": "fúwùyuán",
+          "hv": "phục vụ viên",
+          "role": "Chủ ngữ của phân câu sau",
+          "vn": "người phục vụ bàn, bồi bàn",
+          "radicals": "服 = Bộ nguyệt 月; 务 = Bộ lực 力; 员 = Bộ khẩu 口"
+        },
+        {
+          "text": "bước lại gần hỏi",
+          "hz": "走过来问",
+          "py": "zǒu guòlai wèn",
+          "hv": "tẩu quá lai vấn",
+          "role": "Động từ + Bổ ngữ xu hướng kép + Động từ 2",
+          "vn": "tiến lại gần phía chúng tôi để hỏi han",
+          "radicals": "过 = Bộ quai xước 辶; 来 = Bộ mộc 木; 问 = Bộ khẩu 口"
+        }
+      ],
+      "tiles": [
+        {
+          "id": "t1",
+          "text": "刚找一个座位坐下去",
+          "tag": "Hành động 2"
+        },
+        {
+          "id": "t2",
+          "text": "一个服务员就走过来问我们",
+          "tag": "Hành động 3 tiếp nối"
+        },
+        {
+          "id": "t3",
+          "text": "我们走进那家饭店里去",
+          "tag": "Hành động 1 di chuyển"
+        },
+        {
+          "id": "t4",
+          "text": "请问你们要什么",
+          "tag": "Lời thoại trực tiếp"
+        },
+        {
+          "id": "t5",
+          "text": "走进去饭店",
+          "tag": "Bẫy ngữ pháp"
+        }
+      ],
+      "targetOrder": [
+        "t3",
+        "t1",
+        "t2",
+        "t4"
+      ],
+      "requiredKeywordsZh": [
+        "走进那家饭店里去",
+        "坐下去",
+        "服务员",
+        "走过来问",
+        "要什么"
+      ],
+      "wordBankPool": [
+        "请问你们要什么",
+        "我们走进那家饭店里去",
+        "一个服务员就走过来问我们",
+        "走进去饭店",
+        "刚找一个座位坐下去"
+      ],
+      "traps": [
+        {
+          "pattern": "走进去饭店",
+          "msg": "Lỗi vị trí tân ngữ nơi chốn: Tân ngữ chỉ địa điểm 那家饭店里 bắt buộc phải kẹp giữa 进 và 去 (走进那家饭店里去), không được đặt sau đuôi 走进去."
+        },
+        {
+          "pattern": "走过去问",
+          "msg": "Lỗi phương hướng bổ ngữ xu hướng: Nhân viên phục vụ di chuyển tiến lại gần phía người nói (chúng tôi) nên phải dùng 走过来, không dùng 走过去."
+        }
+      ],
+      "explanation": "Câu chứa chuỗi bổ ngữ xu hướng kép liên hoàn: Tân ngữ nơi chốn kẹp giữa 进...去 (走进那家饭店里去); tư thế ngồi xuống dùng 坐下去; nhân viên phục vụ đi lại gần phía người nói dùng 走过来."
+    }
+  ]
+}

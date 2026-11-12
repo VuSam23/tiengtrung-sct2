@@ -15,8 +15,15 @@ const App = {
     userTxt: '',
     checked: false,
     mode: 'parsing', // 'parsing' (xếp từ) hoặc 'typing' (tự gõ)
+    // Gamification State (Tim tự hồi 20 phút & Streak chuẩn lịch Việt Nam)
     hearts: 5,
     maxHearts: 5,
+    lastHeartLostTime: null,
+    heartTimerInterval: null,
+    REFILL_INTERVAL_MS: 20 * 60 * 1000, // 20 phút / 1 tim
+    streak: 0,
+    lastCompletedDate: null,
+
     firstTryCorrect: 0,
     attemptedQuestions: {},
     settings: {
@@ -26,7 +33,7 @@ const App = {
     },
 
     async init() {
-        this.loadHearts();
+        this.loadGamificationState();
         this.loadMode();
         this.loadSettings();
 
@@ -53,24 +60,154 @@ const App = {
         }
     },
 
-    loadHearts() {
+    // --- GAMIFICATION V2: HỆ THỐNG TIM TỰ HỒI & STREAK CHUẨN LỊCH ---
+    getLocalDateString(d = new Date()) {
         try {
-            const savedHearts = localStorage.getItem('sct2_user_hearts');
-            this.hearts = savedHearts !== null ? Math.max(0, parseInt(savedHearts, 10)) : 5;
+            return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Ho_Chi_Minh' }).format(d);
         } catch (e) {
-            this.hearts = 5; // fallback khi localStorage bị chặn
+            const y = d.getFullYear();
+            const m = String(d.getMonth() + 1).padStart(2, '0');
+            const day = String(d.getDate()).padStart(2, '0');
+            return `${y}-${m}-${day}`;
         }
-        this.updateHeartsUI();
     },
 
-    saveHearts() {
-        try { localStorage.setItem('sct2_user_hearts', this.hearts); } catch (e) {}
+    loadGamificationState() {
+        const STORAGE_KEY = 'sct2_gamification_v2';
+        let state = null;
+        try {
+            const raw = localStorage.getItem(STORAGE_KEY);
+            if (raw) state = JSON.parse(raw);
+        } catch (e) {}
+
+        if (state && state.version === 2) {
+            this.hearts = typeof state.hearts === 'number' ? Math.max(0, Math.min(this.maxHearts, state.hearts)) : 5;
+            this.lastHeartLostTime = state.lastHeartLostTime || null;
+            this.streak = typeof state.streak === 'number' ? Math.max(0, state.streak) : 0;
+            this.lastCompletedDate = state.lastCompletedDate || null;
+        } else {
+            // Di chuyển dữ liệu cũ (migration)
+            let oldHearts = 5;
+            try {
+                const h = localStorage.getItem('sct2_user_hearts');
+                if (h !== null) oldHearts = Math.max(0, Math.min(5, parseInt(h, 10)));
+            } catch (e) {}
+            this.hearts = oldHearts;
+            this.lastHeartLostTime = this.hearts < this.maxHearts ? Date.now() : null;
+            this.streak = 1;
+            this.lastCompletedDate = this.getLocalDateString();
+            this.saveGamificationState();
+        }
+
+        // Tự động kiểm tra hồi phục tim theo thời gian đã trôi qua
+        this.refreshHearts();
+        // Kiểm tra tính liên tục của chuỗi Streak theo ngày
+        this.checkStreakExpiry();
+        // Cập nhật giao diện
         this.updateHeartsUI();
+        this.updateStreakUI();
+
+        // 1. GIA CỐ MULTI-TAB: Đồng bộ tức thì giữa các tab đang mở
+        window.addEventListener('storage', (e) => {
+            if (e.key === 'sct2_gamification_v2' && e.newValue) {
+                try {
+                    const data = JSON.parse(e.newValue);
+                    if (data && data.version === 2) {
+                        this.hearts = typeof data.hearts === 'number' ? data.hearts : this.hearts;
+                        this.lastHeartLostTime = data.lastHeartLostTime;
+                        this.streak = typeof data.streak === 'number' ? data.streak : this.streak;
+                        this.lastCompletedDate = data.lastCompletedDate;
+                        this.updateHeartsUI();
+                        this.updateStreakUI();
+                        if (this.hearts > 0) {
+                            document.getElementById('no-hearts-dialog')?.classList.add('hidden');
+                            this.stopHeartCountdownTimer();
+                        }
+                    }
+                } catch (err) {}
+            }
+        });
+    },
+
+    saveGamificationState() {
+        const STORAGE_KEY = 'sct2_gamification_v2';
+        const data = {
+            version: 2,
+            hearts: this.hearts,
+            lastHeartLostTime: this.lastHeartLostTime,
+            streak: this.streak,
+            lastCompletedDate: this.lastCompletedDate,
+            savedAt: Date.now()
+        };
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        } catch (e) {}
+    },
+
+    // Tự động hồi tim theo chu kỳ 20 phút
+    refreshHearts() {
+        if (this.hearts >= this.maxHearts) {
+            this.lastHeartLostTime = null;
+            return;
+        }
+        if (!this.lastHeartLostTime) {
+            this.lastHeartLostTime = Date.now();
+            this.saveGamificationState();
+            return;
+        }
+
+        const now = Date.now();
+
+        // 3. GIA CỐ TIME-TRAVEL: Chống lỗi khi người dùng chỉnh lùi giờ máy tính về quá khứ
+        if (now < this.lastHeartLostTime) {
+            this.lastHeartLostTime = now;
+            this.saveGamificationState();
+            return;
+        }
+
+        const elapsed = now - this.lastHeartLostTime;
+        const recovered = Math.floor(elapsed / this.REFILL_INTERVAL_MS);
+
+        if (recovered > 0) {
+            this.hearts = Math.min(this.maxHearts, this.hearts + recovered);
+            if (this.hearts >= this.maxHearts) {
+                this.lastHeartLostTime = null;
+            } else {
+                // Giữ lại phần dư thời gian cho lần hồi tiếp theo
+                this.lastHeartLostTime = now - (elapsed % this.REFILL_INTERVAL_MS);
+            }
+            this.saveGamificationState();
+            this.updateHeartsUI(true);
+        }
+    },
+
+    getHeartCountdownInfo() {
+        if (this.hearts >= this.maxHearts || !this.lastHeartLostTime) {
+            return { remainingMs: 0, text: 'Đầy 5/5' };
+        }
+        const now = Date.now();
+        const elapsed = now - this.lastHeartLostTime;
+        const remainingMs = Math.max(0, this.REFILL_INTERVAL_MS - (elapsed % this.REFILL_INTERVAL_MS));
+        const totalSec = Math.floor(remainingMs / 1000);
+        const mins = String(Math.floor(totalSec / 60)).padStart(2, '0');
+        const secs = String(totalSec % 60).padStart(2, '0');
+        return { remainingMs, text: `${mins}:${secs}` };
     },
 
     updateHeartsUI(animate = false) {
         const el = document.getElementById('stat-hearts');
         if (el) el.textContent = this.hearts;
+
+        const container = document.getElementById('heart-container');
+        if (container) {
+            if (this.hearts >= this.maxHearts) {
+                container.title = `Số tim: ${this.hearts}/${this.maxHearts} (Đã đầy)`;
+            } else {
+                const countdown = this.getHeartCountdownInfo().text;
+                container.title = `Số tim: ${this.hearts}/${this.maxHearts} (Hồi 1 tim sau: ${countdown} - Bấm để nạp đầy)`;
+            }
+        }
+
         const icon = document.getElementById('heart-icon');
         if (icon && animate) {
             icon.classList.remove('heart-beat');
@@ -80,23 +217,286 @@ const App = {
     },
 
     decreaseHeart() {
-        this.hearts = Math.max(0, this.hearts - 1);
-        this.saveHearts();
-        this.updateHeartsUI(true);
-        if (this.hearts === 0) {
-            setTimeout(() => this.showNoHeartsModal(), 500);
+        // Nếu ở chế độ Dev / Tester: không trừ tim để thuận tiện kiểm thử
+        if (typeof NavigationHub !== 'undefined' && NavigationHub.testerMode) {
+            return;
         }
+
+        this.refreshHearts();
+        if (this.hearts > 0) {
+            this.hearts -= 1;
+            if (!this.lastHeartLostTime) {
+                this.lastHeartLostTime = Date.now();
+            }
+            this.saveGamificationState();
+            this.updateHeartsUI(true);
+        }
+
+        if (this.hearts === 0) {
+            setTimeout(() => this.showNoHeartsModal(), 400);
+        }
+    },
+
+    // ===== CHỨC NĂNG 1: HỆ THỐNG TOAST THÔNG BÁO KHÔNG CHẶN UI =====
+    ensureToastContainer() {
+        let container = document.getElementById('toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'toast-container';
+            document.body.appendChild(container);
+        }
+        return container;
+    },
+
+    showToast(options = {}) {
+        let title = 'Thông báo';
+        let message = '';
+        let icon = '🔔';
+        let type = 'success';
+        let duration = 3000;
+
+        if (typeof options === 'string') {
+            message = options;
+            type = arguments[1] || 'success';
+            duration = arguments[2] || 3000;
+            if (type === 'streak' || message.includes('🔥')) {
+                title = 'Chuỗi Streak';
+                icon = '🔥';
+                type = 'streak';
+            } else if (type === 'success' || message.includes('❤️') || message.includes('✅')) {
+                title = 'Thành công';
+                icon = message.includes('❤️') ? '❤️' : '✅';
+            } else if (type === 'warning' || message.includes('⚠️') || message.includes('🔒')) {
+                title = 'Chú ý';
+                icon = message.includes('🔒') ? '🔒' : '⚠️';
+            } else if (type === 'error' || message.includes('❌')) {
+                title = 'Lỗi';
+                icon = '❌';
+            } else {
+                title = 'Thông báo';
+                icon = 'ℹ️';
+            }
+        } else {
+            title = options.title || 'Thông báo';
+            message = options.message || '';
+            icon = options.icon || (options.type === 'streak' ? '🔥' : '🔔');
+            type = options.type || 'success';
+            duration = options.duration || 3000;
+        }
+
+        // Tự động loại bỏ emoji thừa ở đầu message hoặc cuối title để tránh icon lặp đôi (vd: icon 🔒 bên cạnh 🔒 Đã tắt...)
+        if (typeof message === 'string') {
+            message = message.replace(/^[\p{Emoji}\p{Extended_Pictographic}\uFE0F\u200D\s!]+/u, '').trim();
+        }
+        if (typeof title === 'string') {
+            title = title.replace(/[\s!]*[\p{Emoji}\p{Extended_Pictographic}\uFE0F\u200D]+[\s!]*$/u, '').trim();
+        }
+
+        const container = this.ensureToastContainer();
+        const toast = document.createElement('div');
+        toast.className = `sct2-toast toast-${type}`;
+
+        toast.innerHTML = `
+            <div class="sct2-toast-icon">${icon}</div>
+            <div class="sct2-toast-body">
+                <h4>${title}</h4>
+                <p>${message}</p>
+            </div>
+        `;
+
+        // Bấm vào để tắt ngay
+        toast.onclick = () => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 300);
+        };
+
+        container.appendChild(toast);
+
+        // Kích hoạt animation xuất hiện
+        requestAnimationFrame(() => {
+            toast.classList.add('show');
+        });
+
+        // Tự động hủy sau thời gian duration
+        setTimeout(() => {
+            if (toast.parentElement) {
+                toast.classList.remove('show');
+                toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+                setTimeout(() => toast.remove(), 400);
+            }
+        }, duration);
     },
 
     refillHearts() {
         this.hearts = this.maxHearts;
-        this.saveHearts();
+        this.lastHeartLostTime = null;
+        this.stopHeartCountdownTimer();
+        this.saveGamificationState();
         this.updateHeartsUI(true);
         document.getElementById('no-hearts-dialog')?.classList.add('hidden');
+        if (this.showToast) {
+            this.showToast({
+                title: 'Nạp Tim Thành Công',
+                message: 'Đã hồi phục đầy 5 Tim! Bạn có thể tiếp tục học tập.',
+                icon: '❤️',
+                type: 'success',
+                duration: 2500
+            });
+        }
+    },
+
+    // Hiển thị modal trạng thái tim và đếm ngược (thay thế hoàn toàn confirm/alert trình duyệt)
+    showHeartStatusModal() {
+        this.refreshHearts();
+        const modal = document.getElementById('no-hearts-dialog');
+        if (!modal) return;
+
+        const iconEl = document.getElementById('heart-modal-icon');
+        const titleEl = document.getElementById('heart-modal-title');
+        const descEl = document.getElementById('heart-modal-desc');
+
+        if (this.hearts === 0) {
+            if (iconEl) iconEl.textContent = '💔';
+            if (titleEl) titleEl.textContent = 'Bạn Đã Hết Tim!';
+            if (descEl) descEl.textContent = 'Đừng nản lòng nhé! Tim đang tự động hồi lại sau mỗi 20 phút.';
+        } else if (this.hearts < this.maxHearts) {
+            if (iconEl) iconEl.textContent = '❤️';
+            if (titleEl) titleEl.textContent = `Bạn Đang Còn ${this.hearts}/${this.maxHearts} Tim`;
+            if (descEl) descEl.textContent = 'Cơ chế: Tự hồi 1 tim mỗi 20 phút. Bạn có thể bấm nút bên dưới để nạp đầy 5 tim ngay.';
+        } else {
+            this.showToast({
+                title: 'Tim Đầy Đủ',
+                message: 'Bạn đang có đủ 5/5 Tim, hãy tự tin luyện tập nhé!',
+                icon: '❤️',
+                type: 'success',
+                duration: 2500
+            });
+            return;
+        }
+
+        modal.classList.remove('hidden');
+        this.startHeartCountdownTimer();
     },
 
     showNoHeartsModal() {
-        document.getElementById('no-hearts-dialog')?.classList.remove('hidden');
+        this.showHeartStatusModal();
+    },
+
+    startHeartCountdownTimer() {
+        this.stopHeartCountdownTimer();
+        const initialHearts = this.hearts;
+        const updateTimer = () => {
+            const prevHearts = this.hearts;
+            this.refreshHearts();
+            const timerEl = document.getElementById('heart-countdown-timer');
+            if (timerEl) {
+                const info = this.getHeartCountdownInfo();
+                timerEl.textContent = info.text;
+            }
+            // Tự động mở khóa đóng modal khi hồi thêm ít nhất 1 tim hoặc đã đầy tim
+            if (this.hearts >= this.maxHearts || (initialHearts === 0 && this.hearts > 0) || this.hearts > prevHearts) {
+                this.stopHeartCountdownTimer();
+                document.getElementById('no-hearts-dialog')?.classList.add('hidden');
+                if (this.showToast) {
+                    this.showToast({
+                        title: 'Đã Hồi Tim',
+                        message: 'Bạn đã có thêm Tim! Có thể tiếp tục làm bài ngay.',
+                        icon: '❤️',
+                        type: 'success',
+                        duration: 2500
+                    });
+                }
+            }
+        };
+        updateTimer();
+        this.heartTimerInterval = setInterval(updateTimer, 1000);
+    },
+
+    stopHeartCountdownTimer() {
+        if (this.heartTimerInterval) {
+            clearInterval(this.heartTimerInterval);
+            this.heartTimerInterval = null;
+        }
+    },
+
+    // Kiểm tra tính hợp lệ của chuỗi Streak khi mở web
+    checkStreakExpiry() {
+        if (!this.lastCompletedDate) {
+            this.streak = 0;
+            return;
+        }
+        const today = this.getLocalDateString();
+        if (this.lastCompletedDate === today) {
+            return; // Hôm nay đã học
+        }
+        const yesterday = new Date(Date.now() - 86400000);
+        const yesterdayStr = this.getLocalDateString(yesterday);
+        if (this.lastCompletedDate === yesterdayStr) {
+            return; // Hôm qua học, hôm nay chưa học, chuỗi vẫn bảo toàn
+        }
+        // Đã bỏ lỡ từ 2 ngày trở lên -> đứt chuỗi
+        this.streak = 0;
+        this.saveGamificationState();
+    },
+
+    recordLessonCompletionStreak() {
+        const today = this.getLocalDateString();
+        const lastDate = this.lastCompletedDate;
+
+        if (!lastDate) {
+            this.streak = 1;
+            this.lastCompletedDate = today;
+            this.showToast({
+                title: `Chuỗi Streak: 1 ngày liên tiếp! 🔥`,
+                message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
+                icon: "🔥",
+                type: "streak",
+                duration: 3500
+            });
+        } else if (lastDate === today) {
+            // Đã học hôm nay rồi, không tăng thêm
+        } else {
+            const yesterday = new Date(Date.now() - 86400000);
+            const yesterdayStr = this.getLocalDateString(yesterday);
+            if (lastDate === yesterdayStr) {
+                this.streak += 1;
+                this.showToast({
+                    title: `Chuỗi Streak: ${this.streak} ngày liên tiếp! 🔥`,
+                    message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
+                    icon: "🔥",
+                    type: "streak",
+                    duration: 3500
+                });
+            } else {
+                this.streak = 1;
+                this.showToast({
+                    title: `Bắt đầu chuỗi Streak mới: 1 ngày! 🔥`,
+                    message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
+                    icon: "🔥",
+                    type: "streak",
+                    duration: 3500
+                });
+            }
+            this.lastCompletedDate = today;
+        }
+
+        this.saveGamificationState();
+        this.updateStreakUI(true);
+    },
+
+    updateStreakUI(animate = false) {
+        const el = document.getElementById('stat-streak');
+        if (el) el.textContent = this.streak;
+
+        const container = document.getElementById('stat-streak-container');
+        if (container) {
+            container.title = `Chuỗi học tập: ${this.streak} ngày liên tiếp (Bấm để xem chi tiết)`;
+        }
+
+        if (animate && container) {
+            container.classList.add('scale-110');
+            setTimeout(() => container.classList.remove('scale-110'), 300);
+        }
     },
 
     loadMode() {
@@ -465,6 +865,13 @@ const App = {
     },
 
     nextQ() {
+        this.refreshHearts();
+        const isTester = (typeof NavigationHub !== 'undefined') && NavigationHub.testerMode;
+        if (this.hearts <= 0 && !isTester) {
+            this.showNoHeartsModal();
+            return;
+        }
+
         if (this.queue.length === 0) return this.showVictory();
         this.activeQ = this.queue[0];
         this.slots = [];
@@ -477,18 +884,58 @@ const App = {
         this.render();
     },
 
-    render() {
+    toggleAnatomy(forceOpen = null) {
+        const drawer = document.getElementById('anatomy-content-drawer');
+        const label = document.getElementById('anatomy-toggle-label');
+        const arrow = document.getElementById('anatomy-toggle-arrow');
+        if (!drawer) return;
+
+        const isCurrentlyHidden = drawer.classList.contains('hidden');
+        const shouldOpen = (forceOpen !== null) ? !!forceOpen : isCurrentlyHidden;
+
+        if (shouldOpen) {
+            drawer.classList.remove('hidden');
+            if (label) label.textContent = "Gợi ý bóc tách (Đang mở)";
+            if (arrow) arrow.textContent = "▲";
+        } else {
+            drawer.classList.add('hidden');
+            if (label) label.textContent = "Gợi ý bóc tách (Đang ẩn)";
+            if (arrow) arrow.textContent = "▼";
+        }
+    },
+
+    updateProgressBar() {
         if (this.total === 0) return;
-        const done = this.total - this.queue.length;
-        const pct = (done / this.total) * 100;
+        const done = Math.max(0, this.total - this.queue.length);
+        const retryCount = this.queue.filter(item => item && item.id && this.attemptedQuestions[item.id]).length;
+        const donePct = (done / this.total) * 100;
+        const retryPct = (retryCount / this.total) * 100;
         const theme = (typeof LevelManager !== 'undefined' && LevelManager.getTheme) ? LevelManager.getTheme() : null;
 
         const pBar = document.getElementById('session-progress-bar');
         if (pBar) {
-            pBar.style.width = `${pct}%`;
-            if (theme) pBar.className = `${theme.progressBarClass} h-full rounded-full transition-all duration-300 ease-out`;
+            pBar.style.width = `${donePct}%`;
+            if (theme) pBar.className = `${theme.progressBarClass} h-full transition-all duration-300 ease-out`;
         }
-        document.getElementById('session-progress-text').textContent = `${done}/${this.total}`;
+        const rBar = document.getElementById('session-progress-retry');
+        if (rBar) {
+            rBar.style.width = `${retryPct}%`;
+        }
+
+        const textEl = document.getElementById('session-progress-text');
+        if (textEl) {
+            if (retryCount > 0) {
+                textEl.innerHTML = `<span class="text-emerald-600 dark:text-emerald-400 font-black">${done}</span>/${this.total} <span class="text-amber-500 font-bold" title="${retryCount} câu trong hàng chờ làm lại">(+${retryCount} ⏳)</span>`;
+            } else {
+                textEl.textContent = `${done}/${this.total}`;
+            }
+        }
+    },
+
+    render() {
+        if (this.total === 0) return;
+        this.updateProgressBar();
+        const theme = (typeof LevelManager !== 'undefined' && LevelManager.getTheme) ? LevelManager.getTheme() : null;
         document.getElementById('victory-card').classList.add('hidden');
         document.getElementById('practice-card').classList.remove('hidden');
         document.getElementById('bottom-action-drawer')?.classList.remove('hidden');
@@ -505,35 +952,32 @@ const App = {
         const q = this.activeQ;
         this.updateModeUI();
 
-        // Skeleton thoáng qua cho workspace khi chuyển câu
-        const ws = document.getElementById('interactive-workspace');
-        ws.innerHTML = `
-            <div class="flex flex-wrap gap-2 justify-center py-2">
-                <div class="skeleton h-10 w-20 rounded-full"></div>
-                <div class="skeleton h-10 w-16 rounded-full"></div>
-                <div class="skeleton h-10 w-24 rounded-full"></div>
-                <div class="skeleton h-10 w-14 rounded-full"></div>
-            </div>`;
+        // Đóng mặc định khối gợi ý bóc tách để học sinh tự động não
+        this.toggleAnatomy(false);
 
-        // Dùng requestAnimationFrame để render nội dung thật sau 1 frame (tạo cảm giác chuyển mượt)
-        requestAnimationFrame(() => {
-            document.getElementById('prompt-instruction').textContent = q.title || "Luyện dịch câu sau:";
-            document.getElementById('source-vi-text').textContent = q.vi || "";
-            document.getElementById('source-pinyin-display').textContent = q.pinyin ? `🗣️ ${q.pinyin}` : "";
-            this.applyPinyinVisibility();
-            document.getElementById('source-core-grammar').textContent = q.grammarPoint ? `Ngữ pháp: ${q.grammarPoint}` : "";
+        // Render trực tiếp và đồng bộ để loại bỏ hoàn toàn hiện tượng nhấp nháy/thu giãn layout
+        const promptInstruction = document.getElementById('prompt-instruction');
+        if (promptInstruction) promptInstruction.textContent = q.title || "Luyện dịch câu sau:";
+        const sourceVi = document.getElementById('source-vi-text');
+        if (sourceVi) sourceVi.textContent = q.vi || "";
+        const sourcePinyin = document.getElementById('source-pinyin-display');
+        if (sourcePinyin) sourcePinyin.textContent = q.pinyin ? `🗣️ ${q.pinyin}` : "";
+        this.applyPinyinVisibility();
+        const sourceGrammar = document.getElementById('source-core-grammar');
+        if (sourceGrammar) sourceGrammar.textContent = q.grammarPoint ? `Ngữ pháp: ${q.grammarPoint}` : "";
 
-            // Reset trạng thái bẫy realtime và hiển thị nút mẹo nếu có
-            document.getElementById('realtime-trap-alert')?.classList.add('hidden');
-            this.renderQuickNotesButton();
+        // Reset trạng thái bẫy realtime và hiển thị nút mẹo nếu có
+        document.getElementById('realtime-trap-alert')?.classList.add('hidden');
+        this.renderQuickNotesButton();
 
-            // Render chips từ vựng
-            const chips = document.getElementById('source-chips-container');
+        // Render chips từ vựng
+        const chips = document.getElementById('source-chips-container');
+        if (chips) {
             chips.innerHTML = '';
             (q.tokens || []).forEach(t => {
                 const b = document.createElement('button');
-                b.className = "clickable-chip px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs font-bold transition active:scale-95";
-                b.innerHTML = `${t.text} <span class="text-[10px] text-emerald-500">ℹ️</span>`;
+                b.className = "clickable-chip px-3.5 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-sm font-bold transition active:scale-95 shadow-xs";
+                b.innerHTML = `${t.text} <span class="text-xs text-emerald-500 font-bold">ℹ️</span>`;
                 b.onclick = (e) => {
                     e.stopPropagation();
                     AudioSvc.speak(t.hz || t.text, 0.85);
@@ -541,38 +985,47 @@ const App = {
                 };
                 chips.appendChild(b);
             });
+        }
 
-            // Render workspace tương tác theo chế độ người dùng lựa chọn (Xếp từ hoặc Tự gõ)
+        // Gắn sự kiện nút đóng/mở khối gợi ý bóc tách
+        const toggleAnatomyBtn = document.getElementById('btn-toggle-anatomy');
+        if (toggleAnatomyBtn) {
+            toggleAnatomyBtn.onclick = () => this.toggleAnatomy();
+        }
+
+        // Render workspace trực tiếp (Xếp từ hoặc Tự gõ)
+        const ws = document.getElementById('interactive-workspace');
+        if (ws) {
             ws.innerHTML = '';
             if (this.mode === 'parsing') {
                 this.renderParse(ws, q);
             } else {
                 this.renderTyping(ws, q);
             }
-        });
+        }
     },
 
     renderParse(ws, q) {
         const slot = document.createElement('div');
         slot.id = 'p-slot';
-        slot.className = "min-h-[72px] p-3 rounded-2xl border-2 border-dashed border-emerald-300 bg-emerald-50/40 flex flex-wrap gap-2 mb-4";
+        slot.className = "min-h-[64px] sm:min-h-[72px] p-2.5 sm:p-3 rounded-2xl border-2 border-dashed border-emerald-300 bg-emerald-50/40 flex flex-wrap gap-2 sm:gap-2.5 mb-2.5 sm:mb-3";
 
         const tip = document.createElement('span');
         tip.id = 'p-tip';
-        tip.className = "text-xs text-slate-400 italic";
+        tip.className = "text-sm sm:text-base text-slate-400 italic font-medium";
         tip.textContent = "Chạm các khối từ vựng bên dưới để ghép câu...";
         slot.appendChild(tip);
 
         const pool = document.createElement('div');
         pool.id = 'p-pool';
-        pool.className = "flex flex-wrap gap-2.5 justify-center";
+        pool.className = "flex flex-wrap gap-2 sm:gap-2.5 justify-center";
 
         const tilesToRender = q.displayTiles || (q.displayTiles = this.shuffleTiles(q.tiles || [], q.targetOrder || []));
 
         tilesToRender.forEach(t => {
             const b = document.createElement('button');
-            b.className = "btn-press px-4 py-2.5 rounded-xl border border-slate-300 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 font-bold text-sm shadow-sm";
-            b.innerHTML = `<span class="chinese-text text-lg">${t.text}</span> <span class="text-[10px] bg-slate-100 dark:bg-slate-700 text-slate-500 rounded px-1">${t.tag}</span>`;
+            b.className = "btn-press px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl border border-slate-300 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 font-bold text-base shadow-sm";
+            b.innerHTML = `<span class="chinese-text text-lg sm:text-xl font-bold">${t.text}</span>`;
             b.dataset.id = t.id;
             b.onclick = () => {
                 if (this.checked) return;
@@ -597,8 +1050,8 @@ const App = {
             document.getElementById('p-pool').querySelector(`[data-id="${id}"]`)?.classList.add('opacity-20', 'pointer-events-none');
             const t = q.tiles.find(x => x.id === id);
             const b = document.createElement('button');
-            b.className = "px-3.5 py-2 rounded-xl bg-white dark:bg-slate-800 border border-emerald-400 text-sm shadow-sm flex items-center gap-1.5";
-            b.innerHTML = `<span class="chinese-text text-lg">${t.text}</span> <span class="text-rose-500 text-xs">✕</span>`;
+            b.className = "px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-800 border-2 border-emerald-400 text-base shadow-sm flex items-center gap-2";
+            b.innerHTML = `<span class="chinese-text text-lg sm:text-xl font-bold">${t.text}</span> <span class="text-rose-500 text-sm font-bold">✕</span>`;
             b.dataset.pid = id;
             b.onclick = () => {
                 if (!this.checked) {
@@ -800,6 +1253,19 @@ const App = {
                     }
                 }, 300);
             }
+
+            // Highlight tất cả các thẻ đã ghép thành công với viền xanh lá chuẩn xác
+            if (this.mode === 'parsing') {
+                const slotEl = document.getElementById('p-slot');
+                if (slotEl) {
+                    slotEl.querySelectorAll('button[data-pid]').forEach(btn => {
+                        btn.className = "px-4 py-2.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border-2 border-emerald-500 text-emerald-800 dark:text-emerald-200 text-base shadow-xs flex items-center gap-2";
+                        const cross = btn.querySelector('.text-rose-500');
+                        if (cross) cross.remove();
+                    });
+                }
+            }
+
             this.queue.shift();
             this.showBanner(true, title, fb);
         } else {
@@ -807,12 +1273,33 @@ const App = {
             this.decreaseHeart(); // Trừ 1 tim khi trả lời sai
             this.queue.push(this.queue.shift());
 
+            // DIFF HIGHLIGHT: So khớp vị trí từng thẻ ghép
+            if (this.mode === 'parsing') {
+                const targetOrder = q.targetOrder || [];
+                const slotEl = document.getElementById('p-slot');
+                if (slotEl) {
+                    this.slots.forEach((slotId, idx) => {
+                        const btn = slotEl.querySelector(`[data-pid="${slotId}"]`);
+                        if (!btn) return;
+                        const isCorrectPos = (slotId === targetOrder[idx]);
+                        if (isCorrectPos) {
+                            btn.className = "px-4 py-2.5 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border-2 border-emerald-400 text-emerald-800 dark:text-emerald-200 text-base shadow-2xs flex items-center gap-2";
+                        } else {
+                            btn.className = "px-4 py-2.5 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border-2 border-rose-500 text-rose-800 dark:text-rose-200 text-base shadow-xs flex items-center gap-2 animate-pulse";
+                        }
+                    });
+                }
+            }
+
             // Nếu bắt trúng bẫy cú pháp, định dạng cụm bẫy gọn gàng vào duy nhất banner ở dưới
             if (evalResult.trapPattern) {
                 fb = `<div class="font-bold text-rose-800 dark:text-rose-200 mb-1 flex items-center gap-1.5 flex-wrap"><span>Phát hiện bẫy:</span><span class="chinese-text font-black px-2 py-0.5 rounded bg-rose-200/90 text-rose-900 dark:bg-rose-900/80 dark:text-rose-200 border border-rose-300 dark:border-rose-700">${evalResult.trapPattern}</span></div><div>${fb}</div>`;
             }
             this.showBanner(false, title, fb);
         }
+
+        // Cập nhật thanh tiến độ phân đoạn trực quan
+        this.updateProgressBar();
 
         this.checked = true;
 
@@ -848,7 +1335,7 @@ const App = {
         b.classList.remove('hidden');
 
         // Phân biệt màu sắc Đúng (Xanh) - Sai (Đỏ) và tương phản cao trên Dark Mode
-        b.className = "rounded-2xl p-4 border transition-all text-sm leading-relaxed animate-pop " +
+        b.className = "rounded-2xl p-4 border text-sm leading-relaxed " +
             (good
                 ? "bg-emerald-100 border-emerald-300 text-emerald-950 dark:bg-emerald-950/80 dark:border-emerald-700 dark:text-emerald-100"
                 : "bg-rose-100 border-rose-300 text-rose-950 dark:bg-rose-950/80 dark:border-rose-800 dark:text-rose-100");
@@ -858,19 +1345,19 @@ const App = {
 
         const titleEl = document.getElementById('eval-status-title');
         titleEl.textContent = title;
-        titleEl.className = "font-black text-base " +
+        titleEl.className = "font-black text-base sm:text-lg " +
             (good ? "text-emerald-900 dark:text-emerald-200" : "text-rose-900 dark:text-rose-200");
 
         const badgeEl = document.getElementById('eval-score-badge');
         badgeEl.textContent = good ? "ĐẠT YÊU CẦU" : "CHƯA ĐẠT";
-        badgeEl.className = "text-xs font-black px-2.5 py-0.5 rounded-full " +
+        badgeEl.className = "text-xs sm:text-sm font-black px-3 py-0.5 rounded-full " +
             (good
                 ? "bg-emerald-200 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200"
                 : "bg-rose-200 text-rose-800 dark:bg-rose-900 dark:text-rose-200");
 
         const bodyEl = document.getElementById('eval-message-body');
         bodyEl.innerHTML = body;
-        bodyEl.className = "mt-1.5 text-xs sm:text-sm font-medium space-y-1.5 text-slate-800 dark:text-slate-100";
+        bodyEl.className = "mt-2 text-sm sm:text-base font-medium space-y-1.5 text-slate-800 dark:text-slate-100";
     },
 
     showVictory() {
@@ -904,6 +1391,9 @@ const App = {
             NavigationHub.markCompleted(this.curLesson, totalQ, stars, accuracy);
         }
 
+        // Ghi nhận chuỗi Streak chuẩn lịch Việt Nam
+        this.recordLessonCompletionStreak();
+
         const theme = (typeof LevelManager !== 'undefined' && LevelManager.getTheme) ? LevelManager.getTheme() : null;
         const advBtn = document.getElementById('btn-advance-lesson');
         if (advBtn && theme) {
@@ -911,41 +1401,104 @@ const App = {
         }
     },
 
-    showHint(t) {
-        document.getElementById('hint-gram-role').textContent = t.role || "Thành phần";
-        document.getElementById('hint-hz').textContent = t.hz || t.text;
-        document.getElementById('hint-py').textContent = t.py || "";
-        document.getElementById('hint-hv').textContent = t.hv || "---";
-        document.getElementById('hint-vn').textContent = t.vn || "";
-        document.getElementById('hint-radicals').textContent = t.radicals || 'Xem chiết tự';
+    // ===== SCT2 VOCAB INSPECTOR (Flexbox Centered & Focus Mode) =====
+    openVocabInspector(token) {
+        if (!token) return;
 
-        const audioBtn = document.getElementById('btn-hint-audio');
-        if (audioBtn) {
-            audioBtn.onclick = (e) => {
-                e.stopPropagation();
-                AudioSvc.speak(t.hz || t.text);
-            };
+        const hanzi = token.hz || token.text || '';
+        const pinyin = token.py || '';
+        const hanViet = (token.hv && token.hv !== '---') ? `HV: ${token.hv.trim()}` : '';
+        const role = token.grammarRole || token.role || token.pos || 'Từ vựng';
+        const meaning = token.vi || token.vn || token.meaning || token.mean || hanzi;
+
+        const hanziEl = document.getElementById('insp-hanzi');
+        const pinyinEl = document.getElementById('insp-pinyin');
+        const hvEl = document.getElementById('insp-hv-clean');
+        const dotSep = document.getElementById('insp-dot-sep');
+        const roleEl = document.getElementById('insp-role');
+        const meaningEl = document.getElementById('insp-meaning');
+        const radBox = document.getElementById('insp-radicals');
+        const trapBox = document.getElementById('insp-trap-box');
+        const trapText = document.getElementById('insp-trap-text');
+        const overlay = document.getElementById('vocab-inspector-overlay');
+
+        if (hanziEl) hanziEl.textContent = hanzi;
+        if (pinyinEl) pinyinEl.textContent = pinyin;
+        if (hvEl) {
+            if (hanViet) {
+                hvEl.textContent = hanViet;
+                hvEl.classList.remove('hidden');
+                if (dotSep) dotSep.classList.remove('hidden');
+            } else {
+                hvEl.classList.add('hidden');
+                if (dotSep) dotSep.classList.add('hidden');
+            }
+        }
+        if (roleEl) {
+            const cleanRole = (role && role.length > 25) ? role.split('+')[0].trim() : (role || 'Từ vựng');
+            roleEl.textContent = cleanRole;
+        }
+        if (meaningEl) meaningEl.textContent = meaning;
+
+        // 2. Điền dữ liệu bộ thủ (xử lý chuỗi phẳng '慢 = Bộ tâm đứng 忄; 地 = Bộ thổ 土')
+        if (radBox) {
+            radBox.innerHTML = '';
+            let radicalsText = token.radicals || "";
+            if (!radicalsText && this.activeQ && Array.isArray(this.activeQ.radicals)) {
+                const matched = this.activeQ.radicals.filter(r => hanzi.includes(r.char));
+                if (matched.length > 0) {
+                    radicalsText = matched.map(m => `${m.char} = ${m.radical}${m.explain ? ' (' + m.explain + ')' : ''}`).join('; ');
+                }
+            }
+
+            if (radicalsText) {
+                if (typeof radicalsText === 'string') {
+                    const items = radicalsText.split(/[;\n]/).map(r => r.trim()).filter(Boolean);
+                    items.forEach((item) => {
+                        const div = document.createElement('div');
+                        div.className = 'flex items-center gap-2';
+                        div.innerHTML = `<span class="text-emerald-600 dark:text-emerald-400 font-bold">•</span> <span class="font-medium text-slate-800 dark:text-slate-200">${item}</span>`;
+                        radBox.appendChild(div);
+                    });
+                } else {
+                    radBox.textContent = JSON.stringify(radicalsText);
+                }
+            } else {
+                radBox.innerHTML = '<span class="text-slate-400 dark:text-slate-500 italic">Chưa có phân tích bộ thủ cho cụm này.</span>';
+            }
         }
 
-        const tb = document.getElementById('hint-trans-trap');
-        if (t.trap) {
-            tb.classList.remove('hidden');
-            document.getElementById('hint-trap-text').textContent = t.trap;
+        // Bẫy ngữ pháp nếu có
+        if (token.trap) {
+            if (trapBox) trapBox.classList.remove('hidden');
+            if (trapText) trapText.textContent = token.trap;
         } else {
-            tb.classList.add('hidden');
+            if (trapBox) trapBox.classList.add('hidden');
         }
 
-        document.getElementById('hint-dialog').classList.remove('hidden');
-        setTimeout(() => {
-            document.getElementById('hint-dialog').classList.add('modal-active');
-            document.getElementById('hint-dialog-card').classList.add('modal-card-active');
-        }, 10);
+        this.activeInspectorWord = hanzi;
+
+        // 3. Hiển thị overlay
+        if (overlay) {
+            overlay.classList.add('active');
+            overlay.setAttribute('aria-hidden', 'false');
+        }
+    },
+
+    closeVocabInspector() {
+        const overlay = document.getElementById('vocab-inspector-overlay');
+        if (overlay) {
+            overlay.classList.remove('active');
+            overlay.setAttribute('aria-hidden', 'true');
+        }
+    },
+
+    showHint(token) {
+        this.openVocabInspector(token);
     },
 
     closeHint() {
-        document.getElementById('hint-dialog').classList.remove('modal-active');
-        document.getElementById('hint-dialog-card').classList.remove('modal-card-active');
-        setTimeout(() => document.getElementById('hint-dialog').classList.add('hidden'), 200);
+        this.closeVocabInspector();
     },
 
     renderQuickNotesButton() {
@@ -1040,12 +1593,12 @@ const App = {
         // 1. Cấu trúc ngữ pháp trọng tâm của câu
         if (q.grammarPoint) {
             const block = document.createElement('div');
-            block.className = "p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80";
+            block.className = "p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 space-y-1.5";
             block.innerHTML = `
-                <div class="font-black text-emerald-800 dark:text-emerald-300 mb-1.5 flex items-center gap-1.5 text-xs">
+                <div class="font-black text-emerald-800 dark:text-emerald-300 flex items-center gap-2 text-sm sm:text-base">
                     <span>📌</span> CẤU TRÚC NGỮ PHÁP CÂU NÀY
                 </div>
-                <div class="text-slate-800 dark:text-slate-200 font-semibold text-xs leading-relaxed">${q.grammarPoint}</div>
+                <div class="text-slate-800 dark:text-slate-200 font-semibold text-sm sm:text-base leading-relaxed">${q.grammarPoint}</div>
             `;
             body.appendChild(block);
         }
@@ -1053,12 +1606,12 @@ const App = {
         // 2. Hướng dẫn dịch & phân tích
         if (q.explanation || q.notes) {
             const block = document.createElement('div');
-            block.className = "p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80";
+            block.className = "p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 space-y-1.5";
             block.innerHTML = `
-                <div class="font-black text-amber-800 dark:text-amber-300 mb-1.5 flex items-center gap-1.5 text-xs">
+                <div class="font-black text-amber-800 dark:text-amber-300 flex items-center gap-2 text-sm sm:text-base">
                     <span>💡</span> HƯỚNG DẪN DỊCH & LƯU Ý
                 </div>
-                <div class="text-slate-700 dark:text-slate-300 text-xs leading-relaxed">${q.explanation || q.notes}</div>
+                <div class="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed font-medium">${q.explanation || q.notes}</div>
             `;
             body.appendChild(block);
         }
@@ -1066,19 +1619,22 @@ const App = {
         // 3. Từ vựng & cụm từ then chốt của câu (tokens)
         if (Array.isArray(q.tokens) && q.tokens.length > 0) {
             const block = document.createElement('div');
-            block.className = "p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1.5";
-            const tokenList = q.tokens.map(t => `
-                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-xs shadow-xs">
-                    <b class="text-emerald-700 dark:text-emerald-400 chinese-text font-bold">${t.hz || t.text}</b>
-                    <span class="text-slate-500 font-mono text-[11px]">(${t.py || ''})</span>:
-                    <span class="text-slate-700 dark:text-slate-300">${t.vn || t.text}</span>
+            block.className = "p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2";
+            const tokenList = q.tokens.map(t => {
+                const viMeaning = t.vi || t.vn || t.meaning || t.mean || '';
+                return `
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-xs">
+                    <b class="text-emerald-700 dark:text-emerald-400 chinese-text text-base sm:text-lg font-bold">${t.hz || t.text}</b>
+                    ${t.py ? `<span class="text-slate-500 dark:text-slate-400 font-mono text-xs sm:text-sm font-semibold">(${t.py})</span>` : ''}
+                    ${viMeaning ? `: <span class="text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-medium">${viMeaning}</span>` : ''}
                 </span>
-            `).join('');
+            `;
+            }).join('');
             block.innerHTML = `
-                <div class="font-black text-slate-700 dark:text-slate-300 mb-1 flex items-center gap-1.5 text-xs">
+                <div class="font-black text-slate-700 dark:text-slate-300 flex items-center gap-2 text-sm sm:text-base">
                     <span>📖</span> TỪ VỰNG THEN CHỐT TRONG CÂU
                 </div>
-                <div class="flex flex-wrap gap-1.5">${tokenList}</div>
+                <div class="flex flex-wrap gap-2">${tokenList}</div>
             `;
             body.appendChild(block);
         }
@@ -1086,11 +1642,11 @@ const App = {
         // Fallback nếu câu không có trường gợi ý nào
         if (body.children.length === 0) {
             const block = document.createElement('div');
-            block.className = "p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 text-center text-slate-600 dark:text-slate-300 text-xs space-y-1";
+            block.className = "p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 text-center text-slate-700 dark:text-slate-300 space-y-2";
             block.innerHTML = `
-                <div class="text-2xl">💡</div>
-                <p class="font-bold">Gợi ý luyện dịch câu này:</p>
-                <p>Hãy chú ý trật tự ngữ pháp tự nhiên trong tiếng Trung: Trạng ngữ thời gian và nơi chốn đặt trước động từ.</p>
+                <div class="text-3xl">💡</div>
+                <p class="font-black text-base">Gợi ý luyện dịch câu này:</p>
+                <p class="text-sm sm:text-base leading-relaxed">Hãy chú ý trật tự ngữ pháp tự nhiên trong tiếng Trung: Trạng ngữ thời gian và nơi chốn đặt trước động từ.</p>
             `;
             body.appendChild(block);
         }
@@ -1133,15 +1689,19 @@ const App = {
         // 1. Phân mục Từ vựng bổ sung (vocabTips) theo chuẩn Briefing
         if (notes && typeof notes === 'object' && Array.isArray(notes.vocabTips) && notes.vocabTips.length > 0) {
             const block = document.createElement('div');
-            block.className = "p-3.5 rounded-2xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 space-y-2";
+            block.className = "p-4 sm:p-5 rounded-2xl bg-amber-50/90 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 space-y-2.5";
             const vocabHtml = notes.vocabTips.map(v => 
-                `<li class="leading-relaxed"><b>${v.word}</b> <i class="text-emerald-600 dark:text-emerald-400 font-mono">(${v.py})</i>: ${v.note}</li>`
+                `<li class="leading-relaxed py-1 text-sm sm:text-base border-b border-amber-100 dark:border-amber-900/40 last:border-0">
+                    <b class="chinese-text text-base sm:text-lg font-bold text-slate-900 dark:text-white mr-1.5">${v.word}</b> 
+                    <span class="text-emerald-600 dark:text-emerald-400 font-mono text-xs sm:text-sm font-bold">(${v.py})</span>: 
+                    <span class="text-slate-800 dark:text-slate-200 font-medium">${v.note}</span>
+                </li>`
             ).join('');
             block.innerHTML = `
-                <div class="font-black text-amber-900 dark:text-amber-300 text-xs flex items-center gap-1.5">
+                <div class="font-black text-amber-900 dark:text-amber-300 text-sm sm:text-base flex items-center gap-2">
                     <span>📚</span> Từ vựng bổ sung:
                 </div>
-                <ul class="space-y-1.5 text-xs text-slate-700 dark:text-slate-300">${vocabHtml}</ul>
+                <ul class="space-y-1 text-slate-700 dark:text-slate-300">${vocabHtml}</ul>
             `;
             body.appendChild(block);
         }
@@ -1149,15 +1709,15 @@ const App = {
         // 2. Phân mục Lưu ý ngữ pháp & bẫy cú pháp (grammarTips) theo chuẩn Briefing
         if (notes && typeof notes === 'object' && Array.isArray(notes.grammarTips) && notes.grammarTips.length > 0) {
             const block = document.createElement('div');
-            block.className = "p-3.5 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 space-y-2";
+            block.className = "p-4 sm:p-5 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 space-y-2.5";
             const grammarHtml = notes.grammarTips.map(g => 
-                `<li class="leading-relaxed">${g}</li>`
+                `<li class="leading-relaxed py-1 text-sm sm:text-base text-slate-800 dark:text-slate-200 font-medium">${g}</li>`
             ).join('');
             block.innerHTML = `
-                <div class="font-black text-emerald-900 dark:text-emerald-300 text-xs flex items-center gap-1.5">
+                <div class="font-black text-emerald-900 dark:text-emerald-300 text-sm sm:text-base flex items-center gap-2">
                     <span>⚠️</span> Lưu ý ngữ pháp:
                 </div>
-                <ul class="list-disc list-inside space-y-1.5 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">${grammarHtml}</ul>
+                <ul class="list-disc list-inside space-y-1.5 text-slate-700 dark:text-slate-300 leading-relaxed">${grammarHtml}</ul>
             `;
             body.appendChild(block);
         }
@@ -1167,27 +1727,28 @@ const App = {
             const q = this.activeQ;
             if (q && q.grammarPoint) {
                 const block = document.createElement('div');
-                block.className = "p-3 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80";
+                block.className = "p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 space-y-1.5";
                 block.innerHTML = `
-                    <div class="font-black text-emerald-800 dark:text-emerald-300 mb-1 flex items-center gap-1.5 text-xs">
+                    <div class="font-black text-emerald-800 dark:text-emerald-300 flex items-center gap-2 text-sm sm:text-base">
                         <span>📌</span> CẤU TRÚC NGỮ PHÁP
                     </div>
-                    <div class="text-slate-800 dark:text-slate-200 font-semibold text-xs leading-relaxed">${q.grammarPoint}</div>
+                    <div class="text-slate-800 dark:text-slate-200 font-semibold text-sm sm:text-base leading-relaxed">${q.grammarPoint}</div>
                 `;
                 body.appendChild(block);
             }
             if (typeof notes === 'string') {
                 const block = document.createElement('div');
-                block.className = "p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80";
-                block.innerHTML = `<p class="text-slate-700 dark:text-slate-300 text-xs leading-relaxed">${notes}</p>`;
+                block.className = "p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80";
+                block.innerHTML = `<p class="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed font-medium">${notes}</p>`;
                 body.appendChild(block);
             } else if (Array.isArray(notes)) {
                 const block = document.createElement('div');
-                block.className = "p-3 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80";
+                block.className = "p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 space-y-2";
                 const ul = document.createElement('ul');
-                ul.className = "list-disc list-inside space-y-1 text-slate-700 dark:text-slate-300 text-xs";
+                ul.className = "list-disc list-inside space-y-1.5 text-slate-800 dark:text-slate-200 text-sm sm:text-base font-medium";
                 notes.forEach(item => {
                     const li = document.createElement('li');
+                    li.className = "py-0.5 leading-relaxed";
                     li.textContent = typeof item === 'string' ? item : JSON.stringify(item);
                     ul.appendChild(li);
                 });
@@ -1283,6 +1844,9 @@ const App = {
             // Hiển thị banner Chưa Đạt / Đã Bỏ Qua kèm đáp án chuẩn
             this.showBanner(false, "Cần chú ý / Đã bỏ qua câu này", "Đã xếp câu này xuống cuối hàng chờ để bạn luyện tập lại sau.");
 
+            // Cập nhật thanh tiến độ phân đoạn trực quan
+            this.updateProgressBar();
+
             const stdBox = document.getElementById('standard-answer-box');
             if (stdBox) {
                 stdBox.classList.remove('hidden');
@@ -1312,15 +1876,51 @@ const App = {
             refillBtn.onclick = () => this.refillHearts();
         }
 
+        // Nút học tiếp ở chế độ Dev khi hết tim
+        const practiceDevBtn = document.getElementById('btn-practice-dev-mode');
+        if (practiceDevBtn) {
+            practiceDevBtn.onclick = () => {
+                if (typeof NavigationHub !== 'undefined') {
+                    NavigationHub.testerMode = true;
+                    try { localStorage.setItem('sct2_dev_mode', '1'); } catch (e) {}
+                    NavigationHub.updateDevUI();
+                    NavigationHub.renderDashboardCards();
+                }
+                document.getElementById('no-hearts-dialog')?.classList.add('hidden');
+                this.stopHeartCountdownTimer();
+                if (this.showToast) this.showToast('🛠️ Đã bật Chế độ Dev – Tiếp tục làm bài không trừ tim', 'success');
+            };
+        }
+
         const heartContainer = document.getElementById('heart-container');
         if (heartContainer) {
             heartContainer.onclick = () => {
-                if (this.hearts < this.maxHearts) {
-                    if (confirm(`Bạn đang còn ${this.hearts}/${this.maxHearts} ❤️. Bạn có muốn nạp đầy 5 tim ngay bây giờ không?`)) {
-                        this.refillHearts();
-                    }
+                this.showHeartStatusModal();
+            };
+        }
+
+        // Bấm vào Streak xem chi tiết
+        const streakContainer = document.getElementById('stat-streak-container');
+        if (streakContainer) {
+            streakContainer.onclick = () => {
+                const today = this.getLocalDateString();
+                const learnedToday = this.lastCompletedDate === today;
+                if (learnedToday) {
+                    this.showToast({
+                        title: `Chuỗi Streak: ${this.streak} ngày liên tiếp! 🔥`,
+                        message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
+                        icon: "🔥",
+                        type: "streak",
+                        duration: 3500
+                    });
                 } else {
-                    this.updateHeartsUI(true);
+                    this.showToast({
+                        title: `Chuỗi Streak: ${this.streak} ngày liên tiếp! 🔥`,
+                        message: "Hãy hoàn thành ít nhất 1 bài hôm nay để giữ lửa chuỗi ngày nhé!",
+                        icon: "🔥",
+                        type: "streak",
+                        duration: 3500
+                    });
                 }
             };
         }
@@ -1363,16 +1963,28 @@ const App = {
         const fbSubmit = document.getElementById('btn-submit-feedback');
         if (fbSubmit) fbSubmit.onclick = () => this.submitFeedback();
 
-        // Đóng hint tra cứu từ khi nhấn bất kỳ vùng nào (trừ nút phát âm 🔊)
-        const hintDialog = document.getElementById('hint-dialog');
-        if (hintDialog) {
-            hintDialog.onclick = (e) => {
-                if (e.target.closest('#btn-hint-audio')) return;
-                this.closeHint();
+        // Đóng Quick-Inspector khi nhấn nút X hoặc chạm ra ngoài vùng overlay
+        const inspectorOverlay = document.getElementById('vocab-inspector-overlay');
+        if (inspectorOverlay) {
+            inspectorOverlay.onclick = (e) => {
+                if (e.target === inspectorOverlay) {
+                    this.closeVocabInspector();
+                }
             };
         }
-        const btnCloseHint = document.getElementById('btn-close-hint');
-        if (btnCloseHint) btnCloseHint.onclick = () => this.closeHint();
+        const inspCloseBtn = document.getElementById('insp-close-btn');
+        if (inspCloseBtn) inspCloseBtn.onclick = () => this.closeVocabInspector();
+
+        const inspAudioBtn = document.getElementById('insp-audio-btn');
+        if (inspAudioBtn) {
+            inspAudioBtn.onclick = (e) => {
+                e.stopPropagation();
+                const word = this.activeInspectorWord || this.currentAudioText;
+                if (typeof AudioSvc !== 'undefined' && word) {
+                    AudioSvc.speak(word, 0.85);
+                }
+            };
+        }
 
         // Phím tắt bàn phím thông minh (tối ưu hóa cho bộ gõ IME tiếng Trung Pinyin)
         window.addEventListener('keydown', (e) => {
@@ -1486,16 +2098,13 @@ const App = {
             testerModeCheckbox.onchange = (e) => {
                 if (typeof NavigationHub !== 'undefined') {
                     NavigationHub.testerMode = e.target.checked;
-                    const label = document.getElementById('tester-unlock-label');
-                    if (label) {
-                        label.textContent = NavigationHub.testerMode ? "Tester: Đã Mở Khóa Tất Cả" : "Tester: Chế Độ Thường";
-                    }
-                    const testerBtn = document.getElementById('btn-toggle-tester-unlock');
-                    if (testerBtn) {
-                        testerBtn.className = "text-[11px] font-black px-2.5 py-1.5 rounded-xl transition active:scale-95 flex items-center gap-1.5 border cursor-pointer backdrop-blur-xs " +
-                            (NavigationHub.testerMode ? "bg-white/25 hover:bg-white/35 text-white border-white/30" : "bg-black/30 hover:bg-black/40 text-slate-300 border-white/10");
-                    }
+                    try { localStorage.setItem('sct2_dev_mode', NavigationHub.testerMode ? '1' : '0'); } catch (err) {}
+                    NavigationHub.updateDevUI();
                     NavigationHub.renderDashboardCards();
+                    const msg = NavigationHub.testerMode
+                        ? '🛠️ Đã bật Chế độ Dev (Mở khóa toàn bộ bài)'
+                        : '🔒 Đã tắt Chế độ Dev';
+                    if (this.showToast) this.showToast(msg, NavigationHub.testerMode ? 'success' : 'info');
                 }
             };
         }
@@ -1504,7 +2113,13 @@ const App = {
         if (settingRefillBtn) {
             settingRefillBtn.onclick = () => {
                 this.refillHearts();
-                alert("❤️ Đã hồi phục đầy 5 Tim!");
+                this.showToast({
+                    title: "Hồi Phục Tim Thành Công ❤️",
+                    message: "Đã nạp đầy 5 Tim! Bạn có thể tiếp tục học tập.",
+                    icon: "❤️",
+                    type: "success",
+                    duration: 3000
+                });
             };
         }
 
@@ -1527,7 +2142,13 @@ const App = {
                     }
                     this.refillHearts();
                     document.getElementById('admin-dialog')?.classList.add('hidden');
-                    alert("Đã đặt lại toàn bộ tiến độ học tập về Bài 1!");
+                    this.showToast({
+                        title: "Đặt Lại Tiến Độ 🔄",
+                        message: "Đã đặt lại toàn bộ tiến độ học tập về Bài 1!",
+                        icon: "🔄",
+                        type: "info",
+                        duration: 3000
+                    });
                 }
             };
         }
@@ -1608,7 +2229,13 @@ const App = {
         const contentEl = document.getElementById('app-feedback-content');
         const content = contentEl ? contentEl.value.trim() : '';
         if (!content) {
-            alert('Vui lòng nhập nội dung góp ý của bạn trước khi gửi.');
+            this.showToast({
+                title: 'Nội dung còn trống',
+                message: 'Vui lòng nhập nội dung góp ý của bạn trước khi gửi.',
+                icon: '⚠️',
+                type: 'warning',
+                duration: 3000
+            });
             contentEl?.focus();
             return;
         }
@@ -1633,7 +2260,13 @@ const App = {
         }
 
         this.closeAppFeedback();
-        alert('Cảm ơn bạn! Ý kiến góp ý đã được ghi nhận và gửi đến ban phát triển ứng dụng.');
+        this.showToast({
+            title: 'Gửi Góp Ý Thành Công',
+            message: 'Cảm ơn bạn! Ý kiến góp ý đã được ghi nhận và gửi đến ban phát triển ứng dụng.',
+            icon: '✅',
+            type: 'success',
+            duration: 3500
+        });
     },
 
     openFeedback() {
@@ -1660,7 +2293,13 @@ const App = {
         const contentEl = document.getElementById('feedback-content');
         const content = contentEl ? contentEl.value.trim() : '';
         if (!content) {
-            alert('Vui lòng nhập nội dung góp ý của bạn trước khi gửi.');
+            this.showToast({
+                title: 'Nội dung còn trống',
+                message: 'Vui lòng nhập nội dung góp ý của bạn trước khi gửi.',
+                icon: '⚠️',
+                type: 'warning',
+                duration: 3000
+            });
             contentEl?.focus();
             return;
         }
@@ -1687,11 +2326,23 @@ const App = {
         }
 
         this.closeFeedback();
-        alert('❤️ Cảm ơn bạn! Ý kiến đóng góp của bạn đã được ghi nhận để hoàn thiện bài học.');
+        this.showToast({
+            title: 'Góp ý thành công ❤️',
+            message: 'Ý kiến đóng góp của bạn đã được ghi nhận để hoàn thiện bài học.',
+            icon: '❤️',
+            type: 'success',
+            duration: 3000
+        });
     }
 };
 
 window.App = App;
+window.openVocabInspector = (token) => App.openVocabInspector(token);
+window.closeVocabInspector = () => App.closeVocabInspector();
+window.showHint = (token) => App.showHint(token);
+window.closeHint = () => App.closeHint();
+window.ensureToastContainer = () => App.ensureToastContainer();
+window.showToast = (opts, ...args) => App.showToast(opts, ...args);
 window.toggleQuickNotes = (show) => App.toggleQuickNotes(show);
 window.openQuestionHintModal = () => App.openQuestionHintModal();
 window.closeQuestionHintModal = () => App.closeQuestionHintModal();
