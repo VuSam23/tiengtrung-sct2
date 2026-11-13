@@ -1,596 +1,1020 @@
 {
   "lessonId": "b14",
-  "lessonTitle": "第十四课: 你的车是新的还是旧的?",
+  "lessonTitle": "Bài 14: Phương tiện di chuyển & Trạng thái gần đây",
   "quickNotes": {
     "vocabTips": [
       {
-        "word": "还是 (háishì) vs 或者 (huòzhě)",
-        "py": "háishì vs huòzhě",
-        "note": "还是 dùng trong câu hỏi lựa chọn (A 还是 B: A hay là B?); 或者 chỉ dùng trong câu trần thuật khẳng định."
+        "word": "刚 / 最近",
+        "py": "gāng / zuìjìn",
+        "note": "刚 (vừa mới) là phó từ, đứng ngay trước động từ để chỉ hành động vừa xảy ra trong thời gian rất ngắn (刚开学 - vừa khai giảng); 最近 (gần đây) là danh từ chỉ thời gian, đứng trước hoặc sau chủ ngữ."
       },
       {
-        "word": "有点儿 vs 一点儿",
-        "py": "yǒudiǎnr vs yìdiǎnr",
-        "note": "有点儿 + Tính từ (tiêu cực/không vừa ý): 有点儿旧 (hơi cũ), 有点儿累 (hơi mệt); Tính từ + 一点儿 (kỳ vọng/so sánh hơn): 新一点儿 (mới hơn một chút), 便宜一点儿 (rẻ hơn chút)."
+        "word": "辆 / 杯",
+        "py": "liàng / bēi",
+        "note": "Lượng từ trọng tâm: 辆 dùng cho các loại xe cộ có bánh (一辆自行车 - một chiếc xe đạp); 杯 dùng cho đồ uống đựng trong cốc/tách (一杯咖啡 - một cốc cà phê)."
       },
       {
-        "word": "刚 (gāng) - Vừa mới",
-        "py": "gāng",
-        "note": "Phó từ chỉ hành động vừa mới xảy ra, đứng trước động từ: 刚买 (vừa mới mua), 刚来 (vừa mới đến)."
-      },
-      {
-        "word": "Lượng từ xe cộ 辆 (liàng)",
-        "py": "liàng",
-        "note": "Dùng cho phương tiện giao thông đường bộ có bánh: 一辆自行车 (1 chiếc xe đạp), 一辆汽车 (1 chiếc ô tô), 一辆摩托车 (1 chiếc xe máy)."
+        "word": "还是 / 或者",
+        "py": "háishì / huòzhě",
+        "note": "Cả hai đều có nghĩa là 'hay là / hoặc là', nhưng 还是 chỉ dùng trong câu hỏi lựa chọn, còn 或者 chỉ dùng trong câu trần thuật."
       }
     ],
     "grammarTips": [
-      "Câu hỏi lựa chọn: Chủ ngữ + 是 + Lựa chọn A + 还是 + Lựa chọn B? (Không thêm trợ từ '吗' ở cuối câu).",
-      "Động từ phương tiện: 骑 (cưỡi/điều khiển xe 2 bánh): 骑自行车, 骑摩托车; 坐 (ngồi): 坐出租车 (ngồi taxi), 坐公共汽车 (đi xe buýt).",
-      "Tiền tố 新 / 旧 trước danh xưng chức vụ/đồ vật: 新经理 (giám đốc mới), 旧车 (xe cũ)."
+      "Hỏi lựa chọn với 还是: Chủ ngữ + 是 + Lựa chọn A + 还是 + Lựa chọn B?",
+      "Dùng phó từ 刚: Chủ ngữ + 刚 + Động từ + Tân ngữ (Không dùng 不 hoặc 没 ngay sau 刚).",
+      "Phân biệt 一点儿 và 有(一)点儿: 一点儿 + Danh từ (một ít...); 有(一)点儿 + Tính từ (hơi..., có chút...)."
     ]
   },
   "sentences": [
     {
-      "id": "b14-01",
+      "id": "b14-06",
       "type": "sentence_parsing",
-      "title": "Hỏi vị trí và lượng từ bình lọ 瓶",
-      "vi": "A: Nước hoa trong vali là của ai vậy? Là của cậu à? B: Không phải, tớ cũng không biết lọ nước hoa này là của ai.",
-      "zh": "箱子里的香水是谁的 是你的吗 不是 我也不知道这瓶香水是谁的",
-      "standardTrans": "箱子里的香水是谁的 是你的吗 不是 我也不知道这瓶香水是谁的",
-      "pinyin": "Xiāngzi lǐ de xiāngshuǐ shì shéi de? Shì nǐ de ma? Bú shì. Wǒ yě bù zhīdào zhè píng xiāngshuǐ shì shéi de.",
-      "grammarPoint": "Phương vị từ: Danh từ + 里 (trong); Lượng từ chai lọ: 瓶 (píng); Cụm chữ 的: 是谁的",
+      "title": "Hỏi thăm tình hình gần đây sau thời gian dài",
+      "vi": "Lâu rồi không gặp dạo này bạn thế nào?",
+      "zh": "好久不见 你最近怎么样",
+      "standardTrans": "好久不见 你最近怎么样",
+      "pinyin": "Hǎojiǔ bú jiàn, nǐ zuìjìn zěnmeyàng?",
+      "grammarPoint": "Danh từ thời gian 最近 & Đại từ nghi vấn 怎么样",
       "tokens": [
         {
-          "text": "Nước hoa",
-          "hz": "香水",
-          "py": "xiāngshuǐ",
-          "hv": "Hương thủy",
-          "role": "Trung tâm ngữ",
-          "vn": "Nước hoa, dầu thơm",
-          "radicals": "香 = Bộ hương 香 (bộ hòa 禾 + bộ nhật 日); 水 = Bộ thủy 水"
+          "text": "Lâu rồi",
+          "hz": "好久",
+          "py": "hǎojiǔ",
+          "hv": "Hảo cửu",
+          "role": "Cụm tính từ",
+          "vn": "Rất lâu, một thời gian dài",
+          "radicals": "好 = Bộ nữ 女 + Bộ tử 子; 久 = Bộ phiệt 丿 + Bộ nại 夂"
         },
         {
-          "text": "Lọ nước hoa này",
-          "hz": "这瓶香水",
-          "py": "zhè píng xiāngshuǐ",
-          "hv": "Giá bình hương thủy",
-          "role": "Chủ ngữ phân câu",
-          "vn": "Chai nước hoa này, lọ nước hoa này",
-          "radicals": "瓶 = Chữ tinh 并 + bộ ngoã 瓦; 香水 = Nước hoa"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "是你的吗", "tag": "Hỏi sở hữu" },
-        { "id": "t1", "text": "箱子里的香水是谁的", "tag": "Hỏi chủ nhân" },
-        { "id": "t4", "text": "我也不知道这瓶香水是谁的", "tag": "Không rõ nguồn gốc" },
-        { "id": "t3", "text": "不是", "tag": "Phủ định" },
-        { "id": "t5", "text": "在里箱子", "tag": "Bẫy phương vị" },
-        { "id": "t6", "text": "个香水", "tag": "Bẫy lượng từ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["箱子里的香水", "是谁的", "是你的吗", "这瓶香水"],
-      "wordBankPool": ["箱子里的香水是谁的", "是你的吗", "不是", "我也不知道这瓶香水是谁的", "在里箱子", "个香水", "我不也知道"],
-      "traps": [
-        {
-          "pattern": "在里箱子",
-          "msg": "Lỗi phương vị từ: Phương vị từ '里' bắt buộc đứng sau danh từ ('箱子里'), không nói '在里箱子'."
+          "text": "Không gặp",
+          "hz": "不见",
+          "py": "bú jiàn",
+          "hv": "Bất kiến",
+          "role": "Cụm động từ",
+          "vn": "Không gặp mặt (cả cụm 好久不见 nghĩa là 'Lâu rồi không gặp')",
+          "radicals": "不 = Bộ nhất 一 + Nét phẩy 丿; 见 = Bộ kiến 见"
         },
         {
-          "pattern": "我不也",
-          "msg": "Lỗi trật tự phó từ: 'Cũng không' bắt buộc nói là '也不' ('我也不知道'), không nói '我不也'."
-        }
-      ],
-      "explanation": "Phương vị từ '里' đứng sau danh từ (箱子里: trong vali). Chai, lọ nước hoa có lượng từ chuyên dụng là '瓶' ('这瓶香水')."
-    },
-    {
-      "id": "b14-02",
-      "type": "anti_word_by_word",
-      "title": "Chào hỏi bạn cũ và hỏi thăm tình hình gần đây",
-      "vi": "A: Đã lâu không gặp, dạo này cậu thế nào? B: Tớ rất khỏe, cảm ơn. Còn cậu?",
-      "zh": "好久不见 你最近怎么样 我很好 谢谢 你呢",
-      "standardTrans": "好久不见 你最近怎么样 我很好 谢谢 你呢",
-      "pinyin": "Hǎojiǔ bú jiàn, nǐ zuìjìn zěnmeyàng? Wǒ hěn hǎo, xièxie. Nǐ ne?",
-      "grammarPoint": "Khẩu ngữ chào hỏi kinh điển: 好久不见; Trạng ngữ thời gian: 最近 (dạo này); Trợ từ tỉnh lược: 呢",
-      "tokens": [
-        {
-          "text": "Lâu rồi không gặp",
-          "hz": "好久不见",
-          "py": "hǎojiǔ bú jiàn",
-          "hv": "Hảo cửu bất kiến",
-          "role": "Thành ngữ chào hỏi",
-          "vn": "Lâu rồi không gặp",
-          "radicals": "好 = Bộ nữ 女 + bộ tử 子; 久 = Bộ phiệt 丿 + nét trích; 不 = Bộ nhất 一; 见 = Bộ kiến 见"
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Bạn, cậu",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Dạo này, gần đây",
+          "text": "Gần đây / Dạo này",
           "hz": "最近",
           "py": "zuìjìn",
           "hv": "Tối cận",
-          "role": "Trạng ngữ thời gian",
-          "vn": "Gần đây, dạo này",
-          "radicals": "最 = Bộ nhật 日 + bộ nhĩ 耳 + bộ hựu 又; 近 = Bộ quai xước 辶 + bộ cân 斤"
+          "role": "Danh từ thời gian",
+          "vn": "Gần đây, dạo này (khoảng thời gian sát hiện tại)",
+          "radicals": "最 = Bộ viết 曰 + Bộ nhĩ 耳 + Bộ hựu 又; 近 = Bộ sước 辶 + Bộ cân 斤"
+        },
+        {
+          "text": "Thế nào",
+          "hz": "怎么样",
+          "py": "zěnmeyàng",
+          "hv": "Chẩm ma dạng",
+          "role": "Đại từ nghi vấn",
+          "vn": "Thế nào, ra sao",
+          "radicals": "怎 = Bộ tâm 心; 么 = Bộ phiệt 丿 + Bộ khư 厶; 样 = Bộ mộc 木 + Bộ dương 羊"
         }
       ],
       "tiles": [
-        { "id": "t3", "text": "我很好谢谢", "tag": "Lời đáp sức khỏe" },
-        { "id": "t1", "text": "好久不见", "tag": "Lời chào mở đầu" },
-        { "id": "t4", "text": "你呢", "tag": "Hỏi lại đối phương" },
-        { "id": "t2", "text": "你最近怎么样", "tag": "Hỏi thăm tình hình" },
-        { "id": "t5", "text": "怎么样最近", "tag": "Bẫy trật tự" },
-        { "id": "t6", "text": "你呢吗", "tag": "Bẫy thừa 吗" }
+        { "id": "t4", "text": "最近", "tag": "Thời gian" },
+        { "id": "t2", "text": "不见", "tag": "Động từ" },
+        { "id": "t6", "text": "附近", "tag": "Bẫy" },
+        { "id": "t1", "text": "好久", "tag": "Cụm từ" },
+        { "id": "t5", "text": "怎么样", "tag": "Nghi vấn" },
+        { "id": "t3", "text": "你", "tag": "Chủ ngữ" }
       ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["好久不见", "你最近怎么样", "我很好", "谢谢", "你呢"],
-      "wordBankPool": ["好久不见", "你最近怎么样", "我很好谢谢", "你呢", "怎么样最近", "你呢吗", "很久不见"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["好久", "不见", "你", "最近", "怎么样"],
+      "wordBankPool": ["最近", "不见", "附近", "好久", "怎么样", "你"],
       "traps": [
         {
-          "pattern": "怎么样最近",
-          "msg": "Lỗi ngữ tự: Trạng ngữ thời gian '最近' đứng trước hoặc sau chủ ngữ ('你最近怎么样'), không đặt ở cuối câu."
-        },
-        {
-          "pattern": "你呢吗",
-          "msg": "Thừa trợ từ: Đã dùng trợ từ hỏi '呢' thì tuyệt đối KHÔNG thêm trợ từ '吗'."
+          "pattern": "附近",
+          "msg": "Lỗi từ vựng: '最近' chỉ thời gian gần đây (dạo này), còn '附近' chỉ không gian địa lý gần đây (vùng lân cận)."
         }
       ],
-      "explanation": "Cụm thành ngữ khẩu ngữ cố định: '好久不见' (lâu rồi không gặp). Câu hỏi tình trạng: S + 最近怎么样? (dạo này thế nào?)."
+      "explanation": "'最近' là danh từ chỉ thời gian, có thể đặt ngay sau chủ ngữ hoặc đứng đầu câu để hỏi thăm tình hình dạo gần đây."
     },
     {
-      "id": "b14-03",
+      "id": "b14-01",
       "type": "sentence_parsing",
-      "title": "Câu hỏi lựa chọn 还是 giữa hai tính chất đối lập",
-      "vi": "Máy ảnh của cậu là cái mới hay cái cũ?",
-      "zh": "你的照相机是新的还是旧的",
-      "standardTrans": "你的照相机是新的还是旧的",
-      "pinyin": "Nǐ de zhàoxiàngjī shì xīn de háishì jiù de?",
-      "grammarPoint": "Câu hỏi lựa chọn: A + 是 + X + 还是 + Y? (Không dùng 吗 ở cuối câu hỏi lựa chọn)",
+      "title": "Hỏi lựa chọn đồ vật mới hay cũ với 还是",
+      "vi": "Xe đạp của em trai bạn là mới hay là cũ?",
+      "zh": "你弟弟的自行车是新的还是旧的",
+      "standardTrans": "你弟弟的自行车是新的还是旧的",
+      "pinyin": "Nǐ dìdi de zìxíngchē shì xīn de háishì jiù de?",
+      "grammarPoint": "Câu hỏi lựa chọn: S + 是 + A + 还是 + B",
       "tokens": [
         {
-          "text": "Máy ảnh",
-          "hz": "照相机",
-          "py": "zhàoxiàngjī",
-          "hv": "Chiếu tương cơ",
-          "role": "Chủ ngữ",
-          "vn": "Máy chụp ảnh",
-          "radicals": "照 = Chữ chiêu 昭 + bộ hỏa 灬; 相 = Bộ mộc 木 + bộ mục 目; 机 = Bộ mộc 木 + bộ kỷ 几"
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Định ngữ",
+          "vn": "Của bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Hay là",
-          "hz": "还是",
-          "py": "háishì",
-          "hv": "Hoàn thị",
-          "role": "Liên từ nghi vấn lựa chọn",
-          "vn": "Hay là, hay (trong câu hỏi)",
-          "radicals": "还 = Chữ bất 不 + bộ sước 辶; 是 = Bộ nhật 日 + bộ sơ 疋"
+          "text": "Em trai",
+          "hz": "弟弟",
+          "py": "dìdi",
+          "hv": "Đệ đệ",
+          "role": "Định ngữ",
+          "vn": "Em trai",
+          "radicals": "弟 = Bộ cung 弓 + Bộ bát 八"
         },
         {
-          "text": "Cái mới hay cái cũ",
-          "hz": "新的还是旧的",
-          "py": "xīn de háishì jiù de",
-          "hv": "Tân đích hoàn thị cựu đích",
-          "role": "Vị ngữ lựa chọn",
-          "vn": "Cái mới hay là cái cũ",
-          "radicals": "新 = Bộ tân 新; 旧 = Bộ cựu 旧"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "是新的还是旧的", "tag": "Vị ngữ lựa chọn" },
-        { "id": "t1", "text": "你的照相机", "tag": "Chủ ngữ" },
-        { "id": "t3", "text": "或者旧的", "tag": "Bẫy liên từ" },
-        { "id": "t4", "text": "旧的吗", "tag": "Bẫy thừa 吗" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["你的照相机", "是新的还是旧的"],
-      "wordBankPool": ["你的照相机", "是新的还是旧的", "或者旧的", "旧的吗", "新还是旧", "照相机你的"],
-      "traps": [
-        {
-          "pattern": "或者",
-          "msg": "Lỗi liên từ: '还是' dùng trong câu hỏi lựa chọn, '或者' chỉ dùng trong câu trần thuật khẳng định, không dùng để hỏi."
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
         },
-        {
-          "pattern": "还是旧的吗",
-          "msg": "Lỗi trợ từ nghi vấn: Câu hỏi lựa chọn '还是' đã mang tính nghi vấn, tuyệt đối không thêm '吗' ở cuối câu."
-        }
-      ],
-      "explanation": "Công thức câu hỏi lựa chọn: S + 是 + A + 还是 + B? Cụm '新的' và '旧的' là kết cấu chữ 的 thay thế cho danh từ 照相机."
-    },
-    {
-      "id": "b14-04",
-      "type": "anti_word_by_word",
-      "title": "Lượng từ xe cộ 辆 và liên từ chuyển ngoặt 但",
-      "vi": "Tớ cũng có một chiếc xe đạp, nhưng không phải là màu xám, là màu đen. Xe của tớ không mới, là một chiếc xe cũ.",
-      "zh": "我也有一辆自行车 但不是灰的 是黑的 我的车不新 是一辆旧车",
-      "standardTrans": "我也有一辆自行车 但不是灰的 是黑的 我的车不新 是一辆旧车",
-      "pinyin": "Wǒ yě yǒu yí liàng zìxíngchē, dàn bú shì huī de, shì hēi de. Wǒ de chē bù xīn, shì yí liàng jiù chē.",
-      "grammarPoint": "Lượng từ xe cộ: 辆 (liàng); Liên từ biểu thị đối lập: 但 (nhưng); Cụm định ngữ xe cũ: 一辆旧车",
-      "tokens": [
         {
           "text": "Xe đạp",
           "hz": "自行车",
           "py": "zìxíngchē",
           "hv": "Tự hành xa",
-          "role": "Tân ngữ",
+          "role": "Chủ ngữ",
           "vn": "Xe đạp",
           "radicals": "自 = Bộ tự 自; 行 = Bộ hành 行; 车 = Bộ xa 车"
         },
         {
-          "text": "Chiếc, cái (xe)",
-          "hz": "一辆",
-          "py": "yí liàng",
-          "hv": "Nhất lượng",
-          "role": "Lượng từ xe",
-          "vn": "Một chiếc xe",
-          "radicals": "辆 = Bộ xa 车 + chữ lưỡng 两"
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
         },
         {
-          "text": "Màu xám",
-          "hz": "灰的",
-          "py": "huī de",
-          "hv": "Hôi đích",
-          "role": "Cụm danh ngữ màu sắc",
-          "vn": "Cái màu xám",
-          "radicals": "灰 = Bộ hỏa 火 + bộ hựu 又; 的 = Trợ từ"
+          "text": "Cái mới",
+          "hz": "新的",
+          "py": "xīn de",
+          "hv": "Tân đích",
+          "role": "Cụm chữ 的",
+          "vn": "Cái mới (lược bỏ danh từ 自行车 phía sau)",
+          "radicals": "新 = Bộ lập 立 + Bộ mộc 木 + Bộ cân 斤; 的 = Bộ bạch 白 + Bộ chước 勺"
         },
-        {
-          "text": "Xe cũ",
-          "hz": "旧车",
-          "py": "jiù chē",
-          "hv": "Cựu xa",
-          "role": "Trung tâm ngữ",
-          "vn": "Xe cũ kỹ",
-          "radicals": "旧 = Bộ cựu 旧; 车 = Bộ xa 车"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "但不是灰的是黑的", "tag": "Mô tả màu sắc" },
-        { "id": "t1", "text": "我也有一辆自行车", "tag": "Khẳng định có xe" },
-        { "id": "t3", "text": "我的车不新是一辆旧车", "tag": "Độ mới cũ" },
-        { "id": "t4", "text": "一个自行车", "tag": "Bẫy lượng từ" },
-        { "id": "t5", "text": "老车", "tag": "Bẫy từ vựng" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["一辆自行车", "但不是灰的", "是黑的", "一辆旧车"],
-      "wordBankPool": ["我也有一辆自行车", "但不是灰的是黑的", "我的车不新是一辆旧车", "一个自行车", "老车", "也是有一辆", "车旧"],
-      "traps": [
-        {
-          "pattern": "一个自行车",
-          "msg": "Lỗi lượng từ: Xe cộ có bánh bắt buộc dùng lượng từ '辆' ('一辆自行车'), không dùng lượng từ '个'."
-        },
-        {
-          "pattern": "老车",
-          "msg": "Lỗi dùng từ: Xe cộ đồ vật cũ phải dùng '旧' ('旧车'), không dùng '老' (老 chỉ dùng cho người hoặc mối quan hệ lâu năm)."
-        }
-      ],
-      "explanation": "Lượng từ chính xác cho xe cộ là '辆' (liàng). '旧车' là kết cấu định - trung chỉ chiếc xe đã qua sử dụng."
-    },
-    {
-      "id": "b14-05",
-      "type": "sentence_parsing",
-      "title": "Hỏi lựa chọn quốc tịch và cụm động từ nhận thức",
-      "vi": "A: Cậu ấy là du học sinh Trung Quốc hay du học sinh Nhật Bản? B: Tớ không quen biết cậu ấy. Tớ không biết.",
-      "zh": "他是中国留学生还是日本留学生 我不认识他 我不知道",
-      "standardTrans": "他是中国留学生还是日本留学生 我不认识他 我不知道",
-      "pinyin": "Tā shì Zhōngguó liúxuéshēng háishì Rìběn liúxuéshēng? Wǒ bú rènshi tā. Wǒ bù zhīdào.",
-      "grammarPoint": "Câu hỏi lựa chọn: 是... 还是...; Phân biệt 认识 (quen biết mặt/người) và 知道 (biết thông tin)",
-      "tokens": [
         {
           "text": "Hay là",
           "hz": "还是",
           "py": "háishì",
           "hv": "Hoàn thị",
-          "role": "Liên từ nghi vấn",
-          "vn": "Hay là",
-          "radicals": "还 = Bộ sước 辶; 是 = Bộ nhật 日"
+          "role": "Liên từ lựa chọn",
+          "vn": "Hay là (dùng trong câu hỏi)",
+          "radicals": "还 = Bộ sước 辶 + Bộ bất 不; 是 = Bộ nhật 日 + Bộ chính 正"
         },
         {
-          "text": "Không quen biết",
-          "hz": "不认识",
-          "py": "bú rènshi",
-          "hv": "Bất nhận thức",
-          "role": "Vị ngữ phủ định",
-          "vn": "Không quen, không biết người đó",
-          "radicals": "不 = Phủ định; 认 = Bộ ngôn 讠; 识 = Bộ ngôn 讠"
-        },
-        {
-          "text": "Không biết",
-          "hz": "不知道",
-          "py": "bù zhīdào",
-          "hv": "Bất tri đạo",
-          "role": "Vị ngữ",
-          "vn": "Không rõ thông tin",
-          "radicals": "知 = Chữ thỉ 矢 + bộ khẩu 口; 道 = Chữ thủ 首 + bộ sước 辶"
+          "text": "Cái cũ",
+          "hz": "旧的",
+          "py": "jiù de",
+          "hv": "Cựu đích",
+          "role": "Cụm chữ 的",
+          "vn": "Cái cũ",
+          "radicals": "旧 = Bộ cổn 丨 + Bộ nhật 日; 的 = Bộ bạch 白 + Bộ chước 勺"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "我不认识他我不知道", "tag": "Lời đáp phủ định" },
-        { "id": "t1", "text": "他是中国留学生还是日本留学生", "tag": "Câu hỏi lựa chọn" },
-        { "id": "t3", "text": "或者日本留学生", "tag": "Bẫy liên từ" },
-        { "id": "t4", "text": "没有知道", "tag": "Bẫy phủ định" }
+        { "id": "t4", "text": "自行车", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "弟弟", "tag": "Định ngữ" },
+        { "id": "t7", "text": "还是", "tag": "Liên từ" },
+        { "id": "t1", "text": "你", "tag": "Định ngữ" },
+        { "id": "t9", "text": "或者", "tag": "Bẫy" },
+        { "id": "t6", "text": "新的", "tag": "Tính từ" },
+        { "id": "t8", "text": "旧的", "tag": "Tính từ" },
+        { "id": "t3", "text": "的", "tag": "Sở hữu" },
+        { "id": "t5", "text": "是", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["他是中国留学生还是日本留学生", "我不认识他", "我不知道"],
-      "wordBankPool": ["他是中国留学生还是日本留学生", "我不认识他我不知道", "或者日本留学生", "没有知道", "不认识他吗", "留学生还是"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "requiredKeywordsZh": ["你", "弟弟", "的", "自行车", "是", "新的", "还是", "旧的"],
+      "wordBankPool": ["自行车", "弟弟", "还是", "你", "或者", "新的", "旧的", "的", "是"],
       "traps": [
         {
           "pattern": "或者",
-          "msg": "Lỗi liên từ lựa chọn: Trong câu hỏi bắt buộc dùng '还是', tuyệt đối không dùng '或者'."
-        },
-        {
-          "pattern": "没有知道",
-          "msg": "Lỗi phó từ phủ định: Phủ định của nhận thức '知道/认识' phải dùng '不' ('不知道', '不认识'), không dùng '没有'."
+          "msg": "Lỗi liên từ: Trong câu hỏi lựa chọn bắt buộc dùng '还是', tuyệt đối không dùng '或者' (chỉ dùng trong câu trần thuật)."
         }
       ],
-      "explanation": "Câu hỏi lựa chọn hai nhóm đối tượng: [S + 是 + A + 还是 + B?]. Phân biệt: 不认识 (không quen biết người) và 不知道 (không biết tin tức)."
+      "explanation": "Cấu trúc '是 + 新的 + 还是 + 旧的' dùng để hỏi lựa chọn tính chất của đồ vật."
     },
     {
-      "id": "b14-06",
-      "type": "anti_word_by_word",
-      "title": "Phương tiện giao thông và trạng ngữ nơi chốn với 等",
-      "vi": "Tớ không có xe máy, cũng không có xe đạp, tớ ngồi taxi đi. Cậu đợi tớ ở cổng trường nhé.",
-      "zh": "我没有摩托车 也没有自行车 我坐出租车去 你在学校门口等我吧",
-      "standardTrans": "我没有摩托车 也没有自行车 我坐出租车去 你在学校门口等我吧",
-      "pinyin": "Wǒ méiyǒu mótuōchē, yě méiyǒu zìxíngchē, wǒ zuò chūzūchē qù. Nǐ zài xuéxiào ménkǒu děng wǒ ba.",
-      "grammarPoint": "Động từ đi phương tiện: 坐出租车 (ngồi taxi); Trạng ngữ nơi chốn đứng trước động từ: 在学校门口 + 等",
+      "id": "b14-08",
+      "type": "sentence_parsing",
+      "title": "Dùng phó từ 刚 chỉ hành động vừa mới xảy ra",
+      "vi": "Trường học vừa mới khai giảng công việc của tôi rất bận.",
+      "zh": "学校刚开学 我的工作很忙",
+      "standardTrans": "学校刚开学 我的工作很忙",
+      "pinyin": "Xuéxiào gāng kāixué, wǒ de gōngzuò hěn máng.",
+      "grammarPoint": "Phó từ 刚 + Động từ (vừa mới)",
       "tokens": [
+        {
+          "text": "Trường học",
+          "hz": "学校",
+          "py": "xuéxiào",
+          "hv": "Học hiệu",
+          "role": "Chủ ngữ 1",
+          "vn": "Trường học",
+          "radicals": "学 = Bộ tử 子 + Bộ mịch 冖; 校 = Bộ mộc 木 + Bộ phụ 父"
+        },
+        {
+          "text": "Vừa mới",
+          "hz": "刚",
+          "py": "gāng",
+          "hv": "Cương",
+          "role": "Phó từ",
+          "vn": "Vừa mới (hành động vừa xảy ra trước thời điểm nói)",
+          "radicals": "刚 = Bộ quynh 冂 + Bộ đao 刂"
+        },
+        {
+          "text": "Khai giảng",
+          "hz": "开学",
+          "py": "kāixué",
+          "hv": "Khai học",
+          "role": "Động từ",
+          "vn": "Khai giảng, bắt đầu năm học mới",
+          "radicals": "开 = Bộ củng 廾 + Bộ nhất 一; 学 = Bộ tử 子 + Bộ mịch 冖"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Công việc",
+          "hz": "工作",
+          "py": "gōngzuò",
+          "hv": "Công tác",
+          "role": "Chủ ngữ 2",
+          "vn": "Công việc",
+          "radicals": "工 = Bộ công 工; 作 = Bộ nhân đứng 亻 + Chữ sạ 乍"
+        },
+        {
+          "text": "Rất bận",
+          "hz": "很忙",
+          "py": "hěn máng",
+          "hv": "Hẩn mang",
+          "role": "Vị ngữ tính từ",
+          "vn": "Rất bận rộn",
+          "radicals": "很 = Bộ xích 彳 + Bộ cấn 艮; 忙 = Bộ tâm đứng 忄 + Bộ vong 亡"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "我", "tag": "Định ngữ" },
+        { "id": "t2", "text": "刚", "tag": "Phó từ" },
+        { "id": "t7", "text": "很忙", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "学校", "tag": "Chủ ngữ" },
+        { "id": "t8", "text": "最近", "tag": "Bẫy" },
+        { "id": "t5", "text": "的", "tag": "Sở hữu" },
+        { "id": "t3", "text": "开学", "tag": "Động từ" },
+        { "id": "t6", "text": "工作", "tag": "Chủ ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["学校", "刚", "开学", "我", "的", "工作", "很忙"],
+      "wordBankPool": ["我", "刚", "很忙", "学校", "最近", "的", "开学", "工作"],
+      "traps": [
+        {
+          "pattern": "最近",
+          "msg": "Lỗi từ vựng: Đề bài yêu cầu diễn đạt 'vừa mới khai giảng' phải dùng phó từ '刚', không dùng danh từ thời gian '最近'."
+        }
+      ],
+      "explanation": "Phó từ '刚' đứng trực tiếp trước động từ '开学' để nhấn mạnh sự việc vừa mới diễn ra cách đây không lâu."
+    },
+    {
+      "id": "b14-03",
+      "type": "sentence_parsing",
+      "title": "Dùng lượng từ 辆 với ô tô màu xanh lam",
+      "vi": "Chiếc ô tô màu xanh lam kia là của giám đốc Vương.",
+      "zh": "那辆蓝汽车是王经理的",
+      "standardTrans": "那辆蓝汽车是王经理的",
+      "pinyin": "Nà liàng lán qìchē shì Wáng jīnglǐ de.",
+      "grammarPoint": "Lượng từ 辆 (xe cộ) & Màu sắc 蓝 (xanh lam)",
+      "tokens": [
+        {
+          "text": "Kia / Đó",
+          "hz": "那",
+          "py": "nà",
+          "hv": "Na",
+          "role": "Đại từ chỉ thị",
+          "vn": "Kia, đó",
+          "radicals": "那 = Bộ ấp 邑 + Bộ nhiễm 冉"
+        },
+        {
+          "text": "Chiếc",
+          "hz": "辆",
+          "py": "liàng",
+          "hv": "Lượng",
+          "role": "Lượng từ",
+          "vn": "Lượng từ chuyên dùng cho các loại xe cộ",
+          "radicals": "辆 = Bộ xa 车 + Chữ lưỡng 两"
+        },
+        {
+          "text": "Màu xanh lam",
+          "hz": "蓝",
+          "py": "lán",
+          "hv": "Lam",
+          "role": "Định ngữ",
+          "vn": "Màu xanh dương, xanh lam",
+          "radicals": "蓝 = Bộ thảo 艹 + Bộ mãnh 皿"
+        },
+        {
+          "text": "Ô tô / Xe hơi",
+          "hz": "汽车",
+          "py": "qìchē",
+          "hv": "Khí xa",
+          "role": "Chủ ngữ",
+          "vn": "Xe ô tô, xe hơi",
+          "radicals": "汽 = Bộ chấm thủy 氵 + Bộ khí 气; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Giám đốc Vương",
+          "hz": "王经理",
+          "py": "Wáng jīnglǐ",
+          "hv": "Vương kinh lý",
+          "role": "Danh từ",
+          "vn": "Giám đốc họ Vương",
+          "radicals": "王 = Bộ ngọc 玉; 经 = Bộ mịch 纟 + Bộ công 工; 理 = Bộ ngọc 王 + Bộ thổ 土"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "汽车", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "辆", "tag": "Lượng từ" },
+        { "id": "t6", "text": "王经理", "tag": "Danh từ" },
+        { "id": "t1", "text": "那", "tag": "Chỉ thị" },
+        { "id": "t8", "text": "把", "tag": "Bẫy" },
+        { "id": "t5", "text": "是", "tag": "Động từ" },
+        { "id": "t7", "text": "的", "tag": "Sở hữu" },
+        { "id": "t3", "text": "蓝", "tag": "Định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["那", "辆", "蓝", "汽车", "是", "王经理", "的"],
+      "wordBankPool": ["汽车", "辆", "王经理", "那", "把", "是", "的", "蓝"],
+      "traps": [
+        {
+          "pattern": "把",
+          "msg": "Lỗi lượng từ: Các loại xe cộ (汽车, 自行车, 摩托车) bắt buộc dùng lượng từ '辆', không dùng '把'."
+        }
+      ],
+      "explanation": "Lượng từ '辆' có bộ Xa (车) bên trái, chuyên dùng để đếm các phương tiện giao thông đường bộ."
+    },
+    {
+      "id": "b14-10",
+      "type": "sentence_parsing",
+      "title": "Dùng 一点儿 trước danh từ và 杯 cho cốc cà phê",
+      "vi": "Tôi hơi khát muốn uống một cốc cà phê.",
+      "zh": "我有点儿渴 要喝一杯咖啡",
+      "standardTrans": "我有点儿渴 要喝一杯咖啡",
+      "pinyin": "Wǒ yǒudiǎnr kě, yào hē yì bēi kāfēi.",
+      "grammarPoint": "有点儿 + Tính từ & Lượng từ 杯 (cốc)",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Hơi / Có chút",
+          "hz": "有点儿",
+          "py": "yǒudiǎnr",
+          "hv": "Hữu điểm nhi",
+          "role": "Phó từ mức độ",
+          "vn": "Hơi, có chút (đứng trước tính từ)",
+          "radicals": "有 = Bộ nguyệt 月; 点 = Bộ chiêm 占 + Bộ hỏa 灬; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Khát",
+          "hz": "渴",
+          "py": "kě",
+          "hv": "Khát",
+          "role": "Tính từ",
+          "vn": "Khát nước",
+          "radicals": "渴 = Bộ chấm thủy 氵 + Bộ hạt 曷"
+        },
+        {
+          "text": "Muốn",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ năng nguyện",
+          "vn": "Muốn, cần",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
+        },
+        {
+          "text": "Uống",
+          "hz": "喝",
+          "py": "hē",
+          "hv": "Hát",
+          "role": "Động từ",
+          "vn": "Uống",
+          "radicals": "喝 = Bộ khẩu 口 + Bộ hạt 曷"
+        },
+        {
+          "text": "Một",
+          "hz": "一",
+          "py": "yì",
+          "hv": "Nhất",
+          "role": "Số từ",
+          "vn": "Một (biến điệu thành yì trước thanh 1)",
+          "radicals": "一 = Bộ nhất 一"
+        },
+        {
+          "text": "Cốc / Tách",
+          "hz": "杯",
+          "py": "bēi",
+          "hv": "Bôi",
+          "role": "Lượng từ",
+          "vn": "Cốc, ly, tách",
+          "radicals": "杯 = Bộ mộc 木 + Chữ bất 不"
+        },
+        {
+          "text": "Cà phê",
+          "hz": "咖啡",
+          "py": "kāfēi",
+          "hv": "Ca phê",
+          "role": "Tân ngữ",
+          "vn": "Cà phê",
+          "radicals": "咖 = Bộ khẩu 口 + Bộ lực 力 + Bộ khẩu 口; 啡 = Bộ khẩu 口 + Bộ phi 非"
+        }
+      ],
+      "tiles": [
+        { "id": "t5", "text": "喝", "tag": "Động từ" },
+        { "id": "t2", "text": "有点儿", "tag": "Phó từ" },
+        { "id": "t8", "text": "咖啡", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t9", "text": "一点儿", "tag": "Bẫy" },
+        { "id": "t6", "text": "一", "tag": "Số từ" },
+        { "id": "t3", "text": "渴", "tag": "Tính từ" },
+        { "id": "t7", "text": "杯", "tag": "Lượng từ" },
+        { "id": "t4", "text": "要", "tag": "Năng nguyện" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "requiredKeywordsZh": ["我", "有点儿", "渴", "要", "喝", "一", "杯", "咖啡"],
+      "wordBankPool": ["喝", "有点儿", "咖啡", "我", "一点儿", "一", "渴", "杯", "要"],
+      "traps": [
+        {
+          "pattern": "一点儿",
+          "msg": "Lỗi ngữ pháp: Đứng trước tính từ '渴' (khát) để chỉ mức độ 'hơi khát' phải dùng '有点儿', không dùng '一点儿'."
+        }
+      ],
+      "explanation": "Lượng từ '杯' dùng cho đồ uống đựng trong cốc/tách (一杯咖啡 = một cốc cà phê)."
+    },
+    {
+      "id": "b14-04",
+      "type": "sentence_parsing",
+      "title": "Dùng 或者 trong câu trần thuật lựa chọn phương tiện",
+      "vi": "Hàng ngày tôi đi xe máy hoặc ngồi taxi đi làm.",
+      "zh": "每天我骑摩托车或者坐出租车",
+      "standardTrans": "每天我骑摩托车或者坐出租车",
+      "pinyin": "Měitiān wǒ qí mótuōchē huòzhě zuò chūzūchē.",
+      "grammarPoint": "Liên từ 或者 (hoặc là) trong câu trần thuật",
+      "tokens": [
+        {
+          "text": "Hàng ngày",
+          "hz": "每天",
+          "py": "měitiān",
+          "hv": "Mỗi thiên",
+          "role": "Danh từ thời gian",
+          "vn": "Mỗi ngày, hàng ngày",
+          "radicals": "每 = Bộ vô 毋 + Bộ nhân 人; 天 = Bộ nhất 一 + Bộ đại 大"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Lái / Đi (xe 2 bánh)",
+          "hz": "骑",
+          "py": "qí",
+          "hv": "Kỵ",
+          "role": "Động từ",
+          "vn": "Cưỡi, đi xe đạp / xe máy",
+          "radicals": "骑 = Bộ mã 马 + Bộ đại 大 + Bộ khả 可"
+        },
         {
           "text": "Xe máy",
           "hz": "摩托车",
           "py": "mótuōchē",
           "hv": "Ma thác xa",
-          "role": "Tân ngữ",
-          "vn": "Xe gắn máy, xe mô tô",
-          "radicals": "摩 = Bộ ma 麻 + bộ thủ 手; 托 = Bộ thủ 扌 + chữ thác 乇; 车 = Bộ xa 车"
+          "role": "Tân ngữ 1",
+          "vn": "Xe máy, xe mô tô",
+          "radicals": "摩 = Bộ nghiễm 广 + Bộ mộc 木 + Bộ thủ 手; 托 = Bộ thủ 扌 + Nét phẩy 丿; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Hoặc là",
+          "hz": "或者",
+          "py": "huòzhě",
+          "hv": "Hoặc giả",
+          "role": "Liên từ",
+          "vn": "Hoặc là (dùng trong câu trần thuật)",
+          "radicals": "或 = Bộ qua 戈 + Bộ khẩu 口; 者 = Bộ lão 老 + Bộ nhật 日"
+        },
+        {
+          "text": "Ngồi / Đi (xe 4 bánh)",
+          "hz": "坐",
+          "py": "zuò",
+          "hv": "Tọa",
+          "role": "Động từ",
+          "vn": "Ngồi, đi phương tiện công cộng/ô tô",
+          "radicals": "坐 = Bộ nhân 人 + Bộ thổ 土"
         },
         {
           "text": "Xe taxi",
           "hz": "出租车",
           "py": "chūzūchē",
           "hv": "Xuất tô xa",
-          "role": "Tân ngữ",
-          "vn": "Xe taxi (xe cho thuê)",
-          "radicals": "出 = Chữ xuất 出; 租 = Bộ hòa 禾 + chữ thả 且; 车 = Bộ xa 车"
-        },
-        {
-          "text": "Cổng trường",
-          "hz": "学校门口",
-          "py": "xuéxiào ménkǒu",
-          "hv": "Học hiệu môn khẩu",
-          "role": "Nơi chốn của giới từ 在",
-          "vn": "Cửa trường, cổng trường học",
-          "radicals": "学校 = Trường học; 门 = Bộ môn 门; 口 = Bộ khẩu 口"
+          "role": "Tân ngữ 2",
+          "vn": "Xe taxi",
+          "radicals": "出 = Bộ khảm 凵; 租 = Bộ hòa 禾 + Chữ thả 且; 车 = Bộ xa 车"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "我坐出租车去", "tag": "Cách thức đi lại" },
-        { "id": "t1", "text": "我没有摩托车也没有自行车", "tag": "Không có phương tiện" },
-        { "id": "t3", "text": "你在学校门口等我吧", "tag": "Hẹn đợi ở cổng" },
-        { "id": "t4", "text": "等我在学校门口", "tag": "Bẫy trật tự" },
-        { "id": "t5", "text": "开出租车去", "tag": "Bẫy động từ" }
+        { "id": "t4", "text": "摩托车", "tag": "Phương tiện" },
+        { "id": "t2", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "坐", "tag": "Động từ" },
+        { "id": "t1", "text": "每天", "tag": "Thời gian" },
+        { "id": "t8", "text": "还是", "tag": "Bẫy" },
+        { "id": "t5", "text": "或者", "tag": "Liên từ" },
+        { "id": "t7", "text": "出租车", "tag": "Phương tiện" },
+        { "id": "t3", "text": "骑", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["没有摩托车", "没有自行车", "坐出租车去", "在学校门口等我吧"],
-      "wordBankPool": ["我没有摩托车也没有自行车", "我坐出租车去", "你在学校门口等我吧", "等我在学校门口", "开出租车去", "门口学校", "坐出租车走"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["每天", "我", "骑", "摩托车", "或者", "坐", "出租车"],
+      "wordBankPool": ["摩托车", "我", "坐", "每天", "还是", "或者", "出租车", "骑"],
       "traps": [
         {
-          "pattern": "等我在",
-          "msg": "Lỗi ngữ tự: Trạng ngữ nơi chốn bắt buộc đứng TRƯỚC động từ ('在学校门口等我'), không đặt sau động từ như tiếng Việt."
-        },
-        {
-          "pattern": "开出租车去",
-          "msg": "Lỗi động từ phương tiện: Hành khách đi taxi dùng động từ '坐' ('坐出租车: ngồi taxi'), '开' là người lái xe."
+          "pattern": "还是",
+          "msg": "Lỗi liên từ: Đây là câu trần thuật kể thói quen hàng ngày, phải dùng '或者', không dùng '还是' (dùng cho câu hỏi)."
         }
       ],
-      "explanation": "Hành khách đi xe taxi dùng động từ '坐' (坐出租车去). Trật tự trạng ngữ nơi chốn: S + 在 + Địa điểm (学校门口) + Động từ (等)."
+      "explanation": "Xe 2 bánh (xe đạp, xe máy) dùng động từ '骑'; xe 4 bánh hoặc phương tiện công cộng (taxi, xe buýt) dùng động từ '坐'."
+    },
+    {
+      "id": "b14-09",
+      "type": "sentence_parsing",
+      "title": "Dùng thành ngữ 马马虎虎 (bình thường, tạm tạm)",
+      "vi": "Gần đây công việc của tôi tạm tạm không bận lắm.",
+      "zh": "最近我的工作马马虎虎 不太忙",
+      "standardTrans": "最近我的工作马马虎虎 不太忙",
+      "pinyin": "Zuìjìn wǒ de gōngzuò mǎmahūhū, bú tài máng.",
+      "grammarPoint": "Tính từ trạng thái 马马虎虎 làm vị ngữ",
+      "tokens": [
+        {
+          "text": "Gần đây",
+          "hz": "最近",
+          "py": "zuìjìn",
+          "hv": "Tối cận",
+          "role": "Danh từ thời gian",
+          "vn": "Gần đây, dạo này",
+          "radicals": "最 = Bộ viết 曰 + Bộ nhĩ 耳 + Bộ hựu 又; 近 = Bộ sước 辶 + Bộ cân 斤"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Công việc",
+          "hz": "工作",
+          "py": "gōngzuò",
+          "hv": "Công tác",
+          "role": "Chủ ngữ",
+          "vn": "Công việc",
+          "radicals": "工 = Bộ công 工; 作 = Bộ nhân đứng 亻 + Chữ sạ 乍"
+        },
+        {
+          "text": "Bình thường / Tạm tạm",
+          "hz": "马马",
+          "py": "mǎma",
+          "hv": "Mã mã",
+          "role": "Tính từ (nửa đầu)",
+          "vn": "Ghép với 虎虎 thành 马马虎虎 (tạm tạm, bình thường)",
+          "radicals": "马 = Bộ mã 马"
+        },
+        {
+          "text": "Tạm tạm / Qua loa",
+          "hz": "虎虎",
+          "py": "hūhū",
+          "hv": "Hổ hổ",
+          "role": "Tính từ (nửa sau)",
+          "vn": "Ghép với 马马 thành 马马虎虎 (bình thường, tạm ổn)",
+          "radicals": "虎 = Bộ hô 虍 + Bộ kỷ 几"
+        },
+        {
+          "text": "Không quá",
+          "hz": "不太",
+          "py": "bú tài",
+          "hv": "Bất thái",
+          "role": "Phó từ",
+          "vn": "Không ... lắm",
+          "radicals": "不 = Bộ nhất 一 + Nét phẩy 丿; 太 = Bộ đại 大 + Nét chấm 丶"
+        },
+        {
+          "text": "Bận",
+          "hz": "忙",
+          "py": "máng",
+          "hv": "Mang",
+          "role": "Tính từ",
+          "vn": "Bận rộn",
+          "radicals": "忙 = Bộ tâm đứng 忄 + Bộ vong 亡"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "工作", "tag": "Chủ ngữ" },
+        { "id": "t1", "text": "最近", "tag": "Thời gian" },
+        { "id": "t6", "text": "虎虎", "tag": "Tính từ" },
+        { "id": "t8", "text": "忙", "tag": "Tính từ" },
+        { "id": "t9", "text": "很", "tag": "Bẫy" },
+        { "id": "t2", "text": "我", "tag": "Định ngữ" },
+        { "id": "t5", "text": "马马", "tag": "Tính từ" },
+        { "id": "t7", "text": "不太", "tag": "Phó từ" },
+        { "id": "t3", "text": "的", "tag": "Sở hữu" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "requiredKeywordsZh": ["最近", "我", "的", "工作", "马马", "虎虎", "不太", "忙"],
+      "wordBankPool": ["工作", "最近", "虎虎", "忙", "很", "我", "马马", "不太", "的"],
+      "traps": [
+        {
+          "pattern": "很",
+          "msg": "Lỗi ngữ pháp: Trước tính từ láy dạng AABB như '马马虎虎' tuyệt đối không thêm phó từ mức độ '很'."
+        }
+      ],
+      "explanation": "Tính từ trùng điệp dạng AABB (马马虎虎) bản thân đã mang sắc thái mức độ nên đứng trực tiếp làm vị ngữ mà không cần '很'."
+    },
+    {
+      "id": "b14-02",
+      "type": "sentence_parsing",
+      "title": "Hỏi màu sắc với 什么颜色",
+      "vi": "Xe buýt của trường học là màu gì?",
+      "zh": "学校的公共汽车是什么颜色",
+      "standardTrans": "学校的公共汽车是什么颜色",
+      "pinyin": "Xuéxiào de gōnggòng qìchē shì shénme yánsè?",
+      "grammarPoint": "Hỏi màu sắc: S + 是 + 什么颜色",
+      "tokens": [
+        {
+          "text": "Trường học",
+          "hz": "学校",
+          "py": "xuéxiào",
+          "hv": "Học hiệu",
+          "role": "Định ngữ",
+          "vn": "Trường học",
+          "radicals": "学 = Bộ tử 子 + Bộ mịch 冖; 校 = Bộ mộc 木 + Bộ phụ 父"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Công cộng",
+          "hz": "公共",
+          "py": "gōnggòng",
+          "hv": "Công cộng",
+          "role": "Định ngữ",
+          "vn": "Công cộng (ghép với 汽车 thành xe buýt)",
+          "radicals": "公 = Bộ bát 八 + Bộ khư 厶; 共 = Bộ bát 八 + Bộ nhất 一"
+        },
+        {
+          "text": "Ô tô",
+          "hz": "汽车",
+          "py": "qìchē",
+          "hv": "Khí xa",
+          "role": "Chủ ngữ",
+          "vn": "Xe ô tô (公共汽车 = xe buýt)",
+          "radicals": "汽 = Bộ chấm thủy 氵 + Bộ khí 气; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Gì / Nào",
+          "hz": "什么",
+          "py": "shénme",
+          "hv": "Thập ma",
+          "role": "Đại từ nghi vấn",
+          "vn": "Gì, nào",
+          "radicals": "什 = Bộ nhân đứng 亻 + Bộ thập 十; 么 = Bộ phiệt 丿 + Bộ khư 厶"
+        },
+        {
+          "text": "Màu sắc",
+          "hz": "颜色",
+          "py": "yánsè",
+          "hv": "Nhan sắc",
+          "role": "Tân ngữ",
+          "vn": "Màu sắc",
+          "radicals": "颜 = Bộ lập 立 + Bộ sam 彡 + Bộ hiệt 页; 色 = Bộ sắc 色"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "汽车", "tag": "Chủ ngữ" },
+        { "id": "t2", "text": "的", "tag": "Sở hữu" },
+        { "id": "t6", "text": "什么", "tag": "Nghi vấn" },
+        { "id": "t1", "text": "学校", "tag": "Định ngữ" },
+        { "id": "t8", "text": "哪", "tag": "Bẫy" },
+        { "id": "t5", "text": "是", "tag": "Động từ" },
+        { "id": "t7", "text": "颜色", "tag": "Tân ngữ" },
+        { "id": "t3", "text": "公共", "tag": "Định ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["学校", "的", "公共", "汽车", "是", "什么", "颜色"],
+      "wordBankPool": ["汽车", "的", "什么", "学校", "哪", "是", "颜色", "公共"],
+      "traps": [
+        {
+          "pattern": "哪",
+          "msg": "Lỗi từ nghi vấn: Hỏi màu sắc ('màu gì?') phải dùng '什么颜色', không dùng '哪颜色'."
+        }
+      ],
+      "explanation": "Đặt đại từ nghi vấn '什么' trước danh từ '颜色' (什么颜色) để hỏi màu sắc của sự vật."
     },
     {
       "id": "b14-07",
       "type": "sentence_parsing",
-      "title": "Phó từ 刚 biểu thị hành động vừa mới xảy ra",
-      "vi": "Đây là chiếc máy ảnh tớ mới mua đấy, đẹp không?",
-      "zh": "这是我刚买的照相机 好看吗",
-      "standardTrans": "这是我刚买的照相机 好看吗",
-      "pinyin": "Zhè shì wǒ gāng mǎi de zhàoxiàngjī, hǎokàn ma?",
-      "grammarPoint": "Phó từ chỉ thời gian gần: 刚 (vừa mới) đứng trước động từ; Câu chữ 的 định ngữ: 我刚买的 + 照相机",
+      "title": "Dùng 一点儿 sau động từ để mời nhẹ nhàng",
+      "vi": "Bạn uống chút trà hay là uống chút cà phê?",
+      "zh": "你喝点儿茶还是喝点儿咖啡",
+      "standardTrans": "你喝点儿茶还是喝点儿咖啡",
+      "pinyin": "Nǐ hē diǎnr chá háishì hē diǎnr kāfēi?",
+      "grammarPoint": "Động từ + (一)点儿 + Danh từ & Câu hỏi lựa chọn 还是",
       "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Uống",
+          "hz": "喝",
+          "py": "hē",
+          "hv": "Hát",
+          "role": "Động từ 1",
+          "vn": "Uống",
+          "radicals": "喝 = Bộ khẩu 口 + Bộ hạt 曷"
+        },
+        {
+          "text": "Một chút",
+          "hz": "点儿",
+          "py": "diǎnr",
+          "hv": "Điểm nhi",
+          "role": "Số lượng từ",
+          "vn": "Một chút (rút gọn của 一点儿 sau động từ)",
+          "radicals": "点 = Bộ chiêm 占 + Bộ hỏa 灬; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Trà",
+          "hz": "茶",
+          "py": "chá",
+          "hv": "Trà",
+          "role": "Tân ngữ 1",
+          "vn": "Trà",
+          "radicals": "茶 = Bộ thảo 艹 + Bộ nhân 人 + Bộ mộc 木"
+        },
+        {
+          "text": "Hay là",
+          "hz": "还是",
+          "py": "háishì",
+          "hv": "Hoàn thị",
+          "role": "Liên từ lựa chọn",
+          "vn": "Hay là",
+          "radicals": "还 = Bộ sước 辶 + Bộ bất 不; 是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Uống",
+          "hz": "喝",
+          "py": "hē",
+          "hv": "Hát",
+          "role": "Động từ 2",
+          "vn": "Uống",
+          "radicals": "喝 = Bộ khẩu 口 + Bộ hạt 曷"
+        },
+        {
+          "text": "Một chút",
+          "hz": "点儿",
+          "py": "diǎnr",
+          "hv": "Điểm nhi",
+          "role": "Số lượng từ",
+          "vn": "Một chút",
+          "radicals": "点 = Bộ chiêm 占 + Bộ hỏa 灬; 儿 = Bộ nhi 儿"
+        },
+        {
+          "text": "Cà phê",
+          "hz": "咖啡",
+          "py": "kāfēi",
+          "hv": "Ca phê",
+          "role": "Tân ngữ 2",
+          "vn": "Cà phê",
+          "radicals": "咖 = Bộ khẩu 口 + Bộ lực 力 + Bộ khẩu 口; 啡 = Bộ khẩu 口 + Bộ phi 非"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "茶", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "点儿", "tag": "Số lượng" },
+        { "id": "t2", "text": "喝", "tag": "Động từ" },
+        { "id": "t9", "text": "或者", "tag": "Bẫy" },
+        { "id": "t6", "text": "喝", "tag": "Động từ" },
+        { "id": "t3", "text": "点儿", "tag": "Số lượng" },
+        { "id": "t8", "text": "咖啡", "tag": "Tân ngữ" },
+        { "id": "t5", "text": "还是", "tag": "Liên từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "requiredKeywordsZh": ["你", "喝", "点儿", "茶", "还是", "咖啡"],
+      "wordBankPool": ["茶", "你", "点儿", "喝", "或者", "喝", "点儿", "咖啡", "还是"],
+      "traps": [
+        {
+          "pattern": "或者",
+          "msg": "Lỗi liên từ: Câu hỏi mời lựa chọn giữa trà và cà phê phải dùng '还是', không dùng '或者'."
+        }
+      ],
+      "explanation": "Sau động từ, '一点儿' thường được lược bỏ '一' thành '点儿' (喝点儿茶 = uống chút trà) để lời mời tự nhiên, thân mật hơn."
+    },
+    {
+      "id": "b14-05",
+      "type": "sentence_parsing",
+      "title": "Dùng 刚 trước động từ và trợ từ cảm thán 啊",
+      "vi": "Chị gái tôi vừa mới mua một chiếc xe hơi đẹp quá đi!",
+      "zh": "我姐姐刚买一辆新汽车 很漂亮啊",
+      "standardTrans": "我姐姐刚买一辆新汽车 很漂亮啊",
+      "pinyin": "Wǒ jiějie gāng mǎi yí liàng xīn qìchē, hěn piàoliang a!",
+      "grammarPoint": "Phó từ 刚 & Trợ từ ngữ khí cảm thán 啊",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Chị gái",
+          "hz": "姐姐",
+          "py": "jiějie",
+          "hv": "Tỷ tỷ",
+          "role": "Chủ ngữ",
+          "vn": "Chị gái",
+          "radicals": "姐 = Bộ nữ 女 + Chữ thả 且"
+        },
         {
           "text": "Vừa mới",
           "hz": "刚",
           "py": "gāng",
           "hv": "Cương",
-          "role": "Phó từ chỉ thời gian",
-          "vn": "Vừa mới, vừa",
-          "radicals": "Bộ đao đứng 刂 + chữ cương 冈"
+          "role": "Phó từ",
+          "vn": "Vừa mới",
+          "radicals": "刚 = Bộ quynh 冂 + Bộ đao 刂"
         },
         {
-          "text": "Đẹp",
-          "hz": "好看",
-          "py": "hǎokàn",
-          "hv": "Hảo khán",
+          "text": "Mua",
+          "hz": "买",
+          "py": "mǎi",
+          "hv": "Mãi",
+          "role": "Động từ",
+          "vn": "Mua",
+          "radicals": "买 = Bộ ất 乙 + Bộ đại 大"
+        },
+        {
+          "text": "Một chiếc",
+          "hz": "一辆",
+          "py": "yí liàng",
+          "hv": "Nhất lượng",
+          "role": "Số lượng từ",
+          "vn": "Một chiếc (biến điệu yí trước thanh 4)",
+          "radicals": "一 = Bộ nhất 一; 辆 = Bộ xa 车 + Chữ lưỡng 两"
+        },
+        {
+          "text": "Mới",
+          "hz": "新",
+          "py": "xīn",
+          "hv": "Tân",
+          "role": "Định ngữ",
+          "vn": "Mới",
+          "radicals": "新 = Bộ lập 立 + Bộ mộc 木 + Bộ cân 斤"
+        },
+        {
+          "text": "Ô tô",
+          "hz": "汽车",
+          "py": "qìchē",
+          "hv": "Khí xa",
+          "role": "Tân ngữ",
+          "vn": "Xe ô tô",
+          "radicals": "汽 = Bộ chấm thủy 氵 + Bộ khí 气; 车 = Bộ xa 车"
+        },
+        {
+          "text": "Rất đẹp",
+          "hz": "很漂亮",
+          "py": "hěn piàoliang",
+          "hv": "Hẩn phiêu lượng",
           "role": "Vị ngữ tính từ",
-          "vn": "Đẹp mắt, dễ nhìn",
-          "radicals": "好 = Bộ nữ 女 + bộ tử 子; 看 = Bộ thủ 手 + bộ mục 目"
+          "vn": "Rất đẹp",
+          "radicals": "很 = Bộ xích 彳 + Bộ cấn 艮; 漂 = Bộ chấm thủy 氵 + Bộ á 覀 + Bộ thị 示; 亮 = Bộ đầu 亠 + Bộ khẩu 口 + Bộ nhi 儿"
+        },
+        {
+          "text": "Quá / Nha / A",
+          "hz": "啊",
+          "py": "a",
+          "hv": "A",
+          "role": "Trợ từ ngữ khí",
+          "vn": "Đặt cuối câu biểu thị ngữ khí khen ngợi, cảm thán",
+          "radicals": "啊 = Bộ khẩu 口 + Bộ phụ 阜 + Chữ khả 可"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "好看吗", "tag": "Hỏi cảm nhận" },
-        { "id": "t1", "text": "这是我刚买的照相机", "tag": "Giới thiệu đồ mới" },
-        { "id": "t3", "text": "买刚的", "tag": "Bẫy trật tự phó từ" },
-        { "id": "t4", "text": "好看不好看吗", "tag": "Bẫy câu hỏi" }
+        { "id": "t5", "text": "一辆", "tag": "Số lượng" },
+        { "id": "t2", "text": "姐姐", "tag": "Chủ ngữ" },
+        { "id": "t8", "text": "很漂亮", "tag": "Vị ngữ" },
+        { "id": "t1", "text": "我", "tag": "Định ngữ" },
+        { "id": "t10", "text": "吗", "tag": "Bẫy" },
+        { "id": "t6", "text": "新", "tag": "Định ngữ" },
+        { "id": "t3", "text": "刚", "tag": "Phó từ" },
+        { "id": "t9", "text": "啊", "tag": "Trợ từ" },
+        { "id": "t4", "text": "买", "tag": "Động từ" },
+        { "id": "t7", "text": "汽车", "tag": "Tân ngữ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["这是我刚买的照相机", "好看吗"],
-      "wordBankPool": ["这是我刚买的照相机", "好看吗", "买刚的", "好看不好看吗", "我买刚的", "漂亮吗"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"],
+      "requiredKeywordsZh": ["我", "姐姐", "刚", "买", "一辆", "新", "汽车", "很漂亮", "啊"],
+      "wordBankPool": ["一辆", "姐姐", "很漂亮", "我", "吗", "新", "刚", "啊", "买", "汽车"],
       "traps": [
         {
-          "pattern": "买刚",
-          "msg": "Lỗi vị trí phó từ: Phó từ '刚' (vừa mới) bắt buộc đứng TRƯỚC động từ ('刚买'), không đặt sau động từ."
-        },
-        {
-          "pattern": "好看不好看吗",
-          "msg": "Lỗi hỏi chính phản: Dạng chính phản '好看不好看' đã mang tính nghi vấn, không được gắn thêm '吗'."
+          "pattern": "吗",
+          "msg": "Lỗi trợ từ: Đây là câu cảm thán khen ngợi ('rất đẹp quá đi!'), phải dùng trợ từ ngữ khí '啊', không dùng '吗'."
         }
       ],
-      "explanation": "Phó từ '刚' (gāng) đứng trước động từ biểu thị hành động vừa mới hoàn thành trong thời gian ngắn: 我刚买的 (tôi vừa mới mua)."
-    },
-    {
-      "id": "b14-08",
-      "type": "anti_word_by_word",
-      "title": "Cụm danh xưng chức vụ có tính từ 新 đứng trước",
-      "vi": "Cậu có biết tên của giám đốc mới không?",
-      "zh": "你知道新经理的名字吗",
-      "standardTrans": "你知道新经理的名字吗",
-      "pinyin": "Nǐ zhīdào xīn jīnglǐ de míngzì ma?",
-      "grammarPoint": "Tính từ đơn âm tiết bổ nghĩa trực tiếp cho danh từ: 新 + 经理 (không cần 的); Cụm sở hữu: 新经理的名字",
-      "tokens": [
-        {
-          "text": "Giám đốc",
-          "hz": "经理",
-          "py": "jīnglǐ",
-          "hv": "Kinh lý",
-          "role": "Danh từ chức vụ",
-          "vn": "Giám đốc, người quản lý",
-          "radicals": "经 = Bộ mịch 纟 + chữ kinh 𢀖; 理 = Bộ ngọc 王 + bộ lý 里"
-        },
-        {
-          "text": "Giám đốc mới",
-          "hz": "新经理",
-          "py": "xīn jīnglǐ",
-          "hv": "Tân kinh lý",
-          "role": "Định ngữ chỉ người",
-          "vn": "Giám đốc mới",
-          "radicals": "新 = Bộ tân 新; 经理 = Giám đốc"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "新经理的名字吗", "tag": "Tân ngữ hỏi" },
-        { "id": "t1", "text": "你知道", "tag": "Chủ vị hỏi" },
-        { "id": "t3", "text": "经理新的", "tag": "Bẫy trật tự" },
-        { "id": "t4", "text": "有知道", "tag": "Bẫy dịch bồi" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["你知道", "新经理的名字吗"],
-      "wordBankPool": ["你知道", "新经理的名字吗", "经理新的", "有知道", "知道新经理", "名字新经理"],
-      "traps": [
-        {
-          "pattern": "经理新",
-          "msg": "Lỗi định ngữ: Tính từ '新' (mới) đứng trước danh từ để bổ nghĩa ('新经理'), không dịch xuôi theo tiếng Việt thành '经理新'."
-        },
-        {
-          "pattern": "有知道",
-          "msg": "Lỗi dịch bồi: 'Cậu có biết... không' là cấu trúc '你知道...吗', không chèn chữ '有' trước động từ."
-        }
-      ],
-      "explanation": "Tính từ '新' bổ nghĩa trực tiếp cho danh từ chỉ người/chức vụ tạo cụm danh từ: 新经理 (giám đốc mới). Cụm sở hữu: 新经理的名字 (tên của giám đốc mới)."
-    },
-    {
-      "id": "b14-09",
-      "type": "sentence_parsing",
-      "title": "Phân biệt 有点儿 (tiêu cực) và 一点儿 (kỳ vọng)",
-      "vi": "A: Cuốn từ điển Trung – Việt này hơi cũ, có cuốn nào mới hơn một chút không? B: Có, cậu đợi tôi một lát nhé.",
-      "zh": "这本中越词典有点儿旧 有没有新一点儿的 有 你等我一会儿吧",
-      "standardTrans": "这本中越词典有点儿旧 有没有新一点儿的 有 你等我一会儿吧",
-      "pinyin": "Zhè běn zhōng-yuè cídiǎn yǒudiǎnr jiù, yǒu méiyǒu xīn yìdiǎnr de? Yǒu, nǐ děng wǒ yíhuìr ba.",
-      "grammarPoint": "有点儿 + Tính từ (hơi... không hài lòng); Tính từ + 一点儿 (hơn một chút - kỳ vọng); Động từ + 一会儿",
-      "tokens": [
-        {
-          "text": "Hơi cũ",
-          "hz": "有点儿旧",
-          "py": "yǒudiǎnr jiù",
-          "hv": "Hữu điểm nhi cựu",
-          "role": "Phó từ + Tính từ",
-          "vn": "Hơi cũ một chút (sắc thái không ưng ý)",
-          "radicals": "有点儿 = Hơi; 旧 = Bộ cựu 旧"
-        },
-        {
-          "text": "Mới hơn một chút",
-          "hz": "新一点儿的",
-          "py": "xīn yìdiǎnr de",
-          "hv": "Tân nhất điểm nhi đích",
-          "role": "Cụm so sánh hơn + 的",
-          "vn": "Cái mới hơn một chút",
-          "radicals": "新 = Mới; 一点儿 = Một chút; 的 = Trợ từ"
-        },
-        {
-          "text": "Một lát",
-          "hz": "一会儿",
-          "py": "yíhuìr",
-          "hv": "Nhất hội nhi",
-          "role": "Bổ ngữ thời lượng",
-          "vn": "Một chốc, một lát",
-          "radicals": "一 = Số 1; 会 = Bộ nhân 人 + chữ vân 云; 儿 = Bộ nhi 儿"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "有没有新一点儿的", "tag": "Hỏi cuốn mới hơn" },
-        { "id": "t1", "text": "这本中越词典有点儿旧", "tag": "Chê cuốn này hơi cũ" },
-        { "id": "t3", "text": "有你等我一会儿吧", "tag": "Đồng ý và bảo đợi" },
-        { "id": "t4", "text": "一点儿旧", "tag": "Bẫy cấu trúc" },
-        { "id": "t5", "text": "有点儿新", "tag": "Bẫy sắc thái" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这本中越词典有点儿旧", "有没有新一点儿的", "等我一会儿吧"],
-      "wordBankPool": ["这本中越词典有点儿旧", "有没有新一点儿的", "有你等我一会儿吧", "一点儿旧", "有点儿新", "老中越词典", "等我一下吧"],
-      "traps": [
-        {
-          "pattern": "一点儿旧",
-          "msg": "Lỗi phân biệt: Biểu thị sự không vừa ý (hơi cũ) bắt buộc dùng '有点儿 + Tính từ' ('有点儿旧'), không nói '一点儿旧'."
-        },
-        {
-          "pattern": "有点儿新",
-          "msg": "Lỗi sắc thái: Biểu thị kỳ vọng so sánh hơn (mới hơn một chút) bắt buộc dùng 'Tính từ + 一点儿' ('新一点儿'), không dùng '有点儿新'."
-        }
-      ],
-      "explanation": "Quy tắc vàng phân biệt: '有点儿 + Adj' mang nghĩa chê/tiêu cực (有点儿旧: hơi cũ); 'Adj + 一点儿' mang nghĩa mong muốn/so sánh hơn (新一点儿: mới hơn một chút)."
-    },
-    {
-      "id": "b14-10",
-      "type": "anti_word_by_word",
-      "title": "Ngữ khí 太...了 và tính từ cảm giác 困",
-      "vi": "Gần đây công việc bận rộn quá, tớ cảm thấy rất buồn ngủ.",
-      "zh": "最近工作太忙了 我觉得很困",
-      "standardTrans": "最近工作太忙了 我觉得很困",
-      "pinyin": "Zuìjìn gōngzuò tài máng le, wǒ juéde hěn kùn.",
-      "grammarPoint": "Cấu trúc cảm thán: 太 + Tính từ + 了; Tính từ chỉ trạng thái buồn ngủ: 困 (kùn)",
-      "tokens": [
-        {
-          "text": "Quá bận rồi",
-          "hz": "太忙了",
-          "py": "tài máng le",
-          "hv": "Thái mang liễu",
-          "role": "Cụm vị ngữ cảm thán",
-          "vn": "Quá bận, bận rộn quá",
-          "radicals": "太 = Bộ đại 大 + nét chấm 丶; 忙 = Bộ tâm đứng 忄 + chữ vong 亡; 了 = Trợ từ ngữ khí"
-        },
-        {
-          "text": "Buồn ngủ",
-          "hz": "困",
-          "py": "kùn",
-          "hv": "Khốn",
-          "role": "Vị ngữ tính từ",
-          "vn": "Buồn ngủ, mệt mỏi rũ mắt",
-          "radicals": "Bộ vi 囗 (vây quanh) + bộ mộc 木 (cây trong khung)"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "我觉得很困", "tag": "Cảm thấy buồn ngủ" },
-        { "id": "t1", "text": "最近工作太忙了", "tag": "Nguyên nhân bận" },
-        { "id": "t3", "text": "想睡觉很", "tag": "Bẫy khẩu ngữ" },
-        { "id": "t4", "text": "很累睡觉", "tag": "Bẫy dịch thô" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["最近工作太忙了", "我觉得很困"],
-      "wordBankPool": ["最近工作太忙了", "我觉得很困", "想睡觉很", "很累睡觉", "太工作忙了", "困我很"],
-      "traps": [
-        {
-          "pattern": "想睡觉很",
-          "msg": "Lỗi dùng từ tính từ: 'Buồn ngủ' trong Hán ngữ là tính từ '困' ('很困'), không dịch thô ghép '想睡觉很'."
-        },
-        {
-          "pattern": "太工作忙",
-          "msg": "Lỗi ngữ tự cảm thán: Cấu trúc là 'S + 太 + Tính từ + 了' ('工作太忙了'), không chen danh từ vào sau '太'."
-        }
-      ],
-      "explanation": "Cấu trúc cảm thán mức độ cao: '太 + Tính từ + 了' (太忙了: bận quá). Buồn ngủ dùng tính từ '困' (hěn kùn: rất buồn ngủ)."
+      "explanation": "Trợ từ ngữ khí '啊' đặt cuối câu cảm thán để tăng sắc thái biểu cảm khen ngợi hoặc ngạc nhiên."
     }
   ]
 }

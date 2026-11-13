@@ -1008,24 +1008,25 @@ const App = {
     renderParse(ws, q) {
         const slot = document.createElement('div');
         slot.id = 'p-slot';
-        slot.className = "min-h-[64px] sm:min-h-[72px] p-2.5 sm:p-3 rounded-2xl border-2 border-dashed border-emerald-300 bg-emerald-50/40 flex flex-wrap gap-2 sm:gap-2.5 mb-2.5 sm:mb-3";
+        slot.className = "min-h-[76px] sm:min-h-[84px] p-2.5 sm:p-3 rounded-2xl border-2 border-dashed border-emerald-400/80 dark:border-emerald-500/60 bg-emerald-50/40 dark:bg-emerald-950/20 flex flex-wrap items-center gap-2 sm:gap-2.5 mb-2.5 sm:mb-3";
 
         const tip = document.createElement('span');
         tip.id = 'p-tip';
-        tip.className = "text-sm sm:text-base text-slate-400 italic font-medium";
+        tip.className = "text-sm sm:text-base text-slate-400 dark:text-slate-500 italic font-medium select-none";
         tip.textContent = "Chạm các khối từ vựng bên dưới để ghép câu...";
         slot.appendChild(tip);
 
         const pool = document.createElement('div');
         pool.id = 'p-pool';
-        pool.className = "flex flex-wrap gap-2 sm:gap-2.5 justify-center";
+        pool.className = "flex flex-wrap gap-2 sm:gap-2.5 justify-center min-h-[60px]";
 
         const tilesToRender = q.displayTiles || (q.displayTiles = this.shuffleTiles(q.tiles || [], q.targetOrder || []));
 
         tilesToRender.forEach(t => {
             const b = document.createElement('button');
-            b.className = "btn-press px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl border border-slate-300 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 font-bold text-base shadow-sm";
-            b.innerHTML = `<span class="chinese-text text-lg sm:text-xl font-bold">${t.text}</span>`;
+            b.type = 'button';
+            b.className = "btn-press px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 font-bold text-base shadow-xs active:scale-95 transition-transform flex items-center justify-center cursor-pointer";
+            b.innerHTML = `<span class="chinese-text text-lg sm:text-xl font-bold leading-tight select-none">${t.text}</span>`;
             b.dataset.id = t.id;
             b.onclick = () => {
                 if (this.checked) return;
@@ -1050,8 +1051,9 @@ const App = {
             document.getElementById('p-pool').querySelector(`[data-id="${id}"]`)?.classList.add('opacity-20', 'pointer-events-none');
             const t = q.tiles.find(x => x.id === id);
             const b = document.createElement('button');
-            b.className = "px-4 py-2.5 rounded-2xl bg-white dark:bg-slate-800 border-2 border-emerald-400 text-base shadow-sm flex items-center gap-2";
-            b.innerHTML = `<span class="chinese-text text-lg sm:text-xl font-bold">${t.text}</span> <span class="text-rose-500 text-sm font-bold">✕</span>`;
+            b.type = 'button';
+            b.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-white dark:bg-slate-800 border-2 border-emerald-500 dark:border-emerald-400 text-slate-800 dark:text-slate-100 text-base shadow-xs flex items-center justify-center active:scale-95 transition-transform cursor-pointer";
+            b.innerHTML = `<span class="chinese-text text-lg sm:text-xl font-bold leading-tight select-none">${t.text}</span>`;
             b.dataset.pid = id;
             b.onclick = () => {
                 if (!this.checked) {
@@ -1062,7 +1064,7 @@ const App = {
             document.getElementById('p-slot').appendChild(b);
         }
 
-        document.getElementById('p-tip').style.display = this.slots.length ? 'none' : 'inline';
+        document.getElementById('p-tip').style.display = this.slots.length ? 'none' : 'inline-block';
         document.getElementById('btn-submit-action').disabled = this.slots.length === 0;
     },
 
@@ -1259,9 +1261,7 @@ const App = {
                 const slotEl = document.getElementById('p-slot');
                 if (slotEl) {
                     slotEl.querySelectorAll('button[data-pid]').forEach(btn => {
-                        btn.className = "px-4 py-2.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border-2 border-emerald-500 text-emerald-800 dark:text-emerald-200 text-base shadow-xs flex items-center gap-2";
-                        const cross = btn.querySelector('.text-rose-500');
-                        if (cross) cross.remove();
+                        btn.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border-2 border-emerald-500 text-emerald-800 dark:text-emerald-200 text-base shadow-xs flex items-center justify-center";
                     });
                 }
             }
@@ -1283,9 +1283,9 @@ const App = {
                         if (!btn) return;
                         const isCorrectPos = (slotId === targetOrder[idx]);
                         if (isCorrectPos) {
-                            btn.className = "px-4 py-2.5 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border-2 border-emerald-400 text-emerald-800 dark:text-emerald-200 text-base shadow-2xs flex items-center gap-2";
+                            btn.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/40 border-2 border-emerald-400 text-emerald-800 dark:text-emerald-200 text-base shadow-2xs flex items-center justify-center";
                         } else {
-                            btn.className = "px-4 py-2.5 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border-2 border-rose-500 text-rose-800 dark:text-rose-200 text-base shadow-xs flex items-center gap-2 animate-pulse";
+                            btn.className = "px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl bg-rose-50 dark:bg-rose-950/60 border-2 border-rose-500 text-rose-800 dark:text-rose-200 text-base shadow-xs flex items-center justify-center animate-pulse";
                         }
                     });
                 }
@@ -1313,21 +1313,14 @@ const App = {
             btnSubmit.disabled = false;
             btnSubmit.textContent = "TIẾP TỤC (Enter)";
             const continueColor = pass 
-                ? (theme ? theme.cardActiveBtn : "bg-emerald-600 hover:bg-emerald-700 text-white") 
-                : "bg-rose-600 hover:bg-rose-700 text-white";
+                ? (theme ? theme.cardActiveBtn : "bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-400 text-white dark:text-slate-950") 
+                : "bg-rose-600 hover:bg-rose-700 dark:bg-rose-500 dark:hover:bg-rose-400 text-white dark:text-slate-950";
             btnSubmit.className = `min-w-[180px] py-3.5 px-6 ${continueColor} font-black rounded-xl text-sm shadow-md btn-press tracking-wide`;
         }
 
-        // Hiển thị đáp án chuẩn (chỉ hiện khi chưa đúng)
+        // Yêu cầu người dùng: loại bỏ đáp án chuẩn
         const stdBox = document.getElementById('standard-answer-box');
-        if (stdBox) {
-            if (!pass) {
-                stdBox.classList.remove('hidden');
-                document.getElementById('tier-standard').textContent = q.standardTrans || q.zh;
-            } else {
-                stdBox.classList.add('hidden');
-            }
-        }
+        if (stdBox) stdBox.classList.add('hidden');
     },
 
     showBanner(good, title, body) {
@@ -1369,17 +1362,23 @@ const App = {
         const totalQ = this.total || 1;
         const accuracy = Math.round((this.firstTryCorrect / totalQ) * 100);
         let stars = 1;
-        let starStr = '⭐';
         if (accuracy >= 80) {
             stars = 3;
-            starStr = '⭐⭐⭐';
         } else if (accuracy >= 50) {
             stars = 2;
-            starStr = '⭐⭐';
         }
 
         const victoryStarsEl = document.getElementById('victory-stars');
-        if (victoryStarsEl) victoryStarsEl.textContent = starStr;
+        if (victoryStarsEl) {
+            const filledBig = `<svg class="w-8 h-8 sm:w-10 sm:h-10 fill-amber-400 text-amber-400 inline-block drop-shadow-md animate-bounce" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
+            const emptyBig = `<svg class="w-8 h-8 sm:w-10 sm:h-10 fill-slate-300 dark:fill-slate-700 text-slate-300 dark:text-slate-700 inline-block opacity-35" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>`;
+            let vHtml = '<div class="inline-flex items-center gap-2">';
+            for (let i = 0; i < 3; i++) {
+                vHtml += (i < stars) ? filledBig : emptyBig;
+            }
+            vHtml += '</div>';
+            victoryStarsEl.innerHTML = vHtml;
+        }
 
         const badgeEl = document.getElementById('victory-accuracy-badge');
         if (badgeEl) {
@@ -1839,19 +1838,16 @@ const App = {
             const btnSubmit = document.getElementById('btn-submit-action');
             btnSubmit.disabled = false;
             btnSubmit.textContent = "TIẾP TỤC (Enter)";
-            btnSubmit.className = "min-w-[180px] py-3.5 px-6 bg-rose-600 hover:bg-rose-700 text-white font-black rounded-xl text-sm shadow-md btn-press tracking-wide";
+            btnSubmit.className = "min-w-[180px] py-3.5 px-6 bg-rose-600 hover:bg-rose-700 dark:bg-rose-500 dark:hover:bg-rose-400 text-white dark:text-slate-950 font-black rounded-xl text-sm shadow-md btn-press tracking-wide cursor-pointer";
 
-            // Hiển thị banner Chưa Đạt / Đã Bỏ Qua kèm đáp án chuẩn
+            // Hiển thị banner Chưa Đạt / Đã Bỏ Qua (không hiện đáp án chuẩn)
             this.showBanner(false, "Cần chú ý / Đã bỏ qua câu này", "Đã xếp câu này xuống cuối hàng chờ để bạn luyện tập lại sau.");
 
             // Cập nhật thanh tiến độ phân đoạn trực quan
             this.updateProgressBar();
 
             const stdBox = document.getElementById('standard-answer-box');
-            if (stdBox) {
-                stdBox.classList.remove('hidden');
-                document.getElementById('tier-standard').textContent = this.activeQ.standardTrans || this.activeQ.zh;
-            }
+            if (stdBox) stdBox.classList.add('hidden');
         };
 
         // Nút chuyển đổi chế độ Tự gõ / Xếp từ

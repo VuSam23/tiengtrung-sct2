@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="description" content="SCT2 – Hệ thống luyện dịch Hán ngữ chuẩn sư phạm, từ HSK 1 đến HSK 6. Luyện tập theo bài, theo cấp độ, có phát âm và theo dõi tiến độ.">
     <meta property="og:title" content="SCT2 – Luyện Dịch Tiếng Trung HSK">
     <meta property="og:description" content="Luyện dịch Hán ngữ theo chuẩn HSK 1–6, có phát âm và theo dõi tiến độ.">
@@ -47,7 +47,12 @@
             flex-direction: column;
             margin: 0;
             padding: 0;
-            touch-action: pan-y;
+            touch-action: manipulation;
+        }
+
+        /* Vô hiệu hóa double-tap zoom và chống delay 300ms */
+        button, a, input, select, textarea, [role="button"], #p-slot button, #p-pool button {
+            touch-action: manipulation;
         }
 
         /* Khung nội dung chính: Tự động co giãn theo nội dung, cuộn toàn trang tự nhiên */
@@ -590,12 +595,12 @@
 
                 <h2 id="prompt-instruction" class="text-xs sm:text-sm font-bold text-slate-500 dark:text-slate-400 mb-1.5 leading-snug"></h2>
 
-                <div class="bg-emerald-50 dark:bg-emerald-950/40 p-3 sm:p-3.5 rounded-2xl border border-emerald-200 dark:border-emerald-800/80 mb-2 sm:mb-2.5 shadow-xs">
+                <div class="bg-emerald-50 dark:bg-slate-800/90 p-3 sm:p-3.5 rounded-2xl border border-emerald-200 dark:border-slate-700/80 mb-2 sm:mb-2.5 shadow-xs">
                     <span class="text-[10px] font-black uppercase tracking-wider text-emerald-800 dark:text-emerald-400 block mb-0.5 sm:mb-1">Đề bài tiếng Việt gốc:</span>
-                    <p id="source-vi-text" class="text-base sm:text-lg font-black text-slate-900 dark:text-white leading-snug sm:leading-relaxed"></p>
+                    <p id="source-vi-text" class="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100 leading-snug sm:leading-relaxed"></p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-900 p-3 sm:p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-2 sm:mb-2.5">
+                <div class="bg-white dark:bg-slate-900/90 p-3 sm:p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-2 sm:mb-2.5">
                     <!-- Thanh điều khiển: Nút mở gợi ý & Nút audio/góp ý -->
                     <div class="flex items-center justify-between gap-2">
                         <button id="btn-toggle-anatomy" type="button" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 cursor-pointer shadow-xs active:scale-95" title="Bấm để mở/đóng gợi ý bóc tách thành phần & Pinyin">
@@ -604,10 +609,10 @@
                             <span id="anatomy-toggle-arrow" class="text-[10px] text-slate-400">▼</span>
                         </button>
                         <div class="flex items-center gap-1.5 shrink-0">
-                            <button id="btn-audio-slow" class="p-2 sm:px-2.5 sm:py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-950/40 dark:hover:bg-amber-900/60 text-amber-700 dark:text-amber-300 transition shrink-0 active:scale-95 text-xs font-bold shadow-xs flex items-center gap-1" title="Đọc chậm từng âm tiết (Con rùa 🐢 0.72x)">
+                            <button id="btn-audio-slow" class="p-2 sm:px-2.5 sm:py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-500/15 dark:hover:bg-amber-500/25 text-amber-800 dark:text-amber-300 border border-amber-300/80 dark:border-amber-500/30 transition shrink-0 active:scale-95 text-xs font-bold shadow-xs flex items-center gap-1" title="Đọc chậm từng âm tiết (Con rùa 🐢 0.72x)">
                                 <span>🐢</span> <span class="hidden sm:inline">Chậm</span>
                             </button>
-                            <button id="btn-audio-speak" class="p-2 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition shrink-0 active:scale-95 text-xs font-bold shadow-xs flex items-center gap-1" title="Nghe phát âm chuẩn người bản xứ (🗣️ 1.0x)">
+                            <button id="btn-audio-speak" class="p-2 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 transition shrink-0 active:scale-95 text-xs font-bold shadow-xs flex items-center gap-1" title="Nghe phát âm chuẩn người bản xứ (🗣️ 1.0x)">
                                 <span>🔊</span> <span class="hidden sm:inline">Nghe</span>
                             </button>
                             <button id="btn-feedback-trigger" class="p-2 rounded-xl text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center gap-1 transition" title="Góp ý hoặc báo lỗi câu này">
@@ -671,20 +676,16 @@
                             <span id="eval-score-badge" class="text-xs font-black px-2.5 py-0.5 rounded-full"></span>
                         </div>
                         <div id="eval-message-body" class="mt-1 text-xs sm:text-sm space-y-1 font-medium"></div>
-                        <div id="standard-answer-box" class="hidden mt-2 pt-2 border-t border-slate-200/80 dark:border-slate-700/80 text-xs sm:text-sm font-bold">
-                            <span class="opacity-80">✓ Đáp án chuẩn:</span>
-                            <span id="tier-standard" class="font-extrabold ml-1"></span>
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="flex items-center justify-between gap-2 sm:gap-3 w-full">
                 <div id="left-actions">
-                    <button id="btn-pass-action" class="min-h-[44px] px-3 sm:px-4 py-2.5 text-xs sm:text-sm font-bold text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition flex items-center justify-center">Bỏ qua</button>
+                    <button id="btn-pass-action" class="min-h-[44px] px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-xs sm:text-sm font-bold text-slate-600 dark:text-slate-300 transition flex items-center justify-center active:scale-95 cursor-pointer">Bỏ qua</button>
                 </div>
                 <div class="ml-auto flex items-center justify-end">
-                    <button id="btn-submit-action" class="min-h-[48px] min-w-[150px] sm:min-w-[180px] py-3 px-5 sm:px-6 bg-emerald-600 hover:bg-emerald-700 text-white font-black rounded-xl text-xs sm:text-sm shadow-md btn-press tracking-wide disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center" disabled>KIỂM TRA DỊCH</button>
+                    <button id="btn-submit-action" class="min-h-[48px] min-w-[150px] sm:min-w-[180px] py-3 px-5 sm:px-6 bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-500 dark:hover:bg-emerald-400 text-white dark:text-slate-950 font-black rounded-xl text-xs sm:text-sm shadow-md btn-press tracking-wide disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center cursor-pointer" disabled>KIỂM TRA DỊCH</button>
                 </div>
             </div>
         </div>

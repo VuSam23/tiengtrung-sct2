@@ -1,641 +1,791 @@
 {
-  "lessonId": "b11",
-  "lessonTitle": "第十一课: 我们都是留学生",
+  "lessonId": "b07",
+  "lessonTitle": "Bài 7: Ăn uống & Gọi món hằng ngày",
   "quickNotes": {
     "vocabTips": [
       {
-        "word": "也 (yě) vs 都 (dōu)",
-        "py": "yě vs dōu",
-        "note": "也 biểu thị sự đồng nhất với đối tượng khác ('cũng'). 都 biểu thị toàn bộ tập thể ('đều'). Khi đi cùng nhau, 也 luôn đứng trước 都: 也都 (cũng đều), không nói 都也."
+        "word": "米饭 / 馒头 / 包子 / 饺子",
+        "py": "mǐfàn / mántou / bāozi / jiǎozi",
+        "note": "Nhóm lương thực chính: 米饭 (cơm trắng), 馒头 (bánh bao chay không nhân), 包子 (bánh bao có nhân), 饺子 (sủi cảo)."
       },
       {
-        "word": "俩 (liǎ)",
-        "py": "liǎ",
-        "note": "Bản thân 俩 đã tương đương 两个 (hai người), tuyệt đối không thêm lượng từ 个 (nói 我们俩, 你们俩, 他们俩; không nói 两个俩)."
+        "word": "个 / 碗",
+        "py": "gè / wǎn",
+        "note": "Lượng từ thông dụng khi gọi món: 个 (cái - dùng cho bánh bao, màn thầu), 碗 (bát/tô - dùng cho cơm, canh, mì)."
       },
       {
-        "word": "位 (wèi)",
-        "py": "wèi",
-        "note": "Lượng từ lịch sự chỉ người (一位老师, 哪位教授). Khi hỏi 'là vị nào/ai thế', dùng 哪位 thay vì 哪个."
-      },
-      {
-        "word": "给...介绍 (gěi... jièshào)",
-        "py": "gěi... jièshào",
-        "note": "Cấu trúc giới từ: 给 + Người + 介绍 + Đối tượng (giới thiệu ai cho ai). Tự mình giới thiệu: 我来介绍一下儿."
-      },
-      {
-        "word": "教 (jiāo)",
-        "py": "jiāo",
-        "note": "Động từ mang 2 tân ngữ: 教 + Người (Tân ngữ 1) + Môn học/Nội dung (Tân ngữ 2). Ví dụ: 教我们汉语."
+        "word": "这些 / 那些 / 一些",
+        "py": "zhèxiē / nàxiē / yìxiē",
+        "note": "Chỉ số nhiều hoặc lượng không xác định: 这些 (những cái này), 那些 (những cái kia), 一些 (một ít, một vài)."
       }
     ],
     "grammarTips": [
-      "Vị trí phó từ 也 và 都: Bắt buộc đứng TRƯỚC động từ hoặc tính từ, không đặt ở đầu câu hoặc cuối câu như tiếng Việt.",
-      "Phủ định toàn bộ vs Phủ định bộ phận: 都不 (tất cả đều không) vs 不都 (không phải tất cả đều). Ví dụ: 都不去 (đều không đi).",
-      "Phó từ 还 biểu thị sự bổ sung, tăng tiến: Đã làm A, 还 làm thêm B (她学德语，还学英语).",
-      "Cụm động từ làm tân ngữ cho 给: S + 给 + Đối tượng + Động từ (爱德华给我介绍一个朋友)."
+      "Hỏi ăn/uống gì: Chủ ngữ + 吃/喝 + 什么?",
+      "Gọi món với số lượng: Chủ ngữ + 要 + Số từ + Lượng từ (个/碗) + Danh từ.",
+      "Địa điểm ăn uống: Chủ ngữ + 在 + Địa điểm (食堂) + 吃饭."
     ]
   },
   "sentences": [
     {
-      "id": "b11-01",
-      "type": "anti_word_by_word",
-      "title": "Cấu trúc giới từ 给 chỉ đối tượng tiếp nhận hành động giới thiệu",
-      "vi": "Hôm qua Edward giới thiệu với tôi một người bạn người Canada.",
-      "zh": "昨天爱德华给我介绍一个加拿大朋友",
-      "standardTrans": "昨天爱德华给我介绍一个加拿大朋友",
-      "pinyin": "Zuótiān, Àidéhuá gěi wǒ jièshào yí gè Jiānádà péngyou.",
-      "grammarPoint": "Cụm giới từ: 给 + Người + Động từ (给我介绍); Định ngữ quốc tịch: 加拿大朋友",
-      "tokens": [
-        {
-          "text": "Edward",
-          "hz": "爱德华",
-          "py": "Àidéhuá",
-          "hv": "Ái Đức Hoa",
-          "role": "Chủ ngữ (tên riêng)",
-          "vn": "Edward (tên người nước ngoài)",
-          "radicals": "爱 = Bộ trảo 爫 + chữ ái; 德 = Chữ đức (bộ xích 彳 + bộ tâm 心); 华 = Bộ thập 十 + chữ hoa"
-        },
-        {
-          "text": "Giới thiệu cho tôi",
-          "hz": "给我介绍",
-          "py": "gěi wǒ jièshào",
-          "hv": "Cấp ngã giới thiệu",
-          "role": "Cụm giới từ + Động từ",
-          "vn": "Giới thiệu cho tôi, giới thiệu với tôi",
-          "radicals": "给 = Bộ mịch 纟; 介 = Bộ nhân 人 + nét phẩy, nét sổ; 绍 = Bộ mịch 纟 + chữ triệu 召"
-        },
-        {
-          "text": "Bạn người Canada",
-          "hz": "加拿大朋友",
-          "py": "Jiānádà péngyou",
-          "hv": "Gia Nã Đại bằng hữu",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Người bạn nước Canada",
-          "radicals": "加拿大 = Nước Canada (Gia Nã Đại); 朋友 = Bạn bè"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "爱德华给我介绍", "tag": "Chủ ngữ + Giới từ + Động từ" },
-        { "id": "t1", "text": "昨天", "tag": "Thời gian" },
-        { "id": "t3", "text": "一个加拿大朋友", "tag": "Tân ngữ số lượng" },
-        { "id": "t4", "text": "介绍给我", "tag": "Bẫy ngữ tự giới từ" },
-        { "id": "t5", "text": "朋友加拿大", "tag": "Bẫy định ngữ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["昨天", "爱德华给我介绍", "加拿大朋友"],
-      "wordBankPool": ["昨天", "爱德华给我介绍", "一个加拿大朋友", "介绍给我", "朋友加拿大", "跟我不介绍"],
-      "traps": [
-        {
-          "pattern": "介绍给我",
-          "msg": "Lỗi ngữ tự giới từ: Cấu trúc làm gì cho ai trong Hán ngữ bắt buộc đưa cụm giới từ lên trước động từ: '给我介绍', không nói '介绍给我' theo tiếng Việt."
-        },
-        {
-          "pattern": "朋友加拿大",
-          "msg": "Lỗi định ngữ: Tên quốc tịch/đất nước phải đứng trước danh từ trung tâm: '加拿大朋友', không nói '朋友加拿大'."
-        }
-      ],
-      "explanation": "Cấu trúc giới từ chuẩn: [Chủ ngữ + 给 + Người + Động từ + Tân ngữ]. '昨天' làm trạng ngữ thời gian đứng đầu câu."
-    },
-    {
-      "id": "b11-02",
+      "id": "b07-04",
       "type": "sentence_parsing",
-      "title": "Hỏi nhân sự trang trọng với lượng từ 位",
-      "vi": "Xin hỏi, giáo sư Vương là vị nào?",
-      "zh": "请问王教授是哪位",
-      "standardTrans": "请问王教授是哪位",
-      "pinyin": "Qǐngwèn, Wáng jiàoshòu shì nǎ wèi?",
-      "grammarPoint": "Lượng từ lịch sự 位; Đại từ nghi vấn chỉ người tôn trọng: 哪位 (vị nào / ai); Chức danh: 王教授",
+      "title": "Hỏi bữa trưa ăn gì",
+      "vi": "Buổi trưa bạn ăn gì?",
+      "zh": "中午你吃什么",
+      "standardTrans": "中午你吃什么",
+      "pinyin": "Zhōngwǔ nǐ chī shénme?",
+      "grammarPoint": "Thời gian + S + 吃 + 什么",
       "tokens": [
         {
-          "text": "Xin hỏi",
-          "hz": "请问",
-          "py": "qǐngwèn",
-          "hv": "Thỉnh vấn",
-          "role": "Kính ngữ mở đầu",
-          "vn": "Xin hỏi, làm ơn cho hỏi",
-          "radicals": "请 = Bộ ngôn 讠 + bộ thanh 青; 问 = Bộ môn 门 + bộ khẩu 口"
+          "text": "Buổi trưa",
+          "hz": "中午",
+          "py": "zhōngwǔ",
+          "hv": "Trung ngọ",
+          "role": "Danh từ thời gian",
+          "vn": "Buổi trưa",
+          "radicals": "中 = Bộ cổn 丨 + Bộ khẩu 口; 午 = Bộ thập 十 + Bộ nhân 人"
         },
         {
-          "text": "Giáo sư Vương",
-          "hz": "王教授",
-          "py": "Wáng jiàoshòu",
-          "hv": "Vương giáo thụ",
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
           "role": "Chủ ngữ",
-          "vn": "Giáo sư họ Vương",
-          "radicals": "王 = Bộ vương 王; 教 = Bộ hiếu 孝 + bộ phộc 攵; 授 = Bộ thủ 扌 + chữ thụ 受"
+          "vn": "Bạn, cậu",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
         },
         {
-          "text": "Là vị nào",
-          "hz": "是哪位",
-          "py": "shì nǎ wèi",
-          "hv": "Thị na vị",
-          "role": "Cụm vị ngữ nghi vấn lịch sự",
-          "vn": "Là vị nào, là ai (kính ngữ)",
-          "radicals": "是 = Là; 哪 = Bộ khẩu 口 + chữ na 那; 位 = Bộ nhân đứng 亻 + chữ lập 立"
+          "text": "Ăn",
+          "hz": "吃",
+          "py": "chī",
+          "hv": "Ngật",
+          "role": "Động từ",
+          "vn": "Ăn",
+          "radicals": "吃 = Bộ khẩu 口 + Bộ khất 乞"
+        },
+        {
+          "text": "Cái gì",
+          "hz": "什么",
+          "py": "shénme",
+          "hv": "Thập ma",
+          "role": "Đại từ nghi vấn",
+          "vn": "Cái gì, món gì",
+          "radicals": "什 = Bộ nhân đứng 亻 + Bộ thập 十; 么 = Bộ phiệt 丿 + Bộ khư 厶"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "王教授", "tag": "Chủ ngữ chức danh" },
-        { "id": "t1", "text": "请问", "tag": "Kính ngữ" },
-        { "id": "t3", "text": "是哪位", "tag": "Hỏi vị nào" },
-        { "id": "t4", "text": "教授王", "tag": "Bẫy xưng danh" },
-        { "id": "t5", "text": "是哪个位", "tag": "Bẫy lượng từ" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["请问", "王教授", "是哪位"],
-      "wordBankPool": ["请问", "王教授", "是哪位", "教授王", "是哪个位", "哪位是王教授"],
-      "traps": [
-        {
-          "pattern": "教授王",
-          "msg": "Lỗi xưng hô: Trong tiếng Hán, họ luôn đứng TRƯỚC chức vụ/học hàm: '王教授' (Giáo sư Vương), không nói '教授王'."
-        },
-        {
-          "pattern": "哪个位",
-          "msg": "Lỗi lặp lượng từ: Bản thân '位' đã là lượng từ lịch sự, hỏi vị nào chỉ dùng '哪位', không chèn '个' thành '哪个位'."
-        }
-      ],
-      "explanation": "Câu hỏi lịch sự xác định danh tính: [Kính xưng + 是哪位?]. '位' là lượng từ trang trọng dùng cho giáo sư, giáo viên, khách quý."
-    },
-    {
-      "id": "b11-03",
-      "type": "anti_word_by_word",
-      "title": "Phối hợp phó từ 也都 và định ngữ chức vụ giám đốc Trương",
-      "vi": "Tôi không biết số điện thoại của giám đốc Trương, giáo sư Bạch và thư ký của ông ấy cũng đều không biết số điện thoại của giám đốc Trương.",
-      "zh": "我不知道张经理的电话号码白教授和他的秘书也都不知道张经理的电话号码",
-      "standardTrans": "我不知道张经理的电话号码白教授和他的秘书也都不知道张经理的电话号码",
-      "pinyin": "Wǒ bù zhīdào Zhāng jīnglǐ de diànhuà hàomǎ. Bái jiàoshòu hé tā de mìshū yě dōu bù zhīdào Zhāng jīnglǐ de diànhuà hàomǎ.",
-      "grammarPoint": "Trật tự phó từ kép: 也都 (cũng đều); Phủ định bộ phận phó từ: 也都不知道; Định ngữ sở hữu chức vụ",
-      "tokens": [
-        {
-          "text": "Giám đốc Trương",
-          "hz": "张经理",
-          "py": "Zhāng jīnglǐ",
-          "hv": "Trương kinh lý",
-          "role": "Định ngữ sở hữu",
-          "vn": "Giám đốc họ Trương",
-          "radicals": "张 = Bộ cung 弓 + chữ trường 长; 经理 = Giám đốc (bộ mịch 纟, bộ ngọc 王, bộ lý 里)"
-        },
-        {
-          "text": "Giáo sư Bạch",
-          "hz": "白教授",
-          "py": "Bái jiàoshòu",
-          "hv": "Bạch giáo thụ",
-          "role": "Chủ ngữ vế 2",
-          "vn": "Giáo sư họ Bạch",
-          "radicals": "白 = Bộ bạch 白; 教授 = Giáo sư"
-        },
-        {
-          "text": "Cũng đều không biết",
-          "hz": "也都不知道",
-          "py": "yě dōu bù zhīdào",
-          "hv": "Dã đô bất tri đạo",
-          "role": "Phó từ kép + Vị ngữ phủ định",
-          "vn": "Cũng đều không biết",
-          "radicals": "也 = Cũng; 都 = Đều; 不 = Không; 知道 = Biết"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "白教授和他的秘书", "tag": "Chủ thể vế 2" },
-        { "id": "t1", "text": "我不知道张经理的电话号码", "tag": "Vế 1 (Tôi không biết)" },
-        { "id": "t3", "text": "也都不知道张经理的电话号码", "tag": "Vị ngữ kép vế 2" },
-        { "id": "t4", "text": "都也不", "tag": "Bẫy trật tự phó từ" },
-        { "id": "t5", "text": "经理张", "tag": "Bẫy xưng danh" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["张经理的电话号码", "白教授和他的秘书", "也都不知道"],
-      "wordBankPool": ["我不知道张经理的电话号码", "白教授和他的秘书", "也都不知道张经理的电话号码", "都也不", "经理张", "不也都知道"],
-      "traps": [
-        {
-          "pattern": "都也不",
-          "msg": "Lỗi ngữ tự phó từ kép: Khi '也' (cũng) và '都' (đều) cùng xuất hiện, '也' bắt buộc phải đứng TRƯỚC '都' ('也都'), tuyệt đối không nói '都也'."
-        },
-        {
-          "pattern": "经理张",
-          "msg": "Lỗi xưng danh: Họ luôn đứng trước chức vụ: '张经理' (Giám đốc Trương), không nói ngược '经理张'."
-        }
-      ],
-      "explanation": "Quy tắc vàng phó từ Hán ngữ: '也' luôn đứng trước '都' tạo thành cụm '也都' (cũng đều). Định ngữ chức vụ: [Họ + Chức vụ + 的 + Danh từ]."
-    },
-    {
-      "id": "b11-04",
-      "type": "sentence_parsing",
-      "title": "Cấu trúc tăng tiến bổ sung với 也 và 还",
-      "vi": "Tôi học tiếng Đức, cô ấy cũng học tiếng Đức, cô ấy còn học cả tiếng Anh nữa.",
-      "zh": "我学德语她也学德语她还学英语",
-      "standardTrans": "我学德语她也学德语她还学英语",
-      "pinyin": "Wǒ xué déyǔ, tā yě xué déyǔ, tā hái xué yīngyǔ.",
-      "grammarPoint": "Phó từ đồng nhất: 也 (cũng); Phó từ bổ sung tăng tiến: 还 (còn, thêm)",
-      "tokens": [
-        {
-          "text": "Tiếng Đức",
-          "hz": "德语",
-          "py": "déyǔ",
-          "hv": "Đức ngữ",
-          "role": "Tân ngữ 1",
-          "vn": "Tiếng Đức",
-          "radicals": "德 = Bộ xích 彳 + bộ thập 十 + bộ tứ 罒 + bộ nhất 一 + bộ tâm 心; 语 = Bộ ngôn 讠 + chữ ngũ 五 + bộ khẩu 口"
-        },
-        {
-          "text": "Cũng học tiếng Đức",
-          "hz": "也学德语",
-          "py": "yě xué déyǔ",
-          "hv": "Dã học Đức ngữ",
-          "role": "Phó từ + Động tân",
-          "vn": "Cũng học tiếng Đức",
-          "radicals": "也 = Phó từ cũng; 学 = Học"
-        },
-        {
-          "text": "Còn học tiếng Anh",
-          "hz": "还学英语",
-          "py": "hái xué yīngyǔ",
-          "hv": "Hoàn học Anh ngữ",
-          "role": "Phó từ + Động tân",
-          "vn": "Còn học thêm cả tiếng Anh",
-          "radicals": "还 = Bộ quai xước 辶; 英语 = Tiếng Anh (bộ thảo 艹, chữ ương 央, bộ ngôn 讠)"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "她也学德语", "tag": "Vế cũng học" },
-        { "id": "t1", "text": "我学德语", "tag": "Vế khởi điểm" },
-        { "id": "t3", "text": "她还学英语", "tag": "Vế tăng tiến bổ sung" },
-        { "id": "t4", "text": "也她学", "tag": "Bẫy vị trí 也" },
-        { "id": "t5", "text": "学英语还", "tag": "Bẫy vị trí 还" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["我学德语", "她也学德语", "她还学英语"],
-      "wordBankPool": ["我学德语", "她也学德语", "她还学英语", "也她学", "学英语还", "她还学德语"],
-      "traps": [
-        {
-          "pattern": "也她",
-          "msg": "Lỗi vị trí phó từ: '也' (cũng) bắt buộc phải đứng SAU chủ ngữ và TRƯỚC động từ ('她也学'), không đặt ở đầu câu như 'Cũng cô ấy học'."
-        },
-        {
-          "pattern": "英语还",
-          "msg": "Lỗi vị trí phó từ: '还' (còn) là phó từ bổ nghĩa cho hành động học, phải đứng trước động từ: '还学英语'."
-        }
-      ],
-      "explanation": "Liên kết 3 phân câu biểu thị tính tăng tiến: [S1 + V] -> [S2 + 也 + V] -> [S2 + 还 + V2]. '也' biểu thị sự giống nhau, '还' biểu thị làm thêm việc khác."
-    },
-    {
-      "id": "b11-05",
-      "type": "anti_word_by_word",
-      "title": "Động từ hai tân ngữ 教 và lượng từ lịch sự 位",
-      "vi": "Thầy giáo Vương dạy chúng tôi tiếng Trung, thầy ấy là một thầy giáo rất giỏi.",
-      "zh": "王老师教我们汉语他是一位很好的老师",
-      "standardTrans": "王老师教我们汉语他是一位很好的老师",
-      "pinyin": "Wáng lǎoshī jiāo wǒmen hànyǔ, tā shì yí wèi hěn hǎo de lǎoshī.",
-      "grammarPoint": "Động từ 2 tân ngữ 教: 教 + Người (Tân ngữ 1) + Môn học (Tân ngữ 2); Lượng từ kính trọng: 一位 + Tính từ + 的老师",
-      "tokens": [
-        {
-          "text": "Dạy chúng tôi tiếng Trung",
-          "hz": "教我们汉语",
-          "py": "jiāo wǒmen hànyǔ",
-          "hv": "Giáo ngã môn Hán ngữ",
-          "role": "Động từ + 2 tân ngữ",
-          "vn": "Dạy tiếng Hán cho chúng tôi",
-          "radicals": "教 = Bộ hiếu 孝 + bộ phộc 攵; 我们 = Chúng tôi; 汉语 = Tiếng Hán"
-        },
-        {
-          "text": "Một người thầy rất tốt (rất giỏi)",
-          "hz": "一位很好的老师",
-          "py": "yí wèi hěn hǎo de lǎoshī",
-          "hv": "Nhất vị khẩn hảo đích lão sư",
-          "role": "Cụm số lượng định danh tân ngữ",
-          "vn": "Một người thầy giáo rất tốt / giỏi",
-          "radicals": "位 = Bộ nhân đứng 亻 + chữ lập 立; 好 = Bộ nữ 女 + bộ tử 子; 老师 = Giáo viên"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "他是一位很好的老师", "tag": "Vế đánh giá khen ngợi" },
-        { "id": "t1", "text": "王老师教我们汉语", "tag": "Vế hành động 2 tân ngữ" },
-        { "id": "t3", "text": "教汉语我们", "tag": "Bẫy trật tự 2 tân ngữ" },
-        { "id": "t4", "text": "一个很好的老师", "tag": "Bẫy lượng từ lịch sự" }
-      ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["王老师教我们汉语", "一位很好的老师"],
-      "wordBankPool": ["王老师教我们汉语", "他是一位很好的老师", "教汉语我们", "一个很好的老师", "教我们老师"],
-      "traps": [
-        {
-          "pattern": "教汉语我们",
-          "msg": "Lỗi 2 tân ngữ: Động từ '教' (dạy) truyền hành động trực tiếp cho NGƯỜI trước rồi mới đến MÔN HỌC ('教我们汉语'), không nói '教汉语我们'."
-        },
-        {
-          "pattern": "教给我们",
-          "msg": "Lỗi dịch bồi: Bản thân động từ '教' đã nhận trực tiếp 2 tân ngữ, không cần thêm giới từ '给'."
-        }
-      ],
-      "explanation": "Quy tắc động từ 2 tân ngữ: [S + 教 + Người + Môn học]. Khi ca ngợi giáo viên, người Trung Quốc ưu tiên dùng lượng từ tôn kính '位' (一位很好的老师)."
-    },
-    {
-      "id": "b11-06",
-      "type": "sentence_parsing",
-      "title": "Mẫu giới thiệu bản thân toàn diện với 我来介绍一下儿",
-      "vi": "Tôi giới thiệu một chút, tôi tên là Edward, tôi là người Anh. Tôi là du học sinh của trường đại học Bắc Kinh. Tôi học tiếng Trung, còn học cả tiếng Nhật nữa.",
-      "zh": "我来介绍一下儿我叫爱德华我是英国人我是北京大学的留学生我学汉语还学日语",
-      "standardTrans": "我来介绍一下儿我叫爱德华我是英国人我是北京大学的留学生我学汉语还学日语",
-      "pinyin": "Wǒ lái jièshào yíxiàr, wǒ jiào Àidéhuá, wǒ shì Yīngguórén. Wǒ shì Běijīng Dàxué de liúxuéshēng. Wǒ xué hànyǔ, hái xué rìyǔ.",
-      "grammarPoint": "Động tác thử / nhanh: 一下儿; Cụm định ngữ sở hữu: 北京大学的留学生; Phó từ bổ sung: 还",
-      "tokens": [
-        {
-          "text": "Để tôi giới thiệu một chút",
-          "hz": "我来介绍一下儿",
-          "py": "wǒ lái jièshào yíxiàr",
-          "hv": "Ngã lai giới thiệu nhất hạ nhi",
-          "role": "Câu mở đầu giao tiếp",
-          "vn": "Để tôi xin tự giới thiệu một chút",
-          "radicals": "来 = Để (chủ động làm); 介绍 = Giới thiệu; 一下儿 = Một chút, một lát (động lượng từ)"
-        },
-        {
-          "text": "Người Anh",
-          "hz": "英国人",
-          "py": "Yīngguórén",
-          "hv": "Anh quốc nhân",
-          "role": "Tân ngữ phán đoán",
-          "vn": "Người mang quốc tịch Anh",
-          "radicals": "英国 = Nước Anh; 人 = Người"
-        },
-        {
-          "text": "Du học sinh ĐH Bắc Kinh",
-          "hz": "北京大学的留学生",
-          "py": "Běijīng Dàxué de liúxuéshēng",
-          "hv": "Bắc Kinh Đại học đích lưu học sinh",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Lưu học sinh của trường ĐH Bắc Kinh",
-          "radicals": "北京大学 = Đại học Bắc Kinh; 留学生 = Du học sinh (chữ lưu 留, bộ miên 宀 biến thể, bộ sinh 生)"
-        },
-        {
-          "text": "Còn học tiếng Nhật",
-          "hz": "还学日语",
-          "py": "hái xué rìyǔ",
-          "hv": "Hoàn học Nhật ngữ",
-          "role": "Phó từ + Động tân",
-          "vn": "Còn học thêm cả tiếng Nhật",
-          "radicals": "还 = Còn; 日语 = Tiếng Nhật (bộ nhật 日, bộ ngôn 讠)"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "我是北京大学的留学生", "tag": "Trường học & Thân phận" },
-        { "id": "t1", "text": "我来介绍一下儿我叫爱德华我是英国人", "tag": "Mở đầu + Tên + Quốc tịch" },
-        { "id": "t3", "text": "我学汉语还学日语", "tag": "Ngôn ngữ học tập" },
-        { "id": "t4", "text": "留学生北京大学", "tag": "Bẫy định ngữ" },
-        { "id": "t5", "text": "一下儿介绍", "tag": "Bẫy bổ ngữ động lượng" }
-      ],
-      "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["我来介绍一下儿", "爱德华", "英国人", "北京大学的留学生", "学汉语还学日语"],
-      "wordBankPool": ["我来介绍一下儿我叫爱德华我是英国人", "我是北京大学的留学生", "我学汉语还学日语", "留学生北京大学", "一下儿介绍", "介绍我一下儿"],
-      "traps": [
-        {
-          "pattern": "一下儿介绍",
-          "msg": "Lỗi bổ ngữ động lượng: '一下儿' (một chút) biểu thị động tác diễn ra nhanh, bắt buộc đứng SAU động từ: '介绍一下儿'."
-        },
-        {
-          "pattern": "留学生北京大学",
-          "msg": "Lỗi định ngữ: Tên cơ sở giáo dục phải đứng trước danh từ trung tâm: '北京大学的留学生', không dịch thuận theo tiếng Việt."
-        }
-      ],
-      "explanation": "Chuỗi tự giới thiệu hoàn chỉnh trong ngữ cảnh học đường: [我来介绍一下儿] -> [我叫...] -> [我是...人] -> [我是...的留学生] -> [我学..., 还学...]."
-    },
-    {
-      "id": "b11-07",
-      "type": "anti_word_by_word",
-      "title": "Hỏi thăm hai người và đại từ số lượng 俩",
-      "vi": "A: Xin chào, bạn và Mary có khỏe không? B: Cảm ơn, hai chúng tôi đều rất khỏe, cũng đều rất bận.",
-      "zh": "你好你和玛丽好吗谢谢我们俩都很好也很忙",
-      "standardTrans": "你好你和玛丽好吗谢谢我们俩都很好也很忙",
-      "pinyin": "Nǐ hǎo! Nǐ hé Mǎlì hǎo ma? Xièxie! Wǒmen liǎ dōu hěn hǎo, yě hěn máng.",
-      "grammarPoint": "Liên từ kết nối danh từ: 和; Đại từ chỉ 2 người: 我们俩 (không kèm 个); Cặp phó từ liên kết: 都很好, 也很忙",
-      "tokens": [
-        {
-          "text": "Bạn và Mary",
-          "hz": "你和玛丽",
-          "py": "nǐ hé Mǎlì",
-          "hv": "Nhĩ hòa Mã Lệ",
-          "role": "Chủ ngữ ghép hỏi",
-          "vn": "Cậu và Mary",
-          "radicals": "你 = Bạn; 和 = Bộ hòa 禾 + bộ khẩu 口; 玛丽 = Tên riêng Mary"
-        },
-        {
-          "text": "Hai chúng tôi",
-          "hz": "我们俩",
-          "py": "wǒmen liǎ",
-          "hv": "Ngã môn lưỡng",
-          "role": "Chủ ngữ đáp",
-          "vn": "Hai đứa chúng tôi, hai chúng tôi",
-          "radicals": "我们 = Chúng tôi; 俩 = Bộ nhân đứng 亻 + chữ lưỡng 两 (tự thân mang nghĩa 2 người)"
-        },
-        {
-          "text": "Đều rất khỏe, cũng rất bận",
-          "hz": "都很好也很忙",
-          "py": "dōu hěn hǎo, yě hěn máng",
-          "hv": "Đô khẩn hảo, dã khẩn mang",
-          "role": "Vị ngữ ghép đẳng lập",
-          "vn": "Đều rất khỏe, cũng rất bận rộn",
-          "radicals": "都 = Bộ ấp 阝; 很 = Rất; 好 = Khỏe; 也 = Cũng; 忙 = Bận"
-        }
-      ],
-      "tiles": [
-        { "id": "t2", "text": "你和玛丽好吗", "tag": "Hỏi sức khỏe 2 người" },
-        { "id": "t1", "text": "你好", "tag": "Chào hỏi" },
-        { "id": "t4", "text": "我们俩都很好也很忙", "tag": "Trả lời tình trạng 2 người" },
-        { "id": "t3", "text": "谢谢", "tag": "Cảm ơn" },
-        { "id": "t5", "text": "我们两个俩", "tag": "Bẫy lặp lượng từ" },
-        { "id": "t6", "text": "都我们俩", "tag": "Bẫy vị trí 都" }
+        { "id": "t3", "text": "吃", "tag": "Động từ" },
+        { "id": "t1", "text": "中午", "tag": "Thời gian" },
+        { "id": "t5", "text": "喝", "tag": "Bẫy động từ" },
+        { "id": "t4", "text": "什么", "tag": "Nghi vấn" },
+        { "id": "t2", "text": "你", "tag": "Chủ ngữ" }
       ],
       "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["你和玛丽好吗", "我们俩都很好", "也很忙"],
-      "wordBankPool": ["你好", "你和玛丽好吗", "谢谢", "我们俩都很好也很忙", "我们两个俩", "都我们俩", "很好都"],
+      "requiredKeywordsZh": ["中午", "你", "吃", "什么"],
+      "wordBankPool": ["吃", "中午", "喝", "什么", "你"],
       "traps": [
         {
-          "pattern": "两个俩",
-          "msg": "Lỗi lặp lượng từ: Bản thân '俩' (liǎ) đã tương đương với '两个', tuyệt đối không được thêm lượng từ '个' thành '两个俩'."
-        },
-        {
-          "pattern": "都我们",
-          "msg": "Lỗi vị trí phó từ: Phó từ '都' (đều) bắt buộc phải đứng SAU chủ ngữ: '我们俩都很好', không đặt ở đầu câu."
+          "pattern": "喝",
+          "msg": "Lỗi động từ: Đề bài hỏi 'ăn gì' phải dùng động từ '吃', không dùng '喝' (uống)."
         }
       ],
-      "explanation": "Đại từ số lượng 2 người trong khẩu ngữ dùng '俩' (wǒmen liǎ). Vế đáp sử dụng cặp phó từ kết nối trạng thái liên tiếp: 都很好, 也很忙."
+      "explanation": "Đặt đại từ nghi vấn '什么' ngay sau động từ '吃' để hỏi ăn món gì; không thêm '吗' ở cuối câu."
     },
     {
-      "id": "b11-08",
+      "id": "b07-08",
       "type": "sentence_parsing",
-      "title": "Hỏi nơi chốn với 在哪儿 và từ chối vì không phải sinh viên trường",
-      "vi": "A: Xin hỏi, thư viện của trường đại học Bắc Kinh ở đâu? B: Xin lỗi, tôi không phải là học sinh của trường đại học Bắc Kinh, tôi không biết.",
-      "zh": "请问北京大学的图书馆在哪儿对不起我不是北京大学的学生我不知道",
-      "standardTrans": "请问北京大学的图书馆在哪儿对不起我不是北京大学的学生我不知道",
-      "pinyin": "Qǐngwèn, Běijīng Dàxué de túshūguǎn zài nǎr? Duìbuqǐ, wǒ bú shì Běijīng Dàxué de xuésheng, wǒ bù zhīdào.",
-      "grammarPoint": "Hỏi nơi chốn: 在哪儿; Xin lỗi: 对不起; Phủ định phán đoán: 不是...的学生; Không biết: 我不知道",
+      "title": "Gọi món theo số lượng bát",
+      "vi": "Tôi muốn hai bát canh trứng gà.",
+      "zh": "我要两碗鸡蛋汤",
+      "standardTrans": "我要两碗鸡蛋汤",
+      "pinyin": "Wǒ yào liǎng wǎn jīdàntāng.",
+      "grammarPoint": "Số lượng + Lượng từ: 两 + 碗 + N",
       "tokens": [
         {
-          "text": "Thư viện của ĐH Bắc Kinh",
-          "hz": "北京大学的图书馆",
-          "py": "Běijīng Dàxué de túshūguǎn",
-          "hv": "Bắc Kinh Đại học đích đồ thư quán",
-          "role": "Chủ ngữ hỏi",
-          "vn": "Thư viện trường ĐH Bắc Kinh",
-          "radicals": "北京大学 = Đại học Bắc Kinh; 图书馆 = Thư viện"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Xin lỗi",
-          "hz": "对不起",
-          "py": "duìbuqǐ",
-          "hv": "Đối bất khởi",
-          "role": "Khẩu ngữ tạ lỗi",
-          "vn": "Xin lỗi",
-          "radicals": "对 = Bộ hựu 又 + bộ thốn 寸; 不 = Bộ nhất 一; 起 = Bộ tẩu 走 + bộ kỷ 己"
+          "text": "Muốn / Lấy",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ",
+          "vn": "Muốn, cần, gọi món",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
         },
         {
-          "text": "Học sinh của ĐH Bắc Kinh",
-          "hz": "北京大学的学生",
-          "py": "Běijīng Dàxué de xuésheng",
-          "hv": "Bắc Kinh Đại học đích học sinh",
-          "role": "Cụm danh ngữ tân ngữ",
-          "vn": "Sinh viên/học sinh của ĐH Bắc Kinh",
-          "radicals": "北京大学 = Trường ĐH Bắc Kinh; 学生 = Học sinh, sinh viên"
+          "text": "Hai",
+          "hz": "两",
+          "py": "liǎng",
+          "hv": "Lưỡng",
+          "role": "Số từ",
+          "vn": "Hai (dùng trước lượng từ)",
+          "radicals": "两 = Bộ nhất 一 + Bộ nhân 人"
+        },
+        {
+          "text": "Bát",
+          "hz": "碗",
+          "py": "wǎn",
+          "hv": "Uyển",
+          "role": "Lượng từ",
+          "vn": "Bát, chén, tô",
+          "radicals": "碗 = Bộ thạch 石 + Bộ miên 宀 + Bộ tiết 卩"
+        },
+        {
+          "text": "Trứng gà",
+          "hz": "鸡蛋",
+          "py": "jīdàn",
+          "hv": "Kê đản",
+          "role": "Danh từ",
+          "vn": "Trứng gà",
+          "radicals": "鸡 = Bộ hựu 又 + Bộ điểu 鸟; 蛋 = Bộ thất 疋 + Bộ trùng 虫"
+        },
+        {
+          "text": "Canh",
+          "hz": "汤",
+          "py": "tāng",
+          "hv": "Thang",
+          "role": "Danh từ",
+          "vn": "Canh, súp",
+          "radicals": "汤 = Bộ chấm thủy 氵 + Bộ vật 勿"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "对不起我不是北京大学的学生我不知道", "tag": "Lời đáp từ chối B" },
-        { "id": "t1", "text": "请问北京大学的图书馆在哪儿", "tag": "Câu hỏi địa điểm A" },
-        { "id": "t3", "text": "在哪儿图书馆", "tag": "Bẫy ngữ tự hỏi" },
-        { "id": "t4", "text": "学生北京大学的", "tag": "Bẫy định ngữ" }
+        { "id": "t4", "text": "碗", "tag": "Lượng từ" },
+        { "id": "t2", "text": "要", "tag": "Động từ" },
+        { "id": "t6", "text": "汤", "tag": "Danh từ" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "二", "tag": "Bẫy số từ" },
+        { "id": "t5", "text": "鸡蛋", "tag": "Định ngữ" },
+        { "id": "t3", "text": "两", "tag": "Số từ" }
       ],
-      "targetOrder": ["t1", "t2"],
-      "requiredKeywordsZh": ["请问", "北京大学的图书馆在哪儿", "对不起", "不是北京大学的学生", "我不知道"],
-      "wordBankPool": ["请问北京大学的图书馆在哪儿", "对不起我不是北京大学的学生我不知道", "在哪儿图书馆", "学生北京大学的", "不知道我"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["我", "要", "两", "碗", "鸡蛋", "汤"],
+      "wordBankPool": ["碗", "要", "汤", "我", "二", "鸡蛋", "两"],
       "traps": [
         {
-          "pattern": "在哪儿图书馆",
-          "msg": "Lỗi ngữ tự: Trong câu hỏi vị trí, chủ ngữ phải đứng TRƯỚC vị ngữ nghi vấn: '北京大学的图书馆在哪儿', không đảo ra sau."
-        },
-        {
-          "pattern": "学生北京大学",
-          "msg": "Lỗi định ngữ: Cơ sở đào tạo phải đứng trước danh từ trung tâm: '北京大学的学生'."
+          "pattern": "二",
+          "msg": "Lỗi số từ: Đứng trực tiếp trước lượng từ (碗, 个) để chỉ số lượng 'hai' bắt buộc dùng '两', không dùng '二'."
         }
       ],
-      "explanation": "Mẫu hỏi đường lịch sự: [请问 + Địa điểm + 在哪儿?]. Đáp lại từ chối lịch sự: [对不起, 我不是...的学生, 我不知道]."
+      "explanation": "Khi đếm số lượng 2 đi kèm lượng từ, tiếng Trung dùng '两' (两碗, 两个) thay vì số đếm '二'."
     },
     {
-      "id": "b11-09",
-      "type": "anti_word_by_word",
-      "title": "Phán đoán đẳng lập 是...也是 và danh xưng du học sinh Mỹ",
-      "vi": "Đây là Mike, cậu ấy là du học sinh Mỹ, cũng là bạn tốt của tôi.",
-      "zh": "这是麦克他是美国留学生也是我的好朋友",
-      "standardTrans": "这是麦克他是美国留学生也是我的好朋友",
-      "pinyin": "Zhè shì Màikè, tā shì Měiguó liúxuéshēng, yě shì wǒ de hǎo péngyou.",
-      "grammarPoint": "Kết cấu liên kết phán đoán: 是... 也是...; Định ngữ xuất xứ: 美国留学生; Định ngữ phẩm chất: 我的好朋友",
+      "id": "b07-01",
+      "type": "sentence_parsing",
+      "title": "Nơi chốn diễn ra hành động ăn",
+      "vi": "Anh trai tôi ăn cơm ở nhà ăn.",
+      "zh": "我哥哥在食堂吃饭",
+      "standardTrans": "我哥哥在食堂吃饭",
+      "pinyin": "Wǒ gēge zài shítáng chīfàn.",
+      "grammarPoint": "S + 在 + Địa điểm + Động từ + Tân ngữ",
       "tokens": [
         {
-          "text": "Mike",
-          "hz": "麦克",
-          "py": "Màikè",
-          "hv": "Mạch Khắc",
-          "role": "Tân ngữ 1 (tên riêng)",
-          "vn": "Mike (tên người nước ngoài)",
-          "radicals": "麦 = Bộ mạch 麦; 克 = Bộ thập 十 + bộ khẩu 口 + bộ nhi 儿"
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
         },
         {
-          "text": "Du học sinh Mỹ",
-          "hz": "美国留学生",
-          "py": "Měiguó liúxuéshēng",
-          "hv": "Mỹ Quốc lưu học sinh",
-          "role": "Cụm danh ngữ tân ngữ 2",
-          "vn": "Du học sinh người Mỹ",
-          "radicals": "美国 = Nước Mỹ; 留学生 = Lưu học sinh, du học sinh"
+          "text": "Anh trai",
+          "hz": "哥哥",
+          "py": "gēge",
+          "hv": "Ca ca",
+          "role": "Chủ ngữ",
+          "vn": "Anh trai",
+          "radicals": "哥 = Bộ khẩu 口 + Bộ nhất 一 + Bộ quyết 亅"
         },
         {
-          "text": "Bạn tốt của tôi",
-          "hz": "我的好朋友",
-          "py": "wǒ de hǎo péngyou",
-          "hv": "Ngã đích hảo bằng hữu",
-          "role": "Cụm danh ngữ tân ngữ 3",
-          "vn": "Người bạn tốt của tôi",
-          "radicals": "我 = Tôi; 的 = Trợ từ; 好朋友 = Bạn tốt"
+          "text": "Ở / Tại",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Giới từ",
+          "vn": "Ở tại (giới thiệu địa điểm)",
+          "radicals": "在 = Bộ thổ 土 + Bộ nhất 一"
+        },
+        {
+          "text": "Nhà ăn",
+          "hz": "食堂",
+          "py": "shítáng",
+          "hv": "Thực đường",
+          "role": "Danh từ",
+          "vn": "Nhà ăn tập thể, căng tin",
+          "radicals": "食 = Bộ thực 食; 堂 = Bộ tiểu 小 + Bộ mịch 冖 + Bộ thổ 土"
+        },
+        {
+          "text": "Ăn",
+          "hz": "吃",
+          "py": "chī",
+          "hv": "Ngật",
+          "role": "Động từ",
+          "vn": "Ăn",
+          "radicals": "吃 = Bộ khẩu 口 + Bộ khất 乞"
+        },
+        {
+          "text": "Cơm",
+          "hz": "饭",
+          "py": "fàn",
+          "hv": "Phạn",
+          "role": "Tân ngữ",
+          "vn": "Cơm, bữa ăn",
+          "radicals": "饭 = Bộ thực 饣 + Bộ phản 反"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "他是美国留学生", "tag": "Vế xuất thân" },
-        { "id": "t1", "text": "这是麦克", "tag": "Giới thiệu tên" },
-        { "id": "t3", "text": "也是我的好朋友", "tag": "Vế quan hệ thân hữu" },
-        { "id": "t4", "text": "留学生美国", "tag": "Bẫy định ngữ" },
-        { "id": "t5", "text": "朋友好我的", "tag": "Bẫy ngữ tự" }
+        { "id": "t5", "text": "吃", "tag": "Động từ" },
+        { "id": "t2", "text": "哥哥", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "食堂", "tag": "Địa điểm" },
+        { "id": "t1", "text": "我", "tag": "Định ngữ" },
+        { "id": "t7", "text": "去", "tag": "Bẫy động từ" },
+        { "id": "t3", "text": "在", "tag": "Giới từ" },
+        { "id": "t6", "text": "饭", "tag": "Tân ngữ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["我", "哥哥", "在", "食堂", "吃", "饭"],
+      "wordBankPool": ["吃", "哥哥", "食堂", "我", "去", "在", "饭"],
+      "traps": [
+        {
+          "pattern": "去",
+          "msg": "Lỗi giới từ: Diễn tả hành động diễn ra tại một nơi cố định phải đặt '在 + Địa điểm' trước động từ, không dùng '去'."
+        }
+      ],
+      "explanation": "Trật tự chuẩn tiếng Trung: Chủ ngữ + 在 + Địa điểm (食堂) + Hành động (吃饭)."
+    },
+    {
+      "id": "b07-06",
+      "type": "sentence_parsing",
+      "title": "Chỉ thị số nhiều ở gần",
+      "vi": "Những cái này là bánh bao nhân.",
+      "zh": "这些是包子",
+      "standardTrans": "这些是包子",
+      "pinyin": "Zhèxiē shì bāozi.",
+      "grammarPoint": "Đại từ chỉ thị số nhiều: 这些 + 是 + N",
+      "tokens": [
+        {
+          "text": "Những cái này",
+          "hz": "这些",
+          "py": "zhèxiē",
+          "hv": "Giá ta",
+          "role": "Đại từ chỉ thị",
+          "vn": "Những cái này (số nhiều ở gần)",
+          "radicals": "这 = Bộ sước 辶 + Bộ văn 文; 些 = Bộ chỉ 止 + Bộ tỷ 匕 + Bộ nhị 二"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Bánh bao nhân",
+          "hz": "包子",
+          "py": "bāozi",
+          "hv": "Bao tử",
+          "role": "Danh từ",
+          "vn": "Bánh bao có nhân",
+          "radicals": "包 = Bộ bao 勹 + Bộ kỷ 己; 子 = Bộ tử 子"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "包子", "tag": "Danh từ" },
+        { "id": "t1", "text": "这些", "tag": "Chỉ thị" },
+        { "id": "t4", "text": "那些", "tag": "Bẫy chỉ thị" },
+        { "id": "t2", "text": "是", "tag": "Động từ" }
       ],
       "targetOrder": ["t1", "t2", "t3"],
-      "requiredKeywordsZh": ["这是麦克", "美国留学生", "也是我的好朋友"],
-      "wordBankPool": ["这是麦克", "他是美国留学生", "也是我的好朋友", "留学生美国", "朋友好我的", "好朋友是我的"],
+      "requiredKeywordsZh": ["这些", "是", "包子"],
+      "wordBankPool": ["包子", "这些", "那些", "是"],
       "traps": [
         {
-          "pattern": "留学生美国",
-          "msg": "Lỗi định ngữ: Tên quốc gia/quốc tịch làm định ngữ phải đứng trước: '美国留学生', không dịch xuôi theo tiếng Việt."
-        },
-        {
-          "pattern": "朋友好",
-          "msg": "Lỗi ngữ tự tính từ: Tính từ '好' (tốt) phải đứng trước danh từ '朋友': '好朋友'."
+          "pattern": "那些",
+          "msg": "Lỗi chỉ thị: 'Những cái này' (ở gần) phải dùng '这些', không dùng '那些' (những cái kia)."
         }
       ],
-      "explanation": "Cấu trúc giới thiệu đẳng lập: [这是 + Tên người, 他是 + Xuất thân, 也是 + Mối quan hệ]. Cụm định ngữ '美国留学生' không cần chữ '的'."
+      "explanation": "Thêm '些' sau '这' tạo thành đại từ chỉ thị số nhiều '这些' (những thứ này/những cái này)."
     },
     {
-      "id": "b11-10",
+      "id": "b07-03",
       "type": "sentence_parsing",
-      "title": "Phủ định toàn bộ 都不 và trợ từ ngữ khí 吧 nhượng bộ",
-      "vi": "A: Ngày mai chúng tớ đi công viên, hai cậu đều không đi hả? B: Chúng tớ đều bận rồi, các cậu đi đi.",
-      "zh": "明天我们去公园你们俩都不去吗我们都忙了你们去吧",
-      "standardTrans": "明天我们去公园你们俩都不去吗我们都忙了你们去吧",
-      "pinyin": "Míngtiān wǒmen qù gōngyuán, nǐmen liǎ dōu bú qù ma? Wǒmen dōu máng le, nǐmen qù ba.",
-      "grammarPoint": "Phủ định toàn bộ: 都不 (đều không); Đại từ 2 người: 你们俩; Trợ từ 了 biểu thị trạng thái bận rộn; Trợ từ 吧 khuyên đi",
+      "title": "Câu phủ định và khẳng định đối lập",
+      "vi": "Em gái không ăn màn thầu em ấy ăn mì sợi.",
+      "zh": "妹妹不吃馒头她吃面条",
+      "standardTrans": "妹妹不吃馒头她吃面条",
+      "pinyin": "Mèimei bù chī mántou tā chī miàntiáo.",
+      "grammarPoint": "S + 不 + 吃 + O1, S + 吃 + O2",
       "tokens": [
         {
-          "text": "Đi công viên",
-          "hz": "去公园",
-          "py": "qù gōngyuán",
-          "hv": "Khứ công viên",
-          "role": "Cụm động tân",
-          "vn": "Đi công viên",
-          "radicals": "去 = Đi; 公 = Bộ bát 八 + bộ khư 厶; 园 = Bộ vi 囗 + chữ nguyên 元"
+          "text": "Em gái",
+          "hz": "妹妹",
+          "py": "mèimei",
+          "hv": "Muội muội",
+          "role": "Chủ ngữ",
+          "vn": "Em gái",
+          "radicals": "妹 = Bộ nữ 女 + Chữ vị 未"
         },
         {
-          "text": "Hai cậu đều không đi hả",
-          "hz": "你们俩都不去吗",
-          "py": "nǐmen liǎ dōu bú qù ma",
-          "hv": "Nhĩ môn lưỡng đô bất khứ ma",
-          "role": "Cụm vị ngữ phủ định nghi vấn",
-          "vn": "Hai bạn đều không đi à",
-          "radicals": "你们俩 = Hai bạn; 都不 = Đều không (phủ định toàn bộ); 去 = Đi; 吗 = Trợ từ"
+          "text": "Không",
+          "hz": "不",
+          "py": "bù",
+          "hv": "Bất",
+          "role": "Phó từ phủ định",
+          "vn": "Không",
+          "radicals": "不 = Bộ nhất 一 + Bộ phiệt 丿"
         },
         {
-          "text": "Các cậu đi đi",
-          "hz": "你们去吧",
-          "py": "nǐmen qù ba",
-          "hv": "Nhĩ môn khứ ba",
-          "role": "Câu khuyên nhủ/cầu khiến",
-          "vn": "Các bạn cứ đi đi",
-          "radicals": "你们 = Các bạn; 去 = Đi; 吧 = Trợ từ ngữ khí"
+          "text": "Ăn",
+          "hz": "吃",
+          "py": "chī",
+          "hv": "Ngật",
+          "role": "Động từ",
+          "vn": "Ăn",
+          "radicals": "吃 = Bộ khẩu 口 + Bộ khất 乞"
+        },
+        {
+          "text": "Màn thầu",
+          "hz": "馒头",
+          "py": "mántou",
+          "hv": "Man đầu",
+          "role": "Tân ngữ",
+          "vn": "Bánh bao chay không nhân",
+          "radicals": "馒 = Bộ thực 饣 + Bộ nhật 日 + Bộ hựu 又; 头 = Bộ đại 大 + Bộ chủ 丶"
+        },
+        {
+          "text": "Em ấy",
+          "hz": "她",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ 2",
+          "vn": "Cô ấy, em ấy (nữ)",
+          "radicals": "她 = Bộ nữ 女 + Bộ dã 也"
+        },
+        {
+          "text": "Mì sợi",
+          "hz": "面条",
+          "py": "miàntiáo",
+          "hv": "Miến điều",
+          "role": "Tân ngữ 2",
+          "vn": "Mì sợi",
+          "radicals": "面 = Bộ diện 面; 条 = Bộ truy 夂 + Bộ mộc 木"
         }
       ],
       "tiles": [
-        { "id": "t2", "text": "你们俩都不去吗", "tag": "Hỏi 2 bạn có đi không" },
-        { "id": "t4", "text": "你们去吧", "tag": "Khuyên các bạn đi đi" },
-        { "id": "t1", "text": "明天我们去公园", "tag": "Kế hoạch đi công viên" },
-        { "id": "t3", "text": "我们都忙了", "tag": "Lý do đều bận" },
-        { "id": "t5", "text": "不都去吗", "tag": "Bẫy phủ định bộ phận" },
-        { "id": "t6", "text": "你们两个俩", "tag": "Bẫy lặp lượng từ" }
+        { "id": "t4", "text": "馒头", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "妹妹", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "吃", "tag": "Động từ" },
+        { "id": "t8", "text": "喝", "tag": "Bẫy động từ" },
+        { "id": "t2", "text": "不", "tag": "Phủ định" },
+        { "id": "t5", "text": "她", "tag": "Chủ ngữ 2" },
+        { "id": "t7", "text": "面条", "tag": "Tân ngữ 2" },
+        { "id": "t3", "text": "吃", "tag": "Động từ" }
       ],
-      "targetOrder": ["t1", "t2", "t3", "t4"],
-      "requiredKeywordsZh": ["明天我们去公园", "你们俩都不去吗", "我们都忙了", "你们去吧"],
-      "wordBankPool": ["明天我们去公园", "你们俩都不去吗", "我们都忙了", "你们去吧", "不都去吗", "你们两个俩", "都忙我们"],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["妹妹", "不", "吃", "馒头", "她", "面条"],
+      "wordBankPool": ["馒头", "妹妹", "吃", "喝", "不", "她", "面条", "吃"],
       "traps": [
         {
-          "pattern": "不都去",
-          "msg": "Lỗi ngữ nghĩa phủ định: '不都' là phủ định bộ phận (không phải đều đi - có người đi người không), còn '都不' mới là phủ định toàn bộ (cả hai đều KHÔNG đi: '都不去')."
-        },
-        {
-          "pattern": "两个俩",
-          "msg": "Lỗi lặp lượng từ: '俩' đã bao hàm số lượng 2 người, không nói '两个俩'."
+          "pattern": "喝",
+          "msg": "Lỗi động từ: Mì sợi (面条) và màn thầu (馒头) đều dùng động từ '吃' (ăn), không dùng '喝'."
         }
       ],
-      "explanation": "Phân biệt then chốt trong Hán ngữ: '都不去' (tất cả đều không đi - phủ định toàn bộ). Trợ từ ngữ khí '吧' ở vế cuối biểu thị sự giục giã hoặc nhượng bộ: '你们去吧' (các bạn cứ đi đi)."
+      "explanation": "Phủ định hành động ăn uống dùng '不吃' đứng trước tên món ăn."
+    },
+    {
+      "id": "b07-09",
+      "type": "sentence_parsing",
+      "title": "Diễn đạt số lượng ít với 一些",
+      "vi": "Bố tôi uống một ít bia.",
+      "zh": "我爸爸喝一些啤酒",
+      "standardTrans": "我爸爸喝一些啤酒",
+      "pinyin": "Wǒ bàba hē yìxiē píjiǔ.",
+      "grammarPoint": "S + 喝 + 一些 + Danh từ",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Định ngữ",
+          "vn": "Của tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Bố",
+          "hz": "爸爸",
+          "py": "bàba",
+          "hv": "Ba ba",
+          "role": "Chủ ngữ",
+          "vn": "Bố, cha",
+          "radicals": "爸 = Bộ phụ 父 + Chữ ba 巴"
+        },
+        {
+          "text": "Uống",
+          "hz": "喝",
+          "py": "hē",
+          "hv": "Hát",
+          "role": "Động từ",
+          "vn": "Uống",
+          "radicals": "喝 = Bộ khẩu 口 + Bộ hạt 曷"
+        },
+        {
+          "text": "Một ít",
+          "hz": "一些",
+          "py": "yìxiē",
+          "hv": "Nhất ta",
+          "role": "Số lượng từ",
+          "vn": "Một ít, một chút, một vài",
+          "radicals": "一 = Bộ nhất 一; 些 = Bộ chỉ 止 + Bộ tỷ 匕"
+        },
+        {
+          "text": "Bia",
+          "hz": "啤酒",
+          "py": "píjiǔ",
+          "hv": "Tỳ tửu",
+          "role": "Tân ngữ",
+          "vn": "Bia",
+          "radicals": "啤 = Bộ khẩu 口 + Bộ thập 十; 酒 = Bộ chấm thủy 氵 + Bộ dậu 酉"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "喝", "tag": "Động từ" },
+        { "id": "t1", "text": "我", "tag": "Định ngữ" },
+        { "id": "t5", "text": "啤酒", "tag": "Tân ngữ" },
+        { "id": "t6", "text": "吃", "tag": "Bẫy động từ" },
+        { "id": "t2", "text": "爸爸", "tag": "Chủ ngữ" },
+        { "id": "t4", "text": "一些", "tag": "Số lượng" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["我", "爸爸", "喝", "一些", "啤酒"],
+      "wordBankPool": ["喝", "我", "啤酒", "吃", "爸爸", "一些"],
+      "traps": [
+        {
+          "pattern": "吃",
+          "msg": "Lỗi động từ: Bia (啤酒) là đồ uống, phải dùng động từ '喝' (uống)."
+        }
+      ],
+      "explanation": "'一些' đứng trước danh từ không đếm được (như 啤酒, 汤) để chỉ một lượng nhỏ."
+    },
+    {
+      "id": "b07-02",
+      "type": "sentence_parsing",
+      "title": "Gọi một bát cơm",
+      "vi": "Tôi muốn một bát cơm trắng.",
+      "zh": "我要一碗米饭",
+      "standardTrans": "我要一碗米饭",
+      "pinyin": "Wǒ yào yì wǎn mǐfàn.",
+      "grammarPoint": "S + 要 + 一碗 + Danh từ",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Muốn / Lấy",
+          "hz": "要",
+          "py": "yào",
+          "hv": "Yếu",
+          "role": "Động từ",
+          "vn": "Muốn, lấy",
+          "radicals": "要 = Bộ á 覀 + Bộ nữ 女"
+        },
+        {
+          "text": "Một",
+          "hz": "一",
+          "py": "yì",
+          "hv": "Nhất",
+          "role": "Số từ",
+          "vn": "Một (biến điệu thành yì trước thanh 3)",
+          "radicals": "一 = Bộ nhất 一"
+        },
+        {
+          "text": "Bát",
+          "hz": "碗",
+          "py": "wǎn",
+          "hv": "Uyển",
+          "role": "Lượng từ",
+          "vn": "Bát",
+          "radicals": "碗 = Bộ thạch 石 + Bộ miên 宀 + Bộ tiết 卩"
+        },
+        {
+          "text": "Cơm trắng",
+          "hz": "米饭",
+          "py": "mǐfàn",
+          "hv": "Mễ phạn",
+          "role": "Danh từ",
+          "vn": "Cơm nấu từ gạo",
+          "radicals": "米 = Bộ mễ 米; 饭 = Bộ thực 饣 + Bộ phản 反"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "碗", "tag": "Lượng từ" },
+        { "id": "t2", "text": "要", "tag": "Động từ" },
+        { "id": "t6", "text": "个", "tag": "Bẫy lượng từ" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "米饭", "tag": "Danh từ" },
+        { "id": "t3", "text": "一", "tag": "Số từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["我", "要", "一", "碗", "米饭"],
+      "wordBankPool": ["碗", "要", "个", "我", "米饭", "一"],
+      "traps": [
+        {
+          "pattern": "个",
+          "msg": "Lỗi lượng từ: Cơm trắng (米饭) đựng trong bát phải dùng lượng từ '碗', không dùng '个'."
+        }
+      ],
+      "explanation": "Lượng từ của cơm (米饭) và canh (汤) là '碗' (bát)."
+    },
+    {
+      "id": "b07-07",
+      "type": "sentence_parsing",
+      "title": "Hỏi chủ sở hữu đồ ăn ở xa",
+      "vi": "Những cái kia là sủi cảo của ai?",
+      "zh": "那些是谁的饺子",
+      "standardTrans": "那些是谁的饺子",
+      "pinyin": "Nàxiē shì shéi de jiǎozi?",
+      "grammarPoint": "那些 + 是 + 谁的 + Danh từ",
+      "tokens": [
+        {
+          "text": "Những cái kia",
+          "hz": "那些",
+          "py": "nàxiē",
+          "hv": "Na ta",
+          "role": "Đại từ chỉ thị",
+          "vn": "Những cái kia (số nhiều ở xa)",
+          "radicals": "那 = Bộ ấp 邑 + Bộ nhiễm 冉; 些 = Bộ chỉ 止 + Bộ tỷ 匕"
+        },
+        {
+          "text": "Là",
+          "hz": "是",
+          "py": "shì",
+          "hv": "Thị",
+          "role": "Động từ",
+          "vn": "Là",
+          "radicals": "是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Ai",
+          "hz": "谁",
+          "py": "shéi",
+          "hv": "Thùy",
+          "role": "Đại từ nghi vấn",
+          "vn": "Ai",
+          "radicals": "谁 = Bộ ngôn 讠 + Bộ truy 隹"
+        },
+        {
+          "text": "Của",
+          "hz": "的",
+          "py": "de",
+          "hv": "Đích",
+          "role": "Trợ từ sở hữu",
+          "vn": "Của",
+          "radicals": "的 = Bộ bạch 白 + Bộ chước 勺"
+        },
+        {
+          "text": "Sủi cảo",
+          "hz": "饺子",
+          "py": "jiǎozi",
+          "hv": "Giáo tử",
+          "role": "Danh từ",
+          "vn": "Bánh sủi cảo",
+          "radicals": "饺 = Bộ thực 饣 + Bộ đầu 亠 + Bộ phụ 父; 子 = Bộ tử 子"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "谁", "tag": "Nghi vấn" },
+        { "id": "t1", "text": "那些", "tag": "Chỉ thị" },
+        { "id": "t5", "text": "饺子", "tag": "Danh từ" },
+        { "id": "t2", "text": "是", "tag": "Động từ" },
+        { "id": "t6", "text": "这些", "tag": "Bẫy chỉ thị" },
+        { "id": "t4", "text": "的", "tag": "Sở hữu" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["那些", "是", "谁", "的", "饺子"],
+      "wordBankPool": ["谁", "那些", "饺子", "是", "这些", "的"],
+      "traps": [
+        {
+          "pattern": "这些",
+          "msg": "Lỗi chỉ thị: 'Những cái kia' (ở xa) phải dùng '那些', không dùng '这些' (những cái này)."
+        }
+      ],
+      "explanation": "Kết hợp đại từ số nhiều '那些' với cấu trúc hỏi sở hữu '谁的 + Danh từ'."
+    },
+    {
+      "id": "b07-05",
+      "type": "sentence_parsing",
+      "title": "Câu hỏi xác nhận món ăn",
+      "vi": "Chị gái bạn ăn mì sợi không?",
+      "zh": "你姐姐吃面条吗",
+      "standardTrans": "你姐姐吃面条吗",
+      "pinyin": "Nǐ jiějie chī miàntiáo ma?",
+      "grammarPoint": "S + 吃 + Tân ngữ + 吗",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Định ngữ",
+          "vn": "Của bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Chị gái",
+          "hz": "姐姐",
+          "py": "jiějie",
+          "hv": "Tỷ tỷ",
+          "role": "Chủ ngữ",
+          "vn": "Chị gái",
+          "radicals": "姐 = Bộ nữ 女 + Chữ thả 且"
+        },
+        {
+          "text": "Ăn",
+          "hz": "吃",
+          "py": "chī",
+          "hv": "Ngật",
+          "role": "Động từ",
+          "vn": "Ăn",
+          "radicals": "吃 = Bộ khẩu 口 + Bộ khất 乞"
+        },
+        {
+          "text": "Mì sợi",
+          "hz": "面条",
+          "py": "miàntiáo",
+          "hv": "Miến điều",
+          "role": "Tân ngữ",
+          "vn": "Mì sợi",
+          "radicals": "面 = Bộ diện 面; 条 = Bộ truy 夂 + Bộ mộc 木"
+        },
+        {
+          "text": "Không",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Trợ từ đặt cuối câu hỏi Có/Không",
+          "radicals": "吗 = Bộ khẩu 口 + Bộ mã 马"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "面条", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "姐姐", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "什么", "tag": "Bẫy nghi vấn" },
+        { "id": "t1", "text": "你", "tag": "Định ngữ" },
+        { "id": "t5", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t3", "text": "吃", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["你", "姐姐", "吃", "面条", "吗"],
+      "wordBankPool": ["面条", "姐姐", "什么", "你", "吗", "吃"],
+      "traps": [
+        {
+          "pattern": "什么",
+          "msg": "Lỗi nghi vấn: Câu đã nêu rõ tên món ăn '面条', chỉ cần thêm trợ từ '吗' ở cuối để hỏi Có/Không."
+        }
+      ],
+      "explanation": "Thêm trợ từ '吗' vào cuối câu trần thuật '你姐姐吃面条' để chuyển thành câu hỏi xác nhận."
+    },
+    {
+      "id": "b07-10",
+      "type": "sentence_parsing",
+      "title": "Dùng lượng từ 个 với bánh bao",
+      "vi": "Hôm nay thầy Lý ăn ba cái bánh bao nhân.",
+      "zh": "今天李老师吃三个包子",
+      "standardTrans": "今天李老师吃三个包子",
+      "pinyin": "Jīntiān Lǐ lǎoshī chī sān gè bāozi.",
+      "grammarPoint": "Thời gian + S + 吃 + Số từ + 个 + N",
+      "tokens": [
+        {
+          "text": "Hôm nay",
+          "hz": "今天",
+          "py": "jīntiān",
+          "hv": "Kim thiên",
+          "role": "Danh từ thời gian",
+          "vn": "Hôm nay",
+          "radicals": "今 = Bộ nhân 人 + Bộ nhất 一; 天 = Bộ nhất 一 + Bộ đại 大"
+        },
+        {
+          "text": "Thầy Lý",
+          "hz": "李老师",
+          "py": "Lǐ lǎoshī",
+          "hv": "Lý lão sư",
+          "role": "Chủ ngữ",
+          "vn": "Thầy giáo họ Lý",
+          "radicals": "李 = Bộ mộc 木 + Bộ tử 子; 老 = Bộ lão 老; 师 = Bộ cân 巾 + Bộ nhất 一"
+        },
+        {
+          "text": "Ăn",
+          "hz": "吃",
+          "py": "chī",
+          "hv": "Ngật",
+          "role": "Động từ",
+          "vn": "Ăn",
+          "radicals": "吃 = Bộ khẩu 口 + Bộ khất 乞"
+        },
+        {
+          "text": "Ba",
+          "hz": "三",
+          "py": "sān",
+          "hv": "Tam",
+          "role": "Số từ",
+          "vn": "Số 3",
+          "radicals": "三 = Bộ nhất 一"
+        },
+        {
+          "text": "Cái",
+          "hz": "个",
+          "py": "gè",
+          "hv": "Cá",
+          "role": "Lượng từ",
+          "vn": "Cái, chiếc (lượng từ phổ biến nhất)",
+          "radicals": "个 = Bộ nhân 人 + Bộ cổn 丨"
+        },
+        {
+          "text": "Bánh bao nhân",
+          "hz": "包子",
+          "py": "bāozi",
+          "hv": "Bao tử",
+          "role": "Danh từ",
+          "vn": "Bánh bao có nhân",
+          "radicals": "包 = Bộ bao 勹 + Bộ kỷ 己; 子 = Bộ tử 子"
+        }
+      ],
+      "tiles": [
+        { "id": "t5", "text": "个", "tag": "Lượng từ" },
+        { "id": "t2", "text": "李老师", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "碗", "tag": "Bẫy lượng từ" },
+        { "id": "t1", "text": "今天", "tag": "Thời gian" },
+        { "id": "t4", "text": "三", "tag": "Số từ" },
+        { "id": "t6", "text": "包子", "tag": "Danh từ" },
+        { "id": "t3", "text": "吃", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["今天", "李老师", "吃", "三", "个", "包子"],
+      "wordBankPool": ["个", "李老师", "碗", "今天", "三", "包子", "吃"],
+      "traps": [
+        {
+          "pattern": "碗",
+          "msg": "Lỗi lượng từ: Bánh bao (包子) đếm theo cái phải dùng '个', không dùng '碗' (bát)."
+        }
+      ],
+      "explanation": "Lượng từ của bánh bao (包子) và màn thầu (馒头) là '个' (三个包子 = ba cái bánh bao)."
     }
   ]
 }

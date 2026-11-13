@@ -116,7 +116,7 @@ const EvalSys = {
         return {
             pass: false,
             title: "Cần Hoàn Thiện",
-            msg: questionData.grammar || questionData.grammarPoint || questionData.explanation || "Sai trật tự cú pháp Hán ngữ hoặc thiếu từ khóa. Hãy quan sát đáp án chuẩn bên dưới."
+            msg: questionData.grammar || questionData.grammarPoint || questionData.explanation || "Sai trật tự cú pháp Hán ngữ hoặc chưa đúng từ khóa. Hãy thử sắp xếp lại các khối từ."
         };
     },
 

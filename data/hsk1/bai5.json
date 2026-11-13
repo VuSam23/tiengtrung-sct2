@@ -254,7 +254,7 @@
       "wordBankPool": ["这", "不是", "我的", "书", "是"],
       "traps": [
         {
-          "pattern": "是",
+          "pattern": "这是",
           "msg": "Lỗi khẳng định: Đề bài yêu cầu phủ định 'Không phải là', phải dùng '不是'."
         }
       ],

@@ -1,0 +1,880 @@
+{
+  "lessonId": "b16",
+  "lessonTitle": "Bài 16: Tần suất sinh hoạt & Hoạt động cùng nhau",
+  "quickNotes": {
+    "vocabTips": [
+      {
+        "word": "总是 / 常 / 有时候",
+        "py": "zǒngshì / cháng / yǒushíhou",
+        "note": "Mức độ tần suất giảm dần: 总是 (luôn luôn - 100%), 常 (thường xuyên - ~80%), 有时候 (có lúc, thỉnh thoảng - ~30%). Đều đứng trước động từ."
+      },
+      {
+        "word": "咱们 / 我们",
+        "py": "zánmen / wǒmen",
+        "note": "咱们 (chúng ta) luôn bao gồm cả người nói và người nghe; 我们 (chúng tôi/chúng ta) dùng chung hoặc khi tách người nghe ra ngoài."
+      },
+      {
+        "word": "跟 + Đối tượng + 一起",
+        "py": "gēn + duìxiàng + yìqǐ",
+        "note": "Giới từ 跟 (cùng, với) kết hợp với phó từ 一起 (cùng nhau) đặt ngay trước động từ để diễn đạt ai làm gì cùng với ai."
+      }
+    ],
+    "grammarTips": [
+      "Cấu trúc cùng hành động: Chủ ngữ + 跟 + Đối tượng + 一起 + Động từ + Tân ngữ.",
+      "Trật tự tần suất & nơi chốn: Chủ ngữ + 总是 / 常 + 在 + Địa điểm + Động từ.",
+      "Phân biệt liên từ lựa chọn: Dùng 还是 trong câu hỏi lựa chọn, dùng 或者 trong câu trần thuật."
+    ]
+  },
+  "sentences": [
+    {
+      "id": "b16-07",
+      "type": "sentence_parsing",
+      "title": "Dùng giới từ 跟 và phó từ 一起",
+      "vi": "Anh ấy thường cùng anh trai đi ngân hàng.",
+      "zh": "他常跟哥哥一起去银行",
+      "standardTrans": "他常跟哥哥一起去银行",
+      "pinyin": "Tā cháng gēn gēge yìqǐ qù yínháng.",
+      "grammarPoint": "S + 常 + 跟 + Người + 一起 + 去 + Địa điểm",
+      "tokens": [
+        {
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Anh ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
+        },
+        {
+          "text": "Thường",
+          "hz": "常",
+          "py": "cháng",
+          "hv": "Thường",
+          "role": "Phó từ tần suất",
+          "vn": "Thường xuyên",
+          "radicals": "常 = Bộ tiểu 小 + Bộ mịch 冖 + Bộ khẩu 口 + Bộ cân 巾"
+        },
+        {
+          "text": "Cùng / Với",
+          "hz": "跟",
+          "py": "gēn",
+          "hv": "Cân",
+          "role": "Giới từ",
+          "vn": "Cùng, với",
+          "radicals": "跟 = Bộ túc ⻊ + Bộ cấn 艮"
+        },
+        {
+          "text": "Anh trai",
+          "hz": "哥哥",
+          "py": "gēge",
+          "hv": "Ca ca",
+          "role": "Tân ngữ giới từ",
+          "vn": "Anh trai",
+          "radicals": "哥 = Bộ khẩu 口 + Bộ nhất 一 + Bộ quyết 亅"
+        },
+        {
+          "text": "Cùng nhau",
+          "hz": "一起",
+          "py": "yìqǐ",
+          "hv": "Nhất khởi",
+          "role": "Phó từ",
+          "vn": "Cùng nhau (đứng trước động từ chính)",
+          "radicals": "一 = Bộ nhất 一; 起 = Bộ tẩu 走 + Bộ kỷ 己"
+        },
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Ngân hàng",
+          "hz": "银行",
+          "py": "yínháng",
+          "hv": "Ngân hàng",
+          "role": "Địa điểm",
+          "vn": "Ngân hàng",
+          "radicals": "银 = Bộ kim 钅 + Bộ cấn 艮; 行 = Bộ xích 彳 + Bộ hành 行"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "哥哥", "tag": "Đối tượng" },
+        { "id": "t2", "text": "常", "tag": "Tần suất" },
+        { "id": "t7", "text": "银行", "tag": "Địa điểm" },
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t8", "text": "在", "tag": "Bẫy" },
+        { "id": "t5", "text": "一起", "tag": "Phó từ" },
+        { "id": "t3", "text": "跟", "tag": "Giới từ" },
+        { "id": "t6", "text": "去", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["他", "常", "跟", "哥哥", "一起", "去", "银行"],
+      "wordBankPool": ["哥哥", "常", "银行", "他", "在", "一起", "跟", "去"],
+      "traps": [
+        {
+          "pattern": "在",
+          "msg": "Lỗi động từ: Diễn tả sự di chuyển 'đi đến ngân hàng' phải dùng động từ '去', không dùng '在'."
+        }
+      ],
+      "explanation": "Cụm '跟 + Đối tượng + 一起' đặt ngay trước động từ '去' để biểu đạt việc cùng nhau làm gì."
+    },
+    {
+      "id": "b16-02",
+      "type": "sentence_parsing",
+      "title": "Dùng đại từ 咱们 và trợ từ đề nghị 吧",
+      "vi": "Buổi chiều chúng ta cùng nhau đi hiệu sách nhé.",
+      "zh": "下午咱们一起去书店吧",
+      "standardTrans": "下午咱们一起去书店吧",
+      "pinyin": "Xiàwǔ zánmen yìqǐ qù shūdiàn ba.",
+      "grammarPoint": "Đại từ 咱们 (chúng ta) & Trợ từ ngữ khí 吧",
+      "tokens": [
+        {
+          "text": "Buổi chiều",
+          "hz": "下午",
+          "py": "xiàwǔ",
+          "hv": "Hạ ngọ",
+          "role": "Danh từ thời gian",
+          "vn": "Buổi chiều",
+          "radicals": "下 = Bộ nhất 一 + Bộ bốc 卜; 午 = Bộ thập 十 + Nét phẩy 丿"
+        },
+        {
+          "text": "Chúng ta",
+          "hz": "咱们",
+          "py": "zánmen",
+          "hv": "Tán môn",
+          "role": "Chủ ngữ",
+          "vn": "Chúng ta (bao gồm cả người nói và người nghe)",
+          "radicals": "咱 = Bộ khẩu 口 + Bộ tự 自; 们 = Bộ nhân đứng 亻 + Bộ môn 门"
+        },
+        {
+          "text": "Cùng nhau",
+          "hz": "一起",
+          "py": "yìqǐ",
+          "hv": "Nhất khởi",
+          "role": "Phó từ",
+          "vn": "Cùng nhau",
+          "radicals": "一 = Bộ nhất 一; 起 = Bộ tẩu 走 + Bộ kỷ 己"
+        },
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Hiệu sách",
+          "hz": "书店",
+          "py": "shūdiàn",
+          "hv": "Thư điếm",
+          "role": "Địa điểm",
+          "vn": "Hiệu sách, nhà sách",
+          "radicals": "书 = Bộ ất 乙 + Bộ nhất 一; 店 = Bộ nghiễm 广 + Bộ chiêm 占"
+        },
+        {
+          "text": "Nhé / Đi",
+          "hz": "吧",
+          "py": "ba",
+          "hv": "Ba",
+          "role": "Trợ từ ngữ khí",
+          "vn": "Đặt cuối câu biểu thị lời rủ rê, đề nghị nhẹ nhàng",
+          "radicals": "吧 = Bộ khẩu 口 + Chữ ba 巴"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "去", "tag": "Động từ" },
+        { "id": "t2", "text": "咱们", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "吧", "tag": "Trợ từ" },
+        { "id": "t1", "text": "下午", "tag": "Thời gian" },
+        { "id": "t7", "text": "吗", "tag": "Bẫy" },
+        { "id": "t5", "text": "书店", "tag": "Địa điểm" },
+        { "id": "t3", "text": "一起", "tag": "Phó từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["下午", "咱们", "一起", "去", "书店", "吧"],
+      "wordBankPool": ["去", "咱们", "吧", "下午", "吗", "书店", "一起"],
+      "traps": [
+        {
+          "pattern": "吗",
+          "msg": "Lỗi trợ từ: Câu rủ rê, đề nghị ('...đi nhé') phải dùng trợ từ '吧', không dùng trợ từ nghi vấn '吗'."
+        }
+      ],
+      "explanation": "'咱们' dùng để rủ người đối diện cùng tham gia hành động; kết hợp '吧' ở cuối câu tạo ngữ khí thân mật."
+    },
+    {
+      "id": "b16-09",
+      "type": "sentence_parsing",
+      "title": "Dùng phó từ 总是 (luôn luôn) với địa điểm",
+      "vi": "Anh ấy luôn tra tài liệu ở văn phòng.",
+      "zh": "他总是在办公室查资料",
+      "standardTrans": "他总是在办公室查资料",
+      "pinyin": "Tā zǒngshì zài bàngōngshì chá zīliào.",
+      "grammarPoint": "S + 总是 + 在 + Địa điểm + Động từ + Tân ngữ",
+      "tokens": [
+        {
+          "text": "Anh ấy",
+          "hz": "他",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Anh ấy",
+          "radicals": "他 = Bộ nhân đứng 亻 + Bộ dã 也"
+        },
+        {
+          "text": "Luôn luôn",
+          "hz": "总是",
+          "py": "zǒngshì",
+          "hv": "Tổng thị",
+          "role": "Phó từ tần suất",
+          "vn": "Luôn luôn, lúc nào cũng",
+          "radicals": "总 = Bộ bát 八 + Bộ khẩu 口 + Bộ tâm 心; 是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Ở / Tại",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Giới từ",
+          "vn": "Ở, tại",
+          "radicals": "在 = Bộ thổ 土 + Bộ nhất 一"
+        },
+        {
+          "text": "Văn phòng",
+          "hz": "办公室",
+          "py": "bàngōngshì",
+          "hv": "Biện công thất",
+          "role": "Địa điểm",
+          "vn": "Văn phòng làm việc",
+          "radicals": "办 = Bộ lực 力 + Nét chấm 丶; 公 = Bộ bát 八 + Bộ khư 厶; 室 = Bộ miên 宀 + Bộ chí 至"
+        },
+        {
+          "text": "Tra / Tìm",
+          "hz": "查",
+          "py": "chá",
+          "hv": "Tra",
+          "role": "Động từ",
+          "vn": "Tra cứu, tìm kiếm thông tin",
+          "radicals": "查 = Bộ mộc 木 + Bộ nhật 日 + Bộ nhất 一"
+        },
+        {
+          "text": "Tài liệu",
+          "hz": "资料",
+          "py": "zīliào",
+          "hv": "Tư liệu",
+          "role": "Tân ngữ",
+          "vn": "Tài liệu, tư liệu công việc",
+          "radicals": "资 = Bộ khiếm 欠 + Bộ bối 贝; 料 = Bộ mễ 米 + Bộ đẩu 斗"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "办公室", "tag": "Địa điểm" },
+        { "id": "t2", "text": "总是", "tag": "Tần suất" },
+        { "id": "t6", "text": "资料", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "他", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "去", "tag": "Bẫy" },
+        { "id": "t5", "text": "查", "tag": "Động từ" },
+        { "id": "t3", "text": "在", "tag": "Giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["他", "总是", "在", "办公室", "查", "资料"],
+      "wordBankPool": ["办公室", "总是", "资料", "他", "去", "查", "在"],
+      "traps": [
+        {
+          "pattern": "去",
+          "msg": "Lỗi giới từ: Diễn tả nơi diễn ra hành động 'tra tài liệu ở văn phòng' phải dùng '在', không dùng '去'."
+        }
+      ],
+      "explanation": "Phó từ tần suất '总是' đặt trước cụm giới từ chỉ địa điểm '在办公室'."
+    },
+    {
+      "id": "b16-04",
+      "type": "sentence_parsing",
+      "title": "Dùng liên từ 或者 trong câu trần thuật",
+      "vi": "Buổi tối tôi làm bài tập hoặc đọc sách.",
+      "zh": "我晚上做练习或者看书",
+      "standardTrans": "我晚上做练习或者看书",
+      "pinyin": "Wǒ wǎnshang zuò liànxí huòzhě kànshū.",
+      "grammarPoint": "Liên từ 或者 (hoặc là) nối hai hoạt động",
+      "tokens": [
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Buổi tối",
+          "hz": "晚上",
+          "py": "wǎnshang",
+          "hv": "Vãn thượng",
+          "role": "Danh từ thời gian",
+          "vn": "Buổi tối",
+          "radicals": "晚 = Bộ nhật 日 + Bộ nhi 儿; 上 = Bộ nhất 一 + Bộ bốc 卜"
+        },
+        {
+          "text": "Làm",
+          "hz": "做",
+          "py": "zuò",
+          "hv": "Tác",
+          "role": "Động từ",
+          "vn": "Làm",
+          "radicals": "做 = Bộ nhân đứng 亻 + Bộ cổ 古 + Bộ phộc 攵"
+        },
+        {
+          "text": "Bài tập",
+          "hz": "练习",
+          "py": "liànxí",
+          "hv": "Luyện tập",
+          "role": "Tân ngữ",
+          "vn": "Bài tập, luyện tập",
+          "radicals": "练 = Bộ mịch 纟 + Bộ mộc 木; 习 = Bộ ất 乙 + Bộ nhị 二"
+        },
+        {
+          "text": "Hoặc là",
+          "hz": "或者",
+          "py": "huòzhě",
+          "hv": "Hoặc giả",
+          "role": "Liên từ",
+          "vn": "Hoặc là (dùng trong câu trần thuật)",
+          "radicals": "或 = Bộ qua 戈 + Bộ khẩu 口; 者 = Bộ lão 老 + Bộ nhật 日"
+        },
+        {
+          "text": "Đọc sách",
+          "hz": "看书",
+          "py": "kànshū",
+          "hv": "Khán thư",
+          "role": "Động từ ly hợp",
+          "vn": "Đọc sách",
+          "radicals": "看 = Bộ thủ 手 + Bộ mục 目; 书 = Bộ ất 乙 + Bộ nhất 一"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "练习", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "晚上", "tag": "Thời gian" },
+        { "id": "t6", "text": "看书", "tag": "Động từ" },
+        { "id": "t1", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "还是", "tag": "Bẫy" },
+        { "id": "t5", "text": "或者", "tag": "Liên từ" },
+        { "id": "t3", "text": "做", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["我", "晚上", "做", "练习", "或者", "看书"],
+      "wordBankPool": ["练习", "晚上", "看书", "我", "还是", "或者", "做"],
+      "traps": [
+        {
+          "pattern": "还是",
+          "msg": "Lỗi liên từ: Đây là câu trần thuật kể thói quen buổi tối, bắt buộc dùng '或者', không dùng '还是' (chỉ dùng trong câu hỏi)."
+        }
+      ],
+      "explanation": "Liên từ '或者' dùng trong câu khẳng định/trần thuật để liệt kê các hoạt động thay thế nhau."
+    },
+    {
+      "id": "b16-10",
+      "type": "sentence_parsing",
+      "title": "Dùng 有时候 (có lúc) với hoạt động trực tuyến",
+      "vi": "Có lúc tôi ở nhà lên mạng trò chuyện.",
+      "zh": "有时候我在家上网聊天",
+      "standardTrans": "有时候我在家上网聊天",
+      "pinyin": "Yǒushíhou wǒ zài jiā shàngwǎng liáotiān.",
+      "grammarPoint": "Từ chỉ tần suất 有时候 + S + 在 + Địa điểm + Động từ",
+      "tokens": [
+        {
+          "text": "Có lúc / Thỉnh thoảng",
+          "hz": "有时候",
+          "py": "yǒushíhou",
+          "hv": "Hữu thời hậu",
+          "role": "Danh từ thời gian",
+          "vn": "Có lúc, thỉnh thoảng (có thể đứng trước hoặc sau chủ ngữ)",
+          "radicals": "有 = Bộ nguyệt 月; 时 = Bộ nhật 日 + Bộ thốn 寸; 候 = Bộ nhân đứng 亻 + Bộ thỉ 矢"
+        },
+        {
+          "text": "Tôi",
+          "hz": "我",
+          "py": "wǒ",
+          "hv": "Ngã",
+          "role": "Chủ ngữ",
+          "vn": "Tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈"
+        },
+        {
+          "text": "Ở / Tại",
+          "hz": "在",
+          "py": "zài",
+          "hv": "Tại",
+          "role": "Giới từ",
+          "vn": "Ở, tại",
+          "radicals": "在 = Bộ thổ 土 + Bộ nhất 一"
+        },
+        {
+          "text": "Nhà",
+          "hz": "家",
+          "py": "jiā",
+          "hv": "Gia",
+          "role": "Địa điểm",
+          "vn": "Nhà",
+          "radicals": "家 = Bộ miên 宀 + Bộ thỉ 豕"
+        },
+        {
+          "text": "Lên mạng",
+          "hz": "上网",
+          "py": "shàngwǎng",
+          "hv": "Thượng võng",
+          "role": "Động từ 1",
+          "vn": "Truy cập internet, lên mạng",
+          "radicals": "上 = Bộ nhất 一 + Bộ bốc 卜; 网 = Bộ quynh 冂 + Bộ bát 八"
+        },
+        {
+          "text": "Trò chuyện",
+          "hz": "聊天",
+          "py": "liáotiān",
+          "hv": "Liêu thiên",
+          "role": "Động từ 2",
+          "vn": "Tán gẫu, trò chuyện",
+          "radicals": "聊 = Bộ nhĩ 耳 + Bộ tiết 卩; 天 = Bộ nhất 一 + Bộ đại 大"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "家", "tag": "Địa điểm" },
+        { "id": "t2", "text": "我", "tag": "Chủ ngữ" },
+        { "id": "t6", "text": "聊天", "tag": "Động từ" },
+        { "id": "t1", "text": "有时候", "tag": "Tần suất" },
+        { "id": "t7", "text": "总是", "tag": "Bẫy" },
+        { "id": "t5", "text": "上网", "tag": "Động từ" },
+        { "id": "t3", "text": "在", "tag": "Giới từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["有时候", "我", "在", "家", "上网", "聊天"],
+      "wordBankPool": ["家", "我", "聊天", "有时候", "总是", "上网", "在"],
+      "traps": [
+        {
+          "pattern": "总是",
+          "msg": "Lỗi từ vựng: Đề bài nhắc đến 'có lúc / thỉnh thoảng' phải dùng '有时候', không dùng '总是' (luôn luôn)."
+        }
+      ],
+      "explanation": "'有时候' là danh từ chỉ thời gian không xác định nên có thể đặt ở đầu câu trước chủ ngữ '我'."
+    },
+    {
+      "id": "b16-01",
+      "type": "sentence_parsing",
+      "title": "Hỏi thói quen đến trường mượn từ điển",
+      "vi": "Bạn có thường đến trường mượn từ điển không?",
+      "zh": "你常去学校借词典吗",
+      "standardTrans": "你常去学校借词典吗",
+      "pinyin": "Nǐ cháng qù xuéxiào jiè cídiǎn ma?",
+      "grammarPoint": "Câu liên động: S + 常 + 去 + Địa điểm + 借 + Tân ngữ + 吗",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Bạn, cậu",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Thường",
+          "hz": "常",
+          "py": "cháng",
+          "hv": "Thường",
+          "role": "Phó từ tần suất",
+          "vn": "Thường xuyên",
+          "radicals": "常 = Bộ tiểu 小 + Bộ mịch 冖 + Bộ khẩu 口 + Bộ cân 巾"
+        },
+        {
+          "text": "Đi / Đến",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ 1",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Trường học",
+          "hz": "学校",
+          "py": "xuéxiào",
+          "hv": "Học hiệu",
+          "role": "Địa điểm",
+          "vn": "Trường học",
+          "radicals": "学 = Bộ tử 子 + Bộ mịch 冖; 校 = Bộ mộc 木 + Bộ phụ 父"
+        },
+        {
+          "text": "Mượn",
+          "hz": "借",
+          "py": "jiè",
+          "hv": "Tá",
+          "role": "Động từ 2",
+          "vn": "Mượn, vay",
+          "radicals": "借 = Bộ nhân đứng 亻 + Bộ thảo 艹 + Bộ nhật 日"
+        },
+        {
+          "text": "Từ điển",
+          "hz": "词典",
+          "py": "cídiǎn",
+          "hv": "Từ điển",
+          "role": "Tân ngữ",
+          "vn": "Từ điển",
+          "radicals": "词 = Bộ ngôn 讠 + Chữ tư 司; 典 = Bộ bát 八 + Bộ quynh 冂"
+        },
+        {
+          "text": "Không",
+          "hz": "吗",
+          "py": "ma",
+          "hv": "Ma",
+          "role": "Trợ từ nghi vấn",
+          "vn": "Trợ từ đặt cuối câu hỏi Có/Không",
+          "radicals": "吗 = Bộ khẩu 口 + Bộ mã 马"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "学校", "tag": "Địa điểm" },
+        { "id": "t2", "text": "常", "tag": "Tần suất" },
+        { "id": "t6", "text": "词典", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t8", "text": "呢", "tag": "Bẫy" },
+        { "id": "t5", "text": "借", "tag": "Động từ" },
+        { "id": "t7", "text": "吗", "tag": "Trợ từ" },
+        { "id": "t3", "text": "去", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "requiredKeywordsZh": ["你", "常", "去", "学校", "借", "词典", "吗"],
+      "wordBankPool": ["学校", "常", "词典", "你", "呢", "借", "吗", "去"],
+      "traps": [
+        {
+          "pattern": "呢",
+          "msg": "Lỗi trợ từ: Đây là câu hỏi xác nhận Có/Không đầy đủ thành phần, bắt buộc dùng '吗' ở cuối câu, không dùng '呢'."
+        }
+      ],
+      "explanation": "Trong câu liên động '去 + Địa điểm + Làm gì', phó từ tần suất '常' đứng ngay trước động từ thứ nhất '去'."
+    },
+    {
+      "id": "b16-08",
+      "type": "sentence_parsing",
+      "title": "Dùng động từ 预习 (chuẩn bị bài mới)",
+      "vi": "Em trai luôn chuẩn bị từ mới trước.",
+      "zh": "弟弟总是先预习生词",
+      "standardTrans": "弟弟总是先预习生词",
+      "pinyin": "Dìdi zǒngshì xiān yùxí shēngcí.",
+      "grammarPoint": "Phó từ tần suất 总是 + Phó từ 先 + 预习 + 生词",
+      "tokens": [
+        {
+          "text": "Em trai",
+          "hz": "弟弟",
+          "py": "dìdi",
+          "hv": "Đệ đệ",
+          "role": "Chủ ngữ",
+          "vn": "Em trai",
+          "radicals": "弟 = Bộ cung 弓 + Bộ bát 八"
+        },
+        {
+          "text": "Luôn luôn",
+          "hz": "总是",
+          "py": "zǒngshì",
+          "hv": "Tổng thị",
+          "role": "Phó từ tần suất",
+          "vn": "Luôn luôn",
+          "radicals": "总 = Bộ bát 八 + Bộ khẩu 口 + Bộ tâm 心; 是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Trước",
+          "hz": "先",
+          "py": "xiān",
+          "hv": "Tiên",
+          "role": "Phó từ",
+          "vn": "Trước tiên",
+          "radicals": "先 = Nét phẩy 丿 + Bộ thổ 土 + Bộ nhi 儿"
+        },
+        {
+          "text": "Chuẩn bị bài mới",
+          "hz": "预习",
+          "py": "yùxí",
+          "hv": "Dự tập",
+          "role": "Động từ",
+          "vn": "Xem trước bài mới trước khi lên lớp",
+          "radicals": "预 = Chữ dư 予 + Bộ hiệt 页; 习 = Bộ ất 乙 + Bộ nhị 二"
+        },
+        {
+          "text": "Từ mới",
+          "hz": "生词",
+          "py": "shēngcí",
+          "hv": "Sinh từ",
+          "role": "Tân ngữ",
+          "vn": "Từ mới",
+          "radicals": "生 = Bộ sinh 生; 词 = Bộ ngôn 讠 + Chữ tư 司"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "先", "tag": "Phó từ" },
+        { "id": "t1", "text": "弟弟", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "生词", "tag": "Tân ngữ" },
+        { "id": "t6", "text": "复习", "tag": "Bẫy" },
+        { "id": "t4", "text": "预习", "tag": "Động từ" },
+        { "id": "t2", "text": "总是", "tag": "Tần suất" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["弟弟", "总是", "先", "预习", "生词"],
+      "wordBankPool": ["先", "弟弟", "生词", "复习", "预习", "总是"],
+      "traps": [
+        {
+          "pattern": "复习",
+          "msg": "Lỗi từ vựng: '预习' là chuẩn bị trước bài mới, còn '复习' là ôn tập lại bài đã học."
+        }
+      ],
+      "explanation": "Khi hai phó từ đi liền nhau, phó từ chỉ tần suất '总是' đứng trước phó từ chỉ trình tự '先' (总是先预习)."
+    },
+    {
+      "id": "b16-03",
+      "type": "sentence_parsing",
+      "title": "Hỏi lựa chọn hoạt động học tập với 还是",
+      "vi": "Bạn ôn tập bài khóa hay là làm bài tập?",
+      "zh": "你复习课文还是做练习",
+      "standardTrans": "你复习课文还是做练习",
+      "pinyin": "Nǐ fùxí kèwén háishì zuò liànxí?",
+      "grammarPoint": "Câu hỏi lựa chọn: S + Động từ 1 + 还是 + Động từ 2",
+      "tokens": [
+        {
+          "text": "Bạn",
+          "hz": "你",
+          "py": "nǐ",
+          "hv": "Nhĩ",
+          "role": "Chủ ngữ",
+          "vn": "Bạn",
+          "radicals": "你 = Bộ nhân đứng 亻 + Bộ nhĩ 尔"
+        },
+        {
+          "text": "Ôn tập",
+          "hz": "复习",
+          "py": "fùxí",
+          "hv": "Phục tập",
+          "role": "Động từ 1",
+          "vn": "Ôn tập",
+          "radicals": "复 = Bộ truy 夂 + Bộ nhật 日; 习 = Bộ ất 乙 + Bộ nhị 二"
+        },
+        {
+          "text": "Bài khóa",
+          "hz": "课文",
+          "py": "kèwén",
+          "hv": "Khóa văn",
+          "role": "Tân ngữ 1",
+          "vn": "Bài khóa",
+          "radicals": "课 = Bộ ngôn 讠 + Bộ quả 果; 文 = Bộ văn 文"
+        },
+        {
+          "text": "Hay là",
+          "hz": "还是",
+          "py": "háishì",
+          "hv": "Hoàn thị",
+          "role": "Liên từ lựa chọn",
+          "vn": "Hay là (dùng trong câu hỏi)",
+          "radicals": "还 = Bộ sước 辶 + Bộ bất 不; 是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Làm",
+          "hz": "做",
+          "py": "zuò",
+          "hv": "Tác",
+          "role": "Động từ 2",
+          "vn": "Làm",
+          "radicals": "做 = Bộ nhân đứng 亻 + Bộ cổ 古 + Bộ phộc 攵"
+        },
+        {
+          "text": "Bài tập",
+          "hz": "练习",
+          "py": "liànxí",
+          "hv": "Luyện tập",
+          "role": "Tân ngữ 2",
+          "vn": "Bài tập, luyện tập",
+          "radicals": "练 = Bộ mịch 纟 + Bộ mộc 木; 习 = Bộ ất 乙 + Bộ nhị 二"
+        }
+      ],
+      "tiles": [
+        { "id": "t3", "text": "课文", "tag": "Tân ngữ" },
+        { "id": "t1", "text": "你", "tag": "Chủ ngữ" },
+        { "id": "t5", "text": "做", "tag": "Động từ" },
+        { "id": "t7", "text": "或者", "tag": "Bẫy" },
+        { "id": "t4", "text": "还是", "tag": "Liên từ" },
+        { "id": "t6", "text": "练习", "tag": "Tân ngữ" },
+        { "id": "t2", "text": "复习", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["你", "复习", "课文", "还是", "做", "练习"],
+      "wordBankPool": ["课文", "你", "做", "或者", "还是", "练习", "复习"],
+      "traps": [
+        {
+          "pattern": "或者",
+          "msg": "Lỗi liên từ: Câu hỏi lựa chọn bắt buộc dùng '还是', không dùng '或者' (chỉ dùng trong câu trần thuật)."
+        }
+      ],
+      "explanation": "Trong câu hỏi lựa chọn hai hành động đối lập, liên từ '还是' nối trực tiếp hai cụm động từ."
+    },
+    {
+      "id": "b16-06",
+      "type": "sentence_parsing",
+      "title": "Miêu tả không gian bên trong ký túc xá",
+      "vi": "Bên trong ký túc xá luôn luôn rất yên tĩnh.",
+      "zh": "宿舍里总是很安静",
+      "standardTrans": "宿舍里总是很安静",
+      "pinyin": "Sùshè lǐ zǒngshì hěn ānjìng.",
+      "grammarPoint": "Địa điểm + 里 + 总是 + 很 + Tính từ",
+      "tokens": [
+        {
+          "text": "Ký túc xá",
+          "hz": "宿舍",
+          "py": "sùshè",
+          "hv": "Túc xá",
+          "role": "Danh từ",
+          "vn": "Ký túc xá",
+          "radicals": "宿 = Bộ miên 宀 + Bộ nhân đứng 亻 + Bộ bách 百; 舍 = Bộ nhân 人 + Bộ thiệt 舌 + Bộ khẩu 口"
+        },
+        {
+          "text": "Bên trong",
+          "hz": "里",
+          "py": "lǐ",
+          "hv": "Lý",
+          "role": "Phương vị từ",
+          "vn": "Bên trong, ở trong",
+          "radicals": "里 = Bộ lý 里"
+        },
+        {
+          "text": "Luôn luôn",
+          "hz": "总是",
+          "py": "zǒngshì",
+          "hv": "Tổng thị",
+          "role": "Phó từ tần suất",
+          "vn": "Luôn luôn",
+          "radicals": "总 = Bộ bát 八 + Bộ khẩu 口 + Bộ tâm 心; 是 = Bộ nhật 日 + Bộ chính 正"
+        },
+        {
+          "text": "Rất",
+          "hz": "很",
+          "py": "hěn",
+          "hv": "Hẩn",
+          "role": "Phó từ mức độ",
+          "vn": "Rất",
+          "radicals": "很 = Bộ xích 彳 + Bộ cấn 艮"
+        },
+        {
+          "text": "Yên tĩnh",
+          "hz": "安静",
+          "py": "ānjìng",
+          "hv": "An tĩnh",
+          "role": "Tính từ",
+          "vn": "Yên tĩnh, tĩnh lặng",
+          "radicals": "安 = Bộ miên 宀 + Bộ nữ 女; 静 = Bộ thanh 青 + Chữ tranh 争"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "很", "tag": "Phó từ" },
+        { "id": "t2", "text": "里", "tag": "Phương vị" },
+        { "id": "t6", "text": "是", "tag": "Bẫy" },
+        { "id": "t1", "text": "宿舍", "tag": "Địa điểm" },
+        { "id": "t5", "text": "安静", "tag": "Tính từ" },
+        { "id": "t3", "text": "总是", "tag": "Tần suất" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5"],
+      "requiredKeywordsZh": ["宿舍", "里", "总是", "很", "安静"],
+      "wordBankPool": ["很", "里", "是", "宿舍", "安静", "总是"],
+      "traps": [
+        {
+          "pattern": "是",
+          "msg": "Lỗi câu vị ngữ tính từ: Trước cụm tính từ '很安静' không thêm động từ '是'."
+        }
+      ],
+      "explanation": "Phó từ tần suất '总是' đặt trước phó từ mức độ '很' trong câu vị ngữ tính từ."
+    },
+    {
+      "id": "b16-05",
+      "type": "sentence_parsing",
+      "title": "Phủ định tần suất với 不常 và dùng 我们",
+      "vi": "Cô ấy không thường cùng chúng tôi đi nhà hàng.",
+      "zh": "她不常跟我们去饭店",
+      "standardTrans": "她不常跟我们去饭店",
+      "pinyin": "Tā bù cháng gēn wǒmen qù fàndiàn.",
+      "grammarPoint": "Phủ định tần suất: S + 不常 + 跟 + Người + 去 + Địa điểm",
+      "tokens": [
+        {
+          "text": "Cô ấy",
+          "hz": "她",
+          "py": "tā",
+          "hv": "Tha",
+          "role": "Chủ ngữ",
+          "vn": "Cô ấy",
+          "radicals": "她 = Bộ nữ 女 + Bộ dã 也"
+        },
+        {
+          "text": "Không thường",
+          "hz": "不常",
+          "py": "bù cháng",
+          "hv": "Bất thường",
+          "role": "Phó từ",
+          "vn": "Không thường xuyên, ít khi",
+          "radicals": "不 = Bộ nhất 一 + Nét phẩy 丿; 常 = Bộ tiểu 小 + Bộ mịch 冖 + Bộ khẩu 口 + Bộ cân 巾"
+        },
+        {
+          "text": "Cùng / Với",
+          "hz": "跟",
+          "py": "gēn",
+          "hv": "Cân",
+          "role": "Giới từ",
+          "vn": "Cùng, với",
+          "radicals": "跟 = Bộ túc ⻊ + Bộ cấn 艮"
+        },
+        {
+          "text": "Chúng tôi",
+          "hz": "我们",
+          "py": "wǒmen",
+          "hv": "Ngã môn",
+          "role": "Tân ngữ giới từ",
+          "vn": "Chúng tôi",
+          "radicals": "我 = Bộ thủ 手 + Bộ qua 戈; 们 = Bộ nhân đứng 亻 + Bộ môn 门"
+        },
+        {
+          "text": "Đi",
+          "hz": "去",
+          "py": "qù",
+          "hv": "Khứ",
+          "role": "Động từ",
+          "vn": "Đi đến",
+          "radicals": "去 = Bộ thổ 土 + Bộ khư 厶"
+        },
+        {
+          "text": "Nhà hàng",
+          "hz": "饭店",
+          "py": "fàndiàn",
+          "hv": "Phạn điếm",
+          "role": "Địa điểm",
+          "vn": "Nhà hàng, khách sạn",
+          "radicals": "饭 = Bộ thực 饣 + Bộ phản 反; 店 = Bộ nghiễm 广 + Bộ chiêm 占"
+        }
+      ],
+      "tiles": [
+        { "id": "t4", "text": "我们", "tag": "Đối tượng" },
+        { "id": "t2", "text": "不常", "tag": "Tần suất" },
+        { "id": "t6", "text": "饭店", "tag": "Địa điểm" },
+        { "id": "t1", "text": "她", "tag": "Chủ ngữ" },
+        { "id": "t7", "text": "咱们", "tag": "Bẫy" },
+        { "id": "t3", "text": "跟", "tag": "Giới từ" },
+        { "id": "t5", "text": "去", "tag": "Động từ" }
+      ],
+      "targetOrder": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "requiredKeywordsZh": ["她", "不常", "跟", "我们", "去", "饭店"],
+      "wordBankPool": ["我们", "不常", "饭店", "她", "咱们", "跟", "去"],
+      "traps": [
+        {
+          "pattern": "咱们",
+          "msg": "Lỗi đại từ: Khi chủ ngữ là ngôi thứ ba '她' (cô ấy) tách biệt với nhóm của người nói, phải dùng '我们', không dùng '咱们'."
+        }
+      ],
+      "explanation": "Phủ định của '常' là '不常' (không thường xuyên), đặt ngay sau chủ ngữ '她' và trước cụm giới từ '跟我们'."
+    }
+  ]
+}

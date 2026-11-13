@@ -67,12 +67,12 @@ const HSK_MANIFESTS = {
         },
         {
             id: "bai13",
-            title: "Bài 13: 第十三课: 这是不是中药? - Vị trí & Cụm chữ 的",
+            title: "Bài 13: Luyện Dịch HSK - Đồ dùng cá nhân, Màu sắc & Tính chất",
             file: "data/hsk1/bai13.json"
         },
         {
             id: "bai14",
-            title: "Bài 14: 第十四课: 你的车是新的还是旧的? - Câu hỏi lựa chọn 还是 & Màu sắc",
+            title: "Bài 14: Luyện Dịch HSK - Phương tiện di chuyển & Trạng thái gần đây",
             file: "data/hsk1/bai14.json"
         },
         {
