@@ -6,6 +6,9 @@
 import { AudioService } from './services/audio-service.js';
 import { ToastView } from './views/toast-view.js';
 import { ModalView } from './views/modal-view.js';
+import { StateModel } from './models/state-model.js';
+import { LessonModel } from './models/lesson-model.js';
+import { GamificationService } from './services/gamification-service.js';
 
 const DB_VERSION = 'sct2_db_v3_modular';
 
@@ -77,56 +80,29 @@ const App = {
     },
 
     loadGamificationState() {
-        const STORAGE_KEY = 'sct2_gamification_v2';
-        let state = null;
-        try {
-            const raw = localStorage.getItem(STORAGE_KEY);
-            if (raw) state = JSON.parse(raw);
-        } catch (e) {}
+        const gState = GamificationService.loadState();
+        this.hearts = gState.hearts;
+        this.maxHearts = gState.maxHearts;
+        this.lastHeartLostTime = gState.lastHeartLostTime;
+        this.streak = gState.streak;
+        this.lastCompletedDate = gState.lastCompletedDate;
 
-        if (state && state.version === 2) {
-            this.hearts = typeof state.hearts === 'number' ? Math.max(0, Math.min(this.maxHearts, state.hearts)) : 5;
-            this.lastHeartLostTime = state.lastHeartLostTime || null;
-            this.streak = typeof state.streak === 'number' ? Math.max(0, state.streak) : 0;
-            this.lastCompletedDate = state.lastCompletedDate || null;
-        } else {
-            // Di chuyển dữ liệu cũ (migration)
-            let oldHearts = 5;
-            try {
-                const h = localStorage.getItem('sct2_user_hearts');
-                if (h !== null) oldHearts = Math.max(0, Math.min(5, parseInt(h, 10)));
-            } catch (e) {}
-            this.hearts = oldHearts;
-            this.lastHeartLostTime = this.hearts < this.maxHearts ? Date.now() : null;
-            this.streak = 1;
-            this.lastCompletedDate = this.getLocalDateString();
-            this.saveGamificationState();
-        }
-
-        // Tự động kiểm tra hồi phục tim theo thời gian đã trôi qua
-        this.refreshHearts();
-        // Kiểm tra tính liên tục của chuỗi Streak theo ngày
-        this.checkStreakExpiry();
-        // Cập nhật giao diện
         this.updateHeartsUI();
         this.updateStreakUI();
 
-        // 1. GIA CỐ MULTI-TAB: Đồng bộ tức thì giữa các tab đang mở
         window.addEventListener('storage', (e) => {
-            if (e.key === 'sct2_gamification_v2' && e.newValue) {
+            if (e.key === 'sct2_gamification_state' && e.newValue) {
                 try {
                     const data = JSON.parse(e.newValue);
-                    if (data && data.version === 2) {
-                        this.hearts = typeof data.hearts === 'number' ? data.hearts : this.hearts;
-                        this.lastHeartLostTime = data.lastHeartLostTime;
-                        this.streak = typeof data.streak === 'number' ? data.streak : this.streak;
-                        this.lastCompletedDate = data.lastCompletedDate;
-                        this.updateHeartsUI();
-                        this.updateStreakUI();
-                        if (this.hearts > 0) {
-                            document.getElementById('no-hearts-dialog')?.classList.add('hidden');
-                            this.stopHeartCountdownTimer();
-                        }
+                    this.hearts = typeof data.hearts === 'number' ? data.hearts : this.hearts;
+                    this.lastHeartLostTime = data.lastHeartLostTime;
+                    this.streak = typeof data.streak === 'number' ? data.streak : this.streak;
+                    this.lastCompletedDate = data.lastCompletedDate;
+                    this.updateHeartsUI();
+                    this.updateStreakUI();
+                    if (this.hearts > 0) {
+                        document.getElementById('no-hearts-dialog')?.classList.add('hidden');
+                        this.stopHeartCountdownTimer();
                     }
                 } catch (err) {}
             }
@@ -134,68 +110,26 @@ const App = {
     },
 
     saveGamificationState() {
-        const STORAGE_KEY = 'sct2_gamification_v2';
-        const data = {
-            version: 2,
-            hearts: this.hearts,
-            lastHeartLostTime: this.lastHeartLostTime,
-            streak: this.streak,
-            lastCompletedDate: this.lastCompletedDate,
-            savedAt: Date.now()
-        };
-        try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-        } catch (e) {}
+        GamificationService.hearts = this.hearts;
+        GamificationService.lastHeartLostTime = this.lastHeartLostTime;
+        GamificationService.streak = this.streak;
+        GamificationService.lastCompletedDate = this.lastCompletedDate;
+        GamificationService.saveState();
     },
 
-    // Tự động hồi tim theo chu kỳ 20 phút
     refreshHearts() {
-        if (this.hearts >= this.maxHearts) {
-            this.lastHeartLostTime = null;
-            return;
-        }
-        if (!this.lastHeartLostTime) {
-            this.lastHeartLostTime = Date.now();
-            this.saveGamificationState();
-            return;
-        }
-
-        const now = Date.now();
-
-        // 3. GIA CỐ TIME-TRAVEL: Chống lỗi khi người dùng chỉnh lùi giờ máy tính về quá khứ
-        if (now < this.lastHeartLostTime) {
-            this.lastHeartLostTime = now;
-            this.saveGamificationState();
-            return;
-        }
-
-        const elapsed = now - this.lastHeartLostTime;
-        const recovered = Math.floor(elapsed / this.REFILL_INTERVAL_MS);
-
-        if (recovered > 0) {
-            this.hearts = Math.min(this.maxHearts, this.hearts + recovered);
-            if (this.hearts >= this.maxHearts) {
-                this.lastHeartLostTime = null;
-            } else {
-                // Giữ lại phần dư thời gian cho lần hồi tiếp theo
-                this.lastHeartLostTime = now - (elapsed % this.REFILL_INTERVAL_MS);
-            }
-            this.saveGamificationState();
-            this.updateHeartsUI(true);
-        }
+        GamificationService.calcPassiveRegen();
+        this.hearts = GamificationService.hearts;
+        this.lastHeartLostTime = GamificationService.lastHeartLostTime;
+        this.updateHeartsUI(true);
     },
 
     getHeartCountdownInfo() {
-        if (this.hearts >= this.maxHearts || !this.lastHeartLostTime) {
-            return { remainingMs: 0, text: 'Đầy 5/5' };
-        }
-        const now = Date.now();
-        const elapsed = now - this.lastHeartLostTime;
-        const remainingMs = Math.max(0, this.REFILL_INTERVAL_MS - (elapsed % this.REFILL_INTERVAL_MS));
-        const totalSec = Math.floor(remainingMs / 1000);
-        const mins = String(Math.floor(totalSec / 60)).padStart(2, '0');
-        const secs = String(totalSec % 60).padStart(2, '0');
-        return { remainingMs, text: `${mins}:${secs}` };
+        const countdown = GamificationService.getCountdown();
+        return {
+            remainingMs: countdown ? 1 : 0,
+            text: countdown || 'Đầy 5/5'
+        };
     },
 
     updateHeartsUI(animate = false) {
@@ -221,20 +155,12 @@ const App = {
     },
 
     decreaseHeart() {
-        // Nếu ở chế độ Dev / Tester: không trừ tim để thuận tiện kiểm thử
         if (typeof NavigationHub !== 'undefined' && NavigationHub.testerMode) {
             return;
         }
-
-        this.refreshHearts();
-        if (this.hearts > 0) {
-            this.hearts -= 1;
-            if (!this.lastHeartLostTime) {
-                this.lastHeartLostTime = Date.now();
-            }
-            this.saveGamificationState();
-            this.updateHeartsUI(true);
-        }
+        this.hearts = GamificationService.consumeHeart();
+        this.lastHeartLostTime = GamificationService.lastHeartLostTime;
+        this.updateHeartsUI(true);
 
         if (this.hearts === 0) {
             setTimeout(() => this.showNoHeartsModal(), 400);
@@ -250,10 +176,9 @@ const App = {
     },
 
     refillHearts() {
-        this.hearts = this.maxHearts;
-        this.lastHeartLostTime = null;
+        this.hearts = GamificationService.refillHearts();
+        this.lastHeartLostTime = GamificationService.lastHeartLostTime;
         this.stopHeartCountdownTimer();
-        this.saveGamificationState();
         this.updateHeartsUI(true);
         document.getElementById('no-hearts-dialog')?.classList.add('hidden');
         if (this.showToast) {
@@ -343,31 +268,16 @@ const App = {
 
     // Kiểm tra tính hợp lệ của chuỗi Streak khi mở web
     checkStreakExpiry() {
-        if (!this.lastCompletedDate) {
-            this.streak = 0;
-            return;
-        }
-        const today = this.getLocalDateString();
-        if (this.lastCompletedDate === today) {
-            return; // Hôm nay đã học
-        }
-        const yesterday = new Date(Date.now() - 86400000);
-        const yesterdayStr = this.getLocalDateString(yesterday);
-        if (this.lastCompletedDate === yesterdayStr) {
-            return; // Hôm qua học, hôm nay chưa học, chuỗi vẫn bảo toàn
-        }
-        // Đã bỏ lỡ từ 2 ngày trở lên -> đứt chuỗi
-        this.streak = 0;
-        this.saveGamificationState();
+        GamificationService.checkStreakExpiration();
+        this.streak = GamificationService.streak;
     },
 
     recordLessonCompletionStreak() {
-        const today = this.getLocalDateString();
-        const lastDate = this.lastCompletedDate;
+        const res = GamificationService.recordLessonCompletionStreak();
+        this.streak = res.streak;
+        this.lastCompletedDate = GamificationService.lastCompletedDate;
 
-        if (!lastDate) {
-            this.streak = 1;
-            this.lastCompletedDate = today;
+        if (res.action === 'first_today') {
             this.showToast({
                 title: `Chuỗi Streak: 1 ngày liên tiếp! 🔥`,
                 message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
@@ -375,34 +285,24 @@ const App = {
                 type: "streak",
                 duration: 3500
             });
-        } else if (lastDate === today) {
-            // Đã học hôm nay rồi, không tăng thêm
-        } else {
-            const yesterday = new Date(Date.now() - 86400000);
-            const yesterdayStr = this.getLocalDateString(yesterday);
-            if (lastDate === yesterdayStr) {
-                this.streak += 1;
-                this.showToast({
-                    title: `Chuỗi Streak: ${this.streak} ngày liên tiếp! 🔥`,
-                    message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
-                    icon: "🔥",
-                    type: "streak",
-                    duration: 3500
-                });
-            } else {
-                this.streak = 1;
-                this.showToast({
-                    title: `Bắt đầu chuỗi Streak mới: 1 ngày! 🔥`,
-                    message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
-                    icon: "🔥",
-                    type: "streak",
-                    duration: 3500
-                });
-            }
-            this.lastCompletedDate = today;
+        } else if (res.action === 'increment') {
+            this.showToast({
+                title: `Chuỗi Streak: ${this.streak} ngày liên tiếp! 🔥`,
+                message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
+                icon: "🔥",
+                type: "streak",
+                duration: 3500
+            });
+        } else if (res.action === 'reset') {
+            this.showToast({
+                title: `Bắt đầu chuỗi Streak mới: 1 ngày! 🔥`,
+                message: "Hôm nay bạn đã hoàn thành bài để giữ lửa thành công.",
+                icon: "🔥",
+                type: "streak",
+                duration: 3500
+            });
         }
 
-        this.saveGamificationState();
         this.updateStreakUI(true);
     },
 
@@ -422,18 +322,13 @@ const App = {
     },
 
     loadMode() {
-        try {
-            const savedMode = localStorage.getItem('sct2_preferred_mode');
-            this.mode = savedMode || 'parsing';
-        } catch (e) {
-            this.mode = 'parsing';
-        }
+        this.mode = StateModel.getPreferredMode();
         this.updateModeUI();
     },
 
     toggleMode() {
         this.mode = this.mode === 'parsing' ? 'typing' : 'parsing';
-        localStorage.setItem('sct2_preferred_mode', this.mode);
+        StateModel.setPreferredMode(this.mode);
         this.updateModeUI();
 
         const ws = document.getElementById('interactive-workspace');
@@ -472,28 +367,13 @@ const App = {
     },
 
     loadSettings() {
-        try {
-            const speed = localStorage.getItem('sct2_setting_voice_speed');
-            if (speed) this.settings.voiceSpeed = parseFloat(speed) || 0.98;
-
-            const autoAudio = localStorage.getItem('sct2_setting_auto_audio');
-            this.settings.autoAudio = autoAudio !== null ? autoAudio === 'true' : true;
-
-            const showPinyin = localStorage.getItem('sct2_setting_show_pinyin');
-            this.settings.showPinyin = showPinyin !== null ? showPinyin === 'true' : true;
-        } catch (e) {
-            // localStorage bị chặn → dùng giá trị mặc định
-        }
+        this.settings = StateModel.loadSettings();
         this.syncSettingsUI();
         this.applyPinyinVisibility();
     },
 
     saveSettings() {
-        try {
-            localStorage.setItem('sct2_setting_voice_speed', this.settings.voiceSpeed);
-            localStorage.setItem('sct2_setting_auto_audio', this.settings.autoAudio);
-            localStorage.setItem('sct2_setting_show_pinyin', this.settings.showPinyin);
-        } catch (e) {}
+        StateModel.saveSettings(this.settings);
     },
 
     syncSettingsUI() {
@@ -528,83 +408,14 @@ const App = {
     },
 
     async loadLevelData(level = 'hsk1') {
-        let index = 1;
-        const discovered = {};
-        console.log(`🔍 Đang tự động quét bài học cấp độ ${level}...`);
-
-        const manifest = (window.HSK_MANIFESTS && window.HSK_MANIFESTS[level])
-            || (level === 'hsk1' ? window.LESSON_MANIFEST : [])
-            || [];
-
-        // 1. Quét theo danh mục manifest chính thức
-        for (const item of manifest) {
-            let path = item.file;
-            try {
-                let res = await fetch(path);
-                if (!res.ok && level === 'hsk1') {
-                    res = await fetch(`data/${item.id}.json`);
-                }
-                if (res && res.ok) {
-                    const rawData = await res.json();
-                    const rawLessons = Array.isArray(rawData) ? rawData : (rawData.sentences || rawData.lessons || []);
-                    const lessons = (typeof LessonDataParser !== 'undefined')
-                        ? LessonDataParser.normalizeList(rawLessons, item.id)
-                        : rawLessons;
-                    discovered[item.id] = {
-                        title: item.title || rawData.lessonTitle || rawData.title || item.id,
-                        quickNotes: rawData.quickNotes || null,
-                        lessons: lessons
-                    };
-                }
-            } catch (e) {
-                // Tiếp tục
-            }
-        }
-
-        // 2. Quét tuần tự thêm data/<level>/baiX.json
-        while (index <= 50) {
-            const key = `bai${index}`;
-            if (discovered[key]) {
-                index++;
-                continue;
-            }
-
-            let path = `data/${level}/${key}.json`;
-            try {
-                let res = await fetch(path);
-                if (!res.ok && level === 'hsk1') {
-                    res = await fetch(`data/${key}.json`);
-                }
-                if (!res || !res.ok) break;
-
-                const rawData = await res.json();
-                const manifestItem = manifest.find(m => m.id === key);
-                const title = rawData.lessonTitle || rawData.title || (manifestItem ? manifestItem.title : `Bài ${index}: Luyện Dịch ${level.toUpperCase()}`);
-                const rawLessons = Array.isArray(rawData) ? rawData : (rawData.sentences || rawData.lessons || []);
-                const lessons = (typeof LessonDataParser !== 'undefined')
-                    ? LessonDataParser.normalizeList(rawLessons, key)
-                    : rawLessons;
-
-                discovered[key] = {
-                    title: title,
-                    quickNotes: rawData.quickNotes || null,
-                    lessons: lessons
-                };
-                index++;
-            } catch (e) {
-                break;
-            }
-        }
-
-        if (Object.keys(discovered).length > 0) {
+        const discovered = await LessonModel.fetchLevelLessons(level);
+        if (discovered && Object.keys(discovered).length > 0) {
             this.data = discovered;
             this.saveData();
         } else {
             this.data = {};
-            // Hiện thông báo lỗi nếu không nạp được bài nào
             this._showLoadError();
         }
-
         this.buildPicker();
         return discovered;
     },
@@ -631,16 +442,10 @@ const App = {
     },
 
     loadData() {
-        const savedVer = localStorage.getItem('sct2_db_version');
-        const dbKey = this.getLevelDbKey();
-        const saved = localStorage.getItem(dbKey);
-
-        if (saved && savedVer === DB_VERSION) {
-            try {
-                this.data = JSON.parse(saved);
-            } catch (e) {
-                this.data = JSON.parse(JSON.stringify(window.SCT2_DATABASE || {}));
-            }
+        const level = (typeof LevelManager !== 'undefined' && LevelManager.currentLevel) ? LevelManager.currentLevel : 'hsk1';
+        const cached = StateModel.loadCachedLessons(level);
+        if (cached) {
+            this.data = cached;
         } else {
             this.data = JSON.parse(JSON.stringify(window.SCT2_DATABASE || {}));
             this.saveData();
@@ -648,9 +453,8 @@ const App = {
     },
 
     saveData() {
-        localStorage.setItem('sct2_db_version', DB_VERSION);
-        const dbKey = this.getLevelDbKey();
-        localStorage.setItem(dbKey, JSON.stringify(this.data));
+        const level = (typeof LevelManager !== 'undefined' && LevelManager.currentLevel) ? LevelManager.currentLevel : 'hsk1';
+        StateModel.saveCachedLessons(level, this.data);
     },
 
     buildPicker() {
@@ -685,33 +489,7 @@ const App = {
     },
 
     async loadLessonData(item) {
-        if (!item || !item.file) return null;
-        try {
-            let res = await fetch(item.file);
-            if (!res.ok && item.file.startsWith('data/hsk1/')) {
-                res = await fetch(item.file.replace('data/hsk1/', 'data/'));
-            }
-            if (!res || !res.ok) throw new Error("Fetch failed");
-            const rawData = await res.json();
-            if (Array.isArray(rawData)) {
-                return {
-                    id: item.id,
-                    title: item.title,
-                    lessons: LessonDataParser.normalizeList(rawData, item.id)
-                };
-            } else if (rawData.sentences || rawData.lessons) {
-                return {
-                    id: rawData.lessonId || rawData.id || item.id,
-                    title: rawData.lessonTitle || rawData.title || item.title,
-                    quickNotes: rawData.quickNotes || null,
-                    lessons: LessonDataParser.normalizeList(rawData.sentences || rawData.lessons, item.id)
-                };
-            }
-            return rawData;
-        } catch (e) {
-            // Khi mở qua file:// hoặc fetch lỗi, fallback dùng data đã nạp sẵn
-            return null;
-        }
+        return await LessonModel.fetchLesson(item);
     },
 
     async start(k) {
