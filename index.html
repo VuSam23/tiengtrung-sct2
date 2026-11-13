@@ -73,7 +73,7 @@
 
         .chinese-text { font-family: "Noto Serif SC", "Kaiti SC", "STKaiti", "PingFang SC", "Microsoft YaHei", serif; }
         #source-vi-text { font-size: var(--font-hanzi-question); line-height: 1.4; }
-        #source-pinyin-display { font-size: var(--font-pinyin); }
+        #source-pinyin-display, #anatomy-pinyin { font-size: var(--font-pinyin); }
         .hanzi-fluid { font-size: var(--font-hanzi-tile); }
 
         /* ===== TOUCH TARGET & TƯƠNG TÁC ===== */
@@ -600,35 +600,39 @@
                     <p id="source-vi-text" class="text-base sm:text-lg font-black text-slate-900 dark:text-slate-100 leading-snug sm:leading-relaxed"></p>
                 </div>
 
-                <div class="bg-white dark:bg-slate-900/90 p-3 sm:p-3.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm mb-2 sm:mb-2.5">
-                    <!-- Thanh điều khiển: Nút mở gợi ý & Nút audio/góp ý -->
-                    <div class="flex items-center justify-between gap-2">
-                        <button id="btn-toggle-anatomy" type="button" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-bold transition flex items-center gap-1.5 border border-slate-300 dark:border-slate-700 cursor-pointer shadow-xs active:scale-95" title="Bấm để mở/đóng gợi ý bóc tách thành phần & Pinyin">
-                            <span id="anatomy-toggle-icon">💡</span>
-                            <span id="anatomy-toggle-label">Gợi ý bóc tách (Đang ẩn)</span>
-                            <span id="anatomy-toggle-arrow" class="text-[10px] text-slate-400">▼</span>
-                        </button>
-                        <div class="flex items-center gap-1.5 shrink-0">
-                            <button id="btn-audio-slow" class="p-2 sm:px-2.5 sm:py-1.5 rounded-xl bg-amber-50 hover:bg-amber-100 dark:bg-amber-500/15 dark:hover:bg-amber-500/25 text-amber-800 dark:text-amber-300 border border-amber-300/80 dark:border-amber-500/30 transition shrink-0 active:scale-95 text-xs font-bold shadow-xs flex items-center gap-1" title="Đọc chậm từng âm tiết (Con rùa 🐢 0.72x)">
+                <!-- ACCORDION GỢI Ý CÚ PHÁP & TỪ VỰNG (CHỐNG LỘ ĐÁP ÁN) -->
+                <div class="anatomy-collapsible-card border border-amber-200/80 dark:border-amber-900/50 rounded-2xl overflow-hidden my-2.5 sm:my-3 bg-white dark:bg-slate-900 shadow-xs">
+                    <!-- Header luôn hiển thị, có nút bấm toggle -->
+                    <div id="anatomy-toggle-btn" class="flex items-center justify-between p-2.5 sm:p-3 bg-amber-50/90 dark:bg-amber-950/30 cursor-pointer select-none transition-colors hover:bg-amber-100/70 dark:hover:bg-amber-950/50">
+                        <div class="flex items-center gap-2 min-w-0">
+                            <span class="text-amber-700 dark:text-amber-400 font-bold text-xs sm:text-sm flex items-center gap-1.5 truncate">
+                                <span>💡</span> <span>Gợi ý cú pháp & Từ vựng</span>
+                            </span>
+                            <span id="anatomy-badge" class="anatomy-badge text-[11px] bg-amber-200 dark:bg-amber-900/60 text-amber-800 dark:text-amber-200 px-2 py-0.5 rounded-full font-semibold shrink-0">Bấm để mở</span>
+                        </div>
+                        <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                            <button id="btn-audio-slow" type="button" class="audio-slow-btn px-2 py-1 rounded-xl bg-white dark:bg-slate-800 hover:bg-amber-100 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800/60 transition active:scale-95 text-xs font-bold shadow-2xs flex items-center gap-1" title="Đọc chậm từng âm tiết (Con rùa 🐢 0.72x)">
                                 <span>🐢</span> <span class="hidden sm:inline">Chậm</span>
                             </button>
-                            <button id="btn-audio-speak" class="p-2 sm:px-2.5 sm:py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 transition shrink-0 active:scale-95 text-xs font-bold shadow-xs flex items-center gap-1" title="Nghe phát âm chuẩn người bản xứ (🗣️ 1.0x)">
+                            <button id="btn-audio-speak" type="button" class="audio-normal-btn px-2 py-1 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition active:scale-95 text-xs font-bold shadow-2xs flex items-center gap-1" title="Nghe phát âm chuẩn người bản xứ (🗣️ 1.0x)">
                                 <span>🔊</span> <span class="hidden sm:inline">Nghe</span>
                             </button>
-                            <button id="btn-feedback-trigger" class="p-2 rounded-xl text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 flex items-center gap-1 transition" title="Góp ý hoặc báo lỗi câu này">
+                            <button id="btn-feedback-trigger" type="button" class="p-1 rounded-lg text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition" title="Góp ý hoặc báo lỗi câu này">
                                 💬
                             </button>
+                            <span id="anatomy-arrow" class="text-slate-400 dark:text-slate-500 text-xs transition-transform duration-200 px-1 inline-block select-none">▼</span>
                         </div>
                     </div>
 
-                    <!-- Khối nội dung Giải Phẫu Thành Phần & Pinyin (Mặc định ẩn để chống lộ đáp án) -->
-                    <div id="anatomy-content-drawer" class="hidden mt-2.5 pt-2.5 border-t border-slate-100 dark:border-slate-800">
+                    <!-- Nội dung chi tiết: Mặc định ẩn (hidden) -->
+                    <div id="anatomy-content" class="anatomy-content-drawer hidden p-3 sm:p-4 border-t border-amber-100 dark:border-amber-900/40 bg-white dark:bg-slate-900/90">
                         <span class="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-1.5">Giải phẫu thành phần & Từ vựng:</span>
-                        <div id="source-chips-container" class="flex flex-wrap items-center gap-2 mb-2"></div>
+                        <!-- Danh sách từ vựng chi tiết sẽ được render tại đây -->
+                        <div id="anatomy-tokens-container" class="source-chips-container flex flex-wrap items-center gap-2 mb-3"></div>
                         
                         <div id="source-meta-row" class="pt-2 border-t border-slate-100 dark:border-slate-800/60 flex flex-wrap items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-1">
-                            <span id="source-pinyin-display" class="font-mono text-emerald-600 dark:text-emerald-400 font-bold"></span>
-                            <span id="source-core-grammar" class="font-semibold text-slate-700 dark:text-slate-300"></span>
+                            <span id="anatomy-pinyin" class="source-pinyin-display font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm"></span>
+                            <span id="anatomy-grammar" class="source-core-grammar font-semibold text-slate-700 dark:text-slate-300"></span>
                         </div>
                     </div>
                 </div>

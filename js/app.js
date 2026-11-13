@@ -594,7 +594,7 @@ const App = {
     },
 
     applyPinyinVisibility() {
-        const pyEl = document.getElementById('source-pinyin-display');
+        const pyEl = document.getElementById('anatomy-pinyin') || document.getElementById('source-pinyin-display');
         if (pyEl) {
             pyEl.style.display = this.settings.showPinyin ? '' : 'none';
         }
@@ -885,23 +885,33 @@ const App = {
     },
 
     toggleAnatomy(forceOpen = null) {
-        const drawer = document.getElementById('anatomy-content-drawer');
-        const label = document.getElementById('anatomy-toggle-label');
-        const arrow = document.getElementById('anatomy-toggle-arrow');
-        if (!drawer) return;
+        const toggleBtn = document.getElementById('anatomy-toggle-btn') || document.getElementById('btn-toggle-anatomy');
+        const contentBox = document.getElementById('anatomy-content') || document.getElementById('anatomy-content-drawer');
+        const arrowIcon = document.getElementById('anatomy-arrow') || document.getElementById('anatomy-toggle-arrow');
+        if (!contentBox) return;
 
-        const isCurrentlyHidden = drawer.classList.contains('hidden');
+        const isCurrentlyHidden = contentBox.classList.contains('hidden');
         const shouldOpen = (forceOpen !== null) ? !!forceOpen : isCurrentlyHidden;
 
+        const badge = toggleBtn ? (toggleBtn.querySelector('.bg-amber-200, #anatomy-badge, .anatomy-badge') || toggleBtn.querySelector('.anatomy-badge')) : null;
+
         if (shouldOpen) {
-            drawer.classList.remove('hidden');
-            if (label) label.textContent = "Gợi ý bóc tách (Đang mở)";
-            if (arrow) arrow.textContent = "▲";
+            contentBox.classList.remove('hidden');
+            if (arrowIcon) {
+                arrowIcon.style.transform = 'rotate(180deg)';
+            }
+            if (badge) badge.textContent = 'Thu gọn';
         } else {
-            drawer.classList.add('hidden');
-            if (label) label.textContent = "Gợi ý bóc tách (Đang ẩn)";
-            if (arrow) arrow.textContent = "▼";
+            contentBox.classList.add('hidden');
+            if (arrowIcon) {
+                arrowIcon.style.transform = 'rotate(0deg)';
+            }
+            if (badge) badge.textContent = 'Bấm để mở';
         }
+    },
+
+    resetAnatomyCard() {
+        this.toggleAnatomy(false);
     },
 
     updateProgressBar() {
@@ -953,17 +963,17 @@ const App = {
         this.updateModeUI();
 
         // Đóng mặc định khối gợi ý bóc tách để học sinh tự động não
-        this.toggleAnatomy(false);
+        this.resetAnatomyCard();
 
         // Render trực tiếp và đồng bộ để loại bỏ hoàn toàn hiện tượng nhấp nháy/thu giãn layout
         const promptInstruction = document.getElementById('prompt-instruction');
         if (promptInstruction) promptInstruction.textContent = q.title || "Luyện dịch câu sau:";
         const sourceVi = document.getElementById('source-vi-text');
         if (sourceVi) sourceVi.textContent = q.vi || "";
-        const sourcePinyin = document.getElementById('source-pinyin-display');
+        const sourcePinyin = document.getElementById('anatomy-pinyin') || document.getElementById('source-pinyin-display');
         if (sourcePinyin) sourcePinyin.textContent = q.pinyin ? `🗣️ ${q.pinyin}` : "";
         this.applyPinyinVisibility();
-        const sourceGrammar = document.getElementById('source-core-grammar');
+        const sourceGrammar = document.getElementById('anatomy-grammar') || document.getElementById('source-core-grammar');
         if (sourceGrammar) sourceGrammar.textContent = q.grammarPoint ? `Ngữ pháp: ${q.grammarPoint}` : "";
 
         // Reset trạng thái bẫy realtime và hiển thị nút mẹo nếu có
@@ -971,7 +981,7 @@ const App = {
         this.renderQuickNotesButton();
 
         // Render chips từ vựng
-        const chips = document.getElementById('source-chips-container');
+        const chips = document.getElementById('anatomy-tokens-container') || document.getElementById('source-chips-container');
         if (chips) {
             chips.innerHTML = '';
             (q.tokens || []).forEach(t => {
@@ -987,10 +997,14 @@ const App = {
             });
         }
 
-        // Gắn sự kiện nút đóng/mở khối gợi ý bóc tách
-        const toggleAnatomyBtn = document.getElementById('btn-toggle-anatomy');
+        // Gắn sự kiện nút đóng/mở khối gợi ý bóc tách (hỗ trợ cả header accordion lẫn nút toggle con nếu có)
+        const toggleAnatomyBtn = document.getElementById('anatomy-toggle-btn') || document.getElementById('btn-toggle-anatomy');
         if (toggleAnatomyBtn) {
-            toggleAnatomyBtn.onclick = () => this.toggleAnatomy();
+            toggleAnatomyBtn.onclick = (e) => {
+                // Tránh bắt sự kiện nếu người dùng bấm vào nút âm thanh 🔊/🐢 hoặc feedback
+                if (e.target.closest('button')) return;
+                this.toggleAnatomy();
+            };
         }
 
         // Render workspace trực tiếp (Xếp từ hoặc Tự gõ)

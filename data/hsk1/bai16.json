@@ -785,7 +785,7 @@
       "wordBankPool": ["很", "里", "是", "宿舍", "安静", "总是"],
       "traps": [
         {
-          "pattern": "是",
+          "pattern": "里是",
           "msg": "Lỗi câu vị ngữ tính từ: Trước cụm tính từ '很安静' không thêm động từ '是'."
         }
       ],
