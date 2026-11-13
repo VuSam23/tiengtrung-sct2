@@ -3,6 +3,10 @@
  * Điều khiển giao diện người dùng, vòng lặp bài tập, tương tác và quản lý dữ liệu
  */
 
+import { AudioService } from './services/audio-service.js';
+import { ToastView } from './views/toast-view.js';
+import { ModalView } from './views/modal-view.js';
+
 const DB_VERSION = 'sct2_db_v3_modular';
 
 const App = {
@@ -237,94 +241,12 @@ const App = {
         }
     },
 
-    // ===== CHỨC NĂNG 1: HỆ THỐNG TOAST THÔNG BÁO KHÔNG CHẶN UI =====
     ensureToastContainer() {
-        let container = document.getElementById('toast-container');
-        if (!container) {
-            container = document.createElement('div');
-            container.id = 'toast-container';
-            document.body.appendChild(container);
-        }
-        return container;
+        return ToastView.ensureContainer();
     },
 
     showToast(options = {}) {
-        let title = 'Thông báo';
-        let message = '';
-        let icon = '🔔';
-        let type = 'success';
-        let duration = 3000;
-
-        if (typeof options === 'string') {
-            message = options;
-            type = arguments[1] || 'success';
-            duration = arguments[2] || 3000;
-            if (type === 'streak' || message.includes('🔥')) {
-                title = 'Chuỗi Streak';
-                icon = '🔥';
-                type = 'streak';
-            } else if (type === 'success' || message.includes('❤️') || message.includes('✅')) {
-                title = 'Thành công';
-                icon = message.includes('❤️') ? '❤️' : '✅';
-            } else if (type === 'warning' || message.includes('⚠️') || message.includes('🔒')) {
-                title = 'Chú ý';
-                icon = message.includes('🔒') ? '🔒' : '⚠️';
-            } else if (type === 'error' || message.includes('❌')) {
-                title = 'Lỗi';
-                icon = '❌';
-            } else {
-                title = 'Thông báo';
-                icon = 'ℹ️';
-            }
-        } else {
-            title = options.title || 'Thông báo';
-            message = options.message || '';
-            icon = options.icon || (options.type === 'streak' ? '🔥' : '🔔');
-            type = options.type || 'success';
-            duration = options.duration || 3000;
-        }
-
-        // Tự động loại bỏ emoji thừa ở đầu message hoặc cuối title để tránh icon lặp đôi (vd: icon 🔒 bên cạnh 🔒 Đã tắt...)
-        if (typeof message === 'string') {
-            message = message.replace(/^[\p{Emoji}\p{Extended_Pictographic}\uFE0F\u200D\s!]+/u, '').trim();
-        }
-        if (typeof title === 'string') {
-            title = title.replace(/[\s!]*[\p{Emoji}\p{Extended_Pictographic}\uFE0F\u200D]+[\s!]*$/u, '').trim();
-        }
-
-        const container = this.ensureToastContainer();
-        const toast = document.createElement('div');
-        toast.className = `sct2-toast toast-${type}`;
-
-        toast.innerHTML = `
-            <div class="sct2-toast-icon">${icon}</div>
-            <div class="sct2-toast-body">
-                <h4>${title}</h4>
-                <p>${message}</p>
-            </div>
-        `;
-
-        // Bấm vào để tắt ngay
-        toast.onclick = () => {
-            toast.classList.remove('show');
-            setTimeout(() => toast.remove(), 300);
-        };
-
-        container.appendChild(toast);
-
-        // Kích hoạt animation xuất hiện
-        requestAnimationFrame(() => {
-            toast.classList.add('show');
-        });
-
-        // Tự động hủy sau thời gian duration
-        setTimeout(() => {
-            if (toast.parentElement) {
-                toast.classList.remove('show');
-                toast.addEventListener('transitionend', () => toast.remove(), { once: true });
-                setTimeout(() => toast.remove(), 400);
-            }
-        }, duration);
+        ToastView.show(options, arguments[1], arguments[2]);
     },
 
     refillHearts() {
@@ -885,33 +807,11 @@ const App = {
     },
 
     toggleAnatomy(forceOpen = null) {
-        const toggleBtn = document.getElementById('anatomy-toggle-btn') || document.getElementById('btn-toggle-anatomy');
-        const contentBox = document.getElementById('anatomy-content') || document.getElementById('anatomy-content-drawer');
-        const arrowIcon = document.getElementById('anatomy-arrow') || document.getElementById('anatomy-toggle-arrow');
-        if (!contentBox) return;
-
-        const isCurrentlyHidden = contentBox.classList.contains('hidden');
-        const shouldOpen = (forceOpen !== null) ? !!forceOpen : isCurrentlyHidden;
-
-        const badge = toggleBtn ? (toggleBtn.querySelector('.bg-amber-200, #anatomy-badge, .anatomy-badge') || toggleBtn.querySelector('.anatomy-badge')) : null;
-
-        if (shouldOpen) {
-            contentBox.classList.remove('hidden');
-            if (arrowIcon) {
-                arrowIcon.style.transform = 'rotate(180deg)';
-            }
-            if (badge) badge.textContent = 'Thu gọn';
-        } else {
-            contentBox.classList.add('hidden');
-            if (arrowIcon) {
-                arrowIcon.style.transform = 'rotate(0deg)';
-            }
-            if (badge) badge.textContent = 'Bấm để mở';
-        }
+        ModalView.toggleAnatomy(forceOpen);
     },
 
     resetAnatomyCard() {
-        this.toggleAnatomy(false);
+        ModalView.resetAnatomyCard();
     },
 
     updateProgressBar() {
@@ -1416,94 +1316,12 @@ const App = {
 
     // ===== SCT2 VOCAB INSPECTOR (Flexbox Centered & Focus Mode) =====
     openVocabInspector(token) {
-        if (!token) return;
-
-        const hanzi = token.hz || token.text || '';
-        const pinyin = token.py || '';
-        const hanViet = (token.hv && token.hv !== '---') ? `HV: ${token.hv.trim()}` : '';
-        const role = token.grammarRole || token.role || token.pos || 'Từ vựng';
-        const meaning = token.vi || token.vn || token.meaning || token.mean || hanzi;
-
-        const hanziEl = document.getElementById('insp-hanzi');
-        const pinyinEl = document.getElementById('insp-pinyin');
-        const hvEl = document.getElementById('insp-hv-clean');
-        const dotSep = document.getElementById('insp-dot-sep');
-        const roleEl = document.getElementById('insp-role');
-        const meaningEl = document.getElementById('insp-meaning');
-        const radBox = document.getElementById('insp-radicals');
-        const trapBox = document.getElementById('insp-trap-box');
-        const trapText = document.getElementById('insp-trap-text');
-        const overlay = document.getElementById('vocab-inspector-overlay');
-
-        if (hanziEl) hanziEl.textContent = hanzi;
-        if (pinyinEl) pinyinEl.textContent = pinyin;
-        if (hvEl) {
-            if (hanViet) {
-                hvEl.textContent = hanViet;
-                hvEl.classList.remove('hidden');
-                if (dotSep) dotSep.classList.remove('hidden');
-            } else {
-                hvEl.classList.add('hidden');
-                if (dotSep) dotSep.classList.add('hidden');
-            }
-        }
-        if (roleEl) {
-            const cleanRole = (role && role.length > 25) ? role.split('+')[0].trim() : (role || 'Từ vựng');
-            roleEl.textContent = cleanRole;
-        }
-        if (meaningEl) meaningEl.textContent = meaning;
-
-        // 2. Điền dữ liệu bộ thủ (xử lý chuỗi phẳng '慢 = Bộ tâm đứng 忄; 地 = Bộ thổ 土')
-        if (radBox) {
-            radBox.innerHTML = '';
-            let radicalsText = token.radicals || "";
-            if (!radicalsText && this.activeQ && Array.isArray(this.activeQ.radicals)) {
-                const matched = this.activeQ.radicals.filter(r => hanzi.includes(r.char));
-                if (matched.length > 0) {
-                    radicalsText = matched.map(m => `${m.char} = ${m.radical}${m.explain ? ' (' + m.explain + ')' : ''}`).join('; ');
-                }
-            }
-
-            if (radicalsText) {
-                if (typeof radicalsText === 'string') {
-                    const items = radicalsText.split(/[;\n]/).map(r => r.trim()).filter(Boolean);
-                    items.forEach((item) => {
-                        const div = document.createElement('div');
-                        div.className = 'flex items-center gap-2';
-                        div.innerHTML = `<span class="text-emerald-600 dark:text-emerald-400 font-bold">•</span> <span class="font-medium text-slate-800 dark:text-slate-200">${item}</span>`;
-                        radBox.appendChild(div);
-                    });
-                } else {
-                    radBox.textContent = JSON.stringify(radicalsText);
-                }
-            } else {
-                radBox.innerHTML = '<span class="text-slate-400 dark:text-slate-500 italic">Chưa có phân tích bộ thủ cho cụm này.</span>';
-            }
-        }
-
-        // Bẫy ngữ pháp nếu có
-        if (token.trap) {
-            if (trapBox) trapBox.classList.remove('hidden');
-            if (trapText) trapText.textContent = token.trap;
-        } else {
-            if (trapBox) trapBox.classList.add('hidden');
-        }
-
-        this.activeInspectorWord = hanzi;
-
-        // 3. Hiển thị overlay
-        if (overlay) {
-            overlay.classList.add('active');
-            overlay.setAttribute('aria-hidden', 'false');
-        }
+        ModalView.openVocabInspector(token, this.activeQ);
+        this.activeInspectorWord = token ? (token.hz || token.text || '') : '';
     },
 
     closeVocabInspector() {
-        const overlay = document.getElementById('vocab-inspector-overlay');
-        if (overlay) {
-            overlay.classList.remove('active');
-            overlay.setAttribute('aria-hidden', 'true');
-        }
+        ModalView.closeVocabInspector();
     },
 
     showHint(token) {
@@ -1555,128 +1373,20 @@ const App = {
         if (!notes) return;
 
         this.renderQuickNotesUI(notes, curLessonData);
-
-        const dialog = document.getElementById('quick-notes-dialog');
-        const ackBtn = document.getElementById('btn-ack-quick-notes');
-        const badgeEl = document.getElementById('qn-pre-badge');
-
-        if (dialog) {
-            // Giữ nền app như trước kia nhưng làm mờ nền phía sau (backdrop-blur-md) giúp người đọc tập trung tuyệt đối
-            dialog.className = "fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4";
-        }
-
-        if (isPreLesson) {
-            if (badgeEl) {
-                badgeEl.textContent = "🎯 TRỌNG TÂM BÀI HỌC • NẮM VỮNG TRƯỚC KHI BẮT ĐẦU";
-                badgeEl.classList.remove('hidden');
-            }
-            if (ackBtn) {
-                ackBtn.textContent = "BẮT ĐẦU LUYỆN DỊCH ➔";
-            }
-        } else {
-            if (badgeEl) {
-                badgeEl.classList.add('hidden');
-            }
-            if (ackBtn) {
-                ackBtn.textContent = "QUAY LẠI LÀM BÀI ➔";
-            }
-        }
-
-        this.toggleQuickNotes(true);
+        ModalView.openLessonBriefing(curLessonData, isPreLesson);
     },
 
     closeLessonBriefingModal() {
-        this.toggleQuickNotes(false);
+        ModalView.closeLessonBriefing();
     },
 
     // 2. Mẹo & phân tích câu hỏi đang luyện (cái bên trong - Question Hint)
     openQuestionHintModal() {
-        const q = this.activeQ;
-        if (!q) return;
-
-        const body = document.getElementById('question-hint-body');
-        if (!body) return;
-        body.innerHTML = '';
-
-        const subtitle = document.getElementById('question-hint-subtitle');
-        if (subtitle) {
-            subtitle.textContent = q.vi ? `Đề bài: "${q.vi}"` : (q.title || "Gợi ý câu hỏi");
-        }
-
-        // 1. Cấu trúc ngữ pháp trọng tâm của câu
-        if (q.grammarPoint) {
-            const block = document.createElement('div');
-            block.className = "p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/80 space-y-1.5";
-            block.innerHTML = `
-                <div class="font-black text-emerald-800 dark:text-emerald-300 flex items-center gap-2 text-sm sm:text-base">
-                    <span>📌</span> CẤU TRÚC NGỮ PHÁP CÂU NÀY
-                </div>
-                <div class="text-slate-800 dark:text-slate-200 font-semibold text-sm sm:text-base leading-relaxed">${q.grammarPoint}</div>
-            `;
-            body.appendChild(block);
-        }
-
-        // 2. Hướng dẫn dịch & phân tích
-        if (q.explanation || q.notes) {
-            const block = document.createElement('div');
-            block.className = "p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/80 space-y-1.5";
-            block.innerHTML = `
-                <div class="font-black text-amber-800 dark:text-amber-300 flex items-center gap-2 text-sm sm:text-base">
-                    <span>💡</span> HƯỚNG DẪN DỊCH & LƯU Ý
-                </div>
-                <div class="text-slate-800 dark:text-slate-200 text-sm sm:text-base leading-relaxed font-medium">${q.explanation || q.notes}</div>
-            `;
-            body.appendChild(block);
-        }
-
-        // 3. Từ vựng & cụm từ then chốt của câu (tokens)
-        if (Array.isArray(q.tokens) && q.tokens.length > 0) {
-            const block = document.createElement('div');
-            block.className = "p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-2";
-            const tokenList = q.tokens.map(t => {
-                const viMeaning = t.vi || t.vn || t.meaning || t.mean || '';
-                return `
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 shadow-xs">
-                    <b class="text-emerald-700 dark:text-emerald-400 chinese-text text-base sm:text-lg font-bold">${t.hz || t.text}</b>
-                    ${t.py ? `<span class="text-slate-500 dark:text-slate-400 font-mono text-xs sm:text-sm font-semibold">(${t.py})</span>` : ''}
-                    ${viMeaning ? `: <span class="text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-medium">${viMeaning}</span>` : ''}
-                </span>
-            `;
-            }).join('');
-            block.innerHTML = `
-                <div class="font-black text-slate-700 dark:text-slate-300 flex items-center gap-2 text-sm sm:text-base">
-                    <span>📖</span> TỪ VỰNG THEN CHỐT TRONG CÂU
-                </div>
-                <div class="flex flex-wrap gap-2">${tokenList}</div>
-            `;
-            body.appendChild(block);
-        }
-
-        // Fallback nếu câu không có trường gợi ý nào
-        if (body.children.length === 0) {
-            const block = document.createElement('div');
-            block.className = "p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/60 text-center text-slate-700 dark:text-slate-300 space-y-2";
-            block.innerHTML = `
-                <div class="text-3xl">💡</div>
-                <p class="font-black text-base">Gợi ý luyện dịch câu này:</p>
-                <p class="text-sm sm:text-base leading-relaxed">Hãy chú ý trật tự ngữ pháp tự nhiên trong tiếng Trung: Trạng ngữ thời gian và nơi chốn đặt trước động từ.</p>
-            `;
-            body.appendChild(block);
-        }
-
-        const dialog = document.getElementById('question-hint-dialog');
-        if (dialog) {
-            dialog.classList.remove('hidden');
-            dialog.style.display = 'flex';
-        }
+        ModalView.openQuestionHint(this.activeQ);
     },
 
     closeQuestionHintModal() {
-        const dialog = document.getElementById('question-hint-dialog');
-        if (dialog) {
-            dialog.classList.add('hidden');
-            dialog.style.display = 'none';
-        }
+        ModalView.closeQuestionHint();
     },
 
     openQuickNotesModal() {
